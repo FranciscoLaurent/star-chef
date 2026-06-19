@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>师承谱 · Demo B · 关系网络版</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700&family=JetBrains+Mono:ital,wght@0,300..600&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ede8db; --paper-2:#e3dcc8; --paper-3:#d8cfb6;
+    --ink:#12100e; --ink-soft:#3a3530;
+    --vermillion:#ca6c52; --vermillion-deep:#a3503b;
+    --moss:#4a5a3f; --gold:#a67c00; --dust:#8b8270;
+    --rule:rgba(18,16,14,.12);
+    --serif:'Fraunces','Noto Serif SC',serif;
+    --songti:'Noto Serif SC','Fraunces',serif;
+    --mono:'JetBrains Mono',monospace;
+    --sans:'Instrument Sans',sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    background-image:
+      radial-gradient(rgba(18,16,14,.025) 1px,transparent 1px),
+      radial-gradient(rgba(202,108,82,.025) 1px,transparent 1px);
+    background-size:22px 22px,38px 38px;background-position:0 0,11px 11px;
+    min-height:100vh;
+  }
+  .top{
+    display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+    padding:26px 36px 18px;border-bottom:1px solid var(--ink);
+  }
+  .top h1{font-family:var(--serif);font-weight:500;font-size:32px;font-variation-settings:"opsz" 144}
+  .top h1 em{font-style:italic;color:var(--vermillion)}
+  .top .crumb{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase}
+
+  /* 工具栏 */
+  .toolbar{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    padding:14px 36px;border-bottom:1px solid var(--rule);
+    background:rgba(216,207,182,.4);
+  }
+  .toolbar .group{display:flex;align-items:center;gap:8px}
+  .toolbar label{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase}
+  .search{
+    background:transparent;border:1px solid var(--ink);padding:7px 12px;
+    font-family:var(--mono);font-size:12px;width:200px;color:var(--ink);outline:none;
+  }
+  .search:focus{border-color:var(--vermillion)}
+  .chip{
+    font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+    padding:5px 10px;border:1px solid var(--ink);background:transparent;cursor:pointer;
+    transition:all .2s;
+  }
+  .chip:hover{background:var(--ink);color:var(--paper)}
+  .chip.on{background:var(--ink);color:var(--paper)}
+  .legend{display:flex;align-items:center;gap:14px;margin-left:auto}
+  .legend-item{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;color:var(--ink-soft)}
+  .legend-dot{width:10px;height:10px;border-radius:50%;border:1.2px solid var(--ink)}
+  .gen1-c{background:var(--vermillion-deep)}
+  .gen2-c{background:var(--vermillion)}
+  .gen3-c{background:var(--gold)}
+  .gen4-c{background:var(--moss)}
+  .gen5-c{background:var(--dust)}
+
+  /* 主区 */
+  .stage{
+    position:relative;
+    height:calc(100vh - 80px - 56px);
+    overflow:hidden;
+  }
+  svg.canvas{width:100%;height:100%;display:block}
+  .canvas .grid line{stroke:rgba(18,16,14,.05)}
+
+  /* 节点 */
+  .node{cursor:pointer}
+  .node circle{stroke:var(--ink);stroke-width:1.4;transition:r .2s,stroke-width .2s}
+  .node:hover circle{stroke-width:2.4;r:18}
+  .node.dim{opacity:.18}
+  .node.active circle{stroke:var(--vermillion);stroke-width:2.8;filter:drop-shadow(0 0 6px rgba(202,108,82,.4))}
+  .node text{font-family:var(--songti);font-size:11px;font-weight:500;fill:var(--ink);text-anchor:middle;pointer-events:none;user-select:none}
+  .node.gen1 text{font-size:13px;font-weight:700}
+
+  /* 连接 */
+  .link{stroke:var(--ink-soft);stroke-width:1.2;fill:none;opacity:.55}
+  .link.cross{stroke:var(--vermillion);stroke-dasharray:4 3;opacity:.85;stroke-width:1.4}
+  .link.dim{opacity:.06}
+
+  /* tooltip */
+  .tip{
+    position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);
+    font-family:var(--mono);font-size:11px;padding:8px 12px;letter-spacing:.04em;
+    max-width:240px;line-height:1.55;opacity:0;transition:opacity .15s;
+    border-left:2px solid var(--vermillion);
+  }
+  .tip strong{font-family:var(--songti);font-size:13px;display:block;margin-bottom:3px;color:#fff}
+  .tip .meta{color:rgba(237,232,219,.65);font-size:10px}
+
+  /* 抽屉 */
+  .drawer{
+    position:absolute;top:0;right:0;width:380px;height:100%;
+    background:var(--paper);border-left:1px solid var(--ink);
+    transform:translateX(100%);transition:transform .35s ease;
+    overflow-y:auto;padding:28px 24px 40px;
+    box-shadow:-8px 0 30px rgba(18,16,14,.06);
+  }
+  .drawer.open{transform:translateX(0)}
+  .drawer-close{
+    position:absolute;top:18px;right:18px;background:transparent;border:none;
+    font-family:var(--mono);font-size:14px;cursor:pointer;color:var(--ink-soft);
+  }
+  .stamp-big{
+    width:64px;height:80px;border:1.6px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:38px;background:var(--paper-2);
+    position:relative;margin-bottom:16px;
+  }
+  .stamp-big::after{content:"";position:absolute;inset:-4px;border:1px dashed rgba(18,16,14,.35)}
+  .d-name{font-family:var(--songti);font-size:30px;font-weight:700;line-height:1.1;margin-bottom:8px}
+  .d-en{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--vermillion);text-transform:uppercase;margin-bottom:18px}
+  .d-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+  .d-tags span{font-family:var(--mono);font-size:10.5px;border:1px solid var(--ink);padding:3px 9px;letter-spacing:.05em}
+  .d-tags .vmf{background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)}
+  .d-section{margin:18px 0;padding-top:14px;border-top:1px solid var(--rule)}
+  .d-section h6{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dust);text-transform:uppercase;margin-bottom:10px}
+  .d-bio{font-family:var(--serif);font-size:14px;line-height:1.75;color:var(--ink-soft);font-variation-settings:"opsz" 14}
+  .d-chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-family:var(--songti);font-size:13px}
+  .d-chain .arrow{color:var(--vermillion);font-family:var(--mono);font-size:10px}
+  .d-chain .me{font-weight:700;color:var(--vermillion-deep);border-bottom:1px solid var(--vermillion-deep)}
+  .d-dishes{display:flex;flex-wrap:wrap;gap:5px}
+  .d-dishes span{font-family:var(--songti);font-size:12px;background:var(--paper-3);padding:3px 8px}
+
+  /* 空态提示 */
+  .hint{
+    position:absolute;left:50%;bottom:30px;transform:translateX(-50%);
+    font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--dust);
+    text-transform:uppercase;pointer-events:none;
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div>
+    <h1>师承 <em>谱</em>　<span style="font-family:var(--mono);font-size:12px;color:var(--dust);letter-spacing:.16em;text-transform:uppercase">Demo B · Network</span></h1>
+    <div class="crumb" style="margin-top:6px">关系网络 / 张派 · 川菜 / 12 人 · 5 代</div>
+  </div>
+  <div class="crumb">FAMILY: <strong style="color:var(--ink)">ZHANG · SICHUAN</strong></div>
+</div>
+
+<div class="toolbar">
+  <div class="group">
+    <label>搜索</label>
+    <input class="search" id="q" placeholder="姓名 / 城市 / 菜品 / 年限…" />
+  </div>
+  <div class="group">
+    <label>代际</label>
+    <button class="chip on" data-gen="all">全部</button>
+    <button class="chip" data-gen="1">第一代</button>
+    <button class="chip" data-gen="2">第二代</button>
+    <button class="chip" data-gen="3">第三代</button>
+    <button class="chip" data-gen="4">第四代</button>
+    <button class="chip" data-gen="5">第五代</button>
+  </div>
+  <div class="group">
+    <label>跨派学艺</label>
+    <button class="chip" id="crossBtn">仅显示</button>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot gen1-c"></span>开派 / 第一代</div>
+    <div class="legend-item"><span class="legend-dot gen2-c"></span>第二代</div>
+    <div class="legend-item"><span class="legend-dot gen3-c"></span>第三代</div>
+    <div class="legend-item"><span class="legend-dot gen4-c"></span>第四代</div>
+    <div class="legend-item"><span class="legend-dot gen5-c"></span>第五代</div>
+    <div class="legend-item"><span style="display:inline-block;width:18px;border-top:1.4px dashed var(--vermillion)"></span>跨派学艺</div>
+  </div>
+</div>
+
+<div class="stage" id="stage">
+  <svg class="canvas" id="canvas" preserveAspectRatio="xMidYMid meet"></svg>
+  <div class="tip" id="tip"></div>
+  <div class="hint">CLICK NODE FOR DETAIL · DRAG BG TO PAN</div>
+  <aside class="drawer" id="drawer">
+    <button class="drawer-close" onclick="closeDrawer()">关闭 ✕</button>
+    <div id="drawerBody"></div>
+  </aside>
+</div>
+
+<script>
+/* ============ 数据：张派 12 人，主网络；外加 3 个跨派点（粤/淮扬/鲁外援） ============ */
+const CHEFS = [
+  { id:'c001', name:'张德海', gen:1, master:null, lineage:'zhang', city:'成都', restaurant:'锦江春', position:'行政总厨', years:24, signature:['麻婆豆腐','水煮鱼','回锅肉','宫保鸡丁'], bio:'川菜张派开派祖师，师承成都老字号，24 年灶台功力，带徒 11 人。曾获四川省烹饪大赛金奖，主张"麻辣鲜香，味厚温和"。' },
+  { id:'c002', name:'陈志强', gen:2, master:'c001', lineage:'zhang', city:'成都', restaurant:'锦江春', position:'厨师长', years:18, signature:['宫保鸡丁','鱼香肉丝','蒜泥白肉'], bio:'张德海大弟子，擅长传统川菜小炒，宫保鸡丁的"荔枝口"调得最稳。带过 6 个徒弟，是张派中坚。' },
+  { id:'c003', name:'王秀芳', gen:2, master:'c001', lineage:'zhang', city:'重庆', restaurant:'渝风堂', position:'厨师长', years:16, signature:['毛血旺','辣子鸡','水煮肉片'], bio:'张派第二代，重庆分支带头人。把成都张派的"温和麻辣"与重庆的"重油重辣"融合，自成一派。曾赴广州向梁派粤菜师傅学过两年小炒功底。', crossNote:'曾赴广州向梁派粤菜师傅学过两年小炒功底', crossTo:'liang' },
+  { id:'c004', name:'刘小军', gen:3, master:'c002', lineage:'zhang', city:'成都', restaurant:'蜀香苑', position:'炒锅师傅', years:8, signature:['水煮肉片','回锅肉'], bio:'陈志强徒弟，新生代川菜师傅，对现代川菜改良有想法，常在社交平台分享家常川菜做法。' },
+  { id:'c005', name:'杨国华', gen:3, master:'c002', lineage:'zhang', city:'成都', restaurant:'锦江春', position:'炒锅师傅', years:10, signature:['夫妻肺片','棒棒鸡'], bio:'陈志强二徒弟，凉菜热菜皆精，尤其擅长夫妻肺片的麻辣调味。' },
+  { id:'c006', name:'罗建军', gen:3, master:'c003', lineage:'zhang', city:'重庆', restaurant:'渝风堂', position:'炒锅师傅', years:9, signature:['泡椒凤爪','酸菜鱼'], bio:'王秀芳大弟子，重庆本土川菜代表，酸菜鱼的鱼片薄厚拿捏到位。曾入扬州淮扬周派学刀工半年。', crossNote:'曾入扬州淮扬周派学刀工半年', crossTo:'zhou' },
+  { id:'c007', name:'何静', gen:4, master:'c004', lineage:'zhang', city:'成都', restaurant:'蜀香苑', position:'砧板师傅', years:6, signature:['蒜泥白肉'], bio:'刘小军徒弟，砧板功夫见长，切白肉能薄如蝉翼。' },
+  { id:'c008', name:'唐云飞', gen:4, master:'c005', lineage:'zhang', city:'成都', restaurant:'锦江春', position:'炒锅师傅', years:7, signature:['干煸四季豆','蚂蚁上树'], bio:'杨国华徒弟，擅长川菜家常味型。' },
+  { id:'c009', name:'彭小波', gen:4, master:'c006', lineage:'zhang', city:'重庆', restaurant:'渝风堂', position:'砧板师傅', years:5, signature:['毛血旺'], bio:'罗建军徒弟，重庆分支新生代。' },
+  { id:'c010', name:'袁海涛', gen:5, master:'c007', lineage:'zhang', city:'成都', restaurant:'蜀香苑', position:'学徒', years:2, signature:[], bio:'何静徒弟，刚入行一年的小学徒，勤奋好学。' },
+  { id:'c011', name:'曾丽', gen:5, master:'c008', lineage:'zhang', city:'成都', restaurant:'锦江春', position:'学徒', years:3, signature:['炝炒土豆丝'], bio:'唐云飞徒弟，张派少数女学徒之一，目标是成为张派第一位女炒锅。' },
+  { id:'c012', name:'雷明', gen:5, master:'c009', lineage:'zhang', city:'重庆', restaurant:'渝风堂', position:'学徒', years:2, signature:[], bio:'彭小波徒弟，重庆分支新生代。' },
+  /* 跨派外援节点：作为关系终点显示，不计入张派网络主节点的力学排布 */
+  { id:'x_liang', name:'梁伯', gen:0, master:null, lineage:'liang', city:'广州', restaurant:'—', position:'外援·梁派', years:30, signature:[], bio:'粤菜梁派代表人物，王秀芳曾赴广州向梁派学过两年小炒功底。', external:true },
+  { id:'x_zhou',  name:'周老', gen:0, master:null, lineage:'zhou',  city:'扬州', restaurant:'—', position:'外援·周派', years:32, signature:[], bio:'淮扬周派代表人物，罗建军曾入扬州学刀工半年。', external:true },
+];
+
+/* 把跨派 link 用 crossTo 字段表达：王秀芳→梁派， 罗建军→周派 */
+const CROSS_LINKS = [
+  { from:'c003', to:'x_liang', note:'赴广州学粤派小炒' },
+  { from:'c006', to:'x_zhou',  note:'入扬州学淮扬刀工' },
+];
+
+/* ============ 力导向布局：用代际分层 + 兄弟散开做近似（避免引入 D3） ============ */
+const W = 1200, H = 640;
+
+// 把张派按代分层：gen 1 在中央高位，gen 2-5 依次向下
+function layoutZhangFamily(){
+  const positions = {};
+  const gens = [1,2,3,4,5];
+  const yPad = 80;
+  const yStep = (H - yPad*2 - 60) / 4; // 留底部跨派槽
+  gens.forEach((g, idx)=>{
+    const list = CHEFS.filter(c=>!c.external && c.gen===g);
+    const y = yPad + idx*yStep;
+    // 按 master id 排序，确保父子靠近
+    list.sort((a,b)=>{
+      const ma = a.master||'', mb = b.master||'';
+      if(ma!==mb) return ma.localeCompare(mb);
+      return a.id.localeCompare(b.id);
+    });
+    const xStep = (W - 200) / (list.length + 1);
+    list.forEach((c,i)=>{
+      positions[c.id] = { x: 100 + xStep*(i+1), y };
+    });
+  });
+  // 跨派外援放底部两侧
+  positions['x_liang'] = { x: 220, y: H-50 };
+  positions['x_zhou']  = { x: W-220, y: H-50 };
+  // 局部修正：让父节点到子节点的 x 居中
+  for(let pass=0; pass<3; pass++){
+    [2,3,4,5].forEach(g=>{
+      const list = CHEFS.filter(c=>!c.external && c.gen===g);
+      list.forEach(c=>{
+        const sibs = CHEFS.filter(s=>s.master===c.master && !s.external);
+        const idx = sibs.indexOf(c);
+        const masterPos = positions[c.master];
+        if(masterPos && sibs.length>0){
+          const span = Math.min(sibs.length*70, 220);
+          const startX = masterPos.x - span/2;
+          const tx = sibs.length===1 ? masterPos.x : startX + idx*(span/(sibs.length-1 || 1));
+          positions[c.id].x = positions[c.id].x*0.5 + tx*0.5;
+        }
+      });
+    });
+  }
+  return positions;
+}
+
+const POS = layoutZhangFamily();
+
+/* ============ 渲染 ============ */
+const svg = document.getElementById('canvas');
+svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+
+function genColor(g){
+  return ({1:'#a3503b',2:'#ca6c52',3:'#a67c00',4:'#4a5a3f',5:'#8b8270'})[g] || '#8b8270';
+}
+
+let activeId = null;
+let filterGen = 'all';
+let onlyCross = false;
+let query = '';
+
+function matches(c){
+  if(c.external) return false; // 外援不参与筛选
+  if(filterGen!=='all' && c.gen!==Number(filterGen)) return false;
+  if(onlyCross && !c.crossNote) return false;
+  if(query){
+    const q = query.toLowerCase();
+    const hay = [c.name, c.city, c.restaurant, c.position, ...(c.signature||[]), c.bio||''].join(' ').toLowerCase();
+    if(!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+function render(){
+  svg.innerHTML = '';
+
+  // 背景：直纹
+  const grid = document.createElementNS('http://www.w3.org/2000/svg','g');
+  grid.setAttribute('class','grid');
+  for(let y=40;y<H;y+=40){
+    const ln = document.createElementNS('http://www.w3.org/2000/svg','line');
+    ln.setAttribute('x1',0); ln.setAttribute('x2',W);
+    ln.setAttribute('y1',y); ln.setAttribute('y2',y);
+    grid.appendChild(ln);
+  }
+  svg.appendChild(grid);
+
+  // 师承连接（实线）
+  const linksG = document.createElementNS('http://www.w3.org/2000/svg','g');
+  CHEFS.forEach(c=>{
+    if(!c.master) return;
+    if(c.external) return;
+    const a = POS[c.master], b = POS[c.id];
+    if(!a||!b) return;
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    const mx = (a.x+b.x)/2;
+    const d = `M ${a.x} ${a.y} C ${mx} ${a.y}, ${mx} ${b.y}, ${b.x} ${b.y}`;
+    path.setAttribute('d',d);
+    path.setAttribute('class','link'+(activeId && (c.id===activeId||c.master===activeId||isAncestor(c.id,activeId)||isAncestor(activeId,c.id)) ? '' : (activeId?' dim':'')));
+    path.setAttribute('data-pair',`${c.master}-${c.id}`);
+    linksG.appendChild(path);
+  });
+
+  // 跨派连接（虚线红）
+  CROSS_LINKS.forEach(cl=>{
+    const a = POS[cl.from], b = POS[cl.to];
+    if(!a||!b) return;
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    const my = (a.y+b.y)/2 + 30;
+    const d = `M ${a.x} ${a.y} Q ${(a.x+b.x)/2} ${my}, ${b.x} ${b.y}`;
+    path.setAttribute('d',d);
+    path.setAttribute('class','link cross'+(activeId && activeId!==cl.from && activeId!==cl.to ? ' dim' : ''));
+    linksG.appendChild(path);
+  });
+
+  svg.appendChild(linksG);
+
+  // 节点
+  const nodesG = document.createElementNS('http://www.w3.org/2000/svg','g');
+  CHEFS.forEach(c=>{
+    const p = POS[c.id]; if(!p) return;
+    const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+    g.setAttribute('class','node gen'+c.gen + (activeId===c.id?' active':'') + ((!c.external && !matches(c) && !onlyCrossPass(c))?' dim':''));
+    g.setAttribute('transform',`translate(${p.x},${p.y})`);
+
+    const r = c.gen===1 ? 22 : (c.external?12:15);
+    const circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    circle.setAttribute('r',r);
+    circle.setAttribute('fill', c.external ? 'var(--paper-2)' : genColor(c.gen));
+    if(c.external) circle.setAttribute('stroke-dasharray','2.5 2');
+    g.appendChild(circle);
+
+    // 跨派标记
+    if(c.crossNote){
+      const ring = document.createElementNS('http://www.w3.org/2000/svg','circle');
+      ring.setAttribute('r',r+5);
+      ring.setAttribute('fill','none');
+      ring.setAttribute('stroke','var(--vermillion)');
+      ring.setAttribute('stroke-width','1');
+      ring.setAttribute('stroke-dasharray','2 2');
+      g.appendChild(ring);
+    }
+
+    const text = document.createElementNS('http://www.w3.org/2000/svg','text');
+    text.setAttribute('y', r+14);
+    text.textContent = c.name;
+    text.setAttribute('fill', c.external ? 'var(--ink-soft)' : 'var(--ink)');
+    g.appendChild(text);
+
+    // 第一代：在圆内显示首字
+    if(c.gen===1){
+      const initial = document.createElementNS('http://www.w3.org/2000/svg','text');
+      initial.setAttribute('y',5);
+      initial.setAttribute('fill','var(--paper)');
+      initial.setAttribute('style','font-size:14px;font-weight:700');
+      initial.textContent = c.name[0];
+      g.appendChild(initial);
+    }
+
+    g.addEventListener('mouseenter',(e)=>showTip(e,c));
+    g.addEventListener('mouseleave',hideTip);
+    g.addEventListener('mousemove',moveTip);
+    g.addEventListener('click',()=>openDrawer(c.id));
+
+    nodesG.appendChild(g);
+  });
+  svg.appendChild(nodesG);
+}
+
+// 当 onlyCross 启用时，让外援也通过过滤
+function onlyCrossPass(c){
+  if(!onlyCross) return false;
+  if(c.external) return true;
+  if(c.crossNote) return true;
+  return false;
+}
+
+function isAncestor(ancId, descId){
+  let cur = CHEFS.find(c=>c.id===descId);
+  while(cur && cur.master){
+    if(cur.master===ancId) return true;
+    cur = CHEFS.find(c=>c.id===cur.master);
+  }
+  return false;
+}
+
+/* ============ 提示 ============ */
+const tip = document.getElementById('tip');
+const stage = document.getElementById('stage');
+function showTip(e,c){
+  tip.innerHTML = `
+    <strong>${c.name}　<span style="color:var(--vermillion);font-family:var(--mono);font-size:10px">G${c.gen}</span></strong>
+    <div class="meta">${c.position} · ${c.years} 年</div>
+    <div class="meta">${c.city} · ${c.restaurant}</div>
+    ${c.crossNote?`<div style="color:var(--vermillion);margin-top:4px;font-size:10px">※ ${c.crossNote}</div>`:''}
+  `;
+  tip.style.opacity = 1;
+  moveTip(e);
+}
+function moveTip(e){
+  const rect = stage.getBoundingClientRect();
+  let x = e.clientX - rect.left + 14;
+  let y = e.clientY - rect.top + 14;
+  if(x + 250 > rect.width) x -= 270;
+  if(y + 90 > rect.height) y -= 110;
+  tip.style.left = x+'px';
+  tip.style.top = y+'px';
+}
+function hideTip(){ tip.style.opacity = 0; }
+
+/* ============ 抽屉 ============ */
+function getChain(id){
+  const chain = [];
+  let cur = CHEFS.find(c=>c.id===id);
+  while(cur){
+    chain.unshift(cur);
+    cur = cur.master ? CHEFS.find(c=>c.id===cur.master) : null;
+  }
+  return chain;
+}
+
+function openDrawer(id){
+  activeId = id;
+  const c = CHEFS.find(x=>x.id===id);
+  if(!c) return;
+  const chain = getChain(id);
+  const body = document.getElementById('drawerBody');
+  body.innerHTML = `
+    <div class="stamp-big">${c.name[0]}</div>
+    <div class="d-name">${c.name}</div>
+    <div class="d-en">GEN ${c.gen} · ${c.lineage.toUpperCase()} LINEAGE</div>
+    <div class="d-tags">
+      <span class="vmf">${c.position}</span>
+      <span>${c.city}</span>
+      <span>${c.restaurant}</span>
+      <span>${c.years} 年</span>
+      ${c.crossNote?'<span style="background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)">跨派学艺</span>':''}
+    </div>
+
+    <div class="d-section">
+      <h6>师承链 LINEAGE CHAIN</h6>
+      <div class="d-chain">
+        ${chain.map((p,i)=>`
+          ${i>0?'<span class="arrow">▶</span>':''}
+          <span class="${p.id===id?'me':''}">${p.name}</span>
+        `).join('')}
+      </div>
+    </div>
+
+    ${c.signature && c.signature.length ? `
+      <div class="d-section">
+        <h6>招牌菜 SIGNATURE</h6>
+        <div class="d-dishes">${c.signature.map(s=>`<span>${s}</span>`).join('')}</div>
+      </div>
+    `:''}
+
+    <div class="d-section">
+      <h6>履历 BIO</h6>
+      <div class="d-bio">${c.bio||'—'}</div>
+    </div>
+
+    ${c.crossNote ? `
+      <div class="d-section">
+        <h6>跨派记录 CROSS-LINEAGE</h6>
+        <div class="d-bio" style="color:var(--vermillion-deep)">※ ${c.crossNote}</div>
+      </div>
+    `:''}
+  `;
+  document.getElementById('drawer').classList.add('open');
+  render();
+}
+function closeDrawer(){
+  document.getElementById('drawer').classList.remove('open');
+  activeId = null;
+  render();
+}
+
+/* ============ 工具栏交互 ============ */
+document.querySelectorAll('.chip[data-gen]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.chip[data-gen]').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    filterGen = btn.dataset.gen;
+    render();
+  });
+});
+document.getElementById('crossBtn').addEventListener('click',(e)=>{
+  onlyCross = !onlyCross;
+  e.target.classList.toggle('on', onlyCross);
+  render();
+});
+document.getElementById('q').addEventListener('input',(e)=>{
+  query = e.target.value.trim();
+  render();
+});
+
+render();
+</script>
+</body>
+</html>

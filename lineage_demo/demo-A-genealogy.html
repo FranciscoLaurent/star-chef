@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>师承谱 · Demo A · 古籍宗谱版</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700&family=JetBrains+Mono:ital,wght@0,300..600&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ede8db;
+    --paper-2:#e3dcc8;
+    --paper-3:#d8cfb6;
+    --ink:#12100e;
+    --ink-soft:#3a3530;
+    --vermillion:#ca6c52;
+    --vermillion-deep:#a3503b;
+    --moss:#4a5a3f;
+    --gold:#a67c00;
+    --dust:#8b8270;
+    --rule:rgba(18,16,14,.12);
+    --serif:'Fraunces','Noto Serif SC',serif;
+    --songti:'Noto Serif SC','Fraunces',serif;
+    --mono:'JetBrains Mono',monospace;
+    --sans:'Instrument Sans',sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    background-image:
+      radial-gradient(rgba(18,16,14,.025) 1px,transparent 1px),
+      radial-gradient(rgba(202,108,82,.025) 1px,transparent 1px);
+    background-size:22px 22px,38px 38px;background-position:0 0,11px 11px;
+    min-height:100vh;
+  }
+  .top{
+    display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+    padding:26px 36px 18px;border-bottom:1px solid var(--ink);
+  }
+  .top h1{font-family:var(--serif);font-weight:500;font-size:32px;font-variation-settings:"opsz" 144}
+  .top h1 em{font-style:italic;color:var(--vermillion)}
+  .top .crumb{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase}
+
+  /* 整体三栏 */
+  .layout{display:grid;grid-template-columns:240px 1fr 380px;min-height:calc(100vh - 80px)}
+
+  /* ============ 左：家族目录（钢印列表） ============ */
+  .families{
+    border-right:1px solid var(--ink);padding:24px 0;
+    background:linear-gradient(180deg,transparent,rgba(216,207,182,.4));
+  }
+  .families h6{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--dust);
+    text-transform:uppercase;padding:0 24px 14px;
+  }
+  .fam{
+    display:grid;grid-template-columns:36px 1fr auto;gap:10px;align-items:center;
+    padding:14px 24px;cursor:pointer;border-top:1px solid var(--rule);
+    transition:background .25s,padding-left .25s;
+  }
+  .fam:last-child{border-bottom:1px solid var(--rule)}
+  .fam:hover{background:rgba(202,108,82,.06);padding-left:30px}
+  .fam.active{background:var(--ink);color:var(--paper)}
+  .fam.active .fam-stamp{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  .fam.active .fam-meta{color:rgba(237,232,219,.65)}
+  .fam-stamp{
+    width:32px;height:32px;border:1.4px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:16px;background:var(--paper);
+    position:relative;
+  }
+  .fam-stamp::after{
+    content:"";position:absolute;inset:-3px;border:1px dashed rgba(18,16,14,.3);
+  }
+  .fam-name{font-family:var(--serif);font-size:16px;font-variation-settings:"opsz" 144}
+  .fam-name span{display:block;font-family:var(--mono);font-size:10px;color:inherit;opacity:.7;letter-spacing:.1em;margin-top:2px}
+  .fam-meta{font-family:var(--mono);font-size:11px;color:var(--ink-soft);text-align:right}
+  .fam-meta strong{display:block;font-family:var(--serif);font-size:18px;color:var(--vermillion);font-style:italic}
+
+  /* ============ 中：宗谱主画面 ============ */
+  .main{padding:30px 40px 60px;overflow-y:auto;max-height:calc(100vh - 80px)}
+  .pedigree{
+    background:
+      linear-gradient(rgba(18,16,14,.04) 1px,transparent 1px) 0 0/100% 36px,
+      var(--paper-2);
+    border:1.5px solid var(--ink);position:relative;padding:36px 28px 28px;
+    box-shadow:6px 6px 0 var(--ink);
+  }
+  .pedigree::before{
+    content:"";position:absolute;inset:6px;border:1px solid rgba(18,16,14,.18);
+    pointer-events:none;
+  }
+  .pedigree-header{
+    display:flex;align-items:flex-end;justify-content:space-between;gap:18px;
+    padding-bottom:18px;margin-bottom:8px;border-bottom:1.5px solid var(--ink);
+    position:relative;
+  }
+  .pedigree-header::after{
+    content:"";position:absolute;left:0;right:0;bottom:-5px;border-bottom:1px solid var(--ink);
+  }
+  .pedigree-title{
+    font-family:var(--songti);font-weight:700;font-size:36px;letter-spacing:.18em;color:var(--ink);
+  }
+  .pedigree-title em{
+    color:var(--vermillion);font-style:normal;
+    background:var(--vermillion);color:var(--paper);
+    padding:2px 10px;margin-right:8px;font-family:var(--songti);
+  }
+  .pedigree-sub{
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--ink-soft);
+    text-align:right;
+  }
+  .pedigree-sub div{margin-bottom:4px}
+
+  /* 世代行 */
+  .gen-row{
+    display:grid;grid-template-columns:108px 1fr;align-items:start;gap:24px;
+    padding:22px 0;border-bottom:1px dashed rgba(18,16,14,.18);
+  }
+  .gen-row:last-child{border-bottom:0}
+  .gen-label{
+    border-right:1.5px solid var(--ink);padding:6px 14px 6px 4px;text-align:right;
+    position:relative;
+  }
+  .gen-label .num{
+    font-family:var(--serif);font-style:italic;font-variation-settings:"opsz" 144;
+    font-size:42px;line-height:.95;color:var(--vermillion);
+  }
+  .gen-label .zh{
+    font-family:var(--songti);font-weight:500;font-size:13px;
+    letter-spacing:.18em;color:var(--ink);margin-top:4px;
+  }
+  .gen-label .en{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--dust);
+    margin-top:4px;text-transform:uppercase;
+  }
+
+  .gen-people{display:flex;flex-wrap:wrap;gap:18px}
+  .person{
+    display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;
+    padding:10px 14px 10px 10px;background:var(--paper);
+    border:1px solid rgba(18,16,14,.18);min-width:212px;cursor:pointer;
+    position:relative;transition:transform .2s,box-shadow .2s,border-color .2s;
+  }
+  .person:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--vermillion);border-color:var(--ink)}
+  .person.cur{background:var(--ink);color:var(--paper);border-color:var(--ink);box-shadow:6px 6px 0 var(--vermillion)}
+  .person.cur .p-meta{color:rgba(237,232,219,.7)}
+  .person .p-portrait{
+    width:42px;height:54px;border:1px solid var(--ink);
+    display:grid;place-items:center;background:var(--paper-3);
+    position:relative;
+  }
+  .person.cur .p-portrait{background:var(--paper);border-color:var(--paper)}
+  .person .p-portrait::after{
+    content:"";position:absolute;inset:-3px;border:1px solid rgba(18,16,14,.25);
+  }
+  .person.cur .p-portrait::after{border-color:rgba(237,232,219,.3)}
+  .person .p-portrait span{
+    font-family:var(--songti);font-size:22px;font-weight:700;color:var(--ink);
+  }
+  .person .p-name{font-family:var(--serif);font-size:18px;font-weight:500;font-variation-settings:"opsz" 144;line-height:1.1}
+  .person .p-meta{
+    font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--ink-soft);
+    margin-top:5px;
+  }
+  .person.cross::before{
+    content:"※";position:absolute;top:-2px;right:6px;color:var(--vermillion);font-family:var(--songti);font-size:18px;
+    line-height:1;text-shadow:0 0 0 var(--paper);
+  }
+  .person.cur.cross::before{color:var(--gold)}
+
+  /* 师徒连线指示（在每个 person 卡左侧贴一条短竖线） */
+  .person::after{
+    content:"";position:absolute;left:-9px;top:50%;width:7px;height:1px;background:var(--ink);opacity:.35;
+  }
+
+  .legend{
+    display:flex;flex-wrap:wrap;gap:14px 28px;padding:14px 20px;margin-top:20px;
+    background:var(--paper);border:1px dashed rgba(18,16,14,.3);
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--ink-soft);
+  }
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .legend .lg-stamp{display:inline-block;width:14px;height:14px;border:1px solid var(--ink);background:var(--paper-3);position:relative}
+  .legend .lg-stamp.v{background:var(--ink)}
+  .legend .lg-cross{color:var(--vermillion);font-family:var(--songti);font-size:14px}
+
+  /* ============ 右：人物详情 ============ */
+  .detail{
+    border-left:1px solid var(--ink);padding:30px 28px;
+    background:linear-gradient(180deg,var(--paper-2),var(--paper));
+    overflow-y:auto;max-height:calc(100vh - 80px);
+  }
+  .d-stamp{
+    display:inline-grid;place-items:center;width:60px;height:60px;
+    background:var(--vermillion);color:var(--paper);
+    font-family:var(--songti);font-weight:700;font-size:30px;
+    margin-bottom:14px;position:relative;
+  }
+  .d-stamp::after{
+    content:"";position:absolute;inset:-4px;border:1px solid var(--vermillion);opacity:.5;
+  }
+  .d-name{font-family:var(--songti);font-weight:700;font-size:30px;letter-spacing:.08em;line-height:1}
+  .d-name em{font-style:italic;color:var(--vermillion);font-family:var(--serif);font-variation-settings:"opsz" 144;font-size:.7em;margin-left:8px}
+  .d-pos{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--ink-soft);margin-top:8px;text-transform:uppercase}
+  .d-tags{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 24px}
+  .d-tag{
+    font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+    padding:4px 9px;border:1px solid var(--rule);
+  }
+  .d-tag.verified{background:var(--moss);color:var(--paper);border-color:var(--moss)}
+  .d-tag.cross{background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)}
+
+  .d-section{padding:18px 0;border-top:1px solid var(--rule)}
+  .d-section h6{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dust);
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .d-section p{font-family:var(--serif);font-size:14.5px;line-height:1.75}
+  .d-section p em{font-style:italic;color:var(--vermillion)}
+
+  /* 时间线 */
+  .d-timeline{position:relative;padding-left:18px;margin-top:6px}
+  .d-timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--rule)}
+  .d-tl{position:relative;padding:0 0 14px 14px}
+  .d-tl::before{content:"";position:absolute;left:-18px;top:7px;width:11px;height:11px;border:2px solid var(--ink);background:var(--paper);border-radius:50%}
+  .d-tl.cur::before{background:var(--vermillion);border-color:var(--vermillion);box-shadow:0 0 0 4px rgba(202,108,82,.18)}
+  .d-tl .gen{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;color:var(--dust);text-transform:uppercase}
+  .d-tl .who{font-family:var(--serif);font-size:15px;line-height:1.3;margin-top:2px}
+  .d-tl .who em{color:var(--vermillion);font-style:italic}
+  .d-tl .meta{font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-top:2px}
+
+  .dish{display:inline-block;font-family:var(--serif);font-size:13px;padding:5px 11px;background:var(--paper);border:1px solid var(--rule);margin:0 4px 6px 0}
+
+  .cross-note{
+    margin-top:10px;padding:12px 14px;border:1px dashed var(--vermillion);
+    background:rgba(202,108,82,.06);font-family:var(--serif);font-size:13.5px;line-height:1.6;
+  }
+  .cross-note strong{color:var(--vermillion)}
+
+  @media(max-width:980px){
+    .layout{grid-template-columns:1fr}
+    .families,.detail{border:none;border-bottom:1px solid var(--ink);max-height:none}
+    .families{display:flex;overflow-x:auto;padding:14px 18px}
+    .families h6{display:none}
+    .fam{flex:0 0 auto;border:1px solid var(--rule);margin-right:8px;border-top:1px solid var(--rule)!important}
+    .pedigree-title{font-size:24px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>数字 <em>师承谱</em> · Demo A</h1>
+  <div class="crumb">古籍宗谱版 / Genealogy Edition</div>
+</header>
+
+<div class="layout">
+  <!-- 左：家族目录 -->
+  <aside class="families">
+    <h6>家 派 目 录</h6>
+    <div id="famList"></div>
+  </aside>
+
+  <!-- 中：宗谱主画面 -->
+  <main class="main">
+    <div class="pedigree" id="pedigree">
+      <div class="pedigree-header">
+        <div class="pedigree-title" id="pTitle"><em>张</em>派宗谱</div>
+        <div class="pedigree-sub" id="pSub">
+          <div>川菜 · 5 代 · 12 人</div>
+          <div>开派祖师 张德海</div>
+        </div>
+      </div>
+      <div id="genRows"></div>
+      <div class="legend">
+        <span><span class="lg-stamp v"></span>已认证师承</span>
+        <span><span class="lg-stamp"></span>待核实</span>
+        <span><span class="lg-cross">※</span>跨派学艺</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- 右：人物详情 -->
+  <aside class="detail" id="detail"></aside>
+</div>
+
+<script>
+// ===== 仅渲染 4 个家族（数据子集，足够展示思路） =====
+const CHEFS = [
+  // 张派 川菜
+  { id:'c001', name:'张德海', gen:1, master:null, lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'行政总厨', years:24, verified:true, signature:['麻婆豆腐','水煮鱼','回锅肉','宫保鸡丁'], bio:'川菜张派开派祖师，师承成都老字号，24 年灶台功力，带徒 11 人。'},
+  { id:'c002', name:'陈志强', gen:2, master:'c001', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'厨师长', years:18, verified:true, signature:['宫保鸡丁','鱼香肉丝'], bio:'张德海大弟子，擅传统川菜小炒。'},
+  { id:'c003', name:'王秀芳', gen:2, master:'c001', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'厨师长', years:16, verified:true, signature:['毛血旺','辣子鸡'], bio:'重庆分支带头人，融合温和麻辣与重油重辣。'},
+  { id:'c004', name:'刘小军', gen:3, master:'c002', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'炒锅师傅', years:8, verified:false, signature:['水煮肉片'], bio:'陈志强徒弟，新生代川菜师傅。'},
+  { id:'c005', name:'杨国华', gen:3, master:'c002', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'炒锅师傅', years:10, verified:true, signature:['夫妻肺片','棒棒鸡'], bio:'凉菜热菜皆精。'},
+  { id:'c006', name:'罗建军', gen:3, master:'c003', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'炒锅师傅', years:9, verified:true, signature:['酸菜鱼'], bio:'王秀芳大弟子。'},
+  { id:'c007', name:'何静', gen:4, master:'c004', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'砧板师傅', years:6, verified:false, signature:['蒜泥白肉'], bio:'刘小军徒弟，砧板功夫见长。'},
+  { id:'c008', name:'唐云飞', gen:4, master:'c005', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'炒锅师傅', years:7, verified:true, signature:['干煸四季豆'], bio:'杨国华徒弟。'},
+  { id:'c009', name:'彭小波', gen:4, master:'c006', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'砧板师傅', years:5, verified:false, signature:['毛血旺'], bio:'罗建军徒弟。'},
+  { id:'c010', name:'袁海涛', gen:5, master:'c007', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'学徒', years:2, verified:false, signature:[], bio:'何静徒弟，刚入行。'},
+  { id:'c011', name:'曾丽', gen:5, master:'c008', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'学徒', years:3, verified:false, signature:['炝炒土豆丝'], bio:'唐云飞徒弟。'},
+  { id:'c012', name:'雷明', gen:5, master:'c009', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'学徒', years:2, verified:false, signature:[], bio:'彭小波徒弟。'},
+  // 粤派
+  { id:'c013', name:'梁润根', gen:1, master:null, lineage:'liang', cuisine:'粤', city:'广州', restaurant:'半岛珍宝舫', position:'行政总厨', years:28, verified:true, signature:['白切鸡','烧鹅','虾饺'], bio:'粤菜梁派开派祖师，香港学艺回穗，28 年功底。'},
+  { id:'c014', name:'黄振华', gen:2, master:'c013', lineage:'liang', cuisine:'粤', city:'深圳', restaurant:'鹏城酒家', position:'行政总厨', years:20, verified:true, signature:['蜜汁叉烧'], bio:'梁润根大弟子，深圳粤菜代表。'},
+  { id:'c015', name:'何丽萍', gen:2, master:'c013', lineage:'liang', cuisine:'粤', city:'广州', restaurant:'陶陶居', position:'点心主管', years:15, verified:true, signature:['流沙包','虾饺'], bio:'梁派点心方向。'},
+  { id:'c022', name:'马国明', gen:4, master:'c034', lineage:'liang', cuisine:'粤', city:'香港', restaurant:'莲香楼', position:'炒锅师傅', years:11, verified:true, signature:['清蒸石斑'], bio:'香港粤菜师傅，曾赴扬州向淮扬周慕白学刀工。', crossNote:'曾赴扬州向淮扬周慕白学刀工'},
+  // 鲁派
+  { id:'c024', name:'孔繁森', gen:1, master:null, lineage:'kong', cuisine:'鲁', city:'济南', restaurant:'燕喜堂', position:'行政总厨', years:30, verified:true, signature:['糖醋鲤鱼','九转大肠'], bio:'鲁菜孔派开派祖师。'},
+  { id:'c025', name:'孟宪东', gen:2, master:'c024', lineage:'kong', cuisine:'鲁', city:'济南', restaurant:'聚丰德', position:'行政总厨', years:22, verified:true, signature:['葱烧海参'], bio:'孔繁森大弟子。'},
+  { id:'c027', name:'曾庆海', gen:3, master:'c002', lineage:'kong', cuisine:'鲁', city:'济南', restaurant:'聚丰德', position:'厨师长', years:16, verified:true, signature:['九转大肠'], bio:'鲁菜师傅，曾入川向张派陈志强学川菜调味。', crossNote:'曾入川向张派陈志强学川菜调味'},
+  // 淮扬派
+  { id:'c034', name:'周慕白', gen:1, master:null, lineage:'zhou', cuisine:'淮扬', city:'扬州', restaurant:'冶春茶社', position:'行政总厨', years:30, verified:true, signature:['狮子头','文思豆腐'], bio:'淮扬周派开派祖师，文思豆腐切到发丝级。'},
+  { id:'c035', name:'李文清', gen:2, master:'c034', lineage:'zhou', cuisine:'淮扬', city:'上海', restaurant:'绿波廊', position:'行政总厨', years:22, verified:true, signature:['松鼠桂鱼','盐水鸭'], bio:'周慕白大弟子。'},
+  { id:'c040', name:'郑国良', gen:4, master:'c013', lineage:'zhou', cuisine:'淮扬', city:'扬州', restaurant:'冶春茶社', position:'炒锅师傅', years:11, verified:true, signature:['文思豆腐'], bio:'淮扬师傅，曾向粤菜梁润根学烧腊。', crossNote:'曾向粤菜梁润根学烧腊'},
+];
+const FAMILIES = [
+  { key:'zhang', stamp:'张', name:'张派 · 川', en:'ZHANG', cuisine:'川'},
+  { key:'liang', stamp:'梁', name:'梁派 · 粤', en:'LIANG', cuisine:'粤'},
+  { key:'kong',  stamp:'孔', name:'孔派 · 鲁', en:'KONG',  cuisine:'鲁'},
+  { key:'zhou',  stamp:'周', name:'周派 · 淮扬', en:'ZHOU', cuisine:'淮扬'},
+];
+const GEN_ZH = ['','一','二','三','四','五','六','七'];
+const GEN_EN = ['','I','II','III','IV','V','VI','VII'];
+
+let curFamily = 'zhang';
+let curId = 'c001';
+
+function familyChefs(key){ return CHEFS.filter(c=>c.lineage===key); }
+function getChef(id){ return CHEFS.find(c=>c.id===id); }
+function getMaster(id){ const c = getChef(id); return c && c.master ? getChef(c.master) : null; }
+function getLineageChain(id){
+  const chain=[];let cur=getChef(id);
+  while(cur){ chain.push(cur); cur = cur.master ? getChef(cur.master) : null; if(chain.length>10) break; }
+  return chain;
+}
+
+function renderFamilies(){
+  const el = document.getElementById('famList');
+  el.innerHTML = FAMILIES.map(f=>{
+    const list = familyChefs(f.key);
+    const gens = Math.max(...list.map(c=>c.gen));
+    return `<div class="fam ${f.key===curFamily?'active':''}" data-key="${f.key}">
+      <div class="fam-stamp">${f.stamp}</div>
+      <div>
+        <div class="fam-name">${f.name}<span>${f.en}</span></div>
+      </div>
+      <div class="fam-meta"><strong>${list.length}</strong>${gens} 代</div>
+    </div>`;
+  }).join('');
+  el.querySelectorAll('.fam').forEach(b=>b.addEventListener('click',()=>{
+    curFamily = b.dataset.key;
+    const root = familyChefs(curFamily).find(c=>c.gen===1);
+    if(root) curId = root.id;
+    renderAll();
+  }));
+}
+
+function renderPedigree(){
+  const f = FAMILIES.find(x=>x.key===curFamily);
+  const list = familyChefs(curFamily);
+  const maxGen = Math.max(...list.map(c=>c.gen));
+  document.getElementById('pTitle').innerHTML = `<em>${f.stamp}</em>派宗谱`;
+  document.getElementById('pSub').innerHTML = `<div>${f.cuisine}菜 · ${maxGen} 代 · ${list.length} 人</div><div>开派祖师 ${list.find(c=>c.gen===1)?.name||''}</div>`;
+
+  const rows = [];
+  for(let g=1; g<=maxGen; g++){
+    const ppl = list.filter(c=>c.gen===g);
+    if(!ppl.length) continue;
+    rows.push(`<div class="gen-row">
+      <div class="gen-label">
+        <div class="num">${GEN_EN[g]||g}</div>
+        <div class="zh">第 ${GEN_ZH[g]||g} 代</div>
+        <div class="en">GEN ${g}</div>
+      </div>
+      <div class="gen-people">
+        ${ppl.map(p=>{
+          const isCross = !!p.crossNote || (p.master && getChef(p.master)?.lineage !== p.lineage);
+          return `<div class="person ${p.id===curId?'cur':''} ${isCross?'cross':''}" data-id="${p.id}">
+            <div class="p-portrait"><span>${p.name[0]}</span></div>
+            <div>
+              <div class="p-name">${p.name}</div>
+              <div class="p-meta">${p.position} · ${p.city} · ${p.years}年</div>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`);
+  }
+  document.getElementById('genRows').innerHTML = rows.join('');
+  document.querySelectorAll('.person').forEach(b=>b.addEventListener('click',()=>{
+    curId = b.dataset.id;
+    renderAll();
+  }));
+}
+
+function renderDetail(){
+  const c = getChef(curId);
+  if(!c){ document.getElementById('detail').innerHTML=''; return; }
+  const f = FAMILIES.find(x=>x.key===c.lineage);
+  const chain = getLineageChain(c.id);
+  document.getElementById('detail').innerHTML = `
+    <div class="d-stamp">${f.stamp}</div>
+    <div class="d-name">${c.name}<em>Gen ${c.gen}</em></div>
+    <div class="d-pos">${f.name} · ${c.position}</div>
+    <div class="d-tags">
+      <span class="d-tag ${c.verified?'verified':''}">${c.verified?'已认证':'待核实'}</span>
+      <span class="d-tag">${c.city}</span>
+      <span class="d-tag">${c.years} 年厨龄</span>
+      ${c.crossNote?'<span class="d-tag cross">跨派学艺</span>':''}
+    </div>
+    <div class="d-section">
+      <h6>师承脉络 · LINEAGE CHAIN</h6>
+      <div class="d-timeline">
+        ${chain.slice().reverse().map(p=>{
+          const isCur = p.id===c.id;
+          return `<div class="d-tl ${isCur?'cur':''}">
+            <div class="gen">第 ${GEN_ZH[p.gen]||p.gen} 代</div>
+            <div class="who">${isCur?`<em>${p.name}</em>`:p.name}</div>
+            <div class="meta">${p.position} · ${p.restaurant}</div>
+          </div>`;
+        }).join('')}
+      </div>
+      ${c.crossNote?`<div class="cross-note"><strong>跨派传承｜</strong>${c.crossNote}——派系融合在匹配评分时会被额外加权。</div>`:''}
+    </div>
+    <div class="d-section">
+      <h6>拿手菜 · SIGNATURE</h6>
+      ${c.signature.length?c.signature.map(d=>`<span class="dish">${d}</span>`).join(''):'<p style="color:var(--dust);font-size:13px">暂无记录</p>'}
+    </div>
+    <div class="d-section">
+      <h6>简介 · BIO</h6>
+      <p>${c.bio}</p>
+    </div>
+    <div class="d-section">
+      <h6>现任职 · CURRENT</h6>
+      <p>${c.restaurant} · ${c.city}</p>
+    </div>
+  `;
+}
+
+function renderAll(){ renderFamilies(); renderPedigree(); renderDetail(); }
+renderAll();
+</script>
+
+</body>
+</html>

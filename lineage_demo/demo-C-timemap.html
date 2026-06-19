@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>师承谱 · Demo C · 时间地图版</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700&family=JetBrains+Mono:ital,wght@0,300..600&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ede8db; --paper-2:#e3dcc8; --paper-3:#d8cfb6;
+    --ink:#12100e; --ink-soft:#3a3530;
+    --vermillion:#ca6c52; --vermillion-deep:#a3503b;
+    --moss:#4a5a3f; --gold:#a67c00; --dust:#8b8270;
+    --rule:rgba(18,16,14,.12);
+    --serif:'Fraunces','Noto Serif SC',serif;
+    --songti:'Noto Serif SC','Fraunces',serif;
+    --mono:'JetBrains Mono',monospace;
+    --sans:'Instrument Sans',sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    background-image:
+      radial-gradient(rgba(18,16,14,.025) 1px,transparent 1px),
+      radial-gradient(rgba(202,108,82,.025) 1px,transparent 1px);
+    background-size:22px 22px,38px 38px;background-position:0 0,11px 11px;
+    min-height:100vh;
+  }
+  .top{
+    display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+    padding:26px 36px 18px;border-bottom:1px solid var(--ink);
+  }
+  .top h1{font-family:var(--serif);font-weight:500;font-size:32px;font-variation-settings:"opsz" 144}
+  .top h1 em{font-style:italic;color:var(--vermillion)}
+  .top .crumb{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase}
+
+  /* 工具栏 */
+  .toolbar{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    padding:14px 36px;border-bottom:1px solid var(--rule);
+    background:rgba(216,207,182,.4);
+  }
+  .toolbar label{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase}
+  .chip{
+    font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+    padding:5px 10px;border:1px solid var(--ink);background:transparent;cursor:pointer;
+    transition:all .2s;
+  }
+  .chip:hover{background:var(--ink);color:var(--paper)}
+  .chip.on{background:var(--ink);color:var(--paper)}
+  .legend{display:flex;align-items:center;gap:14px;margin-left:auto}
+  .legend-item{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;color:var(--ink-soft)}
+
+  /* 地图主区 */
+  .stage{
+    position:relative;height:calc(100vh - 80px - 56px);overflow:auto;
+    padding:30px 36px 60px;
+  }
+  .timemap{
+    position:relative;width:1500px;min-height:520px;
+    background:
+      linear-gradient(180deg, transparent 0, transparent calc(100% - 1px), rgba(18,16,14,.15) 100%),
+      repeating-linear-gradient(0deg, transparent 0, transparent 79px, rgba(18,16,14,.06) 80px),
+      var(--paper);
+    border:1.5px solid var(--ink);
+  }
+
+  /* 时间轴标尺 */
+  .axis-x{
+    position:absolute;top:0;left:200px;right:20px;height:38px;
+    border-bottom:1.4px solid var(--ink);background:var(--paper-2);
+  }
+  .tick{
+    position:absolute;top:0;width:1px;height:100%;background:rgba(18,16,14,.2);
+  }
+  .tick.major{background:var(--ink)}
+  .tick-label{
+    position:absolute;top:8px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+    color:var(--ink-soft);transform:translateX(-50%);
+  }
+  .tick.major .tick-label{font-weight:700;color:var(--ink);font-size:11px}
+
+  /* 家族行 */
+  .family-rows{padding-top:38px}
+  .frow{
+    position:relative;height:80px;border-bottom:1px dashed rgba(18,16,14,.12);
+  }
+  .frow:nth-child(odd){background:rgba(216,207,182,.18)}
+  .flabel{
+    position:absolute;left:0;top:0;width:200px;height:100%;
+    display:flex;align-items:center;gap:10px;padding:0 16px;
+    border-right:1.4px solid var(--ink);background:var(--paper-2);z-index:2;
+  }
+  .fstamp{
+    width:34px;height:34px;border:1.4px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:17px;background:var(--paper);
+    position:relative;flex-shrink:0;
+  }
+  .fstamp::after{content:"";position:absolute;inset:-3px;border:1px dashed rgba(18,16,14,.3)}
+  .fname{font-family:var(--serif);font-size:15px;font-variation-settings:"opsz" 144}
+  .fname span{display:block;font-family:var(--mono);font-size:9.5px;color:var(--dust);letter-spacing:.12em;margin-top:2px}
+
+  /* 时间轨道 */
+  .track{position:absolute;left:200px;right:20px;top:0;height:100%}
+
+  /* 师承轨迹（线段） */
+  .traj{
+    position:absolute;height:2px;background:var(--ink-soft);
+    top:50%;transform:translateY(-50%);
+  }
+  .traj.gen1{background:var(--vermillion-deep);height:3px}
+  .traj.gen2{background:var(--vermillion);height:2.5px}
+  .traj.gen3{background:var(--gold)}
+  .traj.gen4{background:var(--moss)}
+  .traj.gen5{background:var(--dust)}
+
+  /* 厨师起点圆点 */
+  .pt{
+    position:absolute;width:14px;height:14px;border-radius:50%;
+    border:1.4px solid var(--ink);top:50%;transform:translate(-50%,-50%);
+    cursor:pointer;z-index:3;transition:transform .15s,box-shadow .15s;
+  }
+  .pt:hover{transform:translate(-50%,-50%) scale(1.4);box-shadow:0 0 0 4px rgba(202,108,82,.2)}
+  .pt.gen1{background:var(--vermillion-deep);width:18px;height:18px}
+  .pt.gen2{background:var(--vermillion)}
+  .pt.gen3{background:var(--gold)}
+  .pt.gen4{background:var(--moss)}
+  .pt.gen5{background:var(--dust)}
+  .pt.active{box-shadow:0 0 0 5px rgba(202,108,82,.35)}
+
+  /* 厨师姓名（贴在轨迹上方/下方） */
+  .pt-label{
+    position:absolute;top:-22px;left:0;transform:translateX(-50%);
+    font-family:var(--songti);font-size:11px;font-weight:500;white-space:nowrap;
+    pointer-events:none;
+  }
+  .pt.below + .pt-label{top:14px}
+
+  /* 师承连接竖线（跨家族行时） */
+  .vlink{
+    position:absolute;width:1.4px;background:var(--ink-soft);opacity:.5;
+    z-index:1;pointer-events:none;
+  }
+  .vlink.cross{
+    background:none;border-left:1.4px dashed var(--vermillion);opacity:.85;
+  }
+
+  /* 跨派标记 */
+  .pt.cross::after{
+    content:"";position:absolute;inset:-4px;border-radius:50%;
+    border:1px dashed var(--vermillion);
+  }
+
+  /* 关键事件大事记 */
+  .event{
+    position:absolute;top:38px;bottom:0;width:1.5px;background:var(--vermillion);opacity:.5;
+    pointer-events:none;
+  }
+  .event-label{
+    position:absolute;top:42px;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
+    color:var(--vermillion);transform:translateX(-50%) rotate(0);background:var(--paper);
+    padding:1px 5px;border:1px solid var(--vermillion);text-transform:uppercase;z-index:4;
+  }
+
+  /* tooltip */
+  .tip{
+    position:fixed;pointer-events:none;background:var(--ink);color:var(--paper);
+    font-family:var(--mono);font-size:11px;padding:8px 12px;letter-spacing:.04em;
+    max-width:260px;line-height:1.55;opacity:0;transition:opacity .15s;z-index:99;
+    border-left:2px solid var(--vermillion);
+  }
+  .tip strong{font-family:var(--songti);font-size:13px;display:block;margin-bottom:3px;color:#fff}
+  .tip .meta{color:rgba(237,232,219,.65);font-size:10px}
+
+  /* 抽屉 */
+  .drawer{
+    position:fixed;top:80px;right:0;bottom:0;width:380px;
+    background:var(--paper);border-left:1px solid var(--ink);
+    transform:translateX(100%);transition:transform .35s ease;
+    overflow-y:auto;padding:28px 24px 40px;z-index:50;
+    box-shadow:-8px 0 30px rgba(18,16,14,.06);
+  }
+  .drawer.open{transform:translateX(0)}
+  .drawer-close{
+    position:absolute;top:18px;right:18px;background:transparent;border:none;
+    font-family:var(--mono);font-size:14px;cursor:pointer;color:var(--ink-soft);
+  }
+  .stamp-big{
+    width:64px;height:80px;border:1.6px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:38px;background:var(--paper-2);
+    position:relative;margin-bottom:16px;
+  }
+  .stamp-big::after{content:"";position:absolute;inset:-4px;border:1px dashed rgba(18,16,14,.35)}
+  .d-name{font-family:var(--songti);font-size:30px;font-weight:700;line-height:1.1;margin-bottom:8px}
+  .d-en{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--vermillion);text-transform:uppercase;margin-bottom:18px}
+  .d-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+  .d-tags span{font-family:var(--mono);font-size:10.5px;border:1px solid var(--ink);padding:3px 9px;letter-spacing:.05em}
+  .d-tags .vmf{background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)}
+  .d-section{margin:18px 0;padding-top:14px;border-top:1px solid var(--rule)}
+  .d-section h6{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dust);text-transform:uppercase;margin-bottom:10px}
+  .d-bio{font-family:var(--serif);font-size:14px;line-height:1.75;color:var(--ink-soft)}
+  .d-meta{font-family:var(--mono);font-size:11px;color:var(--ink-soft);line-height:1.8}
+  .d-meta b{color:var(--ink);font-family:var(--serif)}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div>
+    <h1>师承 <em>谱</em>　<span style="font-family:var(--mono);font-size:12px;color:var(--dust);letter-spacing:.16em;text-transform:uppercase">Demo C · Time Map</span></h1>
+    <div class="crumb" style="margin-top:6px">川菜 / 张派 12 人 · 1985–2025 · 5 代演化</div>
+  </div>
+  <div class="crumb">TIMELINE: <strong style="color:var(--ink)">1985 ─── 2025</strong></div>
+</div>
+
+<div class="toolbar">
+  <span style="font-family:var(--serif);font-style:italic;font-size:13px;color:var(--ink-soft)">沿着时间，看一个家族如何在四十年间开枝散叶</span>
+  <div class="legend">
+    <div class="legend-item"><span style="display:inline-block;width:18px;height:3px;background:var(--vermillion-deep)"></span>第一代</div>
+    <div class="legend-item"><span style="display:inline-block;width:18px;height:2.5px;background:var(--vermillion)"></span>第二代</div>
+    <div class="legend-item"><span style="display:inline-block;width:18px;height:2px;background:var(--gold)"></span>第三代</div>
+    <div class="legend-item"><span style="display:inline-block;width:18px;height:2px;background:var(--moss)"></span>第四代</div>
+    <div class="legend-item"><span style="display:inline-block;width:18px;height:2px;background:var(--dust)"></span>第五代</div>
+    <div class="legend-item"><span style="display:inline-block;width:18px;border-top:1.4px dashed var(--vermillion)"></span>跨派学艺</div>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="timemap" id="timemap"></div>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<aside class="drawer" id="drawer">
+  <button class="drawer-close" onclick="closeDrawer()">关闭 ✕</button>
+  <div id="drawerBody"></div>
+</aside>
+
+<script>
+/* ============ 数据：12 个张派厨师 + 起始年/任职年/资历年限 ============
+   时间假设规则：startYear = 当前年(2025) - years（从业年限），endYear = 2025
+   master 的传承在 startYear 那一年发生（"出师/拜师"）
+*/
+const NOW = 2025;
+const CHEFS = [
+  { id:'c001', name:'张德海', gen:1, master:null, lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'行政总厨', years:24, signature:['麻婆豆腐','水煮鱼','回锅肉','宫保鸡丁'], bio:'川菜张派开派祖师，24 年灶台功力，带徒 11 人。', startYear:1985, foundYear:1985 },
+  { id:'c002', name:'陈志强', gen:2, master:'c001', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'厨师长', years:18, signature:['宫保鸡丁','鱼香肉丝'], bio:'张德海大弟子，宫保鸡丁的"荔枝口"调得最稳。', startYear:2007 },
+  { id:'c003', name:'王秀芳', gen:2, master:'c001', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'厨师长', years:16, signature:['毛血旺','辣子鸡'], bio:'重庆分支带头人，曾赴广州向梁派学过两年小炒。', startYear:2009, crossNote:'2012 赴广州学粤派小炒', crossYear:2012 },
+  { id:'c004', name:'刘小军', gen:3, master:'c002', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'炒锅师傅', years:8, signature:['水煮肉片'], bio:'新生代川菜师傅，对现代川菜改良有想法。', startYear:2017 },
+  { id:'c005', name:'杨国华', gen:3, master:'c002', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'炒锅师傅', years:10, signature:['夫妻肺片'], bio:'凉菜热菜皆精。', startYear:2015 },
+  { id:'c006', name:'罗建军', gen:3, master:'c003', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'炒锅师傅', years:9, signature:['酸菜鱼'], bio:'重庆本土川菜代表。曾入扬州周派学刀工半年。', startYear:2016, crossNote:'2018 入扬州学淮扬刀工', crossYear:2018 },
+  { id:'c007', name:'何静', gen:4, master:'c004', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'砧板师傅', years:6, signature:['蒜泥白肉'], bio:'砧板功夫见长，切白肉薄如蝉翼。', startYear:2019 },
+  { id:'c008', name:'唐云飞', gen:4, master:'c005', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'炒锅师傅', years:7, signature:['干煸四季豆'], bio:'擅长川菜家常味型。', startYear:2018 },
+  { id:'c009', name:'彭小波', gen:4, master:'c006', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'砧板师傅', years:5, signature:['毛血旺'], bio:'重庆分支新生代。', startYear:2020 },
+  { id:'c010', name:'袁海涛', gen:5, master:'c007', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'学徒', years:2, signature:[], bio:'刚入行一年的小学徒。', startYear:2023 },
+  { id:'c011', name:'曾丽', gen:5, master:'c008', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'学徒', years:3, signature:['炝炒土豆丝'], bio:'张派少数女学徒之一。', startYear:2022 },
+  { id:'c012', name:'雷明', gen:5, master:'c009', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'学徒', years:2, signature:[], bio:'重庆分支新生代。', startYear:2023 },
+];
+
+/* 家族行：按"分支"分组——成都本支 / 重庆分支 / 新生代 */
+const ROWS = [
+  { key:'r1', stamp:'张', name:'张派 · 成都本支', en:'CHENGDU LINE', match:c=>c.city==='成都' && c.gen<=2 },
+  { key:'r2', stamp:'川', name:'张派 · 重庆分支', en:'CHONGQING LINE', match:c=>c.city==='重庆' },
+  { key:'r3', stamp:'三', name:'第三代炒锅', en:'GEN III · WORK LINE', match:c=>c.gen===3 && c.city==='成都' },
+  { key:'r4', stamp:'四', name:'第四代砧板/炒锅', en:'GEN IV', match:c=>c.gen===4 && c.city==='成都' },
+  { key:'r5', stamp:'新', name:'第五代学徒', en:'GEN V · APPRENTICE', match:c=>c.gen===5 && c.city==='成都' },
+];
+
+/* 大事记 */
+const EVENTS = [
+  { year:1985, label:'1985 · 张派立派' },
+  { year:2008, label:'2008 · 第二代出师' },
+  { year:2018, label:'2018 · 跨派学艺高峰' },
+  { year:2023, label:'2023 · 第五代登场' },
+];
+
+const Y_START = 1980, Y_END = 2026;
+
+/* ============ 渲染 ============ */
+const map = document.getElementById('timemap');
+const TRACK_LEFT = 200; // labels width
+let TRACK_WIDTH;
+function pxFromYear(y, totalW){
+  return ((y - Y_START)/(Y_END - Y_START)) * totalW;
+}
+
+function render(){
+  map.innerHTML = '';
+  const totalW = 1500 - TRACK_LEFT - 20;
+  TRACK_WIDTH = totalW;
+
+  // 时间轴
+  const axis = document.createElement('div');
+  axis.className = 'axis-x';
+  for(let y=1980; y<=2025; y+=1){
+    const tick = document.createElement('div');
+    tick.className = 'tick' + (y%5===0?' major':'');
+    tick.style.left = pxFromYear(y,totalW) + 'px';
+    if(y%5===0){
+      const lab = document.createElement('div');
+      lab.className = 'tick-label';
+      lab.textContent = y;
+      lab.style.left = pxFromYear(y,totalW) + 'px';
+      tick.appendChild(lab);
+    }
+    axis.appendChild(tick);
+  }
+  // 大事记
+  EVENTS.forEach(ev=>{
+    const e = document.createElement('div');
+    e.className = 'event';
+    e.style.left = (TRACK_LEFT + pxFromYear(ev.year,totalW)) + 'px';
+    e.style.top = '0';
+    e.style.bottom = '0';
+    e.style.position = 'absolute';
+    map.appendChild(e);
+    const lab = document.createElement('div');
+    lab.className = 'event-label';
+    lab.textContent = ev.label;
+    lab.style.left = (TRACK_LEFT + pxFromYear(ev.year,totalW)) + 'px';
+    lab.style.top = '4px';
+    map.appendChild(lab);
+  });
+  map.appendChild(axis);
+
+  // 家族行
+  const rowsBox = document.createElement('div');
+  rowsBox.className = 'family-rows';
+
+  // 先记录所有节点位置（id → {x,y}），便于画跨行连接线
+  const nodePos = {};
+
+  ROWS.forEach((row, rowIdx)=>{
+    const r = document.createElement('div');
+    r.className = 'frow';
+    const rowY = 38 + rowIdx*80 + 40; // map内绝对Y（用于vlink）
+    r.dataset.y = rowY;
+
+    // 标签
+    const lab = document.createElement('div');
+    lab.className = 'flabel';
+    lab.innerHTML = `
+      <div class="fstamp">${row.stamp}</div>
+      <div class="fname">${row.name}<span>${row.en}</span></div>
+    `;
+    r.appendChild(lab);
+
+    // 轨道
+    const track = document.createElement('div');
+    track.className = 'track';
+
+    const list = CHEFS.filter(row.match);
+    list.forEach(c=>{
+      const x1 = pxFromYear(c.startYear, totalW);
+      const x2 = pxFromYear(NOW, totalW);
+
+      // 轨迹线：从 startYear 延伸到 NOW
+      const traj = document.createElement('div');
+      traj.className = 'traj gen'+c.gen;
+      traj.style.left = x1 + 'px';
+      traj.style.width = (x2 - x1) + 'px';
+      track.appendChild(traj);
+
+      // 起点圆点
+      const pt = document.createElement('div');
+      pt.className = 'pt gen'+c.gen + (c.crossNote?' cross':'');
+      pt.style.left = x1 + 'px';
+      pt.dataset.id = c.id;
+      pt.title = c.name;
+      pt.addEventListener('mouseenter',(e)=>showTip(e,c));
+      pt.addEventListener('mouseleave',hideTip);
+      pt.addEventListener('mousemove',moveTip);
+      pt.addEventListener('click',()=>openDrawer(c.id));
+      track.appendChild(pt);
+
+      // 姓名标签
+      const nameLab = document.createElement('div');
+      nameLab.className = 'pt-label';
+      nameLab.textContent = c.name;
+      nameLab.style.left = x1 + 'px';
+      nameLab.style.top = '50%';
+      nameLab.style.transform = 'translate(-50%, -32px)';
+      track.appendChild(nameLab);
+
+      // 跨派学艺：在 crossYear 处再画一个小红圈
+      if(c.crossYear){
+        const cx = pxFromYear(c.crossYear, totalW);
+        const crossPt = document.createElement('div');
+        crossPt.className = 'pt cross';
+        crossPt.style.cssText = `left:${cx}px;width:8px;height:8px;background:var(--vermillion);border-color:var(--vermillion-deep);box-shadow:0 0 0 3px rgba(202,108,82,.18)`;
+        crossPt.title = c.crossNote;
+        track.appendChild(crossPt);
+        // 从主轨迹到跨派点的细线
+        const xline = document.createElement('div');
+        xline.style.cssText = `position:absolute;height:0;border-top:1px dashed var(--vermillion);top:50%;left:${Math.min(x1,cx)}px;width:${Math.abs(cx-x1)}px;opacity:.7`;
+        track.appendChild(xline);
+      }
+
+      nodePos[c.id] = { x: TRACK_LEFT + x1, y: rowY };
+    });
+
+    r.appendChild(track);
+    rowsBox.appendChild(r);
+  });
+  map.appendChild(rowsBox);
+
+  // 跨行的师承连线（从 master 节点垂直/曲线连到当前节点起点）
+  CHEFS.forEach(c=>{
+    if(!c.master) return;
+    const m = CHEFS.find(x=>x.id===c.master);
+    const a = nodePos[c.master], b = nodePos[c.id];
+    if(!a || !b) return;
+    if(Math.abs(a.y - b.y) < 5) return; // 同行的不需要竖线
+
+    // 用 SVG 画曲线
+    let svg = map.querySelector('svg.connector');
+    if(!svg){
+      svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+      svg.setAttribute('class','connector');
+      svg.style.cssText = `position:absolute;left:0;top:0;width:1500px;height:520px;pointer-events:none;z-index:1`;
+      map.appendChild(svg);
+    }
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    // master 起点应该是 master 的 startYear 之后某点（这里取学徒入门 = c.startYear）
+    const fromX = TRACK_LEFT + pxFromYear(c.startYear, TRACK_WIDTH);
+    const fromY = a.y;
+    const toX = b.x;
+    const toY = b.y;
+    const cy = (fromY + toY)/2;
+    path.setAttribute('d', `M ${fromX} ${fromY} C ${fromX} ${cy}, ${toX} ${cy}, ${toX} ${toY}`);
+    path.setAttribute('stroke', 'rgba(58,53,48,.45)');
+    path.setAttribute('stroke-width','1.2');
+    path.setAttribute('fill','none');
+    path.setAttribute('stroke-dasharray','3 3');
+    svg.appendChild(path);
+  });
+
+  // 调整 timemap 高度
+  map.style.height = (38 + ROWS.length*80 + 20) + 'px';
+}
+
+/* ============ tooltip ============ */
+const tip = document.getElementById('tip');
+function showTip(e,c){
+  tip.innerHTML = `
+    <strong>${c.name}　<span style="color:var(--vermillion);font-family:var(--mono);font-size:10px">G${c.gen}</span></strong>
+    <div class="meta">${c.position} · ${c.years} 年 · 出师 ${c.startYear}</div>
+    <div class="meta">${c.city} · ${c.restaurant}</div>
+    ${c.crossNote?`<div style="color:var(--vermillion);margin-top:4px;font-size:10px">※ ${c.crossNote}</div>`:''}
+  `;
+  tip.style.opacity = 1;
+  moveTip(e);
+}
+function moveTip(e){
+  let x = e.clientX + 14, y = e.clientY + 14;
+  if(x + 280 > window.innerWidth) x -= 300;
+  if(y + 100 > window.innerHeight) y -= 120;
+  tip.style.left = x+'px';
+  tip.style.top = y+'px';
+}
+function hideTip(){ tip.style.opacity = 0; }
+
+/* ============ 抽屉 ============ */
+function getChain(id){
+  const chain = [];
+  let cur = CHEFS.find(c=>c.id===id);
+  while(cur){
+    chain.unshift(cur);
+    cur = cur.master ? CHEFS.find(c=>c.id===cur.master) : null;
+  }
+  return chain;
+}
+function openDrawer(id){
+  const c = CHEFS.find(x=>x.id===id);
+  if(!c) return;
+  document.querySelectorAll('.pt').forEach(el=>el.classList.remove('active'));
+  document.querySelector(`.pt[data-id="${id}"]`)?.classList.add('active');
+  const chain = getChain(id);
+  const body = document.getElementById('drawerBody');
+  body.innerHTML = `
+    <div class="stamp-big">${c.name[0]}</div>
+    <div class="d-name">${c.name}</div>
+    <div class="d-en">GEN ${c.gen} · ${c.lineage.toUpperCase()} · ${c.startYear}</div>
+    <div class="d-tags">
+      <span class="vmf">${c.position}</span>
+      <span>${c.city}</span>
+      <span>${c.restaurant}</span>
+      <span>${c.years} 年</span>
+      ${c.crossNote?'<span style="background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)">跨派学艺</span>':''}
+    </div>
+
+    <div class="d-section">
+      <h6>时间履历 TIMELINE</h6>
+      <div class="d-meta">
+        <b>${c.startYear}</b> · 出师 / 入行<br>
+        ${c.crossYear?`<b style="color:var(--vermillion-deep)">${c.crossYear}</b> · ${c.crossNote}<br>`:''}
+        <b>${NOW}</b> · 当前在岗，资历 ${c.years} 年
+      </div>
+    </div>
+
+    <div class="d-section">
+      <h6>师承链 LINEAGE CHAIN</h6>
+      <div style="font-family:var(--songti);font-size:13px;line-height:1.9">
+        ${chain.map((p,i)=>`
+          ${i>0?'<span style="color:var(--vermillion);font-family:var(--mono);font-size:10px">　▶　</span>':''}
+          <span style="${p.id===id?'font-weight:700;color:var(--vermillion-deep);border-bottom:1px solid var(--vermillion-deep)':''}">${p.name}<sub style="font-family:var(--mono);font-size:9px;color:var(--dust)">${p.startYear}</sub></span>
+        `).join('')}
+      </div>
+    </div>
+
+    ${c.signature && c.signature.length ? `
+      <div class="d-section">
+        <h6>招牌菜 SIGNATURE</h6>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">${c.signature.map(s=>`<span style="font-family:var(--songti);font-size:12px;background:var(--paper-3);padding:3px 8px">${s}</span>`).join('')}</div>
+      </div>
+    `:''}
+
+    <div class="d-section">
+      <h6>履历 BIO</h6>
+      <div class="d-bio">${c.bio||'—'}</div>
+    </div>
+  `;
+  document.getElementById('drawer').classList.add('open');
+}
+function closeDrawer(){
+  document.getElementById('drawer').classList.remove('open');
+  document.querySelectorAll('.pt').forEach(el=>el.classList.remove('active'));
+}
+
+render();
+window.addEventListener('resize', ()=>{ /* 当前固定 1500px，不响应 */ });
+</script>
+</body>
+</html>

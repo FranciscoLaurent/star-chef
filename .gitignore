@@ -1,0 +1,16 @@
+# 系统级
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Claude 工作目录（避免把 session 状态提交进去）
+.claude/
+
+# 临时文件
+*.bak
+*.swp
+*.tmp
+~$*
