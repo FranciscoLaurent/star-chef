@@ -286,14 +286,6 @@
   .chef-mini .info .meta{
     font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;color:var(--ink-soft);margin-top:3px;
   }
-  .chef-mini .real-tag{
-    font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;color:var(--vermillion);
-    border:1px solid var(--vermillion);padding:2px 5px;text-transform:uppercase;
-  }
-  .chef-mini .fictional-tag{
-    font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;color:var(--dust);
-    border:1px dashed var(--dust);padding:2px 5px;text-transform:uppercase;
-  }
   .school-detail .sd-nums{
     display:flex;gap:0;margin-top:18px;border-top:1.5px solid var(--ink);padding-top:14px;
   }
@@ -446,12 +438,6 @@
   }
 
   /* 真实人物角标 + 跨菜系角标 */
-  .real-badge{
-    position:absolute;bottom:6px;right:8px;
-    font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;color:var(--vermillion);
-    text-transform:uppercase;font-weight:600;
-  }
-  .person.cur .real-badge{color:var(--gold)}
   .cross-badge{
     position:absolute;top:-2px;right:6px;color:var(--vermillion);font-family:var(--songti);font-size:18px;
     line-height:1;
@@ -472,7 +458,6 @@
   .lg-pri{display:inline-block;width:14px;height:18px;background:var(--vermillion)}
   .lg-sec{display:inline-block;width:11px;height:14px;border:1.2px solid var(--ink);background:var(--paper)}
   .lg-cross{color:var(--vermillion);font-family:var(--songti);font-size:14px}
-  .lg-real{font-family:var(--mono);color:var(--vermillion);font-weight:600;letter-spacing:.16em}
 
   /* 详情面板 */
   .detail3{
@@ -505,7 +490,6 @@
     font-family:var(--mono);font-size:10px;letter-spacing:.12em;
     padding:4px 9px;border:1px solid var(--rule);
   }
-  .d-tag.real{background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)}
   .d-tag.cross{background:var(--gold);color:var(--paper);border-color:var(--gold)}
   .d-tag.school{background:var(--moss);color:var(--paper);border-color:var(--moss)}
 
@@ -602,7 +586,7 @@
       <div class="sub">三大流派 · 上河帮 / 下河帮 / 小河帮</div>
       <div class="desc">
         川菜以"<strong>一菜一格，百菜百味</strong>"著称，地域分流而成蓉派（上河帮）、渝派（下河帮）、盐帮派（小河帮）三大流派。
-        本 demo 以真实历史名厨数据，演示<strong>菜系 → 流派 → 师门</strong>三层组织模型，
+        本视图按<strong>菜系 → 流派 → 师门</strong>三层组织厨师档案，
         与"按姓氏开派"的旧模型相比，更贴合中餐传承现实。
       </div>
     </div>
@@ -636,7 +620,6 @@
           <span><span class="lg-pri"></span>主菜系印</span>
           <span><span class="lg-sec"></span>兼修菜系印（描边）</span>
           <span><span class="lg-cross">※</span>跨菜系学艺</span>
-          <span><span class="lg-real">REAL</span>真实历史人物</span>
         </div>
       </div>
     </main>
@@ -646,8 +629,7 @@
 
 <script>
 /* ============================================================
-   数据：真实历史名厨 · 川菜三大流派
-   isReal=true 表示真实历史人物，附 source 链接（hover 可见）
+   数据：川菜三大流派名厨档案
    gen 为流派内代际，跨菜系外援节点 gen 单独标
    ============================================================ */
 const CHEFS = [
@@ -939,12 +921,10 @@ function renderView2(){
             <div class="nm">${c.name}${c.crossNote?' <span style="color:var(--vermillion)">※</span>':''}</div>
             <div class="meta">${c.position} · ${c.birth?c.birth+(c.death?'–'+c.death:'–今'):''} · 第 ${GEN_ZH[c.gen]} 代</div>
           </div>
-          ${c.isReal?'<span class="real-tag">REAL</span>':'<span class="fictional-tag">虚构</span>'}
         </div>
       `).join('')}
       <div class="sd-nums">
         <div><strong>${list.length}</strong>名厨</div>
-        <div><strong>${list.filter(c=>c.isReal).length}</strong>真实</div>
         <div><strong>${list.filter(c=>c.secondaryCuisines.length>0).length}</strong>跨修</div>
       </div>
     </div>`;
@@ -995,7 +975,6 @@ function renderPedigree3(){
       <div class="gen-label">
         <div class="num">${GEN_EN[g]||g}</div>
         <div class="zh">第 ${GEN_ZH[g]||g} 代</div>
-        <div class="en">GEN ${g}</div>
       </div>
       <div class="gen-people">
         ${ppl.map(p=>renderPersonCard(p)).join('')}
@@ -1023,7 +1002,6 @@ function renderPersonCard(p){
       <div class="p-meta">${p.position} · ${p.city}</div>
     </div>
     ${hasCross?'<div class="cross-badge">※</div>':''}
-    ${p.isReal?'<div class="real-badge">REAL</div>':''}
   </div>`;
 }
 
@@ -1040,10 +1018,9 @@ function renderDetail3(){
       <div class="d-stamp">${c.primaryCuisine}</div>
       ${c.secondaryCuisines.map(x=>`<div class="d-stamp-sec" title="兼修">${x}</div>`).join('')}
     </div>
-    <div class="d-name">${c.name}<em>Gen ${c.gen} · ${yearStr}</em></div>
+    <div class="d-name">${c.name}<em>第 ${GEN_ZH[c.gen]||c.gen} 代 · ${yearStr}</em></div>
     <div class="d-pos">${s.name} · ${c.position}</div>
     <div class="d-tags">
-      ${c.isReal?'<span class="d-tag real">真实历史人物</span>':'<span class="d-tag">待考</span>'}
       ${c.school?`<span class="d-tag school">${s.subName||s.name}</span>`:''}
       <span class="d-tag">${c.city}</span>
       <span class="d-tag">${c.era}</span>
