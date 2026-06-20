@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>师承谱 · Demo D2 · 矩阵 + 跨派融合视图</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700&family=JetBrains+Mono:ital,wght@0,300..600&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ede8db; --paper-2:#e3dcc8; --paper-3:#d8cfb6;
+    --ink:#12100e; --ink-soft:#3a3530;
+    --vermillion:#ca6c52; --vermillion-deep:#a3503b;
+    --moss:#4a5a3f; --gold:#a67c00; --dust:#8b8270;
+    --rule:rgba(18,16,14,.12);
+    --serif:'Fraunces','Noto Serif SC',serif;
+    --songti:'Noto Serif SC','Fraunces',serif;
+    --mono:'JetBrains Mono',monospace;
+    --sans:'Instrument Sans',sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    background-image:
+      radial-gradient(rgba(18,16,14,.025) 1px,transparent 1px),
+      radial-gradient(rgba(202,108,82,.025) 1px,transparent 1px);
+    background-size:22px 22px,38px 38px;background-position:0 0,11px 11px;
+    min-height:100vh;
+  }
+  .top{
+    display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+    padding:26px 36px 18px;border-bottom:1px solid var(--ink);
+  }
+  .top h1{font-family:var(--serif);font-weight:500;font-size:32px;font-variation-settings:"opsz" 144}
+  .top h1 em{font-style:italic;color:var(--vermillion)}
+  .top .crumb{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase}
+
+  /* Mode 切换条 */
+  .modebar{
+    display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    padding:14px 36px;background:rgba(216,207,182,.42);border-bottom:1px solid var(--rule);
+  }
+  .mode-info{
+    font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--ink-soft);line-height:1.55;
+  }
+  .mode-info strong{color:var(--vermillion-deep);font-style:normal;font-weight:600}
+  .mode-tabs{display:flex;border:1px solid var(--ink);background:var(--paper);overflow:hidden}
+  .mode-tab{
+    font-family:var(--mono);font-size:11px;letter-spacing:.12em;padding:9px 18px;
+    background:transparent;border:none;cursor:pointer;color:var(--ink-soft);
+    border-right:1px solid var(--ink);transition:all .25s;
+  }
+  .mode-tab:last-child{border-right:none}
+  .mode-tab:hover{color:var(--ink)}
+  .mode-tab.active{background:var(--ink);color:var(--paper)}
+
+  /* 主舞台 */
+  .stage{padding:30px 36px 60px;min-height:calc(100vh - 80px - 56px)}
+  .stage-section{display:none}
+  .stage-section.active{display:block}
+
+  /* ============ 矩阵视图 ============ */
+  .matrix-wrap{
+    max-width:1200px;margin:0 auto;
+  }
+  .mx-title{
+    font-family:var(--serif);font-size:28px;font-variation-settings:"opsz" 144;
+    margin-bottom:6px;line-height:1.2;
+  }
+  .mx-title em{font-style:italic;color:var(--vermillion)}
+  .mx-sub{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--dust);text-transform:uppercase;margin-bottom:24px}
+  .mx-legend{display:flex;flex-wrap:wrap;gap:18px 28px;padding:12px 18px;margin:0 0 22px;
+    background:var(--paper-2);border:1px dashed rgba(18,16,14,.25);font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--ink-soft)}
+  .mx-legend .lg-cell{display:inline-block;width:14px;height:14px;border:1px solid var(--ink)}
+  .mx-legend .lg-cell.diag{background:var(--ink);color:var(--paper)}
+  .mx-legend .lg-cross{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--vermillion);box-shadow:0 0 0 2px rgba(202,108,82,.2)}
+
+  /* 10×10 矩阵 */
+  .matrix{
+    display:grid;
+    grid-template-columns:120px repeat(10, 1fr);
+    grid-template-rows:48px repeat(10, 56px);
+    border:1.5px solid var(--ink);background:var(--paper);
+    box-shadow:6px 6px 0 rgba(18,16,14,.08);
+  }
+  .mx-corner{
+    border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);
+    background:var(--paper-3);
+    display:grid;place-items:center;
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;color:var(--ink-soft);
+    text-transform:uppercase;line-height:1.4;text-align:center;padding:6px;
+  }
+  .mx-corner .arrow-x{color:var(--vermillion);font-weight:700}
+  .mx-colhead{
+    border-bottom:1.5px solid var(--ink);border-right:1px solid var(--rule);
+    background:var(--paper-2);
+    display:grid;grid-template-rows:1fr auto;place-items:center;gap:2px;padding:6px 4px;
+    font-family:var(--songti);font-weight:700;font-size:14px;
+    position:relative;
+  }
+  .mx-colhead small{font-family:var(--mono);font-size:9px;color:var(--dust);letter-spacing:.08em;font-weight:400}
+  .mx-colhead:last-child{border-right:none}
+  .mx-rowhead{
+    border-right:1.5px solid var(--ink);border-bottom:1px solid var(--rule);
+    background:var(--paper-2);
+    display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px;padding:0 12px;
+    font-family:var(--songti);font-weight:700;font-size:14px;
+  }
+  .mx-rowhead small{font-family:var(--mono);font-size:9px;color:var(--dust);letter-spacing:.08em;font-weight:400;justify-self:end}
+  .mx-rowhead:last-of-type{border-bottom:none}
+
+  .mx-cell{
+    border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    position:relative;
+    transition:background .25s;cursor:default;
+  }
+  .mx-cell.diag{
+    background:var(--ink);color:var(--paper);cursor:pointer;
+  }
+  .mx-cell.diag::before{
+    content:attr(data-count);position:absolute;inset:0;display:grid;place-items:center;
+    font-family:var(--serif);font-style:italic;font-size:22px;font-weight:500;
+    color:var(--paper);font-variation-settings:"opsz" 144;
+  }
+  .mx-cell.diag:hover{background:var(--vermillion)}
+  .mx-cell.has-cross{background:rgba(202,108,82,.08)}
+
+  /* 跨派红点：cell 内悬浮放置 */
+  .mx-dot{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:14px;height:14px;border-radius:50%;background:var(--vermillion);
+    box-shadow:0 0 0 2px rgba(202,108,82,.2),0 1px 3px rgba(18,16,14,.3);
+    cursor:pointer;transition:transform .15s,box-shadow .15s;
+  }
+  .mx-dot:hover{transform:translate(-50%,-50%) scale(1.4);box-shadow:0 0 0 4px rgba(202,108,82,.3)}
+  .mx-cell.has-multi .mx-dot{
+    background:var(--vermillion-deep);
+  }
+  .mx-cell.has-multi::after{
+    content:attr(data-cross-count);position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    font-family:var(--mono);font-size:9px;font-weight:700;color:var(--paper);
+    pointer-events:none;
+  }
+
+  /* 矩阵下方解说 */
+  .mx-callout{
+    margin-top:26px;padding:18px 22px;
+    border-left:4px solid var(--ink);background:var(--paper-2);
+    font-family:var(--serif);font-size:14.5px;line-height:1.75;color:var(--ink-soft);
+  }
+  .mx-callout strong{color:var(--ink);font-weight:600}
+  .mx-callout em{color:var(--vermillion);font-style:italic;font-weight:600}
+
+  /* ============ 跨派融合视图 ============ */
+  .fusion-wrap{max-width:1200px;margin:0 auto}
+  .fusion-title{
+    font-family:var(--serif);font-size:28px;font-variation-settings:"opsz" 144;
+    margin-bottom:6px;line-height:1.2;
+  }
+  .fusion-title em{color:var(--vermillion);font-style:italic}
+  .fusion-sub{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--dust);text-transform:uppercase;margin-bottom:24px}
+
+  .fusion-canvas{
+    position:relative;width:100%;
+    background:var(--paper);border:1.5px solid var(--ink);
+    box-shadow:6px 6px 0 rgba(18,16,14,.08);
+    overflow:hidden;
+  }
+  .fusion-canvas svg{display:block;width:100%;height:auto}
+
+  .fusion-list{margin-top:26px}
+  .fusion-list h6{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase;margin-bottom:12px}
+  .fusion-row{
+    display:grid;grid-template-columns:60px 1fr 80px 1fr 100px;gap:14px;align-items:center;
+    padding:11px 14px;border-bottom:1px dashed var(--rule);font-family:var(--serif);font-size:13.5px;
+    transition:background .2s;
+  }
+  .fusion-row:hover{background:rgba(202,108,82,.05)}
+  .fusion-row .fr-from{font-weight:600}
+  .fusion-row .fr-arrow{color:var(--vermillion);font-family:var(--mono);font-size:12px;text-align:center}
+  .fusion-row .fr-to{color:var(--vermillion-deep);font-weight:600}
+  .fusion-row .fr-stamp{
+    width:26px;height:26px;display:grid;place-items:center;
+    border:1.2px solid var(--ink);font-family:var(--songti);font-weight:700;font-size:13px;
+    background:var(--paper-2);
+  }
+  .fusion-row .fr-stamp.cuisine{border-color:var(--vermillion);color:var(--vermillion-deep);background:rgba(202,108,82,.08)}
+  .fusion-row .fr-note{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);letter-spacing:.04em;line-height:1.4}
+
+  /* ============ 古籍宗谱（简版，复用 demo-A 概念） ============ */
+  .pedi-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:240px 1fr 360px;gap:0;
+    border:1px solid var(--ink);background:var(--paper);min-height:600px}
+  .pedi-fams{border-right:1px solid var(--ink);background:linear-gradient(180deg,transparent,rgba(216,207,182,.4));padding:20px 0}
+  .pedi-fams h6{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--dust);text-transform:uppercase;padding:0 22px 12px}
+  .pf-row{
+    display:grid;grid-template-columns:30px 14px 22px 1fr auto;gap:7px;align-items:center;
+    padding:11px 22px;cursor:pointer;border-top:1px solid var(--rule);transition:all .25s;
+  }
+  .pf-row:hover{background:rgba(202,108,82,.06);padding-left:28px}
+  .pf-row.active{background:var(--ink);color:var(--paper)}
+  .pf-row.active .pf-stamp{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  .pf-row.active .pf-cui{border-color:var(--paper);color:var(--paper);background:rgba(237,232,219,.12)}
+  .pf-row.active .pf-eq{color:rgba(237,232,219,.7)}
+  .pf-stamp{width:30px;height:30px;border:1.4px solid var(--ink);display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:15px;background:var(--paper);position:relative}
+  .pf-stamp::after{content:"";position:absolute;inset:-3px;border:1px dashed rgba(18,16,14,.3)}
+  .pf-eq{font-family:var(--mono);font-size:10px;color:var(--vermillion);text-align:center;font-weight:700}
+  .pf-cui{width:22px;height:22px;border:1.2px solid var(--vermillion);display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:12px;background:rgba(202,108,82,.08);color:var(--vermillion-deep);position:relative}
+  .pf-cui::after{content:"";position:absolute;inset:-2.5px;border:1px dashed rgba(202,108,82,.35)}
+  .pf-name{font-family:var(--serif);font-size:14px;line-height:1.15}
+  .pf-name span{display:block;font-family:var(--mono);font-size:9px;opacity:.7;letter-spacing:.1em;margin-top:3px}
+  .pf-meta{font-family:var(--mono);font-size:11px;color:var(--ink-soft);text-align:right;line-height:1.2}
+  .pf-meta strong{display:block;font-family:var(--serif);font-size:17px;color:var(--vermillion);font-style:italic;line-height:1}
+
+  .pedi-main{padding:28px 30px;overflow-y:auto;max-height:78vh;
+    background:repeating-linear-gradient(0deg,transparent 0,transparent 31px,rgba(18,16,14,.04) 32px),var(--paper)}
+  .pedi-title{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:1.5px solid var(--ink);padding-bottom:14px;margin-bottom:12px}
+  .pedi-title h3{font-family:var(--serif);font-size:26px;font-weight:500;line-height:1.1;font-variation-settings:"opsz" 144}
+  .pedi-title h3 em{color:var(--vermillion);font-style:italic}
+  .pedi-title .meta{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--ink-soft);text-transform:uppercase;text-align:right;line-height:1.5}
+  .pedi-title .meta strong{display:block;font-family:var(--serif);font-size:18px;color:var(--vermillion);font-style:italic;letter-spacing:0}
+
+  .pgen-row{display:grid;grid-template-columns:90px 1fr;gap:18px;padding:14px 0;border-bottom:1px dashed var(--rule);align-items:center}
+  .pgen-row:last-child{border-bottom:none}
+  .pgen-label{font-family:var(--serif);font-style:italic;font-size:32px;color:var(--vermillion);line-height:1;text-align:right;border-right:1.4px solid var(--ink);padding-right:12px}
+  .pgen-label small{display:block;font-family:var(--mono);font-style:normal;font-size:9px;color:var(--dust);letter-spacing:.16em;margin-top:5px}
+  .pgen-people{display:flex;flex-wrap:wrap;gap:12px}
+  .pcard{
+    display:grid;grid-template-columns:38px 1fr;gap:9px;align-items:center;
+    padding:7px 11px 7px 7px;border:1px solid var(--rule);background:var(--paper);cursor:pointer;
+    min-width:150px;position:relative;transition:all .25s;
+  }
+  .pcard:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .pcard.cur{border-color:var(--vermillion);background:rgba(202,108,82,.06);box-shadow:3px 3px 0 rgba(202,108,82,.18)}
+  .pcard.cross{border-color:rgba(202,108,82,.5)}
+  .pcard.cross::before{
+    content:"※";position:absolute;top:-7px;right:-5px;
+    width:20px;height:20px;background:var(--vermillion);color:var(--paper);
+    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:13px;
+    border:1.2px solid var(--vermillion-deep);box-shadow:1px 1px 0 var(--vermillion-deep);z-index:2;
+  }
+  .pport{width:38px;height:48px;border:1.3px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:18px;background:var(--paper-2)}
+  .pname{font-family:var(--songti);font-size:14px;font-weight:600;line-height:1.15}
+  .pname small{display:block;font-family:var(--mono);font-size:9.5px;color:var(--ink-soft);font-weight:400;margin-top:3px}
+
+  .pedi-detail{border-left:1px solid var(--ink);padding:24px 22px;background:linear-gradient(180deg,var(--paper),rgba(216,207,182,.4));overflow-y:auto;max-height:78vh}
+  .pd-empty{text-align:center;padding:60px 12px;font-family:var(--serif);font-style:italic;color:var(--ink-soft)}
+  .pd-name{font-family:var(--songti);font-size:26px;font-weight:700;line-height:1.1;margin-bottom:6px}
+  .pd-en{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--vermillion);text-transform:uppercase;margin-bottom:14px}
+  .pd-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+  .pd-tags span{font-family:var(--mono);font-size:10.5px;border:1px solid var(--ink);padding:3px 9px;letter-spacing:.04em}
+  .pd-tags .vmf{background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)}
+  .pd-section{margin:14px 0;padding-top:12px;border-top:1px solid var(--rule)}
+  .pd-section h6{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dust);text-transform:uppercase;margin-bottom:8px}
+  .pd-cross{
+    margin-top:12px;padding:14px 16px;border-left:4px solid var(--vermillion);
+    background:linear-gradient(90deg,rgba(202,108,82,.18),rgba(202,108,82,.04));
+    font-family:var(--serif);font-size:13.5px;line-height:1.65;
+  }
+  .pd-cross strong{color:var(--vermillion-deep);font-weight:700}
+
+  /* tooltip */
+  .tip{
+    position:fixed;pointer-events:none;background:var(--ink);color:var(--paper);
+    font-family:var(--mono);font-size:11px;padding:8px 12px;letter-spacing:.04em;
+    max-width:280px;line-height:1.55;opacity:0;transition:opacity .15s;z-index:99;
+    border-left:2px solid var(--vermillion);
+  }
+  .tip strong{font-family:var(--songti);font-size:13px;display:block;margin-bottom:3px;color:#fff}
+  .tip .meta{color:rgba(237,232,219,.65);font-size:10px}
+
+  /* 移动端 */
+  @media(max-width:1100px){
+    .pedi-wrap{grid-template-columns:200px 1fr 320px}
+    .matrix{grid-template-columns:90px repeat(10,1fr)}
+  }
+  @media(max-width:860px){
+    .pedi-wrap{grid-template-columns:1fr}
+    .pedi-fams{border-right:none;border-bottom:1px solid var(--ink);max-height:none;padding:14px 0 6px}
+    .pedi-fams h6{padding-bottom:6px}
+    .pedi-fams #pediFamList{display:flex;flex-wrap:nowrap;overflow-x:auto;padding:0 14px 8px}
+    .pf-row{flex-shrink:0;min-width:200px;border-top:none;border:1px solid var(--rule);margin-right:8px}
+    .pedi-detail{border-left:none;border-top:1px solid var(--ink);max-height:none}
+    .matrix{grid-template-columns:64px repeat(10,1fr);grid-template-rows:36px repeat(10,42px);font-size:11px}
+    .mx-rowhead,.mx-colhead{font-size:11px}
+    .mx-cell.diag::before{font-size:14px}
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div>
+    <h1>师承 <em>谱</em>　<span style="font-family:var(--mono);font-size:12px;color:var(--dust);letter-spacing:.16em;text-transform:uppercase">Demo D2 · Matrix + Fusion</span></h1>
+    <div class="crumb" style="margin-top:6px">10 派 × 10 菜系 · 96 厨师 · 16 跨派学艺</div>
+  </div>
+  <div class="crumb">DATASET: <strong style="color:var(--ink)">FULL · 96 CHEFS</strong></div>
+</div>
+
+<div class="modebar">
+  <div class="mode-info">
+    <strong>10 派 1:1 守护 10 菜系。</strong>真正的多元，藏在「跨派学艺」这条隐线里 —— 16 位厨师在师门之外另学一派。
+  </div>
+  <div class="mode-tabs">
+    <button class="mode-tab active" data-mode="matrix">家派 × 菜系矩阵</button>
+    <button class="mode-tab" data-mode="fusion">跨派融合视图</button>
+    <button class="mode-tab" data-mode="pedigree">古籍宗谱</button>
+  </div>
+</div>
+
+<div class="stage">
+  <!-- ===== 视图 1：矩阵 ===== -->
+  <section class="stage-section active" data-section="matrix">
+    <div class="matrix-wrap">
+      <div class="mx-title">家派 <em>×</em> 菜系矩阵</div>
+      <div class="mx-sub">FAMILY × CUISINE · DIAGONAL = 1:1 GUARDIANSHIP · DOTS = CROSS-LEARNING</div>
+      <div class="mx-legend">
+        <span><span class="lg-cell"></span> 空格 · 无人</span>
+        <span><span class="lg-cell diag"></span> 主对角线 · 该派守护该菜系</span>
+        <span><span class="lg-cross"></span> 红点 · 该派人去学了该菜系</span>
+        <span style="color:var(--vermillion);font-style:italic">悬浮红点查看具体跨派记录</span>
+      </div>
+      <div class="matrix" id="matrix"></div>
+      <div class="mx-callout">
+        <strong>读图方法：</strong>
+        <em>主对角线 10 个深色格子</em>每格内的数字，是该派当前在岗厨师人数 ——
+        证明 10 派 1:1 对应 10 菜系；
+        <em>对角线之外的红点</em>，标记 16 位"曾赴他派学艺"的融合者：派 X 的厨师，把菜系 Y 的手艺带回了自己派。
+        点击主对角线的家派格可跳转到该派宗谱。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 视图 2：跨派融合 ===== -->
+  <section class="stage-section" data-section="fusion">
+    <div class="fusion-wrap">
+      <div class="fusion-title">跨派 <em>融合</em> 视图</div>
+      <div class="fusion-sub">CROSS-LINEAGE FUSION · 16 EDGES · WHO LEARNED WHAT FROM WHOM</div>
+      <div class="fusion-canvas" id="fusionCanvas"></div>
+      <div class="fusion-list">
+        <h6>融合记录全表 · 16 EDGES</h6>
+        <div id="fusionTable"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 视图 3：古籍宗谱 ===== -->
+  <section class="stage-section" data-section="pedigree">
+    <div class="pedi-wrap">
+      <aside class="pedi-fams">
+        <h6>家 派 目 录</h6>
+        <div id="pediFamList"></div>
+      </aside>
+      <main class="pedi-main" id="pediMain"></main>
+      <aside class="pedi-detail" id="pediDetail">
+        <div class="pd-empty">点选中栏的厨师查看详情。</div>
+      </aside>
+    </div>
+  </section>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<script>
+/* ========== 数据：完整 96 人字段子集（仅含矩阵/融合/宗谱所需字段） ========== */
+const FAMILIES = [
+  { key:'zhang', stamp:'张', cuisine:'川', en:'ZHANG' },
+  { key:'liang', stamp:'梁', cuisine:'粤', en:'LIANG' },
+  { key:'kong',  stamp:'孔', cuisine:'鲁', en:'KONG'  },
+  { key:'zhou',  stamp:'周', cuisine:'淮扬', en:'ZHOU' },
+  { key:'mao',   stamp:'毛', cuisine:'湘', en:'MAO'   },
+  { key:'song',  stamp:'宋', cuisine:'浙', en:'SONG'  },
+  { key:'hu',    stamp:'胡', cuisine:'徽', en:'HU'    },
+  { key:'lin',   stamp:'林', cuisine:'闽', en:'LIN'   },
+  { key:'wang',  stamp:'王', cuisine:'京', en:'WANG'  },
+  { key:'shen',  stamp:'沈', cuisine:'沪', en:'SHEN'  },
+];
+// 每派人数（来自主作品 96 人统计）
+const FAMILY_COUNTS = {
+  zhang:12, liang:11, kong:10, zhou:10, mao:9, song:9, hu:8, lin:8, wang:10, shen:9
+};
+// 16 位跨派学艺：from=源派, to=去向菜系
+const CROSS_MAP = [
+  { id:'c022', name:'马国明', from:'liang', toCuisine:'淮扬', note:'曾赴扬州向淮扬周慕白学刀工' },
+  { id:'c023', name:'徐小明', from:'liang', toCuisine:'湘',   note:'曾赴长沙向湘菜毛家旺学辣味' },
+  { id:'c027', name:'曾庆海', from:'kong',  toCuisine:'川',   note:'曾入川向张派陈志强学川菜调味' },
+  { id:'c040', name:'郑国良', from:'zhou',  toCuisine:'粤',   note:'曾向粤菜梁润根学烧腊' },
+  { id:'c047', name:'罗小明', from:'mao',   toCuisine:'川',   note:'曾赴成都向张派张德海学川菜调味' },
+  { id:'c050', name:'田小燕', from:'mao',   toCuisine:'粤',   note:'曾向粤菜何丽萍学粤式点心' },
+  { id:'c052', name:'石文斌', from:'mao',   toCuisine:'浙',   note:'曾赴杭州向浙菜宋明清学浙菜清淡技法' },
+  { id:'c059', name:'茅文华', from:'song',  toCuisine:'淮扬', note:'曾赴扬州向淮扬周慕白学刀工' },
+  { id:'c060', name:'黄公望', from:'song',  toCuisine:'鲁',   note:'曾赴济南向鲁菜孔繁森学爆炒技法' },
+  { id:'c065', name:'黄宾虹', from:'hu',    toCuisine:'浙',   note:'曾赴杭州向浙菜宋明清学杭帮菜' },
+  { id:'c069', name:'刘铭传', from:'hu',    toCuisine:'闽',   note:'曾赴福州向闽菜林则徐学闽菜海鲜处理' },
+  { id:'c073', name:'严复',   from:'lin',   toCuisine:'粤',   note:'曾向粤菜梁润根学粤菜海鲜处理' },
+  { id:'c084', name:'裘盛戎', from:'wang',  toCuisine:'鲁',   note:'曾赴济南向鲁菜孔繁森学吊汤' },
+  { id:'c085', name:'梅兰芳', from:'wang',  toCuisine:'淮扬', note:'曾赴南京向淮扬赵雅芝学淮扬精细刀工' },
+  { id:'c091', name:'张爱玲', from:'shen',  toCuisine:'粤',   note:'曾向粤菜梁润根学粤菜清淡技法' },
+  { id:'c095', name:'阮玲玉', from:'shen',  toCuisine:'粤',   note:'曾赴广州向粤菜何丽萍学粤式点心' },
+];
+// 古籍宗谱 demo 数据（4 派子集，与 demo-A 一致）
+const CHEFS = [
+  { id:'c001', name:'张德海', gen:1, master:null, lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'行政总厨', years:24, signature:['麻婆豆腐','水煮鱼','回锅肉','宫保鸡丁'], bio:'川菜张派开派祖师，24 年灶台功力，带徒 11 人。'},
+  { id:'c002', name:'陈志强', gen:2, master:'c001', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'厨师长', years:18, signature:['宫保鸡丁','鱼香肉丝'], bio:'张德海大弟子。'},
+  { id:'c003', name:'王秀芳', gen:2, master:'c001', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'厨师长', years:16, signature:['毛血旺','辣子鸡'], bio:'重庆分支带头人。'},
+  { id:'c004', name:'刘小军', gen:3, master:'c002', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'炒锅师傅', years:8, signature:['水煮肉片'], bio:'新生代川菜师傅。'},
+  { id:'c005', name:'杨国华', gen:3, master:'c002', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'锦江春', position:'炒锅师傅', years:10, signature:['夫妻肺片'], bio:'凉菜热菜皆精。'},
+  { id:'c006', name:'罗建军', gen:3, master:'c003', lineage:'zhang', cuisine:'川', city:'重庆', restaurant:'渝风堂', position:'炒锅师傅', years:9, signature:['酸菜鱼'], bio:'王秀芳大弟子。'},
+  { id:'c007', name:'何静', gen:4, master:'c004', lineage:'zhang', cuisine:'川', city:'成都', restaurant:'蜀香苑', position:'砧板师傅', years:6, signature:['蒜泥白肉'], bio:'砧板功夫见长。'},
+  { id:'c013', name:'梁润根', gen:1, master:null, lineage:'liang', cuisine:'粤', city:'广州', restaurant:'半岛珍宝舫', position:'行政总厨', years:28, signature:['白切鸡','烧鹅','虾饺'], bio:'粤菜梁派开派祖师。'},
+  { id:'c022', name:'马国明', gen:4, master:'c034', lineage:'liang', cuisine:'粤', city:'香港', restaurant:'莲香楼', position:'炒锅师傅', years:11, signature:['清蒸石斑'], bio:'香港粤菜师傅，曾赴扬州向淮扬周慕白学刀工。', crossNote:'曾赴扬州向淮扬周慕白学刀工'},
+  { id:'c024', name:'孔繁森', gen:1, master:null, lineage:'kong', cuisine:'鲁', city:'济南', restaurant:'燕喜堂', position:'行政总厨', years:30, signature:['糖醋鲤鱼','九转大肠'], bio:'鲁菜孔派开派祖师。'},
+  { id:'c027', name:'曾庆海', gen:3, master:'c002', lineage:'kong', cuisine:'鲁', city:'济南', restaurant:'聚丰德', position:'厨师长', years:16, signature:['九转大肠'], bio:'鲁菜师傅，曾入川向张派陈志强学川菜调味。', crossNote:'曾入川向张派陈志强学川菜调味'},
+  { id:'c034', name:'周慕白', gen:1, master:null, lineage:'zhou', cuisine:'淮扬', city:'扬州', restaurant:'冶春茶社', position:'行政总厨', years:30, signature:['狮子头','文思豆腐'], bio:'淮扬周派开派祖师。'},
+  { id:'c040', name:'郑国良', gen:4, master:'c013', lineage:'zhou', cuisine:'淮扬', city:'扬州', restaurant:'冶春茶社', position:'炒锅师傅', years:11, signature:['文思豆腐'], bio:'淮扬师傅，曾向粤菜梁润根学烧腊。', crossNote:'曾向粤菜梁润根学烧腊'},
+];
+
+const GEN_ZH = ['','一','二','三','四','五','六','七'];
+const GEN_EN = ['','I','II','III','IV','V','VI','VII'];
+
+/* ========== 矩阵渲染 ========== */
+function renderMatrix(){
+  const m = document.getElementById('matrix');
+  // 角落
+  let html = `<div class="mx-corner">家派<span class="arrow-x">→</span><br>菜系↓</div>`;
+  // 列头：10 个家派
+  FAMILIES.forEach(f => {
+    html += `<div class="mx-colhead" data-fam="${f.key}">
+      ${f.stamp}派<small>${f.en}</small>
+    </div>`;
+  });
+  // 10 行：每行一个菜系
+  FAMILIES.forEach((rowF, rIdx) => {
+    const rowCuisine = rowF.cuisine;
+    html += `<div class="mx-rowhead" data-cuisine="${rowCuisine}">
+      ${rowCuisine}菜<small>ROW ${rIdx+1}</small>
+    </div>`;
+    FAMILIES.forEach((colF, cIdx) => {
+      const isDiag = colF.cuisine === rowCuisine;
+      // 跨派检查：colF（家派列）的人 学过 rowCuisine（菜系行）
+      const crosses = CROSS_MAP.filter(x => x.from === colF.key && x.toCuisine === rowCuisine);
+      const cellClass = [
+        'mx-cell',
+        isDiag ? 'diag' : '',
+        crosses.length > 0 ? 'has-cross' : '',
+        crosses.length > 1 ? 'has-multi' : ''
+      ].filter(Boolean).join(' ');
+      const dataCount = isDiag ? FAMILY_COUNTS[colF.key] : '';
+      const dataCrossCount = crosses.length > 1 ? crosses.length : '';
+      html += `<div class="${cellClass}"
+        data-fam="${colF.key}" data-cuisine="${rowCuisine}"
+        data-count="${dataCount}" data-cross-count="${dataCrossCount}">`;
+      if(crosses.length === 1){
+        const c = crosses[0];
+        html += `<div class="mx-dot" data-id="${c.id}" data-note="${c.note}" data-name="${c.name}"></div>`;
+      } else if(crosses.length > 1){
+        // 多人：仍只画一个点，hover 出列表
+        html += `<div class="mx-dot" data-multi="${JSON.stringify(crosses).replace(/"/g,'&quot;')}"></div>`;
+      }
+      html += `</div>`;
+    });
+  });
+  m.innerHTML = html;
+
+  // 主对角线点击 → 跳转到宗谱
+  m.querySelectorAll('.mx-cell.diag').forEach(c => c.addEventListener('click', () => {
+    const fam = c.dataset.fam;
+    switchMode('pedigree');
+    pediCurFamily = fam;
+    const root = CHEFS.find(x => x.lineage === fam && x.gen === 1);
+    pediCurId = root ? root.id : null;
+    renderPedigree();
+  }));
+  // 红点 hover tooltip
+  m.querySelectorAll('.mx-dot').forEach(d => {
+    d.addEventListener('mouseenter', e => {
+      if(d.dataset.multi){
+        const arr = JSON.parse(d.dataset.multi.replace(/&quot;/g,'"'));
+        showTip(e, arr.map(x => `<strong>${x.name}</strong><div class="meta">${x.note}</div>`).join('<hr style="border:none;border-top:1px solid rgba(237,232,219,.2);margin:4px 0">'));
+      } else {
+        showTip(e, `<strong>${d.dataset.name}</strong><div class="meta">${d.dataset.note}</div>`);
+      }
+    });
+    d.addEventListener('mousemove', moveTip);
+    d.addEventListener('mouseleave', hideTip);
+  });
+}
+
+/* ========== 跨派融合视图 ========== */
+function renderFusion(){
+  const box = document.getElementById('fusionCanvas');
+  const W = 900, H = 720;
+  const colX_left = 140, colX_right = W - 140;
+  const yStart = 50, yStep = (H - yStart*2) / 9;
+
+  // 左列：10 派；右列：10 菜系（按相同顺序）
+  let svgChildren = '';
+
+  // 标题
+  svgChildren += `<text x="${colX_left}" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#3a3530" letter-spacing="2">家 派</text>`;
+  svgChildren += `<text x="${colX_right}" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#3a3530" letter-spacing="2">菜 系</text>`;
+
+  const positions = {};
+  FAMILIES.forEach((f, i) => {
+    const y = yStart + i * yStep;
+    positions['fam_' + f.key] = { x: colX_left, y };
+    positions['cui_' + f.cuisine] = { x: colX_right, y };
+
+    // 左列家派钢印
+    svgChildren += `<g class="fusion-stamp" transform="translate(${colX_left - 22},${y - 22})">
+      <rect width="44" height="44" fill="#ede8db" stroke="#12100e" stroke-width="1.4"/>
+      <rect x="-3" y="-3" width="50" height="50" fill="none" stroke="rgba(18,16,14,.3)" stroke-dasharray="2 2"/>
+      <text x="22" y="29" text-anchor="middle" font-family="Noto Serif SC" font-weight="700" font-size="20" fill="#12100e">${f.stamp}</text>
+    </g>`;
+    svgChildren += `<text x="${colX_left - 50}" y="${y + 5}" text-anchor="end" font-family="Fraunces" font-size="13" fill="#3a3530">${f.stamp}派</text>`;
+
+    // 右列菜系印（红色风格）
+    svgChildren += `<g class="fusion-stamp-cuisine" transform="translate(${colX_right - 22},${y - 22})">
+      <rect width="44" height="44" fill="rgba(202,108,82,.08)" stroke="#a3503b" stroke-width="1.4"/>
+      <rect x="-3" y="-3" width="50" height="50" fill="none" stroke="rgba(163,80,59,.4)" stroke-dasharray="2 2"/>
+      <text x="22" y="29" text-anchor="middle" font-family="Noto Serif SC" font-weight="700" font-size="18" fill="#a3503b">${f.cuisine}</text>
+    </g>`;
+    svgChildren += `<text x="${colX_right + 50}" y="${y + 5}" text-anchor="start" font-family="Fraunces" font-size="13" fill="#3a3530">${f.cuisine}菜</text>`;
+
+    // 底部 1:1 守护实线（家派 X → 它本来对应的菜系 X）
+    const mY = y;
+    svgChildren += `<line x1="${colX_left + 26}" y1="${mY}" x2="${colX_right - 26}" y2="${mY}" stroke="rgba(18,16,14,.18)" stroke-width="1" />`;
+    svgChildren += `<text x="${(colX_left + colX_right)/2}" y="${mY - 4}" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="rgba(18,16,14,.4)" letter-spacing="1">1:1 守护</text>`;
+  });
+
+  // 16 条跨派学艺红色虚线
+  CROSS_MAP.forEach((c, i) => {
+    const a = positions['fam_' + c.from];
+    const b = positions['cui_' + c.toCuisine];
+    if(!a || !b) return;
+    // 用贝塞尔曲线，控制点错开避免与 1:1 实线重叠
+    const cx1 = colX_left + 100 + (i % 4) * 30;
+    const cx2 = colX_right - 100 - (i % 4) * 30;
+    svgChildren += `<path d="M ${a.x + 26} ${a.y} C ${cx1} ${a.y}, ${cx2} ${b.y}, ${b.x - 26} ${b.y}"
+      fill="none" stroke="#ca6c52" stroke-width="1.6" stroke-dasharray="4 3" opacity="0.85"
+      class="fusion-cross" data-id="${c.id}" data-name="${c.name}" data-note="${c.note}"/>`;
+    // 中点圆点 + 厨师名（显示在曲线高峰处）
+    const mx = (a.x + b.x) / 2;
+    const my = (a.y + b.y) / 2;
+    svgChildren += `<circle cx="${mx}" cy="${my}" r="3" fill="#ca6c52" stroke="#a3503b" stroke-width="1"/>`;
+    // 名字标签
+    svgChildren += `<text x="${mx + 6}" y="${my - 4}" font-family="Noto Serif SC" font-size="10" fill="#a3503b" font-weight="600">${c.name}</text>`;
+  });
+
+  box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">${svgChildren}</svg>`;
+
+  // 红线 hover
+  box.querySelectorAll('.fusion-cross').forEach(p => {
+    p.addEventListener('mouseenter', e => {
+      showTip(e, `<strong>${p.dataset.name}</strong><div class="meta">${p.dataset.note}</div>`);
+      p.style.strokeWidth = '3';
+      p.style.opacity = '1';
+    });
+    p.addEventListener('mousemove', moveTip);
+    p.addEventListener('mouseleave', () => {
+      hideTip();
+      p.style.strokeWidth = '1.6';
+      p.style.opacity = '0.85';
+    });
+  });
+
+  // 表格
+  const tableHtml = CROSS_MAP.map(c => {
+    const fromFam = FAMILIES.find(f => f.key === c.from);
+    return `<div class="fusion-row">
+      <div class="fr-stamp">${fromFam.stamp}</div>
+      <div class="fr-from">${fromFam.stamp}派 · ${c.name}</div>
+      <div class="fr-arrow">▶ 学</div>
+      <div class="fr-to">${c.toCuisine}菜</div>
+      <div class="fr-note">${c.note}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('fusionTable').innerHTML = tableHtml;
+}
+
+/* ========== 古籍宗谱（简版） ========== */
+let pediCurFamily = 'zhang';
+let pediCurId = 'c001';
+function pediFamChefs(key){ return CHEFS.filter(c => c.lineage === key); }
+function pediGetChef(id){ return CHEFS.find(c => c.id === id); }
+function pediGetMaster(id){ const c = pediGetChef(id); return c && c.master ? pediGetChef(c.master) : null; }
+
+function renderPediFams(){
+  const box = document.getElementById('pediFamList');
+  // 仅 4 派有 demo 数据，其他显示但点击无人物
+  const html = FAMILIES.map(f => {
+    const list = pediFamChefs(f.key);
+    const has = list.length > 0;
+    const gens = has ? Math.max(...list.map(c => c.gen)) : 0;
+    return `<div class="pf-row ${f.key === pediCurFamily ? 'active' : ''}" data-fam="${f.key}">
+      <div class="pf-stamp">${f.stamp}</div>
+      <div class="pf-eq">≡</div>
+      <div class="pf-cui">${f.cuisine}</div>
+      <div class="pf-name">${f.stamp}派 · ${f.cuisine}菜<span>${f.en} · ${f.cuisine.toUpperCase()}</span></div>
+      <div class="pf-meta"><strong>${has ? list.length : '·'}</strong>${has ? gens + ' 代' : 'demo'}</div>
+    </div>`;
+  }).join('');
+  box.innerHTML = html;
+  box.querySelectorAll('.pf-row').forEach(r => r.addEventListener('click', () => {
+    const fam = r.dataset.fam;
+    pediCurFamily = fam;
+    const root = pediFamChefs(fam).find(c => c.gen === 1);
+    pediCurId = root ? root.id : null;
+    renderPediFams();
+    renderPediMain();
+    renderPediDetail();
+  }));
+}
+
+function renderPediMain(){
+  const box = document.getElementById('pediMain');
+  const f = FAMILIES.find(x => x.key === pediCurFamily);
+  const list = pediFamChefs(pediCurFamily);
+  if(!list.length){
+    box.innerHTML = `<div style="padding:40px;text-align:center;color:var(--dust);font-family:var(--serif);font-style:italic;font-size:15px">
+      ${f.stamp}派 · ${f.cuisine}菜的完整数据需从主作品 96 人集导入<br>
+      <small style="font-family:var(--mono);font-size:11px;letter-spacing:.1em">本 demo 仅展示 4 派子集（张/梁/孔/周）作为效果验证</small>
+    </div>`;
+    return;
+  }
+  const maxGen = Math.max(...list.map(c => c.gen));
+  let html = `<div class="pedi-title">
+    <h3>${f.stamp}<em>派</em>　<span style="font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase">${f.cuisine} CUISINE · ${f.en}</span></h3>
+    <div class="meta"><strong>${list.length}</strong><span>共 ${maxGen} 代</span></div>
+  </div>`;
+  for(let g=1; g<=maxGen; g++){
+    const ppl = list.filter(c => c.gen === g);
+    if(!ppl.length) continue;
+    html += `<div class="pgen-row">
+      <div class="pgen-label">${GEN_EN[g] || g}<small>第 ${GEN_ZH[g] || g} 代 · GEN ${g}</small></div>
+      <div class="pgen-people">
+        ${ppl.map(p => {
+          const isCross = !!p.crossNote || (p.master && pediGetChef(p.master)?.lineage !== p.lineage);
+          return `<div class="pcard ${p.id === pediCurId ? 'cur' : ''} ${isCross ? 'cross' : ''}" data-id="${p.id}">
+            <div class="pport">${p.name[0]}</div>
+            <div class="pname">${p.name}<small>${p.position} · ${p.city}</small></div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+  box.innerHTML = html;
+  box.querySelectorAll('.pcard').forEach(el => el.addEventListener('click', () => {
+    pediCurId = el.dataset.id;
+    box.querySelectorAll('.pcard').forEach(c => c.classList.remove('cur'));
+    el.classList.add('cur');
+    renderPediDetail();
+  }));
+}
+
+function renderPediDetail(){
+  const box = document.getElementById('pediDetail');
+  const c = pediGetChef(pediCurId);
+  if(!c){ box.innerHTML = `<div class="pd-empty">点选中栏的厨师查看详情。</div>`; return; }
+  const f = FAMILIES.find(x => x.key === c.lineage);
+  const master = pediGetMaster(c.id);
+  box.innerHTML = `
+    <div class="pd-name">${c.name}</div>
+    <div class="pd-en">${f.stamp}派 · ${c.cuisine}菜 · GEN ${c.gen}</div>
+    <div class="pd-tags">
+      <span class="vmf">${c.position}</span>
+      <span>${c.city}</span>
+      <span>${c.restaurant}</span>
+      <span>${c.years} 年</span>
+      ${c.crossNote ? '<span style="background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)">跨派学艺</span>' : ''}
+    </div>
+    <div class="pd-section">
+      <h6>师承脉络</h6>
+      <div style="font-family:var(--serif);font-size:14.5px;line-height:1.65">
+        ${master ? `师从 <strong>${master.name}</strong>` : `<strong>${f.stamp}派开派祖师</strong>`}
+      </div>
+      ${c.crossNote ? `<div class="pd-cross"><strong>跨派传承｜</strong>${c.crossNote}——派系融合在匹配评分时会被额外加权。</div>` : ''}
+    </div>
+    ${c.signature && c.signature.length ? `<div class="pd-section"><h6>拿手菜</h6>
+      <div style="display:flex;flex-wrap:wrap;gap:5px">${c.signature.map(s => `<span style="font-family:var(--songti);font-size:12px;background:var(--paper-3);padding:3px 8px">${s}</span>`).join('')}</div>
+    </div>` : ''}
+    <div class="pd-section"><h6>履历</h6>
+      <p style="font-family:var(--serif);font-size:14px;line-height:1.7;color:var(--ink-soft)">${c.bio}</p>
+    </div>
+  `;
+}
+
+function renderPedigree(){
+  renderPediFams();
+  renderPediMain();
+  renderPediDetail();
+}
+
+/* ========== Mode 切换 ========== */
+function switchMode(mode){
+  document.querySelectorAll('.mode-tab').forEach(b => {
+    b.classList.toggle('active', b.dataset.mode === mode);
+  });
+  document.querySelectorAll('.stage-section').forEach(s => {
+    s.classList.toggle('active', s.dataset.section === mode);
+  });
+  if(mode === 'matrix') renderMatrix();
+  else if(mode === 'fusion') renderFusion();
+  else if(mode === 'pedigree') renderPedigree();
+}
+
+document.querySelectorAll('.mode-tab').forEach(b => b.addEventListener('click', () => switchMode(b.dataset.mode)));
+
+/* ========== Tooltip ========== */
+const tip = document.getElementById('tip');
+function showTip(e, html){ tip.innerHTML = html; tip.style.opacity = 1; moveTip(e); }
+function moveTip(e){
+  let x = e.clientX + 14, y = e.clientY + 14;
+  if(x + 300 > window.innerWidth) x -= 320;
+  if(y + 100 > window.innerHeight) y -= 120;
+  tip.style.left = x + 'px';
+  tip.style.top = y + 'px';
+}
+function hideTip(){ tip.style.opacity = 0; }
+
+/* 初始化 */
+renderMatrix();
+</script>
+</body>
+</html>
