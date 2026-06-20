@@ -212,39 +212,95 @@
   .school-list .item .n{font-family:var(--songti);font-weight:700;font-size:14px}
   .school-list .item .c{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--vermillion);font-variation-settings:"opsz" 144}
 
-  /* 中栏：人物按 gen 行 */
-  .gen-row{margin-bottom:22px;position:relative}
-  .gen-row .glabel{
-    font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;color:var(--dust);
-    text-transform:uppercase;margin-bottom:9px;padding-left:2px;
+  /* 中栏：人物按 gen 行（D4 同款立柱式版面） */
+  .gen-row{
+    display:grid;grid-template-columns:84px 1fr;align-items:start;gap:20px;
+    padding:18px 0;border-bottom:1px dashed rgba(18,16,14,.18);
   }
-  .gen-row .glabel em{font-family:var(--serif);font-style:italic;color:var(--vermillion);font-size:14px;font-variation-settings:"opsz" 144;margin-right:6px}
-  .gen-chefs{display:flex;flex-wrap:wrap;gap:10px}
-  .chef-chip{
-    border:1px solid var(--rule-strong);padding:10px 13px 9px;background:var(--paper);cursor:pointer;
-    min-width:120px;position:relative;transition:all .15s;
+  .gen-row:last-child{border-bottom:0}
+  .gen-label{
+    border-right:1.5px solid var(--ink);padding:4px 12px 4px 4px;text-align:right;
   }
-  .chef-chip:hover{border-color:var(--ink);background:var(--paper-2)}
-  .chef-chip.active{border-color:var(--vermillion);background:var(--paper-2);box-shadow:0 0 0 2px var(--vermillion) inset}
-  .chef-chip .name{font-family:var(--songti);font-weight:700;font-size:15px;letter-spacing:.04em;line-height:1.1}
-  .chef-chip .meta{font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;color:var(--dust);margin-top:4px;text-transform:uppercase}
-  .chef-chip .yrs{font-family:var(--serif);font-style:italic;font-size:11px;color:var(--ink-soft);margin-top:2px;font-variation-settings:"opsz" 144}
-  .chef-chip.placeholder{
-    border-style:dashed;color:var(--dust);background:var(--paper);
+  .gen-label .num{
+    font-family:var(--serif);font-style:italic;font-variation-settings:"opsz" 144;
+    font-size:34px;line-height:.95;color:var(--vermillion);
   }
-  .chef-chip.placeholder .name{color:var(--dust);font-weight:400}
-  .chef-chip .cross{
-    position:absolute;top:-5px;right:-5px;
-    width:18px;height:18px;display:grid;place-items:center;
-    background:var(--vermillion);color:var(--paper);font-size:11px;font-weight:700;
-    line-height:1;border-radius:50%;font-family:var(--songti);
+  .gen-label .zh{
+    font-family:var(--songti);font-weight:500;font-size:12.5px;
+    letter-spacing:.18em;color:var(--ink);margin-top:4px;
   }
-  .chef-chip .hub{
-    position:absolute;top:-7px;left:-7px;
-    width:22px;height:22px;display:grid;place-items:center;
-    background:var(--gold);color:var(--paper);font-family:var(--songti);font-weight:700;font-size:9px;
+  .gen-label .en{
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--dust);
+    margin-top:3px;text-transform:uppercase;
+  }
+  .gen-people{display:flex;flex-wrap:wrap;gap:14px}
+
+  /* 人物卡（D4 风格：主菜系钢印+姓名+短连线） */
+  .person{
+    display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:center;
+    padding:9px 14px 9px 9px;background:var(--paper);
+    border:1px solid rgba(18,16,14,.2);min-width:200px;cursor:pointer;
+    position:relative;transition:transform .2s,box-shadow .2s,border-color .2s;
+  }
+  .person:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--vermillion);border-color:var(--ink)}
+  .person.active{background:var(--ink);color:var(--paper);border-color:var(--ink);box-shadow:6px 6px 0 var(--vermillion)}
+  .person.active .p-meta{color:rgba(237,232,219,.7)}
+  .person.active .p-yrs{color:rgba(237,232,219,.55)}
+  .person.active .c-pri{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+
+  .p-cuisines{position:relative;width:42px;height:54px;flex-shrink:0}
+  .c-pri{
+    width:38px;height:48px;background:var(--vermillion);color:var(--paper);
+    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:20px;
+    position:relative;
+  }
+  .c-pri::after{
+    content:"";position:absolute;inset:-3px;border:1px dashed rgba(202,108,82,.55);
+  }
+  .person.active .c-pri::after{border-color:rgba(237,232,219,.4)}
+  .c-sec{
+    position:absolute;right:-6px;bottom:-4px;
+    width:20px;height:24px;background:var(--paper);color:var(--ink);
+    border:1.2px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:11px;
+    z-index:2;
+  }
+  .person.active .c-sec{background:var(--ink);color:var(--paper);border-color:var(--paper)}
+  .c-cross-line{
+    position:absolute;right:-2px;bottom:6px;width:14px;height:1px;
+    border-top:1.2px dashed var(--vermillion);transform:rotate(35deg);transform-origin:right center;
+    z-index:1;
+  }
+  .person.active .c-cross-line{border-color:var(--gold)}
+
+  .p-name{font-family:var(--songti);font-size:15.5px;font-weight:700;letter-spacing:.04em;line-height:1.15}
+  .p-yrs{font-family:var(--serif);font-style:italic;font-size:11.5px;color:var(--ink-soft);margin-top:3px;font-variation-settings:"opsz" 144}
+  .p-meta{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;color:var(--ink-soft);margin-top:3px}
+
+  /* 师徒短连线（左侧贴卡片） */
+  .person::after{
+    content:"";position:absolute;left:-10px;top:50%;width:8px;height:1px;background:var(--ink);opacity:.35;
+  }
+  .person.placeholder{border-style:dashed;background:var(--paper)}
+  .person.placeholder .c-pri{background:var(--paper);color:var(--dust);border:1px dashed var(--dust)}
+  .person.placeholder .c-pri::after{border-color:rgba(139,130,112,.5)}
+  .person.placeholder .p-name{color:var(--dust);font-weight:500}
+  .person.placeholder.active{background:var(--paper-3);color:var(--ink);box-shadow:4px 4px 0 var(--dust);border-color:var(--ink-soft)}
+  .person.placeholder.active .c-pri{background:var(--paper-2);color:var(--ink-soft)}
+  .person.placeholder.active .p-name{color:var(--ink)}
+
+  /* 跨菜系角标 / 师门枢纽徽 */
+  .person .cross-badge{
+    position:absolute;top:-2px;right:8px;color:var(--vermillion);font-family:var(--songti);font-size:18px;
+    line-height:1;
+  }
+  .person.active .cross-badge{color:var(--gold)}
+  .person .hub-badge{
+    position:absolute;top:-9px;left:-9px;
+    width:24px;height:24px;display:grid;place-items:center;
+    background:var(--gold);color:var(--paper);font-family:var(--songti);font-weight:700;font-size:10px;
     border-radius:50%;letter-spacing:.04em;line-height:1;
-    box-shadow:0 0 0 2px var(--paper);
+    box-shadow:0 0 0 2px var(--paper);z-index:3;
   }
 
   /* 右栏：详情面板 */
@@ -253,18 +309,19 @@
     font-family:var(--serif);font-style:italic;font-size:14px;color:var(--dust);text-align:center;
     padding:60px 20px;line-height:1.7;
   }
-  .detail .head{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+  .detail .head{display:flex;gap:18px;align-items:stretch;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+  .detail .head .info{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding:2px 0}
   .detail .portrait{
-    width:84px;height:84px;flex-shrink:0;border:1px solid var(--rule-strong);
-    object-fit:cover;background:var(--paper-2);
+    width:130px;height:174px;flex-shrink:0;border:1px solid var(--rule-strong);
+    object-fit:cover;background:var(--paper-2);position:relative;
   }
   .detail .portrait-fallback{
-    width:84px;height:84px;flex-shrink:0;background:var(--ink);color:var(--paper);
-    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:36px;
+    width:130px;height:174px;flex-shrink:0;background:var(--ink);color:var(--paper);
+    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:56px;
     position:relative;
   }
   .detail .portrait-fallback::after{
-    content:"";position:absolute;inset:3px;border:1px dashed rgba(237,232,219,.4);
+    content:"";position:absolute;inset:5px;border:1px dashed rgba(237,232,219,.4);
   }
   .detail .nm{font-family:var(--songti);font-weight:700;font-size:26px;letter-spacing:.05em;line-height:1.1}
   .detail .nm-en{font-family:var(--serif);font-style:italic;font-size:12px;color:var(--vermillion);font-variation-settings:"opsz" 144;margin-top:3px}
@@ -623,29 +680,48 @@ function renderV3(){
                       return mc && mc.primaryCuisine && mc.primaryCuisine !== c.primaryCuisine;
                     }));
     const isHub = HUB_NAMES.has(c.name);
-    const yrs = c.birth ? (c.birth + (c.death?'–'+c.death:'–')) : (c.era || '');
-    return `<div class="chef-chip ${c.isPlaceholder?'placeholder':''} ${state.chefId===c.id?'active':''}" data-id="${c.id}">
-      ${isHub ? '<div class="hub">枢</div>' : ''}
-      ${isCross ? '<div class="cross">※</div>' : ''}
-      <div class="name">${c.name}</div>
-      <div class="yrs">${yrs}</div>
-      <div class="meta">${(c.restaurant||c.position||c.city||(c.isPlaceholder?'档案待补':'—'))}</div>
+    const yrs = c.birth ? (c.birth + (c.death?'–'+c.death:'–今')) : (c.era || '');
+    const meta = c.restaurant || c.position || c.city || (c.isPlaceholder?'档案待补':'');
+    const priStamp = cuisineStamp(c.primaryCuisine);
+    const secStamp = c.secondaryCuisines && c.secondaryCuisines.length ? cuisineStamp(c.secondaryCuisines[0]) : '';
+    return `<div class="person ${c.isPlaceholder?'placeholder':''} ${state.chefId===c.id?'active':''}" data-id="${c.id}">
+      ${isHub ? '<div class="hub-badge">枢</div>' : ''}
+      ${isCross ? '<div class="cross-badge">※</div>' : ''}
+      <div class="p-cuisines">
+        <div class="c-pri">${priStamp || '·'}</div>
+        ${secStamp ? `<div class="c-cross-line"></div><div class="c-sec">${secStamp}</div>` : ''}
+      </div>
+      <div>
+        <div class="p-name">${c.name}</div>
+        ${yrs ? `<div class="p-yrs">${yrs}</div>` : ''}
+        ${meta ? `<div class="p-meta">${meta}</div>` : ''}
+      </div>
     </div>`;
   };
 
+  const genCnLabel = ['','一','二','三','四','五','六','七','八','九','十'];
+  const genRoman = ['','I','II','III','IV','V','VI','VII','VIII','IX','X'];
   const genHtml = genKeys.map(g => `<div class="gen-row">
-    <div class="glabel"><em>第 ${g} 代</em>GEN ${String(g).padStart(2,'0')} · ${genGroups[g].length} 人</div>
-    <div class="gen-chefs">${genGroups[g].map(renderChip).join('')}</div>
+    <div class="gen-label">
+      <div class="num">${genRoman[g] || g}</div>
+      <div class="zh">第 ${genCnLabel[g] || g} 代</div>
+      <div class="en">GEN ${String(g).padStart(2,'0')}</div>
+    </div>
+    <div class="gen-people">${genGroups[g].map(renderChip).join('')}</div>
   </div>`).join('');
 
   const eraHtml = eraKeys.map(e => `<div class="gen-row">
-    <div class="glabel"><em>${e==='?'?'时代不详':e}</em>· ${eraGroups[e].length} 人</div>
-    <div class="gen-chefs">${eraGroups[e].map(renderChip).join('')}</div>
+    <div class="gen-label">
+      <div class="num" style="font-size:22px;line-height:1.05">${e==='?'?'?':e[0]||'?'}</div>
+      <div class="zh">${e==='?'?'时代不详':e}</div>
+      <div class="en">${eraGroups[e].length} 人</div>
+    </div>
+    <div class="gen-people">${eraGroups[e].map(renderChip).join('')}</div>
   </div>`).join('');
 
-  $('#v3Mid').innerHTML = (genHtml || '') + (eraHtml ? `<div class="section-label" style="margin-top:8px">无世代信息 · 按时代</div>${eraHtml}` : '');
+  $('#v3Mid').innerHTML = (genHtml || '') + (eraHtml ? `${genHtml ? '<div class="section-label" style="margin-top:14px;font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;color:var(--dust);text-transform:uppercase;padding-bottom:8px">无世代信息 · 按时代分组</div>' : ''}${eraHtml}` : '');
   $('#v3Mid').onclick = e => {
-    const chip = e.target.closest('.chef-chip'); if(!chip) return;
+    const chip = e.target.closest('.person'); if(!chip) return;
     state.chefId = chip.dataset.id;
     renderV3();
   };
@@ -665,10 +741,12 @@ function renderDetail(){
     right.innerHTML = `
       <div class="head">
         <div class="portrait-fallback">${c.name[0]}</div>
-        <div>
-          <div class="nm">${c.name}</div>
-          <div class="yr">PLACEHOLDER · 档案待补</div>
-          <div class="cu-row"><div class="cu">${cuisineStamp(c.primaryCuisine)}</div></div>
+        <div class="info">
+          <div>
+            <div class="nm">${c.name}</div>
+            <div class="nm-en">PLACEHOLDER · 档案待补</div>
+          </div>
+          <div class="cu-row"><div class="cu">${cuisineStamp(c.primaryCuisine)||'·'}</div></div>
         </div>
       </div>
       <div class="sec"><div class="lbl">Status</div><div class="bio" style="font-style:italic;color:var(--dust)">该祖师暂无完整档案。被其弟子在文献中援引为师承——邀请社区为其补充完整资料。</div></div>
@@ -724,24 +802,28 @@ function renderDetail(){
     });
   }
 
-  const yrs = c.birth ? (c.birth + (c.death?'–'+c.death:'–')) : (c.era || '');
+  const yrs = c.birth ? (c.birth + (c.death?'–'+c.death:'–今')) : (c.era || '');
 
   right.innerHTML = `
     <div class="head">
       ${portraitHtml}
-      <div>
-        <div class="nm">${c.name}</div>
-        ${c.gender||c.birthplace ? `<div class="nm-en">${[c.gender,c.birthplace].filter(Boolean).join(' · ')}</div>` : ''}
-        <div class="yr">${yrs} ${c.school&&schoolByKey[c.school] ? '· '+schoolByKey[c.school].name : ''}</div>
-        <div class="cu-row">
-          <div class="cu" title="主菜系">${cuisineStamp(c.primaryCuisine)}</div>
-          ${(c.secondaryCuisines||[]).map(sc=>`<div class="cu sec" title="兼修">${cuisineStamp(sc)}</div>`).join('')}
-          ${typeof c.gen==='number' ? `<span style="font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--dust);margin-left:6px">GEN ${String(c.gen).padStart(2,'0')}</span>` : ''}
+      <div class="info">
+        <div>
+          <div class="nm">${c.name}</div>
+          ${c.gender||c.birthplace ? `<div class="nm-en">${[c.gender,c.birthplace].filter(Boolean).join(' · ')}</div>` : ''}
+          ${yrs ? `<div class="yr">${yrs}${c.school&&schoolByKey[c.school] ? ' · '+schoolByKey[c.school].name : ''}</div>` : ''}
+        </div>
+        <div>
+          ${isCross ? '<div class="banner-cross" style="margin-bottom:6px">※ 跨菜系学艺</div>' : ''}
+          ${isHub ? '<div class="banner-hub" style="margin-bottom:6px;margin-left:0">枢 师门枢纽</div>' : ''}
+          <div class="cu-row">
+            <div class="cu" title="主菜系">${cuisineStamp(c.primaryCuisine)||'·'}</div>
+            ${(c.secondaryCuisines||[]).map(sc=>`<div class="cu sec" title="兼修">${cuisineStamp(sc)||'·'}</div>`).join('')}
+            ${typeof c.gen==='number' ? `<span style="font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--dust);margin-left:6px">GEN ${String(c.gen).padStart(2,'0')}</span>` : ''}
+          </div>
         </div>
       </div>
     </div>
-    ${isCross ? '<div class="banner-cross">※ 跨菜系学艺</div>' : ''}
-    ${isHub ? '<div class="banner-hub">枢 师门枢纽</div>' : ''}
     ${c.titles && c.titles.length ? `<div class="sec"><div class="lbl">Titles · 头衔</div><ul class="titles">${c.titles.map(t=>`<li>${t}</li>`).join('')}</ul></div>` : ''}
     ${(c.restaurant||c.position||c.city) ? `<div class="sec"><div class="lbl">Position · 职务</div><div class="bio">${[c.restaurant,c.position,c.city].filter(Boolean).join(' · ')}</div></div>` : ''}
     ${masterChips.length ? `<div class="sec"><div class="lbl">Lineage · 师承</div><div class="masters">${masterChips.join('')}</div></div>` : ''}
