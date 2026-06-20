@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>三层模型 · Demo D4 · 菜系→流派→师门</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700&family=JetBrains+Mono:ital,wght@0,300..600&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ede8db;
+    --paper-2:#e3dcc8;
+    --paper-3:#d8cfb6;
+    --ink:#12100e;
+    --ink-soft:#3a3530;
+    --vermillion:#ca6c52;
+    --vermillion-deep:#a3503b;
+    --moss:#4a5a3f;
+    --gold:#a67c00;
+    --dust:#8b8270;
+    --rule:rgba(18,16,14,.12);
+    --serif:'Fraunces','Noto Serif SC',serif;
+    --songti:'Noto Serif SC','Fraunces',serif;
+    --mono:'JetBrains Mono',monospace;
+    --sans:'Instrument Sans',sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    background-image:
+      radial-gradient(rgba(18,16,14,.025) 1px,transparent 1px),
+      radial-gradient(rgba(202,108,82,.025) 1px,transparent 1px);
+    background-size:22px 22px,38px 38px;background-position:0 0,11px 11px;
+    min-height:100vh;
+  }
+
+  /* ============ 顶栏 ============ */
+  .top{
+    display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+    padding:24px 36px 14px;border-bottom:1px solid var(--ink);
+  }
+  .top h1{font-family:var(--serif);font-weight:500;font-size:30px;font-variation-settings:"opsz" 144}
+  .top h1 em{font-style:italic;color:var(--vermillion)}
+  .top .crumb{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--dust);text-transform:uppercase}
+
+  /* 视图切换 tab */
+  .mode-tabs{
+    display:flex;gap:0;padding:0 36px;border-bottom:1px solid var(--ink);
+    background:var(--paper-2);
+  }
+  .mode-tab{
+    flex:0 0 auto;padding:14px 22px;cursor:pointer;
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+    color:var(--ink-soft);text-transform:uppercase;border-right:1px solid var(--rule);
+    display:flex;align-items:center;gap:10px;transition:background .25s,color .25s;
+    position:relative;
+  }
+  .mode-tab:hover{background:rgba(202,108,82,.06)}
+  .mode-tab .num{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--vermillion);font-variation-settings:"opsz" 144}
+  .mode-tab.active{background:var(--ink);color:var(--paper)}
+  .mode-tab.active .num{color:var(--paper)}
+  .mode-tab.active::after{
+    content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--vermillion);
+  }
+  .mode-tab .zh{font-family:var(--songti);letter-spacing:.12em}
+
+  /* 顶部菜系导航条（10 大菜系小印章） */
+  .cuisine-rail{
+    display:flex;align-items:center;gap:8px;padding:14px 36px;
+    background:var(--paper);border-bottom:1px dashed rgba(18,16,14,.18);
+    overflow-x:auto;
+  }
+  .cuisine-rail .label{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dust);
+    text-transform:uppercase;margin-right:8px;flex:0 0 auto;
+  }
+  .c-stamp{
+    flex:0 0 auto;width:34px;height:34px;display:grid;place-items:center;
+    border:1.4px solid rgba(18,16,14,.25);font-family:var(--songti);font-weight:700;font-size:16px;
+    background:var(--paper);color:var(--dust);position:relative;cursor:not-allowed;opacity:.55;
+  }
+  .c-stamp.on{
+    background:var(--vermillion);color:var(--paper);border-color:var(--vermillion);opacity:1;cursor:default;
+  }
+  .c-stamp.on::after{
+    content:"";position:absolute;inset:-3px;border:1px dashed var(--vermillion);
+  }
+  .c-stamp .tag{
+    position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;color:var(--vermillion);
+    white-space:nowrap;
+  }
+  .c-stamp:not(.on) .tag{display:none}
+
+  /* ===========================================================
+     视图 1 · 菜系巡礼
+     =========================================================== */
+  .view{display:none;padding:36px 40px 60px}
+  .view.show{display:block}
+
+  .view-1 .hero{
+    display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;
+    background:
+      linear-gradient(rgba(18,16,14,.04) 1px,transparent 1px) 0 0/100% 36px,
+      var(--paper-2);
+    border:1.5px solid var(--ink);padding:38px 36px;margin-bottom:30px;
+    box-shadow:6px 6px 0 var(--ink);position:relative;
+  }
+  .view-1 .hero::before{
+    content:"";position:absolute;inset:6px;border:1px solid rgba(18,16,14,.18);pointer-events:none;
+  }
+  .view-1 .big-stamp{
+    width:140px;height:140px;display:grid;place-items:center;
+    background:var(--vermillion);color:var(--paper);
+    font-family:var(--songti);font-weight:700;font-size:88px;
+    position:relative;
+  }
+  .view-1 .big-stamp::after{
+    content:"";position:absolute;inset:-8px;border:1.5px solid var(--vermillion);opacity:.55;
+  }
+  .view-1 .hero-text h2{
+    font-family:var(--songti);font-weight:700;font-size:42px;letter-spacing:.18em;color:var(--ink);
+  }
+  .view-1 .hero-text h2 em{
+    color:var(--vermillion);font-style:normal;font-family:var(--serif);font-variation-settings:"opsz" 144;
+    font-style:italic;font-size:.6em;margin-left:14px;letter-spacing:.04em;
+  }
+  .view-1 .hero-text .sub{
+    font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--ink-soft);
+    text-transform:uppercase;margin-top:10px;
+  }
+  .view-1 .hero-text .desc{
+    font-family:var(--serif);font-size:15.5px;line-height:1.7;color:var(--ink-soft);
+    margin-top:14px;max-width:640px;
+  }
+  .view-1 .hero-text .desc strong{color:var(--vermillion);font-style:italic}
+
+  /* 数字三宝 */
+  .stat-row{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+    border:1.5px solid var(--ink);background:var(--paper);margin-bottom:30px;
+  }
+  .stat{
+    padding:24px 26px;border-right:1px solid var(--ink);position:relative;
+  }
+  .stat:last-child{border-right:0}
+  .stat .label{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dust);
+    text-transform:uppercase;
+  }
+  .stat .num{
+    font-family:var(--serif);font-style:italic;font-size:64px;line-height:1;color:var(--vermillion);
+    font-variation-settings:"opsz" 144;margin-top:8px;
+  }
+  .stat .meta{
+    font-family:var(--songti);font-size:13px;color:var(--ink-soft);margin-top:8px;letter-spacing:.06em;
+  }
+
+  /* 流派概览三连卡 */
+  .school-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .school-card{
+    background:var(--paper);border:1.5px solid var(--ink);padding:24px 22px;cursor:pointer;
+    box-shadow:5px 5px 0 var(--ink);transition:transform .2s,box-shadow .2s;
+    position:relative;
+  }
+  .school-card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--vermillion)}
+  .school-card .head{
+    display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1px dashed rgba(18,16,14,.25);
+  }
+  .school-stamp{
+    width:46px;height:46px;display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:22px;color:var(--paper);
+    position:relative;flex:0 0 auto;
+  }
+  .school-stamp::after{
+    content:"";position:absolute;inset:-3px;border:1px dashed currentColor;opacity:.6;
+  }
+  .school-stamp.s-shang{background:var(--vermillion);color:var(--paper)}
+  .school-stamp.s-shang::after{border-color:var(--vermillion);color:var(--vermillion)}
+  .school-stamp.s-xia{background:var(--moss);color:var(--paper)}
+  .school-stamp.s-xia::after{border-color:var(--moss);color:var(--moss)}
+  .school-stamp.s-xiao{background:var(--gold);color:var(--paper)}
+  .school-stamp.s-xiao::after{border-color:var(--gold);color:var(--gold)}
+  .school-card .head .h-name{
+    font-family:var(--songti);font-weight:700;font-size:20px;letter-spacing:.1em;
+  }
+  .school-card .head .h-en{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--dust);margin-top:2px;text-transform:uppercase;
+  }
+  .school-card .region{
+    font-family:var(--serif);font-style:italic;font-size:14px;color:var(--ink-soft);margin-top:14px;
+  }
+  .school-card .region span{color:var(--vermillion)}
+  .school-card .style{
+    display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;
+  }
+  .school-card .style i{
+    font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+    padding:3px 8px;border:1px solid var(--rule);
+  }
+  .school-card .rep{
+    margin-top:14px;padding-top:12px;border-top:1px dashed rgba(18,16,14,.15);
+    display:flex;align-items:center;gap:10px;
+  }
+  .school-card .rep .face{
+    width:36px;height:46px;border:1px solid var(--ink);background:var(--paper-3);
+    display:grid;place-items:center;font-family:var(--songti);font-size:18px;font-weight:700;
+    position:relative;flex:0 0 auto;
+  }
+  .school-card .rep .face::after{
+    content:"";position:absolute;inset:-3px;border:1px solid rgba(18,16,14,.25);
+  }
+  .school-card .rep .info{font-family:var(--serif);font-size:13.5px;line-height:1.5}
+  .school-card .rep .info b{font-weight:500;font-size:15px;color:var(--ink)}
+  .school-card .rep .info span{color:var(--ink-soft);font-style:italic}
+  .school-card .nums{
+    display:flex;gap:0;margin-top:14px;border-top:1.5px solid var(--ink);
+  }
+  .school-card .nums div{
+    flex:1;padding:10px 0;border-right:1px solid var(--rule);
+    font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--dust);text-transform:uppercase;
+    text-align:center;
+  }
+  .school-card .nums div:last-child{border-right:0}
+  .school-card .nums div strong{
+    display:block;font-family:var(--serif);font-style:italic;font-size:24px;color:var(--vermillion);
+    font-variation-settings:"opsz" 144;margin-bottom:2px;
+  }
+  .school-card .more{
+    position:absolute;bottom:8px;right:14px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+    color:var(--dust);text-transform:uppercase;
+  }
+
+  /* ===========================================================
+     视图 2 · 流派图谱
+     =========================================================== */
+  .view-2 .schools-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .school-detail{
+    background:
+      linear-gradient(rgba(18,16,14,.04) 1px,transparent 1px) 0 0/100% 32px,
+      var(--paper-2);
+    border:1.5px solid var(--ink);padding:24px;box-shadow:5px 5px 0 var(--ink);
+    position:relative;
+  }
+  .school-detail::before{
+    content:"";position:absolute;inset:6px;border:1px solid rgba(18,16,14,.15);pointer-events:none;
+  }
+  .school-detail .sd-head{
+    display:flex;align-items:flex-start;gap:14px;padding-bottom:16px;
+    border-bottom:1.5px solid var(--ink);margin-bottom:14px;position:relative;
+  }
+  .school-detail .sd-name{
+    font-family:var(--songti);font-weight:700;font-size:22px;letter-spacing:.12em;
+  }
+  .school-detail .sd-en{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;color:var(--dust);
+    margin-top:4px;text-transform:uppercase;
+  }
+  .school-detail .sd-region{
+    font-family:var(--serif);font-style:italic;font-size:13px;color:var(--vermillion);margin-top:6px;
+  }
+  .school-detail .sd-style{
+    margin:14px 0;font-family:var(--serif);font-size:14.5px;line-height:1.7;color:var(--ink-soft);
+  }
+  .school-detail .sd-style em{font-style:italic;color:var(--vermillion)}
+  .school-detail h6{
+    font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--dust);
+    text-transform:uppercase;margin:14px 0 10px;
+  }
+  .chef-mini{
+    display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;
+    padding:8px 10px;background:var(--paper);border:1px solid rgba(18,16,14,.2);
+    margin-bottom:7px;cursor:pointer;position:relative;
+    transition:transform .2s,box-shadow .2s;
+  }
+  .chef-mini:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--vermillion)}
+  .chef-mini .face{
+    width:32px;height:40px;border:1px solid var(--ink);background:var(--paper-3);
+    display:grid;place-items:center;font-family:var(--songti);font-size:14px;font-weight:700;
+    position:relative;
+  }
+  .chef-mini .face::after{
+    content:"";position:absolute;inset:-2px;border:1px solid rgba(18,16,14,.2);
+  }
+  .chef-mini .info{min-width:0}
+  .chef-mini .info .nm{font-family:var(--serif);font-size:14.5px;font-weight:500;line-height:1.1}
+  .chef-mini .info .meta{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;color:var(--ink-soft);margin-top:3px;
+  }
+  .chef-mini .real-tag{
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;color:var(--vermillion);
+    border:1px solid var(--vermillion);padding:2px 5px;text-transform:uppercase;
+  }
+  .chef-mini .fictional-tag{
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;color:var(--dust);
+    border:1px dashed var(--dust);padding:2px 5px;text-transform:uppercase;
+  }
+  .school-detail .sd-nums{
+    display:flex;gap:0;margin-top:18px;border-top:1.5px solid var(--ink);padding-top:14px;
+  }
+  .school-detail .sd-nums div{
+    flex:1;font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--dust);
+    text-transform:uppercase;text-align:center;
+  }
+  .school-detail .sd-nums strong{
+    display:block;font-family:var(--serif);font-style:italic;font-size:26px;color:var(--vermillion);
+    font-variation-settings:"opsz" 144;
+  }
+
+  /* ===========================================================
+     视图 3 · 师承谱（三栏）
+     =========================================================== */
+  .view-3{padding:0}
+  .layout-3{display:grid;grid-template-columns:240px 1fr 360px;min-height:calc(100vh - 200px)}
+  .schools-side{
+    border-right:1px solid var(--ink);padding:24px 0;
+    background:linear-gradient(180deg,transparent,rgba(216,207,182,.4));
+  }
+  .schools-side h6{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--dust);
+    text-transform:uppercase;padding:0 24px 14px;
+  }
+  .sch{
+    display:grid;grid-template-columns:36px 1fr auto;gap:10px;align-items:center;
+    padding:14px 24px;cursor:pointer;border-top:1px solid var(--rule);
+    transition:background .25s,padding-left .25s;
+  }
+  .sch:last-child{border-bottom:1px solid var(--rule)}
+  .sch:hover{background:rgba(202,108,82,.06);padding-left:30px}
+  .sch.active{background:var(--ink);color:var(--paper)}
+  .sch.active .sch-stamp{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  .sch.active .sch-meta{color:rgba(237,232,219,.65)}
+  .sch.active .sch-meta strong{color:var(--paper)}
+  .sch-stamp{
+    width:32px;height:32px;border:1.4px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:15px;background:var(--paper);
+    position:relative;
+  }
+  .sch-stamp::after{
+    content:"";position:absolute;inset:-3px;border:1px dashed rgba(18,16,14,.3);
+  }
+  .sch-stamp.s-shang{background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)}
+  .sch-stamp.s-xia{background:var(--moss);color:var(--paper);border-color:var(--moss)}
+  .sch-stamp.s-xiao{background:var(--gold);color:var(--paper);border-color:var(--gold)}
+  .sch-name{font-family:var(--serif);font-size:15px;font-variation-settings:"opsz" 144;line-height:1.15}
+  .sch-name span{display:block;font-family:var(--mono);font-size:9.5px;color:inherit;opacity:.7;letter-spacing:.1em;margin-top:2px}
+  .sch-meta{font-family:var(--mono);font-size:11px;color:var(--ink-soft);text-align:right}
+  .sch-meta strong{display:block;font-family:var(--serif);font-size:18px;color:var(--vermillion);font-style:italic}
+
+  .main3{padding:30px 36px 60px;overflow-y:auto;max-height:calc(100vh - 200px)}
+  .pedigree{
+    background:
+      linear-gradient(rgba(18,16,14,.04) 1px,transparent 1px) 0 0/100% 36px,
+      var(--paper-2);
+    border:1.5px solid var(--ink);position:relative;padding:32px 26px 24px;
+    box-shadow:6px 6px 0 var(--ink);
+  }
+  .pedigree::before{
+    content:"";position:absolute;inset:6px;border:1px solid rgba(18,16,14,.18);pointer-events:none;
+  }
+  .pedigree-header{
+    display:flex;align-items:flex-end;justify-content:space-between;gap:18px;
+    padding-bottom:16px;margin-bottom:8px;border-bottom:1.5px solid var(--ink);position:relative;
+  }
+  .pedigree-header::after{
+    content:"";position:absolute;left:0;right:0;bottom:-5px;border-bottom:1px solid var(--ink);
+  }
+  .pedigree-title{
+    font-family:var(--songti);font-weight:700;font-size:32px;letter-spacing:.16em;color:var(--ink);
+  }
+  .pedigree-title em{
+    color:var(--paper);font-style:normal;background:var(--vermillion);
+    padding:2px 10px;margin-right:8px;font-family:var(--songti);
+  }
+  .pedigree-sub{
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--ink-soft);text-align:right;
+  }
+  .pedigree-sub div{margin-bottom:4px}
+
+  .gen-row{
+    display:grid;grid-template-columns:100px 1fr;align-items:start;gap:24px;
+    padding:20px 0;border-bottom:1px dashed rgba(18,16,14,.18);
+  }
+  .gen-row:last-child{border-bottom:0}
+  .gen-label{
+    border-right:1.5px solid var(--ink);padding:6px 14px 6px 4px;text-align:right;
+  }
+  .gen-label .num{
+    font-family:var(--serif);font-style:italic;font-variation-settings:"opsz" 144;
+    font-size:38px;line-height:.95;color:var(--vermillion);
+  }
+  .gen-label .zh{
+    font-family:var(--songti);font-weight:500;font-size:13px;
+    letter-spacing:.18em;color:var(--ink);margin-top:4px;
+  }
+  .gen-label .en{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--dust);
+    margin-top:4px;text-transform:uppercase;
+  }
+  .gen-people{display:flex;flex-wrap:wrap;gap:18px}
+
+  /* 人物卡（核心，含多菜系印章） */
+  .person{
+    display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;
+    padding:10px 14px 10px 10px;background:var(--paper);
+    border:1px solid rgba(18,16,14,.2);min-width:236px;cursor:pointer;
+    position:relative;transition:transform .2s,box-shadow .2s,border-color .2s;
+  }
+  .person:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--vermillion);border-color:var(--ink)}
+  .person.cur{background:var(--ink);color:var(--paper);border-color:var(--ink);box-shadow:6px 6px 0 var(--vermillion)}
+  .person.cur .p-meta{color:rgba(237,232,219,.7)}
+  .person.cur .p-cuisines .c-pri{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+
+  /* 主菜系印（大）+ 兼修菜系印（小、描边） */
+  .p-cuisines{
+    position:relative;width:48px;height:60px;
+  }
+  .c-pri{
+    width:42px;height:54px;background:var(--vermillion);color:var(--paper);
+    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:22px;
+    position:relative;
+  }
+  .c-pri::after{
+    content:"";position:absolute;inset:-3px;border:1px dashed rgba(202,108,82,.55);
+  }
+  .person.cur .c-pri{background:var(--paper);color:var(--ink)}
+  .person.cur .c-pri::after{border-color:rgba(237,232,219,.4)}
+  .c-sec{
+    position:absolute;right:-8px;bottom:-4px;
+    width:22px;height:26px;background:var(--paper);color:var(--ink);
+    border:1.2px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:12px;
+    z-index:2;
+  }
+  .person.cur .c-sec{background:var(--ink);color:var(--paper);border-color:var(--paper)}
+  /* 跨菜系学艺虚线（主→兼） */
+  .c-cross-line{
+    position:absolute;right:-2px;bottom:6px;width:14px;height:1px;
+    border-top:1.2px dashed var(--vermillion);transform:rotate(35deg);transform-origin:right center;
+    z-index:1;
+  }
+  .person.cur .c-cross-line{border-color:var(--gold)}
+
+  .p-name{font-family:var(--serif);font-size:17px;font-weight:500;font-variation-settings:"opsz" 144;line-height:1.1}
+  .p-meta{
+    font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--ink-soft);margin-top:5px;
+  }
+
+  /* 真实人物角标 + 跨菜系角标 */
+  .real-badge{
+    position:absolute;bottom:6px;right:8px;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;color:var(--vermillion);
+    text-transform:uppercase;font-weight:600;
+  }
+  .person.cur .real-badge{color:var(--gold)}
+  .cross-badge{
+    position:absolute;top:-2px;right:6px;color:var(--vermillion);font-family:var(--songti);font-size:18px;
+    line-height:1;
+  }
+  .person.cur .cross-badge{color:var(--gold)}
+
+  /* 师徒短连线 */
+  .person::after{
+    content:"";position:absolute;left:-9px;top:50%;width:7px;height:1px;background:var(--ink);opacity:.35;
+  }
+
+  .legend3{
+    display:flex;flex-wrap:wrap;gap:12px 26px;padding:13px 18px;margin-top:18px;
+    background:var(--paper);border:1px dashed rgba(18,16,14,.3);
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--ink-soft);
+  }
+  .legend3 span{display:inline-flex;align-items:center;gap:6px}
+  .lg-pri{display:inline-block;width:14px;height:18px;background:var(--vermillion)}
+  .lg-sec{display:inline-block;width:11px;height:14px;border:1.2px solid var(--ink);background:var(--paper)}
+  .lg-cross{color:var(--vermillion);font-family:var(--songti);font-size:14px}
+  .lg-real{font-family:var(--mono);color:var(--vermillion);font-weight:600;letter-spacing:.16em}
+
+  /* 详情面板 */
+  .detail3{
+    border-left:1px solid var(--ink);padding:28px 26px;
+    background:linear-gradient(180deg,var(--paper-2),var(--paper));
+    overflow-y:auto;max-height:calc(100vh - 200px);
+  }
+  .d-stamp-row{display:flex;align-items:flex-end;gap:10px;margin-bottom:14px}
+  .d-stamp{
+    display:inline-grid;place-items:center;width:60px;height:60px;
+    background:var(--vermillion);color:var(--paper);
+    font-family:var(--songti);font-weight:700;font-size:30px;position:relative;
+  }
+  .d-stamp::after{
+    content:"";position:absolute;inset:-4px;border:1px solid var(--vermillion);opacity:.5;
+  }
+  .d-stamp-sec{
+    width:32px;height:36px;background:var(--paper);color:var(--ink);
+    border:1.4px solid var(--ink);display:grid;place-items:center;
+    font-family:var(--songti);font-weight:700;font-size:16px;position:relative;
+  }
+  .d-stamp-sec::after{
+    content:"";position:absolute;inset:-3px;border:1px dashed rgba(18,16,14,.3);
+  }
+  .d-name{font-family:var(--songti);font-weight:700;font-size:28px;letter-spacing:.08em;line-height:1}
+  .d-name em{font-style:italic;color:var(--vermillion);font-family:var(--serif);font-variation-settings:"opsz" 144;font-size:.65em;margin-left:8px}
+  .d-pos{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--ink-soft);margin-top:8px;text-transform:uppercase}
+  .d-tags{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 22px}
+  .d-tag{
+    font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+    padding:4px 9px;border:1px solid var(--rule);
+  }
+  .d-tag.real{background:var(--vermillion);color:var(--paper);border-color:var(--vermillion)}
+  .d-tag.cross{background:var(--gold);color:var(--paper);border-color:var(--gold)}
+  .d-tag.school{background:var(--moss);color:var(--paper);border-color:var(--moss)}
+
+  .d-section{padding:16px 0;border-top:1px solid var(--rule)}
+  .d-section h6{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dust);
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .d-section p{font-family:var(--serif);font-size:14.5px;line-height:1.75}
+  .d-section p em{font-style:italic;color:var(--vermillion)}
+  .d-section a.src{
+    display:inline-block;margin-top:10px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+    color:var(--moss);text-decoration:none;border-bottom:1px solid var(--moss);padding-bottom:1px;
+  }
+  .d-section a.src:hover{color:var(--vermillion);border-color:var(--vermillion)}
+  .d-section a.src::before{content:"↗ ";font-family:var(--serif)}
+
+  .d-timeline{position:relative;padding-left:18px;margin-top:6px}
+  .d-timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--rule)}
+  .d-tl{position:relative;padding:0 0 14px 14px}
+  .d-tl::before{content:"";position:absolute;left:-18px;top:7px;width:11px;height:11px;border:2px solid var(--ink);background:var(--paper);border-radius:50%}
+  .d-tl.cur::before{background:var(--vermillion);border-color:var(--vermillion);box-shadow:0 0 0 4px rgba(202,108,82,.18)}
+  .d-tl .gen{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;color:var(--dust);text-transform:uppercase}
+  .d-tl .who{font-family:var(--serif);font-size:15px;line-height:1.3;margin-top:2px}
+  .d-tl .who em{color:var(--vermillion);font-style:italic}
+  .d-tl .meta{font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-top:2px}
+
+  .dish{display:inline-block;font-family:var(--serif);font-size:13px;padding:5px 11px;background:var(--paper);border:1px solid var(--rule);margin:0 4px 6px 0}
+
+  .cross-note{
+    margin-top:10px;padding:12px 14px;border:1px dashed var(--vermillion);
+    background:rgba(202,108,82,.06);font-family:var(--serif);font-size:13.5px;line-height:1.65;
+  }
+  .cross-note strong{color:var(--vermillion)}
+
+  /* 响应式 */
+  @media(max-width:980px){
+    .layout-3{grid-template-columns:1fr}
+    .schools-side,.detail3{border:none;border-bottom:1px solid var(--ink);max-height:none}
+    .schools-side{display:flex;overflow-x:auto;padding:14px 18px}
+    .schools-side h6{display:none}
+    .sch{flex:0 0 auto;border:1px solid var(--rule);margin-right:8px;border-top:1px solid var(--rule)!important}
+    .school-grid,.view-2 .schools-detail,.stat-row{grid-template-columns:1fr}
+    .stat{border-right:0;border-bottom:1px solid var(--ink)}
+    .stat:last-child{border-bottom:0}
+    .view-1 .hero{grid-template-columns:1fr}
+    .view-1 .big-stamp{width:110px;height:110px;font-size:64px;justify-self:start}
+    .view-1 .hero-text h2{font-size:30px}
+    .pedigree-title{font-size:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>三层 <em>传承</em>模型 · Demo D4</h1>
+  <div class="crumb">Cuisine → School → Sect / 川菜历史名厨实证</div>
+</header>
+
+<!-- 顶部菜系导航条：10 大菜系小印章，仅"川"激活 -->
+<div class="cuisine-rail">
+  <div class="label">CUISINE</div>
+  <div class="c-stamp on" title="川菜（演示）"><span class="tag">DEMO</span>川</div>
+  <div class="c-stamp" title="粤（待扩展）">粤</div>
+  <div class="c-stamp" title="鲁（待扩展）">鲁</div>
+  <div class="c-stamp" title="淮扬（待扩展）">淮</div>
+  <div class="c-stamp" title="湘（待扩展）">湘</div>
+  <div class="c-stamp" title="浙（待扩展）">浙</div>
+  <div class="c-stamp" title="徽（待扩展）">徽</div>
+  <div class="c-stamp" title="闽（待扩展）">闽</div>
+  <div class="c-stamp" title="京（待扩展）">京</div>
+  <div class="c-stamp" title="沪（待扩展）">沪</div>
+</div>
+
+<!-- 视图切换 -->
+<div class="mode-tabs">
+  <div class="mode-tab active" data-view="1">
+    <span class="num">I</span><span class="zh">菜系巡礼</span>
+  </div>
+  <div class="mode-tab" data-view="2">
+    <span class="num">II</span><span class="zh">流派图谱</span>
+  </div>
+  <div class="mode-tab" data-view="3">
+    <span class="num">III</span><span class="zh">师承谱</span>
+  </div>
+</div>
+
+<!-- ========== 视图 1 · 菜系巡礼 ========== -->
+<section class="view view-1 show" id="view1">
+  <div class="hero">
+    <div class="big-stamp">川</div>
+    <div class="hero-text">
+      <h2>川菜<em>Sichuan Cuisine</em></h2>
+      <div class="sub">三大流派 · 上河帮 / 下河帮 / 小河帮</div>
+      <div class="desc">
+        川菜以"<strong>一菜一格，百菜百味</strong>"著称，地域分流而成蓉派（上河帮）、渝派（下河帮）、盐帮派（小河帮）三大流派。
+        本 demo 以真实历史名厨数据，演示<strong>菜系 → 流派 → 师门</strong>三层组织模型，
+        与"按姓氏开派"的旧模型相比，更贴合中餐传承现实。
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-row" id="statRow"></div>
+
+  <div class="school-grid" id="schoolGrid"></div>
+</section>
+
+<!-- ========== 视图 2 · 流派图谱 ========== -->
+<section class="view view-2" id="view2">
+  <div class="schools-detail" id="schoolsDetail"></div>
+</section>
+
+<!-- ========== 视图 3 · 师承谱 ========== -->
+<section class="view view-3" id="view3">
+  <div class="layout-3">
+    <aside class="schools-side">
+      <h6>流 派 目 录</h6>
+      <div id="schSide"></div>
+    </aside>
+    <main class="main3">
+      <div class="pedigree">
+        <div class="pedigree-header">
+          <div class="pedigree-title" id="p3Title"><em>蓉</em>派师承谱</div>
+          <div class="pedigree-sub" id="p3Sub"></div>
+        </div>
+        <div id="genRows3"></div>
+        <div class="legend3">
+          <span><span class="lg-pri"></span>主菜系印</span>
+          <span><span class="lg-sec"></span>兼修菜系印（描边）</span>
+          <span><span class="lg-cross">※</span>跨菜系学艺</span>
+          <span><span class="lg-real">REAL</span>真实历史人物</span>
+        </div>
+      </div>
+    </main>
+    <aside class="detail3" id="detail3"></aside>
+  </div>
+</section>
+
+<script>
+/* ============================================================
+   数据：真实历史名厨 · 川菜三大流派
+   isReal=true 表示真实历史人物，附 source 链接（hover 可见）
+   gen 为流派内代际，跨菜系外援节点 gen 单独标
+   ============================================================ */
+const CHEFS = [
+  /* ============ 蓉派（上河帮）：关正兴 → 蓝光鉴 → 罗国荣 → 黄子云/于存 ============ */
+  { id:'h001', name:'关正兴', gen:1, master:null, era:'清末民初',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'正兴园', position:'掌门厨师', signature:['满汉宴席'],
+    isReal:true, birth:1832, death:1902,
+    source:'https://zh.wikipedia.org/zh-cn/%E5%B7%9D%E8%8F%9C',
+    bio:'满人名厨，清末民初成都正兴园老板，被誉为蓉派川菜源头。蓝光鉴等近代川菜奠基者皆出其门。' },
+
+  { id:'h002', name:'黄敬临', gen:1, master:null, era:'清末民国',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'姑姑筵', position:'御膳房名厨', signature:['开水白菜','坛子肉'],
+    isReal:true, birth:1875, death:1944,
+    source:'https://baike.baidu.com/item/%E9%BB%84%E6%95%AC%E4%B8%B4',
+    bio:'清宫御膳房名厨，自创"姑姑筵"。开水白菜为其原创，对蓉派川菜精致路线影响极深，与罗国荣亦师亦友。' },
+
+  { id:'h003', name:'蓝光鉴', gen:2, master:'h001', era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'荣乐园', position:'创始人', signature:['坛子肉','干烧鲍鱼','清汤鸡淖'],
+    isReal:true, birth:1884, death:1962,
+    source:'https://baike.baidu.com/item/%E8%93%9D%E5%85%89%E9%89%B4',
+    bio:'13 岁拜满人名厨关正兴为师，被誉为"现代川菜奠基人"。1912 年与师兄弟创办荣乐园，培养川菜大师无数。' },
+
+  { id:'h004', name:'王海泉', gen:2, master:null, era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'颐之时（早期）', position:'名厨', signature:['鸡蒙葵菜'],
+    isReal:true, birth:1880, death:1950,
+    source:'https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3',
+    bio:'近代成都名厨，罗国荣早年汲取理念的几位前辈之一，对其精致川菜路线有重要影响。' },
+
+  { id:'h005', name:'黄绍清', gen:2, master:null, era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'颐之时', position:'名厨', signature:['软炸扳指'],
+    isReal:true, birth:1885, death:1955,
+    source:'https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3',
+    bio:'成都老牌名厨，多源印证为罗国荣师承之一，工于精细川菜与筵席体系。' },
+
+  { id:'h006', name:'罗国荣', gen:3, master:'h005', era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都/北京', restaurant:'颐之时·北京饭店', position:'国宴厨师长', signature:['开水白菜','坛子肉','鸡豆花'],
+    isReal:true, birth:1911, death:1969,
+    source:'https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3',
+    bio:'人称"川菜圣手"，新中国"四大名厨"之一。1940 年起家成都颐之时；师承黄绍清，亦受蓝光鉴系传统与黄敬临理念熏陶；后被毛主席钦点进京，主持国宴。',
+    masterNote:'师承黄绍清，亦受蓝光鉴、黄敬临理念熏陶' },
+
+  { id:'h007', name:'张松云', gen:3, master:'h003', era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'荣乐园', position:'特级厨师', signature:['樟茶鸭子','干烧岩鲤'],
+    isReal:true, birth:1900, death:1982,
+    source:'http://www.cyxh.org/mingchu/mianhuai/6.html',
+    bio:'蓝光鉴系蓉派传人，特级川菜大师，长于传统筵席与小炒。' },
+
+  { id:'h008', name:'孔道生', gen:3, master:'h003', era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'荣乐园', position:'特级厨师', signature:['麻婆豆腐','一品海参'],
+    isReal:true, birth:1903, death:1985,
+    source:'http://www.cyxh.org/mingchu/mianhuai/6.html',
+    bio:'蓝光鉴系蓉派传人，与张松云同为荣乐园柱石，技法精严。' },
+
+  { id:'h009', name:'曾国华', gen:3, master:'h003', era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'荣乐园', position:'特级厨师', signature:['鸡豆花'],
+    isReal:true, birth:1912, death:1990,
+    source:'http://www.cyxh.org/mingchu/mianhuai/6.html',
+    bio:'蓉派特级名厨，蓝光鉴弟子序列代表人物之一。' },
+
+  { id:'h010', name:'黄子云', gen:4, master:'h006', era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'北京/成都', restaurant:'颐之时', position:'国宝级烹饪大师', signature:['开水白菜','干烧鱼翅'],
+    isReal:true, birth:1928, death:2014,
+    source:'https://baike.baidu.com/item/%E9%BB%84%E5%AD%90%E4%BA%91',
+    bio:'罗国荣高徒，"国宝级烹饪大师"，承袭师门精致路线，是罗派进入当代的重要桥梁。' },
+
+  { id:'h011', name:'于存', gen:4, master:'h006', era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'北京', restaurant:'北京饭店', position:'国宴大师', signature:['坛子肉','叫化鸡'],
+    isReal:true, birth:1925, death:2005,
+    source:'https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3',
+    bio:'罗国荣弟子，长期供职北京饭店国宴，承蓉派精筵传统于京华。' },
+
+  { id:'h012', name:'谢怀德', gen:4, master:'h007', era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'四川饭店', position:'国家特一级厨师', signature:['宫保鸡丁','鱼香肉丝'],
+    isReal:true, birth:1947, active:true,
+    source:'http://www.cyxh.org/',
+    bio:'元老级川菜大师，国家特一级厨师，1990 年代初四川省仅有的三位高级中式烹调师考评委员之一。' },
+
+  { id:'h013', name:'彭子渝', gen:4, master:'h008', era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'成都', restaurant:'川菜博物馆顾问', position:'注册元老级中国烹饪大师',
+    signature:['麻婆豆腐','回锅肉'],
+    isReal:true, birth:1949, active:true,
+    source:'http://www.cyxh.org/',
+    bio:'注册元老级中国烹饪大师，强调川菜"自然生态 + 人文智慧"的现代诠释。' },
+
+  /* ============ 渝派（下河帮）：吴万里 → 吴强；李跃华、陈志刚 ============ */
+  { id:'h020', name:'吴万里', gen:1, master:null, era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'xia-he-bang',
+    city:'重庆', restaurant:'味苑', position:'渝派奠基人', signature:['毛血旺','水煮牛肉'],
+    isReal:true, birth:1933, death:2012,
+    source:'http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html',
+    bio:'重庆烹饪界泰斗，人称"师爷""吴老爷子"，渝派川菜奠基人，味苑餐厅创办人，原籍内江。' },
+
+  { id:'h021', name:'吴强', gen:2, master:'h020', era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'xia-he-bang',
+    city:'重庆', restaurant:'味苑', position:'传承人', signature:['毛血旺','江湖鱼'],
+    isReal:true, birth:1965, active:true,
+    source:'http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html',
+    bio:'吴万里之子，继承味苑及渝派衣钵，将江湖菜系统化。' },
+
+  { id:'h022', name:'李跃华', gen:2, master:null, era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'xia-he-bang',
+    city:'重庆', restaurant:'重庆烹饪协会', position:'渝菜概念创立人', signature:['辣子鸡'],
+    isReal:true, birth:1952, active:true,
+    source:'http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html',
+    bio:'渝菜概念创立人，主导将渝派川菜的重庆系正式定名为"渝菜"，推动品牌化与标准化。' },
+
+  { id:'h023', name:'陈志刚', gen:2, master:null, era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'xia-he-bang',
+    city:'重庆', restaurant:'陈氏川菜馆', position:'川渝厨师界泰斗', signature:['泉水鸡','江团'],
+    isReal:true, birth:1948, active:true,
+    source:'http://www.cyxh.org/',
+    bio:'川渝厨师界泰斗，"川菜泰斗"称号获得者，江湖菜系统理论的重要参与者。' },
+
+  /* ============ 盐帮派（小河帮）：范吉安 + 李琼圃 ============ */
+  { id:'h030', name:'李琼圃', gen:1, master:null, era:'清末',
+    primaryCuisine:'川', secondaryCuisines:[], school:'xiao-he-bang',
+    city:'自贡', restaurant:'盐商家厨', position:'盐帮菜源头', signature:['盐商私房菜'],
+    isReal:true, birth:1850, death:1920,
+    source:'https://www.sdlib.com.cn/home/article/detail/id/132206.html',
+    bio:'清末自贡盐商，撰著《琼圃菜谱》记载盐帮菜烹饪要诀，惜原本已失传，可作为盐帮派源头注脚。' },
+
+  { id:'h031', name:'范吉安', gen:2, master:null, era:'近代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'xiao-he-bang',
+    city:'自贡', restaurant:'盐帮筵席', position:'盐帮主厨', signature:['自贡粑粑肉','水煮牛肉'],
+    isReal:true, birth:1895, death:1965,
+    source:'https://www.sdlib.com.cn/home/article/detail/id/132206.html',
+    bio:'1930 年代自贡盐帮菜主厨，自贡粑粑肉的创制者，该菜后成川菜高档筵席常见菜。' },
+
+  /* ============ 跨菜系真实案例：史正良 → 兰明路 → 黄振华（粤外援） ============ */
+  { id:'h040', name:'史正良', gen:0, master:null, era:'当代',
+    primaryCuisine:'川', secondaryCuisines:[], school:'shang-he-bang',
+    city:'绵阳', restaurant:'绵阳饭店', position:'川菜泰斗', signature:['太白诗酒宴','鱼香味系列'],
+    isReal:true, birth:1946, death:2015,
+    source:'https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF',
+    bio:'四川梓潼人，国宝级川菜泰斗，"史派川菜"代表人物，14 岁起师从川西北名厨魏兴国、刘永见学艺；收徒 62 人，含兰明路、童建华等。2015 年于罗江车祸辞世。' },
+
+  { id:'h041', name:'兰明路', gen:1, master:'h040', era:'当代',
+    primaryCuisine:'川', secondaryCuisines:['粤'], school:'shang-he-bang',
+    crossMaster:'h042', crossCuisine:'粤',
+    city:'成都', restaurant:'兰庭十三厨', position:'四川旅游学院教授', signature:['泡菜系列','创新川菜'],
+    isReal:true, birth:1968, active:true,
+    source:'https://u-cra.com/profile/%E5%85%B0%E6%98%8E%E8%B7%AF/',
+    bio:'四川绵阳人，祖籍射洪。1998 年拜史正良为师，系统扎根川菜；经师父亲笔书信推荐，再师从著名粤菜大师黄振华两年得真传。现为四川旅游学院教授、国家级技能大师工作室领办人、兰庭十三厨创始人，享受国务院特殊津贴专家。',
+    crossNote:'师父史正良书信推荐，再拜粤菜大师黄振华为师 2 年，学习粤菜真传——现代厨师跨菜系学艺典范' },
+
+  { id:'h042', name:'黄振华', gen:0, master:null, era:'当代',
+    primaryCuisine:'粤', secondaryCuisines:[], school:null,
+    isExternal:true,
+    city:'广州', restaurant:'广州酒家', position:'粤菜烹饪大师', signature:['白切鸡','烧鹅'],
+    isReal:true, birth:1935, active:true,
+    source:'https://u-cra.com/profile/%E5%85%B0%E6%98%8E%E8%B7%AF/',
+    bio:'著名粤菜烹饪大师，曾受川菜泰斗史正良书信之托，悉心调教兰明路两年。本节点作为外援展示，演示跨菜系师承在三层模型中的呈现方式。' },
+];
+
+/* 流派定义 */
+const SCHOOLS = [
+  { key:'shang-he-bang', stamp:'蓉', name:'蓉派', subName:'上河帮', en:'SHANG-HE-BANG',
+    region:'成都 · 乐山', styles:['精致', '传统', '筵席'],
+    desc:'川菜上河帮以成都、乐山为核心，重视高档筵席与精细技法，"<em>清鲜醇浓</em>"，重在底味与火候。',
+    repId:'h003', cls:'s-shang' },
+  { key:'xia-he-bang', stamp:'渝', name:'渝派', subName:'下河帮', en:'XIA-HE-BANG',
+    region:'重庆 · 达州', styles:['江湖','麻辣','刚劲'],
+    desc:'川菜下河帮即渝派川菜，覆盖重庆、达州一带，<em>江湖菜</em>系出于此，重油重辣，敢辣善变。',
+    repId:'h020', cls:'s-xia' },
+  { key:'xiao-he-bang', stamp:'盐', name:'盐帮派', subName:'小河帮', en:'XIAO-HE-BANG',
+    region:'自贡 · 内江', styles:['浓郁','刺激','盐商'],
+    desc:'盐帮派起于自贡盐商家厨，以盐商之富与盐工之劳并存，<em>味厚刺激</em>，自贡粑粑肉、水煮牛肉等出此。',
+    repId:'h031', cls:'s-xiao' },
+];
+
+const GEN_ZH = ['零','一','二','三','四','五','六','七'];
+const GEN_EN = ['0','I','II','III','IV','V','VI','VII'];
+
+let curView = 1;
+let curSchool = 'shang-he-bang';
+let curId = 'h003';
+
+/* ========== 工具 ========== */
+function getChef(id){ return CHEFS.find(c=>c.id===id); }
+function schoolChefs(key){
+  // 不含外援
+  return CHEFS.filter(c=>c.school===key && !c.isExternal);
+}
+function realCount(){ return CHEFS.filter(c=>c.isReal && !c.isExternal).length; }
+function getMasterChain(id){
+  const chain=[];let cur=getChef(id);let safety=0;
+  while(cur){ chain.push(cur); cur = cur.master ? getChef(cur.master) : null; if(++safety>10) break; }
+  return chain;
+}
+
+/* ========== 视图切换 ========== */
+function switchView(v){
+  curView = v;
+  document.querySelectorAll('.mode-tab').forEach(t=>t.classList.toggle('active', t.dataset.view==String(v)));
+  document.querySelectorAll('.view').forEach(el=>el.classList.remove('show'));
+  document.getElementById('view'+v).classList.add('show');
+  if(v===2) renderView2();
+  if(v===3) renderView3();
+}
+
+/* ========== 视图 1 · 菜系巡礼 ========== */
+function renderView1(){
+  const total = realCount();
+  const fictionalCount = CHEFS.filter(c=>!c.isReal && !c.isExternal).length;
+  document.getElementById('statRow').innerHTML = `
+    <div class="stat">
+      <div class="label">SCHOOLS · 流派</div>
+      <div class="num">3</div>
+      <div class="meta">蓉派 / 渝派 / 盐帮派</div>
+    </div>
+    <div class="stat">
+      <div class="label">CHEFS · 历史名厨</div>
+      <div class="num">${total}</div>
+      <div class="meta">真实人物，附文献来源</div>
+    </div>
+    <div class="stat">
+      <div class="label">CROSS · 跨菜系学艺</div>
+      <div class="num">${CHEFS.filter(c=>c.secondaryCuisines.length>0).length}</div>
+      <div class="meta">兰明路 等</div>
+    </div>
+  `;
+  document.getElementById('schoolGrid').innerHTML = SCHOOLS.map(s=>{
+    const list = schoolChefs(s.key);
+    const rep = getChef(s.repId);
+    const sectCount = new Set(list.filter(c=>c.gen===1).map(c=>c.id)).size;
+    return `<div class="school-card" data-school="${s.key}">
+      <div class="head">
+        <div class="school-stamp ${s.cls}">${s.stamp}</div>
+        <div>
+          <div class="h-name">${s.name} · <span style="font-size:14px;color:var(--ink-soft)">${s.subName}</span></div>
+          <div class="h-en">${s.en}</div>
+        </div>
+      </div>
+      <div class="region">地域 · <span>${s.region}</span></div>
+      <div class="style">${s.styles.map(t=>`<i>${t}</i>`).join('')}</div>
+      <div class="rep">
+        <div class="face">${rep.name[0]}</div>
+        <div class="info">
+          <b>${rep.name}</b> ${rep.birth?`<span>(${rep.birth}–${rep.death||'今'})</span>`:''}<br>
+          <span style="font-size:12px">${rep.position}</span>
+        </div>
+      </div>
+      <div class="nums">
+        <div><strong>${list.length}</strong>名厨</div>
+        <div><strong>${sectCount}</strong>师门</div>
+        <div><strong>${list.filter(c=>c.isReal).length}</strong>真实</div>
+      </div>
+      <div class="more">click → 流派 II</div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('.school-card').forEach(c=>c.addEventListener('click',()=>{
+    curSchool = c.dataset.school;
+    switchView(2);
+  }));
+}
+
+/* ========== 视图 2 · 流派图谱 ========== */
+function renderView2(){
+  document.getElementById('schoolsDetail').innerHTML = SCHOOLS.map(s=>{
+    const list = schoolChefs(s.key).sort((a,b)=>a.gen-b.gen);
+    return `<div class="school-detail">
+      <div class="sd-head">
+        <div class="school-stamp ${s.cls}">${s.stamp}</div>
+        <div>
+          <div class="sd-name">${s.name} · ${s.subName}</div>
+          <div class="sd-en">${s.en}</div>
+          <div class="sd-region">${s.region}</div>
+        </div>
+      </div>
+      <div class="sd-style">${s.desc}</div>
+      <h6>代表人物 · ${list.length} 位</h6>
+      ${list.map(c=>`
+        <div class="chef-mini" data-id="${c.id}" data-school="${s.key}">
+          <div class="face">${c.name[0]}</div>
+          <div class="info">
+            <div class="nm">${c.name}${c.crossNote?' <span style="color:var(--vermillion)">※</span>':''}</div>
+            <div class="meta">${c.position} · ${c.birth?c.birth+(c.death?'–'+c.death:'–今'):''} · 第 ${GEN_ZH[c.gen]} 代</div>
+          </div>
+          ${c.isReal?'<span class="real-tag">REAL</span>':'<span class="fictional-tag">虚构</span>'}
+        </div>
+      `).join('')}
+      <div class="sd-nums">
+        <div><strong>${list.length}</strong>名厨</div>
+        <div><strong>${list.filter(c=>c.isReal).length}</strong>真实</div>
+        <div><strong>${list.filter(c=>c.secondaryCuisines.length>0).length}</strong>跨修</div>
+      </div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('.chef-mini').forEach(b=>b.addEventListener('click',()=>{
+    curSchool = b.dataset.school;
+    curId = b.dataset.id;
+    switchView(3);
+  }));
+}
+
+/* ========== 视图 3 · 师承谱 ========== */
+function renderSchSide(){
+  document.getElementById('schSide').innerHTML = SCHOOLS.map(s=>{
+    const list = schoolChefs(s.key);
+    const gens = Math.max(...list.map(c=>c.gen),1);
+    return `<div class="sch ${s.key===curSchool?'active':''}" data-key="${s.key}">
+      <div class="sch-stamp ${s.cls}">${s.stamp}</div>
+      <div>
+        <div class="sch-name">${s.name} · ${s.subName}<span>${s.en}</span></div>
+      </div>
+      <div class="sch-meta"><strong>${list.length}</strong>${gens} 代</div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('.sch').forEach(b=>b.addEventListener('click',()=>{
+    curSchool = b.dataset.key;
+    const list = schoolChefs(curSchool);
+    const root = list.find(c=>c.gen===1) || list[0];
+    if(root) curId = root.id;
+    renderView3();
+  }));
+}
+
+function renderPedigree3(){
+  const s = SCHOOLS.find(x=>x.key===curSchool);
+  const list = schoolChefs(curSchool);
+  const maxGen = Math.max(...list.map(c=>c.gen));
+  document.getElementById('p3Title').innerHTML = `<em>${s.stamp}</em>派师承谱`;
+  document.getElementById('p3Sub').innerHTML = `
+    <div>${s.subName} · ${s.region}</div>
+    <div>${list.length} 位名厨 · ${maxGen} 代传承</div>
+  `;
+  const rows = [];
+  for(let g=1; g<=maxGen; g++){
+    const ppl = list.filter(c=>c.gen===g);
+    if(!ppl.length) continue;
+    rows.push(`<div class="gen-row">
+      <div class="gen-label">
+        <div class="num">${GEN_EN[g]||g}</div>
+        <div class="zh">第 ${GEN_ZH[g]||g} 代</div>
+        <div class="en">GEN ${g}</div>
+      </div>
+      <div class="gen-people">
+        ${ppl.map(p=>renderPersonCard(p)).join('')}
+      </div>
+    </div>`);
+  }
+  document.getElementById('genRows3').innerHTML = rows.join('');
+  document.querySelectorAll('.person').forEach(b=>b.addEventListener('click',()=>{
+    curId = b.dataset.id;
+    renderView3();
+  }));
+}
+
+function renderPersonCard(p){
+  const isCur = p.id===curId;
+  const hasCross = p.secondaryCuisines && p.secondaryCuisines.length>0;
+  const sec = hasCross ? p.secondaryCuisines[0] : '';
+  return `<div class="person ${isCur?'cur':''}" data-id="${p.id}">
+    <div class="p-cuisines">
+      <div class="c-pri">${p.primaryCuisine}</div>
+      ${hasCross?`<div class="c-cross-line"></div><div class="c-sec" title="兼修 ${sec} 菜">${sec}</div>`:''}
+    </div>
+    <div>
+      <div class="p-name">${p.name}</div>
+      <div class="p-meta">${p.position} · ${p.city}</div>
+    </div>
+    ${hasCross?'<div class="cross-badge">※</div>':''}
+    ${p.isReal?'<div class="real-badge">REAL</div>':''}
+  </div>`;
+}
+
+function renderDetail3(){
+  const c = getChef(curId);
+  if(!c){ document.getElementById('detail3').innerHTML=''; return; }
+  const s = SCHOOLS.find(x=>x.key===c.school) || {stamp:'?',name:'外援',cls:''};
+  // 师承链 — 含跨菜系外援
+  const chain = getMasterChain(c.id);
+  const crossExt = c.crossMaster ? getChef(c.crossMaster) : null;
+  const yearStr = c.birth ? `${c.birth}${c.death?'–'+c.death:'–今'}` : '';
+  document.getElementById('detail3').innerHTML = `
+    <div class="d-stamp-row">
+      <div class="d-stamp">${c.primaryCuisine}</div>
+      ${c.secondaryCuisines.map(x=>`<div class="d-stamp-sec" title="兼修">${x}</div>`).join('')}
+    </div>
+    <div class="d-name">${c.name}<em>Gen ${c.gen} · ${yearStr}</em></div>
+    <div class="d-pos">${s.name} · ${c.position}</div>
+    <div class="d-tags">
+      ${c.isReal?'<span class="d-tag real">真实历史人物</span>':'<span class="d-tag">待考</span>'}
+      ${c.school?`<span class="d-tag school">${s.subName||s.name}</span>`:''}
+      <span class="d-tag">${c.city}</span>
+      <span class="d-tag">${c.era}</span>
+      ${c.crossNote?'<span class="d-tag cross">跨菜系学艺</span>':''}
+    </div>
+
+    <div class="d-section">
+      <h6>师承脉络 · LINEAGE CHAIN</h6>
+      <div class="d-timeline">
+        ${chain.slice().reverse().map(p=>{
+          const isCur = p.id===c.id;
+          return `<div class="d-tl ${isCur?'cur':''}">
+            <div class="gen">第 ${GEN_ZH[p.gen]||p.gen} 代 · ${p.era||''}</div>
+            <div class="who">${isCur?`<em>${p.name}</em>`:p.name}</div>
+            <div class="meta">${p.position} · ${p.restaurant||''}</div>
+          </div>`;
+        }).join('')}
+        ${crossExt?`
+          <div class="d-tl" style="border-left:1px dashed var(--vermillion);margin-left:-1px;padding-left:15px">
+            <div class="gen">外援师傅 · ${crossExt.primaryCuisine}菜</div>
+            <div class="who" style="color:var(--vermillion)">→ ${crossExt.name}</div>
+            <div class="meta">${crossExt.position} · ${crossExt.city}</div>
+          </div>
+        `:''}
+      </div>
+      ${c.masterNote?`<div class="cross-note"><strong>师承注｜</strong>${c.masterNote}</div>`:''}
+      ${c.crossNote?`<div class="cross-note"><strong>跨菜系师承｜</strong>${c.crossNote}</div>`:''}
+    </div>
+
+    <div class="d-section">
+      <h6>拿手菜 · SIGNATURE</h6>
+      ${c.signature.length?c.signature.map(d=>`<span class="dish">${d}</span>`).join(''):'<p style="color:var(--dust);font-size:13px">暂无记录</p>'}
+    </div>
+
+    <div class="d-section">
+      <h6>简介 · BIO</h6>
+      <p>${c.bio}</p>
+      ${c.source?`<a class="src" href="${c.source}" target="_blank" rel="noopener">${c.source.replace(/^https?:\/\//,'').slice(0,46)}…</a>`:''}
+    </div>
+
+    <div class="d-section">
+      <h6>现任 / 史职 · PLACE</h6>
+      <p>${c.restaurant||'—'} · ${c.city}</p>
+    </div>
+  `;
+}
+
+function renderView3(){ renderSchSide(); renderPedigree3(); renderDetail3(); }
+
+/* ========== 启动 ========== */
+document.querySelectorAll('.mode-tab').forEach(t=>{
+  t.addEventListener('click',()=>switchView(parseInt(t.dataset.view,10)));
+});
+renderView1();
+</script>
+
+</body>
+</html>
