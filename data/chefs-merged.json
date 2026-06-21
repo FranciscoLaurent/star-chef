@@ -279,7 +279,13 @@
       "source": "https://baike.baidu.com/item/%E8%93%9D%E5%85%89%E9%89%B4",
       "bio": "13 岁拜满人名厨关正兴为师，被誉为'现代川菜奠基人'。1912 年与师兄弟创办荣乐园，培养川菜大师无数。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "贵宝书",
+          "source": "川菜名厨录/头条验证"
+        }
+      ]
     },
     {
       "id": "h004",
@@ -345,7 +351,13 @@
       "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3",
       "bio": "成都老牌名厨，多源印证为罗国荣师承之一，工于精细川菜与筵席体系。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "王海泉",
+          "source": "川菜名厨录/头条验证"
+        }
+      ]
     },
     {
       "id": "h006",
@@ -1908,7 +1920,13 @@
       "source": "https://baike.baidu.com/item/%E8%AE%B8%E8%8F%8A%E4%BA%91/1895175",
       "bio": "长沙人，16 岁因家境辍学入火宫殿做学徒，师从湘菜名厨毛寿松；80 年代末任百年老店玉楼东总厨师长。中国烹饪大师、湘菜大师、全国人大代表，享国务院特殊津贴，嫡传弟子逾 200 人。",
       "referencedBy": null,
-      "_origin": "cuisine-xiang.json"
+      "_origin": "cuisine-xiang.json",
+      "masters": [
+        {
+          "name": "毛寿松",
+          "source": "川菜名厨录/头条验证"
+        }
+      ]
     },
     {
       "id": "x014",
@@ -15402,6 +15420,10 @@
           "name": "黄绍清",
           "title": "成都福华园一代川菜名师",
           "rawText": "早年在成都福华园拜一代川菜名师黄绍清为师学艺"
+        },
+        {
+          "name": "王金廷",
+          "source": "川菜名厨录/头条验证"
         }
       ],
       "masterIds": [
