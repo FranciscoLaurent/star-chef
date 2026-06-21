@@ -9,17 +9,32 @@ const files = [
   { path: 'cuisine-xiang.json',  type: 'cuisine' },
   { path: 'cyxh-chefs.json',     type: 'cyxh' },
   { path: 'cyxh-zishen-batch2.json', type: 'cyxh' },
+  { path: 'cyxh-dangdai-batch3.json', type: 'cyxh' },
+  { path: 'cyxh-zishen-batch3.json',  type: 'cyxh' },
+  { path: 'cyxh-mianhuai-batch2.json', type: 'cyxh' },
+  { path: 'cyxh-yuanlao-batch2.json',  type: 'cyxh', optional: true },
 ];
 
-// 菜系归一化（合并同义词）
+// 菜系归一化（合并同义词 / 去掉"菜"后缀 / 别名）
 const CUISINE_NORMALIZE = {
-  '潮': '粤',                         // 潮汕属粤
+  // 后缀清理（A1 batch3 用了带"菜"后缀格式）
+  '川菜': '川', '粤菜': '粤', '鲁菜': '鲁', '湘菜': '湘',
+  '浙菜': '浙', '徽菜': '徽', '闽菜': '闽', '京菜': '京', '沪菜': '沪',
+  '淮扬菜': '淮扬', '潮汕菜': '粤', '苏菜': '淮扬', '赣菜': '赣',
+  '豫菜': '豫', '晋菜': '晋', '陕菜': '陕', '黔菜': '黔', '滇菜': '滇',
+  '辽菜': '辽', '鄂菜': '鄂', '湖北菜': '鄂',
+  // 旧映射保持
+  '潮': '粤',
   '辽（盛京满汉全席）': '辽',
   '钓鱼台菜': '国宴',
-  '苏': '淮扬',                       // 苏菜在 cyxh 用 苏；本应归淮扬
-  '面点': '点心',
+  '苏': '淮扬',
+  '面点': '点心', '面食': '点心',
   '新疆清真': '清真',
-  '吉': '东北',                       // 吉林归东北
+  '吉': '东北',
+  // 其他工种归类
+  '食雕': '工艺', '药膳': '药膳', '烤鸭': '京',
+  '热菜': null, '融合菜': null, '其他': null, // 抹除模糊分类
+  '西餐': '西餐', '法餐': '西餐', '西点': '西餐',
 };
 
 const allChefs = [];
@@ -27,6 +42,7 @@ const allSchools = [];
 const allCrossLinks = [];
 
 for (const f of files) {
+  if (f.optional && !fs.existsSync(path.join(DATA_DIR, f.path))) continue;
   const d = JSON.parse(fs.readFileSync(path.join(DATA_DIR, f.path), 'utf8'));
   if (d.schools) allSchools.push(...d.schools.map(s => ({...s, _cuisine: d.cuisine})));
   if (d.crossLinks) allCrossLinks.push(...d.crossLinks);

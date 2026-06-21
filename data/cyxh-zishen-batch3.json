@@ -1,0 +1,2423 @@
+{
+  "source": "中国餐饮协会国家名厨网 cyxh.org",
+  "scope": "zishen-batch3",
+  "fetchDate": "2026-06-21",
+  "note": "第三批 zishen 详情。索引页 1-12 全扫，排除 batch1/batch2 已抓的 27 个 ID。规则化抽取：姓名/性别/民族/出生年/籍贯/学历/菜系/职称/师承/履历/代表作。",
+  "chefs": [
+    {
+      "id": "cyxh-zishen-1466",
+      "url": "http://www.cyxh.org/mingchu/zishen/1466.html",
+      "column": "zishen",
+      "name": "吴杰",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1965,
+      "death": null,
+      "birthplace": "江苏扬州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "京",
+        "国宴"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "世界御厨协会会员",
+        "中国食文化研究会"
+      ],
+      "currentRole": "钓鱼台国宾馆厨师长",
+      "city": "扬州",
+      "masters": [
+        {
+          "name": "吴家安",
+          "title": null,
+          "rawText": "师承国宴淮扬菜泰斗、国宴狮子头创始人、周恩来总理喜爱的厨师吴家安大师"
+        }
+      ],
+      "experiences": [
+        "1985年入职钓鱼台国宾馆，从事国宴制作41年，师承国宴淮扬菜泰斗、国宴狮子头创始人、周恩来总理喜爱的厨师吴家安大师",
+        "2000至2002年，受钓鱼台国宾馆委派远赴日本东京四季酒店养源斋中餐厅驻场工作，向外输出国宴淮扬烹饪技法，凭借精湛厨艺收获海外业界高度认可",
+        "2026年入选《国家名厨》第八卷典籍，获评国家名厨荣誉称号"
+      ],
+      "signature": [
+        "清汤虫草花狮子头",
+        "宫廷一品牛尾",
+        "御膳酒蒸鸭",
+        "黑椒牛肋排"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2026-06-20/a33d5739294ced790c2c8ef7f61264d1.jpg",
+      "bio": "江苏扬州淮扬菜大师，师承吴家安，获国家名厨、世界御厨协会会员等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1438",
+      "url": "http://www.cyxh.org/mingchu/zishen/1438.html",
+      "column": "zishen",
+      "name": "朱建平",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1954,
+      "death": null,
+      "birthplace": "上海",
+      "primaryCuisine": "沪",
+      "secondaryCuisines": [
+        "国宴"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中国烹饪名师",
+        "高级技师"
+      ],
+      "currentRole": "上海品宴酒楼总经理兼出品总监",
+      "city": "上海",
+      "masters": [],
+      "experiences": [
+        "1997年出席全国首届烹饪学术研讨会，刊发论文《中国宴席的改革》",
+        "2002年于上海《饭店》杂志发表《浅谈宾馆餐馆的要素组合》，同年参与上海市名菜点赛事评审，创制八道创新菜品悉数获评上海市名菜",
+        "2003年先后在《上海调味品》《中华美食》刊发四季创新菜品十八道、自研特色调味酱料九款，著文《西式风格中菜西吃》",
+        "2026年入选《国家名厨》第八卷典籍，荣授国家名厨荣誉称号"
+      ],
+      "signature": [
+        "黄焖半野生甲鱼",
+        "红烧猪手鲍鱼",
+        "扣三丝",
+        "老上海醉膏蟹"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2026-05-23/31432ef431e05e97b1f7ee962af061ce.jpg",
+      "bio": "上海沪菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1421",
+      "url": "http://www.cyxh.org/mingchu/zishen/1421.html",
+      "column": "zishen",
+      "name": "胡俊",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1965,
+      "death": null,
+      "birthplace": "江苏扬州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师"
+      ],
+      "currentRole": "江都百乐门大酒店有限公司副总经理、行政总厨",
+      "city": "扬州",
+      "masters": [],
+      "experiences": [
+        "1978年-1980年在丁沟饭店学习厨师",
+        "1980年-1982年在扬州市烹饪学校学习",
+        "1982年-1998年在扬州市运城饭店厨师长",
+        "1998年-2000年在广州市宝龙大酒店行政总厨",
+        "2001年至今担任江都百乐门大酒店有限公司副总经理、行政总厨",
+        "2004年在第十四届青岛国际啤酒节上制作的\"珊瑚景色\"荣获金牌特色名菜，制作的\"丰收在望\"荣获\"劲霸杯\"第二届国际食神争霸赛最佳设计奖和热菜组金奖"
+      ],
+      "signature": [
+        "白玉琥珀莲",
+        "龙川马鞍桥",
+        "荷塘情趣",
+        "翡翠金钱菇"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2026-04-30/3302b88fb2a5fb905e4eac225e7af974.jpg",
+      "bio": "江苏扬州淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1415",
+      "url": "http://www.cyxh.org/mingchu/zishen/1415.html",
+      "column": "zishen",
+      "name": "杨德礼",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1969,
+      "death": null,
+      "birthplace": "广东江门",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [
+        "粤"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中国烹饪名师",
+        "中华金厨",
+        "高级技师"
+      ],
+      "currentRole": "澳洲悉尼天天渔村酒楼及文兴海鲜酒楼执行董事兼行政总厨",
+      "city": "江门",
+      "masters": [],
+      "experiences": [
+        "1987年7月从业，至今从事烹饪工作39年，擅长粤菜、海鲜及其他菜系产品烹制，并结合澳洲的原材料创新融合中西风味，研发多款构思精巧、独具匠心的特色菜式，广受海内外各界人士",
+        "1987年至2007年任职于广东江门市华苑宾馆，期间深入学习粤菜与其他菜系及地方菜系的烹饪结构融合风味",
+        "2007年赴澳大利亚悉尼发展，深耕当地餐饮市场，创办天天渔村海鲜酒楼、文兴海鲜酒楼，成为澳洲中餐领域标杆人物",
+        "2002年11月获得中国商业联合会、中国烹饪协会授予的中国烹饪名师称号，同年12月被广东省烹饪协会授予广东烹饪名师称号",
+        "2003年被广东省职工职业技能大赛组委会授予广东省职工经济技术创新能手称号和广东省技术能手称号，同年9月荣获江门市区烹饪名厨师金奖",
+        "2005年荣获中华金厨奖"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2026-04-26/d5cb44d55393a69914440f737a935741.jpg",
+      "bio": "广东江门川菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1404",
+      "url": "http://www.cyxh.org/mingchu/zishen/1404.html",
+      "column": "zishen",
+      "name": "雍锦华",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1963,
+      "death": null,
+      "birthplace": "马来西亚槟城乔治市",
+      "primaryCuisine": null,
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨"
+      ],
+      "currentRole": "霑记Jim's Malaysia主理人兼主厨",
+      "city": "香港",
+      "masters": [],
+      "experiences": [
+        "1963年5月出生，马来西亚槟城乔治市人，现任霑记Jim's Malaysia主理人兼主厨",
+        "1980年投身餐饮行业以来，至今已有46年专业工龄，长期深耕马来西亚风味菜、娘惹风味、中式热炒、南洋融合菜及海鲜烹调",
+        "2024 Greatest F&B Entrepreneur Excellence Award\n世界中餐业联合会职业技能竞赛国际评委资格证书\n2026年入选《国家名厨》第"
+      ],
+      "signature": [
+        "甘香无骨椰酥鸡",
+        "鲍鱼仔功夫炒饭",
+        "金巢松乳菇龙虾尾",
+        "湿奶油蟹",
+        "叁巴鱼块炒粉丝"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2026-04-18/e07f85a86a0aad27662d90116c1e17a4.jpg",
+      "bio": "马来西亚槟城乔治市厨师，获国家名厨等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1370",
+      "url": "http://www.cyxh.org/mingchu/zishen/1370.html",
+      "column": "zishen",
+      "name": "郭永强",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1969,
+      "death": null,
+      "birthplace": "广东佛山",
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中式烹调高级技师",
+        "国家中式烹调高级技师",
+        "高级技师"
+      ],
+      "currentRole": "顺德宴公馆出品总监",
+      "city": "顺德",
+      "masters": [],
+      "experiences": [
+        "1988年他进入顺德仙泉酒店入行学艺，至今已有37年厨龄",
+        "2012年创立宴公馆品牌至今",
+        "2026年他荣膺《国家名厨》第八卷入编人物，被授予\"国家名厨\"荣誉称号，彰显其在粤菜传承与创新方面的卓越贡献"
+      ],
+      "signature": [
+        "黑松露炒鲜牛奶",
+        "陈皮牛柳",
+        "葱油虾"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2026-03-17/068f00615a376b1e06fbc1d0ca583345.jpg",
+      "bio": "广东佛山粤菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1328",
+      "url": "http://www.cyxh.org/mingchu/zishen/1328.html",
+      "column": "zishen",
+      "name": "赵慧源",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": null,
+      "death": null,
+      "birthplace": null,
+      "primaryCuisine": "食雕",
+      "secondaryCuisines": [
+        "药膳"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "国家级评委"
+      ],
+      "currentRole": null,
+      "city": "北京",
+      "masters": [],
+      "experiences": [
+        "1990年出版了我国早期兼有文字解说、步骤图解与成品图的专著——《食品雕刻与冷拼艺术》"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-12-26/328785decde9e7722a6859a411a755b7.jpg",
+      "bio": "汉族食雕菜大师，获国家名厨、国家级评委等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1324",
+      "url": "http://www.cyxh.org/mingchu/zishen/1324.html",
+      "column": "zishen",
+      "name": "李鹏春",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1977,
+      "death": null,
+      "birthplace": "江苏苏州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "面点"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "国家级评委",
+        "非遗传承人"
+      ],
+      "currentRole": "苏州工业园区乾正兴奥面馆以来",
+      "city": "苏州",
+      "masters": [],
+      "experiences": [
+        "2002年投身餐饮行业至今，已有23年从业经验",
+        "2005年他创办苏州工业园区乾正兴奥面馆以来，始终致力于深耕苏式面点与淮扬菜系，秉持\"匠心如初，守正创新\"的理念，将传统苏帮菜与苏式面点的精髓融入现代餐饮体系，专注于打造",
+        "2018年度苏州市优秀企业、苏州市双十佳面馆、江苏省餐饮名店等称号，逐步成长为苏州地区餐饮行业的知名品牌与品质标杆，这些荣誉不仅印证了面馆的高水准服务，也彰显了李鹏春对餐",
+        "2021年由其主理的红汤焖肉面、鳝糊面入选《江苏省地标美食记忆名录》，成为省级饮食文化代表",
+        "2024年他荣获首届\"白象杯\"面食烹饪邀请赛特金奖及第三届江苏省烹饪行业职业技能竞赛中式烹调金奖，同年被江苏省烹饪协会授予\"江苏烹饪大师\"称号",
+        "2025年受聘为中国烹饪协会中式菜肴研发中心专家，参与国家级菜品研发与标准制定工作，并获国家名厨编纂委员会颁发资深级注册中国烹饪大师称号，荣膺《国家名厨》第七卷入编人物"
+      ],
+      "signature": [
+        "枫镇大肉面",
+        "忘不了活杀酸菜鱼",
+        "响油鳝丝",
+        "红汤焖肉面",
+        "水晶白汤面",
+        "清蒸白鱼"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-12-18/dd3a86881cef28ac49fff9486c8b2772.jpg",
+      "bio": "江苏苏州淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1318",
+      "url": "http://www.cyxh.org/mingchu/zishen/1318.html",
+      "column": "zishen",
+      "name": "霍玉根",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1963,
+      "death": null,
+      "birthplace": "江苏苏州相城",
+      "primaryCuisine": "面点",
+      "secondaryCuisines": [
+        "淮扬"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "非物质文化遗产"
+      ],
+      "currentRole": "苏州市桃坞小学、带城桥小学非遗特聘教师",
+      "city": "苏州",
+      "masters": [],
+      "experiences": [
+        "1982年3月踏入糕团制作行业以来，霍玉根潜心钻研传统苏式糕团技艺，并于1995年创立近水楼糕团店",
+        "1999年成功研发出具有苏州风味的鲜肉粽子和苏式鲜肉月饼",
+        "2005年首创\"糯叽叽拉糕\"，丰富了苏式糕团品类",
+        "2015年12月，霍玉根受邀走进央视《健康大本营》演播厅，分享\"传承儿时味道\"的绿色健康理念，被授予该栏目\"健康使者\"称号",
+        "2025年长三角春季名厨邀请赛特金奖等",
+        "2025年11月，经国家名厨编纂委员会评定，他荣获资深级注册中国烹饪大师称号，并荣膺《国家名厨》第七卷入编人物"
+      ],
+      "signature": [
+        "糯叽叽拉糕",
+        "沙沙软冰糕",
+        "桂花米糕",
+        "获奖作品赏析",
+        "早来泰州.江苏中式面点大赛金奖",
+        "长三角春季名厨邀请赛特金奖"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-11-27/166ce37cacb97b25abad910ef568f027.jpg",
+      "bio": "江苏苏州相城面点菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1315",
+      "url": "http://www.cyxh.org/mingchu/zishen/1315.html",
+      "column": "zishen",
+      "name": "李永民",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1968,
+      "death": null,
+      "birthplace": null,
+      "primaryCuisine": "豫",
+      "secondaryCuisines": [
+        "药膳"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中华金厨",
+        "中式烹调高级技师",
+        "高级技师",
+        "非物质文化遗产"
+      ],
+      "currentRole": "新郑市金沙湾酒店有限公司、唐凤楼酒店董事长",
+      "city": "洛阳",
+      "masters": [],
+      "experiences": [
+        "1984年至1988年，在新郑宾馆随陈进长大师学艺",
+        "1989年至1992年，在芒山游览区开设首家餐饮门店",
+        "1993年至1996年，任职于洛阳伊川杜康大酒店",
+        "1997年至1999年，担任新郑市粮友大酒店厨师长",
+        "2000年至2010年，出任新郑市大都市行政总厨",
+        "2011年至2016年，担任平顶山湛河大酒店餐饮部副总经理"
+      ],
+      "signature": [
+        "陈氏传统扒全肘",
+        "血蟹虾仁蒸肉饼",
+        "酱焖八爪白玉萝卜"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-11-19/6d6baa9fc70c1e8536c94ae9b0b3f657.jpg",
+      "bio": "汉族豫菜大师，获国家名厨、中华金厨等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1312",
+      "url": "http://www.cyxh.org/mingchu/zishen/1312.html",
+      "column": "zishen",
+      "name": "张鸿",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1976,
+      "death": null,
+      "birthplace": "江苏苏州",
+      "primaryCuisine": "面点",
+      "secondaryCuisines": [
+        "淮扬"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师"
+      ],
+      "currentRole": "苏面传习所高级研究员、第二届常务理事",
+      "city": "苏州",
+      "masters": [
+        {
+          "name": "肖伟民",
+          "title": null,
+          "rawText": "师从苏式面点制作技艺第四代传承人肖伟民，系统学习苏式汤面制作技艺，并于2022年11月5日在苏州太美香谷里酒店举行正式拜师仪式，确立师徒关系，成为该技艺的第五代传承人"
+        }
+      ],
+      "experiences": [
+        "1995年至2000年从事万声寻呼售后维修工作",
+        "2000年至2006年成为中国移动通信合作代理商",
+        "2006年起转入酒店管理领域，先后担任苏州工业园区丽景宾馆总经理及苏州工业园区世家假日酒店总经理",
+        "2019年至今，担任苏州苏味兴餐饮管理有限公司总经理",
+        "2015年张鸿正式投身餐饮行业，专注于苏式面点的制作与研究",
+        "2022年11月5日在苏州太美香谷里酒店举行正式拜师仪式，确立师徒关系，成为该技艺的第五代传承人"
+      ],
+      "signature": [
+        "松鼠桂鱼",
+        "响油鳝糊",
+        "江南红烧肉",
+        "羊肉炖萝卜",
+        "芙蓉三鲜"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-11-15/693dae8743b3fd502591545d04035ec8.jpg",
+      "bio": "江苏苏州面点菜大师，师承肖伟民，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1285",
+      "url": "http://www.cyxh.org/mingchu/zishen/1285.html",
+      "column": "zishen",
+      "name": "李小军",
+      "gender": null,
+      "ethnicity": null,
+      "birth": 1974,
+      "death": null,
+      "birthplace": "四川达州市",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "川",
+        "粤",
+        "湘",
+        "素",
+        "国宴"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "资深级中国烹饪大师",
+        "中国烹饪艺术家"
+      ],
+      "currentRole": "职北京康乐食苑餐饮管理有限公司董事长",
+      "city": "北京",
+      "masters": [
+        {
+          "name": "吴奇安",
+          "title": null,
+          "rawText": "师从川菜大师吴奇安、中国烹饪艺术家赵惠源"
+        },
+        {
+          "name": "赵惠源",
+          "title": null,
+          "rawText": "师从川菜大师吴奇安、中国烹饪艺术家赵惠源"
+        }
+      ],
+      "experiences": [
+        "1974年7月生于四川达州市，大专学历，现任职北京康乐食苑餐饮管理有限公司董事长，身兼中国烹饪大师、中国面塑雕刻大师、达州市餐饮协会副会长，深耕餐饮三十年，以精湛技艺、卓",
+        "2025年荣膺《国家名厨》第七卷入编人物",
+        "2022年，在恩师赵惠源先生带领下，与同门师兄弟登上北京卫视黄金档《梦想总动员》，现场演示菜品制作、拆解烹饪技艺，结合食材文化讲解，既展专业实力，也推动中国饮食文化传播",
+        "1992年起，先后师从川菜大师吴奇安、中国烹饪艺术家赵惠源",
+        "2022年在恩师赵惠源的带领下与同门师兄弟荣登北京电视台，是师徒传承的生动体现",
+        "2006年，参与\"全国餐饮业评委资格培训班\"，系统学习评审标准与行业规范，通过考核获全国性赛事评审资格，能精准洞察行业趋势，为后续发展提供专业支撑"
+      ],
+      "signature": [
+        "北京卫视《梦想总动员》剧组影集",
+        "（一）师从泰斗，筑牢技艺根基",
+        "（二）专业认证，把握行业趋势",
+        "康苑广记烧鹅坊（自主知识产权）",
+        "（三）荣誉加身，践行责任与传承",
+        "鸡豆花（国宴接待菜品）",
+        "荷塘月色（接待国家领导人菜品）",
+        "金丝三色双味鱼丸（参赛作品）"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-09-30/32f0b191653a47f385a2facd855c8e1d.jpg",
+      "bio": "四川达州市淮扬菜大师，师承吴奇安、赵惠源，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1284",
+      "url": "http://www.cyxh.org/mingchu/zishen/1284.html",
+      "column": "zishen",
+      "name": "王恩来",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1959,
+      "death": null,
+      "birthplace": "天津",
+      "primaryCuisine": "东北",
+      "secondaryCuisines": [
+        "津"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "高级技师"
+      ],
+      "currentRole": "天津市滨海新区烹饪协会会长",
+      "city": "天津",
+      "masters": [],
+      "experiences": [
+        "1980年5月至1982年6月任职渤海石油职员",
+        "1982年7月至1985年7月中国食品函授大学学习",
+        "1985年8月至1995年10月担任渤海石油海上招待所所长",
+        "1995年11月至2019年9月担任天津市滨海新区烹饪协会常务副会长",
+        "2019年9月至今担任天津市滨海新区烹饪协会会长",
+        "1989年获天津市总工会授予 \"七五\" 立功奖章"
+      ],
+      "signature": [
+        "鱼子酱烧墨鱼",
+        "山海明珠",
+        "富贵开花丸子",
+        "黑椒金枪鱼-创新菜",
+        "春色满园",
+        "荷塘月色"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-09-30/38f0ac7595ae36b84375cd4a31503578.jpg",
+      "bio": "天津东北菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1282",
+      "url": "http://www.cyxh.org/mingchu/zishen/1282.html",
+      "column": "zishen",
+      "name": "张龙生",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1955,
+      "death": null,
+      "birthplace": "江苏苏州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "面点"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中式烹调高级技师",
+        "高级技师",
+        "非物质文化遗产"
+      ],
+      "currentRole": "苏州相城元和苏虞斋面馆顾问",
+      "city": "苏州",
+      "masters": [],
+      "experiences": [
+        "1973年从事餐饮行业，历任苏州南园、南林宾馆行政总厨，曾接待美国前国务卿基辛格、国务院原总理李鹏等众多国内外领导人",
+        "2013年创办苏虞斋面馆，专门从事苏帮湿式面面点食品至今",
+        "1993年荣获第三届全国烹饪技术比赛个人金奖",
+        "1996年获苏州市外事办公室、苏州市人事局联合授予个人三等功",
+        "2018年被授予苏帮菜饮食文化传承特殊贡献奖",
+        "2021年获评江苏省烹饪大师"
+      ],
+      "signature": [
+        "二虾桂鱼丝",
+        "芙蓉蟹粉",
+        "兰花鸽蛋莼菜扣野鸭"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-09-25/b683baf750883d54e047abdfb647db35.jpg",
+      "bio": "江苏苏州淮扬菜大师，获国家名厨、中式烹调高级技师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1277",
+      "url": "http://www.cyxh.org/mingchu/zishen/1277.html",
+      "column": "zishen",
+      "name": "张晓栋",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1972,
+      "death": null,
+      "birthplace": "江苏苏州",
+      "primaryCuisine": "面点",
+      "secondaryCuisines": [
+        "淮扬"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "国家级评委"
+      ],
+      "currentRole": "苏州甚美斋餐饮管理有限公司总经理",
+      "city": "苏州",
+      "masters": [],
+      "experiences": [
+        "2000年涉足餐饮行业以来，张晓栋以敏锐的眼光和务实的风格，在苏式饮食文化传承与创新方面不断探索",
+        "2025年9月获得国家名厨编纂委员会颁发资深级注册中国烹饪大师称号，荣膺《国家名厨》第七卷入编人物"
+      ],
+      "signature": [
+        "苏式蟹黄面",
+        "鸡汁白鱼",
+        "响油鳝糊"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-09-15/a371b76690d015145ada13f8808e0e4c.jpg",
+      "bio": "江苏苏州面点菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1269",
+      "url": "http://www.cyxh.org/mingchu/zishen/1269.html",
+      "column": "zishen",
+      "name": "洪霞",
+      "gender": "女",
+      "ethnicity": null,
+      "birth": 1970,
+      "death": null,
+      "birthplace": "江苏射阳",
+      "primaryCuisine": "面点",
+      "secondaryCuisines": [
+        "苏"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中华金厨",
+        "中国烹饪协会名厨委员会委员",
+        "中式面点高级技师",
+        "高级技师",
+        "非遗传承人"
+      ],
+      "currentRole": "了商贸旅游系副主任、学校教务处副处长",
+      "city": "常州",
+      "masters": [],
+      "experiences": [
+        "2025年荣膺《国家名厨》第七卷入编人物",
+        "2008年的奥运会和残奥会中，她所带的2005级学生全部参加了两会的全程服务"
+      ],
+      "signature": [
+        "非遗作品-常州糟扣肉",
+        "鸡汤馄饨",
+        "顶黄小笼包"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-08-27/8205ddf68e5365785a37d120820d68a2.jpg",
+      "bio": "江苏射阳面点菜大师，获国家名厨、中华金厨等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1249",
+      "url": "http://www.cyxh.org/mingchu/zishen/1249.html",
+      "column": "zishen",
+      "name": "李秀灜",
+      "gender": null,
+      "ethnicity": null,
+      "birth": 1958,
+      "death": null,
+      "birthplace": null,
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [
+        "鲁"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨"
+      ],
+      "currentRole": "阿根廷中华餐饮暨食品行业公会会长\n阿根廷中国和平统一促进会副会长\n阿根廷北京同乡",
+      "city": "北京",
+      "masters": [],
+      "experiences": [
+        "1958年2月出生，北京人\n现任阿根廷中华餐饮暨食品行业公会会长\n阿根廷中国和平统一促进会副会长\n阿根廷北京同乡会副会长\n阿根廷洪门协会理事长\n阿根廷北京食府董事长\n与阿",
+        "1976年毕业于北京第二中学，曾在北京顺义\"南彩公社\"插队两年，积累了丰富的生活阅历",
+        "1979年进入北京市东城饮食公司，于淞江餐厅（现松鹤楼酒家）学艺，从事红案工作",
+        "1986年调入中港合资港美大厦任行政总厨兼副总经理",
+        "1994年被公司派往阿根廷北京烤鸭店工作，开启了他在阿根廷的餐饮之旅",
+        "1997年受邀担任阿根廷扬子饭店主厨"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-08-09/7d0ba4e78e72bdf2722b4bb9486ce106.jpg",
+      "bio": "资深粤菜大师，获国家名厨等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1243",
+      "url": "http://www.cyxh.org/mingchu/zishen/1243.html",
+      "column": "zishen",
+      "name": "刘大勇",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1974,
+      "death": null,
+      "birthplace": "江苏宿迁",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "面点"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "高级营养师",
+        "中式面点高级技师",
+        "高级技师",
+        "非遗传承人",
+        "非物质文化遗产"
+      ],
+      "currentRole": null,
+      "city": "宿迁",
+      "masters": [],
+      "experiences": [
+        "1998年大学毕业后又去南京夫子庙厨师培训中心对中式面点进行了系统学习",
+        "2006年制作的乾隆贡酥被评为宿迁市名牌产品和宿迁市传统特色产品",
+        "2010年制作的乾隆贡酥获得\"蓝波湾杯\"宿迁美食大赛银奖",
+        "2015年制作的乾隆贡酥荣获江苏省当家点心荣誉称号",
+        "2015年制作的乾隆贡酥、皂河小脆子和烤制车轮饼全部荣获\"项府家宴杯\"最具潜力菜肴荣誉称号，并全部进入前十名",
+        "2016年乾隆贡酥荣获宿迁市当家点心荣誉称号"
+      ],
+      "signature": [
+        "乾隆贡酥",
+        "乾隆一口酥",
+        "皂河小脆子"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-08-03/10cc53046ff08f9594754fc49d1c1a63.jpg",
+      "bio": "江苏宿迁淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1242",
+      "url": "http://www.cyxh.org/mingchu/zishen/1242.html",
+      "column": "zishen",
+      "name": "董阿明",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1968,
+      "death": null,
+      "birthplace": "江苏昆山",
+      "primaryCuisine": "面点",
+      "secondaryCuisines": [
+        "苏"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "非物质文化遗产"
+      ],
+      "currentRole": "昆山市周市镇董记爊味斋主理人、昆山厨师协会副会长、苏面传习所第二届理事及特聘苏式",
+      "city": "苏州",
+      "masters": [],
+      "experiences": [
+        "2023年7月获评\"江苏省十大乡土地标小吃美食品牌\"",
+        "2024年5月斩获\"苏州市全省知名品牌\"与\"江苏餐饮特色名店\"称号",
+        "2024中国美食烹饪锦标赛青年厨师创新专项赛特金奖、昆山第七届\"百厨百味\"邀请赛金牌创意奖与金牌艺术奖、首届食文化赋能非遗与老字号文化高质量发展大会特金奖等多项大奖",
+        "2025年8月获得国家名厨编纂委员会颁发资深级注册中国烹饪大师称号，荣膺《国家名厨》第七卷入编人物"
+      ],
+      "signature": [
+        "周市爊鸭",
+        "董记爊鹅",
+        "董记麻鸭",
+        "董记爊鸡"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-08-03/b7f0e7e1346bdc27d4d585edac460d28.jpg",
+      "bio": "江苏昆山面点菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1235",
+      "url": "http://www.cyxh.org/mingchu/zishen/1235.html",
+      "column": "zishen",
+      "name": "王建华",
+      "gender": "男",
+      "ethnicity": null,
+      "birth": 1963,
+      "death": null,
+      "birthplace": "辽宁沈阳",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [
+        "粤",
+        "东北",
+        "食雕",
+        "辽"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "国际烹饪艺术大师"
+      ],
+      "currentRole": "際コーポレーション株式会社",
+      "city": "沈阳",
+      "masters": [
+        {
+          "name": "刘汉威",
+          "title": null,
+          "rawText": "师从全国\"怀燕杯\"得主刘汉威、辽菜泰斗刘国栋、世界雕刻大师齐欣等十多位名家，汲取众家之长，不断精进技艺"
+        },
+        {
+          "name": "刘国栋",
+          "title": null,
+          "rawText": "师从全国\"怀燕杯\"得主刘汉威、辽菜泰斗刘国栋、世界雕刻大师齐欣等十多位名家，汲取众家之长，不断精进技艺"
+        }
+      ],
+      "experiences": [
+        "1983年正式踏入烹饪行业起，王建华大师先后师从全国\"怀燕杯\"得主刘汉威、辽菜泰斗刘国栋、世界雕刻大师齐欣等十多位名家，汲取众家之长，不断精进技艺",
+        "2001年，他远赴日本发展，现就职于際コーポレーション株式会社，凭借深厚功底与创新精神，在国际舞台上绽放光彩，成为中国烹饪文化的杰出传播者",
+        "2025 年他更是荣膺《国家名厨》第七卷国际篇入编人物，被授予国家名厨荣誉称号，这一荣誉不仅是对他烹饪技艺的高度认可，更是对他多年来在中日美食文化交流中所做贡献的肯定",
+        "1983年开始学习蔬果雕刻，蔬果雕刻的原料为西瓜，西红柿等各种水果和白菜、萝卜、土豆等各种蔬菜",
+        "2001年以来，王建华在日本工作了24个年头"
+      ],
+      "signature": [
+        "奶油虾球",
+        "凤形鲍片",
+        "香煎银鳕鱼",
+        "碧绿鱼片",
+        "蚝味鲍鱼"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-07-03/6e1a93fdbc025528b40f8e91c21ecc23.jpg",
+      "bio": "辽宁沈阳川菜大师，师承刘汉威、刘国栋，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1199",
+      "url": "http://www.cyxh.org/mingchu/zishen/1199.html",
+      "column": "zishen",
+      "name": "赵宝祥",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1966,
+      "death": null,
+      "birthplace": "江苏扬州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "粤",
+        "沪"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中式烹调高级技师",
+        "高级技师"
+      ],
+      "currentRole": "扬州市舒雅大酒店有限公司董事长",
+      "city": "扬州",
+      "masters": [],
+      "experiences": [
+        "1984年毕业于扬州大学旅游烹饪学院，他先后跟随富春茶点制作技艺国家级传承人徐永珍大师、王力喜等大师学习，在他们的悉心指导下，他对本帮菜及点心进行了系统且深入的学习与钻研",
+        "1987年至1989年工作于扬州富春茶社",
+        "1991年至1993年在北京总后勤部京通宾馆工作",
+        "1993年创办舒雅大酒店以来，他全身心投入到菜品的研究与创新之中，凭借不懈的努力与探索，成功摸索出一套适合中小型餐饮企业的运营管理思路和方法，这套方法不仅得到了行业同仁的",
+        "2002年中国扬州\"金沱牌杯\" 淮扬名宴展示会银奖",
+        "2007年被授予江苏省餐饮业优秀企业家称号"
+      ],
+      "signature": [
+        "炒赛蟹粉",
+        "鸽蛋鸡粥",
+        "双头相会",
+        "葱盐银杏",
+        "鲜贝鳕鱼",
+        "四喜饺子"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-06-01/e74a2367523666377d18cd35603adef4.jpg",
+      "bio": "江苏扬州淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1150",
+      "url": "http://www.cyxh.org/mingchu/zishen/1150.html",
+      "column": "zishen",
+      "name": "苏正标",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1966,
+      "death": null,
+      "birthplace": "江苏连云港",
+      "primaryCuisine": "药膳",
+      "secondaryCuisines": [
+        "素",
+        "淮扬"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中华金厨",
+        "高级技师",
+        "非遗传承人"
+      ],
+      "currentRole": "烹饪大赛评委",
+      "city": "连云港",
+      "masters": [],
+      "experiences": [
+        "1986年参加工作，曾任连云饭店厨师长及海华酒家经理，积累了丰富的实践经验",
+        "1988年在连云港市精英大比武中斩获市第二名，并被授予新长征突击手称号",
+        "2016年8月更是凭借精湛技艺在首届江苏省烹饪大师技艺交流大赛中摘得特金奖",
+        "2025年入选《国家名厨》第七卷名录，获国家名厨荣誉称号"
+      ],
+      "signature": [
+        "清汤猴头菇",
+        "八珍葫芦鸭",
+        "龙须美果辽参",
+        "鲈鱼狮子头"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-04-21/3f5cabfa4e84ff408c80849437faf4a9.jpg",
+      "bio": "江苏连云港药膳菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1139",
+      "url": "http://www.cyxh.org/mingchu/zishen/1139.html",
+      "column": "zishen",
+      "name": "史国生",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1956,
+      "death": null,
+      "birthplace": "江苏省溧阳市",
+      "primaryCuisine": "苏",
+      "secondaryCuisines": [],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "高级技师"
+      ],
+      "currentRole": "江苏天目湖宾馆有限公司董事长、党支部书记",
+      "city": "扬州",
+      "masters": [],
+      "experiences": [
+        "1975年2月至1978年7月，史国生在溧阳市沙河饭店开启职业生涯",
+        "1978年8月至1980年8月，担任溧阳市绸缪饭店负责人，初步展现管理才能",
+        "1980年9月至1992年7月，他在溧阳市供销干校担任总务科长及餐厅经理，期间积累了丰富的餐饮管理经验",
+        "1992年8月至1995年7月，他调任溧阳市溧阳宾馆，担任餐饮部经理，推动餐饮业务的现代化发展",
+        "1995年8月至2002年7月，史国生在溧阳市天目湖宾馆历任副总经理、总经理，带领团队将天目湖宾馆打造为地方标志性企业",
+        "2002年7月至今，他担任江苏天目湖宾馆有限公司董事长、党支部书记，以战略眼光和创新思维推动企业持续发展"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-04-13/5cb3a7a33eceef9c5bebef81fbaacf56.jpg",
+      "bio": "江苏省溧阳市苏菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1138",
+      "url": "http://www.cyxh.org/mingchu/zishen/1138.html",
+      "column": "zishen",
+      "name": "朱顺才",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1952,
+      "death": null,
+      "birthplace": "江苏溧阳",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "苏"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中国烹饪大师金爵奖",
+        "金爵奖"
+      ],
+      "currentRole": "江苏天目湖宾馆有限公司董事、天目湖宾馆副总经理",
+      "city": "常州",
+      "masters": [],
+      "experiences": [
+        "1975.3－1979.10 溧阳市沙河水库管理处工作，任炊事员\n1979.10－1992.3 溧阳市沙河水库招待所工作，任厨师长、副所长\n1992.3－2002.7",
+        "2002.7－至今 溧阳市天目湖宾馆有限公司工作，任董事、副总经理\n朱顺才大师与国家名厨编委会主编沈家定先生相聚\n主要荣誉\n多年来，他凭借踏实的工作业绩和精湛的业务技能",
+        "2003年获\"常州市农村模范共产党员\"称号\n- 2005年被评为\"溧阳市镇村优秀科技人才\"\n- 2006年被中国烹饪协会授予\"中国烹饪大师金爵奖\"，获江苏省旅游局评为\"江",
+        "2008年荣获\"溧阳市首席乡土专家\"称号\n- 2010年被评为\"溧阳市十一五岗位建功十佳人物\"\n- 2011年担任常州市第十、十一次党代表\n- 2015年荣获\"资深级注册",
+        "2017年获\"中国餐饮30年杰出人物奖\"\n- 2018年获\"改革开放40周年功勋大师\"及\"2018淮扬名厨\"称号\n- 2020年被评为\"溧阳撤县设市30周年时代先锋\"\n-",
+        "2025年入选《国家名厨》第七卷名录，获\"国家名厨\"荣誉称号\n朱顺才大师从业五十载，他以匠心独运的烹饪技艺和德艺双馨的职业操守，成为中国烹饪界的传奇人物，更是淮扬菜传承与"
+      ],
+      "signature": [
+        "砂锅鱼头",
+        "鱼头佛跳墙",
+        "碧影红裙",
+        "明月高钙骨",
+        "酥香锅巴鱼",
+        "水晶鱼鳞冻"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-04-13/a89985bddb44353242e7338f59ba89c7.jpg",
+      "bio": "江苏溧阳淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1133",
+      "url": "http://www.cyxh.org/mingchu/zishen/1133.html",
+      "column": "zishen",
+      "name": "邓晨",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1971,
+      "death": null,
+      "birthplace": "江苏扬州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "川",
+        "闽",
+        "东北",
+        "药膳",
+        "国宴"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中国食文化研究会",
+        "非遗传承人",
+        "非物质文化遗产"
+      ],
+      "currentRole": "于1959年的扬州市饮食公司烹饪学校",
+      "city": "扬州",
+      "masters": [
+        {
+          "name": "王立喜",
+          "title": null,
+          "rawText": "师从于王立喜、徐永珍、邵金海、罗世伟"
+        },
+        {
+          "name": "徐永珍",
+          "title": null,
+          "rawText": "师从于王立喜、徐永珍、邵金海、罗世伟"
+        },
+        {
+          "name": "邵金海",
+          "title": null,
+          "rawText": "师从于王立喜、徐永珍、邵金海、罗世伟"
+        },
+        {
+          "name": "罗世伟",
+          "title": null,
+          "rawText": "师从于王立喜、徐永珍、邵金海、罗世伟"
+        }
+      ],
+      "experiences": [
+        "1998年起回到母校成为客座教授，从此专注于烹饪教学，培养淮扬菜烹饪传承人",
+        "1987年6月，他考入江苏旅游职业学院（原江苏省扬州商业技工学校）烹饪系烹饪专业",
+        "1959年的扬州市饮食公司烹饪学校，曾被赞誉为淮扬菜系教学\"黄埔军校\"",
+        "1986年，主打淮扬菜，绿杨邨酒楼的鸡汤面、干丝和小笼包是许多扬州人的回忆",
+        "2000 多年，时至今日，站在前人的肩膀上已很难看到更广阔的风景，如何更好地创新淮扬菜？正如自己的职业生涯，不进则退，邓晨一直在思考",
+        "2023 年 5 月 24 日，由福州市商务局主办的\"有福之州 美食之都\"闽菜宣传推介会第二站来到扬州，闽菜大师向参与者展示了经典的闽菜烹饪技艺，\"佛跳墙令人流连忘返，鸡汤汆"
+      ],
+      "signature": [
+        "素扒熊掌",
+        "包心荔枝肉",
+        "油爆河虾",
+        "经典鸡火干丝"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-04-01/36930504db40d9819e77fa56b7529a7a.jpg",
+      "bio": "江苏扬州淮扬菜大师，师承王立喜、徐永珍，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1131",
+      "url": "http://www.cyxh.org/mingchu/zishen/1131.html",
+      "column": "zishen",
+      "name": "徐年海",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1955,
+      "death": null,
+      "birthplace": "江苏靖江",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "苏"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中式烹调高级技师",
+        "高级技师"
+      ],
+      "currentRole": "靖江市供销总社食堂主厨、实验菜馆主任",
+      "city": null,
+      "masters": [],
+      "experiences": [
+        "1976年投身烹饪行业，从靖江市惠丰供销社饭店厨师起步，半年后全面执掌经营权",
+        "1989年作为江苏省人事厅特选人才派驻中国驻尼日利亚大使馆主厨",
+        "1992年归国后历任靖江商城集团副总经理、扬子江大酒店副总经理及中亚大厦总经理，2003年底自主创业开设私房菜馆，持续推动本土菜系创新发展",
+        "1983年至1990年间逐级晋升特二级厨师",
+        "1988年在江苏省供销社系统一级厨师烹饪技术比赛中，其作品锦绣什锦拼、扒凤腿斩获金奖，彰显精湛刀工与调味功底",
+        "2025年3月荣登《国家名厨》第七卷，被授予国家名厨荣誉称号，其烹饪生涯跨越外交厨房与市井烟火，始终秉持守正出新理念，在传承中创新，在创新中传承，成为淮扬菜系活态传承的杰"
+      ],
+      "signature": [
+        "年代金奖菜品—锦绣什锦拼",
+        "年代金奖菜品—扒凤腿",
+        "罗汉八宝鸡",
+        "马鞍腌笃鲜",
+        "银丝河豚鱼面"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-03-31/5a002c3f45db711b9e1184a5d3a0d0a7.jpg",
+      "bio": "江苏靖江淮扬菜大师，获国家名厨、中式烹调高级技师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1127",
+      "url": "http://www.cyxh.org/mingchu/zishen/1127.html",
+      "column": "zishen",
+      "name": "王玉锦",
+      "gender": "男",
+      "ethnicity": null,
+      "birth": 1965,
+      "death": null,
+      "birthplace": "江苏泰州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "高级技师"
+      ],
+      "currentRole": "扬州江都迎宾馆副总经理",
+      "city": "泰州",
+      "masters": [],
+      "experiences": [
+        "1983年踏入餐饮行业，加入江都水利工程管理处，凭借虚心好学、刻苦钻研的精神，在江鲜烹饪领域不断探索创新，研发出一系列契合时代需求的绿色菜肴，广受业界好评与顾客青睐",
+        "2002年他被调任江都迎宾馆，自创业初期便担任主厨，历经八年辛勤耕耘，助力迎宾馆在省内外树立起良好口碑与崇高声誉",
+        "2005年于北京东方美食国际大赛中荣获一金一银，2006年荣获江苏省百佳厨师称号，并在第十五届厨师节暨首届全国中餐技能创新大赛中摘得特金奖及优秀厨师奖，2010年被授予中",
+        "2025年3月更是入选《国家名厨》第七卷，荣获国家名厨荣誉称号"
+      ],
+      "signature": [
+        "极品狮子头",
+        "桂鱼煮干丝",
+        "柴把鮰鱼",
+        "蟹粉狮子头",
+        "烟花三月"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-03-15/348a214b9f4e6243274876fcadbbbaf4.jpg",
+      "bio": "江苏泰州淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1126",
+      "url": "http://www.cyxh.org/mingchu/zishen/1126.html",
+      "column": "zishen",
+      "name": "李晓宏",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1971,
+      "death": null,
+      "birthplace": "甘肃兰州",
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [
+        "京",
+        "陇"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中式烹调高级技师",
+        "高级技师",
+        "中国非遗美食大师",
+        "全国餐饮业劳动模范",
+        "劳动模范"
+      ],
+      "currentRole": "国二招经营总负责人、必点餐饮集团副总经理",
+      "city": "兰州",
+      "masters": [],
+      "experiences": [
+        "1987年参加烹饪工作，至今已有38年餐饮经历",
+        "2025年3月入选《国家名厨》第七卷，荣获国家名厨荣誉称号，这一荣誉不仅是对他个人职业生涯的高度认可，也是对他多年来致力于传承和发扬中华美食文化的肯定",
+        "2019年，他创立了厨王李鲍鱼工坊，2024年成立了厨王李餐饮管理有限责任公司，并推出了旗下品牌厨王李卤味集市，进一步拓展了其在餐饮领域的影响力和业务版图"
+      ],
+      "signature": [
+        "鱼子酱虾球",
+        "特点：鲜香清淡、色泽粉红。",
+        "富贵帝王蟹",
+        "特点：红白相间，鲜香浓郁。",
+        "菊花黄河大鲤鱼",
+        "特点：酥脆酸甜。",
+        "大漠驼掌",
+        "特点：软糯浓香。"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-03-14/9461072ba41782435910cf0baad61255.jpg",
+      "bio": "甘肃兰州粤菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1117",
+      "url": "http://www.cyxh.org/mingchu/zishen/1117.html",
+      "column": "zishen",
+      "name": "肖国成",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1976,
+      "death": null,
+      "birthplace": "山东济南",
+      "primaryCuisine": "鲁",
+      "secondaryCuisines": [],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中式烹调高级技师",
+        "高级技师",
+        "非物质文化遗产",
+        "五一劳动奖章"
+      ],
+      "currentRole": "济南魁盛居技术总监",
+      "city": "济南",
+      "masters": [],
+      "experiences": [
+        "2015年被评为第八批济南市突出贡献技师",
+        "2017年荣获泉城首席技师称号",
+        "2018年被历下区政府评为最佳餐饮人",
+        "2020年在第二届齐鲁厨师艺术节上斩获个人赛金鼎奖，同年被山东省烹饪协会评为注册中国鲁菜特级大师，并荣获山东省人民政府颁发齐鲁首席技师",
+        "2021年在第九届齐鲁饮食文化节工匠大赛中摘得金奖",
+        "2022年被评为影响山东齐鲁名匠，同年荣获济南市总工会颁发的济南市五一劳动奖章，并被授予中国最受瞩目青年烹饪艺术家称号，7月还被聘为中国饭店协会地标美食专家"
+      ],
+      "signature": [
+        "爆炒腰花",
+        "糖醋黄河鲤鱼",
+        "九转大肠",
+        "山东葱烧海参"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-03-04/16c21c6bf3ff4be03b1b9c56f6bcea93.jpg",
+      "bio": "山东济南鲁菜大师，获国家名厨、中式烹调高级技师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1110",
+      "url": "http://www.cyxh.org/mingchu/zishen/1110.html",
+      "column": "zishen",
+      "name": "刘跃",
+      "gender": null,
+      "ethnicity": null,
+      "birth": 1958,
+      "death": null,
+      "birthplace": "北京",
+      "primaryCuisine": "鲁",
+      "secondaryCuisines": [
+        "滇",
+        "药膳",
+        "京"
+      ],
+      "education": "高中",
+      "titles": [
+        "国家名厨"
+      ],
+      "currentRole": "北京巴黎马克西姆餐厅MINI'S餐厅的厨师长",
+      "city": "北京",
+      "masters": [],
+      "experiences": [
+        "1958年1月出生，北京人",
+        "1977年7月，他高中毕业后踏入烹饪行业，进入毛主席纪念堂招待所（后更名为崇文门饭店）开启厨师生涯",
+        "1979年，在局级青年厨师比赛中，他制作的油焖大虾荣获第一名",
+        "1985年，崇文门饭店与法国时装设计师皮尔 卡丹在北京开设了第一家中法合资的北京巴黎马克西姆西餐厅",
+        "1991年，为了进一步提升自己的烹饪技艺，刘跃远赴日本深造",
+        "2025年1月更是入选《国家名厨》第六卷，被国家名厨编纂委员会授予国家名厨荣誉称号"
+      ],
+      "signature": [
+        "法式牛排",
+        "蚝油鲍鱼",
+        "三越百货公司100周年纪念拼盘",
+        "什锦拼盘",
+        "油焖大虾"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2025-01-12/440e39eecfabadff1a6ab4ba5495a790.jpg",
+      "bio": "北京鲁菜大师，获国家名厨等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1101",
+      "url": "http://www.cyxh.org/mingchu/zishen/1101.html",
+      "column": "zishen",
+      "name": "刘青岩",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1960,
+      "death": null,
+      "birthplace": "黑龙江七台河",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "鲁",
+        "药膳",
+        "黑"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "资深级中国烹饪大师",
+        "中国烹饪艺术家",
+        "中华金厨",
+        "高级营养师",
+        "中式烹调高级技师",
+        "国家级评委",
+        "高级技师",
+        "劳动模范"
+      ],
+      "currentRole": null,
+      "city": null,
+      "masters": [
+        {
+          "name": "董延龄",
+          "title": null,
+          "rawText": "师从鲁菜大师、黑龙江省烹饪大师董延龄老先生"
+        }
+      ],
+      "experiences": [
+        "1977年3月起参加工作，曾工作于七煤集团有限责任公司宾馆餐厅，师从鲁菜大师、黑龙江省烹饪大师董延龄老先生",
+        "1990年他转任七台河市技工学校烹饪专业课教师",
+        "2015年成为七台河技师学院中式烹饪专业课教师及教务主任",
+        "2024年入选《国家名厨》第六卷，并荣获国家名厨称号，这是对他烹饪技艺和行业贡献的极高赞誉"
+      ],
+      "signature": [
+        "蒲棒里脊",
+        "凤腿蜀香蜂蛹",
+        "养生菌王争艳"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-11-09/3d8b9f6b508017c043a49c0146337810.jpg",
+      "bio": "黑龙江七台河淮扬菜大师，师承董延龄，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1087",
+      "url": "http://www.cyxh.org/mingchu/zishen/1087.html",
+      "column": "zishen",
+      "name": "吴泉生",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1962,
+      "death": null,
+      "birthplace": "福建泉州",
+      "primaryCuisine": "西点",
+      "secondaryCuisines": [
+        "面点",
+        "闽"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "高级技师"
+      ],
+      "currentRole": "西饼房主管",
+      "city": "福州",
+      "masters": [],
+      "experiences": [
+        "1980年12月通过福建省晋江地区全民所有制职工招工考试，进入福建省晋江地区招待所第二食堂(晋江地区招待所后转为泉州宾馆再转为泉州酒店)，开始了他与烹饪的不解之缘",
+        "1984年7月在职泉州宾馆期间参加了福建省成人高考，同年9月成功进入华侨大学（夜大学）电子技术及应用专业学习，于1987年12月毕业，这为他日后的烹饪事业增添了科技的翅膀",
+        "1990年2月他停薪留职，远赴澳大利亚悉尼市\"国际屋语言学院\"和\"新南威尔士商学院\"自费留学",
+        "1992年11月，因技术掌握全面又懂设备维护和电气故障排除，被晋升为夜班主管，1994年3月学成归国",
+        "1996年至2007年担任西饼房主管",
+        "2008年11月，他应聘泉州迎宾馆西点主厨（西饼房主管），并在2013年6月至2018年8月担任西厨副厨师长"
+      ],
+      "signature": [
+        "法式海鲜乳蛋馅饼",
+        "煎海鲈鱼佐蛤蜊奶油汁",
+        "意式黑醋排骨",
+        "闽南卤面",
+        "绿豆布丁蛋糕佐芋蓉",
+        "寿桃蛋糕"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-10-27/7737ef62a9c6953b23a1fe02cbf14274.jpg",
+      "bio": "福建泉州西点菜大师，获国家名厨、高级技师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1081",
+      "url": "http://www.cyxh.org/mingchu/zishen/1081.html",
+      "column": "zishen",
+      "name": "吴长清",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1963,
+      "death": null,
+      "birthplace": "四川省眉山市东坡区",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [
+        "药膳",
+        "国宴"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中式烹调高级技师",
+        "高级技师",
+        "非遗传承人"
+      ],
+      "currentRole": "主厨和厨师长等重要职位",
+      "city": "北京",
+      "masters": [
+        {
+          "name": "段子章",
+          "title": null,
+          "rawText": "师从眉山名厨段子章，至今从事烹饪工作45年，在川菜系同行中，享有很高的声誉"
+        }
+      ],
+      "experiences": [
+        "1979年入厨，师从眉山名厨段子章，至今从事烹饪工作45年，在川菜系同行中，享有很高的声誉",
+        "1983年之后，吴大师在多家知名餐饮机构担任主厨和厨师长等重要职位，包括三苏宾馆、眉山美食家餐厅、北京东坡酒楼、眉山洞天宾馆和眉山香满楼餐饮有限公司",
+        "1987年7月至退休，他一直服务于眉山市东坡区文化遗产保护中心",
+        "1997年担任眉山厨师学校校长，培养了近千名学生和弟子",
+        "2019年参加了在泸州举行的中国烹饪协会名人堂尊师导师传承人选拔研修班学习",
+        "2007年5月荣获东坡美食迎春厨艺大赛金厨奖"
+      ],
+      "signature": [
+        "寿比南山",
+        "蜂窝银鳕鱼",
+        "东坡肉",
+        "养生汽锅鸡",
+        "国宴狮子头",
+        "东坡绝配"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-10-21/567a797736d7501d38837d19e618b851.jpg",
+      "bio": "四川省眉山市东坡区川菜大师，师承段子章，获国家名厨、中式烹调高级技师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1077",
+      "url": "http://www.cyxh.org/mingchu/zishen/1077.html",
+      "column": "zishen",
+      "name": "李明乐",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1956,
+      "death": null,
+      "birthplace": "四川绵阳",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "国际烹饪艺术大师",
+        "国际烹饪大师"
+      ],
+      "currentRole": "绵阳南山民乐休闲山庄董事长",
+      "city": "郑州",
+      "masters": [],
+      "experiences": [
+        "1996年，他在成都参加中国首届烹饪学术研讨会上发表了《筵席改革》一文，荣获优秀论文一等奖，使绵阳菜受到广泛关注",
+        "1991年出师以来，李明乐大师积极参与各类烹饪赛事，屡获殊荣",
+        "1975 年-1978 年 绵阳市饮食服务公司直属酒店学徒、厨师、厨师长",
+        "1982 年绵阳市劳动服务公司任首席烹饪教官，帮助航运社、红联社、码头社、63820 部队、23 公司、24 公司、社区居委会等数百名企事业单位的子女顺利走上工作岗位",
+        "1987 年-1990 年参与创办御营职业高中烹饪专业（绵阳市首家公办烹饪专业学校），并担任首席烹饪专业教师兼指导老师",
+        "1983 年-1988 年担任绵阳市厨师培训中心专业教师"
+      ],
+      "signature": [
+        "油卤辣味鲜鱿",
+        "辣烧辽参",
+        "蒜泥黑毛肚"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-10-19/8eef452c9728ff4a913a31c4553cc220.jpg",
+      "bio": "四川绵阳川菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1076",
+      "url": "http://www.cyxh.org/mingchu/zishen/1076.html",
+      "column": "zishen",
+      "name": "朱清林",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1969,
+      "death": null,
+      "birthplace": "江苏南京",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "京",
+        "素",
+        "国宴",
+        "苏"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中式烹调高级技师",
+        "国家级裁判员",
+        "高级技师"
+      ],
+      "currentRole": "全国烹饪大赛赛事的评委和大赛监理",
+      "city": "南京",
+      "masters": [
+        {
+          "name": "杨继林",
+          "title": null,
+          "rawText": "得杨继林和薛文龙等大师的悉心指导"
+        },
+        {
+          "name": "周晓燕",
+          "title": null,
+          "rawText": "得到周晓燕大师的全面系统悉心教导"
+        }
+      ],
+      "experiences": [
+        "1989年毕业于南京江宁高等职业技术学校烹饪专业分配至南京军区政治部工作",
+        "1994年朱清林跟随北京饭店行政总厨郑秀生深入学习研究国宴淮扬菜、谭家菜，拜为郑秀生为师（有师徒证）",
+        "2013年的中国饮食行业十佳管理之星，2014年的最具影响力行政总厨，以及2015年的十佳行政总厨等荣誉",
+        "2017年荣获首届味道中国中华醉美厨霸淮扬菜名师和谭家菜名师称号",
+        "2024年入选《国家名厨》第六卷，荣获国家名厨荣誉称号，这是对他在推广和宣传淮扬菜做出不懈努力和为中国烹饪事业的发展做出突出贡献的肯定"
+      ],
+      "signature": [
+        "迷你松鼠鱼",
+        "红酒冰梅排骨",
+        "石榴鸡头米虾仁",
+        "皇室罐焖三鞭",
+        "莼菜茶汤鳕鱼狮子头",
+        "鹿跳墙"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-10-19/f404fe9973a0441e8198a3b026ba4268.jpg",
+      "bio": "江苏南京淮扬菜大师，师承杨继林、周晓燕，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1039",
+      "url": "http://www.cyxh.org/mingchu/zishen/1039.html",
+      "column": "zishen",
+      "name": "夏万峰",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1967,
+      "death": null,
+      "birthplace": "江苏省南京",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "素",
+        "苏"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中式烹调高级技师",
+        "高级技师",
+        "非物质文化遗产"
+      ],
+      "currentRole": "南京金陵饭店（五星级）行政总厨、黑珍珠梅苑餐厅总厨",
+      "city": "南京",
+      "masters": [],
+      "experiences": [
+        "1985年进入金陵饭店餐饮部以来，他在39年的烹饪实践工作中，积累了丰富的餐饮管理和烹调实践经验",
+        "2024年，夏万峰带队在卡尔卡松古城参加\"中国之夜\"——中法美食交流活动，接待了中国驻马赛总领事、法国奥克西塔尼大区议员、奥德省省长、卡尔卡松市市长及商会代表等众多中外贵"
+      ],
+      "signature": [
+        "明珠炖生敲",
+        "金陵龙马盅",
+        "金陵赋",
+        "金陵古法盐水鸭",
+        "青麦汁芥辣虾球",
+        "巴鱼狮子头",
+        "双龙银丝面"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-07-29/66d748fc49d7506b591dc0a35894196f.jpg",
+      "bio": "江苏省南京淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1033",
+      "url": "http://www.cyxh.org/mingchu/zishen/1033.html",
+      "column": "zishen",
+      "name": "黎云波",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1964,
+      "death": null,
+      "birthplace": "四川成都彭州",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "高级营养师",
+        "中式烹调高级技师",
+        "国家中式烹调高级技师",
+        "特一级厨师",
+        "高级技师"
+      ],
+      "currentRole": "新希望集团 新希望味业公司技术研发顾问（监制、代言）等",
+      "city": "成都",
+      "masters": [
+        {
+          "name": "谢怀德",
+          "title": null,
+          "rawText": "师从元老级中国烹饪大师谢怀德学艺，又受曾国华、华兴昌、张焕富三位川菜大师以及熊四智教授的精心指导"
+        },
+        {
+          "name": "曾国华",
+          "title": null,
+          "rawText": "又受曾国华、华兴昌、张焕富三位川菜大师以及熊四智教授的精心指导"
+        },
+        {
+          "name": "张焕富",
+          "title": null,
+          "rawText": "又受曾国华、华兴昌、张焕富三位川菜大师以及熊四智教授的精心指导"
+        }
+      ],
+      "experiences": [
+        "1980年10月起参加饮食行业工作至今，从事厨师工作40多年，师从元老级中国烹饪大师谢怀德学艺，又受曾国华、华兴昌、张焕富三位川菜大师以及熊四智教授的精心指导",
+        "1993年6月授聘为成都市饮食考评委员会的评委，同年12月授聘为成都市国际经济技术合作公司、饮食服务公司出国厨师培训指导教师",
+        "1997年他在成都华侨大酒店为第五届中国艺术节的大型文艺晚会《百花赞》设计并烹制宴会菜肴，同样赢得了国家领导人、著名艺术家及歌唱家的一致好评，获题词和合影留念",
+        "1998年3月，他在成都乡老坎酒家创制的江湖川菜\"少妇泼辣鲶鱼\"被《四川烹饪》杂志社收录",
+        "1999年，他不仅在成都市第二届烹饪技术大赛中获得热菜二等奖，还被成都市人民政府授予成都市优秀厨师称号，荣获第四届全国烹饪大赛热菜银牌奖",
+        "2024年入选《国家名厨》第六卷，荣获国家名厨荣誉称号"
+      ],
+      "signature": [
+        "天彭牡丹",
+        "黎氏藤椒爆肚花",
+        "百花甲鱼",
+        "黎氏牡丹肚花",
+        "乘飞远航",
+        "升庵桂花鸭",
+        "芙蓉樟茶鸭",
+        "黎氏藿香嫩鱼"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-07-24/9223f588cc482812115471c74d050b09.jpg",
+      "bio": "四川成都彭州川菜大师，师承谢怀德、曾国华，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-1032",
+      "url": "http://www.cyxh.org/mingchu/zishen/1032.html",
+      "column": "zishen",
+      "name": "杨贵珍",
+      "gender": "女",
+      "ethnicity": "汉族",
+      "birth": 1967,
+      "death": null,
+      "birthplace": "中国著名宫廷美食品牌《颐和食坊》创始",
+      "primaryCuisine": "京",
+      "secondaryCuisines": [],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "非物质文化遗产"
+      ],
+      "currentRole": "厨师与厨师长、永裕智辰商务酒店担任技术总监及副总经理",
+      "city": "洛阳",
+      "masters": [],
+      "experiences": [
+        "2005年8月入职颐和园听骊馆饭庄学徒，拜宫廷寿膳非物质文化传承人李晓静大师为师，致力于传承和发扬宫廷寿膳文化",
+        "2016年，她在颐和园内创立了颐和食坊，致力于将宫廷寿膳工艺与现代饮食文化相结合，进行商业创新",
+        "2018年，杨贵珍女士被评为中国\"文创食品\"开拓人",
+        "2019年，被北京卫视《创意中国》栏目特邀，参与宫廷文创美食展示",
+        "2019年，她受邀进入首都机场特产店，代表北京文化的特别商品陈列展销",
+        "2019年，她受邀为天坛独家研创天坛祈福食品系列"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-07-14/3380c12d7cb06d00ec7deb5fdbd3a96e.jpg",
+      "bio": "中国著名宫廷美食品牌《颐和食坊》创始京菜大师，获国家名厨、非物质文化遗产等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-987",
+      "url": "http://www.cyxh.org/mingchu/zishen/987.html",
+      "column": "zishen",
+      "name": "于林保",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1956,
+      "death": null,
+      "birthplace": "陕西宝鸡岐山县",
+      "primaryCuisine": "陕",
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "高级技师"
+      ],
+      "currentRole": "中式烹调老师",
+      "city": "西安",
+      "masters": [],
+      "experiences": [
+        "1976年2月，他开始了中学数学教学工作，展现出了扎实的教育教学功底",
+        "1996年8月，他转至五丈原职高，开始致力于中式烹饪教学工作，将自己的数学知识与烹饪技艺完美结合，为烹饪教育注入了新的活力",
+        "2018年他在西安桃李旅游烹饪学院担任中式烹调老师，将自己的烹饪技艺与教学经验传授给更多有志于烹饪事业的学生",
+        "2000年在岐山职业技术教育中心担任中式烹调教学工作，并担任教学研究组组长，积极推动烹饪教育的改革与创新",
+        "2015年开始，他积极参与人社部门的职业技能培训工作，足迹遍布陕西各地",
+        "2018年于林保老师在延安黄陵县进行技能培训，为当地的脱贫攻坚工作做出了突出贡献，被评为优秀讲师"
+      ],
+      "signature": [
+        "飞燕鱼",
+        "葵花香糟肉",
+        "口口酥",
+        "蜜汁葫芦",
+        "拔丝",
+        "水煎包"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-31/703566f007bacf34861380ef943b2c73.jpg",
+      "bio": "陕西宝鸡岐山县陕菜大师，获国家名厨、高级技师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-986",
+      "url": "http://www.cyxh.org/mingchu/zishen/986.html",
+      "column": "zishen",
+      "name": "安雷",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1970,
+      "death": null,
+      "birthplace": "北京",
+      "primaryCuisine": "药膳",
+      "secondaryCuisines": [
+        "京"
+      ],
+      "education": "大专",
+      "titles": [
+        "国家名厨",
+        "世界美食大师",
+        "高级营养师",
+        "中式烹调高级技师",
+        "国家职业技能鉴定考评员",
+        "高级技师"
+      ],
+      "currentRole": "上海世民鸿源酒店管理股份有限公司总经理",
+      "city": "北京",
+      "masters": [],
+      "experiences": [
+        "1989年从北京旅游服务学校中餐烹饪专业毕业以来，他便踏上了烹饪艺术的探索之旅",
+        "2012年至2019年担任北京鼎宴餐饮有限公司总经理，以其独特的经营理念和精湛的管理技巧，带领公司取得了骄人的业绩",
+        "2022年至今担任上海世民鸿源酒店管理股份有限公司总经理，继续书写着他在餐饮界的传奇故事",
+        "2014年他赴斯里兰卡参加第十届国际美食养生大赛，凭借出色的表现荣获金奖，并被授予世界美食药膳名师称号",
+        "2019年他再次出征南非，参加第十五届国际美食养生大赛，再次斩获金奖，并荣获世界美食大师称号",
+        "2024年他更是入选了《国家名厨》第六卷，并荣获国家名厨荣誉称号，这是对他多年来在烹饪事业上的辛勤付出和卓越成就的最高褒奖"
+      ],
+      "signature": [
+        "府邸老鸭煲",
+        "皇府鱼翅泡饭",
+        "浓香酥皮虾",
+        "芝士慢烹牛肋",
+        "抓炒锦绣虾球"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-31/8434ebbe15f1512ef59ba9f781a2429e.jpg",
+      "bio": "北京药膳菜大师，获国家名厨、世界美食大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-976",
+      "url": "http://www.cyxh.org/mingchu/zishen/976.html",
+      "column": "zishen",
+      "name": "张素香",
+      "gender": "女",
+      "ethnicity": "汉族",
+      "birth": 1972,
+      "death": null,
+      "birthplace": "山西五台",
+      "primaryCuisine": "晋",
+      "secondaryCuisines": [
+        "面点",
+        "药膳"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中西式面点高级技师",
+        "中国烹饪协会A级注册裁判员",
+        "高级技师"
+      ],
+      "currentRole": "山西省职工活动中心餐饮部总厨",
+      "city": "太原",
+      "masters": [],
+      "experiences": [
+        "2009年以来，她数十次担任全国和省、市大型餐饮比赛的裁判和评委及山西省职业技能鉴定工作",
+        "2003年起至今，张素香不仅在学校授课，还经常外出讲学，应邀赴各地美食节现场进行面食绝技绝活表演",
+        "2006年她远赴西班牙皇家马德里奥维特集团传授山西面食技艺，将山西面食带出国门，走向世界舞台"
+      ],
+      "signature": [
+        "菊花酥",
+        "山西翡翠刀削面",
+        "九龙玉面饺"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-21/43dad6aa6c94966f21afae0076944c12.jpg",
+      "bio": "山西五台晋菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-972",
+      "url": "http://www.cyxh.org/mingchu/zishen/972.html",
+      "column": "zishen",
+      "name": "徐春明",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1968,
+      "death": null,
+      "birthplace": "江苏宿迁",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "粤"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "高级营养师",
+        "中式烹调高级技师",
+        "国家中式烹调高级技师",
+        "国家职业技能鉴定考评员",
+        "高级技师",
+        "五一劳动奖章"
+      ],
+      "currentRole": null,
+      "city": "宿迁",
+      "masters": [],
+      "experiences": [
+        "2004年他在江苏厨师节暨第三届创新菜烹饪技术比赛中荣获创新热菜银牌奖，展现了他的创新精神和精湛技艺",
+        "2009年3月参加第三届中国 南京长江饮食文化节江苏省创新菜烹饪技术比赛，他制作的金鼠赏芳荣获江苏省江鲜名菜，再次证明了他在烹饪领域的卓越地位",
+        "2019年获北京烹饪技能大赛组委会授予烹饪匠心传承人称号",
+        "2024年入选《国家名厨》第六卷，并被授予国家名厨荣誉称号"
+      ],
+      "signature": [
+        "水晶河豚冠顶饺",
+        "松茸白虾莲蓬",
+        "潮汕珍菌拼",
+        "橄榄白鱼丸",
+        "香椿煎蛋",
+        "金丝芥味莲茸球",
+        "金勾蟹吐司"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-20/480419168896f406d600761ceb3979da.jpg",
+      "bio": "江苏宿迁淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-967",
+      "url": "http://www.cyxh.org/mingchu/zishen/967.html",
+      "column": "zishen",
+      "name": "贾鸿祥",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1964,
+      "death": null,
+      "birthplace": "山西太原",
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [
+        "鲁",
+        "晋",
+        "面点"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中华金厨",
+        "中式烹调高级技师",
+        "国家级考评员",
+        "高级技师",
+        "劳动模范"
+      ],
+      "currentRole": "了《中国面食文化》的编委",
+      "city": "太原",
+      "masters": [
+        {
+          "name": "李嗣亮",
+          "title": null,
+          "rawText": "得到了李嗣亮大师的悉心指点"
+        }
+      ],
+      "experiences": [
+        "1981年起在正太饭店学习烹调、面点和冷荤，他得到了李嗣亮大师的悉心指点，技艺得到了极大的提升",
+        "1983年进入林香斋工作，刻苦专业，不断进取",
+        "1986年至1994年任职于太原烤鸭店，传承师傅制作的八宝葫芦鸭，得到了师傅的认可和顾客的好评，于1989年晋升为厨师长",
+        "1995年起先后就任粟海宾馆餐饮部经理、龙珠大酒店总经理、太重宾馆总经理助理、餐饮总监、餐饮部经理等职务",
+        "1989年他研制的沙棘枣泥鱼卷和烹烤大虾被太原市服务局鉴定为太原市名优产品",
+        "1993年代表山西省参加全国第三届烹饪大赛，制作的热菜二龙相会和喜巢海中宝荣获金奖"
+      ],
+      "signature": [
+        "菊花台蘑羊肉",
+        "配料：清汤、食盐、味精。",
+        "特点：造型新颖、口味独特。",
+        "松鼠鱼",
+        "特点：造型逼真、味道甜酸。",
+        "蝶恋花",
+        "特点：造型美观、营养丰富。"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-15/7f1b11a66026ef0ca03abd0b7e394914.jpg",
+      "bio": "山西太原粤菜大师，师承李嗣亮，获国家名厨、中华金厨等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-965",
+      "url": "http://www.cyxh.org/mingchu/zishen/965.html",
+      "column": "zishen",
+      "name": "黄笑敏",
+      "gender": "女",
+      "ethnicity": "汉族",
+      "birth": 1972,
+      "death": null,
+      "birthplace": "广东顺德",
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [
+        "面点"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中华金厨",
+        "中式面点高级技师",
+        "国家职业技能鉴定考评员",
+        "高级技师"
+      ],
+      "currentRole": "点心主管",
+      "city": "顺德",
+      "masters": [],
+      "experiences": [
+        "1990年至1995年加入容桂南环酒店点心部工作",
+        "1995年底至1997年在大良珠江酒店点心部担任副主管",
+        "1997年8月至2000年6月在苏州会议中心丰乐宫大酒店点心部担任副主管",
+        "2001年到2014年6月在容桂丽豪酒店点心部担任主管",
+        "2014年7月至2015年10月在北滘南国渔村点心部担任点心主管",
+        "2015年10月至今在容桂哥顿休闲会所点心部担任点心主管"
+      ],
+      "signature": [
+        "趣致小丑鱼",
+        "金秋栗子饺",
+        "金牌虾饺皇",
+        "黄金燕麦搏撑"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-14/4c4802d6257c461a386be85ee0d39b9c.jpg",
+      "bio": "广东顺德粤菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-964",
+      "url": "http://www.cyxh.org/mingchu/zishen/964.html",
+      "column": "zishen",
+      "name": "梁国华",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1969,
+      "death": null,
+      "birthplace": "广东顺德",
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [
+        "面点",
+        "药膳"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "国际烹饪艺术大师",
+        "中华金厨",
+        "高级营养配餐员",
+        "中式烹调高级技师",
+        "国家中式烹调高级技师",
+        "高级技师",
+        "中国非遗美食大师",
+        "全国餐饮业劳动模范",
+        "劳动模范"
+      ],
+      "currentRole": "顺德区伦教饮食协会顾问、世界粤菜厨王协会（中国）顺德分会理事、广东省食文化研究会",
+      "city": "顺德",
+      "masters": [],
+      "experiences": [
+        "2007年加入厨师协会以来，他连续三届当选佛山市顺德区厨师协会副会长",
+        "2021年被选为连山厨师协会理事会荣誉会长，展现了他在行业内的影响力和地位",
+        "2016年他被授予国际烹饪艺术大师称号",
+        "2017年荣获世界粤菜米其林星厨亚太国际厨王勋章，并成为中国烹饪协会注册中国烹饪大师，还获得了顺德商会名厨第十一届菜式最佳创意金奖",
+        "2018年被中国烹饪协会授予中华金厨奖，并荣获顺德商会名厨第十五届皇冠厨皇精品菜金奖",
+        "2022年被中国餐饮协会授予首批中国非遗美食大师称号"
+      ],
+      "signature": [
+        "菜点名称：菜远炒鳝片",
+        "菜点名称：拆鱼羹",
+        "菜点名称：葱油焗罗氏虾",
+        "菜点名称：煎焗鱼嘴",
+        "煎焗魽鱼"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-14/5902c9b5b30078b135b1427528e3b933.jpg",
+      "bio": "广东顺德粤菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-963",
+      "url": "http://www.cyxh.org/mingchu/zishen/963.html",
+      "column": "zishen",
+      "name": "梁桂欢",
+      "gender": "女",
+      "ethnicity": "汉族",
+      "birth": 1966,
+      "death": null,
+      "birthplace": "广东顺德",
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [
+        "面点"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "注册中国烹饪大师",
+        "中华金厨",
+        "中式面点高级技师",
+        "高级技师",
+        "非物质文化遗产",
+        "中国非遗美食大师",
+        "全国餐饮业劳动模范",
+        "劳动模范"
+      ],
+      "currentRole": "广东顺德梁桂欢伦教糕食品有限公司董事长",
+      "city": "佛山",
+      "masters": [],
+      "experiences": [
+        "1982年开始在早餐店小作坊任职店员，到1990年开设\"梁桂欢糕店\"并担任总经理，她始终坚守初心，不断追求卓越",
+        "2024年入选《国家名厨》第六卷，被授予国家名厨荣誉称号"
+      ],
+      "signature": [
+        "欢姐伦教糕",
+        "黄糖伦教糕",
+        "欢姐马拉糕",
+        "具有营养并且易消化。",
+        "拉花千层南瓜酥",
+        "竹炭玫瑰奶卷"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-14/6bb9991d4829fd787866410a2008a005.jpg",
+      "bio": "广东顺德粤菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-950",
+      "url": "http://www.cyxh.org/mingchu/zishen/950.html",
+      "column": "zishen",
+      "name": "王文彬",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1955,
+      "death": null,
+      "birthplace": "江苏盐城",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "资深级中国烹饪大师",
+        "中式烹调高级技师",
+        "国家级考评员",
+        "高级技师"
+      ],
+      "currentRole": "过重要职务",
+      "city": "盐城",
+      "masters": [],
+      "experiences": [
+        "1990年10月至1999年10月，他在盐城海悦国际大酒店历任餐饮经理、行政总厨和餐饮总监，期间凭借其卓越的领导才能和烹饪技艺，为酒店赢得了众多荣誉",
+        "2000年5月至2005年12月，他担任王府井大酒店法人代表，期间成功将酒店打造成为当地餐饮业的标杆",
+        "2006年12月至2009年2月，他在汉唐盛世大酒店担任副总经理，继续展现其卓越的领导才能",
+        "2009年3月至2017年11月担任鸿基国际大酒店总经理和常务副总经理，凭借其卓越的管理才能和创新精神，推动酒店业绩不断提升",
+        "1987年，王文彬大师（前排右三）与国家名厨主编沈家定（前排右四）时任全国供销社系统培训班老师与学员合影\n在行业成就方面，王文彬大师多次获得表彰",
+        "1990年2月，他荣获优秀共产党员称号，展现了他的政治觉悟和道德品质"
+      ],
+      "signature": [
+        "太极蟹粉盏",
+        "推浪鱼柳",
+        "雕刻作品"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-03/0beb851b861b1f0b9e13a068574f8e0d.jpg",
+      "bio": "江苏盐城淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-949",
+      "url": "http://www.cyxh.org/mingchu/zishen/949.html",
+      "column": "zishen",
+      "name": "刘亚军",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1961,
+      "death": null,
+      "birthplace": "江苏南京",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "药膳",
+        "苏"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "资深级中国烹饪大师",
+        "特一级厨师"
+      ],
+      "currentRole": "中国烹饪协会名厨委资深委员、江苏省烹饪研究所研究员、泰州天德湖宾馆有限公司总经理",
+      "city": "南京",
+      "masters": [],
+      "experiences": [
+        "2024年被选入《国家名厨》第六卷，并被授予国家名厨荣誉称号，这是对他多年来辛勤付出的最好肯定",
+        "1998年至2004年），此菜畅销单菜品年营收近600多万元，堪称经典之作，将南京饭店的餐饮年营收快速带来了数倍的增长，轰动业界"
+      ],
+      "signature": [
+        "南瓜桂鱼粒",
+        "梅干菜辽参",
+        "川香水煮东星斑",
+        "河豚三宝",
+        "枣香水晶肉"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-05-02/00d38a12e4117a008a1b3095df06c9d7.jpg",
+      "bio": "江苏南京淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-941",
+      "url": "http://www.cyxh.org/mingchu/zishen/941.html",
+      "column": "zishen",
+      "name": "宋远华",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1968,
+      "death": null,
+      "birthplace": "安徽砀山县",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "徽",
+        "豫",
+        "面点"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中式烹调高级技师",
+        "高级技师",
+        "非物质文化遗产"
+      ],
+      "currentRole": "砀山县烹饪协会会长",
+      "city": "宿州",
+      "masters": [
+        {
+          "name": "胡士斌",
+          "title": null,
+          "rawText": "师从淮北特级大师胡士斌和徽菜大师朱时春，深得徽菜精髓"
+        }
+      ],
+      "experiences": [
+        "1988年起从事烹饪工作至今，师从淮北特级大师胡士斌和徽菜大师朱时春，深得徽菜精髓",
+        "1989年当选为淮北市烹饪协会理事，并荣获优秀青年厨师称号",
+        "1992年担任淮北市淮北饭店主厨",
+        "1994年任宿州市交通大酒店行政总厨",
+        "1997年在砀山长城大酒店担任主厨",
+        "2014年，他成立了快一点快餐公司并担任总经理"
+      ],
+      "signature": [
+        "员外红烧肉",
+        "小吊梨汤",
+        "砀山徽派臭鳜鱼"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-04-28/b5bfcddc2baea0cfec13969afd5673f8.jpg",
+      "bio": "安徽砀山县淮扬菜大师，师承胡士斌，获国家名厨、中式烹调高级技师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-940",
+      "url": "http://www.cyxh.org/mingchu/zishen/940.html",
+      "column": "zishen",
+      "name": "叶孟松",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1957,
+      "death": null,
+      "birthplace": "江苏宜兴",
+      "primaryCuisine": "苏",
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨"
+      ],
+      "currentRole": "宜兴官林苏廷大酒店董事长",
+      "city": "无锡",
+      "masters": [],
+      "experiences": [
+        "1979年在官林友谊饭店参加工作，叶孟松凭借过人的才华和勤奋努力，于1980年晋升为酒店经理",
+        "1988年，他勇敢地选择下海，创办了南园大饭店，开始了自己的创业之路",
+        "2015年创办了苏廷大酒店，并一直担任董事长至今",
+        "2024年，他光荣入选《国家名厨》第六卷，并被授予国家名厨荣誉称号，这是对他多年来在餐饮行业所取得的卓越成就的最高认可"
+      ],
+      "signature": [
+        "传统古法腻蟹糊(热菜)",
+        "滆湖明珠生态鸭(冷菜)",
+        "吉祥翡翠三鲜饺（点心）",
+        "翡翠文丝豆腐浸百合",
+        "红烧肥肠"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-04-27/850b403e11ee1325224548d950c181ab.jpg",
+      "bio": "江苏宜兴苏菜大师，获国家名厨等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-925",
+      "url": "http://www.cyxh.org/mingchu/zishen/925.html",
+      "column": "zishen",
+      "name": "杜西锋",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1960,
+      "death": null,
+      "birthplace": "陕西蓝田",
+      "primaryCuisine": "鲁",
+      "secondaryCuisines": [
+        "陕"
+      ],
+      "education": "硕士",
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "资深级中国烹饪大师",
+        "中华金厨",
+        "中国食文化研究会",
+        "中式烹调高级技师",
+        "高级技师",
+        "非物质文化遗产",
+        "金爵奖"
+      ],
+      "currentRole": "中国烹饪大师名人堂师徒传承导师",
+      "city": "西安",
+      "masters": [],
+      "experiences": [
+        "2024年其业绩被选入《国家名厨》第六卷",
+        "1982年10月被陕西省旅游局招工从事烹饪工作，实习于西安宾馆，1984年10月被陕西省旅游局分配到西安朱雀饭店、西安东方大酒店，在此工作20年",
+        "2004年被陕旅集团调到西安宾馆任餐饮总监，陕西旅游饭店管理集团任餐饮总监、菜品研发部主任，致力于为西安宾馆、唐城宾馆、西安东方大酒店等40多家集团旗下酒店的菜品创新研发",
+        "2019年，他创建了\"杜师门\"，数百名弟子在他的指导下茁壮成长，均成为行业技术骨干",
+        "2017年受陕西电视台一套《朝阳行动》栏目邀请，拍摄\"圆梦厨师\"特别节目，与陕西礼泉一位年仅10岁失去双亲，志向长大要做厨师的孩子，定向帮扶至成年",
+        "2020年初的抗疫行动中，他带头并号召\"杜师门\"全体弟子向抗疫一线的医务工作者奉献爱心"
+      ],
+      "signature": [
+        "莲蓬鱼肚",
+        "牡丹鱼",
+        "金钱酿发菜",
+        "谷穗",
+        "莲香惜玉",
+        "清汤鸡面",
+        "油泼鱼面",
+        "长安香糟肉"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-04-16/6514e19a08b79f7781bf4da8510f0347.jpg",
+      "bio": "陕西蓝田鲁菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-910",
+      "url": "http://www.cyxh.org/mingchu/zishen/910.html",
+      "column": "zishen",
+      "name": "宋军",
+      "gender": null,
+      "ethnicity": null,
+      "birth": null,
+      "death": null,
+      "birthplace": "北京",
+      "primaryCuisine": "京",
+      "secondaryCuisines": [
+        "清真"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中华金厨"
+      ],
+      "currentRole": "北京老门框餐饮管理有限公司董事长\n高级烹饪技师\n北京老字号老门框爆肚第四代传承人",
+      "city": "北京",
+      "masters": [],
+      "experiences": [
+        "2020年抗疫先进企业家\n国家五叶级绿色饭店评审员\n阿斯塔纳世博会特殊贡献奖亚洲美食诚信联盟优秀企业家\n2024年入选《国家名厨》第六卷，被授予国家名厨荣誉称号\n宋军大师",
+        "2000食品安全管理体系标准，并达得了HACCP体系认证标准，从供应链源头开始为消费者提供高标准的食品安全保证",
+        "2020年初，新冠肺炎的突然爆发，使得人们外出聚餐数量骤降，对我国餐饮行业造成巨大冲击，大量餐饮企业主动或被动暂停营业，老门框也是千千万万中的一家",
+        "2020年1月中下旬开始，随着新冠疫情逐渐为外界知晓，餐饮退订率不断攀升，2020年 1 月 23 日武汉封城的消息发布后，老门框所有餐厅都处于停摆状态",
+        "2019年同比下降了80%以上，最低点在2月5日营收同比下降超过了95%，几乎没有任何营业额",
+        "2020年，宋军将\"看得到的健康\"作为老门框新的经营理念与使命，将食材、人员、操作、用具等等一切关于到用户的品类，全部进行公示监控，并且推广到全部门店，只为让我们的顾客有"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-04-08/33d1ace2d612fc70d8779655fdb439f9.jpg",
+      "bio": "北京京菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-905",
+      "url": "http://www.cyxh.org/mingchu/zishen/905.html",
+      "column": "zishen",
+      "name": "郭成全",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1970,
+      "death": null,
+      "birthplace": "黑龙江哈尔滨",
+      "primaryCuisine": "国宴",
+      "secondaryCuisines": [
+        "黑"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中国烹饪名师",
+        "中华金厨",
+        "高级营养师",
+        "高级技师",
+        "非遗传承人"
+      ],
+      "currentRole": "哈尔滨日月潭美食城(全国餐饮业五十强)、（香港）君悦美食城、福成肥牛任职厨务总监",
+      "city": "哈尔滨",
+      "masters": [
+        {
+          "name": "侯仲华",
+          "title": null,
+          "rawText": "师承国务院功勋国宴泰斗、北京钓鱼台国宾馆行政总厨侯仲华先生，成为侯门国宴第三代传承人，现任哈尔滨英才公司技术总顾问"
+        }
+      ],
+      "experiences": [
+        "2024年入选《国家名厨》第六卷\n郭成全大师在工作中勇于实践与创新，为提升和完善技术与管理技能，相续参加了黑龙江省首届行政总厨资格认证，世界中餐联合会大董高级进修班等学习",
+        "2024年成立郭成全烹饪大师工作室，更好的弘扬国宴菜品文化、促进地方烹饪交流发展"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-04-02/5ebaaa535d38a13337ff2d33d992b607.jpg",
+      "bio": "黑龙江哈尔滨国宴菜大师，师承侯仲华，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-902",
+      "url": "http://www.cyxh.org/mingchu/zishen/902.html",
+      "column": "zishen",
+      "name": "胡百玲",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1965,
+      "death": null,
+      "birthplace": "安徽黄山",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "粤",
+        "鲁",
+        "浙",
+        "徽",
+        "药膳"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "高级技师",
+        "五一劳动奖章"
+      ],
+      "currentRole": "安徽省黄山市宴仙食品有限公司研发总监",
+      "city": "黄山",
+      "masters": [],
+      "experiences": [
+        "2024年入选《国家名厨》第六卷，被授予国家名厨荣誉称号，2023年荣获中国（淮安）淮扬菜大师邀请赛特金奖、江苏省2023年度优秀行政总厨，在2022年被评选为江苏省优秀",
+        "2022年获得注册烹饪大师、注册名厨、注册烹饪艺术家、中国餐饮文化传承人，荣获2022年度精英人物奖，被授予2021年度安徽烹饪技术能手称号，中国徽菜\"徽州臭鳜鱼\"烹饪邀",
+        "2021年获得中国烹饪大师名人堂尊师导师技艺传承培训证书（匠心传承），2020年被评选为优秀徽菜厨师长，2019年被选举为黄山市餐饮协会第四届会员代表大会理事，当选为中国",
+        "2020年获得徽州臭桂鱼专项能力技能大师，还被授予五一劳动奖章、人力资源社会劳动就业培训中心技能考评员，黄山市老年大学烹饪技能教师等"
+      ],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-03-31/733c8ecc6bec6729720fea13a08cd383.jpg",
+      "bio": "安徽黄山淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-897",
+      "url": "http://www.cyxh.org/mingchu/zishen/897.html",
+      "column": "zishen",
+      "name": "万明达",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1955,
+      "death": null,
+      "birthplace": "江苏无锡",
+      "primaryCuisine": "粤",
+      "secondaryCuisines": [
+        "苏"
+      ],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师"
+      ],
+      "currentRole": "实习菜指导老师多年",
+      "city": "无锡",
+      "masters": [],
+      "experiences": [],
+      "signature": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-03-29/b5461ccd430ddbad0af554d6efa85543.jpg",
+      "bio": "江苏无锡粤菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    },
+    {
+      "id": "cyxh-zishen-896",
+      "url": "http://www.cyxh.org/mingchu/zishen/896.html",
+      "column": "zishen",
+      "name": "陈宗荣",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birth": 1961,
+      "death": null,
+      "birthplace": "江苏扬州",
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [],
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "高级技师"
+      ],
+      "currentRole": "餐厅副经理、 厨师长\n1993年9月担任扬州职业大学美味餐厅(招待厅) 厨师长、",
+      "city": "扬州",
+      "masters": [],
+      "experiences": [
+        "1980年12月参加工作，1984年开始从事餐饮，经过不断的学习和实践，终于在1989年晋升一级资格，1995年通过特三级考核",
+        "1992年在扬州市明月酒家担任餐厅副经理、 厨师长\n1993年9月担任扬州职业大学美味餐厅(招待厅) 厨师长、副主任\n1995年参加江苏省高校苏北片烹饪比赛 (小锅菜)冷",
+        "1998 年参加全国高校后勤伙食苏北片比赛获二等奖\n2005年参加中烹协和江苏省第四届创新菜大赛获一金、一银奖\n(注：金牌菜一滋补牛鞭盅，银牌菜一奶香葫芦)\n2005年6月",
+        "2005年11月荣获江苏省淮扬菜烹饪大师称号\n2006年6月荣获扬州师傅称号\n2006年6月荣获江苏省狮王争霸赛创新狮子头 (龙凤狮子头)创新金奖\n2006年12月参加江",
+        "2006年11月获江苏餐饮行业协会颁发餐饮业评委、 认定师\n2005年8月聘任为江苏省餐饮行业协会常务理事\n从2004年至2017年连续被评为校级先进个人\n被评为2005",
+        "2008、2012、2016年度优秀共产党员\n2007年9月被亚洲蓝带餐饮协会评为金牌总厨\n2007年9 月被评为扬州市教科文卫系统爱岗敬业标兵\n2007年12月参加江"
+      ],
+      "signature": [
+        "天府明虾",
+        "灌蟹橄榄鱼",
+        "奇味烤河鳗",
+        "翠竹鱼米",
+        "酿蟹黄百花鱼肚",
+        "桃胶燕窝"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-03-29/8bacb5f6ebfeacae0acc0d4622b582e6.jpg",
+      "bio": "江苏扬州淮扬菜大师，获国家名厨、中国烹饪大师等荣誉。"
+    }
+  ],
+  "stats": {
+    "total": 56,
+    "failed": 0,
+    "failedIds": [],
+    "cuisineDistribution": {
+      "淮扬": 20,
+      "沪": 1,
+      "川": 5,
+      "粤": 8,
+      "食雕": 1,
+      "面点": 5,
+      "豫": 1,
+      "东北": 1,
+      "药膳": 2,
+      "苏": 2,
+      "鲁": 3,
+      "西点": 1,
+      "京": 2,
+      "陕": 1,
+      "晋": 1,
+      "国宴": 1
+    },
+    "withMasterCount": 12,
+    "masterCoverage": 21.4
+  }
+}
