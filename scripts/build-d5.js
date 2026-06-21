@@ -252,15 +252,16 @@ const HEAD_STYLE = `<!doctype html>
     font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--dust);
     margin-top:3px;text-transform:uppercase;
   }
-  .gen-people{display:flex;flex-wrap:wrap;gap:14px}
+  .gen-people{display:flex;flex-wrap:wrap;gap:14px;align-items:stretch}
 
   /* 人物卡（D4 风格：主菜系钢印+姓名+短连线） */
   .person{
     display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:center;
     padding:9px 14px 9px 9px;background:var(--paper);
-    border:1px solid rgba(18,16,14,.2);min-width:200px;cursor:pointer;
+    border:1px solid rgba(18,16,14,.2);width:230px;cursor:pointer;
     position:relative;transition:transform .2s,box-shadow .2s,border-color .2s;
   }
+  .person > div:last-child{display:flex;flex-direction:column;justify-content:center;min-height:54px}
   .person:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--vermillion);border-color:var(--ink)}
   .person.active{background:var(--ink);color:var(--paper);border-color:var(--ink);box-shadow:6px 6px 0 var(--vermillion)}
   .person.active .p-meta{color:rgba(237,232,219,.7)}
