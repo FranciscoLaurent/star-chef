@@ -1,0 +1,11 @@
+{
+  "source": "cuisine-backfill · re-parse crawled detail pages",
+  "scope": "菜系补全（重新解析已抓页面）",
+  "fetchDate": "2026-06-21",
+  "results": [],
+  "stats": {
+    "total": 246,
+    "fixed": 0,
+    "failed": 246
+  }
+}
