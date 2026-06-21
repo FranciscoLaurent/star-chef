@@ -200,7 +200,7 @@ for (const c of byName.values()) {
     school: c.school || null,
     gen: c.gen != null ? c.gen : null,
     master: c.master || null,
-    era: c.era || null,
+    era: c.era || (c.birth && c.birth > 1960 ? '当代' : c.birth && c.birth >= 1912 ? '近代' : c.birth ? '清末民初' : c.death ? '近代' : null),
     birth: c.birth != null ? c.birth : null,
     death: c.death != null ? c.death : null,
     gender: c.gender || null,

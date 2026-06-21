@@ -335,12 +335,12 @@ const HEAD_STYLE = `<!doctype html>
     object-fit:cover;background:var(--paper-2);position:relative;
   }
   .detail .portrait-fallback{
-    width:130px;height:174px;flex-shrink:0;background:var(--ink);color:var(--paper);
-    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:56px;
-    position:relative;
+    width:130px;height:174px;flex-shrink:0;background:var(--paper-2);color:var(--dust);
+    display:grid;place-items:center;font-family:var(--songti);font-weight:300;font-size:42px;
+    position:relative;border:1px solid var(--rule);opacity:.6;
   }
   .detail .portrait-fallback::after{
-    content:"";position:absolute;inset:5px;border:1px dashed rgba(237,232,219,.4);
+    content:"";position:absolute;inset:5px;border:1px dotted var(--rule);
   }
   .detail .nm{font-family:var(--songti);font-weight:700;font-size:26px;letter-spacing:.05em;line-height:1.1}
   .detail .nm-en{font-family:var(--serif);font-style:italic;font-size:12px;color:var(--vermillion);font-variation-settings:"opsz" 144;margin-top:3px}
