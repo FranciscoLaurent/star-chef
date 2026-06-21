@@ -12,7 +12,12 @@ const files = [
   { path: 'cyxh-dangdai-batch3.json', type: 'cyxh' },
   { path: 'cyxh-zishen-batch3.json',  type: 'cyxh' },
   { path: 'cyxh-mianhuai-batch2.json', type: 'cyxh' },
-  { path: 'cyxh-yuanlao-batch2.json',  type: 'cyxh', optional: true },
+  { path: 'cyxh-yuanlao-batch2.json',  type: 'cyxh' },
+  { path: 'mingchu-elite.json',        type: 'cyxh', optional: true },
+  { path: 'placeholder-fills.json',    type: 'fill', optional: true },
+  // 后续批次:
+  { path: 'cyxh-dangdai-batch4.json',  type: 'cyxh', optional: true },
+  { path: 'cyxh-zishen-yuanlao-batch5.json', type: 'cyxh', optional: true },
 ];
 
 // 菜系归一化（合并同义词 / 去掉"菜"后缀 / 别名）
