@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:35:51.192Z",
+  "generatedAt": "2026-06-21T12:12:06.714Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json",
   "cuisineNormalized": {
     "川菜": "川",
@@ -13788,6 +13788,7 @@
       ]
     },
     {
+      "id": "auto-王致福-淮扬",
       "name": "王致福",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -15476,6 +15477,7 @@
       "_origin": "mingchu-elite.json"
     },
     {
+      "id": "auto-唐克明-辽",
       "name": "唐克明",
       "isPlaceholder": false,
       "primaryCuisine": "辽",
@@ -15644,6 +15646,7 @@
       "_origin": "mingchu-elite.json"
     },
     {
+      "id": "auto-周晓燕-淮扬",
       "name": "周晓燕",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -15692,6 +15695,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-王伟-沪",
       "name": "王伟",
       "isPlaceholder": false,
       "primaryCuisine": "沪",
@@ -15747,6 +15751,7 @@
       "masterIds": []
     },
     {
+      "id": "auto-黄俊杰-淮扬",
       "name": "黄俊杰",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -15813,6 +15818,7 @@
       ]
     },
     {
+      "id": "auto-花惠生-淮扬",
       "name": "花惠生",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -15858,6 +15864,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-李魁南-淮扬",
       "name": "李魁南",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -15901,6 +15908,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-萧玉斌-淮扬",
       "name": "萧玉斌",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -15937,6 +15945,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-薛泉生-淮扬",
       "name": "薛泉生",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -15992,6 +16001,7 @@
       "masterIds": []
     },
     {
+      "id": "auto-屈浩-鲁",
       "name": "屈浩",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -16049,6 +16059,7 @@
       ]
     },
     {
+      "id": "auto-麦广帆-粤",
       "name": "麦广帆",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -16106,6 +16117,7 @@
       ]
     },
     {
+      "id": "auto-马志和-清真",
       "name": "马志和",
       "isPlaceholder": false,
       "primaryCuisine": "清真",
@@ -16153,6 +16165,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-黄晋临-川",
       "name": "黄晋临",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -16199,6 +16212,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-吴正格-辽",
       "name": "吴正格",
       "isPlaceholder": false,
       "primaryCuisine": "辽",
@@ -16245,6 +16259,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-董世国-京",
       "name": "董世国",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -16300,6 +16315,7 @@
       "masterIds": []
     },
     {
+      "id": "auto-肖飞-淮扬",
       "name": "肖飞",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -16347,6 +16363,7 @@
       "masterIds": []
     },
     {
+      "id": "auto-万学武-京",
       "name": "万学武",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -16399,6 +16416,7 @@
       ]
     },
     {
+      "id": "auto-史玉和-湘",
       "name": "史玉和",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -16435,6 +16453,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-梁忠-宫廷",
       "name": "梁忠",
       "isPlaceholder": false,
       "primaryCuisine": "宫廷",
@@ -16476,6 +16495,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-殷九-粤",
       "name": "殷九",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -16511,6 +16531,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-殷耀-粤",
       "name": "殷耀",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -16549,6 +16570,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-殷光-粤",
       "name": "殷光",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -16584,6 +16606,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-王殿臣-鲁",
       "name": "王殿臣",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -16620,6 +16643,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-徐子明-辽",
       "name": "徐子明",
       "isPlaceholder": false,
       "primaryCuisine": "辽",
@@ -16658,6 +16682,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-赵惠源-豫",
       "name": "赵惠源",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -16688,6 +16713,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-李晓静-京",
       "name": "李晓静",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -16720,6 +16746,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-薛文俊-京",
       "name": "薛文俊",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -16752,6 +16779,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-朱永建-淮扬",
       "name": "朱永建",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -16782,6 +16810,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-王先之-未知",
       "name": "王先之",
       "isPlaceholder": false,
       "primaryCuisine": "未知",
@@ -16812,6 +16841,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-王剑南-未知",
       "name": "王剑南",
       "isPlaceholder": false,
       "primaryCuisine": "未知",
@@ -16842,6 +16872,7 @@
       "_origin": "placeholder-fills.json"
     },
     {
+      "id": "auto-陈熙-未知",
       "name": "陈熙",
       "isPlaceholder": false,
       "primaryCuisine": "未知",
@@ -37187,6 +37218,7 @@
       "_origin": "cyxh-crawled4.json"
     },
     {
+      "id": "auto-王彬-淮扬",
       "name": "王彬",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -39158,6 +39190,7 @@
       "_origin": "cyxh-crawled4.json"
     },
     {
+      "id": "auto-朱宝-NA",
       "name": "朱宝",
       "isPlaceholder": false,
       "primaryCuisine": null,
@@ -39190,6 +39223,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-楼海祥-NA",
       "name": "楼海祥",
       "isPlaceholder": false,
       "primaryCuisine": null,
@@ -39222,6 +39256,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-舒俊-湘",
       "name": "舒俊",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -39259,6 +39294,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-温江辉-滇",
       "name": "温江辉",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -39293,6 +39329,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-刘小锋-NA",
       "name": "刘小锋",
       "isPlaceholder": false,
       "primaryCuisine": null,
@@ -39325,6 +39362,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-熊乐-陕",
       "name": "熊乐",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
@@ -39371,6 +39409,7 @@
       ]
     },
     {
+      "id": "auto-龙尚-湘",
       "name": "龙尚",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -39404,6 +39443,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-段进平-NA",
       "name": "段进平",
       "isPlaceholder": false,
       "primaryCuisine": null,
@@ -39436,6 +39476,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-孙金光-鲁",
       "name": "孙金光",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -39474,6 +39515,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-陈石柱-粤",
       "name": "陈石柱",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -39506,6 +39548,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-何辅庭-川",
       "name": "何辅庭",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -39576,6 +39619,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-黄辉-豫",
       "name": "黄辉",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -39609,6 +39653,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-冯遣光-粤",
       "name": "冯遣光",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -39709,6 +39754,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-何志文-粤",
       "name": "何志文",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -39743,6 +39789,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-郭合金-浙",
       "name": "郭合金",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -39778,6 +39825,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-殷夫林-沪",
       "name": "殷夫林",
       "isPlaceholder": false,
       "primaryCuisine": "沪",
@@ -39811,6 +39859,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-徐会达-鲁",
       "name": "徐会达",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -39843,6 +39892,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-兰廷峰-川",
       "name": "兰廷峰",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -39908,6 +39958,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-黄永乐-湘",
       "name": "黄永乐",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -39941,6 +39992,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-刘光发-淮扬",
       "name": "刘光发",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -39973,6 +40025,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-李敏-点心",
       "name": "李敏",
       "isPlaceholder": false,
       "primaryCuisine": "点心",
@@ -40074,6 +40127,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-廖昱楷-陕",
       "name": "廖昱楷",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
@@ -40106,6 +40160,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-陈永静-川",
       "name": "陈永静",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -40174,6 +40229,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-杨正-湘",
       "name": "杨正",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -40207,6 +40263,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-张合兵-滇",
       "name": "张合兵",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -40240,6 +40297,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-肖进飞-滇",
       "name": "肖进飞",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -40273,6 +40331,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-卢昌意-闽",
       "name": "卢昌意",
       "isPlaceholder": false,
       "primaryCuisine": "闽",
@@ -40405,6 +40464,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-南云鹏-赣",
       "name": "南云鹏",
       "isPlaceholder": false,
       "primaryCuisine": "赣",
@@ -40439,6 +40499,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-吴文中-淮扬",
       "name": "吴文中",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -40473,6 +40534,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-高鑫-晋",
       "name": "高鑫",
       "isPlaceholder": false,
       "primaryCuisine": "晋",
@@ -40576,6 +40638,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-高亮-东北",
       "name": "高亮",
       "isPlaceholder": false,
       "primaryCuisine": "东北",
@@ -40689,6 +40752,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-娄伍勇-川",
       "name": "娄伍勇",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -40725,6 +40789,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-张文阳-冀",
       "name": "张文阳",
       "isPlaceholder": false,
       "primaryCuisine": "冀",
@@ -40799,6 +40864,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-王正富-鲁",
       "name": "王正富",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -40851,6 +40917,7 @@
       ]
     },
     {
+      "id": "auto-郑伟-鄂",
       "name": "郑伟",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -40884,6 +40951,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-胡辉誉-粤",
       "name": "胡辉誉",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -40918,6 +40986,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-谢浩光-粤",
       "name": "谢浩光",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -41049,6 +41118,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-颜罡-淮扬",
       "name": "颜罡",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -41082,6 +41152,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-汤颖志-浙",
       "name": "汤颖志",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -41226,6 +41297,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-陈义龙-鄂",
       "name": "陈义龙",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -41292,6 +41364,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-白运周-京",
       "name": "白运周",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -41399,6 +41472,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-薛明-鲁",
       "name": "薛明",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -41474,6 +41548,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-彭明勇-鄂",
       "name": "彭明勇",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -41805,6 +41880,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-贺振鑫-陕",
       "name": "贺振鑫",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
@@ -41845,6 +41921,7 @@
       ]
     },
     {
+      "id": "auto-徐宝华-鄂",
       "name": "徐宝华",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -41911,6 +41988,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-张元全-川",
       "name": "张元全",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -41949,6 +42027,7 @@
       "masterIds": []
     },
     {
+      "id": "auto-赵见-粤",
       "name": "赵见",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -41991,6 +42070,7 @@
       ]
     },
     {
+      "id": "auto-熊奎-鄂",
       "name": "熊奎",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -42023,6 +42103,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-吴康政-鄂",
       "name": "吴康政",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -42055,6 +42136,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-毛海峰-鄂",
       "name": "毛海峰",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -42087,6 +42169,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-方伟东-鄂",
       "name": "方伟东",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -42119,6 +42202,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-罗昆-湘",
       "name": "罗昆",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -42217,6 +42301,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-王志清-沪",
       "name": "王志清",
       "isPlaceholder": false,
       "primaryCuisine": "沪",
@@ -42282,6 +42367,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-廖永祥-川",
       "name": "廖永祥",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -42353,6 +42439,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-刘景松-豫",
       "name": "刘景松",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -42393,6 +42480,7 @@
       ]
     },
     {
+      "id": "auto-陈巧桐-粤",
       "name": "陈巧桐",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -42425,6 +42513,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-李雪峰-豫",
       "name": "李雪峰",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -42467,6 +42556,7 @@
       ]
     },
     {
+      "id": "auto-冯东海-滇",
       "name": "冯东海",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -42513,6 +42603,7 @@
       ]
     },
     {
+      "id": "auto-王刚-东北",
       "name": "王刚",
       "isPlaceholder": false,
       "primaryCuisine": "东北",
@@ -42547,6 +42638,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-肖楠-滇",
       "name": "肖楠",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -42584,6 +42676,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-杨俊峰-滇",
       "name": "杨俊峰",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -42626,6 +42719,7 @@
       ]
     },
     {
+      "id": "auto-苏琴贵-滇",
       "name": "苏琴贵",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -42659,6 +42753,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-刘灿军-滇",
       "name": "刘灿军",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -42695,6 +42790,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-许春-淮扬",
       "name": "许春",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -42763,6 +42859,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-陈亮-淮扬",
       "name": "陈亮",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -42840,6 +42937,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-王学文-赣",
       "name": "王学文",
       "isPlaceholder": false,
       "primaryCuisine": "赣",
@@ -42878,6 +42976,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-廖鸣-桂",
       "name": "廖鸣",
       "isPlaceholder": false,
       "primaryCuisine": "桂",
@@ -42910,6 +43009,7 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
+      "id": "auto-张新雨-陕",
       "name": "张新雨",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
@@ -42955,6 +43055,7 @@
       ]
     },
     {
+      "id": "auto-苏鹏辉-桂",
       "name": "苏鹏辉",
       "isPlaceholder": false,
       "primaryCuisine": "桂",
@@ -43020,6 +43121,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-刘大林-浙",
       "name": "刘大林",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -43052,6 +43154,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-赵洪君-NA",
       "name": "赵洪君",
       "isPlaceholder": false,
       "primaryCuisine": null,
@@ -43084,6 +43187,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-徐胜松-NA",
       "name": "徐胜松",
       "isPlaceholder": false,
       "primaryCuisine": null,
@@ -43116,6 +43220,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-刘志刚-粤",
       "name": "刘志刚",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -43150,6 +43255,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-梁伟-陕",
       "name": "梁伟",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
@@ -43191,6 +43297,7 @@
       "masterIds": []
     },
     {
+      "id": "auto-周小根-徽",
       "name": "周小根",
       "isPlaceholder": false,
       "primaryCuisine": "徽",
@@ -43227,6 +43334,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-翁金伟-浙",
       "name": "翁金伟",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -43259,6 +43367,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-陈雪锋-粤",
       "name": "陈雪锋",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -43294,6 +43403,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-吴俊延-琼",
       "name": "吴俊延",
       "isPlaceholder": false,
       "primaryCuisine": "琼",
@@ -43327,6 +43437,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-孙斌-淮扬",
       "name": "孙斌",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -43426,6 +43537,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-马鹏翔-鲁",
       "name": "马鹏翔",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -43500,6 +43612,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-黄尚君-粤",
       "name": "黄尚君",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -43532,6 +43645,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-郭向阳-徽",
       "name": "郭向阳",
       "isPlaceholder": false,
       "primaryCuisine": "徽",
@@ -43633,6 +43747,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-李江伟-川",
       "name": "李江伟",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -43698,6 +43813,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-张洪-黔",
       "name": "张洪",
       "isPlaceholder": false,
       "primaryCuisine": "黔",
@@ -43731,6 +43847,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-方稳军-湘",
       "name": "方稳军",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -43832,6 +43949,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-李少华-冀",
       "name": "李少华",
       "isPlaceholder": false,
       "primaryCuisine": "冀",
@@ -43872,6 +43990,7 @@
       ]
     },
     {
+      "id": "auto-郭龙龙-淮扬",
       "name": "郭龙龙",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -43917,6 +44036,7 @@
       ]
     },
     {
+      "id": "auto-徐兴勇-川",
       "name": "徐兴勇",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -43954,6 +44074,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-孟明-鲁",
       "name": "孟明",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -43986,6 +44107,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-赵军-川",
       "name": "赵军",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -44028,6 +44150,7 @@
       ]
     },
     {
+      "id": "auto-李志仁-淮扬",
       "name": "李志仁",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -44063,6 +44186,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-戴彩云-淮扬",
       "name": "戴彩云",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -44162,6 +44286,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-唐建-清真",
       "name": "唐建",
       "isPlaceholder": false,
       "primaryCuisine": "清真",
@@ -44198,6 +44323,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-谭经跃-鄂",
       "name": "谭经跃",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -44243,6 +44369,7 @@
       ]
     },
     {
+      "id": "auto-孙国秀-鲁",
       "name": "孙国秀",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -44275,6 +44402,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-蔡政杰-浙",
       "name": "蔡政杰",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -44308,6 +44436,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-张宏林-滇",
       "name": "张宏林",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -44341,6 +44470,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-彭保云-滇",
       "name": "彭保云",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -44374,6 +44504,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-刘文奇-豫",
       "name": "刘文奇",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -44443,6 +44574,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-杨江桃-滇",
       "name": "杨江桃",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -44478,6 +44610,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-李金勇-鲁",
       "name": "李金勇",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -44513,6 +44646,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-周渝淋-川",
       "name": "周渝淋",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -44546,6 +44680,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-祁昌启-淮扬",
       "name": "祁昌启",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -44612,6 +44747,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-朱小红-湘",
       "name": "朱小红",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -44646,6 +44782,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-郭长珍-晋",
       "name": "郭长珍",
       "isPlaceholder": false,
       "primaryCuisine": "晋",
@@ -44713,6 +44850,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-曾伟-川",
       "name": "曾伟",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -44783,6 +44921,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-谭振杰-粤",
       "name": "谭振杰",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -44826,6 +44965,7 @@
       ]
     },
     {
+      "id": "auto-李进-川",
       "name": "李进",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -44859,6 +44999,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-刘强-鲁",
       "name": "刘强",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -44970,6 +45111,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-郭洪伟-粤",
       "name": "郭洪伟",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -45004,6 +45146,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-李川-沪",
       "name": "李川",
       "isPlaceholder": false,
       "primaryCuisine": "沪",
@@ -45041,6 +45184,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-钟松达-粤",
       "name": "钟松达",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -45078,6 +45222,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-李成磊-鲁",
       "name": "李成磊",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -45218,6 +45363,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-张赟-鲁",
       "name": "张赟",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -45320,6 +45466,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-李兴奎-淮扬",
       "name": "李兴奎",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -45354,6 +45501,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-张大军-鄂",
       "name": "张大军",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -45387,6 +45535,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-余灯梅-鄂",
       "name": "余灯梅",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -45419,6 +45568,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-杜海波-陕",
       "name": "杜海波",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
@@ -45453,6 +45603,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-王世兴-蒙",
       "name": "王世兴",
       "isPlaceholder": false,
       "primaryCuisine": "蒙",
@@ -45485,6 +45636,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-张海青-蒙",
       "name": "张海青",
       "isPlaceholder": false,
       "primaryCuisine": "蒙",
@@ -45517,6 +45669,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-蒋志源-川",
       "name": "蒋志源",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -45550,6 +45703,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-张星光-粤",
       "name": "张星光",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -45583,6 +45737,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-孔滨-鲁",
       "name": "孔滨",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -45617,6 +45772,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-何军-湘",
       "name": "何军",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -45650,6 +45806,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-刘海龙-蒙",
       "name": "刘海龙",
       "isPlaceholder": false,
       "primaryCuisine": "蒙",
@@ -45682,6 +45839,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-隆进涛-川",
       "name": "隆进涛",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -45721,6 +45879,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-霍东涛-川",
       "name": "霍东涛",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -45756,6 +45915,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-肖述礼-赣",
       "name": "肖述礼",
       "isPlaceholder": false,
       "primaryCuisine": "赣",
@@ -45791,6 +45951,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-李启章-湘",
       "name": "李启章",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -45827,6 +45988,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-刘莹-闽",
       "name": "刘莹",
       "isPlaceholder": false,
       "primaryCuisine": "闽",
@@ -45892,6 +46054,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-臧梓翔-淮扬",
       "name": "臧梓翔",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -45968,6 +46131,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-曾雪丽-鄂",
       "name": "曾雪丽",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -46000,6 +46164,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-张明虎-清真",
       "name": "张明虎",
       "isPlaceholder": false,
       "primaryCuisine": "清真",
@@ -46033,6 +46198,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-钟义-鄂",
       "name": "钟义",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -46102,6 +46268,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-王洪涛-粤",
       "name": "王洪涛",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -46139,6 +46306,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-张道永-豫",
       "name": "张道永",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -46196,6 +46364,7 @@
       ]
     },
     {
+      "id": "auto-崔朝安-湘",
       "name": "崔朝安",
       "isPlaceholder": false,
       "primaryCuisine": "湘",
@@ -46263,6 +46432,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-邝杰-浙",
       "name": "邝杰",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -46299,6 +46469,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-翁畅安-粤",
       "name": "翁畅安",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -46370,6 +46541,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-梁永强-粤",
       "name": "梁永强",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -46402,6 +46574,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-杨万祥-滇",
       "name": "杨万祥",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -46467,6 +46640,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-张国春-滇",
       "name": "张国春",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -46501,6 +46675,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-郝展宁-清真",
       "name": "郝展宁",
       "isPlaceholder": false,
       "primaryCuisine": "清真",
@@ -46535,6 +46710,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-任金磊-浙",
       "name": "任金磊",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -46571,6 +46747,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-童相鲁-赣",
       "name": "童相鲁",
       "isPlaceholder": false,
       "primaryCuisine": "赣",
@@ -46603,6 +46780,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-周昌明-川",
       "name": "周昌明",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -46675,6 +46853,7 @@
       "_origin": "cswzg-chefs.json"
     },
     {
+      "id": "auto-白军军-东北",
       "name": "白军军",
       "isPlaceholder": false,
       "primaryCuisine": "东北",
@@ -46713,6 +46892,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-旦增平措-藏",
       "name": "旦增平措",
       "isPlaceholder": false,
       "primaryCuisine": "藏",
@@ -46747,6 +46927,7 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
+      "id": "auto-丁万谷-淮扬",
       "name": "丁万谷",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -46792,6 +46973,7 @@
       ]
     },
     {
+      "id": "auto-王景春-京",
       "name": "王景春",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -46826,6 +47008,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-魏兴国-川",
       "name": "魏兴国",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -46858,6 +47041,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-刘永见-川",
       "name": "刘永见",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -46890,6 +47074,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-蒋伯春-川",
       "name": "蒋伯春",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -46936,6 +47121,7 @@
       ]
     },
     {
+      "id": "auto-汤金章-京",
       "name": "汤金章",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -46969,6 +47155,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-张志广-京",
       "name": "张志广",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -47022,6 +47209,7 @@
       ]
     },
     {
+      "id": "auto-李月林-浙",
       "name": "李月林",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -47054,6 +47242,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-高振江-淮扬",
       "name": "高振江",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -47092,6 +47281,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-陈代增-淮扬",
       "name": "陈代增",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -47130,6 +47320,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-戴立芝-淮扬",
       "name": "戴立芝",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -47174,6 +47365,7 @@
       "masterIds": []
     },
     {
+      "id": "auto-解德坤-滇",
       "name": "解德坤",
       "isPlaceholder": false,
       "primaryCuisine": "滇",
@@ -47221,6 +47413,7 @@
       ]
     },
     {
+      "id": "auto-刘崇云-川",
       "name": "刘崇云",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -47256,6 +47449,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-吴行玉-京",
       "name": "吴行玉",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -47288,6 +47482,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-张廷彩-鲁",
       "name": "张廷彩",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -47325,6 +47520,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-孙峰-鲁",
       "name": "孙峰",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -47361,6 +47557,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-朱家德-鲁",
       "name": "朱家德",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -47394,6 +47591,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-牟常勋-鲁",
       "name": "牟常勋",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -47432,6 +47630,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-吴行官-鲁",
       "name": "吴行官",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -47464,6 +47663,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-王世珍-鲁",
       "name": "王世珍",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -47502,6 +47702,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-郭有忠-鲁",
       "name": "郭有忠",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -47535,6 +47736,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-宋振志-豫",
       "name": "宋振志",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -47571,6 +47773,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-王天喜-豫",
       "name": "王天喜",
       "isPlaceholder": false,
       "primaryCuisine": "豫",
@@ -47608,6 +47811,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-林耀龙-素菜",
       "name": "林耀龙",
       "isPlaceholder": false,
       "primaryCuisine": "素菜",
@@ -47641,6 +47845,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-林月生-素菜",
       "name": "林月生",
       "isPlaceholder": false,
       "primaryCuisine": "素菜",
@@ -47689,6 +47894,7 @@
       ]
     },
     {
+      "id": "auto-张铁元-京",
       "name": "张铁元",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -47739,6 +47945,7 @@
       ]
     },
     {
+      "id": "auto-张福祉-淮扬",
       "name": "张福祉",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -47786,6 +47993,7 @@
       ]
     },
     {
+      "id": "auto-刘洪生-京",
       "name": "刘洪生",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -47818,6 +48026,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-程起江-粤",
       "name": "程起江",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -47850,6 +48059,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-李玉崴-浙",
       "name": "李玉崴",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -47884,6 +48094,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-姚荣生-浙",
       "name": "姚荣生",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -47919,6 +48130,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-甘端华-浙",
       "name": "甘端华",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -47961,6 +48173,7 @@
       ]
     },
     {
+      "id": "auto-童辉星-闽",
       "name": "童辉星",
       "isPlaceholder": false,
       "primaryCuisine": "闽",
@@ -48013,6 +48226,7 @@
       ]
     },
     {
+      "id": "auto-曹祥贵-淮扬",
       "name": "曹祥贵",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -48064,6 +48278,7 @@
       ]
     },
     {
+      "id": "auto-韩玉明-辽",
       "name": "韩玉明",
       "isPlaceholder": false,
       "primaryCuisine": "辽",
@@ -48104,6 +48319,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-贺峰-京",
       "name": "贺峰",
       "isPlaceholder": false,
       "primaryCuisine": "京",
@@ -48140,6 +48356,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-李驹-粤",
       "name": "李驹",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -48178,6 +48395,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-王海东-鄂",
       "name": "王海东",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -48234,6 +48452,7 @@
       ]
     },
     {
+      "id": "auto-吴家安-淮扬",
       "name": "吴家安",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -48269,6 +48488,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-肖伟民-淮扬",
       "name": "肖伟民",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -48306,6 +48526,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-吴奇安-川",
       "name": "吴奇安",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -48360,6 +48581,7 @@
       ]
     },
     {
+      "id": "auto-刘汉威-NA",
       "name": "刘汉威",
       "isPlaceholder": false,
       "primaryCuisine": null,
@@ -48400,6 +48622,7 @@
       ]
     },
     {
+      "id": "auto-徐永珍-淮扬",
       "name": "徐永珍",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -48448,6 +48671,7 @@
       ]
     },
     {
+      "id": "auto-罗世伟-闽",
       "name": "罗世伟",
       "isPlaceholder": false,
       "primaryCuisine": "闽",
@@ -48500,6 +48724,7 @@
       ]
     },
     {
+      "id": "auto-董延龄-辽",
       "name": "董延龄",
       "isPlaceholder": false,
       "primaryCuisine": "辽",
@@ -48545,6 +48770,7 @@
       ]
     },
     {
+      "id": "auto-杨继林-淮扬",
       "name": "杨继林",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -48585,6 +48811,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-王金廷-川",
       "name": "王金廷",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -48626,6 +48853,7 @@
       ]
     },
     {
+      "id": "auto-宗良松-鄂",
       "name": "宗良松",
       "isPlaceholder": false,
       "primaryCuisine": "鄂",
@@ -48669,6 +48897,7 @@
       ]
     },
     {
+      "id": "auto-胡宝珍-清真",
       "name": "胡宝珍",
       "isPlaceholder": false,
       "primaryCuisine": "清真",
@@ -48705,6 +48934,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-陈廷兴-川",
       "name": "陈廷兴",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -48737,6 +48967,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-傅连贵-沪",
       "name": "傅连贵",
       "isPlaceholder": false,
       "primaryCuisine": "沪",
@@ -48769,6 +49000,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-徐春和-沪",
       "name": "徐春和",
       "isPlaceholder": false,
       "primaryCuisine": "沪",
@@ -48801,6 +49033,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-谭鸣-粤",
       "name": "谭鸣",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -48837,6 +49070,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-韩忠俭-陕",
       "name": "韩忠俭",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
@@ -48876,6 +49110,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-郭大开-粤",
       "name": "郭大开",
       "isPlaceholder": false,
       "primaryCuisine": "粤",
@@ -48908,6 +49143,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-赵广成-辽",
       "name": "赵广成",
       "isPlaceholder": false,
       "primaryCuisine": "辽",
@@ -48942,6 +49178,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-时广南-鲁",
       "name": "时广南",
       "isPlaceholder": false,
       "primaryCuisine": "鲁",
@@ -48998,6 +49235,7 @@
       ]
     },
     {
+      "id": "auto-徐德章-川",
       "name": "徐德章",
       "isPlaceholder": false,
       "primaryCuisine": "川",
@@ -49046,6 +49284,7 @@
       ]
     },
     {
+      "id": "auto-邵正福-淮扬",
       "name": "邵正福",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",
@@ -49078,6 +49317,7 @@
       "_origin": "placeholder-fills3.json"
     },
     {
+      "id": "auto-王寿山-淮扬",
       "name": "王寿山",
       "isPlaceholder": false,
       "primaryCuisine": "淮扬",

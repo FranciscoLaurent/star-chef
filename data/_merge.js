@@ -193,7 +193,7 @@ for (const c of byName.values()) {
   const normCui = rawCui ? (CUISINE_NORMALIZE[rawCui] || rawCui) : null;
 
   const out = {
-    id: c.id,
+    id: c.id || `auto-${c.name}-${normCui || 'NA'}`,
     name: c.name,
     isPlaceholder: c.isPlaceholder || false,
     primaryCuisine: normCui,

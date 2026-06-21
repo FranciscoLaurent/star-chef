@@ -802,7 +802,12 @@ function cuisineStamp(cu){
 
 // 厨师 ID → chef 对象
 const chefById = {};
-DATA.chefs.forEach(c => { chefById[c.id] = c; });
+let _dupIdWarn = 0;
+DATA.chefs.forEach(c => {
+  if (chefById[c.id]) { _dupIdWarn++; console.warn('重复 id:', c.id, c.name, '覆盖', chefById[c.id].name); }
+  chefById[c.id] = c;
+});
+if (_dupIdWarn) console.error('共发现', _dupIdWarn, '个重复 id，请检查数据源');
 
 // 厨师名 → chef 对象（用于 masters[].name 反查）
 const chefByName = {};
