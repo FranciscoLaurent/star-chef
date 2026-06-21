@@ -3983,7 +3983,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "安徽太和",
+      "birthplace": "云南",
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -4019,7 +4019,8 @@
           "rawText": "后师从刘崇云学习白案"
         }
       ],
-      "masterIds": []
+      "masterIds": [],
+      "_birthplaceNote": "bio 明确写云南滇菜泰斗，原安徽太和是解析错误"
     },
     {
       "id": "cyxh-yuanlao-849",
@@ -4330,7 +4331,7 @@
       "death": 2025,
       "gender": "男",
       "ethnicity": null,
-      "birthplace": "江苏徐州",
+      "birthplace": null,
       "education": null,
       "titles": [
         "元老级注册中国烹饪大师",
@@ -4358,7 +4359,8 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/1108.html",
       "bio": "江苏徐州籍新疆烹饪奠基人，新疆烹饪协会终身名誉会长。从中西两餐、民汉两灶到外交国宴。",
       "referencedBy": null,
-      "_origin": "cyxh-chefs.json"
+      "_origin": "cyxh-chefs.json",
+      "_birthplaceNote": "清真菜系与江苏籍贯矛盾，无可靠来源，置空"
     },
     {
       "id": "cyxh-mianhuai-665",
@@ -4441,7 +4443,7 @@
       "death": 1966,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "北京平谷",
+      "birthplace": null,
       "education": null,
       "titles": [
         "开国淮扬菜大师",
@@ -4464,7 +4466,8 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/8.html",
       "bio": "北京平谷籍淮扬菜开国大师，与罗国荣、陈胜、范俊康并称中国烹饪四大名旦。亲传弟子高国禄、陈代增、杨启庭、邓生根、刘俊岐、袁福增（其中陈代增为郑秀生之师）。",
       "referencedBy": null,
-      "_origin": "cyxh-chefs.json"
+      "_origin": "cyxh-chefs.json",
+      "_birthplaceNote": "淮扬菜系与北京籍贯矛盾，无可靠来源，置空"
     },
     {
       "id": "cyxh-zishen-1316",
