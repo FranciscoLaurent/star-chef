@@ -1,0 +1,69 @@
+{
+  "source": "手动添加的厨师（WebSearch验证）",
+  "scope": "manual-adds",
+  "chefs": [
+    {
+      "id": "websearch-20260621-001",
+      "name": "黄绍满",
+      "isPlaceholder": false,
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": null,
+      "gen": null,
+      "master": null,
+      "era": "当代",
+      "birth": 1978,
+      "death": null,
+      "birthplace": "湖南长沙",
+      "gender": "男",
+      "titles": [
+        "世界烹饪大师",
+        "中国湘菜高级烹调师",
+        "全国最佳厨师",
+        "中华名厨",
+        "金牌行政总厨",
+        "湖南省2023年度十佳名厨"
+      ],
+      "currentRole": "长沙市餐饮行业协会青年名厨专业委员会秘书长、新农大酒店行政总厨",
+      "restaurant": "长沙市新农大酒店",
+      "position": "行政总厨",
+      "city": "长沙",
+      "signature": [],
+      "portrait": null,
+      "source": "https://m.canyin88.com/zixun/2023/09/13/109172.html",
+      "bio": "黄绍满，1978年9月生，湖南长沙人。世界烹饪大师、中国湘菜高级烹调师。长沙市餐饮行业协会青年名厨专业委员会秘书长。1995年入行，先后在益阳、长沙、海口等地司厨。2007年获奥运美食中国超厨总决赛金奖，2008年获第六届全国烹饪技能大赛热菜个人金奖，2009年获总决赛全国最佳厨师。2023年获评湖南省十佳名厨。"
+    },
+    {
+      "id": "websearch-20260621-002",
+      "name": "吴景",
+      "isPlaceholder": false,
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": null,
+      "gen": null,
+      "master": null,
+      "era": "当代",
+      "birth": 1981,
+      "death": null,
+      "birthplace": "湖南湘阴",
+      "gender": "男",
+      "titles": [
+        "国家名厨",
+        "湘菜名师",
+        "国家名厨编委会荣誉委员",
+        "中国饭店业国家级评委"
+      ],
+      "currentRole": "北京万荣餐饮有限公司湘荣记酒楼店总",
+      "restaurant": "湘荣记酒楼",
+      "position": "店总",
+      "city": "北京",
+      "signature": [
+        "酱椒蒸鱼头",
+        "秘制牛蛙"
+      ],
+      "portrait": null,
+      "source": "https://www.sohu.com/a/114297265_266788",
+      "bio": "吴景，1981年10月生，湖南湘阴人。国家名厨、湘菜名师。1997年入行，先后在长沙、北京、武汉等地事厨。精通湘菜制作技艺，擅长酱椒蒸鱼头、秘制牛蛙等菜品。2016年入选国家级图书《国家名厨》第四卷。"
+    }
+  ]
+}

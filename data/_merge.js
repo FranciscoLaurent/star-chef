@@ -4,6 +4,7 @@ const path = require('path');
 const DATA_DIR = 'D:/Study/AI_Space/play-CC/star_chef/data';
 
 const files = [
+  { path: 'manual-adds.json',       type: 'manual' },
   { path: 'cuisine-chuan.json',  type: 'cuisine' },
   { path: 'cuisine-yue.json',    type: 'cuisine' },
   { path: 'cuisine-xiang.json',  type: 'cuisine' },
@@ -103,7 +104,7 @@ for (const c of allChefs) {
   if (!existing) { byName.set(c.name, c); continue; }
   let primary, secondary;
   // 优先级: fill (subagent验证) > cuisine (手工策展) > cyxh (爬虫)
-  const TYPE_PRIORITY = { fill: 4, cuisine: 3, cyxh: 2, placeholder: 1 };
+  const TYPE_PRIORITY = { manual: 5, fill: 4, cuisine: 3, cyxh: 2, placeholder: 1 };
   const cP = TYPE_PRIORITY[c._type] || 0;
   const eP = TYPE_PRIORITY[existing._type] || 0;
   if (cP > eP || (cP === eP && (c.bio?.length||0) > (existing.bio?.length||0))) { primary = c; secondary = existing; }
