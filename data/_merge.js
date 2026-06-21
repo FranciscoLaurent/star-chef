@@ -73,12 +73,13 @@ const NAME_BLACKLIST = new Set([
   '中国特二级','于国家级烹','中国瓯菜宗','知名饮食养',
   '世界川菜名','香港名厨周','新派川菜领','香港国际十',
   '卢华学习川','海鲜姿造创','中华食雕第','已故国家名',
-  '重庆吴氏第三代传人','江苏淮安','高美琼大师',
+  '重庆吴氏第三代传人','江苏淮安','高美琼大师','湘菜名师吴',
 ]);
 function isGarbageName(name) {
   if (!name || name.length < 2 || name.length > 5) return true;
   if (NAME_BLACKLIST.has(name)) return true;
-  if (/^(中国|中华|国家|国宝|亚洲|世界|香港|山东|江苏)(厨师|名厨|烹饪|餐饮|大师|大厨|食雕)/.test(name)) return true;
+  if (/^(中国|中华|国家|国宝|亚洲|世界|香港|山东|江苏|广东)(厨师|名厨|烹饪|餐饮|大师|大厨|食雕)/.test(name)) return true;
+  if (/^(川|粤|鲁|淮扬|湘|浙|徽|闽|京|沪|晋|豫|黔|滇|辽|鄂|陕|赣|清真|国宴|宫廷|东北|西北)?(菜|帮)?(大师|名师|泰斗|名厨|宗师)[一-龥]{0,2}$/.test(name)) return true;
   if (/先生$|大师$|门下$/.test(name)) return true;
   if (!/[一-龥]/.test(name)) return true;
   return false;

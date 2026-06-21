@@ -22797,40 +22797,6 @@
       "_origin": "cyxh-crawled2.json"
     },
     {
-      "id": "cyxh-dangdai-94",
-      "name": "湘菜名师吴",
-      "isPlaceholder": false,
-      "primaryCuisine": "湘",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": "湖南湘阴县",
-      "education": null,
-      "titles": [
-        "国家名厨",
-        "国家级评委"
-      ],
-      "title": null,
-      "currentRole": "北京万荣餐饮有限公司湘荣记酒楼店总",
-      "restaurant": "北京万荣餐饮有限公司湘荣记酒楼店总",
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": [],
-      "portrait": "http://www.mingchu.org/d/file/mingchu/dangdai/2016-09-13/353dd426fa83e6cefafcaea58283192c.jpg",
-      "source": "http://www.mingchu.org/mingchu/dangdai/94.html",
-      "bio": "吴景，湖南湘阴县人。中国饭店业国家级评委，现任北京万荣餐饮有限公司湘荣记酒楼店总，2016年9月被国家名厨编辑委员会授予国家名厨称号，其传略和作品被选入国家级图书《国家名厨》第四卷，并被中国国家名厨网收录。\r\n精通湘菜的制作技艺",
-      "referencedBy": null,
-      "_origin": "cyxh-crawled2.json"
-    },
-    {
       "id": "cyxh-dangdai-95",
       "name": "吴二祥",
       "isPlaceholder": false,
@@ -54091,6 +54057,46 @@
         "徐德章"
       ],
       "_origin": "placeholder-from-masters[]"
+    },
+    {
+      "id": "websearch-20260621-002",
+      "name": "吴景",
+      "isPlaceholder": false,
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": null,
+      "gen": null,
+      "master": null,
+      "era": "当代",
+      "birth": 1981,
+      "death": null,
+      "birthplace": "湖南湘阴",
+      "gender": "男",
+      "titles": [
+        "国家名厨",
+        "湘菜名师",
+        "国家名厨编委会荣誉委员",
+        "中国饭店业国家级评委"
+      ],
+      "currentRole": "北京万荣餐饮有限公司湘荣记酒楼店总",
+      "restaurant": "湘荣记酒楼",
+      "position": "店总",
+      "city": "北京",
+      "signature": [
+        "酱椒蒸鱼头",
+        "秘制牛蛙"
+      ],
+      "experiences": [
+        "1997年长沙太空酒楼学徒",
+        "2005年武汉三五酒店湘菜厨师长",
+        "2010年北京岳麓山屋副总经理",
+        "2016年入选《国家名厨》第四卷"
+      ],
+      "portrait": null,
+      "source": "https://www.sohu.com/a/114297265_266788",
+      "bio": "吴景，1981年10月生，湖南湘阴人。国家名厨、湘菜名师。1997年入行，先后在长沙、北京、武汉等地事厨。精通湘菜制作技艺，擅长酱椒蒸鱼头、秘制牛蛙等菜品。2016年入选国家级图书《国家名厨》第四卷。",
+      "_origin": "websearch-manual-add",
+      "_type": "manual"
     }
   ],
   "stats": {
