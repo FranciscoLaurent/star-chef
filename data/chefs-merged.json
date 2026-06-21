@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T13:26:18.558Z",
+  "generatedAt": "2026-06-21T13:32:16.353Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json + 师承源",
   "cuisineNormalized": {
     "川菜": "川",
@@ -8447,7 +8447,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-master-王玉田-王振声大",
+      "master": null,
       "era": "当代",
       "birth": 1979,
       "death": null,
@@ -8484,12 +8484,7 @@
       "source": "http://www.cyxh.org/mingchu/dangdai/1399.html",
       "bio": "自1996年8月投身餐饮行业，至今从厨三十年，工作严谨务实，兼具深厚功底与创新视野。精研徽菜技艺，旁通官府菜、粤菜、淮扬菜、京鲁菜、湘菜、川菜、赣菜等多个菜系，技艺全面、功底扎实。坚持以味为核心、以食材为本、以工艺为基、以文化为魂，深耕食材研究，锐意创新，打造多款兼具传统底蕴与时代特色的灵魂徽菜。",
       "referencedBy": null,
-      "_origin": "cyxh-dangdai-batch3.json",
-      "masters": [
-        {
-          "name": "王振声大"
-        }
-      ]
+      "_origin": "cyxh-dangdai-batch3.json"
     },
     {
       "id": "cyxh-dangdai-1398",
@@ -8884,7 +8879,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-master-杨继亮-陈绪荣",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -8905,12 +8900,7 @@
       "source": "http://www.mingchu.org/mingchu/dangdai/258.html",
       "bio": "杨继亮（法名：慈诚良仁居士），素食主义，中国素食烹饪大师，国家高级中式烹调师，极简•中西融合素食菜品研发设计师，中国绿色厨艺大使，绿色低碳环保倡导者，现任北京国贸5L饭店素食出品总厨。\r\n专注从事素食研究与实践10余年",
       "referencedBy": null,
-      "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "陈绪荣"
-        }
-      ]
+      "_origin": "cyxh-crawled2.json"
     },
     {
       "id": "cyxh-dangdai-1386",
@@ -13826,7 +13816,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "auto-邵正福-淮扬",
       "era": "近代",
       "birth": 1943,
       "death": 2019,
@@ -13858,7 +13848,12 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/437.html",
       "bio": "上海淮扬菜泰斗，梅府佳宴创始人。淮扬王师门梅家菜一脉宗师，王伟、何彬等沪上名厨之师，2019 年辞世。",
       "referencedBy": null,
-      "_origin": "placeholder-fills.json"
+      "_origin": "placeholder-fills.json",
+      "masters": [
+        {
+          "name": "邵正福"
+        }
+      ]
     },
     {
       "id": "cyxh-mianhuai-362",
@@ -24975,7 +24970,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "cyxh-dangdai-190",
       "era": null,
       "birth": null,
       "death": null,
@@ -25000,6 +24995,11 @@
       "bio": "邢万里，男，汉族，河南开封市人。国家高级烹调师，中国烹饪名师，现任天律帝旺凯悦酒店悦园中餐厅凉菜厨师长。精通冷菜、烧腊的制作，师从中国烹饪大师郑峰先生",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "郑峰"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -25010,7 +25010,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "cyxh-dangdai-190",
       "era": null,
       "birth": null,
       "death": null,
@@ -25035,6 +25035,11 @@
       "bio": "赵晨光，男，汉族，河南开封市人。国家高级烹调师，中国烹饪名师，现任天律帝旺凯悦酒店悦园中餐厅副厨师长。擅长新京菜、淮扬菜的烹调技艺，师从中国烹饪大师郑峰先生",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "郑峰"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -25145,7 +25150,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "cyxh-dangdai-190",
       "era": null,
       "birth": null,
       "death": null,
@@ -25170,6 +25175,11 @@
       "bio": "郑冰城，男，汉族，河南开封人。国家高级烹调师，国家高级营养配餐师，中国烹饪名师，现任天律帝旺凯悦酒店悦园中餐厅热菜主管。擅长京鲁菜，师从中国烹饪大师郑峰先生，",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "郑峰"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -26233,7 +26243,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-季军-王荫",
       "era": null,
       "birth": null,
       "death": null,
@@ -26259,6 +26269,11 @@
       "bio": "季军，男，汉族，1972年6月出生，江苏盐城人。高级技师，高级营养师，国家名厨，注册中国烹饪大师，江苏省烹饪大师，青年烹饪艺术家，江苏省五一劳动模范，现任江苏悦达国际大酒店有限公司总经理助理。\r\n师从著名淮扬菜大师王荫曾先生，精通粤菜、新派淮扬菜的烹调技艺。",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "王荫"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -27028,7 +27043,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-孙学民-吴长江",
       "era": null,
       "birth": null,
       "death": null,
@@ -27052,7 +27067,12 @@
       "source": "http://www.mingchu.org/mingchu/dangdai/294.html",
       "bio": "孙学民，男，汉族，1975年3月出生，吉林临江人。高级中式烹调师，国家名厨，东北菜大师，现任广东东莞东北酱骨头虎门店行政总厨兼副总经理。从事烹饪工作24年，技术全面，他不仅精通鲁菜、东北菜、粤菜、上海本邦菜，",
       "referencedBy": null,
-      "_origin": "cyxh-crawled2.json"
+      "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "吴长江"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-293",
@@ -27366,7 +27386,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-刘玉平-张经羿",
       "era": null,
       "birth": null,
       "death": null,
@@ -27389,7 +27409,12 @@
       "source": "http://www.mingchu.org/mingchu/dangdai/304.html",
       "bio": "刘玉平，男，汉族，四川自贡人。国家中式烹调二级技师，中国烹饪非物质文化传承大师，中国烹饪大师，中国名厨，盐帮菜十大优秀青年厨师，盐帮菜技术能手，中国烹饪协会名厨委员会新星俱乐部会员，现任四川省成都市良品记餐饮管理有限公司行政总厨。",
       "referencedBy": null,
-      "_origin": "cyxh-crawled2.json"
+      "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "张经羿"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-305",
@@ -27989,7 +28014,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-巩道伟-房泽利",
       "era": null,
       "birth": null,
       "death": null,
@@ -28014,6 +28039,11 @@
       "bio": "巩道伟，男，汉族，1981年9月出生，山东夏津人，国家中式烹调技师，国家名厨，中国烹饪艺术家，餐饮业省级评委，国家名厨编委会高级名厨委员，现任山东济南市书香世家餐饮总监。其从业成就和作品先后被编入《国家名厨》（第二卷）、《首届中国名厨技艺博览》。\r\n师从中国烹饪大师房泽利先生，他擅长制作淮扬菜、新派鲁菜特色风味",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "房泽利"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -28742,7 +28772,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-翟耀民-于宝棋",
       "era": null,
       "birth": null,
       "death": null,
@@ -28766,7 +28796,12 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/361.html",
       "bio": "翟耀民（1939年5月—2018年8月12日）陕西蓝田人。1959年6月加入中国共产党，陕菜泰斗，陕西特级烹饪大师，国家特一级烹调师，近代陕西官府菜第二代嫡系传人，国家高级技师评委会评委，陕西省烹调技师评委，餐饮业国家一级评委，陕西省烹饪协会常务理事，原陕西西安止园饭店总厨师长，于2018年8月12日在西安辞世，享年80岁。",
       "referencedBy": null,
-      "_origin": "cyxh-crawled3.json"
+      "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "于宝棋"
+        }
+      ]
     },
     {
       "id": "cyxh-zishen-493",
@@ -29174,7 +29209,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-059",
       "era": null,
       "birth": null,
       "death": null,
@@ -29198,6 +29233,11 @@
       "bio": "马达，男，汉族，1979年8月出生，安徽省肥西县人。国家中式烹调技师，中国名厨，现任上海耘乐餐厅行政总厨，2006年进入上海谷泰饭店学艺，师从著名创意融合菜大师钱以斌先生，主攻融合菜肴",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "钱以斌"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -34281,7 +34321,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-文小康-潘仕琪",
       "era": null,
       "birth": null,
       "death": null,
@@ -34305,6 +34345,11 @@
       "bio": "文小康，男，苗族，贵州凯里人。烹饪工艺与营养专业毕业，大专学历，中国名厨，苗侗烹饪名师，师从中国烹饪大师潘仕琪先生、中国烹饪名厨种法伦先生，擅长京鲁菜制作技艺。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "潘仕琪"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -36182,7 +36227,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-刘国平-江苏淮安",
       "era": "当代",
       "birth": 1968,
       "death": null,
@@ -36206,6 +36251,11 @@
       "bio": " 刘国平，男，汉族，1968年9月生，江苏淮安人，中式面点技师，国家名厨，中国点心大师。师承江苏淮安名厨毛玉平大师，从事餐饮工作38年，他精通中式面点技艺，擅长淮扬菜的制作，在制作各种包点和",
       "referencedBy": null,
       "_origin": "cyxh-list-crawled.json",
+      "masters": [
+        {
+          "name": "江苏淮安"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -38218,7 +38268,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-065",
       "era": "当代",
       "birth": 1977,
       "death": null,
@@ -38242,6 +38292,11 @@
       "bio": " 刘君，男，汉族，1977年9月生，云南昭通人，本科学历，中式烹调二级技师，注册中国烹饪大师，云南省烹饪名师，师承中国烹饪大师李坤键先生。从厨20余年，不仅在厨政管理方面有着丰富的经验，更在",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
+      "masters": [
+        {
+          "name": "李坤键"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -54463,27 +54518,87 @@
       ]
     },
     {
-      "id": "mp-master-王玉田-王振声大",
-      "name": "王振声大",
+      "id": "mp-master-季军-王荫",
+      "name": "王荫",
       "isPlaceholder": true,
-      "primaryCuisine": "鲁",
+      "primaryCuisine": "粤",
       "title": "师承援引",
-      "source": "http://www.cyxh.org/mingchu/dangdai/1399.html",
+      "source": "http://www.mingchu.org/mingchu/dangdai/251.html",
       "bio": null,
       "referencedBy": [
-        "王玉田"
+        "季军"
       ]
     },
     {
-      "id": "mp-master-杨继亮-陈绪荣",
-      "name": "陈绪荣",
+      "id": "mp-master-孙学民-吴长江",
+      "name": "吴长江",
+      "isPlaceholder": true,
+      "primaryCuisine": "粤",
+      "title": "师承援引",
+      "source": "http://www.mingchu.org/mingchu/dangdai/294.html",
+      "bio": null,
+      "referencedBy": [
+        "孙学民"
+      ]
+    },
+    {
+      "id": "mp-master-刘玉平-张经羿",
+      "name": "张经羿",
       "isPlaceholder": true,
       "primaryCuisine": null,
       "title": "师承援引",
-      "source": "http://www.mingchu.org/mingchu/dangdai/258.html",
+      "source": "http://www.mingchu.org/mingchu/dangdai/304.html",
       "bio": null,
       "referencedBy": [
-        "杨继亮"
+        "刘玉平"
+      ]
+    },
+    {
+      "id": "mp-master-巩道伟-房泽利",
+      "name": "房泽利",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师承援引",
+      "source": "http://www.mingchu.org/mingchu/dangdai/330.html",
+      "bio": null,
+      "referencedBy": [
+        "巩道伟"
+      ]
+    },
+    {
+      "id": "mp-master-翟耀民-于宝棋",
+      "name": "于宝棋",
+      "isPlaceholder": true,
+      "primaryCuisine": "陕",
+      "title": "师承援引",
+      "source": "http://www.cyxh.org/mingchu/mianhuai/361.html",
+      "bio": null,
+      "referencedBy": [
+        "翟耀民"
+      ]
+    },
+    {
+      "id": "mp-master-文小康-潘仕琪",
+      "name": "潘仕琪",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师承援引",
+      "source": "http://www.cyxh.org/mingchu/dangdai/763.html",
+      "bio": null,
+      "referencedBy": [
+        "文小康"
+      ]
+    },
+    {
+      "id": "mp-master-刘国平-江苏淮安",
+      "name": "江苏淮安",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师承援引",
+      "source": "http://www.mingchu.org/mingchu/dangdai/1072.html",
+      "bio": null,
+      "referencedBy": [
+        "刘国平"
       ]
     },
     {
@@ -54524,10 +54639,10 @@
     }
   ],
   "stats": {
-    "totalChefs": 1394,
+    "totalChefs": 1399,
     "realChefs": 1236,
-    "placeholders": 158,
-    "withMaster": 212,
+    "placeholders": 163,
+    "withMaster": 223,
     "withMasterId": 160,
     "withSchool": 59,
     "withSignature": 381,

@@ -4,31 +4,152 @@
   "fetchDate": "2026-06-21",
   "results": [
     {
-      "name": "王玉田",
-      "id": "cyxh-dangdai-1399",
+      "name": "王致福",
+      "id": "auto-王致福-淮扬",
       "masters": [
         {
-          "name": "王振声大",
-          "rawText": "恩师王振声大"
+          "name": "邵正福",
+          "rawText": "师从淮扬菜大师邵正福"
         }
       ],
-      "source": "http://www.cyxh.org/mingchu/dangdai/1399.html"
+      "source": "http://www.cyxh.org/mingchu/mianhuai/437.html"
     },
     {
-      "name": "杨继亮",
-      "id": "cyxh-dangdai-258",
+      "name": "邢万里",
+      "id": "cyxh-dangdai-195",
       "masters": [
         {
-          "name": "陈绪荣",
-          "rawText": "师承中国烹饪大师陈绪荣先生"
+          "name": "郑峰",
+          "rawText": "师从中国烹饪大师郑峰先生"
         }
       ],
-      "source": "http://www.mingchu.org/mingchu/dangdai/258.html"
+      "source": "http://www.mingchu.org/mingchu/dangdai/195.html"
+    },
+    {
+      "name": "赵晨光",
+      "id": "cyxh-dangdai-194",
+      "masters": [
+        {
+          "name": "郑峰",
+          "rawText": "师从中国烹饪大师郑峰先生"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/194.html"
+    },
+    {
+      "name": "郑冰城",
+      "id": "cyxh-dangdai-201",
+      "masters": [
+        {
+          "name": "郑峰",
+          "rawText": "师从中国烹饪大师郑峰先生"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/201.html"
+    },
+    {
+      "name": "季军",
+      "id": "cyxh-dangdai-251",
+      "masters": [
+        {
+          "name": "王荫",
+          "rawText": "师从著名淮扬菜大师 王荫"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/251.html"
+    },
+    {
+      "name": "孙学民",
+      "id": "cyxh-dangdai-294",
+      "masters": [
+        {
+          "name": "吴长江",
+          "rawText": "拜吴长江为师"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/294.html"
+    },
+    {
+      "name": "刘玉平",
+      "id": "cyxh-dangdai-304",
+      "masters": [
+        {
+          "name": "张经羿",
+          "rawText": "师从张经羿大师"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/304.html"
+    },
+    {
+      "name": "巩道伟",
+      "id": "cyxh-dangdai-330",
+      "masters": [
+        {
+          "name": "房泽利",
+          "rawText": "师从中国烹饪大师房泽利先生"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/330.html"
+    },
+    {
+      "name": "翟耀民",
+      "id": "cyxh-mianhuai-361",
+      "masters": [
+        {
+          "name": "于宝棋",
+          "rawText": "师从名厨于宝棋"
+        }
+      ],
+      "source": "http://www.cyxh.org/mingchu/mianhuai/361.html"
+    },
+    {
+      "name": "马达",
+      "id": "cyxh-dangdai-353",
+      "masters": [
+        {
+          "name": "钱以斌",
+          "rawText": "师从著名创意融合菜大师钱以斌"
+        }
+      ],
+      "source": "http://www.cyxh.org/mingchu/dangdai/353.html"
+    },
+    {
+      "name": "文小康",
+      "id": "cyxh-dangdai-763",
+      "masters": [
+        {
+          "name": "潘仕琪",
+          "rawText": "师从中国烹饪大师潘仕琪先生"
+        }
+      ],
+      "source": "http://www.cyxh.org/mingchu/dangdai/763.html"
+    },
+    {
+      "name": "刘国平",
+      "id": "cyxh-dangdai-1072",
+      "masters": [
+        {
+          "name": "江苏淮安",
+          "rawText": "师承江苏淮安名厨"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/1072.html"
+    },
+    {
+      "name": "刘君",
+      "id": "cyxh-dangdai-1019",
+      "masters": [
+        {
+          "name": "李坤键",
+          "rawText": "师承中国烹饪大师李坤键先生"
+        }
+      ],
+      "source": "http://www.cyxh.org/mingchu/dangdai/1019.html"
     }
   ],
   "stats": {
-    "total": 915,
-    "found": 2,
-    "failed": 1715
+    "total": 908,
+    "found": 14,
+    "failed": 898
   }
 }
