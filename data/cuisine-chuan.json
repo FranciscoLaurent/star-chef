@@ -2,34 +2,507 @@
   "cuisine": "川",
   "cuisineEn": "Sichuan",
   "schools": [
-    { "key": "shang-he-bang", "stamp": "蓉", "name": "蓉派", "subName": "上河帮", "en": "SHANG-HE-BANG", "region": "成都·乐山", "styles": ["精致", "传统", "筵席"], "desc": "以成都、乐山为核心，重视高档筵席与精细技法，'清鲜醇浓'，重在底味与火候。" },
-    { "key": "xia-he-bang", "stamp": "渝", "name": "渝派", "subName": "下河帮", "en": "XIA-HE-BANG", "region": "重庆·达州", "styles": ["麻辣", "重油", "江湖"], "desc": "以重庆为核心，江湖菜路线，重油重辣，毛血旺、辣子鸡、水煮牛肉为代表。" },
-    { "key": "xiao-he-bang", "stamp": "盐", "name": "盐帮派", "subName": "小河帮", "en": "XIAO-HE-BANG", "region": "自贡·内江", "styles": ["浓郁", "刺激", "盐商"], "desc": "源于自贡盐商食俗，'味厚香浓、辣鲜刺激'，自贡粑粑肉、火爆系列为代表。" }
+    {
+      "key": "shang-he-bang",
+      "stamp": "蓉",
+      "name": "蓉派",
+      "subName": "上河帮",
+      "en": "SHANG-HE-BANG",
+      "region": "成都·乐山",
+      "styles": [
+        "精致",
+        "传统",
+        "筵席"
+      ],
+      "desc": "以成都、乐山为核心，重视高档筵席与精细技法，'清鲜醇浓'，重在底味与火候。"
+    },
+    {
+      "key": "xia-he-bang",
+      "stamp": "渝",
+      "name": "渝派",
+      "subName": "下河帮",
+      "en": "XIA-HE-BANG",
+      "region": "重庆·达州",
+      "styles": [
+        "麻辣",
+        "重油",
+        "江湖"
+      ],
+      "desc": "以重庆为核心，江湖菜路线，重油重辣，毛血旺、辣子鸡、水煮牛肉为代表。"
+    },
+    {
+      "key": "xiao-he-bang",
+      "stamp": "盐",
+      "name": "盐帮派",
+      "subName": "小河帮",
+      "en": "XIAO-HE-BANG",
+      "region": "自贡·内江",
+      "styles": [
+        "浓郁",
+        "刺激",
+        "盐商"
+      ],
+      "desc": "源于自贡盐商食俗，'味厚香浓、辣鲜刺激'，自贡粑粑肉、火爆系列为代表。"
+    }
   ],
   "chefs": [
-    { "id": "h001", "name": "关正兴", "gen": 1, "master": null, "era": "清末", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "正兴园", "position": "正兴园主厨", "signature": ["传统满汉筵席"], "birth": 1832, "death": 1902, "source": "https://baike.baidu.com/item/%E8%93%9D%E5%85%89%E9%89%B4", "bio": "满人名厨，清末成都正兴园主理人，蓝光鉴 13 岁起拜其门下，是现代川菜师承体系的源头。" },
-    { "id": "h002", "name": "黄敬临", "gen": 1, "master": null, "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "姑姑筵", "position": "御膳房名厨", "signature": ["开水白菜", "坛子肉"], "birth": 1875, "death": 1944, "source": "https://baike.baidu.com/item/%E9%BB%84%E6%95%AC%E4%B8%B4", "bio": "清宫御膳房名厨，自创'姑姑筵'。开水白菜为其原创，对蓉派川菜精致路线影响极深，与罗国荣亦师亦友。" },
-    { "id": "h003", "name": "蓝光鉴", "gen": 2, "master": "h001", "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "荣乐园", "position": "创始人", "signature": ["坛子肉", "干烧鲍鱼", "清汤鸡淖"], "birth": 1884, "death": 1962, "source": "https://baike.baidu.com/item/%E8%93%9D%E5%85%89%E9%89%B4", "bio": "13 岁拜满人名厨关正兴为师，被誉为'现代川菜奠基人'。1912 年与师兄弟创办荣乐园，培养川菜大师无数。" },
-    { "id": "h004", "name": "王海泉", "gen": 2, "master": null, "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "颐之时（早期）", "position": "名厨", "signature": ["鸡蒙葵菜"], "birth": 1880, "death": 1950, "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3", "bio": "近代成都名厨，罗国荣早年汲取理念的几位前辈之一，对其精致川菜路线有重要影响。" },
-    { "id": "h005", "name": "黄绍清", "gen": 2, "master": null, "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "颐之时", "position": "名厨", "signature": ["软炸扳指"], "birth": 1885, "death": 1955, "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3", "bio": "成都老牌名厨，多源印证为罗国荣师承之一，工于精细川菜与筵席体系。" },
-    { "id": "h006", "name": "罗国荣", "gen": 3, "master": "h005", "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都/北京", "restaurant": "颐之时·北京饭店", "position": "国宴厨师长", "signature": ["开水白菜", "坛子肉", "鸡豆花"], "birth": 1911, "death": 1969, "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3", "bio": "人称'川菜圣手'，新中国'四大名厨'之一。1940 年起家成都颐之时；师承黄绍清，亦受蓝光鉴系传统与黄敬临理念熏陶；后被毛主席钦点进京，主持国宴。", "masterNote": "师承黄绍清，亦受蓝光鉴、黄敬临理念熏陶" },
-    { "id": "h007", "name": "张松云", "gen": 3, "master": "h003", "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "荣乐园", "position": "特级厨师", "signature": ["樟茶鸭子", "干烧岩鲤"], "birth": 1900, "death": 1982, "source": "http://www.cyxh.org/mingchu/mianhuai/6.html", "bio": "蓝光鉴系蓉派传人，特级川菜大师，长于传统筵席与小炒。" },
-    { "id": "h008", "name": "孔道生", "gen": 3, "master": "h003", "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "荣乐园", "position": "特级厨师", "signature": ["麻婆豆腐", "一品海参"], "birth": 1903, "death": 1985, "source": "http://www.cyxh.org/mingchu/mianhuai/6.html", "bio": "蓝光鉴系蓉派传人，与张松云同为荣乐园柱石，技法精严。" },
-    { "id": "h009", "name": "曾国华", "gen": 3, "master": "h003", "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "荣乐园", "position": "特级厨师", "signature": ["鸡豆花"], "birth": 1912, "death": 1990, "source": "http://www.cyxh.org/mingchu/mianhuai/6.html", "bio": "蓉派特级名厨，蓝光鉴弟子序列代表人物之一。" },
-    { "id": "h010", "name": "黄子云", "gen": 4, "master": "h006", "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "北京/成都", "restaurant": "颐之时", "position": "国宝级烹饪大师", "signature": ["开水白菜", "干烧鱼翅"], "birth": 1928, "death": 2014, "source": "https://baike.baidu.com/item/%E9%BB%84%E5%AD%90%E4%BA%91", "bio": "罗国荣高徒，'国宝级烹饪大师'，承袭师门精致路线，是罗派进入当代的重要桥梁。" },
-    { "id": "h011", "name": "于存", "gen": 4, "master": "h006", "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "北京", "restaurant": "北京饭店", "position": "国宴大师", "signature": ["坛子肉", "叫化鸡"], "birth": 1925, "death": 2005, "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3", "bio": "罗国荣弟子，长期供职北京饭店国宴，承蓉派精筵传统于京华。" },
-    { "id": "h012", "name": "谢怀德", "gen": 4, "master": "h007", "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "四川饭店", "position": "国家特一级厨师", "signature": ["宫保鸡丁", "鱼香肉丝"], "birth": 1947, "active": true, "source": "http://www.cyxh.org/", "bio": "元老级川菜大师，国家特一级厨师，1990 年代初四川省仅有的三位高级中式烹调师考评委员之一。" },
-    { "id": "h013", "name": "彭子渝", "gen": 4, "master": "h008", "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "成都", "restaurant": "川菜博物馆顾问", "position": "注册元老级中国烹饪大师", "signature": ["麻婆豆腐", "回锅肉"], "birth": 1949, "active": true, "source": "http://www.cyxh.org/", "bio": "注册元老级中国烹饪大师，强调川菜'自然生态 + 人文智慧'的现代诠释。" },
-    { "id": "h020", "name": "吴万里", "gen": 1, "master": null, "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "xia-he-bang", "city": "重庆", "restaurant": "味苑", "position": "渝派奠基人", "signature": ["毛血旺", "水煮牛肉"], "birth": 1933, "death": 2012, "source": "http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html", "bio": "重庆烹饪界泰斗，人称'师爷''吴老爷子'，渝派川菜奠基人，味苑餐厅创办人，原籍内江。" },
-    { "id": "h021", "name": "吴强", "gen": 2, "master": "h020", "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "xia-he-bang", "city": "重庆", "restaurant": "味苑", "position": "传承人", "signature": ["毛血旺", "江湖鱼"], "birth": 1965, "active": true, "source": "http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html", "bio": "吴万里之子，继承味苑及渝派衣钵，将江湖菜系统化。" },
-    { "id": "h022", "name": "李跃华", "gen": 2, "master": null, "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "xia-he-bang", "city": "重庆", "restaurant": "重庆烹饪协会", "position": "渝菜概念创立人", "signature": ["辣子鸡"], "birth": 1952, "active": true, "source": "http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html", "bio": "渝菜概念创立人，主导将渝派川菜的重庆系正式定名为'渝菜'，推动品牌化与标准化。" },
-    { "id": "h023", "name": "陈志刚", "gen": 2, "master": null, "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "xia-he-bang", "city": "重庆", "restaurant": "陈氏川菜馆", "position": "川渝厨师界泰斗", "signature": ["泉水鸡", "江团"], "birth": 1948, "active": true, "source": "http://www.cyxh.org/", "bio": "川渝厨师界泰斗，'川菜泰斗'称号获得者，江湖菜系统理论的重要参与者。" },
-    { "id": "h030", "name": "李琼圃", "gen": 1, "master": null, "era": "清末", "primaryCuisine": "川", "secondaryCuisines": [], "school": "xiao-he-bang", "city": "自贡", "restaurant": "盐商家厨", "position": "盐帮菜源头", "signature": ["盐商私房菜"], "birth": 1850, "death": 1920, "source": "https://www.sdlib.com.cn/home/article/detail/id/132206.html", "bio": "清末自贡盐商，撰著《琼圃菜谱》记载盐帮菜烹饪要诀，惜原本已失传，可作为盐帮派源头注脚。" },
-    { "id": "h031", "name": "范吉安", "gen": 2, "master": null, "era": "近代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "xiao-he-bang", "city": "自贡", "restaurant": "盐帮筵席", "position": "盐帮主厨", "signature": ["自贡粑粑肉", "水煮牛肉"], "birth": 1895, "death": 1965, "source": "https://www.sdlib.com.cn/home/article/detail/id/132206.html", "bio": "1930 年代自贡盐帮菜主厨，自贡粑粑肉的创制者，该菜后成川菜高档筵席常见菜。" },
-    { "id": "h040", "name": "史正良", "gen": 0, "master": null, "era": "当代", "primaryCuisine": "川", "secondaryCuisines": [], "school": "shang-he-bang", "city": "绵阳", "restaurant": "绵阳饭店", "position": "川菜泰斗", "signature": ["太白诗酒宴", "鱼香味系列"], "birth": 1946, "death": 2015, "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF", "bio": "四川梓潼人，国宝级川菜泰斗，'史派川菜'代表人物，14 岁起师从川西北名厨魏兴国、刘永见学艺；收徒 62 人，含兰明路、童建华等。2015 年于罗江车祸辞世。" },
-    { "id": "h041", "name": "兰明路", "gen": 1, "master": "h040", "era": "当代", "primaryCuisine": "川", "secondaryCuisines": ["粤"], "school": "shang-he-bang", "crossMaster": "h042", "crossCuisine": "粤", "city": "成都", "restaurant": "兰庭十三厨", "position": "四川旅游学院教授", "signature": ["泡菜系列", "创新川菜"], "birth": 1968, "active": true, "source": "https://u-cra.com/profile/%E5%85%B0%E6%98%8E%E8%B7%AF/", "bio": "四川绵阳人，祖籍射洪。1998 年拜史正良为师，系统扎根川菜；经师父亲笔书信推荐，再师从著名粤菜大师黄振华两年得真传。现为四川旅游学院教授、国家级技能大师工作室领办人、兰庭十三厨创始人，享受国务院特殊津贴专家。", "crossNote": "师父史正良书信推荐，再拜粤菜大师黄振华为师 2 年，学习粤菜真传——现代厨师跨菜系学艺典范" }
+    {
+      "id": "h001",
+      "name": "关正兴",
+      "gen": 1,
+      "master": null,
+      "era": "清末",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "正兴园",
+      "position": "正兴园主厨",
+      "signature": [
+        "传统满汉筵席"
+      ],
+      "birth": 1832,
+      "death": 1902,
+      "source": "https://baike.baidu.com/item/%E8%93%9D%E5%85%89%E9%89%B4",
+      "bio": "满人名厨，清末成都正兴园主理人，蓝光鉴 13 岁起拜其门下，是现代川菜师承体系的源头。"
+    },
+    {
+      "id": "h002",
+      "name": "黄敬临",
+      "gen": 1,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "姑姑筵",
+      "position": "御膳房名厨",
+      "signature": [
+        "开水白菜",
+        "坛子肉"
+      ],
+      "birth": 1875,
+      "death": 1944,
+      "source": "https://baike.baidu.com/item/%E9%BB%84%E6%95%AC%E4%B8%B4",
+      "bio": "清宫御膳房名厨，自创'姑姑筵'。开水白菜为其原创，对蓉派川菜精致路线影响极深，与罗国荣亦师亦友。"
+    },
+    {
+      "id": "h003",
+      "name": "蓝光鉴",
+      "gen": 2,
+      "master": "h001",
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "荣乐园",
+      "position": "创始人",
+      "signature": [
+        "坛子肉",
+        "干烧鲍鱼",
+        "清汤鸡淖"
+      ],
+      "birth": 1884,
+      "death": 1962,
+      "source": "https://baike.baidu.com/item/%E8%93%9D%E5%85%89%E9%89%B4",
+      "bio": "13 岁拜满人名厨关正兴为师，被誉为'现代川菜奠基人'。1912 年与师兄弟创办荣乐园，培养川菜大师无数。"
+    },
+    {
+      "id": "h004",
+      "name": "王海泉",
+      "gen": 2,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "颐之时（早期）",
+      "position": "名厨",
+      "signature": [
+        "鸡蒙葵菜"
+      ],
+      "birth": 1880,
+      "death": 1950,
+      "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3",
+      "bio": "近代成都名厨，罗国荣早年汲取理念的几位前辈之一，对其精致川菜路线有重要影响。"
+    },
+    {
+      "id": "h005",
+      "name": "黄绍清",
+      "gen": 2,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "颐之时",
+      "position": "名厨",
+      "signature": [
+        "软炸扳指"
+      ],
+      "birth": 1885,
+      "death": 1955,
+      "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3",
+      "bio": "成都老牌名厨，多源印证为罗国荣师承之一，工于精细川菜与筵席体系。"
+    },
+    {
+      "id": "h006",
+      "name": "罗国荣",
+      "gen": 3,
+      "master": "h005",
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都/北京",
+      "restaurant": "颐之时·北京饭店",
+      "position": "国宴厨师长",
+      "signature": [
+        "开水白菜",
+        "坛子肉",
+        "鸡豆花"
+      ],
+      "birth": 1911,
+      "death": 1969,
+      "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3",
+      "bio": "人称'川菜圣手'，新中国'四大名厨'之一。1940 年起家成都颐之时；师承黄绍清，亦受蓝光鉴系传统与黄敬临理念熏陶；后被毛主席钦点进京，主持国宴。",
+      "masterNote": "师承黄绍清，亦受蓝光鉴、黄敬临理念熏陶"
+    },
+    {
+      "id": "h007",
+      "name": "张松云",
+      "gen": 3,
+      "master": "h003",
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "荣乐园",
+      "position": "特级厨师",
+      "signature": [
+        "樟茶鸭子",
+        "干烧岩鲤"
+      ],
+      "birth": 1900,
+      "death": 1982,
+      "source": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "bio": "蓝光鉴系蓉派传人，特级川菜大师，长于传统筵席与小炒。"
+    },
+    {
+      "id": "h008",
+      "name": "孔道生",
+      "gen": 3,
+      "master": "h003",
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "荣乐园",
+      "position": "特级厨师",
+      "signature": [
+        "麻婆豆腐",
+        "一品海参"
+      ],
+      "birth": 1903,
+      "death": 1985,
+      "source": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "bio": "蓝光鉴系蓉派传人，与张松云同为荣乐园柱石，技法精严。"
+    },
+    {
+      "id": "h009",
+      "name": "曾国华",
+      "gen": 3,
+      "master": "h003",
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "荣乐园",
+      "position": "特级厨师",
+      "signature": [
+        "鸡豆花"
+      ],
+      "birth": 1912,
+      "death": 1990,
+      "source": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "bio": "蓉派特级名厨，蓝光鉴弟子序列代表人物之一。"
+    },
+    {
+      "id": "h010",
+      "name": "黄子云",
+      "gen": 4,
+      "master": "h006",
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "北京/成都",
+      "restaurant": "颐之时",
+      "position": "国宝级烹饪大师",
+      "signature": [
+        "开水白菜",
+        "干烧鱼翅"
+      ],
+      "birth": 1928,
+      "death": 2014,
+      "source": "https://baike.baidu.com/item/%E9%BB%84%E5%AD%90%E4%BA%91",
+      "bio": "罗国荣高徒，'国宝级烹饪大师'，承袭师门精致路线，是罗派进入当代的重要桥梁。"
+    },
+    {
+      "id": "h011",
+      "name": "于存",
+      "gen": 4,
+      "master": "h006",
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "北京",
+      "restaurant": "北京饭店",
+      "position": "国宴大师",
+      "signature": [
+        "坛子肉",
+        "叫化鸡"
+      ],
+      "birth": 1925,
+      "death": 2005,
+      "source": "https://baike.baidu.com/item/%E7%BD%97%E5%9B%BD%E8%8D%A3",
+      "bio": "罗国荣弟子，长期供职北京饭店国宴，承蓉派精筵传统于京华。"
+    },
+    {
+      "id": "h012",
+      "name": "谢怀德",
+      "gen": 4,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "四川饭店",
+      "position": "国家特一级厨师",
+      "signature": [
+        "宫保鸡丁",
+        "鱼香肉丝"
+      ],
+      "birth": 1947,
+      "active": true,
+      "source": "http://www.cyxh.org/mingchu/yuanlao/1050.html",
+      "bio": "元老级川菜大师，国家特一级厨师，1990 年代初四川省仅有的三位高级中式烹调师考评委员之一。",
+      "masters": [
+        {
+          "name": "程盛德",
+          "title": "川中著名高厨"
+        }
+      ]
+    },
+    {
+      "id": "h013",
+      "name": "彭子渝",
+      "gen": 4,
+      "master": "h008",
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "成都",
+      "restaurant": "川菜博物馆顾问",
+      "position": "注册元老级中国烹饪大师",
+      "signature": [
+        "麻婆豆腐",
+        "回锅肉"
+      ],
+      "birth": 1949,
+      "active": true,
+      "source": null,
+      "bio": "注册元老级中国烹饪大师，强调川菜'自然生态 + 人文智慧'的现代诠释。"
+    },
+    {
+      "id": "h020",
+      "name": "吴万里",
+      "gen": 1,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "xia-he-bang",
+      "city": "重庆",
+      "restaurant": "味苑",
+      "position": "渝派奠基人",
+      "signature": [
+        "毛血旺",
+        "水煮牛肉"
+      ],
+      "birth": 1933,
+      "death": 2012,
+      "source": "http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html",
+      "bio": "重庆烹饪界泰斗，人称'师爷''吴老爷子'，渝派川菜奠基人，味苑餐厅创办人，原籍内江。"
+    },
+    {
+      "id": "h021",
+      "name": "吴强",
+      "gen": 2,
+      "master": "h020",
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "xia-he-bang",
+      "city": "重庆",
+      "restaurant": "味苑",
+      "position": "传承人",
+      "signature": [
+        "毛血旺",
+        "江湖鱼"
+      ],
+      "birth": 1965,
+      "active": true,
+      "source": "http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html",
+      "bio": "吴万里之子，继承味苑及渝派衣钵，将江湖菜系统化。"
+    },
+    {
+      "id": "h022",
+      "name": "李跃华",
+      "gen": 2,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "xia-he-bang",
+      "city": "重庆",
+      "restaurant": "重庆烹饪协会",
+      "position": "渝菜概念创立人",
+      "signature": [
+        "辣子鸡"
+      ],
+      "birth": 1952,
+      "active": true,
+      "source": "http://cq.people.com.cn/BIG5/n2/2021/0416/c365402-34678119.html",
+      "bio": "渝菜概念创立人，主导将渝派川菜的重庆系正式定名为'渝菜'，推动品牌化与标准化。"
+    },
+    {
+      "id": "h023",
+      "name": "陈志刚",
+      "gen": 2,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "xia-he-bang",
+      "city": "重庆",
+      "restaurant": "陈氏川菜馆",
+      "position": "川渝厨师界泰斗",
+      "signature": [
+        "泉水鸡",
+        "江团"
+      ],
+      "birth": 1948,
+      "active": true,
+      "source": "http://www.cyxh.org/mingchu/mianhuai/664.html",
+      "bio": "川渝厨师界泰斗，'川菜泰斗'称号获得者，江湖菜系统理论的重要参与者。"
+    },
+    {
+      "id": "h030",
+      "name": "李琼圃",
+      "gen": 1,
+      "master": null,
+      "era": "清末",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "xiao-he-bang",
+      "city": "自贡",
+      "restaurant": "盐商家厨",
+      "position": "盐帮菜源头",
+      "signature": [
+        "盐商私房菜"
+      ],
+      "birth": 1850,
+      "death": 1920,
+      "source": "https://www.sdlib.com.cn/home/article/detail/id/132206.html",
+      "bio": "清末自贡盐商，撰著《琼圃菜谱》记载盐帮菜烹饪要诀，惜原本已失传，可作为盐帮派源头注脚。"
+    },
+    {
+      "id": "h031",
+      "name": "范吉安",
+      "gen": 2,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "xiao-he-bang",
+      "city": "自贡",
+      "restaurant": "盐帮筵席",
+      "position": "盐帮主厨",
+      "signature": [
+        "自贡粑粑肉",
+        "水煮牛肉"
+      ],
+      "birth": 1895,
+      "death": 1965,
+      "source": "https://www.sdlib.com.cn/home/article/detail/id/132206.html",
+      "bio": "1930 年代自贡盐帮菜主厨，自贡粑粑肉的创制者，该菜后成川菜高档筵席常见菜。"
+    },
+    {
+      "id": "h040",
+      "name": "史正良",
+      "gen": 0,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": "shang-he-bang",
+      "city": "绵阳",
+      "restaurant": "绵阳饭店",
+      "position": "川菜泰斗",
+      "signature": [
+        "太白诗酒宴",
+        "鱼香味系列"
+      ],
+      "birth": 1946,
+      "death": 2015,
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF",
+      "bio": "四川梓潼人，国宝级川菜泰斗，'史派川菜'代表人物，14 岁起师从川西北名厨魏兴国、刘永见学艺；收徒 62 人，含兰明路、童建华等。2015 年于罗江车祸辞世。"
+    },
+    {
+      "id": "h041",
+      "name": "兰明路",
+      "gen": 1,
+      "master": "h040",
+      "era": "当代",
+      "primaryCuisine": "川",
+      "secondaryCuisines": [
+        "粤"
+      ],
+      "school": "shang-he-bang",
+      "crossMaster": "h042",
+      "crossCuisine": "粤",
+      "city": "成都",
+      "restaurant": "兰庭十三厨",
+      "position": "四川旅游学院教授",
+      "signature": [
+        "泡菜系列",
+        "创新川菜"
+      ],
+      "birth": 1968,
+      "active": true,
+      "source": "https://u-cra.com/profile/%E5%85%B0%E6%98%8E%E8%B7%AF/",
+      "bio": "四川绵阳人，祖籍射洪。1998 年拜史正良为师，系统扎根川菜；经师父亲笔书信推荐，再师从著名粤菜大师黄振华两年得真传。现为四川旅游学院教授、国家级技能大师工作室领办人、兰庭十三厨创始人，享受国务院特殊津贴专家。",
+      "crossNote": "师父史正良书信推荐，再拜粤菜大师黄振华为师 2 年，学习粤菜真传——现代厨师跨菜系学艺典范"
+    }
   ],
   "crossLinks": [
-    { "fromChef": "h041", "fromCuisine": "川", "toChef": "h042", "toCuisine": "粤", "note": "师父史正良书信推荐，兰明路再拜粤菜大师黄振华为师 2 年" }
+    {
+      "fromChef": "h041",
+      "fromCuisine": "川",
+      "toChef": "h042",
+      "toCuisine": "粤",
+      "note": "师父史正良书信推荐，兰明路再拜粤菜大师黄振华为师 2 年"
+    }
   ]
 }

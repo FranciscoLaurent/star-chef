@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T13:57:55.410Z",
+  "generatedAt": "2026-06-21T14:06:33.430Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json + 师承源",
   "cuisineNormalized": {
     "川菜": "川",
@@ -636,7 +636,7 @@
       "secondaryCuisines": [],
       "school": "shang-he-bang",
       "gen": 4,
-      "master": "h007",
+      "master": "mp-001",
       "era": "当代",
       "birth": 1947,
       "death": null,
@@ -657,10 +657,19 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "http://www.cyxh.org/",
+      "source": "http://www.cyxh.org/mingchu/yuanlao/1050.html",
       "bio": "元老级川菜大师，国家特一级厨师，1990 年代初四川省仅有的三位高级中式烹调师考评委员之一。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "程盛德",
+          "title": "川中著名高厨"
+        }
+      ],
+      "masterIds": [
+        "mp-001"
+      ]
     },
     {
       "id": "h013",
@@ -691,7 +700,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "http://www.cyxh.org/",
+      "source": null,
       "bio": "注册元老级中国烹饪大师，强调川菜'自然生态 + 人文智慧'的现代诠释。",
       "referencedBy": null,
       "_origin": "cuisine-chuan.json"
@@ -805,7 +814,7 @@
       "secondaryCuisines": [],
       "school": "xia-he-bang",
       "gen": 2,
-      "master": null,
+      "master": "h006",
       "era": "当代",
       "birth": 1948,
       "death": null,
@@ -826,10 +835,16 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "http://www.cyxh.org/",
+      "source": "http://www.cyxh.org/mingchu/mianhuai/664.html",
       "bio": "川渝厨师界泰斗，'川菜泰斗'称号获得者，江湖菜系统理论的重要参与者。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "罗国荣",
+          "title": "川菜圣手"
+        }
+      ]
     },
     {
       "id": "h030",
@@ -3713,7 +3728,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-001",
+      "master": "mp-002",
       "era": "近代",
       "birth": 1954,
       "death": null,
@@ -3757,7 +3772,7 @@
         }
       ],
       "masterIds": [
-        "mp-001"
+        "mp-002"
       ]
     },
     {
@@ -3926,7 +3941,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-002",
+      "master": "mp-003",
       "era": "近代",
       "birth": 1937,
       "death": null,
@@ -3975,7 +3990,7 @@
         }
       ],
       "masterIds": [
-        "mp-002"
+        "mp-003"
       ]
     },
     {
@@ -4043,7 +4058,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-003",
+      "master": "mp-004",
       "era": "近代",
       "birth": 1946,
       "death": null,
@@ -4091,7 +4106,7 @@
         }
       ],
       "masterIds": [
-        "mp-003"
+        "mp-004"
       ]
     },
     {
@@ -4231,7 +4246,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-004",
+      "master": "mp-005",
       "era": "近代",
       "birth": 1933,
       "death": null,
@@ -4323,7 +4338,7 @@
         }
       ],
       "masterIds": [
-        "mp-004",
+        "mp-005",
         "h006"
       ]
     },
@@ -4629,7 +4644,7 @@
       ],
       "masterIds": [
         "cyxh-mianhuai-80",
-        "mp-005"
+        "mp-006"
       ]
     },
     {
@@ -5112,7 +5127,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-006",
+      "master": "mp-007",
       "era": "当代",
       "birth": 1961,
       "death": null,
@@ -5160,7 +5175,7 @@
         }
       ],
       "masterIds": [
-        "mp-006"
+        "mp-007"
       ]
     },
     {
@@ -5529,7 +5544,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-007",
+      "master": "mp-008",
       "era": "近代",
       "birth": 1959,
       "death": null,
@@ -5593,7 +5608,7 @@
         }
       ],
       "masterIds": [
-        "mp-007"
+        "mp-008"
       ]
     },
     {
@@ -6284,7 +6299,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-008",
+      "master": "mp-009",
       "era": "当代",
       "birth": 1989,
       "death": null,
@@ -6336,7 +6351,7 @@
         }
       ],
       "masterIds": [
-        "mp-008"
+        "mp-009"
       ]
     },
     {
@@ -7808,7 +7823,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-009",
+      "master": "mp-010",
       "era": "当代",
       "birth": 1988,
       "death": null,
@@ -7853,7 +7868,7 @@
         }
       ],
       "masterIds": [
-        "mp-009"
+        "mp-010"
       ]
     },
     {
@@ -8823,7 +8838,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-010",
+      "master": "mp-011",
       "era": "当代",
       "birth": 1975,
       "death": null,
@@ -8873,7 +8888,7 @@
         }
       ],
       "masterIds": [
-        "mp-010"
+        "mp-011"
       ]
     },
     {
@@ -10813,7 +10828,7 @@
       ],
       "masterIds": [
         "cyxh-yuanlao-1402",
-        "mp-011"
+        "mp-012"
       ]
     },
     {
@@ -11170,7 +11185,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-012",
+      "master": "mp-013",
       "era": "当代",
       "birth": 1963,
       "death": null,
@@ -11219,7 +11234,7 @@
         }
       ],
       "masterIds": [
-        "mp-012"
+        "mp-013"
       ]
     },
     {
@@ -11464,7 +11479,7 @@
       "masterIds": [
         "h012",
         "h009",
-        "mp-013"
+        "mp-014"
       ]
     },
     {
@@ -11725,7 +11740,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-014",
+      "master": "mp-015",
       "era": "当代",
       "birth": 1964,
       "death": null,
@@ -11777,7 +11792,7 @@
         }
       ],
       "masterIds": [
-        "mp-014"
+        "mp-015"
       ]
     },
     {
@@ -12055,7 +12070,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-015",
+      "master": "mp-016",
       "era": "当代",
       "birth": 1968,
       "death": null,
@@ -12101,7 +12116,7 @@
         }
       ],
       "masterIds": [
-        "mp-015"
+        "mp-016"
       ]
     },
     {
@@ -12654,7 +12669,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-016",
+      "master": "mp-017",
       "era": "近代",
       "birth": 1945,
       "death": 2009,
@@ -12716,8 +12731,8 @@
         }
       ],
       "masterIds": [
-        "mp-016",
-        "mp-017"
+        "mp-017",
+        "mp-018"
       ]
     },
     {
@@ -12881,7 +12896,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-018",
+      "master": "mp-019",
       "era": "近代",
       "birth": 1944,
       "death": 2023,
@@ -12951,11 +12966,11 @@
         }
       ],
       "masterIds": [
-        "mp-018",
         "mp-019",
         "mp-020",
         "mp-021",
-        "mp-022"
+        "mp-022",
+        "mp-023"
       ]
     },
     {
@@ -12970,7 +12985,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-023",
+      "master": "mp-024",
       "era": "近代",
       "birth": 1955,
       "death": 2023,
@@ -13023,7 +13038,7 @@
         }
       ],
       "masterIds": [
-        "mp-023",
+        "mp-024",
         "h008"
       ]
     },
@@ -13270,7 +13285,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-024",
+      "master": "mp-025",
       "era": "近代",
       "birth": 1952,
       "death": 2020,
@@ -13329,9 +13344,9 @@
         }
       ],
       "masterIds": [
-        "mp-024",
         "mp-025",
-        "mp-026"
+        "mp-026",
+        "mp-027"
       ]
     },
     {
@@ -13346,7 +13361,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-027",
+      "master": "mp-028",
       "era": "近代",
       "birth": 1924,
       "death": 2020,
@@ -13406,7 +13421,7 @@
         }
       ],
       "masterIds": [
-        "mp-027"
+        "mp-028"
       ]
     },
     {
@@ -13417,7 +13432,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-028",
+      "master": "mp-029",
       "era": "近代",
       "birth": 1924,
       "death": 2020,
@@ -13461,7 +13476,7 @@
         }
       ],
       "masterIds": [
-        "mp-028"
+        "mp-029"
       ]
     },
     {
@@ -13728,7 +13743,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-029",
+      "master": "mp-030",
       "era": "近代",
       "birth": 1948,
       "death": 2019,
@@ -13805,10 +13820,10 @@
         }
       ],
       "masterIds": [
-        "mp-029",
+        "mp-030",
         "h008",
         "cyxh-mianhuai-961",
-        "mp-030"
+        "mp-031"
       ]
     },
     {
@@ -13946,10 +13961,10 @@
       ],
       "masterIds": [
         "mingchu-mianhuai-9",
-        "mp-031",
+        "mp-032",
         "h010",
         "cyxh-mianhuai-626",
-        "mp-032"
+        "mp-033"
       ]
     },
     {
@@ -14066,7 +14081,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-033",
+      "master": "mp-034",
       "era": "近代",
       "birth": 1913,
       "death": 2013,
@@ -14131,8 +14146,8 @@
         }
       ],
       "masterIds": [
-        "mp-033",
-        "mp-034"
+        "mp-034",
+        "mp-035"
       ]
     },
     {
@@ -14191,7 +14206,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-035",
+      "master": "mp-036",
       "era": "近代",
       "birth": 1944,
       "death": null,
@@ -14256,10 +14271,10 @@
         }
       ],
       "masterIds": [
-        "mp-035",
         "mp-036",
         "mp-037",
-        "mp-038"
+        "mp-038",
+        "mp-039"
       ]
     },
     {
@@ -14322,7 +14337,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-039",
+      "master": "mp-040",
       "era": "近代",
       "birth": 1947,
       "death": null,
@@ -14367,7 +14382,7 @@
         }
       ],
       "masterIds": [
-        "mp-039"
+        "mp-040"
       ]
     },
     {
@@ -14501,7 +14516,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-040",
+      "master": "mp-041",
       "era": "近代",
       "birth": 1947,
       "death": null,
@@ -14564,9 +14579,9 @@
         }
       ],
       "masterIds": [
-        "mp-040",
         "mp-041",
-        "mp-042"
+        "mp-042",
+        "mp-043"
       ]
     },
     {
@@ -14583,7 +14598,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-043",
+      "master": "mp-044",
       "era": "近代",
       "birth": 1944,
       "death": 2026,
@@ -14640,8 +14655,8 @@
         }
       ],
       "masterIds": [
-        "mp-043",
-        "mp-044"
+        "mp-044",
+        "mp-045"
       ]
     },
     {
@@ -14889,7 +14904,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-045",
+      "master": "mp-046",
       "era": "近代",
       "birth": 1941,
       "death": null,
@@ -14952,8 +14967,8 @@
         }
       ],
       "masterIds": [
-        "mp-045",
-        "mp-046"
+        "mp-046",
+        "mp-047"
       ]
     },
     {
@@ -14966,7 +14981,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-047",
+      "master": "mp-048",
       "era": "近代",
       "birth": 1939,
       "death": null,
@@ -15036,9 +15051,9 @@
         }
       ],
       "masterIds": [
-        "mp-047",
         "mp-048",
-        "mp-049"
+        "mp-049",
+        "mp-050"
       ]
     },
     {
@@ -15051,7 +15066,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-050",
+      "master": "mp-051",
       "era": "近代",
       "birth": 1923,
       "death": null,
@@ -15106,8 +15121,8 @@
         }
       ],
       "masterIds": [
-        "mp-050",
-        "mp-051"
+        "mp-051",
+        "mp-052"
       ]
     },
     {
@@ -15121,7 +15136,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-052",
+      "master": "mp-053",
       "era": null,
       "birth": null,
       "death": null,
@@ -15170,7 +15185,7 @@
         }
       ],
       "masterIds": [
-        "mp-052"
+        "mp-053"
       ]
     },
     {
@@ -15300,7 +15315,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-053",
+      "master": "mp-054",
       "era": "近代",
       "birth": 1937,
       "death": null,
@@ -15361,8 +15376,8 @@
         }
       ],
       "masterIds": [
-        "mp-053",
-        "mp-054"
+        "mp-054",
+        "mp-055"
       ]
     },
     {
@@ -15375,7 +15390,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-055",
+      "master": "mp-056",
       "era": "近代",
       "birth": 1959,
       "death": null,
@@ -15423,7 +15438,7 @@
         }
       ],
       "masterIds": [
-        "mp-055"
+        "mp-056"
       ]
     },
     {
@@ -15790,7 +15805,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-056",
+      "master": "mp-057",
       "era": "当代",
       "birth": 1971,
       "death": null,
@@ -15842,7 +15857,7 @@
         }
       ],
       "masterIds": [
-        "mp-056",
+        "mp-057",
         "y013"
       ]
     },
@@ -16402,7 +16417,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-057",
+      "master": "mp-058",
       "era": "当代",
       "birth": 1972,
       "death": null,
@@ -16441,7 +16456,7 @@
         }
       ],
       "masterIds": [
-        "mp-057"
+        "mp-058"
       ]
     },
     {
@@ -16943,7 +16958,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-058",
+      "master": "mp-059",
       "era": "当代",
       "birth": 1983,
       "death": null,
@@ -16991,7 +17006,7 @@
         }
       ],
       "masterIds": [
-        "mp-058"
+        "mp-059"
       ]
     },
     {
@@ -17097,7 +17112,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-059",
+      "master": "mp-060",
       "era": null,
       "birth": null,
       "death": null,
@@ -17142,7 +17157,7 @@
         }
       ],
       "masterIds": [
-        "mp-059"
+        "mp-060"
       ]
     },
     {
@@ -17300,7 +17315,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-060",
+      "master": "mp-061",
       "era": "当代",
       "birth": 1974,
       "death": null,
@@ -17349,7 +17364,7 @@
         }
       ],
       "masterIds": [
-        "mp-060"
+        "mp-061"
       ]
     },
     {
@@ -17575,7 +17590,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-061",
+      "master": "mp-062",
       "era": "当代",
       "birth": 1982,
       "death": null,
@@ -17626,8 +17641,8 @@
         }
       ],
       "masterIds": [
-        "mp-061",
-        "mp-062"
+        "mp-062",
+        "mp-063"
       ]
     },
     {
@@ -17738,7 +17753,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-063",
+      "master": "mp-064",
       "era": null,
       "birth": null,
       "death": null,
@@ -17782,7 +17797,7 @@
         }
       ],
       "masterIds": [
-        "mp-063"
+        "mp-064"
       ]
     },
     {
@@ -18026,7 +18041,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "era": "当代",
       "birth": 1978,
       "death": null,
@@ -18073,7 +18088,7 @@
         }
       ],
       "masterIds": [
-        "mp-064"
+        "mp-065"
       ]
     },
     {
@@ -18230,7 +18245,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-065",
+      "master": "mp-066",
       "era": null,
       "birth": null,
       "death": null,
@@ -18270,7 +18285,7 @@
         }
       ],
       "masterIds": [
-        "mp-065"
+        "mp-066"
       ]
     },
     {
@@ -18330,7 +18345,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-066",
+      "master": "mp-067",
       "era": "当代",
       "birth": 1979,
       "death": null,
@@ -18371,7 +18386,7 @@
         }
       ],
       "masterIds": [
-        "mp-066"
+        "mp-067"
       ]
     },
     {
@@ -18387,7 +18402,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-067",
+      "master": "mp-068",
       "era": "近代",
       "birth": 1960,
       "death": null,
@@ -18459,11 +18474,11 @@
         }
       ],
       "masterIds": [
-        "mp-067",
         "mp-068",
         "mp-069",
         "mp-070",
-        "mp-071"
+        "mp-071",
+        "mp-072"
       ]
     },
     {
@@ -18527,7 +18542,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-072",
+      "master": "mp-073",
       "era": "近代",
       "birth": 1923,
       "death": 2007,
@@ -18579,7 +18594,7 @@
         }
       ],
       "masterIds": [
-        "mp-072"
+        "mp-073"
       ]
     },
     {
@@ -18779,7 +18794,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-073",
+      "master": "mp-074",
       "era": "近代",
       "birth": 1932,
       "death": 2006,
@@ -18823,7 +18838,7 @@
         }
       ],
       "masterIds": [
-        "mp-073"
+        "mp-074"
       ]
     },
     {
@@ -18839,7 +18854,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-074",
+      "master": "mp-075",
       "era": "近代",
       "birth": 1920,
       "death": 2011,
@@ -18894,8 +18909,8 @@
         }
       ],
       "masterIds": [
-        "mp-074",
-        "mp-075"
+        "mp-075",
+        "mp-076"
       ]
     },
     {
@@ -18909,7 +18924,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-076",
+      "master": "mp-077",
       "era": "近代",
       "birth": 1931,
       "death": 2011,
@@ -18980,10 +18995,10 @@
         }
       ],
       "masterIds": [
-        "mp-076",
         "mp-077",
         "mp-078",
-        "mp-079"
+        "mp-079",
+        "mp-080"
       ]
     },
     {
@@ -19058,7 +19073,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-080",
+      "master": "mp-081",
       "era": "近代",
       "birth": 1920,
       "death": 2012,
@@ -19115,8 +19130,8 @@
         }
       ],
       "masterIds": [
-        "mp-080",
-        "mp-081"
+        "mp-081",
+        "mp-082"
       ]
     },
     {
@@ -19127,7 +19142,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-082",
+      "master": "mp-083",
       "era": "近代",
       "birth": 1940,
       "death": 2014,
@@ -19181,7 +19196,7 @@
         }
       ],
       "masterIds": [
-        "mp-082"
+        "mp-083"
       ]
     },
     {
@@ -19198,7 +19213,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-083",
+      "master": "mp-084",
       "era": "近代",
       "birth": 1923,
       "death": 2016,
@@ -19265,8 +19280,8 @@
         }
       ],
       "masterIds": [
-        "mp-083",
-        "mp-084"
+        "mp-084",
+        "mp-085"
       ]
     },
     {
@@ -19848,7 +19863,7 @@
       ],
       "masterIds": [
         "academy-hbue-wangxianshan",
-        "mp-085"
+        "mp-086"
       ]
     },
     {
@@ -21494,7 +21509,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-086",
+      "master": "mp-087",
       "era": null,
       "birth": null,
       "death": null,
@@ -21527,7 +21542,7 @@
         }
       ],
       "masterIds": [
-        "mp-086"
+        "mp-087"
       ]
     },
     {
@@ -23370,7 +23385,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-087",
+      "master": "mp-088",
       "era": null,
       "birth": null,
       "death": null,
@@ -23402,7 +23417,7 @@
         }
       ],
       "masterIds": [
-        "mp-087"
+        "mp-088"
       ]
     },
     {
@@ -27820,7 +27835,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-057",
+      "master": "mp-058",
       "era": null,
       "birth": null,
       "death": null,
@@ -29254,7 +29269,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-059",
+      "master": "mp-060",
       "era": null,
       "birth": null,
       "death": null,
@@ -30063,7 +30078,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-057",
+      "master": "mp-058",
       "era": null,
       "birth": null,
       "death": null,
@@ -35665,7 +35680,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-088",
+      "master": "mp-089",
       "era": null,
       "birth": null,
       "death": null,
@@ -35700,7 +35715,7 @@
         }
       ],
       "masterIds": [
-        "mp-088"
+        "mp-089"
       ]
     },
     {
@@ -35780,7 +35795,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-089",
+      "master": "mp-090",
       "era": "当代",
       "birth": 1974,
       "death": null,
@@ -35814,7 +35829,7 @@
         }
       ],
       "masterIds": [
-        "mp-089"
+        "mp-090"
       ]
     },
     {
@@ -35891,7 +35906,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-090",
+      "master": "mp-091",
       "era": "当代",
       "birth": 1982,
       "death": null,
@@ -35925,7 +35940,7 @@
         }
       ],
       "masterIds": [
-        "mp-090"
+        "mp-091"
       ]
     },
     {
@@ -36459,7 +36474,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-091",
+      "master": "mp-092",
       "era": null,
       "birth": null,
       "death": null,
@@ -36491,7 +36506,7 @@
         }
       ],
       "masterIds": [
-        "mp-091"
+        "mp-092"
       ]
     },
     {
@@ -36676,7 +36691,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-089",
+      "master": "mp-090",
       "era": "当代",
       "birth": 1983,
       "death": null,
@@ -36710,7 +36725,7 @@
         }
       ],
       "masterIds": [
-        "mp-089"
+        "mp-090"
       ]
     },
     {
@@ -37620,7 +37635,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-092",
+      "master": "mp-093",
       "era": null,
       "birth": null,
       "death": null,
@@ -37652,7 +37667,7 @@
         }
       ],
       "masterIds": [
-        "mp-092"
+        "mp-093"
       ]
     },
     {
@@ -37860,7 +37875,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-093",
+      "master": "mp-094",
       "era": null,
       "birth": null,
       "death": null,
@@ -37892,7 +37907,7 @@
         }
       ],
       "masterIds": [
-        "mp-093"
+        "mp-094"
       ]
     },
     {
@@ -38363,7 +38378,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-065",
+      "master": "mp-066",
       "era": "当代",
       "birth": 1977,
       "death": null,
@@ -38435,7 +38450,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-065",
+      "master": "mp-066",
       "era": "当代",
       "birth": 1992,
       "death": null,
@@ -38474,7 +38489,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-094",
+      "master": "mp-095",
       "era": "当代",
       "birth": 1975,
       "death": null,
@@ -38505,7 +38520,7 @@
         }
       ],
       "masterIds": [
-        "mp-094"
+        "mp-095"
       ]
     },
     {
@@ -38584,7 +38599,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-095",
+      "master": "mp-096",
       "era": null,
       "birth": null,
       "death": null,
@@ -38615,7 +38630,7 @@
         }
       ],
       "masterIds": [
-        "mp-095"
+        "mp-096"
       ]
     },
     {
@@ -38692,7 +38707,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-096",
+      "master": "mp-097",
       "era": "当代",
       "birth": 1981,
       "death": null,
@@ -38723,7 +38738,7 @@
         }
       ],
       "masterIds": [
-        "mp-096"
+        "mp-097"
       ]
     },
     {
@@ -39568,7 +39583,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-097",
+      "master": "mp-098",
       "era": "当代",
       "birth": 1993,
       "death": null,
@@ -39604,7 +39619,7 @@
         }
       ],
       "masterIds": [
-        "mp-097"
+        "mp-098"
       ]
     },
     {
@@ -40844,7 +40859,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-098",
+      "master": "mp-099",
       "era": "当代",
       "birth": 1981,
       "death": null,
@@ -40881,7 +40896,7 @@
         }
       ],
       "masterIds": [
-        "mp-098"
+        "mp-099"
       ]
     },
     {
@@ -40995,7 +41010,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-099",
+      "master": "mp-100",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -41026,7 +41041,7 @@
         }
       ],
       "masterIds": [
-        "mp-099"
+        "mp-100"
       ]
     },
     {
@@ -41112,7 +41127,7 @@
       "masterIds": [
         "cyxh-mianhuai-288",
         "cyxh-mianhuai-249",
-        "mp-100"
+        "mp-101"
       ]
     },
     {
@@ -41358,7 +41373,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-101",
+      "master": "mp-102",
       "era": "当代",
       "birth": 1985,
       "death": null,
@@ -41393,7 +41408,7 @@
         }
       ],
       "masterIds": [
-        "mp-101"
+        "mp-102"
       ]
     },
     {
@@ -41570,7 +41585,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-102",
+      "master": "mp-103",
       "era": "当代",
       "birth": 1983,
       "death": null,
@@ -41601,7 +41616,7 @@
         }
       ],
       "masterIds": [
-        "mp-102"
+        "mp-103"
       ]
     },
     {
@@ -41678,7 +41693,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-103",
+      "master": "mp-104",
       "era": "当代",
       "birth": 1986,
       "death": null,
@@ -41710,7 +41725,7 @@
         }
       ],
       "masterIds": [
-        "mp-103"
+        "mp-104"
       ]
     },
     {
@@ -42086,7 +42101,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-104",
+      "master": "mp-105",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -42116,7 +42131,7 @@
         }
       ],
       "masterIds": [
-        "mp-104"
+        "mp-105"
       ]
     },
     {
@@ -42233,7 +42248,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-105",
+      "master": "mp-106",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -42265,7 +42280,7 @@
         }
       ],
       "masterIds": [
-        "mp-105"
+        "mp-106"
       ]
     },
     {
@@ -42645,7 +42660,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-106",
+      "master": "mp-107",
       "era": "当代",
       "birth": 1979,
       "death": null,
@@ -42675,7 +42690,7 @@
         }
       ],
       "masterIds": [
-        "mp-106"
+        "mp-107"
       ]
     },
     {
@@ -42719,7 +42734,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-107",
+      "master": "mp-108",
       "era": "当代",
       "birth": 1978,
       "death": null,
@@ -42751,7 +42766,7 @@
         }
       ],
       "masterIds": [
-        "mp-107"
+        "mp-108"
       ]
     },
     {
@@ -42762,7 +42777,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": "mp-109",
       "era": "当代",
       "birth": 1967,
       "death": null,
@@ -42797,8 +42812,8 @@
         }
       ],
       "masterIds": [
-        "mp-108",
-        "mp-109"
+        "mp-109",
+        "mp-110"
       ]
     },
     {
@@ -42882,7 +42897,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-109",
+      "master": "mp-110",
       "era": "当代",
       "birth": 1989,
       "death": null,
@@ -42914,7 +42929,7 @@
         }
       ],
       "masterIds": [
-        "mp-109"
+        "mp-110"
       ]
     },
     {
@@ -43065,7 +43080,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-110",
+      "master": "mp-111",
       "era": "当代",
       "birth": 1997,
       "death": null,
@@ -43098,8 +43113,8 @@
         }
       ],
       "masterIds": [
-        "mp-110",
-        "mp-111"
+        "mp-111",
+        "mp-112"
       ]
     },
     {
@@ -43215,7 +43230,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-112",
+      "master": "mp-113",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -43250,7 +43265,7 @@
         }
       ],
       "masterIds": [
-        "mp-112"
+        "mp-113"
       ]
     },
     {
@@ -43743,7 +43758,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-113",
+      "master": "mp-114",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -43774,7 +43789,7 @@
         }
       ],
       "masterIds": [
-        "mp-113"
+        "mp-114"
       ]
     },
     {
@@ -44155,7 +44170,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-114",
+      "master": "mp-115",
       "era": "当代",
       "birth": 1995,
       "death": null,
@@ -44185,7 +44200,7 @@
         }
       ],
       "masterIds": [
-        "mp-114"
+        "mp-115"
       ]
     },
     {
@@ -44196,7 +44211,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-115",
+      "master": "mp-116",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -44230,8 +44245,8 @@
         }
       ],
       "masterIds": [
-        "mp-115",
-        "mp-116"
+        "mp-116",
+        "mp-117"
       ]
     },
     {
@@ -44313,7 +44328,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-117",
+      "master": "mp-118",
       "era": "当代",
       "birth": 1981,
       "death": null,
@@ -44345,7 +44360,7 @@
         }
       ],
       "masterIds": [
-        "mp-117"
+        "mp-118"
       ]
     },
     {
@@ -45127,7 +45142,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-118",
+      "master": "mp-119",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -45160,7 +45175,7 @@
         }
       ],
       "masterIds": [
-        "mp-118"
+        "mp-119"
       ]
     },
     {
@@ -45205,7 +45220,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-119",
+      "master": "mp-120",
       "era": "当代",
       "birth": 1985,
       "death": null,
@@ -45240,7 +45255,7 @@
         }
       ],
       "masterIds": [
-        "mp-119"
+        "mp-120"
       ]
     },
     {
@@ -45428,7 +45443,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-119",
+      "master": "mp-120",
       "era": "当代",
       "birth": 1977,
       "death": null,
@@ -45459,7 +45474,7 @@
         }
       ],
       "masterIds": [
-        "mp-119"
+        "mp-120"
       ]
     },
     {
@@ -46260,7 +46275,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-120",
+      "master": "mp-121",
       "era": "当代",
       "birth": 2000,
       "death": null,
@@ -46293,7 +46308,7 @@
         }
       ],
       "masterIds": [
-        "mp-120"
+        "mp-121"
       ]
     },
     {
@@ -46512,7 +46527,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-121",
+      "master": "mp-122",
       "era": "当代",
       "birth": 1980,
       "death": null,
@@ -46556,10 +46571,10 @@
         }
       ],
       "masterIds": [
-        "mp-121",
         "mp-122",
         "mp-123",
-        "mp-124"
+        "mp-124",
+        "mp-125"
       ]
     },
     {
@@ -47133,7 +47148,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-125",
+      "master": "mp-126",
       "era": "清末民初",
       "birth": 1898,
       "death": 1969,
@@ -47168,7 +47183,7 @@
         }
       ],
       "masterIds": [
-        "mp-125"
+        "mp-126"
       ]
     },
     {
@@ -47280,7 +47295,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-126",
+      "master": "mp-127",
       "era": "清末民初",
       "birth": 1908,
       "death": 1997,
@@ -47316,7 +47331,7 @@
         }
       ],
       "masterIds": [
-        "mp-126"
+        "mp-127"
       ]
     },
     {
@@ -47361,7 +47376,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-127",
+      "master": "mp-128",
       "era": "近代",
       "birth": 1955,
       "death": null,
@@ -47402,9 +47417,9 @@
         }
       ],
       "masterIds": [
-        "mp-127",
+        "mp-128",
         "cyxh-mianhuai-84",
-        "mp-128"
+        "mp-129"
       ]
     },
     {
@@ -47571,7 +47586,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-129",
+      "master": "mp-130",
       "era": "近代",
       "birth": 1913,
       "death": null,
@@ -47608,7 +47623,7 @@
         }
       ],
       "masterIds": [
-        "mp-129"
+        "mp-130"
       ]
     },
     {
@@ -48051,7 +48066,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-130",
+      "master": "mp-131",
       "era": "近代",
       "birth": 1930,
       "death": null,
@@ -48089,7 +48104,7 @@
         }
       ],
       "masterIds": [
-        "mp-130"
+        "mp-131"
       ]
     },
     {
@@ -48100,7 +48115,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-131",
+      "master": "mp-132",
       "era": "近代",
       "birth": 1952,
       "death": null,
@@ -48139,8 +48154,8 @@
         }
       ],
       "masterIds": [
-        "mp-131",
-        "mp-132"
+        "mp-132",
+        "mp-133"
       ]
     },
     {
@@ -48151,7 +48166,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-133",
+      "master": "mp-134",
       "era": "近代",
       "birth": 1923,
       "death": null,
@@ -48188,7 +48203,7 @@
         }
       ],
       "masterIds": [
-        "mp-133"
+        "mp-134"
       ]
     },
     {
@@ -48336,7 +48351,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-134",
+      "master": "mp-135",
       "era": "近代",
       "birth": 1948,
       "death": null,
@@ -48368,7 +48383,7 @@
         }
       ],
       "masterIds": [
-        "mp-134"
+        "mp-135"
       ]
     },
     {
@@ -48379,7 +48394,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-135",
+      "master": "mp-136",
       "era": "近代",
       "birth": 1946,
       "death": null,
@@ -48420,8 +48435,8 @@
         }
       ],
       "masterIds": [
-        "mp-135",
-        "mp-136"
+        "mp-136",
+        "mp-137"
       ]
     },
     {
@@ -48432,7 +48447,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-137",
+      "master": "mp-138",
       "era": null,
       "birth": null,
       "death": null,
@@ -48472,8 +48487,8 @@
         }
       ],
       "masterIds": [
-        "mp-137",
-        "mp-138"
+        "mp-138",
+        "mp-139"
       ]
     },
     {
@@ -48601,7 +48616,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-139",
+      "master": "mp-140",
       "era": null,
       "birth": null,
       "death": null,
@@ -48645,7 +48660,7 @@
         }
       ],
       "masterIds": [
-        "mp-139",
+        "mp-140",
         "academy-hbue-luyongliang",
         "academy-hbue-sunchangbi"
       ]
@@ -48732,7 +48747,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-140",
+      "master": "mp-141",
       "era": null,
       "birth": null,
       "death": null,
@@ -48774,9 +48789,9 @@
         }
       ],
       "masterIds": [
-        "mp-140",
         "mp-141",
-        "mp-142"
+        "mp-142",
+        "mp-143"
       ]
     },
     {
@@ -48787,7 +48802,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-143",
+      "master": "mp-144",
       "era": null,
       "birth": null,
       "death": null,
@@ -48817,7 +48832,7 @@
         }
       ],
       "masterIds": [
-        "mp-143"
+        "mp-144"
       ]
     },
     {
@@ -48828,7 +48843,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-144",
+      "master": "mp-145",
       "era": "近代",
       "birth": 1944,
       "death": null,
@@ -48866,7 +48881,7 @@
         }
       ],
       "masterIds": [
-        "mp-144"
+        "mp-145"
       ]
     },
     {
@@ -48877,7 +48892,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-145",
+      "master": "mp-146",
       "era": "近代",
       "birth": 1949,
       "death": null,
@@ -48917,9 +48932,9 @@
         }
       ],
       "masterIds": [
-        "mp-145",
         "mp-146",
-        "mp-147"
+        "mp-147",
+        "mp-148"
       ]
     },
     {
@@ -48930,7 +48945,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-148",
+      "master": "mp-149",
       "era": "近代",
       "birth": 1939,
       "death": null,
@@ -48965,7 +48980,7 @@
         }
       ],
       "masterIds": [
-        "mp-148"
+        "mp-149"
       ]
     },
     {
@@ -49059,7 +49074,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-149",
+      "master": "mp-150",
       "era": null,
       "birth": null,
       "death": null,
@@ -49092,7 +49107,7 @@
         }
       ],
       "masterIds": [
-        "mp-149"
+        "mp-150"
       ]
     },
     {
@@ -49384,7 +49399,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-150",
+      "master": "mp-151",
       "era": "近代",
       "birth": 1935,
       "death": null,
@@ -49429,8 +49444,8 @@
         }
       ],
       "masterIds": [
-        "mp-150",
-        "mp-151"
+        "mp-151",
+        "mp-152"
       ]
     },
     {
@@ -49441,7 +49456,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-152",
+      "master": "mp-153",
       "era": "近代",
       "birth": 1924,
       "death": 1992,
@@ -49479,7 +49494,7 @@
         }
       ],
       "masterIds": [
-        "mp-152"
+        "mp-153"
       ]
     },
     {
@@ -49551,6 +49566,39 @@
     },
     {
       "id": "mp-001",
+      "name": "程盛德",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "secondaryCuisines": [],
+      "school": null,
+      "gen": null,
+      "master": null,
+      "era": null,
+      "birth": null,
+      "death": null,
+      "gender": null,
+      "ethnicity": null,
+      "birthplace": null,
+      "education": null,
+      "titles": null,
+      "title": "川中著名高厨",
+      "currentRole": null,
+      "restaurant": null,
+      "position": null,
+      "city": null,
+      "signature": [],
+      "signatureDetails": null,
+      "experiences": null,
+      "portrait": null,
+      "source": null,
+      "bio": "川中著名高厨。被 1 位徒弟援引为师承。",
+      "referencedBy": [
+        "谢怀德"
+      ],
+      "_origin": "placeholder-from-masters[]"
+    },
+    {
+      "id": "mp-002",
       "name": "戈永泉",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -49584,7 +49632,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-002",
+      "id": "mp-003",
       "name": "姚志珩",
       "isPlaceholder": true,
       "primaryCuisine": "素菜",
@@ -49617,7 +49665,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-003",
+      "id": "mp-004",
       "name": "钏华圣",
       "isPlaceholder": true,
       "primaryCuisine": "国宴",
@@ -49650,7 +49698,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-004",
+      "id": "mp-005",
       "name": "郑福祥",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -49683,7 +49731,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-005",
+      "id": "mp-006",
       "name": "华永兴",
       "isPlaceholder": true,
       "primaryCuisine": "国宴",
@@ -49717,7 +49765,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-006",
+      "id": "mp-007",
       "name": "李芝仁",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -49750,7 +49798,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-007",
+      "id": "mp-008",
       "name": "周宪明",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -49784,7 +49832,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-008",
+      "id": "mp-009",
       "name": "李峰",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -49818,7 +49866,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-009",
+      "id": "mp-010",
       "name": "徐龙",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -49852,7 +49900,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-010",
+      "id": "mp-011",
       "name": "谭荣",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -49886,7 +49934,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-011",
+      "id": "mp-012",
       "name": "邵金海",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -49919,7 +49967,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-012",
+      "id": "mp-013",
       "name": "段子章",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -49952,7 +50000,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-013",
+      "id": "mp-014",
       "name": "张焕富",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -49985,7 +50033,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-014",
+      "id": "mp-015",
       "name": "李嗣亮",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50018,7 +50066,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-015",
+      "id": "mp-016",
       "name": "胡士斌",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -50051,7 +50099,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-016",
+      "id": "mp-017",
       "name": "计绍华",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -50084,7 +50132,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-017",
+      "id": "mp-018",
       "name": "陈训民",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -50117,7 +50165,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-018",
+      "id": "mp-019",
       "name": "龙华",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50150,7 +50198,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-019",
+      "id": "mp-020",
       "name": "温新",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50183,7 +50231,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-020",
+      "id": "mp-021",
       "name": "罗二",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50216,7 +50264,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-021",
+      "id": "mp-022",
       "name": "朱兆",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50249,7 +50297,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-022",
+      "id": "mp-023",
       "name": "蔡锦槐",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50282,7 +50330,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-023",
+      "id": "mp-024",
       "name": "鄢炳如",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50315,7 +50363,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-024",
+      "id": "mp-025",
       "name": "朱子明",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50348,7 +50396,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-025",
+      "id": "mp-026",
       "name": "李生荣",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50381,7 +50429,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-026",
+      "id": "mp-027",
       "name": "李致忠",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50414,7 +50462,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-027",
+      "id": "mp-028",
       "name": "肖良福",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50447,7 +50495,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-028",
+      "id": "mp-029",
       "name": "张志厚",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50480,7 +50528,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-029",
+      "id": "mp-030",
       "name": "张德祥",
       "isPlaceholder": true,
       "primaryCuisine": "黔",
@@ -50513,7 +50561,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-030",
+      "id": "mp-031",
       "name": "华兴昌",
       "isPlaceholder": true,
       "primaryCuisine": "黔",
@@ -50546,7 +50594,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-031",
+      "id": "mp-032",
       "name": "赵常斌",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -50579,7 +50627,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-032",
+      "id": "mp-033",
       "name": "彭长海",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -50612,7 +50660,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-033",
+      "id": "mp-034",
       "name": "田永清",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50645,7 +50693,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-034",
+      "id": "mp-035",
       "name": "甄树林",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50678,7 +50726,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-035",
+      "id": "mp-036",
       "name": "李父",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50711,7 +50759,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-036",
+      "id": "mp-037",
       "name": "白原珍",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50744,7 +50792,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-037",
+      "id": "mp-038",
       "name": "罗炎高",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50777,7 +50825,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-038",
+      "id": "mp-039",
       "name": "刘天福",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50810,7 +50858,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-039",
+      "id": "mp-040",
       "name": "毛父",
       "isPlaceholder": true,
       "primaryCuisine": "清真",
@@ -50843,7 +50891,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-040",
+      "id": "mp-041",
       "name": "王兴南",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -50876,7 +50924,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-041",
+      "id": "mp-042",
       "name": "程学祥",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -50909,7 +50957,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-042",
+      "id": "mp-043",
       "name": "孔宪元",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -50942,7 +50990,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-043",
+      "id": "mp-044",
       "name": "严大嵩",
       "isPlaceholder": true,
       "primaryCuisine": "津",
@@ -50975,7 +51023,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-044",
+      "id": "mp-045",
       "name": "潘毓藻",
       "isPlaceholder": true,
       "primaryCuisine": "津",
@@ -51008,7 +51056,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-045",
+      "id": "mp-046",
       "name": "王懿臣",
       "isPlaceholder": true,
       "primaryCuisine": "京帮",
@@ -51041,7 +51089,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-046",
+      "id": "mp-047",
       "name": "王宜新",
       "isPlaceholder": true,
       "primaryCuisine": "京帮",
@@ -51074,7 +51122,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-047",
+      "id": "mp-048",
       "name": "杨珠福",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51107,7 +51155,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-048",
+      "id": "mp-049",
       "name": "许培",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51140,7 +51188,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-049",
+      "id": "mp-050",
       "name": "萧克明",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51173,7 +51221,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-050",
+      "id": "mp-051",
       "name": "贾启杰",
       "isPlaceholder": true,
       "primaryCuisine": "琼",
@@ -51206,7 +51254,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-051",
+      "id": "mp-052",
       "name": "王进坤",
       "isPlaceholder": true,
       "primaryCuisine": "琼",
@@ -51239,7 +51287,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-052",
+      "id": "mp-053",
       "name": "王景宾",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -51272,7 +51320,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-053",
+      "id": "mp-054",
       "name": "郭大鎏",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51305,7 +51353,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-054",
+      "id": "mp-055",
       "name": "萧良初",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51338,7 +51386,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-055",
+      "id": "mp-056",
       "name": "贾吉祥",
       "isPlaceholder": true,
       "primaryCuisine": "西北",
@@ -51371,7 +51419,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-056",
+      "id": "mp-057",
       "name": "陈松林",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51404,7 +51452,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-057",
+      "id": "mp-058",
       "name": "石万荣",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -51437,7 +51485,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-058",
+      "id": "mp-059",
       "name": "程明生",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -51470,7 +51518,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-059",
+      "id": "mp-060",
       "name": "钱以斌",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51503,7 +51551,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-060",
+      "id": "mp-061",
       "name": "朱云龙",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51536,7 +51584,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-061",
+      "id": "mp-062",
       "name": "袁伟",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -51569,7 +51617,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-062",
+      "id": "mp-063",
       "name": "刘钢",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -51602,7 +51650,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-063",
+      "id": "mp-064",
       "name": "黄自强",
       "isPlaceholder": true,
       "primaryCuisine": "湘",
@@ -51635,14 +51683,14 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-064",
+      "id": "mp-065",
       "name": "陈进长",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-074",
+      "master": "mp-075",
       "era": null,
       "birth": null,
       "death": null,
@@ -51682,7 +51730,7 @@
       ]
     },
     {
-      "id": "mp-065",
+      "id": "mp-066",
       "name": "李坤键",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -51715,7 +51763,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-066",
+      "id": "mp-067",
       "name": "刘东来家族",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -51748,7 +51796,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-067",
+      "id": "mp-068",
       "name": "刘长龙",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51781,7 +51829,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-068",
+      "id": "mp-069",
       "name": "田素明",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51814,7 +51862,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-069",
+      "id": "mp-070",
       "name": "常桂生",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51847,7 +51895,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-070",
+      "id": "mp-071",
       "name": "徒照福",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51880,7 +51928,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-071",
+      "id": "mp-072",
       "name": "唐寿松",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51913,7 +51961,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-072",
+      "id": "mp-073",
       "name": "李文清",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -51946,7 +51994,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-073",
+      "id": "mp-074",
       "name": "沈远华",
       "isPlaceholder": true,
       "primaryCuisine": "黔",
@@ -51979,7 +52027,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-074",
+      "id": "mp-075",
       "name": "苏永秀",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -52012,7 +52060,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-075",
+      "id": "mp-076",
       "name": "赵延良",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -52045,7 +52093,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-076",
+      "id": "mp-077",
       "name": "柳树勤",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52078,7 +52126,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-077",
+      "id": "mp-078",
       "name": "吕仪",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52111,7 +52159,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-078",
+      "id": "mp-079",
       "name": "郭光瑾",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52144,7 +52192,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-079",
+      "id": "mp-080",
       "name": "张传本",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52177,7 +52225,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-080",
+      "id": "mp-081",
       "name": "郑德福",
       "isPlaceholder": true,
       "primaryCuisine": "晋",
@@ -52210,7 +52258,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-081",
+      "id": "mp-082",
       "name": "卢成瑞",
       "isPlaceholder": true,
       "primaryCuisine": "晋",
@@ -52243,7 +52291,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-082",
+      "id": "mp-083",
       "name": "邵华钿",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -52276,7 +52324,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-083",
+      "id": "mp-084",
       "name": "颜庆鸿",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52309,7 +52357,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-084",
+      "id": "mp-085",
       "name": "郭振生",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52342,7 +52390,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-085",
+      "id": "mp-086",
       "name": "曹啟炎",
       "isPlaceholder": true,
       "primaryCuisine": "楚",
@@ -52375,7 +52423,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-086",
+      "id": "mp-087",
       "name": "王文昌",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -52408,7 +52456,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-087",
+      "id": "mp-088",
       "name": "王素明",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -52441,7 +52489,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-088",
+      "id": "mp-089",
       "name": "贺延贵",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -52474,7 +52522,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-089",
+      "id": "mp-090",
       "name": "郑秀生先",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -52508,7 +52556,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-090",
+      "id": "mp-091",
       "name": "郭成全先",
       "isPlaceholder": true,
       "primaryCuisine": "国宴",
@@ -52541,7 +52589,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-091",
+      "id": "mp-092",
       "name": "刘书军大",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -52574,7 +52622,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-092",
+      "id": "mp-093",
       "name": "杭州五星酒",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -52607,7 +52655,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-093",
+      "id": "mp-094",
       "name": "国家特级点",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -52640,7 +52688,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-094",
+      "id": "mp-095",
       "name": "邓雄升",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -52673,7 +52721,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-095",
+      "id": "mp-096",
       "name": "邓雄升与韩",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -52706,7 +52754,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-096",
+      "id": "mp-097",
       "name": "高美琼女士",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -52739,7 +52787,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-097",
+      "id": "mp-098",
       "name": "胡忠英",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -52777,7 +52825,7 @@
       ]
     },
     {
-      "id": "mp-098",
+      "id": "mp-099",
       "name": "苏喜斌",
       "isPlaceholder": true,
       "primaryCuisine": "东北",
@@ -52810,7 +52858,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-099",
+      "id": "mp-100",
       "name": "侯永",
       "isPlaceholder": true,
       "primaryCuisine": "冀",
@@ -52843,7 +52891,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-100",
+      "id": "mp-101",
       "name": "董书山",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -52876,7 +52924,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-101",
+      "id": "mp-102",
       "name": "黄良涛",
       "isPlaceholder": true,
       "primaryCuisine": "浙",
@@ -52909,7 +52957,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-102",
+      "id": "mp-103",
       "name": "王万友",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -52942,7 +52990,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-103",
+      "id": "mp-104",
       "name": "侯胜才",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -52975,7 +53023,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-104",
+      "id": "mp-105",
       "name": "李胜",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -53008,7 +53056,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-105",
+      "id": "mp-106",
       "name": "李振华",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -53041,7 +53089,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-106",
+      "id": "mp-107",
       "name": "潘玉清",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53074,7 +53122,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-107",
+      "id": "mp-108",
       "name": "孔祥道",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53107,7 +53155,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-108",
+      "id": "mp-109",
       "name": "蔡玉福",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -53140,7 +53188,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-109",
+      "id": "mp-110",
       "name": "王乐清",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -53174,7 +53222,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-110",
+      "id": "mp-111",
       "name": "熊贵海",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53207,7 +53255,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-111",
+      "id": "mp-112",
       "name": "何凡",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53240,7 +53288,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-112",
+      "id": "mp-113",
       "name": "韩晓辉",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -53273,7 +53321,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-113",
+      "id": "mp-114",
       "name": "孙万宋",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -53306,7 +53354,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-114",
+      "id": "mp-115",
       "name": "周志刚",
       "isPlaceholder": true,
       "primaryCuisine": "冀",
@@ -53339,7 +53387,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-115",
+      "id": "mp-116",
       "name": "朱伏亭",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53372,7 +53420,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-116",
+      "id": "mp-117",
       "name": "周国良",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53405,7 +53453,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-117",
+      "id": "mp-118",
       "name": "龚治平",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -53438,7 +53486,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-118",
+      "id": "mp-119",
       "name": "周金端",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -53471,7 +53519,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-119",
+      "id": "mp-120",
       "name": "高炳义",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -53505,7 +53553,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-120",
+      "id": "mp-121",
       "name": "丁玉勇",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53538,7 +53586,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-121",
+      "id": "mp-122",
       "name": "吕长海",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53571,7 +53619,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-122",
+      "id": "mp-123",
       "name": "樊胜武",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53604,7 +53652,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-123",
+      "id": "mp-124",
       "name": "姜胜利",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53637,7 +53685,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-124",
+      "id": "mp-125",
       "name": "张仁平",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53670,7 +53718,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-125",
+      "id": "mp-126",
       "name": "许明禄",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53703,7 +53751,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-126",
+      "id": "mp-127",
       "name": "傅吉廷",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -53736,7 +53784,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-127",
+      "id": "mp-128",
       "name": "马德明",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -53769,7 +53817,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-128",
+      "id": "mp-129",
       "name": "严双才",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -53802,7 +53850,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-129",
+      "id": "mp-130",
       "name": "宋玉清",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -53835,7 +53883,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-130",
+      "id": "mp-131",
       "name": "校古芳",
       "isPlaceholder": true,
       "primaryCuisine": "素菜",
@@ -53868,7 +53916,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-131",
+      "id": "mp-132",
       "name": "王德福",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -53901,7 +53949,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-132",
+      "id": "mp-133",
       "name": "杨星儒",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -53934,7 +53982,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-133",
+      "id": "mp-134",
       "name": "马玉林",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53967,7 +54015,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-134",
+      "id": "mp-135",
       "name": "吴道铭",
       "isPlaceholder": true,
       "primaryCuisine": "浙",
@@ -54000,7 +54048,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-135",
+      "id": "mp-136",
       "name": "胡西庄",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -54033,7 +54081,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-136",
+      "id": "mp-137",
       "name": "陈如琢",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -54066,7 +54114,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-137",
+      "id": "mp-138",
       "name": "韩征",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54099,7 +54147,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-138",
+      "id": "mp-139",
       "name": "顾根源",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54132,7 +54180,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-139",
+      "id": "mp-140",
       "name": "汪健国",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -54165,7 +54213,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-140",
+      "id": "mp-141",
       "name": "钟定华",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54198,7 +54246,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-141",
+      "id": "mp-142",
       "name": "王长富",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54231,7 +54279,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-142",
+      "id": "mp-143",
       "name": "朱立康",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54264,7 +54312,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-143",
+      "id": "mp-144",
       "name": "齐新",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -54297,7 +54345,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-144",
+      "id": "mp-145",
       "name": "朱万宝",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54330,7 +54378,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-145",
+      "id": "mp-146",
       "name": "强祖淦",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -54363,7 +54411,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-146",
+      "id": "mp-147",
       "name": "郭则贤",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -54396,7 +54444,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-147",
+      "id": "mp-148",
       "name": "郑玉春",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -54429,7 +54477,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-148",
+      "id": "mp-149",
       "name": "张锡财",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -54462,7 +54510,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-149",
+      "id": "mp-150",
       "name": "胡承藩",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -54495,7 +54543,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-150",
+      "id": "mp-151",
       "name": "康文明",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -54528,7 +54576,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-151",
+      "id": "mp-152",
       "name": "王元吉",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -54561,7 +54609,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-152",
+      "id": "mp-153",
       "name": "刘长号",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54793,7 +54841,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54808,7 +54856,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54823,7 +54871,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54838,7 +54886,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54853,7 +54901,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54868,7 +54916,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54883,7 +54931,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54898,7 +54946,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54913,7 +54961,7 @@
       "title": "师门弟子",
       "source": "baijiahao.baidu.com",
       "bio": null,
-      "master": "mp-064",
+      "master": "mp-065",
       "masters": [
         {
           "name": "陈进长"
@@ -54952,7 +55000,7 @@
       "title": "师门弟子",
       "source": "wenlvnews.com",
       "bio": null,
-      "master": "mp-119",
+      "master": "mp-120",
       "masters": [
         {
           "name": "高炳义"
@@ -55786,10 +55834,10 @@
     }
   ],
   "stats": {
-    "totalChefs": 1471,
+    "totalChefs": 1472,
     "realChefs": 1236,
-    "placeholders": 235,
-    "withMaster": 305,
+    "placeholders": 236,
+    "withMaster": 306,
     "withMasterId": 160,
     "withSchool": 59,
     "withSignature": 381,
@@ -55797,7 +55845,7 @@
     "withPortrait": 861,
     "byCuisine": {
       "?": 375,
-      "川": 186,
+      "川": 187,
       "淮扬": 178,
       "粤": 145,
       "鲁": 84,
@@ -55848,7 +55896,7 @@
       "近代-当代": 3,
       "民国": 1,
       "近代/当代": 3,
-      "?": 723
+      "?": 724
     },
     "topMastersByApprenticeCount": {
       "郑秀生": 8,
