@@ -1,0 +1,29 @@
+{
+  "source": "bio-text-mining",
+  "fetchDate": "2026-06-21T12:55:52.365Z",
+  "results": [
+    {
+      "studentId": "cyxh-dangdai-1028",
+      "studentName": "陈正恒",
+      "masterName": "高美琼",
+      "masterTitle": "大师",
+      "masterInLib": false,
+      "source": "bio",
+      "raw": "中式烹调二级技师，注册中国烹饪大师，师承高美琼大师，深受其烹饪哲学和技艺的熏"
+    },
+    {
+      "studentId": "cyxh-dangdai-1027",
+      "studentName": "黄明友",
+      "masterName": "高美琼",
+      "masterTitle": "大师",
+      "masterInLib": false,
+      "source": "bio",
+      "raw": "师，注册中国烹饪大师，云南烹饪大师，师承高美琼大师，中金厨政餐饮协会云南分会"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "inLib": 0,
+    "outLib": 2
+  }
+}

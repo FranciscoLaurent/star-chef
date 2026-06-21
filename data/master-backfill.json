@@ -4,20 +4,31 @@
   "fetchDate": "2026-06-21",
   "results": [
     {
-      "name": "李名祥",
-      "id": "cyxh-dangdai-1459",
+      "name": "王玉田",
+      "id": "cyxh-dangdai-1399",
       "masters": [
         {
-          "name": "王荫曾",
-          "rawText": "师从元老级注册中国烹饪大师王荫曾 "
+          "name": "王振声大",
+          "rawText": "恩师王振声大"
         }
       ],
-      "source": "http://www.cyxh.org/mingchu/dangdai/1459.html"
+      "source": "http://www.cyxh.org/mingchu/dangdai/1399.html"
+    },
+    {
+      "name": "杨继亮",
+      "id": "cyxh-dangdai-258",
+      "masters": [
+        {
+          "name": "陈绪荣",
+          "rawText": "师承中国烹饪大师陈绪荣先生"
+        }
+      ],
+      "source": "http://www.mingchu.org/mingchu/dangdai/258.html"
     }
   ],
   "stats": {
-    "total": 611,
-    "found": 1,
-    "failed": 1178
+    "total": 915,
+    "found": 2,
+    "failed": 1715
   }
 }

@@ -299,12 +299,98 @@ for (const s of allSchools) {
 
 const result = {
   generatedAt: new Date().toISOString(),
-  source: '聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json',
+  source: '聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json + 师承源',
   cuisineNormalized: CUISINE_NORMALIZE,
   schools: [...schoolByKey.values()],
   chefs: merged,
   stats,
 };
+
+// === 师承合并：从外部师承源文件注入 master 关系 ===
+// 避免被 _merge 覆盖，在写文件前合并
+(function mergeMasterSources(){
+  const MASTER_SOURCES = [
+    { file: 'bio-masters.json',      tag: 'bio',    priority: 4 },
+    { file: 'master-backfill.json',  tag: 'page',   priority: 3 },
+    { file: 'agent-masters-1.json',  tag: 'agent1', priority: 2 },
+    { file: 'agent-masters-2.json',  tag: 'agent2', priority: 2 },
+    { file: 'agent-masters-3.json',  tag: 'agent3', priority: 2 },
+    { file: 'news-masters.json',     tag: 'news',   priority: 1 },
+  ];
+  const byName = new Map();
+  const byId = new Map();
+  for (const c of merged) {
+    if (c.name) byName.set(c.name, c);
+    if (c.id) byId.set(c.id, c);
+  }
+  const allPairs = [];
+  for (const s of MASTER_SOURCES) {
+    const fp = path.join(DATA_DIR, s.file);
+    if (!fs.existsSync(fp)) continue;
+    let j;
+    try { j = JSON.parse(fs.readFileSync(fp, 'utf8')); } catch(e) { continue; }
+    const arr = Array.isArray(j) ? j : (j.results || j.masters || []);
+    for (const r of arr) {
+      if (r.studentName && (r.masterName || r.masterId)) {
+        allPairs.push({ student: r.studentName, master: r.masterName, masterId: r.masterId, source: r.source || s.tag, title: r.masterTitle, priority: s.priority });
+      } else if (r.student && r.master) {
+        allPairs.push({ student: r.student, master: r.master, source: r.source || s.tag, title: r.title, priority: s.priority });
+      } else if (r.name && r.masters && Array.isArray(r.masters)) {
+        for (const m of r.masters) {
+          allPairs.push({ student: r.name, master: m.name, source: r.source || s.tag, title: m.title, priority: s.priority });
+        }
+      }
+    }
+  }
+  // 去重：同一 (student, master) 取最高优先级
+  const bestPair = new Map();
+  for (const p of allPairs) {
+    const key = p.student + '|' + p.master;
+    if (!bestPair.has(key) || bestPair.get(key).priority < p.priority) bestPair.set(key, p);
+  }
+  // 按 student 聚合
+  const byStudent = new Map();
+  for (const p of bestPair.values()) {
+    if (!byStudent.has(p.student)) byStudent.set(p.student, []);
+    byStudent.get(p.student).push(p);
+  }
+  let updated = 0, newPlaceholders = 0;
+  for (const [studentName, pairs] of byStudent) {
+    const student = byName.get(studentName);
+    if (!student) continue;
+    if (student.master || (student.masters && student.masters.length > 0)) continue;
+    const chips = [];
+    for (const p of pairs) {
+      let mc = byName.get(p.master);
+      if (!mc && p.masterId) mc = byId.get(p.masterId);
+      if (mc) {
+        chips.push({ id: mc.id, name: mc.name, title: p.title });
+      } else {
+        const pid = 'mp-master-' + studentName + '-' + p.master;
+        chips.push({ id: pid, name: p.master, title: p.title, isPlaceholder: true });
+        if (!byId.has(pid)) {
+          merged.push({ id: pid, name: p.master, isPlaceholder: true, primaryCuisine: student.primaryCuisine, title: p.title || '师承援引', source: p.source, bio: null, referencedBy: [studentName] });
+          byId.set(pid, merged[merged.length - 1]);
+          byName.set(p.master, merged[merged.length - 1]);
+          newPlaceholders++;
+        }
+      }
+    }
+    if (chips.length === 0) continue;
+    const primary = chips.find(m => !m.isPlaceholder) || chips[0];
+    student.master = primary.id;
+    student.masters = chips.map(m => ({ name: m.name, title: m.title || undefined })).filter(x => x.name);
+    updated++;
+  }
+  // 重算 stats
+  stats.totalChefs = merged.length;
+  stats.realChefs = merged.filter(c => !c.isPlaceholder).length;
+  stats.placeholders = stats.totalChefs - stats.realChefs;
+  stats.withMaster = merged.filter(c => c.master || (c.masters && c.masters.length > 0)).length;
+  console.log(`\n=== 师承合并 ===`);
+  console.log(`师承源对: ${bestPair.size} · 更新厨师: ${updated} · 新建占位师父: ${newPlaceholders}`);
+  console.log(`有师承: ${stats.withMaster} / 实人 ${stats.realChefs} (${(stats.withMaster/stats.realChefs*100).toFixed(1)}%)`);
+})();
 
 fs.writeFileSync(path.join(DATA_DIR, 'chefs-merged.json'), JSON.stringify(result, null, 2));
 console.log('\n=== 合并完成 ===');

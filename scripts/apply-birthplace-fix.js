@@ -68,7 +68,7 @@ console.log('\nchefs-merged.json 已更新');
 // 重新生成 _slim.json（去掉 ethnicity/education/title/signatureDetails/experiences/_origin，压缩）
 const SLIM_FIELDS = [
   'id','name','isPlaceholder','primaryCuisine','secondaryCuisines','school',
-  'gen','master','era','birth','death','birthplace','gender','titles',
+  'gen','master','masters','masterIds','era','birth','death','birthplace','gender','titles',
   'currentRole','restaurant','position','city','signature','portrait',
   'source','bio','referencedBy'
 ];
