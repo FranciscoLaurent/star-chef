@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T13:32:16.353Z",
+  "generatedAt": "2026-06-21T13:44:54.931Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json + 师承源",
   "cuisineNormalized": {
     "川菜": "川",
@@ -54602,6 +54602,141 @@
       ]
     },
     {
+      "id": "mp-student-张保-陈进长",
+      "name": "张保",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-冯运富-陈进长",
+      "name": "冯运富",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-郝庆鸣-陈进长",
+      "name": "郝庆鸣",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-武学平-陈进长",
+      "name": "武学平",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-焦通常-陈进长",
+      "name": "焦通常",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-杜广军-陈进长",
+      "name": "杜广军",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王运生-陈进长",
+      "name": "王运生",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-成国富-陈进长",
+      "name": "成国富",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王铁庄-陈进长",
+      "name": "王铁庄",
+      "isPlaceholder": true,
+      "primaryCuisine": "豫",
+      "title": "师门弟子",
+      "source": "baijiahao.baidu.com",
+      "bio": null,
+      "master": "mp-064",
+      "masters": [
+        {
+          "name": "陈进长"
+        }
+      ]
+    },
+    {
       "id": "mp-master-陈进长-黄润生",
       "name": "黄润生",
       "isPlaceholder": true,
@@ -54626,6 +54761,81 @@
       ]
     },
     {
+      "id": "mp-student-王庆兴-高炳义",
+      "name": "王庆兴",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "wenlvnews.com",
+      "bio": null,
+      "master": "mp-119",
+      "masters": [
+        {
+          "name": "高炳义"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-杨兴怀-卢永良",
+      "name": "杨兴怀",
+      "isPlaceholder": true,
+      "primaryCuisine": "楚",
+      "title": "师门弟子",
+      "source": "baike.baidu.com",
+      "bio": null,
+      "master": "academy-hbue-luyongliang",
+      "masters": [
+        {
+          "name": "卢永良"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-邹发昌-卢永良",
+      "name": "邹发昌",
+      "isPlaceholder": true,
+      "primaryCuisine": "楚",
+      "title": "师门弟子",
+      "source": "baike.baidu.com",
+      "bio": null,
+      "master": "academy-hbue-luyongliang",
+      "masters": [
+        {
+          "name": "卢永良"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-佘远武-卢永良",
+      "name": "佘远武",
+      "isPlaceholder": true,
+      "primaryCuisine": "楚",
+      "title": "师门弟子",
+      "source": "baike.baidu.com",
+      "bio": null,
+      "master": "academy-hbue-luyongliang",
+      "masters": [
+        {
+          "name": "卢永良"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王庆-卢永良",
+      "name": "王庆",
+      "isPlaceholder": true,
+      "primaryCuisine": "楚",
+      "title": "师门弟子",
+      "source": "baike.baidu.com",
+      "bio": null,
+      "master": "academy-hbue-luyongliang",
+      "masters": [
+        {
+          "name": "卢永良"
+        }
+      ]
+    },
+    {
       "id": "mp-master-胡忠英-童水林",
       "name": "童水林",
       "isPlaceholder": true,
@@ -54636,13 +54846,763 @@
       "referencedBy": [
         "胡忠英"
       ]
+    },
+    {
+      "id": "mp-student-桑治均-史正良",
+      "name": "桑治均",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "师门弟子",
+      "source": "baike.baidu.com",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-邱伟-史正良",
+      "name": "邱伟",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "师门弟子",
+      "source": "baike.baidu.com",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-尹振江-王义均",
+      "name": "尹振江",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-史连勇-王义均",
+      "name": "史连勇",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王富强-王义均",
+      "name": "王富强",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-安万国-王义均",
+      "name": "安万国",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-于铁柱-王义均",
+      "name": "于铁柱",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王培根-王义均",
+      "name": "王培根",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-顾九如-王义均",
+      "name": "顾九如",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-赵新林-王义均",
+      "name": "赵新林",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-李启贵-王义均",
+      "name": "李启贵",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-董振祥-王义均",
+      "name": "董振祥",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-高速建-王义均",
+      "name": "高速建",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-张振纬-王义均",
+      "name": "张振纬",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-曹志坚-王义均",
+      "name": "曹志坚",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-尹亲林-王义均",
+      "name": "尹亲林",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王爱丽-王义均",
+      "name": "王爱丽",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-13",
+      "masters": [
+        {
+          "name": "王义均"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-杨春晖-屈浩",
+      "name": "杨春晖",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-孙华盛-屈浩",
+      "name": "孙华盛",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-李可-屈浩",
+      "name": "李可",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王中伟-屈浩",
+      "name": "王中伟",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-陈义洪-屈浩",
+      "name": "陈义洪",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-段誉-屈浩",
+      "name": "段誉",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-杨占胜-屈浩",
+      "name": "杨占胜",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-杨朝辉-屈浩",
+      "name": "杨朝辉",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-杨杨-屈浩",
+      "name": "杨杨",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-屈浩-鲁",
+      "masters": [
+        {
+          "name": "屈浩"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-孙宪厚-董振祥",
+      "name": "孙宪厚",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-高新宇-董振祥",
+      "name": "高新宇",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-李钢-董振祥",
+      "name": "李钢",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-白小栋-董振祥",
+      "name": "白小栋",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-蔡春栓-董振祥",
+      "name": "蔡春栓",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-及玉林-董振祥",
+      "name": "及玉林",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-石秀松-董振祥",
+      "name": "石秀松",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-徐勃-董振祥",
+      "name": "徐勃",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-张朝晖-董振祥",
+      "name": "张朝晖",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-董振祥-王义均",
+      "masters": [
+        {
+          "name": "董振祥"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-侯新庆-周晓燕",
+      "name": "侯新庆",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-周晓燕-淮扬",
+      "masters": [
+        {
+          "name": "周晓燕"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-郭长彬-周晓燕",
+      "name": "郭长彬",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-周晓燕-淮扬",
+      "masters": [
+        {
+          "name": "周晓燕"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-戚双喜-周晓燕",
+      "name": "戚双喜",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-周晓燕-淮扬",
+      "masters": [
+        {
+          "name": "周晓燕"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-陈万庆-周晓燕",
+      "name": "陈万庆",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-周晓燕-淮扬",
+      "masters": [
+        {
+          "name": "周晓燕"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-陶晓东-周晓燕",
+      "name": "陶晓东",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-周晓燕-淮扬",
+      "masters": [
+        {
+          "name": "周晓燕"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-洛扬-周晓燕",
+      "name": "洛扬",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-周晓燕-淮扬",
+      "masters": [
+        {
+          "name": "周晓燕"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-吴松德-周晓燕",
+      "name": "吴松德",
+      "isPlaceholder": true,
+      "primaryCuisine": "淮扬",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "auto-周晓燕-淮扬",
+      "masters": [
+        {
+          "name": "周晓燕"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-周元昌-李伯荣",
+      "name": "周元昌",
+      "isPlaceholder": true,
+      "primaryCuisine": "其他",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "cyxh-yuanlao-14",
+      "masters": [
+        {
+          "name": "李伯荣"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-罗友裕-周元昌",
+      "name": "罗友裕",
+      "isPlaceholder": true,
+      "primaryCuisine": "其他",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-周元昌-李伯荣",
+      "masters": [
+        {
+          "name": "周元昌"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-尹明玉-周元昌",
+      "name": "尹明玉",
+      "isPlaceholder": true,
+      "primaryCuisine": "其他",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-周元昌-李伯荣",
+      "masters": [
+        {
+          "name": "周元昌"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-徐俊-周元昌",
+      "name": "徐俊",
+      "isPlaceholder": true,
+      "primaryCuisine": "其他",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-周元昌-李伯荣",
+      "masters": [
+        {
+          "name": "周元昌"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-张晨-周元昌",
+      "name": "张晨",
+      "isPlaceholder": true,
+      "primaryCuisine": "其他",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-周元昌-李伯荣",
+      "masters": [
+        {
+          "name": "周元昌"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-李冬-周元昌",
+      "name": "李冬",
+      "isPlaceholder": true,
+      "primaryCuisine": "其他",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-周元昌-李伯荣",
+      "masters": [
+        {
+          "name": "周元昌"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-沈贤斌-周元昌",
+      "name": "沈贤斌",
+      "isPlaceholder": true,
+      "primaryCuisine": "其他",
+      "title": "师门弟子",
+      "source": "thepaper.cn",
+      "bio": null,
+      "master": "mp-student-周元昌-李伯荣",
+      "masters": [
+        {
+          "name": "周元昌"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-王希富-王殿臣",
+      "name": "王希富",
+      "isPlaceholder": true,
+      "primaryCuisine": "鲁",
+      "title": "师门弟子",
+      "source": "www.c-zgpr.com",
+      "bio": null,
+      "master": "auto-王殿臣-鲁",
+      "masters": [
+        {
+          "name": "王殿臣"
+        }
+      ]
     }
   ],
   "stats": {
-    "totalChefs": 1399,
+    "totalChefs": 1463,
     "realChefs": 1236,
-    "placeholders": 163,
-    "withMaster": 223,
+    "placeholders": 227,
+    "withMaster": 287,
     "withMasterId": 160,
     "withSchool": 59,
     "withSignature": 381,

@@ -354,10 +354,22 @@ const result = {
     if (!byStudent.has(p.student)) byStudent.set(p.student, []);
     byStudent.get(p.student).push(p);
   }
-  let updated = 0, newPlaceholders = 0;
+  let updated = 0, newPlaceholders = 0, newStudentPlaceholders = 0;
   for (const [studentName, pairs] of byStudent) {
-    const student = byName.get(studentName);
-    if (!student) continue;
+    let student = byName.get(studentName);
+    // 学生不在库内但师父在库内 → 为学生建占位（徒弟节点扩展师承网络）
+    if (!student) {
+      const pairWithLibMaster = pairs.find(p => byName.has(p.master));
+      if (!pairWithLibMaster) continue;
+      const sid = 'mp-student-' + studentName + '-' + pairWithLibMaster.master;
+      student = { id: sid, name: studentName, isPlaceholder: true,
+        primaryCuisine: (byName.get(pairWithLibMaster.master)||{}).primaryCuisine || '其他',
+        title: pairs[0].title || '师门弟子', source: pairs[0].source, bio: null };
+      merged.push(student);
+      byName.set(studentName, student);
+      byId.set(sid, student);
+      newStudentPlaceholders++;
+    }
     if (student.master || (student.masters && student.masters.length > 0)) continue;
     const chips = [];
     for (const p of pairs) {
@@ -388,7 +400,7 @@ const result = {
   stats.placeholders = stats.totalChefs - stats.realChefs;
   stats.withMaster = merged.filter(c => c.master || (c.masters && c.masters.length > 0)).length;
   console.log(`\n=== 师承合并 ===`);
-  console.log(`师承源对: ${bestPair.size} · 更新厨师: ${updated} · 新建占位师父: ${newPlaceholders}`);
+  console.log(`师承源对: ${bestPair.size} · 更新厨师: ${updated} · 新建占位师父: ${newPlaceholders} · 新建占位学生: ${newStudentPlaceholders}`);
   console.log(`有师承: ${stats.withMaster} / 实人 ${stats.realChefs} (${(stats.withMaster/stats.realChefs*100).toFixed(1)}%)`);
 })();
 
