@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T14:06:33.430Z",
+  "generatedAt": "2026-06-21T23:55:53.147Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json + 师承源",
   "cuisineNormalized": {
     "川菜": "川",
@@ -1569,7 +1569,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "source": null,
       "bio": "长沙县人，长沙议会西街挹爽楼酒店厨师，1917 年起带学徒舒桂卿入行，是民国长沙湘菜师承谱系上溯到的源头之一。",
       "referencedBy": null,
       "_origin": "cuisine-xiang.json"
@@ -1638,7 +1638,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "source": null,
       "bio": "民国时期长沙湘菜'四大名厨'之一（与萧荣华、柳三和、毕和清并称），潇湘酒家主厨，工于精细筵席与刀工，对舒桂卿等后辈影响深远。",
       "referencedBy": null,
       "_origin": "cuisine-xiang.json"
@@ -1672,7 +1672,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "source": null,
       "bio": "民国湘菜四大名厨之一，玉楼东早期掌勺名厨，麻辣子鸡的关键改良者，奠定玉楼东精细传统湘菜格局。",
       "referencedBy": null,
       "_origin": "cuisine-xiang.json"
@@ -1739,7 +1739,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "source": null,
       "bio": "民国湘菜四大名厨之一，曲园酒家名厨，工于湘式筵席的网油卷、酥皮等高难技法。",
       "referencedBy": null,
       "_origin": "cuisine-xiang.json"
@@ -1807,7 +1807,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "source": null,
       "bio": "长沙县谷塘乡人，13 岁拜挹爽楼胡辉先学厨，人称'北门师傅'。后辗转奇珍阁、潇湘酒家，主动求得宋善斋点拨，是民国走入新中国的桥梁名厨。",
       "referencedBy": null,
       "_origin": "cuisine-xiang.json"
@@ -19416,7 +19416,7 @@
         "2025-07 升任扬州大学旅游烹饪学院院长"
       ],
       "portrait": null,
-      "source": "扬州大学教师个人主页 + 扬州大学官网",
+      "source": "https://teacher.yzu.edu.cn/MXR1/zh_CN/index.htm",
       "bio": "扬州大学旅游烹饪学院现任院长，正高级教授。主攻中式菜肴工业化、预制菜与淮扬菜非遗传承。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19462,7 +19462,7 @@
         "创立赤香、南贝、银芭三个高端川菜品牌"
       ],
       "portrait": "https://www.sctu.edu.cn/__local/4/FB/B3/46B9BC5AD4ADDDF172274F91BC5_8435311A_127B5.jpg",
-      "source": "四川旅游学院官网 + 中国非遗网",
+      "source": "https://www.sctu.edu.cn/info/1494/40091.htm",
       "bio": "川菜国家级非遗代表性传承人（2024 年入选第六批），川菜学院派代表人物。四川旅游学院从教 40 年，2025 年《百厨大战》夺冠。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19550,7 +19550,7 @@
         "牵头国家级非遗项目'川菜烹饪技艺'保护与传承研究"
       ],
       "portrait": null,
-      "source": "四川旅游学院官网 + 百度百科",
+      "source": "https://baike.baidu.com/item/%E5%8D%A2%E4%B8%80/3299469",
       "bio": "四川旅游学院前校长、二级教授。长期推动川菜产业、川菜非遗申报与川菜教材编写工作。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19593,7 +19593,7 @@
         "2018 人社部职业能力建设司聘为烹饪职业技能专家"
       ],
       "portrait": "https://www.sctu.edu.cn/__local/6/2E/B0/55A127889E2A94F7713837C1DE3_FC0EF3D7_28858.png",
-      "source": "四川旅游学院官网",
+      "source": "https://www.sctu.edu.cn/info/1330/1244.htm",
       "bio": "四川旅游学院双师双能青年才俊。世界中餐烹饪大赛金奖得主，专攻川菜国际化与中西融合，被世厨联（WCAS）评为全国仅有两位之一的烹饪无国界大使。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19632,7 +19632,7 @@
         "现任烹饪职业教育学院院长"
       ],
       "portrait": null,
-      "source": "四川旅游学院官网",
+      "source": "http://www.sctu.edu.cn/pryspkxgcxy/info/1043/2031.htm",
       "bio": "四川旅游学院烹饪职业教育学院院长，省级天府名厨，省级双师型名师工作室领办人。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19681,7 +19681,7 @@
         "受邀走进联合国总部表演厨艺"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/f0/69/374dcc6a4003b23149c1a17f17c8/6f902eef-31c3-43bb-ba21-26ee84ab6140.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/a5/24/c8536a238884/page.htm",
       "bio": "湖北天门人，楚菜旗帜性人物，全国劳动模范。师承楚菜名宿黄昌祥，1987 年毕业于扬州大学中国烹饪系，研制'海参武昌鱼'等多道湖北名菜，编著《中国烹饪大师卢永良作品精粹》等数十部专著。",
       "referencedBy": null,
       "_origin": "academy-chefs.json",
@@ -19740,7 +19740,7 @@
         "曾任武汉湖锦娱乐发展有限责任公司副总经理/出品总监"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/f1/73/8eb513424e47b2288484d99d5082/83ceeb82-9b62-4ba3-a751-cd86f00daea8.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/a5/23/c8536a238883/page.htm",
       "bio": "湖北武汉籍楚菜大师。1988 年全国烹饪大赛金奖、2000 年东京世赛冷盘金奖。湖北省非遗武昌鱼制作技艺传承人，主编多部国家规划教材。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19793,7 +19793,7 @@
         "著《中国武昌鱼》（卢永良任顾问）"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/d4/35/db8d524a49cc92d8a31d8c38e276/fa0b0220-ef06-4d78-8d4b-62b1266ed251.jpg",
-      "source": "湖北经济学院楚菜研究院 + 百度百科",
+      "source": "https://ccyjy.hbue.edu.cn/",
       "bio": "鄂菜中青年代表、武昌鱼省级非遗传承人。从餐馆学徒成长为大学教授，现任湖北楚菜研究院院长，国家技能大师工作室领办人。",
       "referencedBy": null,
       "_origin": "academy-chefs.json",
@@ -19845,7 +19845,7 @@
         "2005 湖北省人民政府授予十大鄂菜大师"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/41/11/f3442f124422a47b24d1e4034884/22752884-4685-450c-a2b8-d39a67de66d4.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/a5/22/c8547a238882/page.htm",
       "bio": "第四代'鮰鱼大王'。被誉为'厨房里的文化人、厨师中的艺术家'，2014 年获中国烹饪大师终身成就奖。武汉商学院客座教授，老大兴园鮰鱼制作技艺省级非遗传承人。",
       "referencedBy": null,
       "_origin": "academy-chefs.json",
@@ -19912,7 +19912,7 @@
         "2000 后回校任烹饪与食品工程学院副院长"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/e1/8c/8892d27d4d8dbddd7564882c1f9b/f00b84ca-c7e3-46fd-a2d1-75c1bdfd6cc8.jpg",
-      "source": "湖北经济学院楚菜研究院 + 武汉商学院",
+      "source": "https://ccyjy.hbue.edu.cn/a5/21/c8547a238881/page.htm",
       "bio": "武汉商学院烹饪学院原副院长，从教 42 年。十余道菜品获省部级以上烹饪大赛金奖，开创武汉时尚菜肴餐饮模式。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19962,7 +19962,7 @@
         "多次为中国南极科考站组织厨务人员"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/f6/2b/24aa9fbd403fa32c62a97534e357/fe37054e-b35e-4ea8-8fa2-773764712861.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/a5/1d/c8547a238877/page.htm",
       "bio": "武汉商学院烹饪学院名誉院长，餐饮职业教育 40 年。首创'因岗施教、梯级递进'教学观念，主持完成《寺庙斋菜及其食疗保健研究》《鄂菜产业化发展》等课题。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -19999,7 +19999,7 @@
         "与卢永良、孙昌弼、涂建国并称楚菜功勋大师"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/65/22/aa4b67124b41a2a45fdff708634b/857d9631-2653-4f5c-896e-2ebea665cfcc.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8547/list.htm",
       "bio": "楚菜功勋大师之一，与卢永良、孙昌弼、涂建国共同领衔楚大厨团队。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20064,7 +20064,7 @@
       "signatureDetails": null,
       "experiences": [],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/ae/12/fa956a9a443e8a0ad3e30609bb7f/24ff241e-d7c2-49f9-8166-9f49cbd74259.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8547/list.htm",
       "bio": "湖北楚菜研究院特聘大师之一。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20097,7 +20097,7 @@
       "signatureDetails": null,
       "experiences": [],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/92/a2/76829d6548a0af6a4c45b0dbb415/650178a1-69a1-46f3-b85d-7ce19de3bac1.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8547/list.htm",
       "bio": "湖北楚菜研究院特聘大师。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20132,7 +20132,7 @@
       "signatureDetails": null,
       "experiences": [],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/7f/ac/3c12f6584364a41bffdaafd13a07/a6d38b2f-46e8-4eb8-9c34-4c9b303ec9f5.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8547/list.htm",
       "bio": "湖北楚菜研究院特聘女大师，主攻楚菜面点。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20165,7 +20165,7 @@
       "signatureDetails": null,
       "experiences": [],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/98/80/32beabdf4f0eafadadb211a3087d/ccdac04c-3be6-42e6-be7d-d7a4cd12a014.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8547/list.htm",
       "bio": "湖北楚菜研究院特聘女大师。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20198,7 +20198,7 @@
       "signatureDetails": null,
       "experiences": [],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/60/8b/c74f4c3e42778b689690b1f51780/cf98dcf4-52ba-4556-95e1-97d45a7b1d2e.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8547/list.htm",
       "bio": "湖北楚菜研究院特聘大师。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20231,7 +20231,7 @@
       "signatureDetails": null,
       "experiences": [],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/9b/b8/2dee578e4b8d9a6be7b18cdc9569/744cdb03-afb2-4f61-ae6a-67c27ebb83d9.png",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8547/list.htm",
       "bio": "湖北楚菜研究院特聘女大师。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20268,7 +20268,7 @@
         "1971 年收卢永良为徒"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/32/a8/e6627d224b3cb6408fa32208f631/d568b133-e2e7-43db-ae16-aa82e9159d3c.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8548/list.htm",
       "bio": "楚菜元老级大师，卢永良的师父，武昌大中华酒楼名师。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20307,7 +20307,7 @@
         "孙昌弼师父"
       ],
       "portrait": "https://ccyjy.hbue.edu.cn/_upload/article/images/1e/fc/48294a664022a573d3563571a0e7/46439c8e-400b-454a-867c-b1e289697d1a.jpg",
-      "source": "湖北经济学院楚菜研究院",
+      "source": "https://ccyjy.hbue.edu.cn/8548/list.htm",
       "bio": "第三代'鮰鱼大王'，老大兴园鮰鱼制作技艺传承人，孙昌弼师父。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20351,7 +20351,7 @@
         "服务南极科考十余年，研发'楚汉全席'极地菜单"
       ],
       "portrait": null,
-      "source": "武汉商学院官网",
+      "source": "https://www.wbu.edu.cn/2021/1230/c2194a64145/page.htm",
       "bio": "武汉商学院食品科技学院党委书记、教授、中国烹饪大师。长期带队服务南极科考站，推动鄂菜更名楚菜。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -20392,7 +20392,7 @@
         "推动东北高校烹饪本科教育改革"
       ],
       "portrait": "http://lyprxy.hrbcu.edu.cn/__local/9/6B/94/57C4D04962A9A1C9B8FE088C9AB_75E68331_35A5.jpg",
-      "source": "哈尔滨商业大学旅游烹饪学院",
+      "source": "http://lyprxy.hrbcu.edu.cn/info/1778/1464.htm",
       "bio": "哈尔滨商业大学旅游烹饪学院二级教授（原院长），国务院特殊津贴专家。烹饪高等教育改革重要推动者，曾在多次全国烹饪本科教育研讨会上发声。",
       "referencedBy": null,
       "_origin": "academy-chefs.json"
@@ -26273,7 +26273,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-master-季军-王荫",
+      "master": "cyxh-yuanlao-159",
       "era": null,
       "birth": null,
       "death": null,
@@ -26301,7 +26301,7 @@
       "_origin": "cyxh-crawled2.json",
       "masters": [
         {
-          "name": "王荫"
+          "name": "王荫曾"
         }
       ],
       "masterIds": []
@@ -36332,7 +36332,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-master-刘国平-江苏淮安",
+      "master": null,
       "era": "当代",
       "birth": 1968,
       "death": null,
@@ -36356,11 +36356,6 @@
       "bio": " 刘国平，男，汉族，1968年9月生，江苏淮安人，中式面点技师，国家名厨，中国点心大师。师承江苏淮安名厨毛玉平大师，从事餐饮工作38年，他精通中式面点技艺，擅长淮扬菜的制作，在制作各种包点和",
       "referencedBy": null,
       "_origin": "cyxh-list-crawled.json",
-      "masters": [
-        {
-          "name": "江苏淮安"
-        }
-      ],
       "masterIds": []
     },
     {
@@ -39827,7 +39822,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": "https://cswzg.com/mc/5230.html",
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -39929,7 +39924,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": "https://cswzg.com/mc/5227.html",
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -39962,7 +39957,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": "https://cswzg.com/mc/5226.html",
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40166,7 +40161,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": "https://cswzg.com/mc/5213.html",
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40302,7 +40297,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": "https://cswzg.com/mc/5206.html",
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40335,7 +40330,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40437,7 +40432,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": "https://cswzg.com/mc/5202.html",
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40606,7 +40601,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40639,7 +40634,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40672,7 +40667,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40813,7 +40808,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40846,7 +40841,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40927,7 +40922,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -40960,7 +40955,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41072,7 +41067,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41260,7 +41255,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41293,7 +41288,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41326,7 +41321,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41439,7 +41434,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41472,7 +41467,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41505,7 +41500,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41572,7 +41567,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41647,7 +41642,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41680,7 +41675,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41756,7 +41751,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41824,7 +41819,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41857,7 +41852,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41890,7 +41885,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41923,7 +41918,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41956,7 +41951,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -41989,7 +41984,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42022,7 +42017,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42055,7 +42050,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42088,7 +42083,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42196,7 +42191,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42476,7 +42471,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42509,7 +42504,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42575,7 +42570,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -42647,7 +42642,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43034,7 +43029,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "http://m.0515msw.com",
+      "source": "https://cswzg.com/news/top/5364.html",
       "bio": "江苏盐城人。1993年入行。历时六年徒步西乡各地，撰写近四万字《舌尖上的西乡》。致力于推广盐城西乡土菜。",
       "referencedBy": null,
       "_origin": "cswzg-fills-a.json"
@@ -43067,7 +43062,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43145,7 +43140,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43329,7 +43324,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43712,7 +43707,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43745,7 +43740,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43820,7 +43815,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43922,7 +43917,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -43955,7 +43950,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -44021,7 +44016,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -44124,7 +44119,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -44157,7 +44152,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -44461,7 +44456,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -44494,7 +44489,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -44782,7 +44777,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -44955,7 +44950,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45058,7 +45053,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45129,7 +45124,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45286,7 +45281,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45319,7 +45314,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45505,7 +45500,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45538,7 +45533,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45571,7 +45566,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45641,7 +45636,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -45674,7 +45669,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -46262,7 +46257,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -46339,7 +46334,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -46476,7 +46471,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -46640,7 +46635,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -46749,7 +46744,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -46848,7 +46843,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -47061,7 +47056,7 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
+      "source": null,
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
@@ -54750,18 +54745,6 @@
       ]
     },
     {
-      "id": "mp-master-季军-王荫",
-      "name": "王荫",
-      "isPlaceholder": true,
-      "primaryCuisine": "粤",
-      "title": "师承援引",
-      "source": "http://www.mingchu.org/mingchu/dangdai/251.html",
-      "bio": null,
-      "referencedBy": [
-        "季军"
-      ]
-    },
-    {
       "id": "mp-master-孙学民-吴长江",
       "name": "吴长江",
       "isPlaceholder": true,
@@ -54819,18 +54802,6 @@
       "bio": null,
       "referencedBy": [
         "文小康"
-      ]
-    },
-    {
-      "id": "mp-master-刘国平-江苏淮安",
-      "name": "江苏淮安",
-      "isPlaceholder": true,
-      "primaryCuisine": "淮扬",
-      "title": "师承援引",
-      "source": "http://www.mingchu.org/mingchu/dangdai/1072.html",
-      "bio": null,
-      "referencedBy": [
-        "刘国平"
       ]
     },
     {
@@ -55834,10 +55805,10 @@
     }
   ],
   "stats": {
-    "totalChefs": 1472,
+    "totalChefs": 1470,
     "realChefs": 1236,
-    "placeholders": 236,
-    "withMaster": 306,
+    "placeholders": 234,
+    "withMaster": 305,
     "withMasterId": 160,
     "withSchool": 59,
     "withSignature": 381,

@@ -1,0 +1,138 @@
+{
+  "generated": "2026-06-21",
+  "totalRelationships": 12,
+  "description": "从共享cyxh/mingchu详情页提取的师承关系。共享页面通常是学生传记提及师父, 两人共享同一URL。",
+  "dataIssues": [
+    {
+      "name": "王荫",
+      "id": "mp-master-季军-王荫",
+      "issue": "name被截断, 正确应为\"王荫曾\"",
+      "fix": "将name从\"王荫\"改为\"王荫曾\""
+    },
+    {
+      "name": "江苏淮安",
+      "id": "mp-master-刘国平-江苏淮安",
+      "issue": "地名\"江苏淮安\"被误解析为厨师名, 应删除此placeholder条目",
+      "fix": "删除该条目, 刘国平的master设为null或待查"
+    }
+  ],
+  "masters": [
+    {
+      "page": "http://www.cyxh.org/mingchu/mianhuai/361.html",
+      "student": "翟耀民",
+      "studentId": "auto-翟耀民-陕西",
+      "master": "于宝棋",
+      "masterId": "auto-于宝棋-陕西",
+      "relationship": "翟耀民1956年师从于宝棋",
+      "source": "cyxh缅怀页面"
+    },
+    {
+      "page": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "students": [
+        "张松云",
+        "孔道生",
+        "曾国华"
+      ],
+      "studentIds": [
+        "auto-张松云-川",
+        "auto-孔道生-川",
+        "auto-曾国华-川"
+      ],
+      "master": "蓝光鉴",
+      "masterId": "auto-蓝光鉴-川",
+      "relationship": "三人均师从蓝光鉴(荣乐园), 为师兄弟关系",
+      "source": "cyxh联合缅怀页面"
+    },
+    {
+      "page": "http://www.cyxh.org/mingchu/zishen/134.html",
+      "student": "邢文喜",
+      "studentId": "auto-邢文喜-淮扬",
+      "master": "萧玉斌",
+      "masterId": "auto-萧玉斌-淮扬",
+      "relationship": "邢文喜师承萧玉斌学习淮扬菜",
+      "source": "cyxh资深名厨页面"
+    },
+    {
+      "page": "http://www.cyxh.org/mingchu/dangdai/49.html",
+      "student": "孙常胜",
+      "studentId": "auto-孙常胜-满汉全席",
+      "master": "薛文俊",
+      "masterId": "auto-薛文俊-宫廷",
+      "relationship": "孙常胜师承薛文俊(北京御锦厨皇)",
+      "source": "cyxh当代名厨页面"
+    },
+    {
+      "page": "http://www.mingchu.org/mingchu/dangdai/1209.html",
+      "student": "展猛",
+      "studentId": "auto-展猛-淮扬",
+      "master": "朱永建",
+      "masterId": "auto-朱永建-淮扬",
+      "relationship": "展猛师承朱永建",
+      "source": "mingchu当代名厨页面"
+    },
+    {
+      "page": "http://www.mingchu.org/mingchu/dangdai/1010.html",
+      "student": "石俊峰",
+      "studentId": "auto-石俊峰-宫廷",
+      "master": "李晓静",
+      "masterId": "auto-李晓静-宫廷",
+      "relationship": "石俊峰师承李晓静学习宫廷寿宴",
+      "source": "mingchu当代名厨页面"
+    },
+    {
+      "page": "http://www.cyxh.org/mingchu/dangdai/763.html",
+      "student": "文小康",
+      "studentId": "auto-文小康-京鲁",
+      "master": "潘仕琪",
+      "masterId": "auto-潘仕琪-京鲁",
+      "relationship": "文小康师从潘仕琪",
+      "source": "cyxh当代名厨页面"
+    },
+    {
+      "page": "http://www.mingchu.org/mingchu/dangdai/251.html",
+      "student": "季军",
+      "studentId": "auto-季军-淮扬",
+      "master": "王荫曾",
+      "masterId": "auto-王荫曾-淮扬",
+      "relationship": "季军师从王荫曾",
+      "note": "数据中\"王荫\"为\"王荫曾\"的截断, 需修正name",
+      "source": "mingchu当代名厨页面"
+    },
+    {
+      "page": "http://www.mingchu.org/mingchu/dangdai/294.html",
+      "student": "孙学民",
+      "studentId": "auto-孙学民-东北",
+      "master": "吴长江",
+      "masterId": "auto-吴长江-东北",
+      "relationship": "孙学民1996年拜吴长江为师",
+      "source": "mingchu当代名厨页面"
+    },
+    {
+      "page": "http://www.mingchu.org/mingchu/dangdai/304.html",
+      "student": "刘玉平",
+      "studentId": "auto-刘玉平-盐帮",
+      "master": "张经羿",
+      "masterId": "auto-张经羿-盐帮",
+      "relationship": "刘玉平师承张经羿(张经翌)",
+      "source": "mingchu当代名厨页面"
+    },
+    {
+      "page": "http://www.mingchu.org/mingchu/dangdai/330.html",
+      "student": "巩道伟",
+      "studentId": "auto-巩道伟-鲁",
+      "master": "房泽利",
+      "masterId": "auto-房泽利-鲁",
+      "relationship": "巩道伟师从房泽利",
+      "source": "mingchu当代名厨页面"
+    },
+    {
+      "page": "http://www.mingchu.org/mingchu/dangdai/1072.html",
+      "student": "刘国平",
+      "studentId": "auto-刘国平-淮扬",
+      "master": null,
+      "relationship": null,
+      "note": "页面被共享但\"江苏淮安\"是解析错误(地名被当作人名), 应删除该placeholder",
+      "source": "mingchu当代名厨页面"
+    }
+  ]
+}

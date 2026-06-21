@@ -2,56 +2,529 @@
   "cuisine": "湘",
   "cuisineEn": "Xiang",
   "schools": [
-    { "key": "xiang-jiang", "stamp": "湘", "name": "湘江流域", "subName": "长沙菜", "en": "XIANG-JIANG", "region": "长沙·湘潭·株洲", "styles": ["精细", "筵席", "酸辣"], "desc": "以长沙为中心，湘菜主流。讲究刀工与底味，'酸辣香鲜、软嫩入味'，剁椒鱼头、东安鸡、组庵豆腐为代表，玉楼东、火宫殿、又一村、曲园等老字号汇聚。" },
-    { "key": "dong-ting-hu", "stamp": "庭", "name": "洞庭湖区", "subName": "湖鲜筵席", "en": "DONG-TING-HU", "region": "岳阳·常德·益阳", "styles": ["湖鲜", "煨炖", "豪放"], "desc": "以洞庭湖水产为核心，'洞庭天下水，岳阳天下菜'，长于煨、炖、腊、蒸；银鱼、火焙鱼、巴陵全鱼席、岳阳虾尾为代表。" },
-    { "key": "xiang-xi-shan", "stamp": "西", "name": "湘西山区", "subName": "土家苗寨", "en": "XIANG-XI-SHAN", "region": "吉首·张家界·凤凰", "styles": ["山珍", "腊味", "酸辣"], "desc": "湘西土家、苗族饮食影响深远，重腊味与酸坛；血粑鸭、土家三下锅、酸汤鱼、腊肉炒蕨菜为代表，澧水码头菜亦归此脉。" }
+    {
+      "key": "xiang-jiang",
+      "stamp": "湘",
+      "name": "湘江流域",
+      "subName": "长沙菜",
+      "en": "XIANG-JIANG",
+      "region": "长沙·湘潭·株洲",
+      "styles": [
+        "精细",
+        "筵席",
+        "酸辣"
+      ],
+      "desc": "以长沙为中心，湘菜主流。讲究刀工与底味，'酸辣香鲜、软嫩入味'，剁椒鱼头、东安鸡、组庵豆腐为代表，玉楼东、火宫殿、又一村、曲园等老字号汇聚。"
+    },
+    {
+      "key": "dong-ting-hu",
+      "stamp": "庭",
+      "name": "洞庭湖区",
+      "subName": "湖鲜筵席",
+      "en": "DONG-TING-HU",
+      "region": "岳阳·常德·益阳",
+      "styles": [
+        "湖鲜",
+        "煨炖",
+        "豪放"
+      ],
+      "desc": "以洞庭湖水产为核心，'洞庭天下水，岳阳天下菜'，长于煨、炖、腊、蒸；银鱼、火焙鱼、巴陵全鱼席、岳阳虾尾为代表。"
+    },
+    {
+      "key": "xiang-xi-shan",
+      "stamp": "西",
+      "name": "湘西山区",
+      "subName": "土家苗寨",
+      "en": "XIANG-XI-SHAN",
+      "region": "吉首·张家界·凤凰",
+      "styles": [
+        "山珍",
+        "腊味",
+        "酸辣"
+      ],
+      "desc": "湘西土家、苗族饮食影响深远，重腊味与酸坛；血粑鸭、土家三下锅、酸汤鱼、腊肉炒蕨菜为代表，澧水码头菜亦归此脉。"
+    }
   ],
   "chefs": [
-    { "id": "x001", "name": "胡辉先", "gen": 1, "master": null, "era": "清末民初", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "挹爽楼", "position": "名厨", "signature": ["传统长沙筵席"], "birth": 1875, "death": 1940, "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html", "bio": "长沙县人，长沙议会西街挹爽楼酒店厨师，1917 年起带学徒舒桂卿入行，是民国长沙湘菜师承谱系上溯到的源头之一。" },
-
-    { "id": "x002", "name": "曹荩臣", "gen": 1, "master": null, "era": "近代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "谭府·健乐园", "position": "组庵菜创立者", "signature": ["组庵豆腐", "组庵鱼翅", "组庵鸡"], "birth": 1875, "death": 1945, "source": "https://baike.baidu.com/item/%E7%BB%84%E5%BA%B5%E6%B9%98%E8%8F%9C/19852577", "bio": "长沙东乡名厨，1922 年被谭延闿聘为家厨，因排行老四人称'曹四'，被誉一时无两的'天下第一厨师'。在谭延闿点拨下创立组庵湘菜，后于坡子街开健乐园，奠定湘菜官府菜路线。" },
-
-    { "id": "x003", "name": "宋善斋", "gen": 1, "master": null, "era": "近代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "潇湘酒家", "position": "民国湘菜四大名厨", "signature": ["发丝百叶", "麻仁鸽蛋"], "birth": 1885, "death": 1960, "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html", "bio": "民国时期长沙湘菜'四大名厨'之一（与萧荣华、柳三和、毕和清并称），潇湘酒家主厨，工于精细筵席与刀工，对舒桂卿等后辈影响深远。" },
-
-    { "id": "x004", "name": "萧荣华", "gen": 1, "master": null, "era": "近代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "玉楼东", "position": "民国湘菜四大名厨", "signature": ["麻辣子鸡", "东安鸡"], "birth": 1882, "death": 1958, "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html", "bio": "民国湘菜四大名厨之一，玉楼东早期掌勺名厨，麻辣子鸡的关键改良者，奠定玉楼东精细传统湘菜格局。" },
-
-    { "id": "x005", "name": "柳三和", "gen": 1, "master": null, "era": "近代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "天乐居", "position": "民国湘菜四大名厨", "signature": ["柳氏全鱼席"], "birth": 1880, "death": 1955, "source": "https://hn.rednet.cn/content/2020/05/30/7302176.html", "bio": "民国湘菜'四大名厨'之一，人称'柳厨子'，与曹荩臣'曹厨子'并称长沙烹界双雄。" },
-
-    { "id": "x006", "name": "毕和清", "gen": 1, "master": null, "era": "近代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "曲园酒家", "position": "民国湘菜四大名厨", "signature": ["毛笔酥", "网油叉烧洞庭桂鱼"], "birth": 1888, "death": 1962, "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html", "bio": "民国湘菜四大名厨之一，曲园酒家名厨，工于湘式筵席的网油卷、酥皮等高难技法。" },
-
-    { "id": "x007", "name": "谭奚庭", "gen": 2, "master": null, "era": "民国", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "玉楼东", "position": "玉楼东主理人", "signature": ["奚菜", "奚点"], "birth": 1890, "death": 1955, "source": "http://www.hunan.gov.cn/jxxx/hxwh/cwd/201711/t20171111_4685379.html", "bio": "玉楼东主理人之一，所制湘菜、湘点被时人冠以'奚菜''奚点'，擅长经营管理，将玉楼东推上正宗湘菜发源地的地位。" },
-
-    { "id": "x008", "name": "舒桂卿", "gen": 2, "master": "x001", "era": "近代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "奇珍阁·潇湘酒家", "position": "北门师傅", "signature": ["软炸里脊", "汤泡肚尖"], "birth": 1904, "death": 1985, "source": "https://www.hunantoday.cn/news/xhn/201612/14449808.html", "bio": "长沙县谷塘乡人，13 岁拜挹爽楼胡辉先学厨，人称'北门师傅'。后辗转奇珍阁、潇湘酒家，主动求得宋善斋点拨，是民国走入新中国的桥梁名厨。" },
-
-    { "id": "x009", "name": "彭长贵", "gen": 2, "master": "x002", "era": "近代/当代", "primaryCuisine": "湘", "secondaryCuisines": ["国际中餐"], "school": "xiang-jiang", "crossMaster": null, "crossCuisine": "国际中餐", "city": "长沙·台北·纽约", "restaurant": "彭园餐厅", "position": "湘菜之神", "signature": ["左宗棠鸡", "彭家豆腐", "蜜汁火腿"], "birth": 1918, "death": 2016, "source": "https://baike.baidu.com/item/%E5%BD%AD%E9%95%BF%E8%B4%B5/56096503", "bio": "长沙沙坪人，1933 年拜入'天下第一厨师'曹荩臣门下，是其关门弟子，得组庵湘菜真传。后赴台创立彭园，1970 年代发明左宗棠鸡，将湘菜带入美国国宴与全美中餐主流，蒋经国、基辛格座上宾。", "crossNote": "曹荩臣关门弟子—把组庵湘菜带入台湾与美国主流中餐，使'左宗棠鸡'成为全球最知名湘菜" },
-
-    { "id": "x010", "name": "石荫祥", "gen": 2, "master": null, "era": "近代/当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "曲园酒家·玉楼东", "position": "湘菜泰斗 / 食神", "signature": ["发丝百叶", "组庵鱼翅", "麻仁鸽蛋"], "birth": 1917, "death": 2008, "source": "https://baike.baidu.com/item/%E7%9F%B3%E8%8D%AB%E7%A5%A5/4014546", "bio": "湖南长沙人，15 岁在曲园酒家做学徒，从厨 70 余年，'食神'之誉。湘菜领域第一位获官方授予'湘菜大师'称号者，著《湘菜集锦》四辑奠基现代湘菜典籍。曾为毛泽东掌勺，培养聂厚忠、谢正辉等领军人物。" },
-
-    { "id": "x011", "name": "毛寿松", "gen": 2, "master": null, "era": "近代/当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "玉楼东·火宫殿", "position": "湘菜名厨", "signature": ["传统油案"], "birth": 1920, "death": 1995, "source": "https://m.voc.com.cn/xhn/news/202008/17400044.html", "bio": "长沙湘菜名厨，1960—70 年代玉楼东与火宫殿油案技师，许菊云入行后正式拜其门下，是当代玉楼东系的核心师承节点。" },
-
-    { "id": "x012", "name": "王墨泉", "gen": 3, "master": null, "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "曲园酒家·墨泉峰味", "position": "湘菜泰斗", "signature": ["发丝牛百叶", "组庵鱼翅", "墨泉名菜系列"], "birth": 1944, "active": true, "source": "https://baike.baidu.com/item/%E7%8E%8B%E5%A2%A8%E6%B3%89/7429974", "bio": "湖南平江人，17 岁入行，从玉楼东到曲园酒家，1980 年破格升特一级厨师。中国元老级烹饪大师、湘菜大师，自创与改良湘菜超 400 道，弟子六代逾万人，2015 年收第 71 位关门弟子后宣布闭门。" },
-
-    { "id": "x013", "name": "许菊云", "gen": 3, "master": "x011", "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "玉楼东酒家", "position": "湘菜泰斗 / 总厨师长", "signature": ["发丝百叶", "玉楼东组庵菜", "麻辣子鸡"], "birth": 1948, "active": true, "source": "https://baike.baidu.com/item/%E8%AE%B8%E8%8F%8A%E4%BA%91/1895175", "bio": "长沙人，16 岁因家境辍学入火宫殿做学徒，师从湘菜名厨毛寿松；80 年代末任百年老店玉楼东总厨师长。中国烹饪大师、湘菜大师、全国人大代表，享国务院特殊津贴，嫡传弟子逾 200 人。" },
-
-    { "id": "x014", "name": "聂厚忠", "gen": 3, "master": "x010", "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙·常德", "restaurant": "蓉园宾馆·湘菜研究所", "position": "湘菜泰斗 / 研究大师", "signature": ["全家福", "蓉园筵席"], "birth": 1948, "active": true, "source": "https://www.hnhgzy.com/spyprjsxy/fczs/dggj/1985963206b74cb18e9958b2457550c5.htm", "bio": "湖南常德人，元老级中国烹饪大师、元老级湘菜大师、国家级评委。曾任湖南省委接待办蓉园宾馆副经理、湘菜研究所副所长，1997 年获授'湘菜大师'，被列为'当代湘菜十大领袖'之一。" },
-
-    { "id": "x015", "name": "张力行", "gen": 3, "master": null, "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "又一村", "position": "国家烹饪大师 / 湘点大师", "signature": ["湘式点心", "玉麟香腰系列"], "birth": 1947, "active": true, "source": "http://www.cmccx.cn/a/chujiexianfengmingrenbang/pengtanxianfeng/20130715/2021.html", "bio": "国家烹饪大师、湖南湘点大师、中式面点高级技师、又一村有限公司技术总监，2004 年被授'中国餐饮文化大师'，是湘点谱系当代代表。" },
-
-    { "id": "x016", "name": "徐大斌", "gen": 3, "master": null, "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "湘潭·韶山", "restaurant": "韶山宾馆", "position": "毛家菜传承第一人", "signature": ["毛氏红烧肉", "火焙鱼", "腊味合蒸"], "birth": 1960, "active": true, "source": "http://cyxh.org/mingchu/zishen/360.html", "bio": "17 岁学厨，从小学徒成为韶山宾馆副总经理兼行政总厨，被称'毛家菜传承第一人'。首批注册中国烹饪大师、中国湘菜大师、全国五一劳动奖章获得者，曾为 60 多位中央领导人与外国元首掌勺。" },
-
-    { "id": "x017", "name": "张小春", "gen": 4, "master": "x012", "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "湘江风光带·张小春师门", "position": "中国湘菜大师", "signature": ["全鸭宴", "湘式煨炖"], "birth": 1968, "active": true, "source": "https://hn.rednet.cn/content/2019/04/26/5394501.html", "bio": "王墨泉嫡传弟子，秉承师父对传统湘菜的执着，以'全鸭宴'惊艳业界，是王墨泉系当代代表性传承人之一。" },
-
-    { "id": "x018", "name": "刘中和", "gen": 4, "master": "x012", "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "长沙火宫殿·墨泉峰味", "position": "湘菜大师 / 火宫殿厨师长", "signature": ["火宫殿臭豆腐", "传统八大碗"], "birth": 1974, "active": true, "source": "https://www.hunantoday.cn/article/201805/201805221003133435.html", "bio": "王墨泉徒弟，长沙饮食集团火宫殿有限公司厨师长。2017 年获湖南省五一劳动奖章，火宫殿老字号当代核心传承人，亦任墨泉峰味总经理。" },
-
-    { "id": "x019", "name": "王伏明", "gen": 4, "master": "x014", "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "dong-ting-hu", "city": "长沙·益阳", "restaurant": "湖南省委接待处", "position": "中国烹饪大师", "signature": ["洞庭湖鱼宴", "南县小炒"], "birth": 1960, "active": true, "source": "https://www.hunantoday.cn/news/xhn/201901/14653232.html", "bio": "湖南南县人，厨龄 47 年，师从湘菜泰斗聂厚忠，亦得'食神'石荫祥亲授。中国烹饪大师、湘菜大师，曾供职湖南省委接待，洞庭湖鱼宴系列谱系传人。" },
-
-    { "id": "x020", "name": "黄邦伟", "gen": 4, "master": "x013", "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "玉楼东酒家", "position": "玉楼东特级厨师", "signature": ["麻辣子鸡", "玉楼东组庵系列"], "birth": 1965, "active": true, "source": "https://www.sohu.com/a/435012265_175852", "bio": "玉楼东特级厨师，许菊云嫡传弟子序列代表之一，许菊云之子许璨即师从其门下，是玉楼东系当代向第五代传承的关键节点。" },
-
-    { "id": "x021", "name": "王焰峰", "gen": 4, "master": "x012", "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "xiang-jiang", "city": "长沙", "restaurant": "墨泉峰味", "position": "墨泉峰味厨师长", "signature": ["传统功夫湘菜", "组庵筵席"], "birth": 1972, "active": true, "source": "https://wdhn.rednet.cn/content/646754/67/13191658.html", "bio": "王墨泉之子，墨泉峰味餐厅董事长兼厨师长，与父亲共同打造长沙真正意义上专做传统湘菜的'墨泉峰味'，是王墨泉系家族传承的直系节点。" },
-
-    { "id": "x030", "name": "杨晓杰", "gen": 3, "master": null, "era": "当代", "primaryCuisine": "湘", "secondaryCuisines": [], "school": "dong-ting-hu", "city": "岳阳", "restaurant": "细毛家宴", "position": "岳阳湘菜代表人物", "signature": ["洞庭湖鱼宴", "口味虾", "岳阳烧烤"], "birth": 1965, "active": true, "source": "https://m.voc.com.cn/xhn/news/202212/15296800.html", "bio": "'洞庭天下水，岳阳天下菜'，细毛家宴创始人，2022 湘菜十大年度人物。烹湖鲜、爆龙虾、炒土菜兼擅，是洞庭湖区湘菜走向品牌化的代表人物。" }
+    {
+      "id": "x001",
+      "name": "胡辉先",
+      "gen": 1,
+      "master": null,
+      "era": "清末民初",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "挹爽楼",
+      "position": "名厨",
+      "signature": [
+        "传统长沙筵席"
+      ],
+      "birth": 1875,
+      "death": 1940,
+      "source": "",
+      "bio": "长沙县人，长沙议会西街挹爽楼酒店厨师，1917 年起带学徒舒桂卿入行，是民国长沙湘菜师承谱系上溯到的源头之一。"
+    },
+    {
+      "id": "x002",
+      "name": "曹荩臣",
+      "gen": 1,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "谭府·健乐园",
+      "position": "组庵菜创立者",
+      "signature": [
+        "组庵豆腐",
+        "组庵鱼翅",
+        "组庵鸡"
+      ],
+      "birth": 1875,
+      "death": 1945,
+      "source": "https://baike.baidu.com/item/%E7%BB%84%E5%BA%B5%E6%B9%98%E8%8F%9C/19852577",
+      "bio": "长沙东乡名厨，1922 年被谭延闿聘为家厨，因排行老四人称'曹四'，被誉一时无两的'天下第一厨师'。在谭延闿点拨下创立组庵湘菜，后于坡子街开健乐园，奠定湘菜官府菜路线。"
+    },
+    {
+      "id": "x003",
+      "name": "宋善斋",
+      "gen": 1,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "潇湘酒家",
+      "position": "民国湘菜四大名厨",
+      "signature": [
+        "发丝百叶",
+        "麻仁鸽蛋"
+      ],
+      "birth": 1885,
+      "death": 1960,
+      "source": "",
+      "bio": "民国时期长沙湘菜'四大名厨'之一（与萧荣华、柳三和、毕和清并称），潇湘酒家主厨，工于精细筵席与刀工，对舒桂卿等后辈影响深远。"
+    },
+    {
+      "id": "x004",
+      "name": "萧荣华",
+      "gen": 1,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "玉楼东",
+      "position": "民国湘菜四大名厨",
+      "signature": [
+        "麻辣子鸡",
+        "东安鸡"
+      ],
+      "birth": 1882,
+      "death": 1958,
+      "source": "",
+      "bio": "民国湘菜四大名厨之一，玉楼东早期掌勺名厨，麻辣子鸡的关键改良者，奠定玉楼东精细传统湘菜格局。"
+    },
+    {
+      "id": "x005",
+      "name": "柳三和",
+      "gen": 1,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "天乐居",
+      "position": "民国湘菜四大名厨",
+      "signature": [
+        "柳氏全鱼席"
+      ],
+      "birth": 1880,
+      "death": 1955,
+      "source": "https://hn.rednet.cn/content/2020/05/30/7302176.html",
+      "bio": "民国湘菜'四大名厨'之一，人称'柳厨子'，与曹荩臣'曹厨子'并称长沙烹界双雄。"
+    },
+    {
+      "id": "x006",
+      "name": "毕和清",
+      "gen": 1,
+      "master": null,
+      "era": "近代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "曲园酒家",
+      "position": "民国湘菜四大名厨",
+      "signature": [
+        "毛笔酥",
+        "网油叉烧洞庭桂鱼"
+      ],
+      "birth": 1888,
+      "death": 1962,
+      "source": "",
+      "bio": "民国湘菜四大名厨之一，曲园酒家名厨，工于湘式筵席的网油卷、酥皮等高难技法。"
+    },
+    {
+      "id": "x007",
+      "name": "谭奚庭",
+      "gen": 2,
+      "master": null,
+      "era": "民国",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "玉楼东",
+      "position": "玉楼东主理人",
+      "signature": [
+        "奚菜",
+        "奚点"
+      ],
+      "birth": 1890,
+      "death": 1955,
+      "source": "http://www.hunan.gov.cn/jxxx/hxwh/cwd/201711/t20171111_4685379.html",
+      "bio": "玉楼东主理人之一，所制湘菜、湘点被时人冠以'奚菜''奚点'，擅长经营管理，将玉楼东推上正宗湘菜发源地的地位。"
+    },
+    {
+      "id": "x008",
+      "name": "舒桂卿",
+      "gen": 2,
+      "master": "x001",
+      "era": "近代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "奇珍阁·潇湘酒家",
+      "position": "北门师傅",
+      "signature": [
+        "软炸里脊",
+        "汤泡肚尖"
+      ],
+      "birth": 1904,
+      "death": 1985,
+      "source": "",
+      "bio": "长沙县谷塘乡人，13 岁拜挹爽楼胡辉先学厨，人称'北门师傅'。后辗转奇珍阁、潇湘酒家，主动求得宋善斋点拨，是民国走入新中国的桥梁名厨。"
+    },
+    {
+      "id": "x009",
+      "name": "彭长贵",
+      "gen": 2,
+      "master": "x002",
+      "era": "近代/当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [
+        "国际中餐"
+      ],
+      "school": "xiang-jiang",
+      "crossMaster": null,
+      "crossCuisine": "国际中餐",
+      "city": "长沙·台北·纽约",
+      "restaurant": "彭园餐厅",
+      "position": "湘菜之神",
+      "signature": [
+        "左宗棠鸡",
+        "彭家豆腐",
+        "蜜汁火腿"
+      ],
+      "birth": 1918,
+      "death": 2016,
+      "source": "https://baike.baidu.com/item/%E5%BD%AD%E9%95%BF%E8%B4%B5/56096503",
+      "bio": "长沙沙坪人，1933 年拜入'天下第一厨师'曹荩臣门下，是其关门弟子，得组庵湘菜真传。后赴台创立彭园，1970 年代发明左宗棠鸡，将湘菜带入美国国宴与全美中餐主流，蒋经国、基辛格座上宾。",
+      "crossNote": "曹荩臣关门弟子—把组庵湘菜带入台湾与美国主流中餐，使'左宗棠鸡'成为全球最知名湘菜"
+    },
+    {
+      "id": "x010",
+      "name": "石荫祥",
+      "gen": 2,
+      "master": null,
+      "era": "近代/当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "曲园酒家·玉楼东",
+      "position": "湘菜泰斗 / 食神",
+      "signature": [
+        "发丝百叶",
+        "组庵鱼翅",
+        "麻仁鸽蛋"
+      ],
+      "birth": 1917,
+      "death": 2008,
+      "source": "https://baike.baidu.com/item/%E7%9F%B3%E8%8D%AB%E7%A5%A5/4014546",
+      "bio": "湖南长沙人，15 岁在曲园酒家做学徒，从厨 70 余年，'食神'之誉。湘菜领域第一位获官方授予'湘菜大师'称号者，著《湘菜集锦》四辑奠基现代湘菜典籍。曾为毛泽东掌勺，培养聂厚忠、谢正辉等领军人物。"
+    },
+    {
+      "id": "x011",
+      "name": "毛寿松",
+      "gen": 2,
+      "master": null,
+      "era": "近代/当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "玉楼东·火宫殿",
+      "position": "湘菜名厨",
+      "signature": [
+        "传统油案"
+      ],
+      "birth": 1920,
+      "death": 1995,
+      "source": "https://m.voc.com.cn/xhn/news/202008/17400044.html",
+      "bio": "长沙湘菜名厨，1960—70 年代玉楼东与火宫殿油案技师，许菊云入行后正式拜其门下，是当代玉楼东系的核心师承节点。"
+    },
+    {
+      "id": "x012",
+      "name": "王墨泉",
+      "gen": 3,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "曲园酒家·墨泉峰味",
+      "position": "湘菜泰斗",
+      "signature": [
+        "发丝牛百叶",
+        "组庵鱼翅",
+        "墨泉名菜系列"
+      ],
+      "birth": 1944,
+      "active": true,
+      "source": "https://baike.baidu.com/item/%E7%8E%8B%E5%A2%A8%E6%B3%89/7429974",
+      "bio": "湖南平江人，17 岁入行，从玉楼东到曲园酒家，1980 年破格升特一级厨师。中国元老级烹饪大师、湘菜大师，自创与改良湘菜超 400 道，弟子六代逾万人，2015 年收第 71 位关门弟子后宣布闭门。"
+    },
+    {
+      "id": "x013",
+      "name": "许菊云",
+      "gen": 3,
+      "master": "x011",
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "玉楼东酒家",
+      "position": "湘菜泰斗 / 总厨师长",
+      "signature": [
+        "发丝百叶",
+        "玉楼东组庵菜",
+        "麻辣子鸡"
+      ],
+      "birth": 1948,
+      "active": true,
+      "source": "https://baike.baidu.com/item/%E8%AE%B8%E8%8F%8A%E4%BA%91/1895175",
+      "bio": "长沙人，16 岁因家境辍学入火宫殿做学徒，师从湘菜名厨毛寿松；80 年代末任百年老店玉楼东总厨师长。中国烹饪大师、湘菜大师、全国人大代表，享国务院特殊津贴，嫡传弟子逾 200 人。"
+    },
+    {
+      "id": "x014",
+      "name": "聂厚忠",
+      "gen": 3,
+      "master": "x010",
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙·常德",
+      "restaurant": "蓉园宾馆·湘菜研究所",
+      "position": "湘菜泰斗 / 研究大师",
+      "signature": [
+        "全家福",
+        "蓉园筵席"
+      ],
+      "birth": 1948,
+      "active": true,
+      "source": "https://www.hnhgzy.com/spyprjsxy/fczs/dggj/1985963206b74cb18e9958b2457550c5.htm",
+      "bio": "湖南常德人，元老级中国烹饪大师、元老级湘菜大师、国家级评委。曾任湖南省委接待办蓉园宾馆副经理、湘菜研究所副所长，1997 年获授'湘菜大师'，被列为'当代湘菜十大领袖'之一。"
+    },
+    {
+      "id": "x015",
+      "name": "张力行",
+      "gen": 3,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "又一村",
+      "position": "国家烹饪大师 / 湘点大师",
+      "signature": [
+        "湘式点心",
+        "玉麟香腰系列"
+      ],
+      "birth": 1947,
+      "active": true,
+      "source": "http://www.cmccx.cn/a/chujiexianfengmingrenbang/pengtanxianfeng/20130715/2021.html",
+      "bio": "国家烹饪大师、湖南湘点大师、中式面点高级技师、又一村有限公司技术总监，2004 年被授'中国餐饮文化大师'，是湘点谱系当代代表。"
+    },
+    {
+      "id": "x016",
+      "name": "徐大斌",
+      "gen": 3,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "湘潭·韶山",
+      "restaurant": "韶山宾馆",
+      "position": "毛家菜传承第一人",
+      "signature": [
+        "毛氏红烧肉",
+        "火焙鱼",
+        "腊味合蒸"
+      ],
+      "birth": 1960,
+      "active": true,
+      "source": "http://cyxh.org/mingchu/zishen/360.html",
+      "bio": "17 岁学厨，从小学徒成为韶山宾馆副总经理兼行政总厨，被称'毛家菜传承第一人'。首批注册中国烹饪大师、中国湘菜大师、全国五一劳动奖章获得者，曾为 60 多位中央领导人与外国元首掌勺。"
+    },
+    {
+      "id": "x017",
+      "name": "张小春",
+      "gen": 4,
+      "master": "x012",
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "湘江风光带·张小春师门",
+      "position": "中国湘菜大师",
+      "signature": [
+        "全鸭宴",
+        "湘式煨炖"
+      ],
+      "birth": 1968,
+      "active": true,
+      "source": "https://hn.rednet.cn/content/2019/04/26/5394501.html",
+      "bio": "王墨泉嫡传弟子，秉承师父对传统湘菜的执着，以'全鸭宴'惊艳业界，是王墨泉系当代代表性传承人之一。"
+    },
+    {
+      "id": "x018",
+      "name": "刘中和",
+      "gen": 4,
+      "master": "x012",
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "长沙火宫殿·墨泉峰味",
+      "position": "湘菜大师 / 火宫殿厨师长",
+      "signature": [
+        "火宫殿臭豆腐",
+        "传统八大碗"
+      ],
+      "birth": 1974,
+      "active": true,
+      "source": "https://www.hunantoday.cn/article/201805/201805221003133435.html",
+      "bio": "王墨泉徒弟，长沙饮食集团火宫殿有限公司厨师长。2017 年获湖南省五一劳动奖章，火宫殿老字号当代核心传承人，亦任墨泉峰味总经理。"
+    },
+    {
+      "id": "x019",
+      "name": "王伏明",
+      "gen": 4,
+      "master": "x014",
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "dong-ting-hu",
+      "city": "长沙·益阳",
+      "restaurant": "湖南省委接待处",
+      "position": "中国烹饪大师",
+      "signature": [
+        "洞庭湖鱼宴",
+        "南县小炒"
+      ],
+      "birth": 1960,
+      "active": true,
+      "source": "https://www.hunantoday.cn/news/xhn/201901/14653232.html",
+      "bio": "湖南南县人，厨龄 47 年，师从湘菜泰斗聂厚忠，亦得'食神'石荫祥亲授。中国烹饪大师、湘菜大师，曾供职湖南省委接待，洞庭湖鱼宴系列谱系传人。"
+    },
+    {
+      "id": "x020",
+      "name": "黄邦伟",
+      "gen": 4,
+      "master": "x013",
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "玉楼东酒家",
+      "position": "玉楼东特级厨师",
+      "signature": [
+        "麻辣子鸡",
+        "玉楼东组庵系列"
+      ],
+      "birth": 1965,
+      "active": true,
+      "source": "https://www.sohu.com/a/435012265_175852",
+      "bio": "玉楼东特级厨师，许菊云嫡传弟子序列代表之一，许菊云之子许璨即师从其门下，是玉楼东系当代向第五代传承的关键节点。"
+    },
+    {
+      "id": "x021",
+      "name": "王焰峰",
+      "gen": 4,
+      "master": "x012",
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "city": "长沙",
+      "restaurant": "墨泉峰味",
+      "position": "墨泉峰味厨师长",
+      "signature": [
+        "传统功夫湘菜",
+        "组庵筵席"
+      ],
+      "birth": 1972,
+      "active": true,
+      "source": "https://wdhn.rednet.cn/content/646754/67/13191658.html",
+      "bio": "王墨泉之子，墨泉峰味餐厅董事长兼厨师长，与父亲共同打造长沙真正意义上专做传统湘菜的'墨泉峰味'，是王墨泉系家族传承的直系节点。"
+    },
+    {
+      "id": "x030",
+      "name": "杨晓杰",
+      "gen": 3,
+      "master": null,
+      "era": "当代",
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "dong-ting-hu",
+      "city": "岳阳",
+      "restaurant": "细毛家宴",
+      "position": "岳阳湘菜代表人物",
+      "signature": [
+        "洞庭湖鱼宴",
+        "口味虾",
+        "岳阳烧烤"
+      ],
+      "birth": 1965,
+      "active": true,
+      "source": "https://m.voc.com.cn/xhn/news/202212/15296800.html",
+      "bio": "'洞庭天下水，岳阳天下菜'，细毛家宴创始人，2022 湘菜十大年度人物。烹湖鲜、爆龙虾、炒土菜兼擅，是洞庭湖区湘菜走向品牌化的代表人物。"
+    }
   ],
   "crossLinks": [
-    { "fromChef": "x009", "fromCuisine": "湘", "toChef": null, "toCuisine": "国际中餐", "note": "彭长贵 1933 年拜曹荩臣，将组庵湘菜带到台湾，1970 年代在台北彭园发明'左宗棠鸡'，经基辛格盛赞登《纽约时报》《华盛顿邮报》，成为美国最具代表性的中餐之一" }
+    {
+      "fromChef": "x009",
+      "fromCuisine": "湘",
+      "toChef": null,
+      "toCuisine": "国际中餐",
+      "note": "彭长贵 1933 年拜曹荩臣，将组庵湘菜带到台湾，1970 年代在台北彭园发明'左宗棠鸡'，经基辛格盛赞登《纽约时报》《华盛顿邮报》，成为美国最具代表性的中餐之一"
+    }
   ]
 }

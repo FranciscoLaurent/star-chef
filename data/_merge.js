@@ -317,6 +317,7 @@ const result = {
     { file: 'agent-masters-3.json',  tag: 'agent3', priority: 2 },
     { file: 'news-masters.json',     tag: 'news',   priority: 1 },
     { file: 'websearch-masters.json',tag: 'websearch', priority: 3 },
+    { file: 'agent-masters-2.json', tag: 'agent2', priority: 2 },
   ];
   const byName = new Map();
   const byId = new Map();

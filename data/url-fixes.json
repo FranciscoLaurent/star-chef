@@ -1,0 +1,1401 @@
+{
+  "generated": "2026-06-21",
+  "totalIssues": 199,
+  "fixed": 65,
+  "cleared": 134,
+  "fixes": [
+    {
+      "name": "唐朝都",
+      "id": "cswzg-012",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "https://cswzg.com/mc/5230.html",
+      "reason": "cswzg列表页->个人详情页(已确认)"
+    },
+    {
+      "name": "余日跃",
+      "id": "cswzg-015",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "https://cswzg.com/mc/5227.html",
+      "reason": "cswzg列表页->个人详情页(已确认)"
+    },
+    {
+      "name": "申文岭",
+      "id": "cswzg-016",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "https://cswzg.com/mc/5226.html",
+      "reason": "cswzg列表页->个人详情页(已确认)"
+    },
+    {
+      "name": "雷县武",
+      "id": "cswzg-022",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "https://cswzg.com/mc/5213.html",
+      "reason": "cswzg列表页->个人详情页(已确认)"
+    },
+    {
+      "name": "高守雷",
+      "id": "cswzg-026",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "https://cswzg.com/mc/5206.html",
+      "reason": "cswzg列表页->个人详情页(已确认)"
+    },
+    {
+      "name": "王子龙",
+      "id": "cswzg-027",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "祁发礼",
+      "id": "cswzg-030",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "https://cswzg.com/mc/5202.html",
+      "reason": "cswzg列表页->个人详情页(已确认)"
+    },
+    {
+      "name": "王栋",
+      "id": "cswzg-035",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "潘涛",
+      "id": "cswzg-036",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "杨振元",
+      "id": "cswzg-037",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "黄旻",
+      "id": "cswzg-041",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "张金耀",
+      "id": "cswzg-042",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "周钰",
+      "id": "cswzg-044",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "孙帅伟",
+      "id": "cswzg-045",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "何维国",
+      "id": "cswzg-048",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "黄春成",
+      "id": "cswzg-054",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "谢成飞",
+      "id": "cswzg-055",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "马光朋",
+      "id": "cswzg-056",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "熊世元",
+      "id": "cswzg-059",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "李健",
+      "id": "cswzg-061",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "黄超",
+      "id": "cswzg-062",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "孙宝密",
+      "id": "cswzg-065",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "尚书志",
+      "id": "cswzg-067",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "王鲁光",
+      "id": "cswzg-068",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "张辉伦",
+      "id": "cswzg-070",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "郑勇",
+      "id": "cswzg-072",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "董华盛",
+      "id": "cswzg-073",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "李亚培",
+      "id": "cswzg-074",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "武红春",
+      "id": "cswzg-075",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "何康",
+      "id": "cswzg-076",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "章绍波",
+      "id": "cswzg-077",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "李文龙",
+      "id": "cswzg-078",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "余胜利",
+      "id": "cswzg-079",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "张宝林",
+      "id": "cswzg-080",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "白二平",
+      "id": "cswzg-084",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "金来本",
+      "id": "cswzg-092",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "汪涵洋",
+      "id": "cswzg-093",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "金杰",
+      "id": "cswzg-095",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "邱春明",
+      "id": "cswzg-097",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "孙宇飞",
+      "id": "cswzg-108",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "吴本伟",
+      "id": "cswzg-110",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "孙登超",
+      "id": "cswzg-115",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "潘庆夫",
+      "id": "cswzg-128",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "谷金海",
+      "id": "cswzg-129",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "贾军涛",
+      "id": "cswzg-131",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "桂喜武",
+      "id": "cswzg-134",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "韩飞虎",
+      "id": "cswzg-135",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "刘春锐",
+      "id": "cswzg-137",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "戈国成",
+      "id": "cswzg-140",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "吴新池",
+      "id": "cswzg-141",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "贾帆涛",
+      "id": "cswzg-152",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "周世义",
+      "id": "cswzg-153",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "郝虎鸣",
+      "id": "cswzg-161",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "桑芊",
+      "id": "cswzg-168",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "杜京川",
+      "id": "cswzg-171",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "孙伟",
+      "id": "cswzg-173",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "陈全红",
+      "id": "cswzg-177",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "李青斌",
+      "id": "cswzg-178",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "杨再金",
+      "id": "cswzg-183",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "高建新",
+      "id": "cswzg-184",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "上官挺",
+      "id": "cswzg-185",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "高笼",
+      "id": "cswzg-187",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "茹海超",
+      "id": "cswzg-188",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "陆学枪",
+      "id": "cswzg-205",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "陈会连",
+      "id": "cswzg-207",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "王文革",
+      "id": "cswzg-212",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "涂启明",
+      "id": "cswzg-216",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "包煊茂",
+      "id": "cswzg-219",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "黄兴",
+      "id": "cswzg-222",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "赵彦飞",
+      "id": "cswzg-228",
+      "oldSource": "https://cswzg.com/news/top/5364.html",
+      "newSource": "",
+      "reason": "cswzg列表页非详情页: 无法确认个人详情页URL,宁缺毋滥置空"
+    },
+    {
+      "name": "尹振江",
+      "id": "mp-student-尹振江-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "史连勇",
+      "id": "mp-student-史连勇-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "安万国",
+      "id": "mp-student-安万国-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "于铁柱",
+      "id": "mp-student-于铁柱-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "王培根",
+      "id": "mp-student-王培根-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "顾九如",
+      "id": "mp-student-顾九如-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "赵新林",
+      "id": "mp-student-赵新林-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "董振祥",
+      "id": "mp-student-董振祥-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "张振纬",
+      "id": "mp-student-张振纬-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "曹志坚",
+      "id": "mp-student-曹志坚-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "尹亲林",
+      "id": "mp-student-尹亲林-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "王爱丽",
+      "id": "mp-student-王爱丽-王义均",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "杨春晖",
+      "id": "mp-student-杨春晖-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "孙华盛",
+      "id": "mp-student-孙华盛-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "李可",
+      "id": "mp-student-李可-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "王中伟",
+      "id": "mp-student-王中伟-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "陈义洪",
+      "id": "mp-student-陈义洪-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "段誉",
+      "id": "mp-student-段誉-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "杨占胜",
+      "id": "mp-student-杨占胜-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "杨朝辉",
+      "id": "mp-student-杨朝辉-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "杨杨",
+      "id": "mp-student-杨杨-屈浩",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "孙宪厚",
+      "id": "mp-student-孙宪厚-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "高新宇",
+      "id": "mp-student-高新宇-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "李钢",
+      "id": "mp-student-李钢-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "白小栋",
+      "id": "mp-student-白小栋-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "蔡春栓",
+      "id": "mp-student-蔡春栓-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "及玉林",
+      "id": "mp-student-及玉林-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "石秀松",
+      "id": "mp-student-石秀松-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "徐勃",
+      "id": "mp-student-徐勃-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "张朝晖",
+      "id": "mp-student-张朝晖-董振祥",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_14445670",
+      "reason": "澎湃新闻王义均师门专文(已确认)"
+    },
+    {
+      "name": "侯新庆",
+      "id": "mp-student-侯新庆-周晓燕",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周晓燕师门专文,宁缺毋滥置空"
+    },
+    {
+      "name": "郭长彬",
+      "id": "mp-student-郭长彬-周晓燕",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周晓燕师门专文,宁缺毋滥置空"
+    },
+    {
+      "name": "戚双喜",
+      "id": "mp-student-戚双喜-周晓燕",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周晓燕师门专文,宁缺毋滥置空"
+    },
+    {
+      "name": "陈万庆",
+      "id": "mp-student-陈万庆-周晓燕",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周晓燕师门专文,宁缺毋滥置空"
+    },
+    {
+      "name": "陶晓东",
+      "id": "mp-student-陶晓东-周晓燕",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周晓燕师门专文,宁缺毋滥置空"
+    },
+    {
+      "name": "洛扬",
+      "id": "mp-student-洛扬-周晓燕",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周晓燕师门专文,宁缺毋滥置空"
+    },
+    {
+      "name": "吴松德",
+      "id": "mp-student-吴松德-周晓燕",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周晓燕师门专文,宁缺毋滥置空"
+    },
+    {
+      "name": "周元昌",
+      "id": "mp-student-周元昌-李伯荣",
+      "oldSource": "thepaper.cn",
+      "newSource": "https://www.thepaper.cn/newsDetail_forward_16339524",
+      "reason": "澎湃新闻周元昌专文(已确认)"
+    },
+    {
+      "name": "罗友裕",
+      "id": "mp-student-罗友裕-周元昌",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周元昌师门学生专文,宁缺毋滥置空"
+    },
+    {
+      "name": "尹明玉",
+      "id": "mp-student-尹明玉-周元昌",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周元昌师门学生专文,宁缺毋滥置空"
+    },
+    {
+      "name": "徐俊",
+      "id": "mp-student-徐俊-周元昌",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周元昌师门学生专文,宁缺毋滥置空"
+    },
+    {
+      "name": "张晨",
+      "id": "mp-student-张晨-周元昌",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周元昌师门学生专文,宁缺毋滥置空"
+    },
+    {
+      "name": "李冬",
+      "id": "mp-student-李冬-周元昌",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周元昌师门学生专文,宁缺毋滥置空"
+    },
+    {
+      "name": "沈贤斌",
+      "id": "mp-student-沈贤斌-周元昌",
+      "oldSource": "thepaper.cn",
+      "newSource": "",
+      "reason": "澎湃新闻: 未找到周元昌师门学生专文,宁缺毋滥置空"
+    },
+    {
+      "name": "王富强",
+      "id": "mp-student-王富强-王义均",
+      "oldSource": "baike.baidu.com/王义均",
+      "newSource": "https://baike.baidu.com/item/%E7%8E%8B%E4%B9%89%E5%9D%87/5287594",
+      "reason": "补全https://前缀"
+    },
+    {
+      "name": "李启贵",
+      "id": "mp-student-李启贵-王义均",
+      "oldSource": "baike.baidu.com/王义均",
+      "newSource": "https://baike.baidu.com/item/%E7%8E%8B%E4%B9%89%E5%9D%87/5287594",
+      "reason": "补全https://前缀"
+    },
+    {
+      "name": "高速建",
+      "id": "mp-student-高速建-王义均",
+      "oldSource": "baike.baidu.com/王义均",
+      "newSource": "https://baike.baidu.com/item/%E7%8E%8B%E4%B9%89%E5%9D%87/5287594",
+      "reason": "补全https://前缀"
+    },
+    {
+      "name": "张保",
+      "id": "mp-student-张保-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "冯运富",
+      "id": "mp-student-冯运富-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "郝庆鸣",
+      "id": "mp-student-郝庆鸣-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "武学平",
+      "id": "mp-student-武学平-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "焦通常",
+      "id": "mp-student-焦通常-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "杜广军",
+      "id": "mp-student-杜广军-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "王运生",
+      "id": "mp-student-王运生-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "成国富",
+      "id": "mp-student-成国富-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "王铁庄",
+      "id": "mp-student-王铁庄-陈进长",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "黄润生",
+      "id": "mp-master-陈进长-黄润生",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "赵廷良",
+      "id": "mp-master-陈进长-赵廷良",
+      "oldSource": "baijiahao.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "杨兴怀",
+      "id": "mp-student-杨兴怀-卢永良",
+      "oldSource": "baike.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "邹发昌",
+      "id": "mp-student-邹发昌-卢永良",
+      "oldSource": "baike.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "佘远武",
+      "id": "mp-student-佘远武-卢永良",
+      "oldSource": "baike.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "王庆",
+      "id": "mp-student-王庆-卢永良",
+      "oldSource": "baike.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "童水林",
+      "id": "mp-master-胡忠英-童水林",
+      "oldSource": "baike.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "桑治均",
+      "id": "mp-student-桑治均-史正良",
+      "oldSource": "baike.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "邱伟",
+      "id": "mp-student-邱伟-史正良",
+      "oldSource": "baike.baidu.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "王庆兴",
+      "id": "mp-student-王庆兴-高炳义",
+      "oldSource": "wenlvnews.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "王希富",
+      "id": "mp-student-王希富-王殿臣",
+      "oldSource": "www.c-zgpr.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "许春",
+      "id": "auto-许春-淮扬",
+      "oldSource": "http://m.0515msw.com",
+      "newSource": "",
+      "reason": "纯域名非URL: 仅为域名无具体页面路径"
+    },
+    {
+      "name": "邓正波",
+      "id": "mp-master-潘化东-邓正波",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "李玉伟",
+      "id": "mp-master-刘锋-李玉伟",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "张铁元等",
+      "id": "mp-master-连龙-张铁元等",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "唐文斌",
+      "id": "mp-master-陈棋-唐文斌",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "潘晓林",
+      "id": "mp-master-陈建州-潘晓林",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "周徐荣",
+      "id": "mp-master-崔光明-周徐荣",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "周朝晖",
+      "id": "mp-master-赵翔-周朝晖",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "周五根",
+      "id": "mp-master-黎国文-周五根",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "郭辉全",
+      "id": "mp-master-顾永红-郭辉全",
+      "oldSource": "bio-v2",
+      "newSource": "",
+      "reason": "内部引用代码非URL"
+    },
+    {
+      "name": "孟祥忍",
+      "id": "academy-yzu-mengxiangren",
+      "oldSource": "扬州大学教师个人主页 + 扬州大学官网",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "徐孝洪",
+      "id": "academy-sctu-xuxiaohong",
+      "oldSource": "四川旅游学院官网 + 中国非遗网",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "卢一",
+      "id": "academy-sctu-luyi",
+      "oldSource": "四川旅游学院官网 + 百度百科",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "乔兴",
+      "id": "academy-sctu-qiaoxing",
+      "oldSource": "四川旅游学院官网",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "冉伟",
+      "id": "academy-sctu-ranwei",
+      "oldSource": "四川旅游学院官网",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "卢永良",
+      "id": "academy-hbue-luyongliang",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "余明社",
+      "id": "academy-hbue-yumingshe",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "邹志平",
+      "id": "academy-hbue-zouzhiping",
+      "oldSource": "湖北经济学院楚菜研究院 + 百度百科",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "孙昌弼",
+      "id": "academy-hbue-sunchangbi",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "涂建国",
+      "id": "academy-hbue-tujianguo",
+      "oldSource": "湖北经济学院楚菜研究院 + 武汉商学院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "鲁永超",
+      "id": "academy-hbue-luyongchao",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "徐家莹",
+      "id": "academy-hbue-xujiaying",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "李和鸣",
+      "id": "academy-hbue-liheming",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "陈才胜",
+      "id": "academy-hbue-chencaisheng",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "姚春霞",
+      "id": "academy-hbue-yaochunxia",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "高琼",
+      "id": "academy-hbue-gaoqiong",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "王波",
+      "id": "academy-hbue-wangbo",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "沈思静",
+      "id": "academy-hbue-shenshijing",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "黄昌祥",
+      "id": "academy-hbue-huangchangxiang",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "汪显山",
+      "id": "academy-hbue-wangxianshan",
+      "oldSource": "湖北经济学院楚菜研究院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "王辉亚",
+      "id": "academy-wbu-wanghuiya",
+      "oldSource": "武汉商学院官网",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "石长波",
+      "id": "academy-hrbcu-shichangbo",
+      "oldSource": "哈尔滨商业大学旅游烹饪学院",
+      "newSource": "",
+      "reason": "非URL文本: 机构名称而非网页链接"
+    },
+    {
+      "name": "胡辉先",
+      "id": "x001",
+      "oldSource": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "newSource": "",
+      "reason": "5人共用同一列表页/综合文章,非个人详情页"
+    },
+    {
+      "name": "宋善斋",
+      "id": "x003",
+      "oldSource": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "newSource": "",
+      "reason": "5人共用同一列表页/综合文章,非个人详情页"
+    },
+    {
+      "name": "萧荣华",
+      "id": "x004",
+      "oldSource": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "newSource": "",
+      "reason": "5人共用同一列表页/综合文章,非个人详情页"
+    },
+    {
+      "name": "毕和清",
+      "id": "x006",
+      "oldSource": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "newSource": "",
+      "reason": "5人共用同一列表页/综合文章,非个人详情页"
+    },
+    {
+      "name": "舒桂卿",
+      "id": "x008",
+      "oldSource": "https://www.hunantoday.cn/news/xhn/201612/14449808.html",
+      "newSource": "",
+      "reason": "5人共用同一列表页/综合文章,非个人详情页"
+    },
+    {
+      "name": "张松云",
+      "id": "h007",
+      "oldSource": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "newSource": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "reason": "多人共用同一详情页(孔道生;曾国华): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "孔道生",
+      "id": "h008",
+      "oldSource": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "newSource": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "reason": "多人共用同一详情页(张松云;曾国华): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "曾国华",
+      "id": "h009",
+      "oldSource": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "newSource": "http://www.cyxh.org/mingchu/mianhuai/6.html",
+      "reason": "多人共用同一详情页(张松云;孔道生): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "展猛",
+      "id": "cyxh-dangdai-1209",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/1209.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/1209.html",
+      "reason": "多人共用同一详情页(朱永建): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "朱永建",
+      "id": "auto-朱永建-淮扬",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/1209.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/1209.html",
+      "reason": "多人共用同一详情页(展猛): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "石俊峰",
+      "id": "cyxh-dangdai-1010",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/1010.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/1010.html",
+      "reason": "多人共用同一详情页(李晓静): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "李晓静",
+      "id": "auto-李晓静-京",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/1010.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/1010.html",
+      "reason": "多人共用同一详情页(石俊峰): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "孙常胜",
+      "id": "cyxh-dangdai-49",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/49.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/49.html",
+      "reason": "多人共用同一详情页(薛文俊): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "薛文俊",
+      "id": "auto-薛文俊-京",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/49.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/49.html",
+      "reason": "多人共用同一详情页(孙常胜): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "邢文喜",
+      "id": "cyxh-zishen-134",
+      "oldSource": "http://www.cyxh.org/mingchu/zishen/134.html",
+      "newSource": "http://www.cyxh.org/mingchu/zishen/134.html",
+      "reason": "多人共用同一详情页(萧玉斌): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "萧玉斌",
+      "id": "auto-萧玉斌-淮扬",
+      "oldSource": "http://www.cyxh.org/mingchu/zishen/134.html",
+      "newSource": "http://www.cyxh.org/mingchu/zishen/134.html",
+      "reason": "多人共用同一详情页(邢文喜): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "季军",
+      "id": "cyxh-dangdai-251",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/251.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/251.html",
+      "reason": "多人共用同一详情页(王荫): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "王荫",
+      "id": "mp-master-季军-王荫",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/251.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/251.html",
+      "reason": "多人共用同一详情页(季军): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "孙学民",
+      "id": "cyxh-dangdai-294",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/294.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/294.html",
+      "reason": "多人共用同一详情页(吴长江): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "吴长江",
+      "id": "mp-master-孙学民-吴长江",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/294.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/294.html",
+      "reason": "多人共用同一详情页(孙学民): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "刘玉平",
+      "id": "cyxh-dangdai-304",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/304.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/304.html",
+      "reason": "多人共用同一详情页(张经羿): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "张经羿",
+      "id": "mp-master-刘玉平-张经羿",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/304.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/304.html",
+      "reason": "多人共用同一详情页(刘玉平): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "巩道伟",
+      "id": "cyxh-dangdai-330",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/330.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/330.html",
+      "reason": "多人共用同一详情页(房泽利): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "房泽利",
+      "id": "mp-master-巩道伟-房泽利",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/330.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/330.html",
+      "reason": "多人共用同一详情页(巩道伟): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "翟耀民",
+      "id": "cyxh-mianhuai-361",
+      "oldSource": "http://www.cyxh.org/mingchu/mianhuai/361.html",
+      "newSource": "http://www.cyxh.org/mingchu/mianhuai/361.html",
+      "reason": "多人共用同一详情页(于宝棋): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "于宝棋",
+      "id": "mp-master-翟耀民-于宝棋",
+      "oldSource": "http://www.cyxh.org/mingchu/mianhuai/361.html",
+      "newSource": "http://www.cyxh.org/mingchu/mianhuai/361.html",
+      "reason": "多人共用同一详情页(翟耀民): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "文小康",
+      "id": "cyxh-dangdai-763",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/763.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/763.html",
+      "reason": "多人共用同一详情页(潘仕琪): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "潘仕琪",
+      "id": "mp-master-文小康-潘仕琪",
+      "oldSource": "http://www.cyxh.org/mingchu/dangdai/763.html",
+      "newSource": "http://www.cyxh.org/mingchu/dangdai/763.html",
+      "reason": "多人共用同一详情页(文小康): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "刘国平",
+      "id": "cyxh-dangdai-1072",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/1072.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/1072.html",
+      "reason": "多人共用同一详情页(江苏淮安): 可能是联合介绍页,保留URL待人工确认"
+    },
+    {
+      "name": "江苏淮安",
+      "id": "mp-master-刘国平-江苏淮安",
+      "oldSource": "http://www.mingchu.org/mingchu/dangdai/1072.html",
+      "newSource": "http://www.mingchu.org/mingchu/dangdai/1072.html",
+      "reason": "多人共用同一详情页(刘国平): 可能是联合介绍页,保留URL待人工确认"
+    }
+  ]
+}
