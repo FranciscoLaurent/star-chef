@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 // build-d5.js
-// 流式拼接：把 data/_slim.json 作为字符串嵌入 demo-D5-real-data.html
+// 流式拼接：把 data/_slim-pinyin.json 作为字符串嵌入 demo-D5-real-data.html
 // 不 parse、不操作大对象，避免读全文 + 上下文爆炸
 
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const SLIM = path.join(ROOT, 'data', '_slim.json');
+const SLIM = path.join(ROOT, 'data', '_slim-pinyin.json');
 const OUT = path.join(ROOT, 'lineage_demo', 'demo-D5-real-data.html');
 
 const slimStr = fs.readFileSync(SLIM, 'utf8');
@@ -406,6 +406,106 @@ const HEAD_STYLE = `<!doctype html>
   ::-webkit-scrollbar-track{background:transparent}
   ::-webkit-scrollbar-thumb{background:rgba(18,16,14,.18);border-radius:4px}
   ::-webkit-scrollbar-thumb:hover{background:rgba(18,16,14,.32)}
+
+  /* —— Command Palette 搜索浮层 —— */
+  .palette-overlay{
+    position:fixed;inset:0;background:rgba(18,16,14,.45);z-index:1000;
+    display:none;align-items:flex-start;justify-content:center;padding-top:13vh;
+  }
+  .palette-overlay.open{display:flex;animation:palette-fadein .15s}
+  @keyframes palette-fadein{from{opacity:0}to{opacity:1}}
+  .palette{
+    width:92%;max-width:720px;background:var(--paper);
+    border:1px solid var(--ink);box-shadow:8px 8px 0 var(--ink);
+    display:flex;flex-direction:column;max-height:74vh;
+  }
+  .palette-input-wrap{
+    display:flex;align-items:center;gap:12px;padding:16px 20px;
+    border-bottom:1px solid var(--ink);background:var(--paper-2);
+  }
+  .palette-icon{
+    width:18px;height:18px;flex-shrink:0;
+    border:1.8px solid var(--ink);border-radius:50%;position:relative;
+  }
+  .palette-icon::after{
+    content:"";position:absolute;bottom:-4px;right:-4px;
+    width:2px;height:7px;background:var(--ink);transform:rotate(-45deg);transform-origin:top center;
+  }
+  .palette-input{
+    flex:1;font-family:var(--songti);font-size:18px;background:none;border:none;outline:none;color:var(--ink);
+  }
+  .palette-input::placeholder{color:var(--dust);font-family:var(--serif);font-style:italic;font-size:15px}
+  .palette-close{
+    font-family:var(--mono);font-size:10px;color:var(--dust);padding:3px 8px;
+    border:1px solid var(--rule-strong);cursor:pointer;letter-spacing:.1em;
+  }
+  .palette-close:hover{background:var(--paper-3);color:var(--ink)}
+  .palette-results{flex:1;overflow-y:auto}
+  .palette-results .sr-count{
+    padding:7px 20px;font-family:var(--mono);font-size:9.5px;color:var(--dust);
+    letter-spacing:.12em;border-bottom:1px solid var(--rule);background:var(--paper-2);
+  }
+  .palette-results .sr-more{
+    padding:12px;text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+    color:var(--vermillion);cursor:pointer;border-top:1px solid var(--rule);background:var(--paper-2);
+  }
+  .palette-results .sr-more:hover{background:var(--paper-3)}
+  .palette-results .sr-item{
+    display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;
+    padding:10px 20px;cursor:pointer;border-bottom:1px solid var(--rule);transition:all .12s;
+  }
+  .palette-results .sr-item:hover,.palette-results .sr-item.focus{
+    background:var(--paper-2);border-left:3px solid var(--vermillion);padding-left:17px;
+  }
+  .palette-results .sr-cui{
+    width:36px;height:36px;background:var(--vermillion);color:var(--paper);
+    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:15px;
+    position:relative;flex-shrink:0;
+  }
+  .palette-results .sr-cui::after{content:"";position:absolute;inset:-3px;border:1px dashed var(--vermillion)}
+  .palette-results .sr-placeholder .sr-cui{background:var(--paper);color:var(--dust);border:1px dashed var(--dust)}
+  .palette-results .sr-placeholder .sr-cui::after{border-color:var(--dust)}
+  .palette-results .sr-body{min-width:0}
+  .palette-results .sr-row1{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .palette-results .sr-name{font-family:var(--songti);font-size:15px;font-weight:700;line-height:1.2}
+  .palette-results .sr-placeholder .sr-name{color:var(--dust);font-style:italic;font-weight:400}
+  .palette-results .sr-era{font-family:var(--serif);font-style:italic;font-size:10px;color:var(--vermillion);font-variation-settings:'opsz' 144}
+  .palette-results .sr-pinyin{font-family:var(--mono);font-size:9px;color:var(--vermillion);letter-spacing:.08em;text-transform:uppercase}
+  .palette-results .sr-row2{
+    font-family:var(--mono);font-size:10px;color:var(--ink-soft);letter-spacing:.04em;
+    margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .palette-results .sr-row3{
+    font-family:var(--songti);font-size:11px;color:var(--dust);margin-top:2px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .palette-results .sr-empty{
+    padding:36px 20px;text-align:center;color:var(--dust);
+    font-family:var(--serif);font-style:italic;font-size:14px;line-height:1.7;
+  }
+
+  /* 搜索触发按钮（导航栏右侧） */
+  .mode-search{margin-left:auto;display:flex;align-items:center}
+  .search-trigger{
+    display:flex;gap:8px;align-items:center;padding:12px 22px 11px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-soft);cursor:pointer;background:none;border:none;border-left:1px solid var(--rule);
+    user-select:none;transition:background .15s;
+  }
+  .search-trigger:hover{background:var(--paper-3);color:var(--ink)}
+  .search-trigger kbd{
+    font-family:var(--mono);font-size:9px;padding:1px 5px;margin-left:4px;
+    border:1px solid var(--rule-strong);background:var(--paper-2);color:var(--dust);
+    border-radius:2px;letter-spacing:.05em;
+  }
+  .search-trigger .st-icon{
+    display:inline-block;width:13px;height:13px;
+    border:1.5px solid currentColor;border-radius:50%;position:relative;
+  }
+  .search-trigger .st-icon::after{
+    content:"";position:absolute;bottom:-3px;right:-3px;
+    width:1.5px;height:5px;background:currentColor;transform:rotate(-45deg);transform-origin:top center;
+  }
 </style>
 </head>`;
 
@@ -428,16 +528,12 @@ const BODY = `<body>
     <div class="mode-tab active" data-view="1"><span class="num">01</span><span class="zh">菜系巡礼</span></div>
     <div class="mode-tab" data-view="2"><span class="num">02</span><span class="zh">流派图谱</span></div>
     <div class="mode-tab" data-view="3"><span class="num">03</span><span class="zh">师承谱</span></div>
-    <div class="mode-search" id="searchBox">
+    <div class="mode-search">
       <button class="search-trigger" id="searchTrigger" aria-label="搜索">
-        <span class="search-icon"></span>
+        <span class="st-icon"></span>
         <span>搜索</span>
+        <kbd>Ctrl K</kbd>
       </button>
-      <div class="search-expanded" id="searchExpanded">
-        <input type="text" id="searchInput" class="search-input" placeholder="姓名、菜系、头衔…" autocomplete="off" />
-        <button class="search-clear hidden" id="searchClear" title="清除">&times;</button>
-      </div>
-      <div class="search-results hidden" id="searchResults"></div>
     </div>
   </nav>
 
@@ -486,76 +582,17 @@ const BODY = `<body>
     </section>
   </main>
 
-  /* 搜索组件（融入 modes 右侧） */
-  .mode-search{margin-left:auto;position:relative;display:flex;align-items:center}
-  .search-trigger{
-    display:flex;gap:8px;align-items:center;padding:12px 22px 11px;
-    font-family:var(--mono);font-size:11px;letter-spacing:.18em;
-    color:var(--ink-soft);cursor:pointer;text-transform:uppercase;
-    background:none;border:none;border-left:1px solid var(--rule);
-    user-select:none;transition:background .15s;
-  }
-  .search-trigger:hover{background:var(--paper-3)}
-  .search-icon{
-    display:inline-block;width:13px;height:13px;
-    border:1.5px solid var(--dust);border-radius:50%;position:relative;
-  }
-  .search-icon::after{
-    content:\"\";position:absolute;bottom:-3px;right:-3px;
-    width:1.5px;height:5px;background:var(--dust);transform:rotate(-45deg);transform-origin:top center;
-  }
-  .search-expanded{display:none;align-items:center;position:relative}
-  .mode-search.expanded .search-trigger{display:none}
-  .mode-search.expanded .search-expanded{display:flex}
-  .search-input{
-    width:240px;padding:8px 36px 8px 14px;
-    font-family:var(--songti);font-size:14px;
-    border:1px solid var(--rule);background:var(--paper-2);
-    color:var(--ink);outline:none;border-radius:0;
-    transition:border-color .15s,box-shadow .15s;
-  }
-  .search-input:focus{border-color:var(--ink);box-shadow:2px 2px 0 var(--ink)}
-  .search-input::placeholder{color:var(--dust);font-family:var(--serif);font-style:italic;font-size:12px}
-  .search-clear{
-    position:absolute;right:8px;top:50%;transform:translateY(-50%);
-    width:24px;height:24px;border:none;background:none;
-    font-size:18px;color:var(--dust);cursor:pointer;
-    font-family:var(--serif);line-height:1;
-    display:flex;align-items:center;justify-content:center;
-    transition:color .15s;
-  }
-  .search-clear:hover{color:var(--vermillion)}
-  .search-results{
-    position:absolute;top:100%;right:0;width:420px;max-height:420px;
-    z-index:100;overflow-y:auto;
-    background:var(--paper);border:1px solid var(--ink);
-    box-shadow:2px 2px 0 var(--ink);
-  }
-  .search-results .sr-item{
-    display:grid;grid-template-columns:38px 1fr auto;gap:10px;align-items:center;
-    padding:8px 12px;cursor:pointer;border-bottom:1px solid var(--rule);
-    transition:all .15s;
-  }
-  .search-results .sr-item:hover,.sr-item.focus{
-    background:var(--paper-2);border-left:3px solid var(--vermillion);padding-left:9px;
-  }
-  .search-results .sr-cui{
-    width:32px;height:32px;background:var(--vermillion);color:var(--paper);
-    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:14px;
-    position:relative;
-  }
-  .search-results .sr-cui::after{
-    content:\"\";position:absolute;inset:-3px;border:1px dashed var(--vermillion);
-  }
-  .sr-placeholder .sr-cui{background:var(--paper);color:var(--dust);border:1px dashed var(--dust)}
-  .sr-placeholder .sr-cui::after{border-color:var(--dust)}
-  .sr-name{font-family:var(--songti);font-size:14px;font-weight:700;line-height:1.2}
-  .sr-sub{font-family:var(--mono);font-size:10px;color:var(--dust);letter-spacing:.06em;margin-top:1px}
-  .sr-era{font-family:var(--serif);font-style:italic;font-size:10px;color:var(--ink-soft);font-variation-settings:'opsz' 144}
-  .search-results .sr-empty{padding:18px;text-align:center;color:var(--dust);font-family:var(--serif);font-style:italic;font-size:13px}
-  .search-results .sr-count{padding:6px 12px;font-family:var(--mono);font-size:9px;color:var(--dust);letter-spacing:.1em;border-bottom:1px solid var(--rule)}
-
-  .hidden{display:none !important}
+  <!-- Command Palette 搜索浮层 -->
+  <div class="palette-overlay" id="paletteOverlay">
+    <div class="palette">
+      <div class="palette-input-wrap">
+        <span class="palette-icon"></span>
+        <input type="text" class="palette-input" id="paletteInput" placeholder="姓名 / 拼音 / 菜系 / 头衔 / 拿手菜…" autocomplete="off" />
+        <span class="palette-close" id="paletteClose">ESC</span>
+      </div>
+      <div class="palette-results" id="paletteResults"></div>
+    </div>
+  </div>
 </body>`;
 
 // ============================================================
@@ -564,86 +601,192 @@ const BODY = `<body>
 const SCRIPT = `<script>
 const DATA = ${slimStr};
 
-// —— 搜索 ——————————————————————————————————————
+// —— 搜索（Command Palette）——————————————————————————————
 (function(){
-  const box = document.getElementById('searchBox');
+  const overlay = document.getElementById('paletteOverlay');
+  const input = document.getElementById('paletteInput');
+  const results = document.getElementById('paletteResults');
+  const closeBtn = document.getElementById('paletteClose');
   const trigger = document.getElementById('searchTrigger');
-  const input = document.getElementById('searchInput');
-  const results = document.getElementById('searchResults');
-  const clearBtn = document.getElementById('searchClear');
-  if(!box || !input) return;
+  if(!overlay || !input) return;
 
-  // 展开/收起
-  function expand(){ box.classList.add('expanded'); setTimeout(() => input.focus(), 80); }
-  function collapse(clearVal){ box.classList.remove('expanded'); if(clearVal){input.value='';} results.classList.add('hidden'); clearBtn.classList.add('hidden'); focusIdx=-1; }
-  trigger.addEventListener('click', expand);
-
-  // 构建搜索索引
+  // 构建搜索索引（含拼音）
   const chefs = DATA.chefs;
   const searchIndex = chefs.map((c,i) => ({
     idx:i, id:c.id, name:c.name, cui:c.primaryCuisine||'',
     secondaryCuisines:(c.secondaryCuisines||[]).join(' '),
     era:c.era||'', birthplace:c.birthplace||'', city:c.city||'',
-    restaurant:c.restaurant||'', position:c.position||'',
-    titles:(c.titles||[]).join(' '), bio:(c.bio||'').slice(0,200),
+    restaurant:c.restaurant||'', currentRole:c.currentRole||'', position:c.position||'',
+    titles:(c.titles||[]).join(' '), signature:(c.signature||[]).join(' '),
+    bio:(c.bio||'').slice(0,300),
     isPlaceholder:!!c.isPlaceholder, school:c.school||'',
+    pinyin:c.pinyin||null,
     searchText:''
   }));
   searchIndex.forEach(c => {
-    c.searchText = [c.name,c.cui,c.secondaryCuisines,c.era,c.birthplace,c.city,c.restaurant,c.position,c.titles,c.bio].join(' ').toLowerCase();
+    c.searchText = [c.name,c.cui,c.secondaryCuisines,c.era,c.birthplace,c.city,
+      c.restaurant,c.currentRole,c.position,c.titles,c.signature,c.bio].join(' ').toLowerCase();
   });
 
   let focusIdx = -1;
+  let maxShow = 100;
+  const moreStep = 100;
+
+  function search(q){
+    q = (q||'').trim().toLowerCase();
+    if(!q) return [];
+    const terms = q.split(/\\s+/).filter(Boolean);
+    const qCompact = q.replace(/\\s/g,'');
+    const isAlpha = /^[a-z]+$/.test(qCompact);
+    const isShortAlpha = isAlpha && qCompact.length <= 3;
+    const scored = [];
+    for(const c of searchIndex){
+      let score = 0;
+      const allMatch = terms.every(t => c.searchText.includes(t));
+      if(allMatch) score = 1;
+      if(!allMatch && isAlpha && c.pinyin){
+        const py = c.pinyin;
+        if(isShortAlpha){
+          if(py.nameInitial === qCompact) score = 1.5;
+          else if(py.nameInitial && py.nameInitial.startsWith(qCompact)) score = 1.0;
+          else if(py.nameInitial && py.nameInitial.includes(qCompact)) score = 0.7;
+        } else {
+          if(py.nameCompact === qCompact) score = 1.5;
+          else if(py.nameCompact && py.nameCompact.startsWith(qCompact)) score = 1.2;
+          else if(py.nameCompact && py.nameCompact.includes(qCompact)) score = 1.0;
+          else if(py.all && py.all.replace(/\\s/g,'').includes(qCompact)) score = 0.5;
+        }
+      }
+      if(score > 0){
+        if(c.name.toLowerCase().includes(q)) score += 2;
+        if(c.name.toLowerCase() === q) score += 5;
+        if(c.cui && c.cui.includes(q)) score += 0.3;
+        scored.push({ c, score });
+      }
+    }
+    scored.sort((a,b) => b.score - a.score || (a.c.name||'').localeCompare(b.c.name||''));
+    return scored.map(s => s.c);
+  }
+
+  function renderItem(c){
+    const cui = c.cui ? c.cui[0] : '?';
+    const era = c.era || '';
+    const titles = (c.titles ? c.titles.split(' ').slice(0,2).join(' · ') : '');
+    const restaurant = c.restaurant || c.currentRole || '';
+    const city = c.city || c.birthplace || '';
+    const sig = c.signature ? c.signature.split(' ').slice(0,2).join(' · ') : '';
+    const row2 = [titles, restaurant, city].filter(Boolean).join(' · ').slice(0, 60);
+    const py = c.pinyin ? c.pinyin.nameCompact : '';
+    const placeholder = c.isPlaceholder;
+    return '<div class="sr-item' + (placeholder?' sr-placeholder':'') + '" data-idx="' + c.idx + '">' +
+      '<div class="sr-cui">' + cui + '</div>' +
+      '<div class="sr-body">' +
+        '<div class="sr-row1"><span class="sr-name">' + c.name + '</span>' +
+        (era ? '<span class="sr-era">' + era + '</span>' : '') +
+        (py ? '<span class="sr-pinyin">' + py + '</span>' : '') + '</div>' +
+        (row2 ? '<div class="sr-row2">' + row2 + '</div>' : '') +
+        (sig ? '<div class="sr-row3">★ ' + sig + '</div>' : '') +
+      '</div><div></div></div>';
+  }
 
   function doSearch(q){
-    results.innerHTML = ''; focusIdx = -1;
-    if(!q.trim()){ results.classList.add('hidden'); clearBtn.classList.add('hidden'); return; }
-    clearBtn.classList.remove('hidden');
-    const terms = q.trim().toLowerCase().split(/\\s+/);
-    const matched = searchIndex.filter(c => terms.every(t => c.searchText.includes(t)));
-    const maxShow = 50; const shown = matched.slice(0, maxShow);
-    if(shown.length === 0){
-      results.innerHTML = '<div class=\\"sr-empty\\">无匹配结果</div>';
-    } else {
-      if(matched.length > maxShow) results.innerHTML = '<div class=\\"sr-count\\">找到 '+matched.length+' 位，显示前 '+maxShow+' 位</div>';
-      shown.forEach((c,i) => {
-        const div = document.createElement('div');
-        div.className = 'sr-item' + (c.isPlaceholder?' sr-placeholder':'');
-        div.dataset.idx = c.idx; div.dataset.itemIdx = i;
-        div.innerHTML = '<div class=\\"sr-cui\\">'+(c.cui?c.cui[0]:'?')+'</div><div><div class=\\"sr-name\\">'+c.name+'</div><div class=\\"sr-sub\\">'+[c.era,c.cui,c.city||c.birthplace].filter(Boolean).join(' · ')+'</div></div><div class=\\"sr-era\\">'+(c.isPlaceholder?'占位':'')+'</div>';
-        div.addEventListener('click', () => selectChef(c));
-        results.appendChild(div);
-      });
+    focusIdx = -1;
+    if(!q.trim()){ results.innerHTML = ''; return; }
+    const matched = search(q);
+    if(matched.length === 0){
+      results.innerHTML = '<div class="sr-empty">无匹配结果<br/>试试拼音首字母（如 lc）或全拼（如 liuchong）</div>';
+      return;
     }
-    results.classList.remove('hidden');
+    const showing = Math.min(maxShow, matched.length);
+    let html = '<div class="sr-count">找到 ' + matched.length + ' 位 · 显示前 ' + showing + ' 位</div>';
+    for(let i=0;i<showing;i++) html += renderItem(matched[i]);
+    if(matched.length > showing){
+      html += '<div class="sr-more" data-action="more">▼ 显示更多（还有 ' + (matched.length - showing) + ' 位）</div>';
+    }
+    results.innerHTML = html;
+    // 绑定点击
+    results.querySelectorAll('.sr-item').forEach(el => {
+      el.onclick = () => {
+        const sel = searchIndex[parseInt(el.dataset.idx)];
+        if(sel) selectChef(sel);
+      };
+    });
+    const moreBtn = results.querySelector('.sr-more');
+    if(moreBtn){
+      moreBtn.onclick = () => {
+        maxShow = showing + moreStep;
+        doSearch(input.value);
+        input.focus();
+      };
+    }
   }
 
   function selectChef(c){
-    results.classList.add('hidden'); input.value = c.name;
-    clearBtn.classList.remove('hidden'); focusIdx = -1;
-    if(typeof state !== 'undefined') state.chefId = c.id;
-    if(typeof state !== 'undefined' && state.view === 3){
-      if(c.cui && state.cuisine !== c.cui){ state.cuisine = c.cui; state.schoolKey = c.school || null; }
+    closePalette();
+    // 强制跳转 view3 并选中该厨师
+    if(typeof state !== 'undefined'){
+      if(c.cui) state.cuisine = c.cui;
+      state.schoolKey = c.school || null;
+      state.chefId = c.id;
       if(typeof renderV3 === 'function') renderV3();
+      if(typeof showView === 'function') showView(3);
     }
   }
 
+  function openPalette(){
+    overlay.classList.add('open');
+    input.value = '';
+    maxShow = 100;
+    results.innerHTML = '';
+    setTimeout(() => input.focus(), 30);
+  }
+  function closePalette(){
+    overlay.classList.remove('open');
+    input.value = '';
+    results.innerHTML = '';
+    focusIdx = -1;
+  }
+
+  trigger.addEventListener('click', openPalette);
+  closeBtn.addEventListener('click', closePalette);
+  overlay.addEventListener('click', e => { if(e.target === overlay) closePalette(); });
+
   let timer;
-  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => doSearch(input.value), 150); });
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    maxShow = 100;
+    timer = setTimeout(() => doSearch(input.value), 120);
+  });
   input.addEventListener('keydown', e => {
     const items = results.querySelectorAll('.sr-item');
-    if(e.key === 'Escape'){
-      if(input.value.trim()){ input.value = ''; doSearch(''); }
-      else { collapse(false); input.blur(); }
-    } else if(e.key === 'ArrowDown'){ e.preventDefault(); focusIdx = Math.min(focusIdx+1, items.length-1); updateFocus(items); }
-    else if(e.key === 'ArrowUp'){ e.preventDefault(); focusIdx = Math.max(focusIdx-1, -1); updateFocus(items); }
-    else if(e.key === 'Enter' && focusIdx >= 0){ const sel = searchIndex[parseInt(items[focusIdx].dataset.idx)]; if(sel) selectChef(sel); }
+    if(e.key === 'Escape'){ closePalette(); e.preventDefault(); }
+    else if(e.key === 'ArrowDown'){
+      e.preventDefault();
+      if(items.length === 0) return;
+      focusIdx = Math.min(focusIdx + 1, items.length - 1);
+      updateFocus(items);
+    } else if(e.key === 'ArrowUp'){
+      e.preventDefault();
+      focusIdx = Math.max(focusIdx - 1, -1);
+      updateFocus(items);
+    } else if(e.key === 'Enter' && focusIdx >= 0){
+      const sel = searchIndex[parseInt(items[focusIdx].dataset.idx)];
+      if(sel) selectChef(sel);
+      e.preventDefault();
+    }
   });
-  function updateFocus(items){ items.forEach((el,i) => el.classList.toggle('focus', i === focusIdx)); if(focusIdx >= 0) items[focusIdx].scrollIntoView({block:'nearest'}); }
-  clearBtn.addEventListener('click', () => { input.value = ''; results.classList.add('hidden'); clearBtn.classList.add('hidden'); input.focus(); });
-  document.addEventListener('click', e => {
-    if(e.target.closest('#searchBox')) return;
-    if(!input.value.trim()) collapse(false); else results.classList.add('hidden');
+  function updateFocus(items){
+    items.forEach((el,i) => el.classList.toggle('focus', i === focusIdx));
+    if(focusIdx >= 0 && items[focusIdx]) items[focusIdx].scrollIntoView({ block: 'nearest' });
+  }
+
+  // 全局快捷键 Ctrl+K / Cmd+K
+  document.addEventListener('keydown', e => {
+    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k'){
+      e.preventDefault();
+      if(overlay.classList.contains('open')) closePalette();
+      else openPalette();
+    }
   });
 })();
 
