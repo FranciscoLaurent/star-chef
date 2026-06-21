@@ -424,6 +424,12 @@ const BODY = `<body>
     </div>
   </header>
 
+  <div class="search-bar" id="searchBar">
+    <input type="text" id="searchInput" class="search-input" placeholder="搜索厨师姓名、菜系、头衔…" autocomplete="off" />
+    <button class="search-clear hidden" id="searchClear" title="清除">×</button>
+    <div class="search-results hidden" id="searchResults"></div>
+  </div>
+
   <nav class="modes">
     <div class="mode-tab active" data-view="1"><span class="num">01</span><span class="zh">菜系巡礼</span></div>
     <div class="mode-tab" data-view="2"><span class="num">02</span><span class="zh">流派图谱</span></div>
@@ -474,6 +480,45 @@ const BODY = `<body>
       </div>
     </section>
   </main>
+
+  /* 搜索栏 */
+  .search-bar{position:relative;margin:0 var(--pad);padding:0 0 12px}
+  .search-input{
+    width:100%;padding:10px 44px 10px 16px;font-family:var(--songti);font-size:15px;
+    border:1px solid var(--rule);background:var(--paper-2);color:var(--ink);
+    border-radius:0;outline:none;transition:border-color .2s;
+  }
+  .search-input:focus{border-color:var(--ink);background:var(--paper)}
+  .search-input::placeholder{color:var(--dust);font-family:var(--serif);font-style:italic;font-size:13px}
+  .search-clear{
+    position:absolute;right:4px;top:4px;width:32px;height:32px;border:none;background:none;
+    font-size:22px;color:var(--dust);cursor:pointer;font-family:var(--serif);line-height:1;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .search-clear:hover{color:var(--ink)}
+  .search-results{
+    position:absolute;left:0;right:0;top:100%;z-index:100;
+    background:var(--paper);border:1px solid var(--ink);border-top:none;
+    max-height:420px;overflow-y:auto;box-shadow:4px 4px 0 rgba(0,0,0,.08);
+  }
+  .search-results .sr-item{
+    display:grid;grid-template-columns:38px 1fr auto;gap:10px;align-items:center;
+    padding:8px 12px;cursor:pointer;border-bottom:1px solid var(--rule);
+    transition:background .15s;
+  }
+  .search-results .sr-item:hover,.sr-item.focus{background:var(--paper-3)}
+  .search-results .sr-cui{
+    width:32px;height:32px;background:var(--vermillion);color:var(--paper);
+    display:grid;place-items:center;font-family:var(--songti);font-weight:700;font-size:14px;
+  }
+  .sr-name{font-family:var(--songti);font-size:14px;font-weight:600;line-height:1.2}
+  .sr-sub{font-family:var(--mono);font-size:10px;color:var(--dust);letter-spacing:.06em;margin-top:1px}
+  .sr-era{font-family:var(--serif);font-style:italic;font-size:10px;color:var(--ink-soft);font-variation-settings:'opsz' 144}
+  .sr-placeholder .sr-cui{background:var(--paper);color:var(--dust);border:1px dashed var(--dust)}
+  .search-results .sr-empty{padding:18px;text-align:center;color:var(--dust);font-family:var(--serif);font-style:italic;font-size:13px}
+  .search-results .sr-count{padding:6px 12px;font-family:var(--mono);font-size:9px;color:var(--dust);letter-spacing:.1em;border-bottom:1px solid var(--rule)}
+
+  .hidden{display:none !important}
 </body>`;
 
 // ============================================================
@@ -481,6 +526,116 @@ const BODY = `<body>
 // ============================================================
 const SCRIPT = `<script>
 const DATA = ${slimStr};
+
+// —— 搜索 ——————————————————————————————————————
+(function(){
+  const input = document.getElementById('searchInput');
+  const results = document.getElementById('searchResults');
+  const clearBtn = document.getElementById('searchClear');
+  if(!input) return;
+
+  // 构建搜索索引
+  const chefs = DATA.chefs;
+  const searchIndex = chefs.map((c,i) => ({
+    idx:i, id:c.id, name:c.name, cui:c.primaryCuisine||'',
+    secondaryCuisines:(c.secondaryCuisines||[]).join(' '),
+    era:c.era||'', birthplace:c.birthplace||'', city:c.city||'',
+    restaurant:c.restaurant||'', position:c.position||'',
+    titles:(c.titles||[]).join(' '), bio:(c.bio||'').slice(0,200),
+    isPlaceholder:!!c.isPlaceholder,
+    school:c.school||'',
+    searchText:''
+  }));
+
+  // 预计算搜索文本
+  searchIndex.forEach(c => {
+    c.searchText = [c.name,c.cui,c.secondaryCuisines,c.era,c.birthplace,c.city,c.restaurant,c.position,c.titles,c.bio].join(' ').toLowerCase();
+  });
+
+  let focusIdx = -1;
+
+  function doSearch(q){
+    results.innerHTML = '';
+    focusIdx = -1;
+    if(!q.trim()){
+      results.classList.add('hidden');
+      clearBtn.classList.add('hidden');
+      return;
+    }
+    clearBtn.classList.remove('hidden');
+    const terms = q.trim().toLowerCase().split(/\\s+/);
+    const matched = searchIndex.filter(c => terms.every(t => c.searchText.includes(t)));
+    const maxShow = 50;
+    const shown = matched.slice(0, maxShow);
+
+    if(shown.length === 0){
+      results.innerHTML = '<div class=\\"sr-empty\\">无匹配结果</div>';
+    } else {
+      if(matched.length > maxShow) {
+        results.innerHTML = '<div class=\\"sr-count\\">找到 '+matched.length+' 位，显示前 '+maxShow+' 位</div>';
+      }
+      shown.forEach((c,i) => {
+        const div = document.createElement('div');
+        div.className = 'sr-item' + (c.isPlaceholder?' sr-placeholder':'');
+        div.dataset.idx = c.idx;
+        div.dataset.itemIdx = i;
+        div.innerHTML = '<div class=\\"sr-cui\\">' + (c.cui?c.cui[0]:'?') + '</div>'
+          + '<div><div class=\\"sr-name\\">' + c.name + '</div>'
+          + '<div class=\\"sr-sub\\">' + [c.era,c.cui,c.city||c.birthplace].filter(Boolean).join(' · ') + '</div></div>'
+          + '<div class=\\"sr-era\\">' + (c.isPlaceholder?'占位':'') + '</div>';
+        div.addEventListener('click', () => selectChef(c));
+        results.appendChild(div);
+      });
+    }
+    results.classList.remove('hidden');
+  }
+
+  function selectChef(c){
+    results.classList.add('hidden');
+    input.value = c.name;
+    clearBtn.classList.remove('hidden');
+    focusIdx = -1;
+    // 师承谱模式
+    $$('.mode-tab').forEach(t => t.classList.toggle('active', +t.dataset.view === 3));
+    $$('.view').forEach(v => v.classList.remove('active'));
+    const v3 = document.getElementById('view3');
+    if(v3) v3.classList.add('active');
+    // 选中的 chef 并重绘
+    if(typeof state !== 'undefined') state.chefId = c.id;
+    if(typeof renderV3 === 'function') setTimeout(() => renderV3(), 100);
+  }
+
+  // 防抖
+  let timer;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => doSearch(input.value), 150);
+  });
+  input.addEventListener('keydown', e => {
+    const items = results.querySelectorAll('.sr-item');
+    if(e.key === 'Escape'){ results.classList.add('hidden'); input.blur(); }
+    else if(e.key === 'ArrowDown'){ e.preventDefault(); focusIdx = Math.min(focusIdx+1, items.length-1); updateFocus(items); }
+    else if(e.key === 'ArrowUp'){ e.preventDefault(); focusIdx = Math.max(focusIdx-1, -1); updateFocus(items); }
+    else if(e.key === 'Enter' && focusIdx >= 0){
+      const sel = searchIndex[parseInt(items[focusIdx].dataset.idx)];
+      if(sel) selectChef(sel);
+    }
+  });
+  function updateFocus(items){
+    items.forEach((el,i) => el.classList.toggle('focus', i === focusIdx));
+    if(focusIdx >= 0) items[focusIdx].scrollIntoView({block:'nearest'});
+  }
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    results.classList.add('hidden');
+    clearBtn.classList.add('hidden');
+    input.focus();
+  });
+  // 点击外部关闭
+  document.addEventListener('click', e => {
+    if(!e.target.closest('#searchBar')) results.classList.add('hidden');
+  });
+})();
 
 // —— 工具函数 ——————————————————————————————————
 const $ = (sel, root=document) => root.querySelector(sel);
