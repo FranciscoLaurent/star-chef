@@ -1,7 +1,7 @@
 {
   "source": "cyxh.org + mingchu.org dual-fetcher",
   "scope": "crawler-batch2",
-  "partial": true,
+  "fetchDate": "2026-06-21",
   "chefs": [
     {
       "id": "cyxh-zishen-590",
@@ -2169,7 +2169,23 @@
   ],
   "stats": {
     "total": 88,
-    "processed": 2600,
-    "notfound": 2512
+    "processed": 2892,
+    "notfound": 2804,
+    "byColumn": {
+      "zishen": 4,
+      "dangdai": 84
+    },
+    "byCuisine": {
+      "?": 55,
+      "川": 10,
+      "淮扬": 6,
+      "粤": 6,
+      "浙": 1,
+      "鲁": 3,
+      "滇": 4,
+      "湘": 3
+    },
+    "withPortrait": 88,
+    "withMasters": 11
   }
 }
