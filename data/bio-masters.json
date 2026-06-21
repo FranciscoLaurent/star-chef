@@ -1,29 +1,162 @@
 {
-  "source": "bio-text-mining",
-  "fetchDate": "2026-06-21T12:55:52.365Z",
+  "source": "bio-v2",
+  "fetchDate": "2026-06-21T13:55:27.747Z",
   "results": [
     {
-      "studentId": "cyxh-dangdai-1028",
-      "studentName": "陈正恒",
-      "masterName": "高美琼",
-      "masterTitle": "大师",
+      "studentId": "cyxh-dangdai-1406",
+      "studentName": "潘化东",
+      "masterName": "邓正波",
       "masterInLib": false,
-      "source": "bio",
-      "raw": "中式烹调二级技师，注册中国烹饪大师，师承高美琼大师，深受其烹饪哲学和技艺的熏"
+      "source": "bio-v2"
     },
     {
-      "studentId": "cyxh-dangdai-1027",
-      "studentName": "黄明友",
-      "masterName": "高美琼",
-      "masterTitle": "大师",
+      "studentId": "cyxh-dangdai-625",
+      "studentName": "刘锋",
+      "masterName": "李玉伟",
       "masterInLib": false,
-      "source": "bio",
-      "raw": "师，注册中国烹饪大师，云南烹饪大师，师承高美琼大师，中金厨政餐饮协会云南分会"
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-167",
+      "studentName": "曾鹏飞",
+      "masterId": "x012",
+      "masterName": "王墨泉",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-285",
+      "studentName": "张广兵",
+      "masterId": "cyxh-mianhuai-91",
+      "masterName": "陈洛平",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-289",
+      "studentName": "连龙",
+      "masterName": "张铁元等",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-291",
+      "studentName": "李宁",
+      "masterId": "cyxh-dangdai-600",
+      "masterName": "薛伟",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-305",
+      "studentName": "陈棋",
+      "masterName": "唐文斌",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-322",
+      "studentName": "张晨冰",
+      "masterId": "mp-057",
+      "masterName": "石万荣",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-345",
+      "studentName": "陈建州",
+      "masterName": "潘晓林",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-359",
+      "studentName": "王志军",
+      "masterId": "auto-赵惠源-豫",
+      "masterName": "赵惠源",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-441",
+      "studentName": "陈伟德",
+      "masterId": "mp-057",
+      "masterName": "石万荣",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-448",
+      "studentName": "崔光明",
+      "masterName": "周徐荣",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-602",
+      "studentName": "季超",
+      "masterId": "cyxh-dangdai-600",
+      "masterName": "薛伟",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-661",
+      "studentName": "赵翔",
+      "masterName": "周朝晖",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-686",
+      "studentName": "黎国文",
+      "masterName": "周五根",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-722",
+      "studentName": "闫勇强",
+      "masterId": "auto-王伟-沪",
+      "masterName": "王伟",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-738",
+      "studentName": "顾永红",
+      "masterName": "郭辉全",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-798",
+      "studentName": "宋景武",
+      "masterId": "auto-王伟-沪",
+      "masterName": "王伟",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-832",
+      "studentName": "张灿",
+      "masterId": "auto-王伟-沪",
+      "masterName": "王伟",
+      "masterInLib": true,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-1024",
+      "studentName": "范洪兵",
+      "masterId": "mp-065",
+      "masterName": "李坤键",
+      "masterInLib": true,
+      "source": "bio-v2"
     }
   ],
   "stats": {
-    "total": 2,
-    "inLib": 0,
-    "outLib": 2
+    "total": 20,
+    "inLib": 11,
+    "outLib": 9
   }
 }

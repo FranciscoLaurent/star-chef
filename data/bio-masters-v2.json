@@ -1,0 +1,75 @@
+{
+  "source": "bio-v2",
+  "fetchDate": "2026-06-21T13:49:14.647Z",
+  "results": [
+    {
+      "studentId": "auto-殷耀-粤",
+      "studentName": "殷耀",
+      "masterName": "上游",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "auto-殷光-粤",
+      "studentName": "殷光",
+      "masterName": "殷氏",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "auto-赵惠源-豫",
+      "studentName": "赵惠源",
+      "masterName": "上游",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-289",
+      "studentName": "连龙",
+      "masterName": "张文彦",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-698",
+      "studentName": "张宇",
+      "masterName": "李佳豪",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-1074",
+      "studentName": "王伟付",
+      "masterName": "金刚之一",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "cyxh-dangdai-974",
+      "studentName": "杨四平",
+      "masterName": "上海本帮",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "auto-陈代增-淮扬",
+      "studentName": "陈代增",
+      "masterName": "陈毅外长",
+      "masterInLib": false,
+      "source": "bio-v2"
+    },
+    {
+      "studentId": "auto-徐春和-沪",
+      "studentName": "徐春和",
+      "masterId": "auto-徐春和-沪",
+      "masterName": "徐春和",
+      "masterInLib": true,
+      "source": "bio-v2"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "inLib": 1,
+    "outLib": 8
+  }
+}

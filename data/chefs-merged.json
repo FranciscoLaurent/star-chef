@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T13:44:54.931Z",
+  "generatedAt": "2026-06-21T13:57:55.410Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json + 师承源",
   "cuisineNormalized": {
     "川菜": "川",
@@ -8173,7 +8173,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-潘化东-邓正波",
       "era": "当代",
       "birth": 1990,
       "death": null,
@@ -8218,7 +8218,12 @@
       "source": "http://www.cyxh.org/mingchu/dangdai/1406.html",
       "bio": "2008年投身烹饪事业，精通川菜、粤菜、湘菜制作，擅长工艺菜、水鲜风味、鲶鱼风味菜肴研发与烹制。师承资深中国烹饪大师邓正波，深耕内江水鲜菜、大千风味菜传承与创新。曾进修于清华大学食物研究设计班，具备扎实的厨艺功底与丰富的厨政管理、理论研究经验。主编《资中鲶鱼风味》，并参与多部烹饪专业典籍编写工作；兼任中国烹饪协会中式菜肴研发中心研发员、川菜圣手罗国荣罗派川菜研究中心研究员、内江白乌鱼菜品风味研究员…",
       "referencedBy": null,
-      "_origin": "cyxh-dangdai-batch3.json"
+      "_origin": "cyxh-dangdai-batch3.json",
+      "masters": [
+        {
+          "name": "邓正波"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-1405",
@@ -17832,7 +17837,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-刘锋-李玉伟",
       "era": null,
       "birth": null,
       "death": null,
@@ -17857,6 +17862,11 @@
       "bio": " 刘锋，男，汉族，1978年3月出生，河北石家庄人。国家中式烹调技师，国家中式面点技师，中国烹饪大师，河北省饭店烹调协会理事，从厨20余年，师从国宝级烹调大师李玉伟先生，现任石家庄金鼎盛源餐饮公司经理。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "李玉伟"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -24438,7 +24448,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "x012",
       "era": null,
       "birth": null,
       "death": null,
@@ -24462,6 +24472,11 @@
       "bio": "曾鹏飞，男，汉族，1982年8月出生，湖南新化县人。中国烹饪大师，湘菜烹饪技能大师，湖南省食品药品监督协会理事，湖南省餐饮行业协会理事，现任湖南长沙红星鹏飞厨师职业培训学校校长。师承著名湘菜烹饪大师王墨泉先生",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "王墨泉"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -26808,7 +26823,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "cyxh-mianhuai-91",
       "era": null,
       "birth": null,
       "death": null,
@@ -26834,6 +26849,11 @@
       "bio": "张广兵，男，汉族，1978年12月出生，江苏扬州邗江人。中国烹饪大师，国家名厨编纂委员会高级名厨委员，江苏扬州小菜坊餐饮创始人。师承已故国家名厨、著名淮扬菜大师陈洛平先生，精通淮扬菜的烹制技艺",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "陈洛平"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -26940,7 +26960,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-连龙-张铁元等",
       "era": null,
       "birth": null,
       "death": null,
@@ -26966,6 +26986,11 @@
       "bio": "连龙，北京人。国家高级烹饪技师，世界中华美食药膳名师，中国餐饮文化名师，国家名厨编委会高级名厨委员，国际饮食养生研究会理事，师承知名饮食养生专家张文彦，并得到中国烹饪大师胡桃生、周锦、张铁元等大师的精心指导，现任盐城市北京人家餐饮管理有限公司副总经理兼出品总监",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "张铁元等"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -26976,7 +27001,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "cyxh-dangdai-600",
       "era": null,
       "birth": null,
       "death": null,
@@ -27000,6 +27025,11 @@
       "bio": "李宁，男，汉族，河北张家口赤城县人。国家中式烹调高级技师，中华金厨，河北高级烹饪名师，河北烹饪协会会员，现任国家地震应急搜救中心餐厅经理。师承宫庭御膳房总厨、国家名厨薛伟大师，擅长京菜、宫庭菜及餐饮策划",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "薛伟"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -27424,7 +27454,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-陈棋-唐文斌",
       "era": null,
       "birth": null,
       "death": null,
@@ -27449,6 +27479,11 @@
       "bio": "陈棋，男，汉族，1984年8月出生，四川遂宁人。国家中式烹调高技技师，国家名厨，川菜烹饪名厨，川菜烹饪技术传承人，现任印象成都麻辣记忆餐厅厨师长。他师承中国川菜大师唐文斌先生，擅长川菜、闽菜、湘菜的烹制技艺",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "唐文斌"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -27785,7 +27820,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-057",
       "era": null,
       "birth": null,
       "death": null,
@@ -27809,6 +27844,11 @@
       "bio": "张晨冰师承著名中国烹饪大师石万荣先生，她擅长烹制京菜、鲁菜、国宴菜、川菜、湘菜，北京烹饪大师，餐饮业国家一级评委，国家职业技能竞赛裁判员，中国名厨，中华金厨奖得主，北京饪我行远餐饮管理公司冰冰湘餐厅创始人",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "石万荣"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -28500,7 +28540,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-陈建州-潘晓林",
       "era": null,
       "birth": null,
       "death": null,
@@ -28524,6 +28564,11 @@
       "bio": "陈建州，男，汉族，1980年6月出生，浙江瑞安人。大专学历，中国烹饪大师，现任状元楼大酒店有限公司集团董事长兼创意菜研发中心顾问，山元宴会中心企业董事长兼菜品出品顾问。从事烹饪工作20余年，师承著名中国烹饪大师潘晓林先生、郑建光老师",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "潘晓林"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -29384,7 +29429,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "auto-赵惠源-豫",
       "era": null,
       "birth": null,
       "death": null,
@@ -29409,6 +29454,11 @@
       "bio": "王志军，男，汉族，1966年12月出生，四川广元人。中国烹饪大师，全国餐饮业国家级评委，现任广元市朝天区天强大酒店总厨，师承中华食雕第一龙、著名中国烹饪大师赵惠源先生。从事烹饪工作近30年，他功底深厚，技术全面，擅长川菜风味的烹制",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "赵惠源"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -30013,7 +30063,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-057",
       "era": null,
       "birth": null,
       "death": null,
@@ -30038,6 +30088,11 @@
       "bio": "陈伟德，男，汉族，1976年4月出生，广东河源人。国家名厨，粤港澳名厨，师承中国饭店协会名厨委主席、著名中国烹饪大师石万荣先生，他擅长粤菜、川菜及海鲜的制作技艺",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "石万荣"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -30115,7 +30170,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-崔光明-周徐荣",
       "era": null,
       "birth": null,
       "death": null,
@@ -30138,7 +30193,12 @@
       "source": "http://www.cyxh.org/mingchu/dangdai/448.html",
       "bio": "崔光明，男，汉族，1972年5月出生，四川旺苍县人。从厨30余年，师承70年代一级烹饪大师周徐荣，中国烹饪大师，川军团名厨俱乐部广元市旺苍县分会长，现任广元市旺苍县旺派砂锅王厨师长",
       "referencedBy": null,
-      "_origin": "cyxh-crawled3.json"
+      "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "周徐荣"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-450",
@@ -30952,7 +31012,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "cyxh-dangdai-600",
       "era": null,
       "birth": null,
       "death": null,
@@ -30976,6 +31036,11 @@
       "bio": "季超，男，汉族，河南确山人。国家高级烹调师，全国餐饮业劳动模范，北京烹饪名师，师从故宫御膳房总厨、国家名厨薛伟大师，擅长京鲁菜、宫廷菜的烹制技艺，善于博采众长",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "薛伟"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -31841,7 +31906,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-赵翔-周朝晖",
       "era": null,
       "birth": null,
       "death": null,
@@ -31865,6 +31930,11 @@
       "bio": "赵翔，男，汉族，1983年11月出生，浙江宁波人。国家中式烹调高级技师，中国烹饪大师，擅长杭帮菜、宁波菜的制作技艺，师承中国烹饪大师周朝晖大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "周朝晖"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -32434,7 +32504,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-黎国文-周五根",
       "era": null,
       "birth": null,
       "death": null,
@@ -32458,6 +32528,11 @@
       "bio": "黎国文，男，汉族，1972年9月出生，广东人。国家高级烹饪技师，广东特级烹饪技师，师承香港名厨周五根门下。从事餐饮三十余年，擅长粤菜，管理经验丰富，专注于对菜品的研发和创新，严格要求自己，力求做到精益求精。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "周五根"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -33256,7 +33331,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "auto-王伟-沪",
       "era": null,
       "birth": null,
       "death": null,
@@ -33278,6 +33353,11 @@
       "bio": "闫勇强，男，汉族，四川达州人，从厨18年。中国青年名厨，中国烹饪文化传承大师，华敕餐饮联盟创始人，王师门淮扬梅府家宴第四代传承人，上海弘博餐饮联盟杨浦区域会长，上海食文化研究会星厨俱乐部副秘书长，师承中国饭店协会名厨委常务副主席、世博厨王，弘博餐饮联盟主席、王师门淮扬梅家菜第三代传人——王伟大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "王伟"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -33674,7 +33754,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-master-顾永红-郭辉全",
       "era": null,
       "birth": null,
       "death": null,
@@ -33698,6 +33778,11 @@
       "bio": "顾永红，重庆市合川人，中国烹饪大师，他技术全面，精通川菜，在传统川菜的基础上进行改进，无论从菜品的味型、口感、色泽等方面，精烹细饪，立志打造出新一代的重庆菜品。16岁便投身烹饪工作，师承中国烹饪大师郭辉全门下，从厨至今已有30余年工龄",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "郭辉全"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -35225,7 +35310,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "auto-王伟-沪",
       "era": null,
       "birth": null,
       "death": null,
@@ -35247,6 +35332,11 @@
       "bio": "宋景武，男，汉族，1990年2月出生，湖南娄底人。国家高级烹调师，中国青年名厨，技术能手，中华职业学校技能赛特邀监理，上海总厨联盟冷菜委员会创始成员，师承中国饭店协会名厨委常务副主席、弘博餐饮联盟主席、王师门梅家菜第三代传人——王伟大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
+      "masters": [
+        {
+          "name": "王伟"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -37458,7 +37548,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "auto-王伟-沪",
       "era": "当代",
       "birth": 1991,
       "death": null,
@@ -37482,6 +37572,11 @@
       "bio": "张灿（Kan Zhang）出生于1991年，安徽人，中国青年名厨，烹饪文化传承名师传承人，优秀青年厨师。他师从资深中国烹饪大师、中国饭店协会名厨委常务副主席、世博厨王、王伟门下弟子成员，从事餐饮行业十余年，精益求精，擅长创新菜品",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
+      "masters": [
+        {
+          "name": "王伟"
+        }
+      ],
       "masterIds": []
     },
     {
@@ -38340,7 +38435,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": null,
+      "master": "mp-065",
       "era": "当代",
       "birth": 1992,
       "death": null,
@@ -38364,7 +38459,12 @@
       "source": "http://www.cyxh.org/mingchu/dangdai/1024.html",
       "bio": " 范洪兵，男，汉族，1992年5月生，云南楚雄元谋县人，中国烹饪名师，2006年拜入中国烹饪大师李坤键门下，正式踏入餐饮行业。擅长川滇菜，精于厨房管理。他的烹饪技艺日臻成熟，曾多次参加省市",
       "referencedBy": null,
-      "_origin": "cyxh-crawled4.json"
+      "_origin": "cyxh-crawled4.json",
+      "masters": [
+        {
+          "name": "李坤键"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-1025",
@@ -38416,7 +38516,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-master-陈正恒-高美琼",
+      "master": null,
       "era": "当代",
       "birth": 1975,
       "death": null,
@@ -38440,12 +38540,6 @@
       "bio": " 陈正恒，男，汉族，1975年10月生，云南昭通巧家县人，中式烹调二级技师，注册中国烹饪大师，师承高美琼大师，深受其烹饪哲学和技艺的熏陶，现任昭通市画苑宾馆厨务总监。自1996年起一直就职",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [
-        {
-          "name": "高美琼",
-          "title": "大师"
-        }
-      ],
       "masterIds": []
     },
     {
@@ -38456,7 +38550,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-master-陈正恒-高美琼",
+      "master": null,
       "era": "当代",
       "birth": 1978,
       "death": null,
@@ -38480,12 +38574,6 @@
       "bio": " 黄明友，男，汉族，1978年9月生，四川宜宾人，中式烹调二级技师，注册中国烹饪大师，云南烹饪大师，师承高美琼大师，中金厨政餐饮协会云南分会长，社会技能培训学校教师。1995年进入餐饮行业，至今已",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [
-        {
-          "name": "高美琼",
-          "title": "大师"
-        }
-      ],
       "masterIds": []
     },
     {
@@ -54506,15 +54594,111 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-master-陈正恒-高美琼",
-      "name": "高美琼",
+      "id": "mp-master-潘化东-邓正波",
+      "name": "邓正波",
       "isPlaceholder": true,
-      "primaryCuisine": null,
-      "title": "大师",
-      "source": "bio",
+      "primaryCuisine": "川",
+      "title": "师承援引",
+      "source": "bio-v2",
       "bio": null,
       "referencedBy": [
-        "陈正恒"
+        "潘化东"
+      ]
+    },
+    {
+      "id": "mp-master-刘锋-李玉伟",
+      "name": "李玉伟",
+      "isPlaceholder": true,
+      "primaryCuisine": null,
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "刘锋"
+      ]
+    },
+    {
+      "id": "mp-master-连龙-张铁元等",
+      "name": "张铁元等",
+      "isPlaceholder": true,
+      "primaryCuisine": null,
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "连龙"
+      ]
+    },
+    {
+      "id": "mp-master-陈棋-唐文斌",
+      "name": "唐文斌",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "陈棋"
+      ]
+    },
+    {
+      "id": "mp-master-陈建州-潘晓林",
+      "name": "潘晓林",
+      "isPlaceholder": true,
+      "primaryCuisine": null,
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "陈建州"
+      ]
+    },
+    {
+      "id": "mp-master-崔光明-周徐荣",
+      "name": "周徐荣",
+      "isPlaceholder": true,
+      "primaryCuisine": null,
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "崔光明"
+      ]
+    },
+    {
+      "id": "mp-master-赵翔-周朝晖",
+      "name": "周朝晖",
+      "isPlaceholder": true,
+      "primaryCuisine": null,
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "赵翔"
+      ]
+    },
+    {
+      "id": "mp-master-黎国文-周五根",
+      "name": "周五根",
+      "isPlaceholder": true,
+      "primaryCuisine": "粤",
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "黎国文"
+      ]
+    },
+    {
+      "id": "mp-master-顾永红-郭辉全",
+      "name": "郭辉全",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "师承援引",
+      "source": "bio-v2",
+      "bio": null,
+      "referencedBy": [
+        "顾永红"
       ]
     },
     {
@@ -54912,13 +55096,14 @@
       "name": "王富强",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
-      "title": "师门弟子",
-      "source": "thepaper.cn",
+      "title": "中国烹饪大师",
+      "source": "baike.baidu.com/王义均",
       "bio": null,
       "master": "cyxh-yuanlao-13",
       "masters": [
         {
-          "name": "王义均"
+          "name": "王义均",
+          "title": "中国烹饪大师"
         }
       ]
     },
@@ -55002,13 +55187,14 @@
       "name": "李启贵",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
-      "title": "师门弟子",
-      "source": "thepaper.cn",
+      "title": "中国烹饪大师",
+      "source": "baike.baidu.com/王义均",
       "bio": null,
       "master": "cyxh-yuanlao-13",
       "masters": [
         {
-          "name": "王义均"
+          "name": "王义均",
+          "title": "中国烹饪大师"
         }
       ]
     },
@@ -55032,13 +55218,14 @@
       "name": "高速建",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
-      "title": "师门弟子",
-      "source": "thepaper.cn",
+      "title": "山东海参王",
+      "source": "baike.baidu.com/王义均",
       "bio": null,
       "master": "cyxh-yuanlao-13",
       "masters": [
         {
-          "name": "王义均"
+          "name": "王义均",
+          "title": "山东海参王"
         }
       ]
     },
@@ -55599,10 +55786,10 @@
     }
   ],
   "stats": {
-    "totalChefs": 1463,
+    "totalChefs": 1471,
     "realChefs": 1236,
-    "placeholders": 227,
-    "withMaster": 287,
+    "placeholders": 235,
+    "withMaster": 305,
     "withMasterId": 160,
     "withSchool": 59,
     "withSignature": 381,
