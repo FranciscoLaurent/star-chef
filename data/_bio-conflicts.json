@@ -1,0 +1,479 @@
+[
+  {
+    "name": "王利",
+    "cui": "川",
+    "birthplace": "四川遂宁",
+    "bioPlace": "王师门梅家菜第四代传",
+    "bio": "四川遂宁籍上海/江苏厨师，王师门梅家菜第四代传承人，师承王伟。2021 年获全国餐饮业劳动模范。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/717.html",
+    "origin": "cyxh-chefs.json"
+  },
+  {
+    "name": "姚金桂",
+    "cui": "淮扬",
+    "birthplace": "上海",
+    "bioPlace": "王致福梅府佳宴非遗传",
+    "bio": "上海籍淮扬菜大师，王致福梅府佳宴非遗传承人，曾为多位国家领导人主理接待。",
+    "source": "http://www.cyxh.org/mingchu/zishen/894.html",
+    "origin": "cyxh-chefs.json"
+  },
+  {
+    "name": "王立喜",
+    "cui": "淮扬",
+    "birthplace": "扬州",
+    "bioPlace": "江苏旅游职业学院烹饪",
+    "bio": "扬州淮扬菜泰斗，扬州四大名厨之一，江苏旅游职业学院烹饪系奠基人。2026 年入选《国家名厨》第八卷。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/1402.html",
+    "origin": "cyxh-chefs.json"
+  },
+  {
+    "name": "居长龙",
+    "cui": "淮扬",
+    "birthplace": "扬州",
+    "bioPlace": "居氏料理创始",
+    "bio": "扬州淮扬菜泰斗，居氏料理创始人。1988 年起在日本工作多年，将日本理念融入淮扬菜，形成居氏风格。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/899.html",
+    "origin": "cyxh-chefs.json"
+  },
+  {
+    "name": "王春隆",
+    "cui": "鲁",
+    "birthplace": "山东荣成",
+    "bioPlace": "全聚德烤鸭第四代传",
+    "bio": "山东荣成籍鲁菜国宝级大师，全聚德烤鸭第四代传人，师承吴行玉。所传高徒包括苏泽清、关长瑞、杨学智、崔玉芬等。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/140.html",
+    "origin": "cyxh-chefs.json"
+  },
+  {
+    "name": "徐永清",
+    "cui": "淮扬",
+    "birthplace": "苏州张家港",
+    "bioPlace": "非遗第五代传承",
+    "bio": "张家港『叫花鸡』非遗第五代传承人，融合北魏胡汉烧烤技法；2024 年入选《国家名厨》第六卷。",
+    "source": "http://www.cyxh.org/mingchu/zishen/882.html",
+    "origin": "cyxh-zishen-batch2.json"
+  },
+  {
+    "name": "李春祥",
+    "cui": "辽",
+    "birthplace": "辽宁铁岭",
+    "bioPlace": "盛京满汉全席非遗传承",
+    "bio": "辽菜代表人物，被誉为『军中厨神』『世界烹饪第一人』；首届世界烹饪大赛金牌得主，盛京满汉全席非遗传承人。",
+    "source": "http://www.cyxh.org/mingchu/zishen/929.html",
+    "origin": "cyxh-zishen-batch2.json"
+  },
+  {
+    "name": "郑程",
+    "cui": "湘",
+    "birthplace": "湖南麻阳",
+    "bioPlace": "系非遗麻阳鹅技艺传承",
+    "bio": "18岁从厨，深耕湘菜31年，博采众长、守正创新，不断丰富湘菜品系，形成独具特色的烹饪风格。系非遗麻阳鹅技艺传承人，先后获评县优秀政协委员、优秀共产党员、厨师工匠、湘菜大师、麻阳县首届“新时代工匠”等称号。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1417.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "蒋汉银",
+    "cui": "闽",
+    "birthplace": "宁夏中宁",
+    "bioPlace": "美学与管理思维的餐饮",
+    "bio": "在餐饮与美食艺术的领域里，蒋汉银是一位深耕匠心、不断突破的行者，从执锅掌勺的高级厨师，到兼具美学与管理思维的餐饮文化创始人，他用二十余年的时光，走出了一条厨艺精进、跨界创新、文化传承的多元之路，成为行业内兼具实力与口碑的标杆人物。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1401.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "唐五四",
+    "cui": "川",
+    "birthplace": "重庆石柱",
+    "bioPlace": "唐氏腊排与土家腊排腊",
+    "bio": "从厨三十八年，深耕川菜与土家菜系传承创新，技艺精湛、风格鲜明，是土家餐饮文化代表性人物、唐氏老腊排非遗传承人、唐氏腊排与土家腊排腊鱼创始人，是国菜大师李光远传承弟子、中国饭店协会名厨委主席石万荣的高徒。曾荣获全国五一行业模范、中华之魂十大创新企业家、国际五星名厨杰出勋章、重庆市连锁业杰出风云人物、“",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1394.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "艾广富",
+    "cui": "清真",
+    "birthplace": "河北三河",
+    "bioPlace": "国宝级清真菜与清真烤",
+    "bio": "河北三河回族厨师，国宝级清真菜与清真烤鸭传承人。1953 年拜胡宝珍、杨永和为师，曾在又一顺、鸿宾楼工作。1986 年驻联合国代表团 3 年。著有《地道北京菜》《好吃全羊菜》《经典清宫菜》。座右铭：做孝顺的厨师。入选《国家名厨》第一卷。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/871.html",
+    "origin": "cyxh-mianhuai-batch2.json"
+  },
+  {
+    "name": "李玉芬",
+    "cui": "淮扬",
+    "birthplace": "北京",
+    "bioPlace": "掌门",
+    "bio": "北京籍国宝级淮扬菜女大师，南菜泰斗高国禄入室弟子，北京淮扬菜「郇味师门」掌门人。在燕山、丽都、昆仑等北京高端饭店历任厨师长 58 年。著《寻味淮扬菜》《郇味苏菜》。2022 年 11 月 20 日逝世。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/799.html",
+    "origin": "cyxh-mianhuai-batch2.json"
+  },
+  {
+    "name": "王文贵",
+    "cui": "西餐",
+    "birthplace": "河北大城",
+    "bioPlace": "成桂西餐厅创始",
+    "bio": "河北大城籍天津西餐名厨，五六十年代天津几大西餐名厨之一，成桂西餐厅创始人。师承俄、德、法多国厨师，曾任彭德怀元帅专列主厨。退休 90 岁高龄重返成桂掌厨。2008 年 5 月 24 日去世，享年 94 岁。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/751.html",
+    "origin": "cyxh-mianhuai-batch2.json"
+  },
+  {
+    "name": "李国栋",
+    "cui": "陕",
+    "birthplace": "陕西榆林",
+    "bioPlace": "创办",
+    "bio": "陕西榆林陕菜泰斗，1936 年拜聚贤楼掌柜张志厚学厨。榆林「锦春饭店」创办人，榆林市非遗代表性传承人。参与编撰《榆林老十二件》《榆林地方菜谱》。2020 年 5 月 12 日逝世，享年 97 岁。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/624.html",
+    "origin": "cyxh-mianhuai-batch2.json"
+  },
+  {
+    "name": "王致福",
+    "cui": "淮扬",
+    "birthplace": "浙江宁波",
+    "bioPlace": "梅府佳宴创始",
+    "bio": "上海淮扬菜泰斗，梅府佳宴创始人。淮扬王师门梅家菜一脉宗师，王伟、何彬等沪上名厨之师，2019 年辞世。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/437.html",
+    "origin": "placeholder-fills.json"
+  },
+  {
+    "name": "王甫亭",
+    "cui": "辽",
+    "birthplace": "辽宁沈阳",
+    "bioPlace": "被尊为中国辽菜创始",
+    "bio": "沈阳鹿明春饭店掌门厨师，由鲁菜深化为辽菜，被尊为中国辽菜创始人。1962 年沈阳厨师进修班首席讲师，1964 年全国劳动模范。徒弟刘敬贤为中国厨师状元、辽菜代表人物。1984 年逝世，享年 72 岁。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/55.html",
+    "origin": "cyxh-mianhuai-batch2.json"
+  },
+  {
+    "name": "毛强",
+    "cui": "清真",
+    "birthplace": "宁夏吴忠",
+    "bioPlace": "夏百年老毛手抓羊肉第",
+    "bio": "宁夏百年老毛手抓羊肉第四代传承人，国家级非遗代表人。从父辈手中接过 1888 年创立的老店，创新清真菜品近百种，公益捐款百万元。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/924.html",
+    "origin": "cyxh-yuanlao-batch2.json"
+  },
+  {
+    "name": "王兴兰",
+    "cui": "鲁",
+    "birthplace": "山东济南",
+    "bioPlace": "中国孔府菜第一女传",
+    "bio": "中国孔府菜第一女传人，山东鲁菜传承人。师从王兴南等老师傅，1984 年主持孔府菜国家科技鉴定。率队赴 20 余国传播鲁菜与孔府菜文化。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/847.html",
+    "origin": "cyxh-yuanlao-batch2.json"
+  },
+  {
+    "name": "古德明",
+    "cui": "黔",
+    "birthplace": "重庆璧山（1936 入黔定居遵义）",
+    "bioPlace": "徒子徒孙逾万",
+    "bio": "黔菜泰斗，国宝级烹饪大师。1936 年随父母入黔，遵义宾馆从厨数十年。徒子徒孙逾万人，遵义六成餐厅行政总厨为其门下。曾接待多位国家领导人。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/864.html",
+    "origin": "cyxh-yuanlao-batch2.json"
+  },
+  {
+    "name": "李清",
+    "cui": "滇",
+    "birthplace": "云南昆明",
+    "bioPlace": "朱德等党和国家领导",
+    "bio": "滇菜泰斗，享有昆明北京饭店烤乳猪第一人美誉。1983 年援外利比里亚任使馆厨师长。曾接待周恩来、刘少奇、朱德等党和国家领导人。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/858.html",
+    "origin": "cyxh-yuanlao-batch2.json"
+  },
+  {
+    "name": "李鸿志",
+    "cui": "宫廷",
+    "birthplace": "辽宁沈阳",
+    "bioPlace": "中国满汉全席正宗传",
+    "bio": "中国满汉全席正宗传人，师承溥仪御厨唐克明（慈禧御厨梁忠传人）及鲁菜大师王甫亭。整理出《盛京满汉全席》食单，列为非物质文化遗产。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/859.html",
+    "origin": "cyxh-yuanlao-batch2.json"
+  },
+  {
+    "name": "唐克明",
+    "cui": "辽",
+    "birthplace": "江苏扬州",
+    "bioPlace": "满汉全席传",
+    "bio": "宫廷菜泰斗，溥仪伪满时期御厨，紫禁城御膳房梁忠的关门弟子，满汉全席传人。新中国成立后定居沈阳，是辽菜与宫廷菜的关键桥梁，刘敬贤等辽菜宗师的师傅。",
+    "source": "https://baike.baidu.com/item/唐克明/13874971 ; http://www.nca.net.cn/Article.asp?id=417 ; http://ln.people.com.cn/n2/2021/0630/c400773-34800826.html",
+    "origin": "placeholder-fills.json"
+  },
+  {
+    "name": "薛泉生",
+    "cui": "淮扬",
+    "birthplace": "江苏扬州",
+    "bioPlace": "扬州三把刀非遗传承",
+    "bio": "国宝级淮扬菜泰斗，扬州三把刀非遗传承人。师承丁万谷，从厨 60 载，桃李遍江苏。指导过万学武、张泽勇等多代中青年厨师。",
+    "source": "https://baike.baidu.com/item/薛泉生/5759798 ; http://www.cmccx.cn/a/chujiexianfengmingrenbang/pengtantaidou/20110527/1092.html",
+    "origin": "placeholder-fills.json"
+  },
+  {
+    "name": "屈浩",
+    "cui": "鲁",
+    "birthplace": "北京",
+    "bioPlace": "鲁菜非遗传承",
+    "bio": "鲁菜非遗传承人，王义均嫡传弟子。从丰泽园学徒一路成长为亚洲厨王、屈浩烹饪学校校长，京城鲁菜中坚。",
+    "source": "https://www.ccas.com.cn/site/content/87191.html ; http://m.greatchef.com.cn/newsview?id=1433",
+    "origin": "placeholder-fills.json"
+  },
+  {
+    "name": "吴正格",
+    "cui": "辽",
+    "birthplace": "辽宁铁岭",
+    "bioPlace": "满族铁岭",
+    "bio": "满族铁岭人，清宫御膳与满汉全席学术研究权威。著作等身，是辽菜与宫廷菜学理传承的灯塔。门下徒弟孙常胜等。",
+    "source": "https://baike.baidu.com/item/吴正格/8271560",
+    "origin": "placeholder-fills.json"
+  },
+  {
+    "name": "董世国",
+    "cui": "京",
+    "birthplace": "河北三河（生于北京）",
+    "bioPlace": "北京仿膳饭庄宫廷菜第",
+    "bio": "北京仿膳饭庄宫廷菜第三代传人，国宝级烹饪大师。承袭清宫御膳一脉，孙常胜等弟子奉其为'宫廷仿膳大师'。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/873.html ; https://baike.baidu.com/item/董世国/1895550",
+    "origin": "placeholder-fills.json"
+  },
+  {
+    "name": "李文星",
+    "cui": "滇",
+    "birthplace": "云南昭通永善",
+    "bioPlace": "云南永善",
+    "bio": "云南永善人，师承李坤键大师，云南农业大学食堂厨师长。2024 年获评中国烹饪大师。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1060.html",
+    "origin": "cyxh-dangdai-batch4.json"
+  },
+  {
+    "name": "牟传仁",
+    "cui": "辽",
+    "birthplace": "辽宁大连（祖籍山东福山）",
+    "bioPlace": "天下第一饺创始",
+    "bio": "大连老菜掌门人、天下第一饺创始人。1950 年学徒于大连饭店，师承四位名师。研制虾肉水饺远销日本西欧，'金鼎奖'优质新产品。培养厨师 3000 余名，参与编撰《东北名菜》。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/81.html",
+    "origin": "cyxh-final-batch.json"
+  },
+  {
+    "name": "胡长荣",
+    "cui": "京苏",
+    "birthplace": "江苏南京",
+    "bioPlace": "绿柳居素烧鸭创始",
+    "bio": "南京金陵厨王之一，与堂兄胡长龄并称'金陵二厨王'。绿柳居素烧鸭创始人，曾任 24 个驻外大使馆厨师长。著《热菜创新造型》手稿，自创菜谱《京苏帮大菜》未能出版。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/82.html",
+    "origin": "cyxh-final-batch.json"
+  },
+  {
+    "name": "金永泉",
+    "cui": "晋",
+    "birthplace": "北京",
+    "bioPlace": "香酥鸭创始",
+    "bio": "晋菜宗师、香酥鸭创始人，北京晋阳饭庄镇店名菜由其研制。从艺 70 余年，掌握 170 余种晋菜技法。两次获北京市劳动模范，享年 93 岁。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/84.html",
+    "origin": "cyxh-final-batch.json"
+  },
+  {
+    "name": "刘国栋",
+    "cui": "辽",
+    "birthplace": "辽宁沈阳（生于天津）",
+    "bioPlace": "辽菜奠基",
+    "bio": "辽菜泰斗、辽菜奠基人。从业 70 余年，亲传弟子 300 余、五代传人 2 万余。2009 年北京奥运 86 岁高龄亲自策划奥运迎宾宴。2014 年辽菜技艺入选国家级非遗。享年 94 岁。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/89.html",
+    "origin": "cyxh-final-batch.json"
+  },
+  {
+    "name": "冉伟",
+    "cui": "川",
+    "birthplace": "四川",
+    "bioPlace": "省级双师型名师工作室",
+    "bio": "四川旅游学院烹饪职业教育学院院长，省级天府名厨，省级双师型名师工作室领办人。",
+    "source": "四川旅游学院官网",
+    "origin": "academy-chefs.json"
+  },
+  {
+    "name": "余明社",
+    "cui": "楚",
+    "birthplace": "湖北武汉",
+    "bioPlace": "湖北省非遗武昌鱼制作",
+    "bio": "湖北武汉籍楚菜大师。1988 年全国烹饪大赛金奖、2000 年东京世赛冷盘金奖。湖北省非遗武昌鱼制作技艺传承人，主编多部国家规划教材。",
+    "source": "湖北经济学院楚菜研究院",
+    "origin": "academy-chefs.json"
+  },
+  {
+    "name": "邹志平",
+    "cui": "楚",
+    "birthplace": "湖北",
+    "bioPlace": "武昌鱼省级非遗传承",
+    "bio": "鄂菜中青年代表、武昌鱼省级非遗传承人。从餐馆学徒成长为大学教授，现任湖北楚菜研究院院长，国家技能大师工作室领办人。",
+    "source": "湖北经济学院楚菜研究院 + 百度百科",
+    "origin": "academy-chefs.json"
+  },
+  {
+    "name": "孙昌弼",
+    "cui": "楚",
+    "birthplace": "湖北武汉",
+    "bioPlace": "兴园鮰鱼制作技艺省级",
+    "bio": "第四代'鮰鱼大王'。被誉为'厨房里的文化人、厨师中的艺术家'，2014 年获中国烹饪大师终身成就奖。武汉商学院客座教授，老大兴园鮰鱼制作技艺省级非遗传承人。",
+    "source": "湖北经济学院楚菜研究院",
+    "origin": "academy-chefs.json"
+  },
+  {
+    "name": "张毅",
+    "cui": null,
+    "birthplace": "分析当地",
+    "bioPlace": "做菜先做",
+    "bio": "从厨心得：&nbsp; &nbsp;&nbsp; &nbsp;做菜先做人，做菜等于艺术。不论经营什么菜肴，都要入乡随俗，分析当地人口味、细分地方口味变化，引导消费者接受，高度决定思路，心态决定行动。 张毅，男，汉族，1981年4月生",
+    "source": "http://www.cyxh.org/mingchu/dangdai/998.html",
+    "origin": "cyxh-crawled4.json"
+  },
+  {
+    "name": "汪显山",
+    "cui": "楚",
+    "birthplace": "湖北武汉",
+    "bioPlace": "老大兴园鮰鱼制作技艺",
+    "bio": "第三代'鮰鱼大王'，老大兴园鮰鱼制作技艺传承人，孙昌弼师父。",
+    "source": "湖北经济学院楚菜研究院",
+    "origin": "academy-chefs.json"
+  },
+  {
+    "name": "舍崇禄",
+    "cui": "清真",
+    "birthplace": "子舍清真菜民间宴席制作技艺被北京市",
+    "bioPlace": "厨子舍第四代传",
+    "bio": "舍崇禄（1912.12.12—1987.6.20），享年75岁，回族，出生于回族厨行世家。厨子舍第四代传人，现厨子舍清真菜民间宴席制作技艺被北京市人民政府批准为北京市级非物质文化遗产名录",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/56.html",
+    "origin": "cyxh-crawled.json"
+  },
+  {
+    "name": "陈永祥",
+    "cui": null,
+    "birthplace": "首任掌门",
+    "bioPlace": "河南陈家官府菜创始",
+    "bio": "陈永祥（1860年—1938年）享年78岁，河南陈家官府菜创始人，首任掌门人，河南名厨，精通官府菜制作技术，生前长期在官府衙门事厨。",
+    "source": "http://www.cyxh.org/mingchu/mianhuai/67.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "大董",
+    "cui": null,
+    "birthplace": "中餐领军",
+    "bioPlace": "意境菜创始",
+    "bio": " 董振祥（业内人称“大董”）男，1961年12月出生，以“酥不腻”烤鸭成名，凭借中国意境菜蜚声国际，中餐领军人物，意境菜创始人，师承著名烹饪大师王文昌、孙仲才、王义均，系国家高级烹饪技师，中国烹饪大师，现任北京大董烤鸭店有限责任公司董事长、总经理，2011年11月被国家名厨编委会选入由国家商业部中国",
+    "source": "http://www.cyxh.org/mingchu/zishen/41.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "刘冲",
+    "cui": "川",
+    "birthplace": "餐饮职业经理",
+    "bioPlace": "四川省中江县南华镇西",
+    "bio": "刘冲，男，汉族，1973年2月出生，四川省中江县南华镇西山村人。国家中式烹调高级技师，国家名厨，四川省特级厨师，川菜烹饪大师，餐饮职业经理人，国家名厨编纂委员会高级专家委员，国内早期中餐创意菜肴烹饪技术开拓代表人物之一，在烹饪业界享誉“厨师作家”、“文学儒厨”的美称，现任唐山蓝猫饮品集团有限公司行政",
+    "source": "http://www.mingchu.org/mingchu/zishen/260.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "朱江",
+    "cui": null,
+    "birthplace": "号楞桁山",
+    "bioPlace": "四川达州",
+    "bio": "朱江（又名朱川江，字三鲤，号楞桁山人），男，汉族，四川达州人。国家高级烹调师，中国名厨，烹饪艺术家，食品雕刻师，中国青年名厨，金牌厨师长，达州油卤传承研发大使，国家名厨编委会高级名厨委员、常务理事，中国饭店协会高级理事，国际饭店烹饪协会高级理事，广东厨委会高级理事",
+    "source": "http://www.mingchu.org/mingchu/dangdai/221.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "肖阳",
+    "cui": null,
+    "birthplace": "王师门第四代传承",
+    "bioPlace": "山东济宁",
+    "bio": "肖阳（肖庆元）山东济宁人，1984 年出生，国家烹饪高级技师，中国烹饪协会烹饪大师，中国烹饪文化传承大师，中国饭店协会荣誉会员，上海弘博餐饮联盟区域会长，王师门第四代传承人，中国名厨专业委员会委员，世界厨皇厨师联合会荣誉会员，国家服务培训高级技师。 \r\n\r\n",
+    "source": "http://www.cyxh.org/mingchu/dangdai/766.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "刘守俊",
+    "cui": null,
+    "birthplace": "做有责任心的",
+    "bioPlace": "山东临清",
+    "bio": " 个人理念：食品安全重于泰山菜品质量是生命线干有责任心的事业，做有责任心的人！ 刘守俊，男，汉族，1972年4月生，山东临清人，高中学历，中国名厨，高级烤鸭师，1990年入伍，于1992年10月退伍，上",
+    "source": "http://www.mingchu.org/mingchu/dangdai/1103.html",
+    "origin": "cyxh-list-crawled.json"
+  },
+  {
+    "name": "王伟付",
+    "cui": null,
+    "birthplace": "高级职业经理",
+    "bioPlace": "河南唐河县",
+    "bio": "王伟付，男，汉族，1978年9月生，河南唐河县人，中式烹调高级技师，国家名厨，中国烹饪大师，高级职业经理人，中国调味大师，现任山东煜桓综合服务有限公司武警总部项目总经理，师承京城九大金刚之一的苏喜斌大师。",
+    "source": "http://www.mingchu.org/mingchu/dangdai/1074.html",
+    "origin": "cyxh-list-crawled.json"
+  },
+  {
+    "name": "熊乐",
+    "cui": "陕",
+    "birthplace": "陕西西安",
+    "bioPlace": "从中国烹饪大师胡忠英",
+    "bio": "1993年生于西安，师从中国烹饪大师胡忠英第三代传人。2018年与法国总统御厨盖伊·马丁米其林三星团队合作。擅长中法融合菜、燕鲍翅。",
+    "source": "https://baike.baidu.com/item/熊乐/66758105",
+    "origin": "cswzg-fills-a.json"
+  },
+  {
+    "name": "王刚",
+    "cui": "东北",
+    "birthplace": "吉林",
+    "bioPlace": "白山民俗宴制作技艺第",
+    "bio": "吉林省十大名厨首位、长白山民俗宴制作技艺第三代传承人。CCTV-2《厨王争霸》东北赛区评委。著有《现代吉菜创新技法》。",
+    "source": "https://www.cswzg.com/mc/5096.html",
+    "origin": "cswzg-fills-a.json"
+  },
+  {
+    "name": "苏鹏辉",
+    "cui": "桂",
+    "birthplace": "广西合浦",
+    "bioPlace": "广西北海合浦",
+    "bio": "1999年生，广西北海合浦人。曾在沈阳、长春、哈尔滨学习工作，2024年回广西在瑶王府任厨师长。",
+    "source": "https://cswzg.com/mc/5083.html",
+    "origin": "cswzg-fills-a.json"
+  },
+  {
+    "name": "赵军",
+    "cui": "川",
+    "birthplace": "四川广安岳池",
+    "bioPlace": "四川岳池",
+    "bio": "1981年生，四川岳池人。1999年在北京满庭芳大酒店学艺，师从龚治平大师。2019年起在中国海装食堂任厨师长。",
+    "source": "https://cswzg.com/mc/5026.html",
+    "origin": "cswzg-fills-b.json"
+  },
+  {
+    "name": "谭经跃",
+    "cui": "鄂",
+    "birthplace": "湖北咸宁通山",
+    "bioPlace": "湖北通山",
+    "bio": "1984年生，湖北通山人。师从孙昌弼大师。2008年被誉为通山楚菜第一人。咸宁楚菜十大名师，国际烹饪金勺奖获得者。",
+    "source": "https://www.sohu.com/a/935001697_99996596",
+    "origin": "cswzg-fills-b.json"
+  },
+  {
+    "name": "肖述礼",
+    "cui": "赣",
+    "birthplace": "江西赣州会昌",
+    "bioPlace": "江西会昌",
+    "bio": "1976年生，江西会昌人。2006年获赣州市技能大赛冠军。创办东江酒楼、状元府传家菜。",
+    "source": "https://cswzg.com/mc/5300.html",
+    "origin": "cswzg-fills-b.json"
+  },
+  {
+    "name": "吴行官",
+    "cui": "鲁",
+    "birthplace": "山东烟台福山",
+    "bioPlace": "山东福山",
+    "bio": "山东福山人，民国时期北京秦丰楼、新丰楼、丰泽园名厨，擅长胶东派鲁菜。1946年举荐13岁的王义均进入丰泽园学徒。",
+    "source": null,
+    "origin": "placeholder-fills3.json"
+  },
+  {
+    "name": "王天喜",
+    "cui": "豫",
+    "birthplace": "河南洛阳",
+    "bioPlace": "阳小吃从民间搬上饭店",
+    "bio": "河南老雒阳饮食管理公司董事长。将百余种洛阳小吃从民间搬上饭店餐桌第一人。",
+    "source": null,
+    "origin": "placeholder-fills3.json"
+  }
+]

@@ -394,7 +394,7 @@
       "ethnicity": "汉族",
       "birth": 1971,
       "death": null,
-      "birthplace": "江苏扬州",
+      "birthplace": null,
       "primaryCuisine": "粤菜",
       "secondaryCuisines": [
         "淮扬菜",
@@ -862,7 +862,7 @@
       "ethnicity": "汉族",
       "birth": 1979,
       "death": null,
-      "birthplace": "河南唐河县",
+      "birthplace": null,
       "primaryCuisine": "湘菜",
       "secondaryCuisines": [
         "楚菜"
@@ -1072,7 +1072,7 @@
       "ethnicity": "汉族",
       "birth": 1969,
       "death": null,
-      "birthplace": "湖北武汉",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "淮扬菜",
@@ -1128,7 +1128,7 @@
       "ethnicity": "汉族",
       "birth": 1972,
       "death": null,
-      "birthplace": "安徽颍上",
+      "birthplace": null,
       "primaryCuisine": "烤鸭",
       "secondaryCuisines": [
         "热菜"
@@ -1304,7 +1304,7 @@
       "ethnicity": "汉族",
       "birth": 1979,
       "death": null,
-      "birthplace": "河南平顶山",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "粤菜",
@@ -1353,7 +1353,7 @@
       "ethnicity": "汉族",
       "birth": 1979,
       "death": null,
-      "birthplace": "湖南常德",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "湘菜",
@@ -1477,7 +1477,7 @@
       "ethnicity": "汉族",
       "birth": 1984,
       "death": null,
-      "birthplace": "湖北武汉",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "湘菜",
@@ -1525,7 +1525,7 @@
       "ethnicity": "汉族",
       "birth": 1982,
       "death": null,
-      "birthplace": "江西南昌",
+      "birthplace": null,
       "primaryCuisine": "粤菜",
       "secondaryCuisines": [
         "日料"
@@ -1652,7 +1652,7 @@
       "ethnicity": "汉族",
       "birth": 1978,
       "death": null,
-      "birthplace": "安徽池州",
+      "birthplace": null,
       "primaryCuisine": "粤菜",
       "secondaryCuisines": [
         "淮扬菜",
@@ -1882,7 +1882,7 @@
       "ethnicity": "汉族",
       "birth": 1987,
       "death": null,
-      "birthplace": "张西施老菜馆品牌创始",
+      "birthplace": null,
       "primaryCuisine": "粤菜",
       "secondaryCuisines": [
         "淮扬菜",
@@ -1998,7 +1998,7 @@
       "ethnicity": "汉族",
       "birth": 1976,
       "death": null,
-      "birthplace": "云南昆明",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "粤菜",
@@ -2239,7 +2239,7 @@
       "ethnicity": "汉族",
       "birth": 1981,
       "death": null,
-      "birthplace": "浙江淳安",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "浙菜"
@@ -2281,7 +2281,7 @@
       "ethnicity": "汉族",
       "birth": 1976,
       "death": null,
-      "birthplace": "宁夏中宁",
+      "birthplace": null,
       "primaryCuisine": "闽菜",
       "secondaryCuisines": [
         "融合菜",
@@ -2321,7 +2321,7 @@
       "ethnicity": "汉族",
       "birth": 1978,
       "death": null,
-      "birthplace": "安徽淮北",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "粤菜",
@@ -2404,7 +2404,7 @@
       "ethnicity": "汉族",
       "birth": 1983,
       "death": null,
-      "birthplace": "江苏徐州",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "粤菜",
@@ -2532,7 +2532,7 @@
       "ethnicity": "汉族",
       "birth": 1983,
       "death": null,
-      "birthplace": "江苏昆山",
+      "birthplace": null,
       "primaryCuisine": "粤菜",
       "secondaryCuisines": [
         "浙菜",
@@ -2775,7 +2775,7 @@
       "ethnicity": "汉族",
       "birth": 1978,
       "death": null,
-      "birthplace": "陕西西安",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "粤菜",
@@ -2860,7 +2860,7 @@
       "ethnicity": "汉族",
       "birth": 1978,
       "death": null,
-      "birthplace": "江西吉安",
+      "birthplace": null,
       "primaryCuisine": "湘菜",
       "secondaryCuisines": [
         "药膳",
@@ -2940,7 +2940,7 @@
       "ethnicity": "汉族",
       "birth": 1988,
       "death": null,
-      "birthplace": "湖南湘潭",
+      "birthplace": null,
       "primaryCuisine": "粤菜",
       "secondaryCuisines": [
         "湘菜",
@@ -2986,7 +2986,7 @@
       "ethnicity": "汉族",
       "birth": 1983,
       "death": null,
-      "birthplace": "江苏常州",
+      "birthplace": null,
       "primaryCuisine": "川菜",
       "secondaryCuisines": [
         "粤菜",
@@ -3067,7 +3067,7 @@
       "ethnicity": "汉族",
       "birth": 1990,
       "death": null,
-      "birthplace": "河南光山",
+      "birthplace": null,
       "primaryCuisine": "徽菜",
       "secondaryCuisines": [
         "豫菜"
@@ -3107,7 +3107,7 @@
       "ethnicity": "汉族",
       "birth": null,
       "death": null,
-      "birthplace": "河南潢川",
+      "birthplace": null,
       "primaryCuisine": "湘菜",
       "secondaryCuisines": [
         "徽菜",
@@ -3147,7 +3147,7 @@
       "ethnicity": "汉族",
       "birth": 1984,
       "death": null,
-      "birthplace": "河南光山",
+      "birthplace": null,
       "primaryCuisine": "浙菜",
       "secondaryCuisines": [
         "徽菜",
@@ -3191,7 +3191,7 @@
       "ethnicity": "汉族",
       "birth": 1979,
       "death": null,
-      "birthplace": "河南光山",
+      "birthplace": null,
       "primaryCuisine": "徽菜",
       "secondaryCuisines": [
         "豫菜",

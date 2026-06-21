@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T10:02:45.496Z",
+  "generatedAt": "2026-06-21T10:35:51.192Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json",
   "cuisineNormalized": {
     "川菜": "川",
@@ -4019,8 +4019,7 @@
           "rawText": "后师从刘崇云学习白案"
         }
       ],
-      "masterIds": [],
-      "_birthplaceNote": "bio 明确写云南滇菜泰斗，原安徽太和是解析错误"
+      "masterIds": []
     },
     {
       "id": "cyxh-yuanlao-849",
@@ -4359,8 +4358,7 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/1108.html",
       "bio": "江苏徐州籍新疆烹饪奠基人，新疆烹饪协会终身名誉会长。从中西两餐、民汉两灶到外交国宴。",
       "referencedBy": null,
-      "_origin": "cyxh-chefs.json",
-      "_birthplaceNote": "清真菜系与江苏籍贯矛盾，无可靠来源，置空"
+      "_origin": "cyxh-chefs.json"
     },
     {
       "id": "cyxh-mianhuai-665",
@@ -4466,8 +4464,7 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/8.html",
       "bio": "北京平谷籍淮扬菜开国大师，与罗国荣、陈胜、范俊康并称中国烹饪四大名旦。亲传弟子高国禄、陈代增、杨启庭、邓生根、刘俊岐、袁福增（其中陈代增为郑秀生之师）。",
       "referencedBy": null,
-      "_origin": "cyxh-chefs.json",
-      "_birthplaceNote": "淮扬菜系与北京籍贯矛盾，无可靠来源，置空"
+      "_origin": "cyxh-chefs.json"
     },
     {
       "id": "cyxh-zishen-1316",
@@ -6059,7 +6056,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "江苏扬州",
+      "birthplace": null,
       "education": "本科",
       "titles": [
         "中国烹饪大师",
@@ -6627,7 +6624,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "河南唐河县",
+      "birthplace": null,
       "education": "大专",
       "titles": [
         "中国烹饪大师",
@@ -6883,7 +6880,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "湖北武汉",
+      "birthplace": null,
       "education": "大专",
       "titles": [
         "中国烹饪大师",
@@ -6946,7 +6943,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "安徽颍上",
+      "birthplace": null,
       "education": "本科",
       "titles": [
         "国家名厨",
@@ -7162,7 +7159,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "河南平顶山",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家名厨",
@@ -7221,7 +7218,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "湖南常德",
+      "birthplace": null,
       "education": "大专",
       "titles": [
         "中国烹饪大师",
@@ -7372,7 +7369,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "湖北武汉",
+      "birthplace": null,
       "education": "本科",
       "titles": [
         "中国烹饪大师",
@@ -7427,7 +7424,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "江西南昌",
+      "birthplace": null,
       "education": "本科",
       "titles": [
         "总经理",
@@ -7581,7 +7578,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "安徽池州",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -7859,7 +7856,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "张西施老菜馆品牌创始",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家名厨",
@@ -8000,7 +7997,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "云南昆明",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -8286,7 +8283,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "浙江淳安",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家名厨",
@@ -8339,7 +8336,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "宁夏中宁",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家名厨",
@@ -8387,7 +8384,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "安徽淮北",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家名厨",
@@ -8489,7 +8486,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "江苏徐州",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -8644,7 +8641,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "江苏昆山",
+      "birthplace": null,
       "education": "大专",
       "titles": [
         "中国烹饪大师",
@@ -8905,7 +8902,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "陕西西安",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家名厨",
@@ -9006,7 +9003,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "江西吉安",
+      "birthplace": null,
       "education": "本科",
       "titles": [
         "中国烹饪大师",
@@ -9105,7 +9102,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "湖南湘潭",
+      "birthplace": null,
       "education": "大专",
       "titles": [
         "中国烹饪大师",
@@ -9159,7 +9156,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "江苏常州",
+      "birthplace": null,
       "education": "大专",
       "titles": [
         "国家名厨",
@@ -9257,7 +9254,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "河南光山",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -9308,7 +9305,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "河南潢川",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -9356,7 +9353,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "河南光山",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -9409,7 +9406,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "河南光山",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -11460,7 +11457,7 @@
       "death": null,
       "gender": "女",
       "ethnicity": "汉族",
-      "birthplace": "中国著名宫廷美食品牌《颐和食坊》创始",
+      "birthplace": null,
       "education": "大专",
       "titles": [
         "国家名厨",
@@ -11710,7 +11707,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "山西太原",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家名厨",
@@ -14945,7 +14942,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": null,
-      "birthplace": "江苏无锡",
+      "birthplace": null,
       "education": "上海烹调专科学校",
       "titles": [
         "上海烹饪界八大金刚之一",
@@ -15495,7 +15492,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "江苏扬州",
+      "birthplace": null,
       "education": null,
       "titles": [
         "特一级厨师",
@@ -17046,7 +17043,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "福建",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师",
@@ -19454,7 +19451,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "云南永善",
+      "birthplace": null,
       "education": null,
       "titles": [
         "四川旅游学院原党委副书记、校长",
@@ -20363,7 +20360,7 @@
       "death": null,
       "gender": null,
       "ethnicity": "回族",
-      "birthplace": "子舍清真菜民间宴席制作技艺被北京市",
+      "birthplace": null,
       "education": null,
       "titles": [
         "非物质文化遗产名录"
@@ -21080,7 +21077,7 @@
       "death": null,
       "gender": null,
       "ethnicity": null,
-      "birthplace": "满汉全席传承",
+      "birthplace": "山东招远",
       "education": null,
       "titles": [
         "国宝级辽菜泰斗",
@@ -22286,7 +22283,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": "汉族",
-      "birthplace": "餐饮职业经理",
+      "birthplace": "四川中江县",
       "education": null,
       "titles": [
         "国家名厨"
@@ -40933,7 +40930,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": null,
-      "birthplace": "浙江温州",
+      "birthplace": null,
       "education": null,
       "titles": [
         "中国烹饪大师"
@@ -48119,7 +48116,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": null,
-      "birthplace": "内蒙古察右中旗",
+      "birthplace": null,
       "education": null,
       "titles": [
         "国家中式烹调高级技师",
@@ -48515,7 +48512,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": null,
-      "birthplace": "山东东平",
+      "birthplace": null,
       "education": null,
       "titles": [
         "特一级烹调师",
@@ -48600,7 +48597,7 @@
       "death": 1932,
       "gender": "男",
       "ethnicity": null,
-      "birthplace": "贵州",
+      "birthplace": null,
       "education": null,
       "titles": [
         "近代川菜名厨",
@@ -48684,7 +48681,7 @@
       "death": null,
       "gender": "男",
       "ethnicity": null,
-      "birthplace": "山东荣城",
+      "birthplace": null,
       "education": null,
       "titles": [
         "清真烤鸭创始人",

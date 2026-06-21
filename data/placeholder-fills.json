@@ -12,7 +12,9 @@
       "death": null,
       "birthplace": "江苏淮安（一说金湖）",
       "primaryCuisine": "淮扬",
-      "secondaryCuisines": ["国宴"],
+      "secondaryCuisines": [
+        "国宴"
+      ],
       "titles": [
         "中国烹饪大师",
         "国家高级烹饪技师",
@@ -29,7 +31,12 @@
         "牵头淮扬菜课程改革、标准化与产业研究",
         "2022 年起出任澳门伦敦人淮扬晓宴主理人，餐厅于 2023 年米其林一星、2024 年起米其林二星"
       ],
-      "signature": ["文思豆腐", "大煮干丝", "三套鸭", "扬州狮子头"],
+      "signature": [
+        "文思豆腐",
+        "大煮干丝",
+        "三套鸭",
+        "扬州狮子头"
+      ],
       "portrait": null,
       "bio": "淮扬菜教父。扬州大学旅游烹饪学院原院长，带出侯新庆等一批新一代淮扬菜中坚。学者、评委、餐厅主理人三栖，把传统淮扬菜送上澳门米其林二星。",
       "source": "https://baike.baidu.com/item/周晓燕/4184631 ; https://www.jsrd.gov.cn/hyzl/srdh/d_12469/dbtd/202602/t20260203_1307093.shtml",
@@ -41,14 +48,26 @@
       "ethnicity": "汉族",
       "birth": 1903,
       "death": null,
-      "birthplace": "江苏扬州",
+      "birthplace": null,
       "primaryCuisine": "辽",
-      "secondaryCuisines": ["宫廷", "淮扬", "满汉全席"],
-      "titles": ["特一级厨师", "辽宁名厨", "宫廷御膳传人"],
+      "secondaryCuisines": [
+        "宫廷",
+        "淮扬",
+        "满汉全席"
+      ],
+      "titles": [
+        "特一级厨师",
+        "辽宁名厨",
+        "宫廷御膳传人"
+      ],
       "currentRole": "原沈阳行宫主厨；后任辽宁省服务学校烹饪指导",
       "city": "沈阳",
       "masters": [
-        { "name": "梁忠", "title": "清宫御膳房庖长（咸丰、同治、光绪、宣统四朝御厨）", "rawText": "拜紫禁城御厨庖长梁忠为关门弟子，习满汉全席与宫廷菜七年" }
+        {
+          "name": "梁忠",
+          "title": "清宫御膳房庖长（咸丰、同治、光绪、宣统四朝御厨）",
+          "rawText": "拜紫禁城御厨庖长梁忠为关门弟子，习满汉全席与宫廷菜七年"
+        }
       ],
       "experiences": [
         "幼年在天津学艺",
@@ -57,7 +76,11 @@
         "新中国成立后定居沈阳，列东北五大名厨",
         "1950 年代受周恩来嘱托广收徒弟传承宫廷菜，传人含刘敬贤等"
       ],
-      "signature": ["满汉全席系列", "扒熊掌", "金钱发菜"],
+      "signature": [
+        "满汉全席系列",
+        "扒熊掌",
+        "金钱发菜"
+      ],
       "portrait": null,
       "bio": "宫廷菜泰斗，溥仪伪满时期御厨，紫禁城御膳房梁忠的关门弟子，满汉全席传人。新中国成立后定居沈阳，是辽菜与宫廷菜的关键桥梁，刘敬贤等辽菜宗师的师傅。",
       "source": "https://baike.baidu.com/item/唐克明/13874971 ; http://www.nca.net.cn/Article.asp?id=417 ; http://ln.people.com.cn/n2/2021/0630/c400773-34800826.html",
@@ -72,7 +95,9 @@
       "death": null,
       "birthplace": "安徽颍上",
       "primaryCuisine": "沪",
-      "secondaryCuisines": ["淮扬"],
+      "secondaryCuisines": [
+        "淮扬"
+      ],
       "titles": [
         "中国烹饪大师",
         "国家中式烹调高级技师",
@@ -84,7 +109,11 @@
       "currentRole": "上海弘博餐饮管理公司董事长；弘博餐饮联盟创始人 / 主席；中国饭店协会名厨委常务副主席；商业饮食服务业发展中心餐饮智库委主任",
       "city": "上海",
       "masters": [
-        { "name": "王致福", "title": "国宝级淮扬菜泰斗、梅府佳宴创始人", "rawText": "师承上海淮扬菜泰斗王致福大师" }
+        {
+          "name": "王致福",
+          "title": "国宝级淮扬菜泰斗、梅府佳宴创始人",
+          "rawText": "师承上海淮扬菜泰斗王致福大师"
+        }
       ],
       "experiences": [
         "成人大专学历，中央党校研修班毕业",
@@ -92,7 +121,10 @@
         "上海弘博餐饮联盟创始人，连续举办多届弘博美食盛典",
         "兼任中国烹饪文化中心江浙沪办事处主任"
       ],
-      "signature": ["海鲜珍珠豆腐丸子", "白菜如意狮子头"],
+      "signature": [
+        "海鲜珍珠豆腐丸子",
+        "白菜如意狮子头"
+      ],
       "portrait": null,
       "bio": "安徽颍上籍上海餐饮领军人，淮扬王师门梅家菜第三代传人。师承王致福，自创弘博餐饮联盟，是当代沪上中生代的师承枢纽——数位 cyxh 收录的弟子（徐明俊等）皆以拜入其门下为荣。",
       "source": "https://baike.baidu.com/item/王伟/2380175 ; http://www.mingchu.org/mingchu/zishen/321.html ; http://www.cyxh.org/mingchu/mianhuai/437.html",
@@ -106,7 +138,10 @@
       "death": null,
       "birthplace": "江苏南通如皋",
       "primaryCuisine": "淮扬",
-      "secondaryCuisines": ["粤", "燕鲍翅"],
+      "secondaryCuisines": [
+        "粤",
+        "燕鲍翅"
+      ],
       "titles": [
         "国家名厨",
         "注册中国烹饪大师",
@@ -117,8 +152,16 @@
       "currentRole": "江苏南通科信教育科技集团烹饪教师；黄俊杰中国烹饪大师工作室领办人",
       "city": "南通",
       "masters": [
-        { "name": "陈松林", "title": "钓鱼台国宾馆原厨师长", "rawText": "与陈松林先生携手研发国宴菜" },
-        { "name": "杨贯一", "title": "世界御厨、阿一鲍鱼创始人", "rawText": "2011 年被杨贯一确认为阿一鲍鱼传人" }
+        {
+          "name": "陈松林",
+          "title": "钓鱼台国宾馆原厨师长",
+          "rawText": "与陈松林先生携手研发国宴菜"
+        },
+        {
+          "name": "杨贯一",
+          "title": "世界御厨、阿一鲍鱼创始人",
+          "rawText": "2011 年被杨贯一确认为阿一鲍鱼传人"
+        }
       ],
       "experiences": [
         "毕业于扬州大学，餐饮管理本科 + 烹饪工艺专科",
@@ -127,7 +170,12 @@
         "2014 年获中国十大名厨 / 中国最具创意名厨",
         "2025 年入选《国家名厨》第七卷"
       ],
-      "signature": ["百花赛海参", "刀鱼葫芦", "蟹粉河豚鱼", "张謇家宴"],
+      "signature": [
+        "百花赛海参",
+        "刀鱼葫芦",
+        "蟹粉河豚鱼",
+        "张謇家宴"
+      ],
       "portrait": "http://www.cyxh.org/d/file/mingchu/dangdai/2025-05-10/387848315d93e60d5bbc9d899aaad8d0.jpg",
       "bio": "如皋籍南通烹饪教育领军，扬州大学科班出身，阿一鲍鱼传人、张謇家宴主创。在江苏中青代厨师圈广收弟子，韦荣军、展猛等均拜其门下。",
       "source": "http://www.cyxh.org/mingchu/dangdai/1171.html",
@@ -157,7 +205,12 @@
         "主持金陵风味国宴接待多场重大外事",
         "推动淮扬菜与粤菜、西餐的对话交流"
       ],
-      "signature": ["金陵盐水鸭", "蟹粉狮子头", "煮鱼圆", "淮扬软兜"],
+      "signature": [
+        "金陵盐水鸭",
+        "蟹粉狮子头",
+        "煮鱼圆",
+        "淮扬软兜"
+      ],
       "portrait": null,
       "bio": "金陵饭店副总裁，江南名厨，40 余年专攻江苏淮扬菜，弘扬中华美食文化。法国世界名厨协会中国大陆唯一会员。",
       "source": "https://mobile.epaper.routeryun.com/index.php/home/article/index/appkey/4/date/2015-07-10/aid/281671.html ; https://js.cri.cn/2019-04-18/a9f8a3db-2841-a871-a561-8a2c6af544a7.html",
@@ -171,8 +224,14 @@
       "death": null,
       "birthplace": "江苏扬州",
       "primaryCuisine": "淮扬",
-      "secondaryCuisines": ["川", "国宴"],
-      "titles": ["淮扬烹饪大师", "人民大会堂国宴主理人"],
+      "secondaryCuisines": [
+        "川",
+        "国宴"
+      ],
+      "titles": [
+        "淮扬烹饪大师",
+        "人民大会堂国宴主理人"
+      ],
       "currentRole": "原人民大会堂淮扬菜首席主厨",
       "city": "北京",
       "masters": [],
@@ -182,7 +241,9 @@
         "1953 年起主理人民大会堂国宴",
         "1959 年人民大会堂建成后主导接待来访国宾的国宴设计"
       ],
-      "signature": ["国宴淮扬菜系列"],
+      "signature": [
+        "国宴淮扬菜系列"
+      ],
       "portrait": null,
       "bio": "淮扬国宴泰斗。1953 年起主理国宴，为众多重大国事活动设计淮扬风味宴席。北京人民大会堂淮扬菜一脉的开山祖师，其衣钵由陈苏华、郑秀生等下传至京菜国宴体系。",
       "source": "https://www.chinanews.com.cn/gn/news/2009/06-03/1718432.shtml ; http://yzsprcyhyxh.com/articleinfo/111.html",
@@ -197,7 +258,9 @@
       "birthplace": null,
       "primaryCuisine": "淮扬",
       "secondaryCuisines": [],
-      "titles": ["著名中国烹饪大师"],
+      "titles": [
+        "著名中国烹饪大师"
+      ],
       "currentRole": "北京饭店淮扬菜技术骨干",
       "city": "北京",
       "masters": [],
@@ -232,7 +295,11 @@
       "currentRole": "扬州大学旅游烹饪学院 / 四川烹饪学院客座教授；元老级淮扬菜烹饪大师",
       "city": "扬州",
       "masters": [
-        { "name": "丁万谷", "title": "淮扬菜宗师", "rawText": "14 岁进入烹饪行业，师从淮扬菜宗师丁万谷" }
+        {
+          "name": "丁万谷",
+          "title": "淮扬菜宗师",
+          "rawText": "14 岁进入烹饪行业，师从淮扬菜宗师丁万谷"
+        }
       ],
       "experiences": [
         "1960 年（14 岁）虚报年龄进入扬州市烹饪学校",
@@ -241,7 +308,11 @@
         "2015 年完成 16 道'封刀之作'菜模永久保存",
         "2020 年 75 岁再收 9 名弟子"
       ],
-      "signature": ["醋溜鳜鱼", "烤方", "扬州文昌阁"],
+      "signature": [
+        "醋溜鳜鱼",
+        "烤方",
+        "扬州文昌阁"
+      ],
       "portrait": null,
       "bio": "国宝级淮扬菜泰斗，扬州三把刀非遗传承人。师承丁万谷，从厨 60 载，桃李遍江苏。指导过万学武、张泽勇等多代中青年厨师。",
       "source": "https://baike.baidu.com/item/薛泉生/5759798 ; http://www.cmccx.cn/a/chujiexianfengmingrenbang/pengtantaidou/20110527/1092.html",
@@ -255,7 +326,9 @@
       "death": null,
       "birthplace": "北京",
       "primaryCuisine": "鲁",
-      "secondaryCuisines": ["京"],
+      "secondaryCuisines": [
+        "京"
+      ],
       "titles": [
         "亚洲厨王",
         "中国烹饪大师",
@@ -266,7 +339,11 @@
       "currentRole": "北京市丰台区屈浩烹饪服务职业技能培训学校校长",
       "city": "北京",
       "masters": [
-        { "name": "王义均", "title": "鲁菜泰斗、国宝级烹饪大师、中国十大名厨", "rawText": "师从王义均，丰泽园起步" }
+        {
+          "name": "王义均",
+          "title": "鲁菜泰斗、国宝级烹饪大师、中国十大名厨",
+          "rawText": "师从王义均，丰泽园起步"
+        }
       ],
       "experiences": [
         "毕业于北京教育学院烹饪教育系（本科）",
@@ -274,7 +351,11 @@
         "勤奋出众，被王义均收为徒，迅速升为小组长",
         "后创办屈浩烹饪学校，培养大批名厨"
       ],
-      "signature": ["葱烧海参", "九转大肠", "糟溜鱼片"],
+      "signature": [
+        "葱烧海参",
+        "九转大肠",
+        "糟溜鱼片"
+      ],
       "portrait": null,
       "bio": "鲁菜非遗传承人，王义均嫡传弟子。从丰泽园学徒一路成长为亚洲厨王、屈浩烹饪学校校长，京城鲁菜中坚。",
       "source": "https://www.ccas.com.cn/site/content/87191.html ; http://m.greatchef.com.cn/newsview?id=1433",
@@ -288,7 +369,9 @@
       "death": null,
       "birthplace": "广东中山小榄",
       "primaryCuisine": "粤",
-      "secondaryCuisines": ["燕鲍翅"],
+      "secondaryCuisines": [
+        "燕鲍翅"
+      ],
       "titles": [
         "中国鲍鱼王子",
         "粤菜南天王",
@@ -298,7 +381,11 @@
       "currentRole": "深圳市麦广帆餐饮策划管理有限公司创始人、董事长；海港饮食集团董事长",
       "city": "深圳 / 中山",
       "masters": [
-        { "name": "杨贯一", "title": "世界御厨、阿一鲍鱼创始人", "rawText": "1996 年拜师香港名厨杨贯一，学习煲干鲍秘技" }
+        {
+          "name": "杨贯一",
+          "title": "世界御厨、阿一鲍鱼创始人",
+          "rawText": "1996 年拜师香港名厨杨贯一，学习煲干鲍秘技"
+        }
       ],
       "experiences": [
         "毕业于中山大学",
@@ -307,7 +394,11 @@
         "至 2004 年集团已有 60 多家酒楼分布全国",
         "曾获第十届广东青年五四奖章提名奖"
       ],
-      "signature": ["阿一鲍鱼", "天下第一包", "溏心鲍鱼"],
+      "signature": [
+        "阿一鲍鱼",
+        "天下第一包",
+        "溏心鲍鱼"
+      ],
       "portrait": null,
       "bio": "中山籍粤菜南天王，杨贯一入室弟子，中国鲍鱼王子。海港饮食集团 60+ 家酒楼遍布全国。是粤菜南派师承核心，韦荣军等数位名厨皆奉其为师。",
       "source": "https://baike.baidu.com/item/麦广帆/5807086 ; http://www.bjjchb.com/php/news5_show.php?id=2923",
@@ -321,7 +412,9 @@
       "death": null,
       "birthplace": "北京",
       "primaryCuisine": "清真",
-      "secondaryCuisines": ["京"],
+      "secondaryCuisines": [
+        "京"
+      ],
       "titles": [
         "资深级注册中国烹饪大师",
         "中式烹调高级技师",
@@ -339,7 +432,10 @@
         "推动清真菜标准化与清真名厨评选",
         "门下弟子马建林等遍布西北、华北"
       ],
-      "signature": ["清真吊汤", "穆斯林宴系列"],
+      "signature": [
+        "清真吊汤",
+        "穆斯林宴系列"
+      ],
       "portrait": null,
       "bio": "回族清真菜泰斗，鸿雲楼董事长。中国烹饪协会副会长，世界烹饪联合会清真专家委常务副主席。马建林（cyxh-1464）等清真名厨皆师从其门下。",
       "source": "http://www.cmccx.cn/a/chujiexianfengmingrenbang/pengtanxianfeng/20120306/1692.html ; https://www.ccas.com.cn/site/content/87205.html",
@@ -354,8 +450,14 @@
       "death": 1941,
       "birthplace": "四川华阳",
       "primaryCuisine": "川",
-      "secondaryCuisines": ["官府菜", "宫廷"],
-      "titles": ["现代家常派川菜倡导者", "晚清光禄寺御膳房厨师"],
+      "secondaryCuisines": [
+        "官府菜",
+        "宫廷"
+      ],
+      "titles": [
+        "现代家常派川菜倡导者",
+        "晚清光禄寺御膳房厨师"
+      ],
       "currentRole": "成都姑姑筵创办人；四川省立第一女子师范学校烹饪课教师",
       "city": "成都",
       "masters": [],
@@ -366,7 +468,11 @@
         "回川后在成都少城公园开设晋龄饭店",
         "后开姑姑筵，独创黄氏家常派川菜体系"
       ],
-      "signature": ["开水白菜", "樟茶鸭子", "姑姑筵宴席"],
+      "signature": [
+        "开水白菜",
+        "樟茶鸭子",
+        "姑姑筵宴席"
+      ],
       "portrait": null,
       "bio": "现代川菜定型期关键人物，开水白菜原创者。文人入厨，川菜史上唯一无师自通的名厨。徒弟罗国荣将其技艺带入北京饭店，成就国宴川菜根基。",
       "source": "https://baike.baidu.com/item/黄晋临/65710347 ; http://www.zgcpcyppw.com/ccms/253.html",
@@ -380,7 +486,10 @@
       "death": 2021,
       "birthplace": "辽宁铁岭",
       "primaryCuisine": "辽",
-      "secondaryCuisines": ["宫廷", "满汉全席"],
+      "secondaryCuisines": [
+        "宫廷",
+        "满汉全席"
+      ],
       "titles": [
         "中国餐饮文化大师",
         "中国烹饪大师",
@@ -397,7 +506,9 @@
         "数十年专研清宫御膳与满族饮食文化",
         "著有《满汉席》《满族食俗与清宫御膳》等多部学术著作"
       ],
-      "signature": ["满汉席研究"],
+      "signature": [
+        "满汉席研究"
+      ],
       "portrait": null,
       "bio": "满族铁岭人，清宫御膳与满汉全席学术研究权威。著作等身，是辽菜与宫廷菜学理传承的灯塔。门下徒弟孙常胜等。",
       "source": "https://baike.baidu.com/item/吴正格/8271560",
@@ -411,7 +522,9 @@
       "death": null,
       "birthplace": "河北三河（生于北京）",
       "primaryCuisine": "京",
-      "secondaryCuisines": ["宫廷"],
+      "secondaryCuisines": [
+        "宫廷"
+      ],
       "titles": [
         "国宝级烹饪大师",
         "北京仿膳饭庄宫廷菜第三代传人",
@@ -422,7 +535,11 @@
       "currentRole": "原北京仿膳饭庄名厨；京华食苑餐饮顾问",
       "city": "北京",
       "masters": [
-        { "name": "王景春", "title": "北京仿膳饭庄名厨（仿膳宫廷菜第二代）", "rawText": "1960 年拜仿膳名厨王景春为师" }
+        {
+          "name": "王景春",
+          "title": "北京仿膳饭庄名厨（仿膳宫廷菜第二代）",
+          "rawText": "1960 年拜仿膳名厨王景春为师"
+        }
       ],
       "experiences": [
         "1950 年在北京北海公园揽翠轩学厨",
@@ -430,7 +547,11 @@
         "1960 年拜王景春为师，成为仿膳宫廷菜第三代传人",
         "1993 年退休后续任仿膳与京华食苑顾问"
       ],
-      "signature": ["仿膳宫廷菜系列", "凤尾鱼翅", "宫保鸡丁（宫廷版）"],
+      "signature": [
+        "仿膳宫廷菜系列",
+        "凤尾鱼翅",
+        "宫保鸡丁（宫廷版）"
+      ],
       "portrait": null,
       "bio": "北京仿膳饭庄宫廷菜第三代传人，国宝级烹饪大师。承袭清宫御膳一脉，孙常胜等弟子奉其为'宫廷仿膳大师'。",
       "source": "http://www.cyxh.org/mingchu/yuanlao/873.html ; https://baike.baidu.com/item/董世国/1895550",
@@ -444,7 +565,9 @@
       "death": 2019,
       "birthplace": "浙江宁波",
       "primaryCuisine": "淮扬",
-      "secondaryCuisines": ["沪"],
+      "secondaryCuisines": [
+        "沪"
+      ],
       "titles": [
         "国宝级淮扬菜泰斗",
         "国家高级烹饪技师",
@@ -459,7 +582,9 @@
         "创立梅府佳宴，被业界尊为淮扬王师门梅家菜开山宗师",
         "传徒含王伟（王占彪）等"
       ],
-      "signature": ["梅府家宴系列"],
+      "signature": [
+        "梅府家宴系列"
+      ],
       "portrait": null,
       "bio": "上海淮扬菜泰斗，梅府佳宴创始人。淮扬王师门梅家菜一脉宗师，王伟、何彬等沪上名厨之师，2019 年辞世。",
       "source": "http://www.cyxh.org/mingchu/mianhuai/437.html",
@@ -474,18 +599,27 @@
       "birthplace": null,
       "primaryCuisine": "淮扬",
       "secondaryCuisines": [],
-      "titles": ["米其林二星行政总厨", "中国烹饪大师"],
+      "titles": [
+        "米其林二星行政总厨",
+        "中国烹饪大师"
+      ],
       "currentRole": "澳门伦敦人淮扬晓宴行政总厨",
       "city": "澳门",
       "masters": [
-        { "name": "周晓燕", "title": "淮扬菜大师", "rawText": "淮扬菜大师周晓燕的弟子" }
+        {
+          "name": "周晓燕",
+          "title": "淮扬菜大师",
+          "rawText": "淮扬菜大师周晓燕的弟子"
+        }
       ],
       "experiences": [
         "周晓燕大师亲点的淮扬晓宴行政总厨",
         "餐厅 2023 米其林一星，2024 起米其林二星",
         "扬州本地团队骨干，赴澳前在扬州试菜筹备"
       ],
-      "signature": ["米其林二星淮扬菜单"],
+      "signature": [
+        "米其林二星淮扬菜单"
+      ],
       "portrait": null,
       "bio": "周晓燕嫡传弟子，澳门伦敦人淮扬晓宴行政总厨。带领餐厅短期内拿下米其林二星，把当代淮扬菜送上港澳米其林星图。",
       "source": "https://www.sandsresortsmacao.com.cn/sands-lifestyle/gastronomy/huaiyang-garden.html ; https://guide.michelin.com/hk/zh_HK/article/features/inspectors-reveal-all-huaiyang-garden",
@@ -499,19 +633,31 @@
       "death": null,
       "birthplace": "四川绵阳",
       "primaryCuisine": "京",
-      "secondaryCuisines": ["川", "粤"],
-      "titles": ["中国十大名厨", "中国烹饪大师"],
+      "secondaryCuisines": [
+        "川",
+        "粤"
+      ],
+      "titles": [
+        "中国十大名厨",
+        "中国烹饪大师"
+      ],
       "currentRole": "北京餐饮（曾在万荣烤鸭集团体系）；活跃于北京、淮扬两地名厨圈",
       "city": "北京",
       "masters": [
-        { "name": "石万荣", "title": "中国第一侠厨、中国饭店协会名厨委主席、北京万荣烤鸭集团董事长", "rawText": "师从石万荣大师并得其真传" }
+        {
+          "name": "石万荣",
+          "title": "中国第一侠厨、中国饭店协会名厨委主席、北京万荣烤鸭集团董事长",
+          "rawText": "师从石万荣大师并得其真传"
+        }
       ],
       "experiences": [
         "拜入石万荣门下习京味、川、粤多菜系",
         "曾受淮扬菜泰斗薛泉生指导",
         "传徒含张泽勇等"
       ],
-      "signature": ["京味融合菜"],
+      "signature": [
+        "京味融合菜"
+      ],
       "portrait": null,
       "bio": "绵阳籍北京名厨，石万荣大师爱徒，获中国十大名厨称号。融合京味、川菜、粤菜，是淮扬-京两地师承网络的连接点。",
       "source": "https://zhuanlan.zhihu.com/p/41017868 ; http://www.zgmcmsw.com/kmrl_iPhone/contents/45/221.html",
@@ -526,7 +672,9 @@
       "birthplace": "湖南长沙",
       "primaryCuisine": "湘",
       "secondaryCuisines": [],
-      "titles": ["民国湘菜名厨"],
+      "titles": [
+        "民国湘菜名厨"
+      ],
       "currentRole": "长沙曲园酒家名厨（生前）",
       "city": "长沙",
       "masters": [],
@@ -549,8 +697,13 @@
       "death": null,
       "birthplace": null,
       "primaryCuisine": "宫廷",
-      "secondaryCuisines": ["满汉全席"],
-      "titles": ["清宫御膳房庖长", "满汉全席真传"],
+      "secondaryCuisines": [
+        "满汉全席"
+      ],
+      "titles": [
+        "清宫御膳房庖长",
+        "满汉全席真传"
+      ],
       "currentRole": "清宫御膳房庖长（咸丰、同治、光绪、宣统四朝）",
       "city": "北京",
       "masters": [],
@@ -559,7 +712,9 @@
         "晚清出宫后在天津授徒",
         "收唐克明为关门弟子，传承七年满汉全席"
       ],
-      "signature": ["满汉全席"],
+      "signature": [
+        "满汉全席"
+      ],
       "portrait": null,
       "bio": "横跨晚清四朝的紫禁城御膳房庖长，满汉全席真传所系。唐克明的师傅，宫廷御膳一脉源头之一。",
       "source": "https://baike.baidu.com/item/唐克明/13874971 ; http://www.hnyhw.org.cn/newscontent_nor.aspx?channel_id=12&id=140",
@@ -574,7 +729,9 @@
       "birthplace": "广东",
       "primaryCuisine": "粤",
       "secondaryCuisines": [],
-      "titles": ["新雅粤菜馆掌勺名厨"],
+      "titles": [
+        "新雅粤菜馆掌勺名厨"
+      ],
       "currentRole": "原上海新雅粤菜馆主厨",
       "city": "上海",
       "masters": [],
@@ -597,7 +754,10 @@
       "birthplace": "广东",
       "primaryCuisine": "粤",
       "secondaryCuisines": [],
-      "titles": ["广州大同酒家头锅", "香港大同酒家总厨"],
+      "titles": [
+        "广州大同酒家头锅",
+        "香港大同酒家总厨"
+      ],
       "currentRole": "原广州大同酒家头锅；后任香港大同酒家总厨",
       "city": "广州 / 香港",
       "masters": [],
@@ -622,7 +782,9 @@
       "birthplace": "广东",
       "primaryCuisine": "粤",
       "secondaryCuisines": [],
-      "titles": ["新雅粤菜馆名厨"],
+      "titles": [
+        "新雅粤菜馆名厨"
+      ],
       "currentRole": "原上海新雅粤菜馆名厨",
       "city": "上海",
       "masters": [],
@@ -645,7 +807,9 @@
       "birthplace": "山东",
       "primaryCuisine": "鲁",
       "secondaryCuisines": [],
-      "titles": ["天津致美斋名厨"],
+      "titles": [
+        "天津致美斋名厨"
+      ],
       "currentRole": "原天津致美斋饭庄（山东风味）主厨",
       "city": "天津",
       "masters": [],
@@ -669,7 +833,10 @@
       "birthplace": "辽宁",
       "primaryCuisine": "辽",
       "secondaryCuisines": [],
-      "titles": ["辽菜宗师", "中国烹饪大师"],
+      "titles": [
+        "辽菜宗师",
+        "中国烹饪大师"
+      ],
       "currentRole": "原辽宁省高级厨师培训基地主理教学",
       "city": "沈阳",
       "masters": [],
@@ -697,7 +864,9 @@
     {
       "name": "李晓静",
       "primaryCuisine": "京",
-      "secondaryCuisines": ["宫廷"],
+      "secondaryCuisines": [
+        "宫廷"
+      ],
       "bio": "宫廷寿宴大师，传徒含国家名厨石俊峰。详情待考。",
       "source": "http://www.cyxh.org/mingchu/dangdai/1010.html",
       "isSparseSource": true,
@@ -706,7 +875,9 @@
     {
       "name": "薛文俊",
       "primaryCuisine": "京",
-      "secondaryCuisines": ["宫廷"],
+      "secondaryCuisines": [
+        "宫廷"
+      ],
       "bio": "北京御锦厨皇酒店宫廷菜名厨，孙常胜等弟子奉其为亲传师傅。详情待考。",
       "source": "http://www.cyxh.org/mingchu/dangdai/49.html",
       "isSparseSource": true,
@@ -751,23 +922,99 @@
     "fullyFilled": 14,
     "mediumFilled": 9,
     "sparselyFilled": 8,
-    "sources": ["baidu", "cyxh.org", "mingchu", "cmccx", "中国新闻网", "搜狐", "中国餐饮协会", "知乎专栏", "中国烹饪协会(ccas)", "维基百科", "新浪", "凤凰网", "人民网", "江苏人大", "michelin guide"]
+    "sources": [
+      "baidu",
+      "cyxh.org",
+      "mingchu",
+      "cmccx",
+      "中国新闻网",
+      "搜狐",
+      "中国餐饮协会",
+      "知乎专栏",
+      "中国烹饪协会(ccas)",
+      "维基百科",
+      "新浪",
+      "凤凰网",
+      "人民网",
+      "江苏人大",
+      "michelin guide"
+    ]
   },
   "newEdgesDiscovered": [
-    { "master": "梁忠", "disciple": "唐克明", "note": "宫廷御膳：清宫御膳房-沈阳行宫" },
-    { "master": "唐克明", "disciple": "刘敬贤", "note": "宫廷御膳-辽菜（已在数据集）" },
-    { "master": "丁万谷", "disciple": "薛泉生", "note": "淮扬菜启蒙" },
-    { "master": "王致福", "disciple": "王伟", "note": "淮扬王师门梅家菜第三代" },
-    { "master": "石万荣", "disciple": "万学武", "note": "京味融合菜师承" },
-    { "master": "薛泉生", "disciple": "万学武", "note": "受指导，非正式拜师" },
-    { "master": "王义均", "disciple": "屈浩", "note": "丰泽园-鲁菜" },
-    { "master": "杨贯一", "disciple": "麦广帆", "note": "1996 年拜师，干鲍秘技" },
-    { "master": "杨贯一", "disciple": "黄俊杰", "note": "2011 年确认为阿一鲍鱼传人" },
-    { "master": "王景春", "disciple": "董世国", "note": "仿膳宫廷菜第三代" },
-    { "master": "周晓燕", "disciple": "肖飞", "note": "嫡传弟子-米其林二星" },
-    { "master": "王殿臣", "disciple": "张文海", "note": "1943 年天津致美斋" },
-    { "master": "史玉和", "disciple": "石荫祥", "note": "1932 长沙曲园酒家" },
-    { "master": "殷耀", "disciple": "黄深", "note": "广州大同酒家" },
-    { "master": "黄深", "disciple": "黄振华", "note": "粤菜泰斗家学" }
+    {
+      "master": "梁忠",
+      "disciple": "唐克明",
+      "note": "宫廷御膳：清宫御膳房-沈阳行宫"
+    },
+    {
+      "master": "唐克明",
+      "disciple": "刘敬贤",
+      "note": "宫廷御膳-辽菜（已在数据集）"
+    },
+    {
+      "master": "丁万谷",
+      "disciple": "薛泉生",
+      "note": "淮扬菜启蒙"
+    },
+    {
+      "master": "王致福",
+      "disciple": "王伟",
+      "note": "淮扬王师门梅家菜第三代"
+    },
+    {
+      "master": "石万荣",
+      "disciple": "万学武",
+      "note": "京味融合菜师承"
+    },
+    {
+      "master": "薛泉生",
+      "disciple": "万学武",
+      "note": "受指导，非正式拜师"
+    },
+    {
+      "master": "王义均",
+      "disciple": "屈浩",
+      "note": "丰泽园-鲁菜"
+    },
+    {
+      "master": "杨贯一",
+      "disciple": "麦广帆",
+      "note": "1996 年拜师，干鲍秘技"
+    },
+    {
+      "master": "杨贯一",
+      "disciple": "黄俊杰",
+      "note": "2011 年确认为阿一鲍鱼传人"
+    },
+    {
+      "master": "王景春",
+      "disciple": "董世国",
+      "note": "仿膳宫廷菜第三代"
+    },
+    {
+      "master": "周晓燕",
+      "disciple": "肖飞",
+      "note": "嫡传弟子-米其林二星"
+    },
+    {
+      "master": "王殿臣",
+      "disciple": "张文海",
+      "note": "1943 年天津致美斋"
+    },
+    {
+      "master": "史玉和",
+      "disciple": "石荫祥",
+      "note": "1932 长沙曲园酒家"
+    },
+    {
+      "master": "殷耀",
+      "disciple": "黄深",
+      "note": "广州大同酒家"
+    },
+    {
+      "master": "黄深",
+      "disciple": "黄振华",
+      "note": "粤菜泰斗家学"
+    }
   ]
 }

@@ -1615,7 +1615,7 @@
       "ethnicity": "汉族",
       "birth": 1967,
       "death": null,
-      "birthplace": "中国著名宫廷美食品牌《颐和食坊》创始",
+      "birthplace": null,
       "primaryCuisine": "京",
       "secondaryCuisines": [],
       "education": "大专",
@@ -1816,7 +1816,7 @@
       "ethnicity": "汉族",
       "birth": 1964,
       "death": null,
-      "birthplace": "山西太原",
+      "birthplace": null,
       "primaryCuisine": "粤",
       "secondaryCuisines": [
         "鲁",

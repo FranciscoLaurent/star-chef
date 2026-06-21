@@ -1,0 +1,386 @@
+[
+  {
+    "name": "王平",
+    "cui": "粤",
+    "birthplace": "河北",
+    "bio": "河北籍粤菜大师。32 年专注粤菜创新。2024 年入选《国家名厨》第六卷。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1090.html",
+    "origin": "cyxh-chefs.json"
+  },
+  {
+    "name": "邓子军",
+    "cui": "粤",
+    "birthplace": "内蒙古赤峰",
+    "bio": "内蒙古赤峰满族厨师，沿海餐饮 5S 管理专家，擅长连锁厨部管理。",
+    "source": "http://www.cyxh.org/mingchu/zishen/577.html",
+    "origin": "cyxh-chefs.json"
+  },
+  {
+    "name": "伍德成",
+    "cui": "粤",
+    "birthplace": "江苏扬州",
+    "bio": "从厨37年，精通淮扬菜、粤菜技艺，他深谙中西烹饪精髓，擅长将传统中式菜肴与现代烹饪理念相结合，创造出兼具艺术美感与独特风味的菜品。他始终秉持“选用好食材，用心做出好味道”的烹饪初心，敬畏食材、坚守匠心",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1453.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "王丙军",
+    "cui": "粤",
+    "birthplace": "河北张家口",
+    "bio": "王丙军，男，汉族，1978年2月出生，河北张家口人，大专学历。1996年4月至2013年3月在中国人民解放军联合参谋部后勤管理处工作；2015年11月份创办北京康乐食苑餐饮管理有限公司，现任职公司总经",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1444.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "熊俊",
+    "cui": "粤",
+    "birthplace": "江西南昌",
+    "bio": "他的人生轨迹，不是一条直线，而是一张从餐饮贸易到互联网、从线下餐饮到线上、从区域到全国的餐饮供应链图谱。18年来，他始终扎根海鲜水产赛道，用厨师、研发、采购、运营的多重视角，打通了一条从产地到餐桌的“",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1424.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "潘健明",
+    "cui": "粤",
+    "birthplace": "安徽池州",
+    "bio": "深耕餐饮行业三十余载，拥有二十年以上餐饮管理经验。精通杭帮菜、粤菜、上海菜、淮扬菜及燕翅鲍烹制技艺，擅长高、中档大型宴会统筹策划，具备成熟丰富的餐饮全流程管理经验。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1419.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "张传宝",
+    "cui": "粤",
+    "birthplace": "张西施老菜馆品牌创始",
+    "bio": "2002年毕业于安徽省合肥市新东方烹饪学校，分配至六安皖西宾馆。从砧板主案到厨师长，他勤勉精进、步步成长，在酒店资深前辈言传身教下深耕技艺，更以对烹饪的赤诚热爱与执着追求，在业内崭露头角，随后立志创业",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1413.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "顾豪豪",
+    "cui": "粤",
+    "birthplace": "江苏昆山",
+    "bio": "自2000年踏入餐饮行业，至今已有二十六年厨龄，顾豪豪从一名厨房学徒一步步成长为区域总厨，厨房不仅是他的工作岗位，更是他倾注热爱与坚守的事业。初入行业时，他在上海多家知名餐饮门店历练，先后任职于华美达",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1393.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "周谦",
+    "cui": "粤",
+    "birthplace": "湖南湘潭",
+    "bio": "自2004年步入烹饪行业以来，周谦深耕厨坛二十余载，系统研习中式烹调技艺，精研湘菜、粤菜及融合菜，博采众长、融会贯通，逐步形成独具特色的烹饪风格。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/1382.html",
+    "origin": "cyxh-dangdai-batch3.json"
+  },
+  {
+    "name": "贾鸿祥",
+    "cui": "粤",
+    "birthplace": "山西太原",
+    "bio": "山西太原粤菜大师，师承李嗣亮，获国家名厨、中华金厨等荣誉。",
+    "source": "http://www.cyxh.org/mingchu/zishen/967.html",
+    "origin": "cyxh-zishen-batch3.json"
+  },
+  {
+    "name": "姜介福",
+    "cui": "粤",
+    "birthplace": "江苏无锡",
+    "bio": "上海烹饪界八大金刚之一，新雅粤菜馆刀神。师承杨珠福、许培、殷光、萧克明等粤菜名厨。三赴荷兰掌勺，曾为江泽民访俄全程掌勺。",
+    "source": "http://www.cyxh.org/mingchu/yuanlao/861.html",
+    "origin": "cyxh-yuanlao-batch2.json"
+  },
+  {
+    "name": "东林发",
+    "cui": "粤",
+    "birthplace": "江苏海门",
+    "bio": "海门籍沪上烹饪大师，毛泽东主席专职厨师 5 年。其红烧肉深得毛主席青睐，毛主席来沪必请其烹制。曾为尼克松、里根、田中角荣、西哈努克等元首执厨。",
+    "source": "http://www.mingchu.org/mingchu/yuanlao/868.html",
+    "origin": "mingchu-elite.json"
+  },
+  {
+    "name": "蔡小龙",
+    "cui": "粤",
+    "birthplace": "福建",
+    "bio": "福州粤菜协会会长，世界名厨钱以斌精英团队成员。专攻粤菜与分子料理，入选《国家名厨》。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/630.html",
+    "origin": "cyxh-dangdai-batch4.json"
+  },
+  {
+    "name": "陈彦科",
+    "cui": "粤",
+    "birthplace": "甘肃岷县",
+    "bio": "甘肃岷县籍兰州厨师，擅粤川凉菜创新，现就职兰州皇冠假日酒店。2022 年获评中厨之星。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/740.html",
+    "origin": "cyxh-dangdai-batch4.json"
+  },
+  {
+    "name": "徐德军",
+    "cui": "粤",
+    "birthplace": "安徽铜陵市",
+    "bio": "徐德军，男，汉族，1975年5月出生，安徽铜陵市人。中式烹调高级技师，中国烹饪大师，全国中餐业特级评委，酒店管理餐饮经理人，高级食品雕刻师，现任上海亲加亲餐饮公司行政总厨兼出品总监。精通上海菜，对于烹",
+    "source": "http://www.cyxh.org/mingchu/dangdai/30.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "张学军",
+    "cui": "粤",
+    "birthplace": "江苏泗洪县",
+    "bio": " 张学军，1975年5月出生，江苏泗洪县人。国家高级烹调师，国家名厨，中国烹饪大师，中华餐饮管理名师，现任日本株式会社山泉楼广东料理主厨，从厨20余年，擅长烹制淮扬菜、粤菜、江浙菜及日本料理。2016",
+    "source": "http://www.mingchu.org/mingchu/dangdai/103.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "王正贵",
+    "cui": "粤",
+    "birthplace": "江苏扬州",
+    "bio": "王正贵，江苏扬州人。中国烹饪大师，扬中河豚烹饪名师，国家名厨编委会高级委员，江苏省餐饮商会理事，江苏烹饪协会理事，现任江苏扬州江都大酒店行政总厨。擅长淮扬菜、粤菜及海派菜的烹制技艺，2016年入选《国",
+    "source": "http://www.mingchu.org/mingchu/dangdai/114.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "李汉红",
+    "cui": "粤",
+    "birthplace": "陕西汉中",
+    "bio": "李汉红，男，汉族，1979年2月出生，陕西汉中人。中国烹饪大师，汉中市名厨委副主任，现任汉中市金龙大酒店有限公司出品部经理。擅长皇家官府菜、粤菜、淮扬菜的烹制技艺，2016年被选入国家级名厨人物典籍《",
+    "source": "http://www.mingchu.org/mingchu/dangdai/117.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "谢跟党",
+    "cui": "粤",
+    "birthplace": "河南上蔡县",
+    "bio": "谢跟党，男，汉族，1976年3月出生，河南上蔡县人。中式烹调高级技师，国家名厨，注册中国烹饪大师，中华食神，餐饮业国家一级评委，八方食圣三连冠擂主，国家名厨编委会高级名厨委员，现任北京秦人古韵食府行政",
+    "source": "http://www.mingchu.org/mingchu/dangdai/119.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "金小明",
+    "cui": "粤",
+    "birthplace": "浙江义乌",
+    "bio": "金小明，男，汉族，1967年7月出生，浙江义乌人。大专学历，中国烹饪大师，高级饭店职业经理人，现任烟台市宝华开元名都大酒店行政总厨兼餐饮总监。从事烹饪研究与实践20年，擅长浙菜、淮扬菜、粤菜的烹制技艺",
+    "source": "http://www.mingchu.org/mingchu/dangdai/128.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "崔宁",
+    "cui": "粤",
+    "birthplace": "陕西蒲城",
+    "bio": "崔宁，男，陕西蒲城人。大专学历，中式烹调高级技师，高级营养师，中国烹饪大师，中国药膳大师，中国名厨委员会委员，中国粤菜厨师美食协会会员，现任北京龙瑞祥烤全羊会所行政总厨。致力于粤菜、官府菜、融合创意菜",
+    "source": "http://www.mingchu.org/mingchu/dangdai/136.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "朱亮",
+    "cui": "粤",
+    "birthplace": "江苏仪征市",
+    "bio": "朱亮，男，汉族，1988年1月出生，江苏仪征市人。中国烹饪名师，他擅长制作粤菜和淮扬菜",
+    "source": "http://www.mingchu.org/mingchu/dangdai/152.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "杨钟",
+    "cui": "粤",
+    "birthplace": "湖南长沙",
+    "bio": "杨钟，男，汉族，1983年6月出生，湖南长沙人。中餐高级烹饪师，高级药膳营养师，国家名厨，现任青海西宁市青海宾馆外聘湘菜粤菜行政总厨。精通湘菜、粤菜的烹制技艺，2017年入选《国家名厨》第四卷",
+    "source": "http://www.mingchu.org/mingchu/dangdai/155.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "张桂年",
+    "cui": "粤",
+    "birthplace": "江苏兴化",
+    "bio": "张桂年（常用名：张海龙），男，汉族，1970年5月出生，江苏兴化人。中国烹饪大师，江苏兴创食艺五兄弟执行董事之一，现任江苏兴化市森南国际大酒店行政总厨。他擅长烹制时尚经典淮扬菜、江鲜、粤菜等技艺",
+    "source": "http://www.mingchu.org/mingchu/dangdai/179.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "卞久清",
+    "cui": "粤",
+    "birthplace": "江苏兴化",
+    "bio": "卞久清，男，汉族，1981年5月出生，江苏兴化人。中国烹饪大师，兴化十大名厨之首，兴化板桥宴制作第一人，泰州厨师行业协会兴化分会会长，江苏兴创食艺五兄弟执行董事之一，现任江苏兴化昭阳八鲜酒店总经理。擅",
+    "source": "http://www.mingchu.org/mingchu/dangdai/184.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "张贵勇",
+    "cui": "粤",
+    "birthplace": "辽宁大连",
+    "bio": "张贵勇，男，汉族，1983年8月出生，辽宁大连人。中国名厨，现任大连枫福园海鲜饭店厨师长。他擅长烹制官府菜、粤菜，尤以制作大连海鲜更见技艺",
+    "source": "http://www.mingchu.org/mingchu/dangdai/187.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "冯冠林",
+    "cui": "粤",
+    "birthplace": "安徽潜山",
+    "bio": "冯冠林，男，汉族，1980年7月出生，安徽潜山人。大专学历，国家中式烹调技师，国家名厨，中国烹饪大师，中国徽菜大师，厨政管理师，安徽省餐饮行业协会厨师专业委员会常务委员，安庆市餐饮行业协会常务理事，现",
+    "source": "http://www.mingchu.org/mingchu/dangdai/236.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "季军",
+    "cui": "粤",
+    "birthplace": "江苏盐城",
+    "bio": "季军，男，汉族，1972年6月出生，江苏盐城人。高级技师，高级营养师，国家名厨，注册中国烹饪大师，江苏省烹饪大师，青年烹饪艺术家，江苏省五一劳动模范，现任江苏悦达国际大酒店有限公司总经理助理。\r\n师从",
+    "source": "http://www.mingchu.org/mingchu/dangdai/251.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "贺会强",
+    "cui": "粤",
+    "birthplace": "山西泽州县",
+    "bio": "贺会强，男，汉族，1979年6月出生，山西泽州县人。国家名厨，中国烹饪大师，现任北京山西大厦（北京金辇酒店）行政总厨。从厨20年，精通晋菜、粤菜、淮扬菜、官府菜的烹制技艺",
+    "source": "http://www.mingchu.org/mingchu/dangdai/252.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "孙学民",
+    "cui": "粤",
+    "birthplace": "吉林临江",
+    "bio": "孙学民，男，汉族，1975年3月出生，吉林临江人。高级中式烹调师，国家名厨，东北菜大师，现任广东东莞东北酱骨头虎门店行政总厨兼副总经理。从事烹饪工作24年，技术全面，他不仅精通鲁菜、东北菜、粤菜、上海",
+    "source": "http://www.mingchu.org/mingchu/dangdai/294.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "曹海兵",
+    "cui": "粤",
+    "birthplace": "江苏南通如东",
+    "bio": "曹海兵，男，汉族，1980年4月出生，江苏南通如东人。中国名厨，现任连云港随园餐饮管理有限公司厨师长。曹海兵同志从事餐饮行业近二十年，擅长淮扬菜、粤菜、融合菜、江海河鲜等制作技艺",
+    "source": "http://www.mingchu.org/mingchu/dangdai/314.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "曹明悬",
+    "cui": "粤",
+    "birthplace": "安徽界首",
+    "bio": "曹明悬，男，1984年11月出生，安徽界首人。中国烹饪名师，上海总厨联盟会员，弘博餐饮联盟技术研究员，师从著名中国烹饪大师、中国饭店协会名厨委副主席王伟(王占彪)大师。从事烹饪工作至今16年，炼就了一",
+    "source": "http://www.mingchu.org/mingchu/dangdai/343.html",
+    "origin": "cyxh-crawled2.json"
+  },
+  {
+    "name": "葛长明",
+    "cui": "粤",
+    "birthplace": "江苏阜宁",
+    "bio": "葛长明，男，汉族，1974年11月出生，江苏阜宁人。从厨26年，他技艺全面，造诣较深，擅长海派菜、粤菜及川湘菜的烹制技艺，博采众长，兼容并蓄",
+    "source": "http://www.cyxh.org/mingchu/dangdai/393.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "白国强",
+    "cui": "粤",
+    "birthplace": "山西大同",
+    "bio": "白国强，，山西大同人。中国名厨，现任山西晋中田舍酒店行政总厨。他功底深厚，技术全面，擅长苏菜、浙菜、粤菜、融合菜的制作技艺，善于博采众长，为我所用，制作菜肴刀工精细，口味佳，讲究真本实料，火功到家。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/450.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "曹理想",
+    "cui": "粤",
+    "birthplace": "河南驻马店",
+    "bio": "曹理想，1975年7月出生，河南驻马店人。高中文化，国家高级烹调师，中国烹饪大师，擅长粤菜、豫菜制作技艺，郑州咱姥家餐饮服务有限公司董事长，郑州市十大杰出青年，郑州市慈善总会会员，河南吾二哥餐饮管理有",
+    "source": "http://www.cyxh.org/mingchu/dangdai/455.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "王昌飞",
+    "cui": "粤",
+    "birthplace": "江苏宿迁",
+    "bio": "王昌飞，男，1981年10月出生，江苏宿迁人。中国烹饪大师，从事烹饪工作20多年，他技术全面，不仅擅长淮扬菜，还精通粤菜及上海风味菜肴的烹制",
+    "source": "http://www.cyxh.org/mingchu/dangdai/517.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "季益平",
+    "cui": "粤",
+    "birthplace": "安徽无为",
+    "bio": "季益平，男，汉族，1970年12月出生，安徽无为人。中国烹饪大师，中国徽菜大师，从事烹饪工作30余年，他功底深厚，技术全面，擅长徽菜、粤菜以及官府风味菜肴的制作技艺",
+    "source": "http://www.cyxh.org/mingchu/dangdai/604.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "刘文亮",
+    "cui": "粤",
+    "birthplace": "黑龙江省绥化市兰西县",
+    "bio": "刘文亮，男，汉族，1981年4月出生，高中学历，黑龙江省绥化市兰西县人。擅长冀菜、粤菜、融合菜及东北风味特色菜的研发制作，博采众家之长，在改革创新中，形成自己独有的风格特点。其代表作品有话梅蜜汁五花肉",
+    "source": "http://www.cyxh.org/mingchu/dangdai/745.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "杨朋山",
+    "cui": "粤",
+    "birthplace": "河北保定曲阳",
+    "bio": "杨朋山，男，汉族，1984年1月出生，河北保定曲阳人。2000年开始从厨，至今已有22年工龄，他功底深厚，技术全面，擅长大连海鲜、粤菜、官府菜、融合菜的制作技艺，善于适应顾客需要，不断翻新品种，长年工",
+    "source": "http://www.cyxh.org/mingchu/dangdai/748.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "卫伟",
+    "cui": "粤",
+    "birthplace": "山西临猗县",
+    "bio": "卫伟，男，汉族，山西临猗县人。擅长粤菜和融合菜的制作技艺，他不断进取，刻苦钻研厨艺，也博采众长，融会贯通，勇于创新，多年来形成了自己独特的厨艺风格，2022年被中国餐饮协会授予“中国名厨”荣誉称号。",
+    "source": "http://www.cyxh.org/mingchu/dangdai/756.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "伍双成",
+    "cui": "粤",
+    "birthplace": "江西南昌",
+    "bio": "伍双成，男，汉族，1986年2月出生，江西南昌人。首批中国非遗美食大师，新东方烹饪学院烹饪专业毕业，擅长江浙菜、淮扬菜，对粤菜、海鲜姿造火锅也有丰富的制作经验",
+    "source": "http://www.cyxh.org/mingchu/dangdai/796.html",
+    "origin": "cyxh-crawled3.json"
+  },
+  {
+    "name": "高生祥",
+    "cui": "粤",
+    "birthplace": "甘肃武威",
+    "bio": " 特长：创意粤菜理念菜系：粤菜、分子料理及江南融合菜等。从厨心得：追求厨艺的最高境界，我一直在努力！ 高生祥，男，汉族，1989年3月生，甘肃武威人，现定居广东深圳。他是中国当红名厨，中国",
+    "source": "http://www.mingchu.org/mingchu/dangdai/1075.html",
+    "origin": "cyxh-list-crawled.json"
+  },
+  {
+    "name": "孟文敬",
+    "cui": "粤",
+    "birthplace": "安徽砀山县",
+    "bio": "孟文敬，男，汉族，1980年7月出生，安徽砀山县人。国家名厨，国家高级烹调师，中国烹饪协会会员，现任古北水镇旅游有限公司古北之光度假酒店中餐宴会总厨。入厨至今20多年，先后学习了粤菜、淮扬菜、官府菜、",
+    "source": "http://www.mingchu.org/mingchu/dangdai/814.html",
+    "origin": "cyxh-crawled4.json"
+  },
+  {
+    "name": "汪智华",
+    "cui": "粤",
+    "birthplace": "甘肃兰州",
+    "bio": "汪智华，男，汉族，1982年8月出生，甘肃兰州人。现任古北水镇旅游有限公司古北之光度假酒店酒店行政总厨，国家名厨，国家高级中式烹饪师，擅长制作粤菜、淮扬菜等技艺，自1999年烹饪专业毕业，入厨至今25",
+    "source": "http://www.mingchu.org/mingchu/dangdai/815.html",
+    "origin": "cyxh-crawled4.json"
+  },
+  {
+    "name": "雷利风",
+    "cui": "粤",
+    "birthplace": "河南周口",
+    "bio": " 雷利风，男，汉族，河南周口人，中国烹饪大师，以其精湛的粤菜技艺和对美食的执着追求，成为业界翘楚。他擅长粤菜烹饪，不仅继承了传统粤菜的精髓，更在菜品研发和创新上敢于突破，不断推陈",
+    "source": "http://www.cyxh.org/mingchu/dangdai/995.html",
+    "origin": "cyxh-crawled4.json"
+  },
+  {
+    "name": "谢浩光",
+    "cui": "粤",
+    "birthplace": "浙江温州",
+    "bio": "温州餐饮界著名的温州四虎之一，对粤菜在温州的推广影响巨大。2009年荣列新中国60年上海餐饮业技术精英名单。",
+    "source": "https://zgcsw.cn/mc/5159.html",
+    "origin": "cswzg-fills-a.json"
+  },
+  {
+    "name": "刘志刚",
+    "cui": "粤",
+    "birthplace": "辽宁",
+    "bio": "1984年生，辽宁人。2020年起任浑南区政府厨师长。擅长粤菜、融合菜、特色菜。",
+    "source": "https://cswzg.com/mc/5074.html",
+    "origin": "cswzg-fills-b.json"
+  },
+  {
+    "name": "陈雪锋",
+    "cui": "粤",
+    "birthplace": "陕西渭南",
+    "bio": "1976年生，陕西渭南人。近30年餐饮经验。曾在广州市公安局民警培训中心任出品主管12年。2024年起在深圳小梅沙海洋世界任厨师长。",
+    "source": "https://www.cswzg.com/mc/5065.html",
+    "origin": "cswzg-fills-b.json"
+  }
+]

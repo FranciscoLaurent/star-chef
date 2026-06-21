@@ -1,1 +1,1197 @@
-{"source":"cswzg 裸名补全 batch A","fetchDate":"2026-06-21","chefs":[{"name":"朱宝","primaryCuisine":null,"birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"bio":"中华厨师协会认证的中国烹饪大师，证书编号ZCXH025918。","found":true,"source":"https://cswzg.com/mc/5241.html"},{"name":"楼海祥","primaryCuisine":null,"birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"bio":"中华厨师协会认证的中国烹饪大师。","found":true,"source":"https://cswzg.com/mc/5239.html"},{"name":"舒俊","primaryCuisine":"湘","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师","北方厨艺名师","广东湘菜名师"],"signature":["凤尾腰花","福感血鸭"],"bio":"广州铁路局资深客运厨师，2024年获第三届聪厨杯广东湘菜名厨争霸赛金奖。","found":true,"source":"https://cswzg.com/mc/5240.html"},{"name":"温江辉","primaryCuisine":"滇","birth":null,"birthplace":"云南曲靖","gender":"男","titles":["注册中国烹饪大师","西式面点二级技师","高级中式烹调师"],"bio":"云南曲靖人，全能型烹饪大师，拥有多项高级资质。","found":true,"source":"https://cswzg.com/mc/5238.html"},{"name":"刘小锋","primaryCuisine":null,"birth":1989,"birthplace":"安徽","gender":"男","titles":["中国烹饪大师"],"bio":"安徽人，中华厨师协会认证中国烹饪大师。","found":true,"source":"https://cswzg.com/mc/5237.html"},{"name":"熊乐","primaryCuisine":"陕","birth":1993,"birthplace":"陕西西安","gender":"男","titles":["中国烹饪大师","国家中式烹调师一级高级技师","米其林特邀厨师"],"masters":[{"name":"胡忠英"}],"signature":["满江红","山河万朵","五彩肉夹馍"],"bio":"1993年生于西安，师从中国烹饪大师胡忠英第三代传人。2018年与法国总统御厨盖伊·马丁米其林三星团队合作。擅长中法融合菜、燕鲍翅。","found":true,"source":"https://baike.baidu.com/item/熊乐/66758105"},{"name":"龙尚","primaryCuisine":"湘","birth":1984,"birthplace":"湖南汨罗","gender":"男","titles":["中国烹饪大师","中式烹调高级技师"],"bio":"1984年生，湖南汨罗人。1998年入行，擅长传统湘菜、粤菜、川菜及新派湘菜融合。","found":true,"source":"https://cswzg.com/mc/5235.html"},{"name":"段进平","primaryCuisine":null,"birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"bio":"中华厨师协会认证的中国烹饪大师。","found":true,"source":"https://cswzg.com/mc/5233.html"},{"name":"孙金光","primaryCuisine":"鲁","birth":1985,"birthplace":"山东威海","gender":"男","titles":["中国烹饪大师","山东鲁菜烹饪大师"],"signature":["葱烧海参","油焖大虾","海肠捞饭","鲅鱼水饺"],"bio":"1985年生，山东威海人。深耕餐饮24年，现任山东兴顺餐饮研发总监。参与制定威海市学生餐标准菜谱，获威海市五一劳动奖章。","found":true,"source":"https://cswzg.com/mc/5343.html"},{"name":"陈石柱","primaryCuisine":"粤","birth":1984,"birthplace":"广东河源","gender":"男","titles":["中国烹饪大师"],"bio":"1984年生，广东河源人。精通意大利餐、法餐、融合粤菜、分子料理。现任广州南站城际酒店总厨。","found":true,"source":"https://cswzg.com/mc/5232.html"},{"name":"何辅庭","primaryCuisine":"川","birth":null,"birthplace":"重庆","gender":"男","titles":["中国烹饪大师","重庆烹饪艺术大师","中式烹调一级高级技师"],"signature":["峡江金牌鱼","应山滑肉"],"bio":"重庆人，从业26年。擅长川菜、湘菜、粤菜、鄂菜、融合菜。教授高徒50余人。","found":true,"source":"https://cswzg.com/mc/5231.html"},{"name":"黄辉","primaryCuisine":"豫","birth":null,"birthplace":"河南信阳","gender":"男","titles":["中国烹饪大师","信阳菜烹饪大师"],"bio":"深耕信阳菜二十余年，擅长焖菜、炖菜等信阳传统技艺。","found":true,"source":"https://cswzg.com/mc/5229.html"},{"name":"冯遣光","primaryCuisine":"粤","birth":1980,"birthplace":"广西防城港","gender":"男","titles":["中国烹饪大师"],"signature":["红胡椒焗波士顿龙虾"],"bio":"1980年生，广西防城港人。深谙粤菜精髓，对江浙菜、川菜亦有独到见解。曾接待李克强、姚明、雷军等名人。","found":true,"source":"https://cswzg.com/mc/5228.html"},{"name":"何志文","primaryCuisine":"粤","birth":1976,"birthplace":"广东顺德","gender":"男","titles":["中国烹饪大师","顺德名厨","三星级凤厨"],"bio":"1976年生，广东顺德人。1996年入行，2025年获全国粤菜烹饪邀请赛特金奖。","found":true,"source":"https://cswzg.com/mc/5225.html"},{"name":"郭合金","primaryCuisine":"浙","birth":1995,"birthplace":"河南柘城","gender":"男","titles":["中国青年名厨"],"signature":["鲍鱼焖猪脚","干菜千层肉"],"bio":"1995年生，河南柘城人。2012年赴杭州入行系统学习浙菜，现任宁波天天渔港大酒店总厨。","found":true,"source":"https://cswzg.com/mc/5223.html"},{"name":"殷夫林","primaryCuisine":"沪","birth":1998,"birthplace":null,"gender":"男","titles":["中国烹饪大师","亚洲十大名厨"],"bio":"1998年生。先后在上海多家酒店及会所任行政总厨，现任上海雀晏会所总厨。精通融合菜、本帮菜、淮扬菜。","found":true,"source":"https://cswzg.com/mc/5222.html"},{"name":"徐会达","primaryCuisine":"鲁","birth":null,"birthplace":"山东","gender":"男","titles":["中国烹饪大师"],"bio":"山东人，2010年毕业于济南蓝翔烹饪学院，曾在北京、上海、广东等地进修。","found":true,"source":"https://cswzg.com/mc/5217.html"},{"name":"兰廷峰","primaryCuisine":"川","birth":1987,"birthplace":"四川南充","gender":"男","titles":["中国烹饪大师"],"bio":"1987年生，四川南充人。2006年入行，现任青岛城阳要麻川菜酒馆厨师长。","found":true,"source":"https://cswzg.com/mc/5216.html"},{"name":"黄永乐","primaryCuisine":"湘","birth":1987,"birthplace":"湖南醴陵","gender":"男","titles":["中国烹饪大师","新锐烹饪之星"],"bio":"1987年生，湖南醴陵人。曾在深圳、杭州、长沙、北京多地任职，现任德化九仙山酒店行政总厨。","found":true,"source":"https://cswzg.com/mc/5210.html"},{"name":"刘光发","primaryCuisine":"淮扬","birth":1969,"birthplace":"江苏睢宁","gender":"男","titles":["中国烹饪大师"],"bio":"1969年生，江苏睢宁人。现任南京铁金饮食服务有限公司，擅长大型宴席菜品及家常风味。","found":true,"source":"https://cswzg.com/mc/5207.html"},{"name":"李敏","primaryCuisine":"点心","birth":1987,"birthplace":"安徽宿州","gender":"女","titles":["中国烹饪大师","高级中式面点师","金牌公共营养师","安徽省级名厨"],"bio":"1987年生，安徽宿州人。现任合肥徽商故里面点总监。2023年获合肥首届面点一等奖。","found":true,"source":"https://cswzg.com/mc/5209.html"},{"name":"廖昱楷","primaryCuisine":"陕","birth":1994,"birthplace":"陕西延安","gender":"男","titles":["中国烹饪大师"],"bio":"1994年生，陕西延安人。专长面点，曾任职北京军区总后勤、陕西省政府面点厨师长。参加中亚峰会接待工作。","found":true,"source":"https://cswzg.com/mc/5204.html"},{"name":"陈永静","primaryCuisine":"川","birth":null,"birthplace":"甘肃兰州","gender":"男","titles":["中国烹饪大师"],"signature":["藤椒鸡丝","陈皮牛肉"],"bio":"兰州人，深耕餐饮15年。现任格热苑中餐厅凉菜主厨。擅长川式凉菜。","found":true,"source":"https://cswzg.com/mc/5203.html"},{"name":"杨正","primaryCuisine":"湘","birth":2000,"birthplace":"湖南湘潭","gender":"男","titles":["中国烹饪大师","中国湘菜大师"],"bio":"2000年生，湖南湘潭人。出身厨师世家。2024年获加拿大温哥华第九届中国烹饪世界大赛银奖。","found":true,"source":"https://cswzg.com/mc/5201.html"},{"name":"张合兵","primaryCuisine":"滇","birth":1998,"birthplace":"云南临沧","gender":"男","titles":["注册中国烹饪大师","高级中式烹调师"],"bio":"1998年生，云南临沧人。擅长中西式热菜、滇菜、川菜及少数民族地方菜肴。","found":true,"source":"https://cswzg.com/mc/5200.html"},{"name":"肖进飞","primaryCuisine":"滇","birth":2002,"birthplace":"云南临沧","gender":"男","titles":["注册中国烹饪大师","中式烹调技师"],"bio":"2002年生，云南临沧人，白族。擅长中西结合热菜，精通滇菜、川菜、粤菜、湘菜。","found":true,"source":"https://cswzg.com/mc/5196.html"},{"name":"卢昌意","primaryCuisine":"闽","birth":1989,"birthplace":"福建龙岩","gender":"男","titles":["中国烹饪大师","高级技师"],"bio":"1989年生，福建龙岩人。从事闽菜及餐饮管理18年，现任龙岩峰润餐饮有限公司董事长。","found":true,"source":"https://cswzg.com/mc/5195.html"},{"name":"南云鹏","primaryCuisine":"赣","birth":1983,"birthplace":"河北广宗","gender":"男","titles":["中国烹饪大师","中式烹调高级技师","江西省技术能手"],"bio":"1983年生，河北广宗人，退役军人。现任江西新东方烹饪学院中餐名师。获多项全国烹饪大赛金奖。","found":true,"source":"https://cswzg.com/mc/5189.html"},{"name":"吴文中","primaryCuisine":"淮扬","birth":1969,"birthplace":"江苏常熟","gender":"男","titles":["中国烹饪大师","国家高级烹调师","中国名厨"],"bio":"1969年生，江苏常熟人。深耕烹饪领域30余年，连续获得多项国际食材节特金奖。","found":true,"source":"https://cswzg.com/mc/5188.html"},{"name":"高鑫","primaryCuisine":"晋","birth":null,"birthplace":"山西临汾","gender":"男","titles":["中国烹饪大师","山西非遗面食传承人"],"signature":["龙须面（16384根）","吹面气球","蒙眼剪刀面"],"bio":"90后，山西临汾人。能将1团面拉出16384根细如发丝的面线。曾登上《星光大道》《快乐大本营》，赴美国纽约展示山西面食。","found":true,"source":"https://cswzg.com/mc/5186.html"},{"name":"高亮","primaryCuisine":"东北","birth":1981,"birthplace":null,"gender":"男","titles":["中国烹饪大师","亚洲国际烹饪大师","奥食卡蓝带大师","中国药膳大师"],"masters":[{"name":"苏喜斌"}],"signature":["桃花海参","雪莲虾果","千禧白玉丸"],"bio":"1981年生，毕业于江南大学食品检测专业。师从中国烹饪大师苏喜斌。擅长东北菜、传统鲁菜、淮扬菜。","found":true,"source":"https://cswzg.com/mc/5179.html"},{"name":"娄伍勇","primaryCuisine":"川","birth":1982,"birthplace":"重庆大足","gender":"男","titles":["中国烹饪大师"],"signature":["秘制川味鲍鱼","荷花鱼米粒","永川星湖鱼"],"bio":"1982年生，重庆大足人。2002年入行，现任永川区两江假日酒店行政总厨。擅长凉菜、官府菜、新派川菜。","found":true,"source":"https://cswzg.com/chushi/2022/0529/3790.html"},{"name":"张文阳","primaryCuisine":"冀","birth":null,"birthplace":"河北承德","gender":"男","titles":["中国烹饪大师","塞外宫廷菜资深传承人"],"masters":[{"name":"侯永"}],"bio":"河北承德人。师承元老级塞外宫廷菜大师侯永先生，系统学习塞外宫廷菜的煎炒烹炸烧烩焖趴等技法。","found":true,"source":"https://zgcsw.cn/mc/5168.html"},{"name":"王正富","primaryCuisine":"鲁","birth":null,"birthplace":"山东青岛","gender":"男","titles":["中国烹饪大师"],"masters":[{"name":"崔义清"},{"name":"颜景祥"},{"name":"董书山"}],"signature":["葱烧海参","酱香秘制小肋排","血燕牡丹虾"],"bio":"1992年毕业于青岛商业学校，师从崔义清、颜景祥、董书山等鲁菜名师。2008年参与中央领导宴会的菜品制作。","found":true,"source":"https://zgcsw.cn/mc/5165.html"},{"name":"郑伟","primaryCuisine":"鄂","birth":null,"birthplace":"湖北襄阳","gender":"男","titles":["中国烹饪大师","高级技师"],"bio":"中共党员，湖北襄阳人。1992年入伍，带出百余位高徒成功创业。","found":true,"source":"https://zgcsw.cn/mc/5164.html"},{"name":"艾海提·吾木热","primaryCuisine":"清真","birth":null,"birthplace":"新疆","gender":"男","titles":["中国烹饪大师"],"bio":"新疆籍烹饪大师，2025年入编《新时代中国烹饪人物》名人录。多次参加国内外烹饪大赛并屡获殊荣。","found":true,"source":"https://zgcsw.cn/mc/5157.html"},{"name":"胡辉誉","primaryCuisine":"粤","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师","法国蓝带美食勋章获得者","法国骑士勋章获得者"],"bio":"中国烹饪大师，曾作为《十二道锋味》厨师指导特邀嘉宾。","found":true,"source":"https://www.sohu.com/a/161239101_355957"},{"name":"谢浩光","primaryCuisine":"粤","birth":null,"birthplace":"浙江温州","gender":"男","titles":["中国烹饪大师"],"bio":"温州餐饮界著名的温州四虎之一，对粤菜在温州的推广影响巨大。2009年荣列新中国60年上海餐饮业技术精英名单。","found":true,"source":"https://zgcsw.cn/mc/5159.html"},{"name":"颜罡","primaryCuisine":"淮扬","birth":1992,"birthplace":null,"gender":"男","titles":["中国烹饪大师","中国淮扬菜大师"],"bio":"1992年生，中华厨师协会认证中国淮扬菜大师，以刀工精细、口味清鲜著称。","found":true,"source":"https://zgcsw.cn/mc/5156.html"},{"name":"汤颖志","primaryCuisine":"浙","birth":1985,"birthplace":"浙江武义","gender":"男","titles":["中国烹饪大师","武义县政协委员"],"masters":[{"name":"黄良涛"}],"signature":["泉水狮子头","一鱼十八吃","武义十大碗-葱花肉"],"bio":"1985年生，浙江武义人。师从八婺工匠黄良涛。潜心钻研武义传统老菜，推广武义养生药膳。","found":true,"source":"https://zgcsw.cn/mc/5154.html"},{"name":"艾克热木·努尔麦麦提","primaryCuisine":"清真","birth":2006,"birthplace":"新疆库车","gender":"男","titles":["中国烹饪大师"],"masters":[{"name":"艾山江"}],"bio":"2006年生，新疆库车人。2019年开始学厨，目前在克拉玛依市客来斯餐厅担任主厨。","found":true,"source":"https://www.sohu.com/a/945121091_99996596"},{"name":"陈义龙","primaryCuisine":"鄂","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师","中国调味大师"],"bio":"1985-1988年扬州商专烹饪专业。深耕烹饪行业40年。现任武汉玉龙口福食品有限公司董事长。","found":true,"source":"https://zgcsw.cn/mc/5149.html"},{"name":"阿卜杜萨拉木·艾麦提","primaryCuisine":"清真","birth":2004,"birthplace":"新疆阿克陶","gender":"男","titles":["中国烹饪大师"],"bio":"2004年生，新疆阿克陶人。2021年阿克陶县职业高中烹饪专业毕业。2025年在双鸾美食任厨师长。","found":true,"source":"https://www.zgcsw.cn/mc/5148.html"},{"name":"白运周","primaryCuisine":"京","birth":1983,"birthplace":"河北定州","gender":"男","titles":["中国烹饪大师","国家级中式烹调师一级高级技师"],"masters":[{"name":"王万友"}],"bio":"1983年生，河北定州人。深耕餐饮25年，专注历史名宴研究复刻与创新。师从王万友大师，擅长八珍宴、文会宴等历代名宴。","found":true,"source":"https://m.sohu.com/a/889332464_99996596"},{"name":"薛明","primaryCuisine":"鲁","birth":1986,"birthplace":"山东","gender":"男","titles":["注册中国烹饪大师","国家一级高级技师","大连金牌名厨"],"masters":[{"name":"侯胜才"}],"bio":"1986年生，山东人。师从中国烹饪大师侯胜才。擅长大连海鲜菜、川菜、东北菜、鲁菜、宫廷菜。","found":true,"source":"https://zgcsw.cn/mc/5144.html"},{"name":"彭明勇","primaryCuisine":"鄂","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师","楚菜大师","药膳大师"],"bio":"2018年获中国小龙虾创意艺术大赛特金奖，2025年获中国药膳素食厨艺大赛药膳大师。","found":true,"source":"https://www.sohu.com/a/883932944_99996596"},{"name":"贺振鑫","primaryCuisine":"陕","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"masters":[{"name":"李胜"}],"bio":"现任陕西孙思邈药膳食疗养身馆馆长。曾在北京钓鱼台国宾馆工作多年。师从国家烹饪大师李胜，擅长药膳与养生保健菜品研发。","found":true,"source":"https://zgcsw.cn/mc/5121.html"},{"name":"徐宝华","primaryCuisine":"鄂","birth":1994,"birthplace":"湖北武汉","gender":"男","titles":["中国烹饪大师","中式面点一级高级技师"],"bio":"1994年生，湖北武汉人。从事餐饮管理近12年，精通淮扬菜、湖北菜、川菜、湘菜、粤菜。","found":true,"source":"https://www.sohu.com/a/877801782_99996596"},{"name":"张元全","primaryCuisine":"川","birth":1980,"birthplace":"重庆","gender":"男","titles":["中国烹饪大师","高级烹调师","高级营养师"],"masters":[{"name":"重庆吴氏第三代传人"}],"signature":["咏菊","鱼跃龙门"],"bio":"1980年生，重庆人。师承重庆吴氏第三代传人。先后在陶然居、万豪酒店、恒大酒店等任川菜厨师长。横跨20余年职业生涯。","found":true,"source":"https://www.zgcsw.cn/mc/5116.html"},{"name":"赵见","primaryCuisine":"粤","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"masters":[{"name":"李振华"}],"signature":["冰镇沙姜猪手"],"bio":"从业16年，师承粤菜名厨李振华。擅长粤菜、吊汤、爆炒、烧腊、分子料理。","found":true,"source":"https://zgcsw.cn/mc/5115.html"},{"name":"熊奎","primaryCuisine":"鄂","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"bio":"从业18年，从武汉桃园大酒店学徒成长为复合型餐饮管理者。精通楚菜、湘菜、西餐等。","found":true,"source":"https://www.zgcsw.cn/mc/5114.html"},{"name":"吴康政","primaryCuisine":"鄂","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"bio":"2005-2008年就读于黄冈职业技术学院烹饪专业。现任武汉江南小观园酒店行政总厨。2017年获湖北省工匠杯楚菜大赛银奖。","found":true,"source":"https://www.zgcsw.cn/mc/5112.html"},{"name":"毛海峰","primaryCuisine":"鄂","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"bio":"从业15年以上。曾在武汉东湖宾馆任副厨师长协助国宴级接待。主张传统技法现代化表达。","found":true,"source":"https://www.zgcsw.cn/mc/5110.html"},{"name":"方伟东","primaryCuisine":"鄂","birth":null,"birthplace":null,"gender":"男","titles":["中国烹饪大师"],"bio":"从业18年，贯通中餐八大菜系技术基底，楚菜/湘菜专精。现任庙岭小味小生活菜馆首席热灶。","found":true,"source":"https://www.zgcsw.cn/mc/5109.html"},{"name":"罗昆","primaryCuisine":"湘","birth":1992,"birthplace":"湖南常德","gender":"男","titles":["中国烹饪大师"],"bio":"1992年生，湖南常德人。2022年起任湘冀餐饮公司总厨，将湘菜的火辣与冀菜的醇厚巧妙融合。","found":true,"source":"https://cswzg.com/mc/5107.html"},{"name":"王志清","primaryCuisine":"沪","birth":1973,"birthplace":"上海嘉定","gender":"男","titles":["中国烹饪大师"],"bio":"1973年生，上海嘉定人，从业32年。擅长淮扬菜、粤菜、融合菜等。","found":true,"source":"https://www.cswzg.com/mc/5105.html"},{"name":"廖永祥","primaryCuisine":"川","birth":1980,"birthplace":"四川宁南","gender":"男","titles":["中国烹饪大师","高级中式烹调师","高级营养配餐师"],"signature":["金龙戏珠","满园春色","羊肚菌蒸肉"],"bio":"1980年生，四川宁南人。1998年入伍，海军四级军士长。2008年北京奥运会首批入驻奥运村餐饮保障工作者。","found":true,"source":"https://cswzg.com/mc/5103.html"},{"name":"刘景松","primaryCuisine":"豫","birth":1979,"birthplace":"河南睢县","gender":"男","titles":["中国烹饪大师"],"masters":[{"name":"潘玉清"}],"bio":"1979年生，河南睢县人。师从粤菜大师潘玉清。在洛阳东山宾馆工作期间多次负责接待国家领导人的餐饮任务。","found":true,"source":"https://cswzg.com/mc/5100.html"},{"name":"陈巧桐","primaryCuisine":"粤","birth":1973,"birthplace":"广东潮州","gender":"男","titles":["中国烹饪大师"],"bio":"1973年生，广东潮州人。深耕餐饮三十余年，专注潮州菜的烹饪与推广。","found":true,"source":"https://www.cswzg.com/mc/5099.html"},{"name":"李雪峰","primaryCuisine":"豫","birth":1978,"birthplace":"河南鹤壁","gender":"男","titles":["中国烹饪大师","国家高级烹饪技师","豫菜名厨"],"masters":[{"name":"孔祥道"}],"bio":"1978年生，河南鹤壁人。师从亚洲厨王孔祥道。擅长粤菜、杭帮菜、豫菜创新研发。","found":true,"source":"https://cswzg.com/mc/5098.html"},{"name":"冯东海","primaryCuisine":"滇","birth":1967,"birthplace":"云南昆明","gender":"男","titles":["中国烹饪大师","中国滇菜大师","云南烹饪大师"],"masters":[{"name":"蔡玉福"},{"name":"王乐清"}],"bio":"1967年生，云南昆明人。师从云南省烹饪泰斗蔡玉福、王乐清大师。2023年入选《中华美食工匠》第三卷。","found":true,"source":"https://www.zgcsw.cn/mc/5097.html"},{"name":"王刚","primaryCuisine":"东北","birth":null,"birthplace":"吉林","gender":"男","titles":["中国烹饪大师","吉林省十大名厨首位","长春市非遗烹饪技艺传承人"],"bio":"吉林省十大名厨首位、长白山民俗宴制作技艺第三代传承人。CCTV-2《厨王争霸》东北赛区评委。著有《现代吉菜创新技法》。","found":true,"source":"https://www.cswzg.com/mc/5096.html"},{"name":"肖楠","primaryCuisine":"滇","birth":1997,"birthplace":"云南姚安","gender":"男","titles":["中国烹饪大师","中国食雕艺术大师"],"signature":["干巴菌焗大虾","金汁酸汤肥牛","景颇风味石榴包"],"bio":"1997年生，云南姚安人。现任昆明市旅游职业中学烹饪专业专职教师。2022年入选《中华美食工匠》第二卷。","found":true,"source":"https://www.cswzg.com/mc/5094.html"},{"name":"杨俊峰","primaryCuisine":"滇","birth":1989,"birthplace":"云南大理","gender":"男","titles":["中国烹饪大师","中国滇菜大师","滇味全羊席第三代传承人"],"masters":[{"name":"王乐清"}],"bio":"1989年生，云南大理人。现任云南旅游职业学院烹饪学院专职教师。师承滇菜元老王乐清大师，出版《昆明菜》等著作。","found":true,"source":"https://www.cswzg.com/mc/5095.html"},{"name":"苏琴贵","primaryCuisine":"滇","birth":1997,"birthplace":"云南丽江","gender":"男","titles":["中国烹饪大师","云南名厨新星"],"bio":"1997年生，云南丽江人。拥有高级中式烹调师等6项专业资质。2023年入选《中华美食工匠》第三卷。","found":true,"source":"https://www.cswzg.com/mc/5093.html"},{"name":"刘灿军","primaryCuisine":"滇","birth":1998,"birthplace":"云南大理","gender":"男","titles":["中国烹饪大师","中华美食工匠"],"masters":[],"signature":["大象酥","象形椪柑橘"],"bio":"1998年生，云南大理人。现任云南旅游职业学院烹饪学院专任教师。2024年获第九届全国烹饪技能竞赛全国决赛中式面点师金奖。","found":true,"source":"https://www.163.com/dy/article/H5Q5P7AR0518SMRT.html"},{"name":"许春","primaryCuisine":"淮扬","birth":null,"birthplace":"江苏盐城","gender":"男","titles":["中国烹饪大师","中国饮食文化传承人"],"signature":["龙冈香茶干"],"bio":"江苏盐城人。1993年入行。历时六年徒步西乡各地，撰写近四万字《舌尖上的西乡》。致力于推广盐城西乡土菜。","found":true,"source":"http://m.0515msw.com"},{"name":"陈亮","primaryCuisine":"淮扬","birth":1997,"birthplace":"江苏","gender":"男","titles":["中国烹饪大师"],"masters":[{"name":"熊贵海"},{"name":"何凡"}],"bio":"1997年生，江苏人。2017年拜中国烹饪大师熊贵海为师。专注淮扬菜，核心理念为手中无刀心中有道。","found":true,"source":"https://cswzg.com/mc/3964.html"},{"name":"王学文","primaryCuisine":"赣","birth":null,"birthplace":"江西南昌","gender":"男","titles":["中国烹饪大师","中国十大名厨","中国赣菜大师"],"signature":["霸王鱼头","鲍鱼焗仔排","文罐小牛腩"],"bio":"江西南昌人，从业30余年。任江西鑫钵源餐饮管理有限公司董事长。专注生态古法江西瓦罐煨汤技术的复原与推广。获中国烹饪协会中华金厨奖。","found":true,"source":"https://www.ccas.com.cn/site/content/79683.html"},{"name":"廖鸣","primaryCuisine":"桂","birth":1984,"birthplace":"广西南宁","gender":"男","titles":["中国烹饪大师"],"bio":"1984年生，广西南宁人。从业超过20年。先后在哈尔滨、柳州、广西等地多家酒店任行政总厨。","found":true,"source":"https://cswzg.com/mc/5082.html"},{"name":"张新雨","primaryCuisine":"陕","birth":null,"birthplace":"陕西延安吴起","gender":"男","titles":["注册中国烹饪大师","中式烹饪高级技师","高级雕刻师"],"masters":[{"name":"韩晓辉"}],"signature":["避风塘鳕鱼","山药酸菜辣煮花螺"],"bio":"陕西延安吴起人，从业27年。2004年拜师中国世界烹饪大师韩晓辉。擅长川湘菜、粤菜、蒙菜、鲁菜、海鲜及食品雕刻。","found":true,"source":"https://zgcsw.cn/mc/5084.html"},{"name":"苏鹏辉","primaryCuisine":"桂","birth":1999,"birthplace":"广西合浦","gender":"男","titles":["中国烹饪大师"],"bio":"1999年生，广西北海合浦人。曾在沈阳、长春、哈尔滨学习工作，2024年回广西在瑶王府任厨师长。","found":true,"source":"https://cswzg.com/mc/5083.html"}],"stats":{"total":115,"found":115,"withCuisine":62,"withMaster":23}}
+{
+  "source": "cswzg 裸名补全 batch A",
+  "fetchDate": "2026-06-21",
+  "chefs": [
+    {
+      "name": "朱宝",
+      "primaryCuisine": null,
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "中华厨师协会认证的中国烹饪大师，证书编号ZCXH025918。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5241.html"
+    },
+    {
+      "name": "楼海祥",
+      "primaryCuisine": null,
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "中华厨师协会认证的中国烹饪大师。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5239.html"
+    },
+    {
+      "name": "舒俊",
+      "primaryCuisine": "湘",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "北方厨艺名师",
+        "广东湘菜名师"
+      ],
+      "signature": [
+        "凤尾腰花",
+        "福感血鸭"
+      ],
+      "bio": "广州铁路局资深客运厨师，2024年获第三届聪厨杯广东湘菜名厨争霸赛金奖。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5240.html"
+    },
+    {
+      "name": "温江辉",
+      "primaryCuisine": "滇",
+      "birth": null,
+      "birthplace": "云南曲靖",
+      "gender": "男",
+      "titles": [
+        "注册中国烹饪大师",
+        "西式面点二级技师",
+        "高级中式烹调师"
+      ],
+      "bio": "云南曲靖人，全能型烹饪大师，拥有多项高级资质。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5238.html"
+    },
+    {
+      "name": "刘小锋",
+      "primaryCuisine": null,
+      "birth": 1989,
+      "birthplace": "安徽",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "安徽人，中华厨师协会认证中国烹饪大师。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5237.html"
+    },
+    {
+      "name": "熊乐",
+      "primaryCuisine": "陕",
+      "birth": 1993,
+      "birthplace": "陕西西安",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "国家中式烹调师一级高级技师",
+        "米其林特邀厨师"
+      ],
+      "masters": [
+        {
+          "name": "胡忠英"
+        }
+      ],
+      "signature": [
+        "满江红",
+        "山河万朵",
+        "五彩肉夹馍"
+      ],
+      "bio": "1993年生于西安，师从中国烹饪大师胡忠英第三代传人。2018年与法国总统御厨盖伊·马丁米其林三星团队合作。擅长中法融合菜、燕鲍翅。",
+      "found": true,
+      "source": "https://baike.baidu.com/item/熊乐/66758105"
+    },
+    {
+      "name": "龙尚",
+      "primaryCuisine": "湘",
+      "birth": 1984,
+      "birthplace": "湖南汨罗",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中式烹调高级技师"
+      ],
+      "bio": "1984年生，湖南汨罗人。1998年入行，擅长传统湘菜、粤菜、川菜及新派湘菜融合。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5235.html"
+    },
+    {
+      "name": "段进平",
+      "primaryCuisine": null,
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "中华厨师协会认证的中国烹饪大师。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5233.html"
+    },
+    {
+      "name": "孙金光",
+      "primaryCuisine": "鲁",
+      "birth": 1985,
+      "birthplace": "山东威海",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "山东鲁菜烹饪大师"
+      ],
+      "signature": [
+        "葱烧海参",
+        "油焖大虾",
+        "海肠捞饭",
+        "鲅鱼水饺"
+      ],
+      "bio": "1985年生，山东威海人。深耕餐饮24年，现任山东兴顺餐饮研发总监。参与制定威海市学生餐标准菜谱，获威海市五一劳动奖章。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5343.html"
+    },
+    {
+      "name": "陈石柱",
+      "primaryCuisine": "粤",
+      "birth": 1984,
+      "birthplace": "广东河源",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1984年生，广东河源人。精通意大利餐、法餐、融合粤菜、分子料理。现任广州南站城际酒店总厨。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5232.html"
+    },
+    {
+      "name": "何辅庭",
+      "primaryCuisine": "川",
+      "birth": null,
+      "birthplace": "重庆",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "重庆烹饪艺术大师",
+        "中式烹调一级高级技师"
+      ],
+      "signature": [
+        "峡江金牌鱼",
+        "应山滑肉"
+      ],
+      "bio": "重庆人，从业26年。擅长川菜、湘菜、粤菜、鄂菜、融合菜。教授高徒50余人。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5231.html"
+    },
+    {
+      "name": "黄辉",
+      "primaryCuisine": "豫",
+      "birth": null,
+      "birthplace": "河南信阳",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "信阳菜烹饪大师"
+      ],
+      "bio": "深耕信阳菜二十余年，擅长焖菜、炖菜等信阳传统技艺。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5229.html"
+    },
+    {
+      "name": "冯遣光",
+      "primaryCuisine": "粤",
+      "birth": 1980,
+      "birthplace": "广西防城港",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "signature": [
+        "红胡椒焗波士顿龙虾"
+      ],
+      "bio": "1980年生，广西防城港人。深谙粤菜精髓，对江浙菜、川菜亦有独到见解。曾接待李克强、姚明、雷军等名人。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5228.html"
+    },
+    {
+      "name": "何志文",
+      "primaryCuisine": "粤",
+      "birth": 1976,
+      "birthplace": "广东顺德",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "顺德名厨",
+        "三星级凤厨"
+      ],
+      "bio": "1976年生，广东顺德人。1996年入行，2025年获全国粤菜烹饪邀请赛特金奖。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5225.html"
+    },
+    {
+      "name": "郭合金",
+      "primaryCuisine": "浙",
+      "birth": 1995,
+      "birthplace": "河南柘城",
+      "gender": "男",
+      "titles": [
+        "中国青年名厨"
+      ],
+      "signature": [
+        "鲍鱼焖猪脚",
+        "干菜千层肉"
+      ],
+      "bio": "1995年生，河南柘城人。2012年赴杭州入行系统学习浙菜，现任宁波天天渔港大酒店总厨。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5223.html"
+    },
+    {
+      "name": "殷夫林",
+      "primaryCuisine": "沪",
+      "birth": 1998,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "亚洲十大名厨"
+      ],
+      "bio": "1998年生。先后在上海多家酒店及会所任行政总厨，现任上海雀晏会所总厨。精通融合菜、本帮菜、淮扬菜。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5222.html"
+    },
+    {
+      "name": "徐会达",
+      "primaryCuisine": "鲁",
+      "birth": null,
+      "birthplace": "山东",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "山东人，2010年毕业于济南蓝翔烹饪学院，曾在北京、上海、广东等地进修。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5217.html"
+    },
+    {
+      "name": "兰廷峰",
+      "primaryCuisine": "川",
+      "birth": 1987,
+      "birthplace": "四川南充",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1987年生，四川南充人。2006年入行，现任青岛城阳要麻川菜酒馆厨师长。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5216.html"
+    },
+    {
+      "name": "黄永乐",
+      "primaryCuisine": "湘",
+      "birth": 1987,
+      "birthplace": "湖南醴陵",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "新锐烹饪之星"
+      ],
+      "bio": "1987年生，湖南醴陵人。曾在深圳、杭州、长沙、北京多地任职，现任德化九仙山酒店行政总厨。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5210.html"
+    },
+    {
+      "name": "刘光发",
+      "primaryCuisine": "淮扬",
+      "birth": 1969,
+      "birthplace": "江苏睢宁",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1969年生，江苏睢宁人。现任南京铁金饮食服务有限公司，擅长大型宴席菜品及家常风味。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5207.html"
+    },
+    {
+      "name": "李敏",
+      "primaryCuisine": "点心",
+      "birth": 1987,
+      "birthplace": "安徽宿州",
+      "gender": "女",
+      "titles": [
+        "中国烹饪大师",
+        "高级中式面点师",
+        "金牌公共营养师",
+        "安徽省级名厨"
+      ],
+      "bio": "1987年生，安徽宿州人。现任合肥徽商故里面点总监。2023年获合肥首届面点一等奖。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5209.html"
+    },
+    {
+      "name": "廖昱楷",
+      "primaryCuisine": "陕",
+      "birth": 1994,
+      "birthplace": "陕西延安",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1994年生，陕西延安人。专长面点，曾任职北京军区总后勤、陕西省政府面点厨师长。参加中亚峰会接待工作。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5204.html"
+    },
+    {
+      "name": "陈永静",
+      "primaryCuisine": "川",
+      "birth": null,
+      "birthplace": "甘肃兰州",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "signature": [
+        "藤椒鸡丝",
+        "陈皮牛肉"
+      ],
+      "bio": "兰州人，深耕餐饮15年。现任格热苑中餐厅凉菜主厨。擅长川式凉菜。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5203.html"
+    },
+    {
+      "name": "杨正",
+      "primaryCuisine": "湘",
+      "birth": 2000,
+      "birthplace": "湖南湘潭",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国湘菜大师"
+      ],
+      "bio": "2000年生，湖南湘潭人。出身厨师世家。2024年获加拿大温哥华第九届中国烹饪世界大赛银奖。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5201.html"
+    },
+    {
+      "name": "张合兵",
+      "primaryCuisine": "滇",
+      "birth": 1998,
+      "birthplace": "云南临沧",
+      "gender": "男",
+      "titles": [
+        "注册中国烹饪大师",
+        "高级中式烹调师"
+      ],
+      "bio": "1998年生，云南临沧人。擅长中西式热菜、滇菜、川菜及少数民族地方菜肴。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5200.html"
+    },
+    {
+      "name": "肖进飞",
+      "primaryCuisine": "滇",
+      "birth": 2002,
+      "birthplace": "云南临沧",
+      "gender": "男",
+      "titles": [
+        "注册中国烹饪大师",
+        "中式烹调技师"
+      ],
+      "bio": "2002年生，云南临沧人，白族。擅长中西结合热菜，精通滇菜、川菜、粤菜、湘菜。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5196.html"
+    },
+    {
+      "name": "卢昌意",
+      "primaryCuisine": "闽",
+      "birth": 1989,
+      "birthplace": "福建龙岩",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "高级技师"
+      ],
+      "bio": "1989年生，福建龙岩人。从事闽菜及餐饮管理18年，现任龙岩峰润餐饮有限公司董事长。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5195.html"
+    },
+    {
+      "name": "南云鹏",
+      "primaryCuisine": "赣",
+      "birth": 1983,
+      "birthplace": "河北广宗",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中式烹调高级技师",
+        "江西省技术能手"
+      ],
+      "bio": "1983年生，河北广宗人，退役军人。现任江西新东方烹饪学院中餐名师。获多项全国烹饪大赛金奖。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5189.html"
+    },
+    {
+      "name": "吴文中",
+      "primaryCuisine": "淮扬",
+      "birth": 1969,
+      "birthplace": "江苏常熟",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "国家高级烹调师",
+        "中国名厨"
+      ],
+      "bio": "1969年生，江苏常熟人。深耕烹饪领域30余年，连续获得多项国际食材节特金奖。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5188.html"
+    },
+    {
+      "name": "高鑫",
+      "primaryCuisine": "晋",
+      "birth": null,
+      "birthplace": "山西临汾",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "山西非遗面食传承人"
+      ],
+      "signature": [
+        "龙须面（16384根）",
+        "吹面气球",
+        "蒙眼剪刀面"
+      ],
+      "bio": "90后，山西临汾人。能将1团面拉出16384根细如发丝的面线。曾登上《星光大道》《快乐大本营》，赴美国纽约展示山西面食。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5186.html"
+    },
+    {
+      "name": "高亮",
+      "primaryCuisine": "东北",
+      "birth": 1981,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "亚洲国际烹饪大师",
+        "奥食卡蓝带大师",
+        "中国药膳大师"
+      ],
+      "masters": [
+        {
+          "name": "苏喜斌"
+        }
+      ],
+      "signature": [
+        "桃花海参",
+        "雪莲虾果",
+        "千禧白玉丸"
+      ],
+      "bio": "1981年生，毕业于江南大学食品检测专业。师从中国烹饪大师苏喜斌。擅长东北菜、传统鲁菜、淮扬菜。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5179.html"
+    },
+    {
+      "name": "娄伍勇",
+      "primaryCuisine": "川",
+      "birth": 1982,
+      "birthplace": "重庆大足",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "signature": [
+        "秘制川味鲍鱼",
+        "荷花鱼米粒",
+        "永川星湖鱼"
+      ],
+      "bio": "1982年生，重庆大足人。2002年入行，现任永川区两江假日酒店行政总厨。擅长凉菜、官府菜、新派川菜。",
+      "found": true,
+      "source": "https://cswzg.com/chushi/2022/0529/3790.html"
+    },
+    {
+      "name": "张文阳",
+      "primaryCuisine": "冀",
+      "birth": null,
+      "birthplace": "河北承德",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "塞外宫廷菜资深传承人"
+      ],
+      "masters": [
+        {
+          "name": "侯永"
+        }
+      ],
+      "bio": "河北承德人。师承元老级塞外宫廷菜大师侯永先生，系统学习塞外宫廷菜的煎炒烹炸烧烩焖趴等技法。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5168.html"
+    },
+    {
+      "name": "王正富",
+      "primaryCuisine": "鲁",
+      "birth": null,
+      "birthplace": "山东青岛",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "masters": [
+        {
+          "name": "崔义清"
+        },
+        {
+          "name": "颜景祥"
+        },
+        {
+          "name": "董书山"
+        }
+      ],
+      "signature": [
+        "葱烧海参",
+        "酱香秘制小肋排",
+        "血燕牡丹虾"
+      ],
+      "bio": "1992年毕业于青岛商业学校，师从崔义清、颜景祥、董书山等鲁菜名师。2008年参与中央领导宴会的菜品制作。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5165.html"
+    },
+    {
+      "name": "郑伟",
+      "primaryCuisine": "鄂",
+      "birth": null,
+      "birthplace": "湖北襄阳",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "高级技师"
+      ],
+      "bio": "中共党员，湖北襄阳人。1992年入伍，带出百余位高徒成功创业。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5164.html"
+    },
+    {
+      "name": "艾海提·吾木热",
+      "primaryCuisine": "清真",
+      "birth": null,
+      "birthplace": "新疆",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "新疆籍烹饪大师，2025年入编《新时代中国烹饪人物》名人录。多次参加国内外烹饪大赛并屡获殊荣。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5157.html"
+    },
+    {
+      "name": "胡辉誉",
+      "primaryCuisine": "粤",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "法国蓝带美食勋章获得者",
+        "法国骑士勋章获得者"
+      ],
+      "bio": "中国烹饪大师，曾作为《十二道锋味》厨师指导特邀嘉宾。",
+      "found": true,
+      "source": "https://www.sohu.com/a/161239101_355957"
+    },
+    {
+      "name": "谢浩光",
+      "primaryCuisine": "粤",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "温州餐饮界著名的温州四虎之一，对粤菜在温州的推广影响巨大。2009年荣列新中国60年上海餐饮业技术精英名单。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5159.html"
+    },
+    {
+      "name": "颜罡",
+      "primaryCuisine": "淮扬",
+      "birth": 1992,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国淮扬菜大师"
+      ],
+      "bio": "1992年生，中华厨师协会认证中国淮扬菜大师，以刀工精细、口味清鲜著称。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5156.html"
+    },
+    {
+      "name": "汤颖志",
+      "primaryCuisine": "浙",
+      "birth": 1985,
+      "birthplace": "浙江武义",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "武义县政协委员"
+      ],
+      "masters": [
+        {
+          "name": "黄良涛"
+        }
+      ],
+      "signature": [
+        "泉水狮子头",
+        "一鱼十八吃",
+        "武义十大碗-葱花肉"
+      ],
+      "bio": "1985年生，浙江武义人。师从八婺工匠黄良涛。潜心钻研武义传统老菜，推广武义养生药膳。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5154.html"
+    },
+    {
+      "name": "艾克热木·努尔麦麦提",
+      "primaryCuisine": "清真",
+      "birth": 2006,
+      "birthplace": "新疆库车",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "masters": [
+        {
+          "name": "艾山江"
+        }
+      ],
+      "bio": "2006年生，新疆库车人。2019年开始学厨，目前在克拉玛依市客来斯餐厅担任主厨。",
+      "found": true,
+      "source": "https://www.sohu.com/a/945121091_99996596"
+    },
+    {
+      "name": "陈义龙",
+      "primaryCuisine": "鄂",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国调味大师"
+      ],
+      "bio": "1985-1988年扬州商专烹饪专业。深耕烹饪行业40年。现任武汉玉龙口福食品有限公司董事长。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5149.html"
+    },
+    {
+      "name": "阿卜杜萨拉木·艾麦提",
+      "primaryCuisine": "清真",
+      "birth": 2004,
+      "birthplace": "新疆阿克陶",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "2004年生，新疆阿克陶人。2021年阿克陶县职业高中烹饪专业毕业。2025年在双鸾美食任厨师长。",
+      "found": true,
+      "source": "https://www.zgcsw.cn/mc/5148.html"
+    },
+    {
+      "name": "白运周",
+      "primaryCuisine": "京",
+      "birth": 1983,
+      "birthplace": "河北定州",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "国家级中式烹调师一级高级技师"
+      ],
+      "masters": [
+        {
+          "name": "王万友"
+        }
+      ],
+      "bio": "1983年生，河北定州人。深耕餐饮25年，专注历史名宴研究复刻与创新。师从王万友大师，擅长八珍宴、文会宴等历代名宴。",
+      "found": true,
+      "source": "https://m.sohu.com/a/889332464_99996596"
+    },
+    {
+      "name": "薛明",
+      "primaryCuisine": "鲁",
+      "birth": 1986,
+      "birthplace": "山东",
+      "gender": "男",
+      "titles": [
+        "注册中国烹饪大师",
+        "国家一级高级技师",
+        "大连金牌名厨"
+      ],
+      "masters": [
+        {
+          "name": "侯胜才"
+        }
+      ],
+      "bio": "1986年生，山东人。师从中国烹饪大师侯胜才。擅长大连海鲜菜、川菜、东北菜、鲁菜、宫廷菜。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5144.html"
+    },
+    {
+      "name": "彭明勇",
+      "primaryCuisine": "鄂",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "楚菜大师",
+        "药膳大师"
+      ],
+      "bio": "2018年获中国小龙虾创意艺术大赛特金奖，2025年获中国药膳素食厨艺大赛药膳大师。",
+      "found": true,
+      "source": "https://www.sohu.com/a/883932944_99996596"
+    },
+    {
+      "name": "贺振鑫",
+      "primaryCuisine": "陕",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "masters": [
+        {
+          "name": "李胜"
+        }
+      ],
+      "bio": "现任陕西孙思邈药膳食疗养身馆馆长。曾在北京钓鱼台国宾馆工作多年。师从国家烹饪大师李胜，擅长药膳与养生保健菜品研发。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5121.html"
+    },
+    {
+      "name": "徐宝华",
+      "primaryCuisine": "鄂",
+      "birth": 1994,
+      "birthplace": "湖北武汉",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中式面点一级高级技师"
+      ],
+      "bio": "1994年生，湖北武汉人。从事餐饮管理近12年，精通淮扬菜、湖北菜、川菜、湘菜、粤菜。",
+      "found": true,
+      "source": "https://www.sohu.com/a/877801782_99996596"
+    },
+    {
+      "name": "张元全",
+      "primaryCuisine": "川",
+      "birth": 1980,
+      "birthplace": "重庆",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "高级烹调师",
+        "高级营养师"
+      ],
+      "masters": [
+        {
+          "name": "重庆吴氏第三代传人"
+        }
+      ],
+      "signature": [
+        "咏菊",
+        "鱼跃龙门"
+      ],
+      "bio": "1980年生，重庆人。师承重庆吴氏第三代传人。先后在陶然居、万豪酒店、恒大酒店等任川菜厨师长。横跨20余年职业生涯。",
+      "found": true,
+      "source": "https://www.zgcsw.cn/mc/5116.html"
+    },
+    {
+      "name": "赵见",
+      "primaryCuisine": "粤",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "masters": [
+        {
+          "name": "李振华"
+        }
+      ],
+      "signature": [
+        "冰镇沙姜猪手"
+      ],
+      "bio": "从业16年，师承粤菜名厨李振华。擅长粤菜、吊汤、爆炒、烧腊、分子料理。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5115.html"
+    },
+    {
+      "name": "熊奎",
+      "primaryCuisine": "鄂",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "从业18年，从武汉桃园大酒店学徒成长为复合型餐饮管理者。精通楚菜、湘菜、西餐等。",
+      "found": true,
+      "source": "https://www.zgcsw.cn/mc/5114.html"
+    },
+    {
+      "name": "吴康政",
+      "primaryCuisine": "鄂",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "2005-2008年就读于黄冈职业技术学院烹饪专业。现任武汉江南小观园酒店行政总厨。2017年获湖北省工匠杯楚菜大赛银奖。",
+      "found": true,
+      "source": "https://www.zgcsw.cn/mc/5112.html"
+    },
+    {
+      "name": "毛海峰",
+      "primaryCuisine": "鄂",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "从业15年以上。曾在武汉东湖宾馆任副厨师长协助国宴级接待。主张传统技法现代化表达。",
+      "found": true,
+      "source": "https://www.zgcsw.cn/mc/5110.html"
+    },
+    {
+      "name": "方伟东",
+      "primaryCuisine": "鄂",
+      "birth": null,
+      "birthplace": null,
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "从业18年，贯通中餐八大菜系技术基底，楚菜/湘菜专精。现任庙岭小味小生活菜馆首席热灶。",
+      "found": true,
+      "source": "https://www.zgcsw.cn/mc/5109.html"
+    },
+    {
+      "name": "罗昆",
+      "primaryCuisine": "湘",
+      "birth": 1992,
+      "birthplace": "湖南常德",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1992年生，湖南常德人。2022年起任湘冀餐饮公司总厨，将湘菜的火辣与冀菜的醇厚巧妙融合。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5107.html"
+    },
+    {
+      "name": "王志清",
+      "primaryCuisine": "沪",
+      "birth": 1973,
+      "birthplace": "上海嘉定",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1973年生，上海嘉定人，从业32年。擅长淮扬菜、粤菜、融合菜等。",
+      "found": true,
+      "source": "https://www.cswzg.com/mc/5105.html"
+    },
+    {
+      "name": "廖永祥",
+      "primaryCuisine": "川",
+      "birth": 1980,
+      "birthplace": "四川宁南",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "高级中式烹调师",
+        "高级营养配餐师"
+      ],
+      "signature": [
+        "金龙戏珠",
+        "满园春色",
+        "羊肚菌蒸肉"
+      ],
+      "bio": "1980年生，四川宁南人。1998年入伍，海军四级军士长。2008年北京奥运会首批入驻奥运村餐饮保障工作者。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5103.html"
+    },
+    {
+      "name": "刘景松",
+      "primaryCuisine": "豫",
+      "birth": 1979,
+      "birthplace": "河南睢县",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "masters": [
+        {
+          "name": "潘玉清"
+        }
+      ],
+      "bio": "1979年生，河南睢县人。师从粤菜大师潘玉清。在洛阳东山宾馆工作期间多次负责接待国家领导人的餐饮任务。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5100.html"
+    },
+    {
+      "name": "陈巧桐",
+      "primaryCuisine": "粤",
+      "birth": 1973,
+      "birthplace": "广东潮州",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1973年生，广东潮州人。深耕餐饮三十余年，专注潮州菜的烹饪与推广。",
+      "found": true,
+      "source": "https://www.cswzg.com/mc/5099.html"
+    },
+    {
+      "name": "李雪峰",
+      "primaryCuisine": "豫",
+      "birth": 1978,
+      "birthplace": "河南鹤壁",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "国家高级烹饪技师",
+        "豫菜名厨"
+      ],
+      "masters": [
+        {
+          "name": "孔祥道"
+        }
+      ],
+      "bio": "1978年生，河南鹤壁人。师从亚洲厨王孔祥道。擅长粤菜、杭帮菜、豫菜创新研发。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5098.html"
+    },
+    {
+      "name": "冯东海",
+      "primaryCuisine": "滇",
+      "birth": 1967,
+      "birthplace": "云南昆明",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国滇菜大师",
+        "云南烹饪大师"
+      ],
+      "masters": [
+        {
+          "name": "蔡玉福"
+        },
+        {
+          "name": "王乐清"
+        }
+      ],
+      "bio": "1967年生，云南昆明人。师从云南省烹饪泰斗蔡玉福、王乐清大师。2023年入选《中华美食工匠》第三卷。",
+      "found": true,
+      "source": "https://www.zgcsw.cn/mc/5097.html"
+    },
+    {
+      "name": "王刚",
+      "primaryCuisine": "东北",
+      "birth": null,
+      "birthplace": "吉林",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "吉林省十大名厨首位",
+        "长春市非遗烹饪技艺传承人"
+      ],
+      "bio": "吉林省十大名厨首位、长白山民俗宴制作技艺第三代传承人。CCTV-2《厨王争霸》东北赛区评委。著有《现代吉菜创新技法》。",
+      "found": true,
+      "source": "https://www.cswzg.com/mc/5096.html"
+    },
+    {
+      "name": "肖楠",
+      "primaryCuisine": "滇",
+      "birth": 1997,
+      "birthplace": "云南姚安",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国食雕艺术大师"
+      ],
+      "signature": [
+        "干巴菌焗大虾",
+        "金汁酸汤肥牛",
+        "景颇风味石榴包"
+      ],
+      "bio": "1997年生，云南姚安人。现任昆明市旅游职业中学烹饪专业专职教师。2022年入选《中华美食工匠》第二卷。",
+      "found": true,
+      "source": "https://www.cswzg.com/mc/5094.html"
+    },
+    {
+      "name": "杨俊峰",
+      "primaryCuisine": "滇",
+      "birth": 1989,
+      "birthplace": "云南大理",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国滇菜大师",
+        "滇味全羊席第三代传承人"
+      ],
+      "masters": [
+        {
+          "name": "王乐清"
+        }
+      ],
+      "bio": "1989年生，云南大理人。现任云南旅游职业学院烹饪学院专职教师。师承滇菜元老王乐清大师，出版《昆明菜》等著作。",
+      "found": true,
+      "source": "https://www.cswzg.com/mc/5095.html"
+    },
+    {
+      "name": "苏琴贵",
+      "primaryCuisine": "滇",
+      "birth": 1997,
+      "birthplace": "云南丽江",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "云南名厨新星"
+      ],
+      "bio": "1997年生，云南丽江人。拥有高级中式烹调师等6项专业资质。2023年入选《中华美食工匠》第三卷。",
+      "found": true,
+      "source": "https://www.cswzg.com/mc/5093.html"
+    },
+    {
+      "name": "刘灿军",
+      "primaryCuisine": "滇",
+      "birth": 1998,
+      "birthplace": "云南大理",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中华美食工匠"
+      ],
+      "masters": [],
+      "signature": [
+        "大象酥",
+        "象形椪柑橘"
+      ],
+      "bio": "1998年生，云南大理人。现任云南旅游职业学院烹饪学院专任教师。2024年获第九届全国烹饪技能竞赛全国决赛中式面点师金奖。",
+      "found": true,
+      "source": "https://www.163.com/dy/article/H5Q5P7AR0518SMRT.html"
+    },
+    {
+      "name": "许春",
+      "primaryCuisine": "淮扬",
+      "birth": null,
+      "birthplace": "江苏盐城",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国饮食文化传承人"
+      ],
+      "signature": [
+        "龙冈香茶干"
+      ],
+      "bio": "江苏盐城人。1993年入行。历时六年徒步西乡各地，撰写近四万字《舌尖上的西乡》。致力于推广盐城西乡土菜。",
+      "found": true,
+      "source": "http://m.0515msw.com"
+    },
+    {
+      "name": "陈亮",
+      "primaryCuisine": "淮扬",
+      "birth": 1997,
+      "birthplace": "江苏",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "masters": [
+        {
+          "name": "熊贵海"
+        },
+        {
+          "name": "何凡"
+        }
+      ],
+      "bio": "1997年生，江苏人。2017年拜中国烹饪大师熊贵海为师。专注淮扬菜，核心理念为手中无刀心中有道。",
+      "found": true,
+      "source": "https://cswzg.com/mc/3964.html"
+    },
+    {
+      "name": "王学文",
+      "primaryCuisine": "赣",
+      "birth": null,
+      "birthplace": "江西南昌",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师",
+        "中国十大名厨",
+        "中国赣菜大师"
+      ],
+      "signature": [
+        "霸王鱼头",
+        "鲍鱼焗仔排",
+        "文罐小牛腩"
+      ],
+      "bio": "江西南昌人，从业30余年。任江西鑫钵源餐饮管理有限公司董事长。专注生态古法江西瓦罐煨汤技术的复原与推广。获中国烹饪协会中华金厨奖。",
+      "found": true,
+      "source": "https://www.ccas.com.cn/site/content/79683.html"
+    },
+    {
+      "name": "廖鸣",
+      "primaryCuisine": "桂",
+      "birth": 1984,
+      "birthplace": "广西南宁",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1984年生，广西南宁人。从业超过20年。先后在哈尔滨、柳州、广西等地多家酒店任行政总厨。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5082.html"
+    },
+    {
+      "name": "张新雨",
+      "primaryCuisine": "陕",
+      "birth": null,
+      "birthplace": "陕西延安吴起",
+      "gender": "男",
+      "titles": [
+        "注册中国烹饪大师",
+        "中式烹饪高级技师",
+        "高级雕刻师"
+      ],
+      "masters": [
+        {
+          "name": "韩晓辉"
+        }
+      ],
+      "signature": [
+        "避风塘鳕鱼",
+        "山药酸菜辣煮花螺"
+      ],
+      "bio": "陕西延安吴起人，从业27年。2004年拜师中国世界烹饪大师韩晓辉。擅长川湘菜、粤菜、蒙菜、鲁菜、海鲜及食品雕刻。",
+      "found": true,
+      "source": "https://zgcsw.cn/mc/5084.html"
+    },
+    {
+      "name": "苏鹏辉",
+      "primaryCuisine": "桂",
+      "birth": 1999,
+      "birthplace": "广西合浦",
+      "gender": "男",
+      "titles": [
+        "中国烹饪大师"
+      ],
+      "bio": "1999年生，广西北海合浦人。曾在沈阳、长春、哈尔滨学习工作，2024年回广西在瑶王府任厨师长。",
+      "found": true,
+      "source": "https://cswzg.com/mc/5083.html"
+    }
+  ],
+  "stats": {
+    "total": 115,
+    "found": 115,
+    "withCuisine": 62,
+    "withMaster": 23
+  }
+}
