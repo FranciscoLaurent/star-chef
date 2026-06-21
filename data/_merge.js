@@ -62,12 +62,35 @@ const allChefs = [];
 const allSchools = [];
 const allCrossLinks = [];
 
+// 垃圾名字过滤器（源头阻断爬虫解析错误）
+const NAME_BLACKLIST = new Set([
+  '中国名厨','中华名厨','国家名厨','中国烹饪大师','中国烹饪名师',
+  '中国厨师名','中国名厨人','中国烹饪名','中国烹饪大','中华金厨',
+  '百强技能大','国宝级大师','亚洲大厨','顺德十大名厨',
+  '祖父','叔叔','家学','当代','梅兰芳家厨','齐门（满汉全席）',
+  '宫庭御膳房','故宫御膳房','莫家传人',
+  '著名中国烹','中国饭店协','山东省烹饪','资深中国烹',
+  '中国特二级','于国家级烹','中国瓯菜宗','知名饮食养',
+  '世界川菜名','香港名厨周','新派川菜领','香港国际十',
+  '卢华学习川','海鲜姿造创','中华食雕第','已故国家名',
+  '重庆吴氏第三代传人','江苏淮安','高美琼大师',
+]);
+function isGarbageName(name) {
+  if (!name || name.length < 2 || name.length > 5) return true;
+  if (NAME_BLACKLIST.has(name)) return true;
+  if (/^(中国|中华|国家|国宝|亚洲|世界|香港|山东|江苏)(厨师|名厨|烹饪|餐饮|大师|大厨|食雕)/.test(name)) return true;
+  if (/先生$|大师$|门下$/.test(name)) return true;
+  if (!/[一-龥]/.test(name)) return true;
+  return false;
+}
+
 for (const f of files) {
   if (f.optional && !fs.existsSync(path.join(DATA_DIR, f.path))) continue;
   const d = JSON.parse(fs.readFileSync(path.join(DATA_DIR, f.path), 'utf8'));
   if (d.schools) allSchools.push(...d.schools.map(s => ({...s, _cuisine: d.cuisine})));
   if (d.crossLinks) allCrossLinks.push(...d.crossLinks);
   for (const c of d.chefs) {
+    if (isGarbageName(c.name)) continue;
     allChefs.push({ ...c, _source: f.path, _type: f.type });
   }
 }
@@ -108,7 +131,7 @@ for (const c of byName.values()) {
 // 已存在节点的名字
 const existingNames = new Set(byName.keys());
 // 占位 = 被引用但不在数据集里的师承
-const placeholders = [...allMasterNames].filter(n => !existingNames.has(n));
+const placeholders = [...allMasterNames].filter(n => !existingNames.has(n) && !isGarbageName(n));
 
 // 为占位创建简单节点（标记 isPlaceholder: true，仅含名字+被多少人引用）
 let placeholderIdCounter = 1;
@@ -210,6 +233,19 @@ for (const c of byName.values()) {
     if (!out.master && out.masterIds.length > 0) {
       out.master = out.masterIds[0];
     }
+  }
+
+  // 清理 masters[] 中的垃圾引用和名称后缀
+  if (out.masters && out.masters.length > 0) {
+    const MASTER_FIX = {
+      '郑峰先生':'郑峰','郑秀生先':'郑秀生','郑秀生先生':'郑秀生',
+      '高美琼大师':'高美琼','王墨泉先生':'王墨泉',
+    };
+    const MASTER_REMOVE = new Set(['著名中国烹','中国饭店协','山东省烹饪','国家名厨','资深中国烹','中国特二级','于国家级烹','中国瓯菜宗','知名饮食养','世界川菜名','香港名厨周','新派川菜领','香港国际十','卢华学习川','海鲜姿造创','中华食雕第','已故国家名','宫庭御膳房','故宫御膳房','莫家传人','当代','祖父','叔叔','家学','亚洲大厨','国宝级大师','重庆吴氏第三代传人','江苏淮安']);
+    out.masters = out.masters
+      .filter(m => !MASTER_REMOVE.has(m.name) && !isGarbageName(m.name))
+      .map(m => { if (MASTER_FIX[m.name]) m.name = MASTER_FIX[m.name]; return m; });
+    if (out.masters.length === 0) out.masters = undefined;
   }
 
   merged.push(out);

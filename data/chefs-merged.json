@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T08:34:38.887Z",
+  "generatedAt": "2026-06-21T08:59:30.800Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json",
   "cuisineNormalized": {
     "川菜": "川",
@@ -1812,6 +1812,41 @@
       "_origin": "cuisine-xiang.json"
     },
     {
+      "id": "x012",
+      "name": "王墨泉",
+      "isPlaceholder": false,
+      "primaryCuisine": "湘",
+      "secondaryCuisines": [],
+      "school": "xiang-jiang",
+      "gen": 3,
+      "master": null,
+      "era": "当代",
+      "birth": 1944,
+      "death": null,
+      "gender": null,
+      "ethnicity": null,
+      "birthplace": null,
+      "education": null,
+      "titles": null,
+      "title": null,
+      "currentRole": "曲园酒家·墨泉峰味",
+      "restaurant": "曲园酒家·墨泉峰味",
+      "position": "湘菜泰斗",
+      "city": "长沙",
+      "signature": [
+        "发丝牛百叶",
+        "组庵鱼翅",
+        "墨泉名菜系列"
+      ],
+      "signatureDetails": null,
+      "experiences": null,
+      "portrait": null,
+      "source": "https://baike.baidu.com/item/%E7%8E%8B%E5%A2%A8%E6%B3%89/7429974",
+      "bio": "湖南平江人，17 岁入行，从玉楼东到曲园酒家，1980 年破格升特一级厨师。中国元老级烹饪大师、湘菜大师，自创与改良湘菜超 400 道，弟子六代逾万人，2015 年收第 71 位关门弟子后宣布闭门。",
+      "referencedBy": null,
+      "_origin": "cuisine-xiang.json"
+    },
+    {
       "id": "x013",
       "name": "许菊云",
       "isPlaceholder": false,
@@ -3432,6 +3467,88 @@
       ]
     },
     {
+      "id": "cyxh-mianhuai-736",
+      "name": "郑秀生",
+      "isPlaceholder": false,
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "京",
+        "川",
+        "谭家菜"
+      ],
+      "school": null,
+      "gen": null,
+      "master": "h010",
+      "era": null,
+      "birth": 1955,
+      "death": 2022,
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthplace": "北京",
+      "education": "北京教育学院烹饪系大专",
+      "titles": [
+        "国家高级烹饪技师",
+        "全国劳动模范",
+        "中国烹饪大师",
+        "北京市特级烹饪大师",
+        "北京市劳动模范",
+        "全国五一劳动奖章"
+      ],
+      "title": null,
+      "currentRole": "北京饭店行政总厨（退休前）；「老饭骨」创始人",
+      "restaurant": "北京饭店行政总厨（退休前）；「老饭骨」创始人",
+      "position": null,
+      "city": "北京",
+      "signature": [
+        "大煮干丝",
+        "蟹黄狮子头",
+        "御膳全家福",
+        "海马养生翅",
+        "虫草鱼翅"
+      ],
+      "signatureDetails": null,
+      "experiences": [
+        "1971 年进入北京饭店",
+        "1982 年赴日本新大谷饭店献艺",
+        "1999 年迎接建国 50 周年「开国第一宴」主理",
+        "2006 年中非合作论坛峰会接待主理",
+        "2007 年获全国五一劳动奖章、中国烹饪大师金爵奖",
+        "2010 年获全国劳动模范",
+        "2019 年与孙立新创立「老饭骨」短视频账号"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/mianhuai/2022-01-31/92fa3f746291ee484e4a82893a5f7c5e.jpg",
+      "source": "http://www.cyxh.org/mingchu/mianhuai/736.html",
+      "bio": "北京饭店行政总厨，国宴大师。北京饭店四师门拜入：淮扬李魁南、陈代增、川菜黄子云、谭家菜陈玉亮。主理 1999 年「开国第一宴」、中非合作论坛峰会接待。2019 年与孙立新创立「老饭骨」短视频账号，粉丝过千万。2022 年 1 月 30 日逝世。",
+      "referencedBy": null,
+      "_origin": "cyxh-mianhuai-batch2.json",
+      "masters": [
+        {
+          "name": "李魁南",
+          "title": "淮扬菜名厨",
+          "rawText": "1971 年 7 月进入北京饭店，师承淮扬菜名厨李魁南"
+        },
+        {
+          "name": "陈代增",
+          "title": "淮扬菜大师",
+          "rawText": "后又拜淮扬菜大师陈代增"
+        },
+        {
+          "name": "黄子云",
+          "title": "川菜大师、北京饭店五虎上将之一",
+          "rawText": "拜川菜大师黄子云为师"
+        },
+        {
+          "name": "陈玉亮",
+          "title": "谭家菜大师",
+          "rawText": "拜谭家菜大师陈玉亮为师"
+        }
+      ],
+      "masterIds": [
+        "h010",
+        "cyxh-yuanlao-142"
+      ]
+    },
+    {
       "id": "cyxh-yuanlao-1402",
       "name": "王立喜",
       "isPlaceholder": false,
@@ -3551,6 +3668,64 @@
       "masterIds": [
         "mp-001"
       ]
+    },
+    {
+      "id": "cyxh-yuanlao-899",
+      "name": "居长龙",
+      "isPlaceholder": false,
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [
+        "和风料理"
+      ],
+      "school": null,
+      "gen": null,
+      "master": null,
+      "era": null,
+      "birth": 1940,
+      "death": null,
+      "gender": "男",
+      "ethnicity": null,
+      "birthplace": "扬州",
+      "education": null,
+      "titles": [
+        "元老级中国烹饪大师",
+        "中国淮扬菜代表人物之一",
+        "江苏省非物质文化遗产扬州三把刀·烹饪技艺省级传承人",
+        "国际中餐大师",
+        "国际餐饮文化大师",
+        "居氏料理室创始人",
+        "中国烹饪大师名人堂尊师"
+      ],
+      "title": null,
+      "currentRole": null,
+      "restaurant": null,
+      "position": null,
+      "city": "扬州",
+      "signature": [
+        "全丝燕菜煮干丝",
+        "天麻鳝鱼",
+        "河豚鱼烧裙翅",
+        "宫灯照明珠",
+        "柠檬香酒仔牛掌",
+        "吉滨香螺",
+        "鱼翅灯笼豆腐",
+        "乾隆官燕",
+        "鸡包鱼翅",
+        "清炖蟹粉狮子头"
+      ],
+      "signatureDetails": null,
+      "experiences": [
+        "1959 起从事烹饪工作",
+        "1971 北京钓鱼台国宾馆江苏风味菜",
+        "1981 香港温莎皇宫献技大江南北宴",
+        "1984 研制红楼宴",
+        "1988 日本千叶县知味斋饭店、东京三笠会馆中国料理总料理长"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/yuanlao/2024-03-30/074645b48d4a55baa8fe5fbfef027918.jpg",
+      "source": "http://www.cyxh.org/mingchu/yuanlao/899.html",
+      "bio": "扬州淮扬菜泰斗，居氏料理创始人。1988 年起在日本工作多年，将日本理念融入淮扬菜，形成居氏风格。",
+      "referencedBy": null,
+      "_origin": "cyxh-chefs.json"
     },
     {
       "id": "cyxh-yuanlao-247",
@@ -4495,7 +4670,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-006",
+      "master": null,
       "era": null,
       "birth": 1965,
       "death": null,
@@ -4529,10 +4704,7 @@
       "bio": "张家港『叫花鸡』非遗第五代传承人，融合北魏胡汉烧烤技法；2024 年入选《国家名厨》第六卷。",
       "referencedBy": null,
       "_origin": "cyxh-zishen-batch2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-006"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-zishen-922",
@@ -4791,7 +4963,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-007",
+      "master": null,
       "era": null,
       "birth": 1972,
       "death": null,
@@ -4836,10 +5008,7 @@
       "bio": "吉菜烹饪大师，齐门满汉全席第四代亲传弟子；2026 年入选《国家名厨》第八卷。",
       "referencedBy": null,
       "_origin": "cyxh-zishen-batch2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-007"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-zishen-1407",
@@ -4852,7 +5021,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-008",
+      "master": "mp-006",
       "era": null,
       "birth": 1961,
       "death": null,
@@ -4900,7 +5069,7 @@
         }
       ],
       "masterIds": [
-        "mp-008"
+        "mp-006"
       ]
     },
     {
@@ -5081,7 +5250,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-009",
+      "master": null,
       "era": null,
       "birth": 1969,
       "death": null,
@@ -5128,10 +5297,7 @@
       "bio": "山东南郊国宾馆鲁菜与孔府菜大师，非遗面塑传承人；2025 年入选《国家名厨》第七卷。",
       "referencedBy": null,
       "_origin": "cyxh-zishen-batch2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-009"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-zishen-1097",
@@ -5272,7 +5438,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-010",
+      "master": "mp-007",
       "era": null,
       "birth": 1959,
       "death": null,
@@ -5336,7 +5502,7 @@
         }
       ],
       "masterIds": [
-        "mp-010"
+        "mp-007"
       ]
     },
     {
@@ -6027,7 +6193,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-011",
+      "master": "mp-008",
       "era": null,
       "birth": 1989,
       "death": null,
@@ -6079,7 +6245,7 @@
         }
       ],
       "masterIds": [
-        "mp-011"
+        "mp-008"
       ]
     },
     {
@@ -7546,7 +7712,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-012",
+      "master": "mp-009",
       "era": null,
       "birth": 1988,
       "death": null,
@@ -7591,7 +7757,7 @@
         }
       ],
       "masterIds": [
-        "mp-012"
+        "mp-009"
       ]
     },
     {
@@ -8556,7 +8722,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-013",
+      "master": "mp-010",
       "era": null,
       "birth": 1975,
       "death": null,
@@ -8606,7 +8772,7 @@
         }
       ],
       "masterIds": [
-        "mp-013"
+        "mp-010"
       ]
     },
     {
@@ -10546,7 +10712,7 @@
       ],
       "masterIds": [
         "cyxh-yuanlao-1402",
-        "mp-014"
+        "mp-011"
       ]
     },
     {
@@ -10903,7 +11069,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-015",
+      "master": "mp-012",
       "era": null,
       "birth": 1963,
       "death": null,
@@ -10952,7 +11118,7 @@
         }
       ],
       "masterIds": [
-        "mp-015"
+        "mp-012"
       ]
     },
     {
@@ -11197,7 +11363,7 @@
       "masterIds": [
         "h012",
         "h009",
-        "mp-016"
+        "mp-013"
       ]
     },
     {
@@ -11458,7 +11624,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-017",
+      "master": "mp-014",
       "era": null,
       "birth": 1964,
       "death": null,
@@ -11510,7 +11676,7 @@
         }
       ],
       "masterIds": [
-        "mp-017"
+        "mp-014"
       ]
     },
     {
@@ -11636,7 +11802,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-018",
+      "master": null,
       "era": null,
       "birth": 1966,
       "death": null,
@@ -11677,10 +11843,7 @@
       "bio": "广东顺德伦教糕世家传人，佛山市级非遗代表性传承人。粤菜面点宗师，承传伦教糕七大工序传统手工技艺，全面发展产业链与培训学校。",
       "referencedBy": null,
       "_origin": "cyxh-final-batch.json",
-      "masters": [],
-      "masterIds": [
-        "mp-018"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-zishen-950",
@@ -11791,7 +11954,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-019",
+      "master": "mp-015",
       "era": null,
       "birth": 1968,
       "death": null,
@@ -11837,7 +12000,7 @@
         }
       ],
       "masterIds": [
-        "mp-019"
+        "mp-015"
       ]
     },
     {
@@ -11987,6 +12150,60 @@
       "bio": "北京京菜大师，获国家名厨、中国烹饪大师等荣誉。",
       "referencedBy": null,
       "_origin": "cyxh-zishen-batch3.json"
+    },
+    {
+      "id": "cyxh-zishen-905",
+      "name": "郭成全",
+      "isPlaceholder": false,
+      "primaryCuisine": "国宴",
+      "secondaryCuisines": [
+        "黑"
+      ],
+      "school": null,
+      "gen": null,
+      "master": "cyxh-zishen-516",
+      "era": null,
+      "birth": 1970,
+      "death": null,
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthplace": "黑龙江哈尔滨",
+      "education": null,
+      "titles": [
+        "国家名厨",
+        "中国烹饪大师",
+        "中国烹饪名师",
+        "中华金厨",
+        "高级营养师",
+        "高级技师",
+        "非遗传承人"
+      ],
+      "title": null,
+      "currentRole": "哈尔滨日月潭美食城(全国餐饮业五十强)、（香港）君悦美食城、福成肥牛任职厨务总监",
+      "restaurant": "哈尔滨日月潭美食城(全国餐饮业五十强)、（香港）君悦美食城、福成肥牛任职厨务总监",
+      "position": null,
+      "city": "哈尔滨",
+      "signature": [],
+      "signatureDetails": null,
+      "experiences": [
+        "2024年入选《国家名厨》第六卷\n郭成全大师在工作中勇于实践与创新，为提升和完善技术与管理技能，相续参加了黑龙江省首届行政总厨资格认证，世界中餐联合会大董高级进修班等学习",
+        "2024年成立郭成全烹饪大师工作室，更好的弘扬国宴菜品文化、促进地方烹饪交流发展"
+      ],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/zishen/2024-04-02/5ebaaa535d38a13337ff2d33d992b607.jpg",
+      "source": "http://www.cyxh.org/mingchu/zishen/905.html",
+      "bio": "黑龙江哈尔滨国宴菜大师，师承侯仲华，获国家名厨、中国烹饪大师等荣誉。",
+      "referencedBy": null,
+      "_origin": "cyxh-zishen-batch3.json",
+      "masters": [
+        {
+          "name": "侯仲华",
+          "title": null,
+          "rawText": "师承国务院功勋国宴泰斗、北京钓鱼台国宾馆行政总厨侯仲华先生，成为侯门国宴第三代传承人，现任哈尔滨英才公司技术总顾问"
+        }
+      ],
+      "masterIds": [
+        "cyxh-zishen-516"
+      ]
     },
     {
       "id": "cyxh-dangdai-702",
@@ -12239,7 +12456,7 @@
       "id": "cyxh-mianhuai-953",
       "name": "姜习",
       "isPlaceholder": false,
-      "primaryCuisine": null,
+      "primaryCuisine": "其他",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -12336,7 +12553,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-020",
+      "master": "mp-016",
       "era": null,
       "birth": 1945,
       "death": 2009,
@@ -12398,8 +12615,8 @@
         }
       ],
       "masterIds": [
-        "mp-020",
-        "mp-021"
+        "mp-016",
+        "mp-017"
       ]
     },
     {
@@ -12563,7 +12780,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-022",
+      "master": "mp-018",
       "era": null,
       "birth": 1944,
       "death": 2023,
@@ -12617,17 +12834,27 @@
           "rawText": "顺德首批名厨"
         },
         {
+          "name": "罗二",
+          "title": "顺德名厨",
+          "rawText": "顺德首批名厨"
+        },
+        {
+          "name": "朱兆",
+          "title": "顺德名厨",
+          "rawText": "顺德首批名厨"
+        },
+        {
           "name": "蔡锦槐",
           "title": "顺德名厨",
           "rawText": "顺德首批名厨"
         }
       ],
       "masterIds": [
-        "mp-022",
-        "mp-023",
-        "mp-024",
-        "mp-025",
-        "mp-026"
+        "mp-018",
+        "mp-019",
+        "mp-020",
+        "mp-021",
+        "mp-022"
       ]
     },
     {
@@ -12642,7 +12869,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-027",
+      "master": "mp-023",
       "era": null,
       "birth": 1955,
       "death": 2023,
@@ -12695,7 +12922,7 @@
         }
       ],
       "masterIds": [
-        "mp-027",
+        "mp-023",
         "h008"
       ]
     },
@@ -12942,7 +13169,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-028",
+      "master": "mp-024",
       "era": null,
       "birth": 1952,
       "death": 2020,
@@ -13001,9 +13228,9 @@
         }
       ],
       "masterIds": [
-        "mp-028",
-        "mp-029",
-        "mp-030"
+        "mp-024",
+        "mp-025",
+        "mp-026"
       ]
     },
     {
@@ -13018,7 +13245,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-031",
+      "master": "mp-027",
       "era": null,
       "birth": 1924,
       "death": 2020,
@@ -13078,7 +13305,7 @@
         }
       ],
       "masterIds": [
-        "mp-031"
+        "mp-027"
       ]
     },
     {
@@ -13089,7 +13316,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-032",
+      "master": "mp-028",
       "era": null,
       "birth": 1924,
       "death": 2020,
@@ -13133,7 +13360,7 @@
         }
       ],
       "masterIds": [
-        "mp-032"
+        "mp-028"
       ]
     },
     {
@@ -13400,7 +13627,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-033",
+      "master": "mp-029",
       "era": null,
       "birth": 1948,
       "death": 2019,
@@ -13477,10 +13704,10 @@
         }
       ],
       "masterIds": [
-        "mp-033",
+        "mp-029",
         "h008",
         "cyxh-mianhuai-961",
-        "mp-034"
+        "mp-030"
       ]
     },
     {
@@ -13612,10 +13839,10 @@
       ],
       "masterIds": [
         "mingchu-mianhuai-9",
-        "mp-035",
+        "mp-031",
         "h010",
         "cyxh-mianhuai-626",
-        "mp-036"
+        "mp-032"
       ]
     },
     {
@@ -13732,7 +13959,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-037",
+      "master": "mp-033",
       "era": null,
       "birth": 1913,
       "death": 2013,
@@ -13797,8 +14024,8 @@
         }
       ],
       "masterIds": [
-        "mp-037",
-        "mp-038"
+        "mp-033",
+        "mp-034"
       ]
     },
     {
@@ -13857,7 +14084,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-039",
+      "master": "mp-035",
       "era": null,
       "birth": 1944,
       "death": null,
@@ -13922,10 +14149,10 @@
         }
       ],
       "masterIds": [
-        "mp-039",
-        "mp-040",
-        "mp-041",
-        "mp-042"
+        "mp-035",
+        "mp-036",
+        "mp-037",
+        "mp-038"
       ]
     },
     {
@@ -13988,7 +14215,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-043",
+      "master": "mp-039",
       "era": null,
       "birth": 1947,
       "death": null,
@@ -14033,7 +14260,7 @@
         }
       ],
       "masterIds": [
-        "mp-043"
+        "mp-039"
       ]
     },
     {
@@ -14167,7 +14394,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-044",
+      "master": "mp-040",
       "era": null,
       "birth": 1947,
       "death": null,
@@ -14230,9 +14457,9 @@
         }
       ],
       "masterIds": [
-        "mp-044",
-        "mp-045",
-        "mp-046"
+        "mp-040",
+        "mp-041",
+        "mp-042"
       ]
     },
     {
@@ -14249,7 +14476,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-047",
+      "master": "mp-043",
       "era": null,
       "birth": 1944,
       "death": 2026,
@@ -14306,8 +14533,8 @@
         }
       ],
       "masterIds": [
-        "mp-047",
-        "mp-048"
+        "mp-043",
+        "mp-044"
       ]
     },
     {
@@ -14373,7 +14600,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-049",
+      "master": null,
       "era": null,
       "birth": 1940,
       "death": null,
@@ -14416,10 +14643,7 @@
       "bio": "上海烹坛泰斗，中国食神。1988、1994 年两度率中国队赴德国世界奥林匹克烹饪大赛夺金。1985 年整理推出莫家菜并编《莫家菜谱》。",
       "referencedBy": null,
       "_origin": "cyxh-yuanlao-batch2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-049"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-yuanlao-858",
@@ -14552,13 +14776,13 @@
       "id": "cyxh-yuanlao-863",
       "name": "胡丽妹",
       "isPlaceholder": false,
-      "primaryCuisine": "京",
+      "primaryCuisine": "京帮",
       "secondaryCuisines": [
         "国宴"
       ],
       "school": null,
       "gen": null,
-      "master": "mp-050",
+      "master": "mp-045",
       "era": null,
       "birth": 1941,
       "death": null,
@@ -14621,8 +14845,8 @@
         }
       ],
       "masterIds": [
-        "mp-050",
-        "mp-051"
+        "mp-045",
+        "mp-046"
       ]
     },
     {
@@ -14635,7 +14859,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-052",
+      "master": "mp-047",
       "era": null,
       "birth": 1939,
       "death": null,
@@ -14705,9 +14929,9 @@
         }
       ],
       "masterIds": [
-        "mp-052",
-        "mp-053",
-        "mp-054"
+        "mp-047",
+        "mp-048",
+        "mp-049"
       ]
     },
     {
@@ -14720,7 +14944,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-055",
+      "master": "mp-050",
       "era": null,
       "birth": 1923,
       "death": null,
@@ -14775,8 +14999,8 @@
         }
       ],
       "masterIds": [
-        "mp-055",
-        "mp-056"
+        "mp-050",
+        "mp-051"
       ]
     },
     {
@@ -14790,7 +15014,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-057",
+      "master": "mp-052",
       "era": null,
       "birth": null,
       "death": null,
@@ -14839,7 +15063,7 @@
         }
       ],
       "masterIds": [
-        "mp-057"
+        "mp-052"
       ]
     },
     {
@@ -14969,7 +15193,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-058",
+      "master": "mp-053",
       "era": null,
       "birth": 1937,
       "death": null,
@@ -15030,8 +15254,8 @@
         }
       ],
       "masterIds": [
-        "mp-058",
-        "mp-059"
+        "mp-053",
+        "mp-054"
       ]
     },
     {
@@ -15044,7 +15268,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-060",
+      "master": "mp-055",
       "era": null,
       "birth": 1959,
       "death": null,
@@ -15092,7 +15316,7 @@
         }
       ],
       "masterIds": [
-        "mp-060"
+        "mp-055"
       ]
     },
     {
@@ -15455,7 +15679,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-061",
+      "master": "mp-056",
       "era": null,
       "birth": 1971,
       "death": null,
@@ -15507,7 +15731,7 @@
         }
       ],
       "masterIds": [
-        "mp-061",
+        "mp-056",
         "y013"
       ]
     },
@@ -16055,7 +16279,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-062",
+      "master": "mp-057",
       "era": null,
       "birth": 1972,
       "death": null,
@@ -16094,7 +16318,7 @@
         }
       ],
       "masterIds": [
-        "mp-062"
+        "mp-057"
       ]
     },
     {
@@ -16483,7 +16707,7 @@
     {
       "name": "王先之",
       "isPlaceholder": false,
-      "primaryCuisine": null,
+      "primaryCuisine": "未知",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -16513,7 +16737,7 @@
     {
       "name": "王剑南",
       "isPlaceholder": false,
-      "primaryCuisine": null,
+      "primaryCuisine": "未知",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -16543,7 +16767,7 @@
     {
       "name": "陈熙",
       "isPlaceholder": false,
-      "primaryCuisine": null,
+      "primaryCuisine": "未知",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -16582,7 +16806,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-063",
+      "master": "mp-058",
       "era": null,
       "birth": 1983,
       "death": null,
@@ -16630,7 +16854,7 @@
         }
       ],
       "masterIds": [
-        "mp-063"
+        "mp-058"
       ]
     },
     {
@@ -16736,7 +16960,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-064",
+      "master": "mp-059",
       "era": null,
       "birth": null,
       "death": null,
@@ -16781,7 +17005,7 @@
         }
       ],
       "masterIds": [
-        "mp-064"
+        "mp-059"
       ]
     },
     {
@@ -16792,7 +17016,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-065",
+      "master": null,
       "era": null,
       "birth": 1985,
       "death": null,
@@ -16827,16 +17051,7 @@
       "bio": "广东清远连州籍佛山粤菜厨师，2015 年世界粤菜厨皇大赛广州总决赛金奖。2020 年获评中国名厨。",
       "referencedBy": null,
       "_origin": "cyxh-dangdai-batch4.json",
-      "masters": [
-        {
-          "name": "顺德十大名厨",
-          "title": "粤菜大师",
-          "rawText": "师承顺德十大名厨挥下"
-        }
-      ],
-      "masterIds": [
-        "mp-065"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-650",
@@ -16948,7 +17163,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-066",
+      "master": "mp-060",
       "era": null,
       "birth": 1974,
       "death": null,
@@ -16997,7 +17212,7 @@
         }
       ],
       "masterIds": [
-        "mp-066"
+        "mp-060"
       ]
     },
     {
@@ -17223,7 +17438,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-067",
+      "master": "mp-061",
       "era": null,
       "birth": 1982,
       "death": null,
@@ -17274,8 +17489,8 @@
         }
       ],
       "masterIds": [
-        "mp-067",
-        "mp-068"
+        "mp-061",
+        "mp-062"
       ]
     },
     {
@@ -17386,7 +17601,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-069",
+      "master": "mp-063",
       "era": null,
       "birth": null,
       "death": null,
@@ -17430,7 +17645,7 @@
         }
       ],
       "masterIds": [
-        "mp-069"
+        "mp-063"
       ]
     },
     {
@@ -17485,7 +17700,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-070",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -17510,15 +17725,7 @@
       "bio": " 刘锋，男，汉族，1978年3月出生，河北石家庄人。国家中式烹调技师，国家中式面点技师，中国烹饪大师，河北省饭店烹调协会理事，从厨20余年，师从国宝级烹调大师李玉伟先生，现任石家庄金鼎盛源餐饮公司经理。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "李玉伟",
-          "rawText": "师从国宝级烹调大师李玉伟先生"
-        }
-      ],
-      "masterIds": [
-        "mp-070"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-830",
@@ -17677,7 +17884,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-071",
+      "master": "mp-064",
       "era": null,
       "birth": 1978,
       "death": null,
@@ -17724,7 +17931,7 @@
         }
       ],
       "masterIds": [
-        "mp-071"
+        "mp-064"
       ]
     },
     {
@@ -17881,7 +18088,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-072",
+      "master": "mp-065",
       "era": null,
       "birth": null,
       "death": null,
@@ -17921,7 +18128,7 @@
         }
       ],
       "masterIds": [
-        "mp-072"
+        "mp-065"
       ]
     },
     {
@@ -17981,7 +18188,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-073",
+      "master": "mp-066",
       "era": null,
       "birth": 1979,
       "death": null,
@@ -18022,7 +18229,7 @@
         }
       ],
       "masterIds": [
-        "mp-073"
+        "mp-066"
       ]
     },
     {
@@ -18038,7 +18245,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-074",
+      "master": "mp-067",
       "era": null,
       "birth": 1960,
       "death": null,
@@ -18110,11 +18317,11 @@
         }
       ],
       "masterIds": [
-        "mp-074",
-        "mp-075",
-        "mp-076",
-        "mp-077",
-        "mp-078"
+        "mp-067",
+        "mp-068",
+        "mp-069",
+        "mp-070",
+        "mp-071"
       ]
     },
     {
@@ -18178,7 +18385,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-079",
+      "master": "mp-072",
       "era": null,
       "birth": 1923,
       "death": 2007,
@@ -18230,7 +18437,7 @@
         }
       ],
       "masterIds": [
-        "mp-079"
+        "mp-072"
       ]
     },
     {
@@ -18430,7 +18637,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-080",
+      "master": "mp-073",
       "era": null,
       "birth": 1932,
       "death": 2006,
@@ -18474,7 +18681,7 @@
         }
       ],
       "masterIds": [
-        "mp-080"
+        "mp-073"
       ]
     },
     {
@@ -18490,7 +18697,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-081",
+      "master": "mp-074",
       "era": null,
       "birth": 1920,
       "death": 2011,
@@ -18545,8 +18752,8 @@
         }
       ],
       "masterIds": [
-        "mp-081",
-        "mp-082"
+        "mp-074",
+        "mp-075"
       ]
     },
     {
@@ -18560,7 +18767,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-083",
+      "master": "mp-076",
       "era": null,
       "birth": 1931,
       "death": 2011,
@@ -18631,17 +18838,17 @@
         }
       ],
       "masterIds": [
-        "mp-083",
-        "mp-084",
-        "mp-085",
-        "mp-086"
+        "mp-076",
+        "mp-077",
+        "mp-078",
+        "mp-079"
       ]
     },
     {
       "id": "cyxh-mianhuai-82",
       "name": "胡长荣",
       "isPlaceholder": false,
-      "primaryCuisine": "淮扬",
+      "primaryCuisine": "京苏",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -18709,7 +18916,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-087",
+      "master": "mp-080",
       "era": null,
       "birth": 1920,
       "death": 2012,
@@ -18766,8 +18973,8 @@
         }
       ],
       "masterIds": [
-        "mp-087",
-        "mp-088"
+        "mp-080",
+        "mp-081"
       ]
     },
     {
@@ -18778,7 +18985,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-089",
+      "master": "mp-082",
       "era": null,
       "birth": 1940,
       "death": 2014,
@@ -18832,7 +19039,7 @@
         }
       ],
       "masterIds": [
-        "mp-089"
+        "mp-082"
       ]
     },
     {
@@ -18849,7 +19056,7 @@
       ],
       "school": null,
       "gen": null,
-      "master": "mp-090",
+      "master": "mp-083",
       "era": null,
       "birth": 1923,
       "death": 2016,
@@ -18916,8 +19123,8 @@
         }
       ],
       "masterIds": [
-        "mp-090",
-        "mp-091"
+        "mp-083",
+        "mp-084"
       ]
     },
     {
@@ -19277,7 +19484,7 @@
       "id": "academy-hbue-luyongliang",
       "name": "卢永良",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19336,7 +19543,7 @@
       "id": "academy-hbue-yumingshe",
       "name": "余明社",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19385,7 +19592,7 @@
       "id": "academy-hbue-zouzhiping",
       "name": "邹志平",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [
         "西餐"
       ],
@@ -19438,7 +19645,7 @@
       "id": "academy-hbue-sunchangbi",
       "name": "孙昌弼",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19494,14 +19701,14 @@
       ],
       "masterIds": [
         "academy-hbue-wangxianshan",
-        "mp-092"
+        "mp-085"
       ]
     },
     {
       "id": "academy-hbue-tujianguo",
       "name": "涂建国",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19552,7 +19759,7 @@
       "id": "academy-hbue-luyongchao",
       "name": "鲁永超",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [
         "素食",
         "药膳"
@@ -19602,7 +19809,7 @@
       "id": "academy-hbue-xujiaying",
       "name": "徐家莹",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19670,7 +19877,7 @@
       "id": "academy-hbue-liheming",
       "name": "李和鸣",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19704,7 +19911,7 @@
       "id": "academy-hbue-chencaisheng",
       "name": "陈才胜",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19737,7 +19944,7 @@
       "id": "academy-hbue-yaochunxia",
       "name": "姚春霞",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [
         "面点"
       ],
@@ -19772,7 +19979,7 @@
       "id": "academy-hbue-gaoqiong",
       "name": "高琼",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19805,7 +20012,7 @@
       "id": "academy-hbue-wangbo",
       "name": "王波",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19838,7 +20045,7 @@
       "id": "academy-hbue-shenshijing",
       "name": "沈思静",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19871,7 +20078,7 @@
       "id": "academy-hbue-huangchangxiang",
       "name": "黄昌祥",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19908,7 +20115,7 @@
       "id": "academy-hbue-wangxianshan",
       "name": "汪显山",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -19947,7 +20154,7 @@
       "id": "academy-wbu-wanghuiya",
       "name": "王辉亚",
       "isPlaceholder": false,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [
         "川",
         "粤"
@@ -20851,6 +21058,41 @@
       "_origin": "cyxh-crawled2.json"
     },
     {
+      "id": "cyxh-yuanlao-159",
+      "name": "王荫曾",
+      "isPlaceholder": false,
+      "primaryCuisine": "淮扬",
+      "secondaryCuisines": [],
+      "school": null,
+      "gen": null,
+      "master": null,
+      "era": null,
+      "birth": null,
+      "death": null,
+      "gender": null,
+      "ethnicity": null,
+      "birthplace": "江苏盐城",
+      "education": null,
+      "titles": [
+        "中国烹饪大师",
+        "国家名厨",
+        "国宴大师"
+      ],
+      "title": null,
+      "currentRole": null,
+      "restaurant": null,
+      "position": null,
+      "city": null,
+      "signature": [],
+      "signatureDetails": null,
+      "experiences": [],
+      "portrait": "http://www.cyxh.org/d/file/mingchu/yuanlao/2017-04-26/8f4e2479afd9efc460765acba9cadee7.jpg",
+      "source": "http://www.cyxh.org/mingchu/yuanlao/159.html",
+      "bio": "王荫曾，江苏盐城人。中共党员，国家名厨编委会高级顾问，1962年起从事烹饪工作，高级技师，国家特一级厨师，国家名厨，国宴大师，中国淮扬菜传播大使，元老级中国烹饪大师，曾长期在驻外大使馆担任厨师长，多次为党和国家领导人出访接待服务，并为国外元首掌勺料理，2017年入选《国家名厨》第四卷",
+      "referencedBy": null,
+      "_origin": "cyxh-crawled2.json"
+    },
+    {
       "id": "cyxh-yuanlao-228",
       "name": "王树亭",
       "isPlaceholder": false,
@@ -21100,7 +21342,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-093",
+      "master": "mp-086",
       "era": null,
       "birth": null,
       "death": null,
@@ -21133,7 +21375,7 @@
         }
       ],
       "masterIds": [
-        "mp-093"
+        "mp-086"
       ]
     },
     {
@@ -22229,7 +22471,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-094",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -22251,15 +22493,7 @@
       "bio": "刘仲淇，北京人，大专学历，师承北京全聚德烤鸭大师李燕生门下，老北京全聚德挂炉烤鸭正宗传人，中国名厨，全国中餐业特级评委，中国京味菜名师，全国传承创新厨师之一，现任北京中烹国食餐饮管理有限公司总经理兼执行总厨。",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "李燕生",
-          "rawText": "师承北京全聚德烤鸭大师李燕生门下"
-        }
-      ],
-      "masterIds": [
-        "mp-094"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-zishen-290",
@@ -22434,7 +22668,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-095",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -22458,10 +22692,7 @@
       "bio": "王根章，男，汉族，1970年6月出生，大专学历，师从当代“满汉席”掌门人周锦大师，为清宫御膳“满汉席”第三代传人，中国烹饪文化传承大师，中国御膳大师，国家名厨，高级烹饪技师，国家高级营养师，中国高级御膳技师，中国饭店业高级职业经理人，《首届中国名厨技艺博览》副主编",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-095"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-51",
@@ -22738,7 +22969,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-096",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -22763,10 +22994,7 @@
       "bio": "宫春卫，男，山东莱阳人。国家名厨，全国十佳行政总厨，中华金厨，中国烹饪大师，国家特一级烹调师，中华烹饪技术能手，迪拜中华网特邀嘉宾，国家名厨编委会高级名厨委员，现任青岛锅贴有限公司驻阿联酋迪拜中国海餐厅行政总厨，师承山东省烹饪协会副会长、青岛市厨艺研究会会长邴吉和大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-096"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-102",
@@ -23019,7 +23247,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-097",
+      "master": "mp-087",
       "era": null,
       "birth": null,
       "death": null,
@@ -23051,7 +23279,7 @@
         }
       ],
       "masterIds": [
-        "mp-097"
+        "mp-087"
       ]
     },
     {
@@ -24097,7 +24325,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-098",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -24121,15 +24349,7 @@
       "bio": "曾鹏飞，男，汉族，1982年8月出生，湖南新化县人。中国烹饪大师，湘菜烹饪技能大师，湖南省食品药品监督协会理事，湖南省餐饮行业协会理事，现任湖南长沙红星鹏飞厨师职业培训学校校长。师承著名湘菜烹饪大师王墨泉先生",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "王墨泉",
-          "rawText": "师承著名湘菜烹饪大师王墨泉先生"
-        }
-      ],
-      "masterIds": [
-        "mp-098"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-169",
@@ -24528,6 +24748,40 @@
       "_origin": "cyxh-crawled2.json"
     },
     {
+      "id": "cyxh-dangdai-190",
+      "name": "郑峰",
+      "isPlaceholder": false,
+      "primaryCuisine": null,
+      "secondaryCuisines": [],
+      "school": null,
+      "gen": null,
+      "master": null,
+      "era": null,
+      "birth": null,
+      "death": null,
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthplace": null,
+      "education": null,
+      "titles": [
+        "中国烹饪大师",
+        "国家名厨"
+      ],
+      "title": null,
+      "currentRole": "澳门永利酒店中餐北方菜料理主厨、99Noodles行政总厨、",
+      "restaurant": "澳门永利酒店中餐北方菜料理主厨、99Noodles行政总厨、",
+      "position": null,
+      "city": null,
+      "signature": [],
+      "signatureDetails": null,
+      "experiences": [],
+      "portrait": "http://www.mingchu.org/d/file/mingchu/dangdai/2025-06-17/0a9d9935437e81a3f1bacf82e40ef56a.jpg",
+      "source": "http://www.mingchu.org/mingchu/dangdai/190.html",
+      "bio": "郑峰，男，汉族，1976年3月出生于河南开封。高级技师，高级公共营养师，中国烹饪大师，《国家名厨》澳门特别行政区主编，中国餐饮协会高级名厨委员，现任澳门永利酒店中餐北方菜料理主厨、99Noodles行政总厨、永利主席会高级主厨、高级vip宴会接待行政料理主厨。",
+      "referencedBy": null,
+      "_origin": "cyxh-crawled2.json"
+    },
+    {
       "id": "cyxh-dangdai-191",
       "name": "韩勇",
       "isPlaceholder": false,
@@ -24569,7 +24823,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-099",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -24593,10 +24847,7 @@
       "bio": "石明昇，男，汉族，陕西安康人，大专学历，国家名厨编委会高级委员北京执委，北京山后未来科技发展有限公司总经理、北京圣科物业管理服务有限公司总经理、中国烹饪协会素食委员会主任，北京化工大学、北京首都医科大学特聘技术顾问。毕业于陕西渭南普田培训学院、北京市屈浩烹饪服务学校、北京大学继续教育学院，师从亚洲大厨、世界厨王、国际烹饪艺术大师、北京屈浩烹饪服务学校校长屈浩先生。",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-099"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-195",
@@ -24606,7 +24857,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-100",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -24631,15 +24882,7 @@
       "bio": "邢万里，男，汉族，河南开封市人。国家高级烹调师，中国烹饪名师，现任天律帝旺凯悦酒店悦园中餐厅凉菜厨师长。精通冷菜、烧腊的制作，师从中国烹饪大师郑峰先生",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "郑峰",
-          "rawText": "师从中国烹饪大师郑峰先生"
-        }
-      ],
-      "masterIds": [
-        "mp-100"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-194",
@@ -24649,7 +24892,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-100",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -24674,15 +24917,7 @@
       "bio": "赵晨光，男，汉族，河南开封市人。国家高级烹调师，中国烹饪名师，现任天律帝旺凯悦酒店悦园中餐厅副厨师长。擅长新京菜、淮扬菜的烹调技艺，师从中国烹饪大师郑峰先生",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "郑峰",
-          "rawText": "师从中国烹饪大师郑峰先生"
-        }
-      ],
-      "masterIds": [
-        "mp-100"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-198",
@@ -24792,7 +25027,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-100",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -24817,15 +25052,7 @@
       "bio": "郑冰城，男，汉族，河南开封人。国家高级烹调师，国家高级营养配餐师，中国烹饪名师，现任天律帝旺凯悦酒店悦园中餐厅热菜主管。擅长京鲁菜，师从中国烹饪大师郑峰先生，",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "郑峰",
-          "rawText": "师从中国烹饪大师郑峰先生"
-        }
-      ],
-      "masterIds": [
-        "mp-100"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-202",
@@ -25591,7 +25818,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-101",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -25615,15 +25842,7 @@
       "bio": "周骄阳，男，汉族，江苏新沂人。国家高级烹调师，中国名厨，淮扬菜名师，扬州市技术能手，现任新沂市淮扬府精致餐饮创始人。师从著名淮扬菜大师居长龙先生，他不仅精通淮扬菜系，还擅长食品雕刻及当代新潮菜的研发制作",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "居长龙",
-          "rawText": "师从著名淮扬菜大师居长龙先生"
-        }
-      ],
-      "masterIds": [
-        "mp-101"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-236",
@@ -25896,7 +26115,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-102",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -25922,15 +26141,7 @@
       "bio": "季军，男，汉族，1972年6月出生，江苏盐城人。高级技师，高级营养师，国家名厨，注册中国烹饪大师，江苏省烹饪大师，青年烹饪艺术家，江苏省五一劳动模范，现任江苏悦达国际大酒店有限公司总经理助理。\r\n师从著名淮扬菜大师王荫曾先生，精通粤菜、新派淮扬菜的烹调技艺。",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "王荫曾",
-          "rawText": "师从著名淮扬菜大师王荫曾先生"
-        }
-      ],
-      "masterIds": [
-        "mp-102"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-253",
@@ -26171,7 +26382,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-103",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -26193,16 +26404,7 @@
       "bio": "冯帅，男，汉族，吉林长春人。中国名厨，2003年起参加烹饪工作至今，现任南京市江宁区海鲨湾海鲜馆厨师长，师承海鲜姿造创始人、金牌总厨徐卿云大师。他擅长制作东北熏酱菜、东北特色菜、广式卤水、烧腊、冷菜，尤以制作刺身料理更见技艺，刀工娴熟精细",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "徐卿云",
-          "rawText": "师承海鲜姿造创",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-103"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-271",
@@ -26473,7 +26675,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-104",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -26499,16 +26701,7 @@
       "bio": "张广兵，男，汉族，1978年12月出生，江苏扬州邗江人。中国烹饪大师，国家名厨编纂委员会高级名厨委员，江苏扬州小菜坊餐饮创始人。师承已故国家名厨、著名淮扬菜大师陈洛平先生，精通淮扬菜的烹制技艺",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "陈洛平",
-          "rawText": "师承已故国家名",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-104"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-278",
@@ -26614,7 +26807,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-105",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -26640,16 +26833,7 @@
       "bio": "连龙，北京人。国家高级烹饪技师，世界中华美食药膳名师，中国餐饮文化名师，国家名厨编委会高级名厨委员，国际饮食养生研究会理事，师承知名饮食养生专家张文彦，并得到中国烹饪大师胡桃生、周锦、张铁元等大师的精心指导，现任盐城市北京人家餐饮管理有限公司副总经理兼出品总监",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "张文彦",
-          "rawText": "师承知名饮食养",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-105"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-291",
@@ -26659,7 +26843,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-106",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -26683,10 +26867,7 @@
       "bio": "李宁，男，汉族，河北张家口赤城县人。国家中式烹调高级技师，中华金厨，河北高级烹饪名师，河北烹饪协会会员，现任国家地震应急搜救中心餐厅经理。师承宫庭御膳房总厨、国家名厨薛伟大师，擅长京菜、宫庭菜及餐饮策划",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-106"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-292",
@@ -27100,7 +27281,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-107",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -27125,15 +27306,7 @@
       "bio": "陈棋，男，汉族，1984年8月出生，四川遂宁人。国家中式烹调高技技师，国家名厨，川菜烹饪名厨，川菜烹饪技术传承人，现任印象成都麻辣记忆餐厅厨师长。他师承中国川菜大师唐文斌先生，擅长川菜、闽菜、湘菜的烹制技艺",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "唐文斌",
-          "rawText": "师承中国川菜大师唐文斌先生"
-        }
-      ],
-      "masterIds": [
-        "mp-107"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-306",
@@ -27435,7 +27608,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -27459,10 +27632,7 @@
       "bio": "彭涛，男，汉族，1979年10月出生，河南息县人。高级技师，中国名厨，现任上海我掌勺私人厨房厨师长、出品总监，师从著名中国烹饪大师、中国饭店协会名厨委副主席、弘博餐饮联盟主席王伟(王占彪)大师。擅长烹制江、浙、沪菜系及农家菜",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-322",
@@ -27472,7 +27642,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-109",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -27496,15 +27666,7 @@
       "bio": "张晨冰师承著名中国烹饪大师石万荣先生，她擅长烹制京菜、鲁菜、国宴菜、川菜、湘菜，北京烹饪大师，餐饮业国家一级评委，国家职业技能竞赛裁判员，中国名厨，中华金厨奖得主，北京饪我行远餐饮管理公司冰冰湘餐厅创始人",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "石万荣",
-          "rawText": "师承著名中国烹饪大师石万荣先生"
-        }
-      ],
-      "masterIds": [
-        "mp-109"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-325",
@@ -27547,7 +27709,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -27571,10 +27733,7 @@
       "bio": "谢玉龙，男，1975年8月出生，江苏建湖县人。国家中式烹调高级技师，中国烹饪大师，上海总厨联盟会员，现任河南秦淮人家大酒店出品部总监。\r\n擅长烹制江、浙、沪以及宫廷系列风味菜肴，师从著名中国烹饪大师、中国饭店协会名厨委副主席、弘博餐饮联盟主席王伟(王占彪)大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-326",
@@ -27712,7 +27871,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-110",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -27737,15 +27896,7 @@
       "bio": "巩道伟，男，汉族，1981年9月出生，山东夏津人，国家中式烹调技师，国家名厨，中国烹饪艺术家，餐饮业省级评委，国家名厨编委会高级名厨委员，现任山东济南市书香世家餐饮总监。其从业成就和作品先后被编入《国家名厨》（第二卷）、《首届中国名厨技艺博览》。\r\n师从中国烹饪大师房泽利先生，他擅长制作淮扬菜、新派鲁菜特色风味",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "房泽利",
-          "rawText": "师从中国烹饪大师房泽利先生"
-        }
-      ],
-      "masterIds": [
-        "mp-110"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-332",
@@ -27961,7 +28112,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -27986,10 +28137,7 @@
       "bio": "宋金波，男，汉族，1981年10月出生，安徽合肥人。中国烹饪名师，现任庐州私厨出品总监，弘博餐饮联盟合肥分会出品总监，师从著名中国烹饪大师、中国饭店协会名厨委副主席王伟(王占彪)大师。",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-341",
@@ -28100,7 +28248,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-111",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -28125,10 +28273,7 @@
       "bio": " 张龙奇，男，汉族，河南漯河人。中国烹饪大师，现任北京饪我行远餐饮管理有限公司行政总厨。他擅长京鲁菜、湘菜的烹制技艺，制作的菜肴滋嫩醇厚，鲜辣软嫩。师从国家名厨、中国烹饪大师张晨冰女士",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-111"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-343",
@@ -28138,7 +28283,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -28163,10 +28308,7 @@
       "bio": "曹明悬，男，1984年11月出生，安徽界首人。中国烹饪名师，上海总厨联盟会员，弘博餐饮联盟技术研究员，师从著名中国烹饪大师、中国饭店协会名厨委副主席王伟(王占彪)大师。从事烹饪工作至今16年，炼就了一手精湛技艺，以烹制淮扬菜、粤菜、江鲜、野味见长",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-346",
@@ -28210,7 +28352,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-112",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -28234,15 +28376,7 @@
       "bio": "陈建州，男，汉族，1980年6月出生，浙江瑞安人。大专学历，中国烹饪大师，现任状元楼大酒店有限公司集团董事长兼创意菜研发中心顾问，山元宴会中心企业董事长兼菜品出品顾问。从事烹饪工作20余年，师承著名中国烹饪大师潘晓林先生、郑建光老师",
       "referencedBy": null,
       "_origin": "cyxh-crawled2.json",
-      "masters": [
-        {
-          "name": "潘晓林",
-          "rawText": "师承著名中国烹饪大师潘晓林先生"
-        }
-      ],
-      "masterIds": [
-        "mp-112"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-347",
@@ -28555,7 +28689,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-113",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -28581,22 +28715,7 @@
       "bio": "陈林，男，汉族，1982年10月出生，四川宜宾人。中式烹调高级技师，国家一级营养师，中国烹饪大师，中国名厨，中国川菜大师，国家名厨编委会高级委员，现任成林川谱餐饮创始人。他师承中国川菜大师卢华学习川菜，师承香港国际十大名厨施辉先生学习粤菜。不仅继承了川菜、粤菜的传统技艺，还精于谭氏官府菜、河鲜、野味等烹饪技艺有着较高的造诣。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "卢华",
-          "rawText": "师承中国川菜大师卢华学习川",
-          "note": "已从截断恢复"
-        },
-        {
-          "name": "施辉",
-          "rawText": "师承香港国际十",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-113",
-        "mp-114"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-2",
@@ -28869,7 +28988,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -28894,10 +29013,7 @@
       "bio": "戴双波，男，汉族，1985年6月出生，湖南长沙人。国家中式烹调技师，国家高级烹调师，中国烹饪名师，上海名厨，上海总厨联盟会员，弘博湘菜出品总监，师从著名中国烹饪大师、中国饭店协会名厨委副主席、弘博餐饮联盟主席王伟(王占彪)大师，现自主创业经营湘泉土菜馆，担任总经理。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-352",
@@ -28940,7 +29056,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-115",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -28964,15 +29080,7 @@
       "bio": "马达，男，汉族，1979年8月出生，安徽省肥西县人。国家中式烹调技师，中国名厨，现任上海耘乐餐厅行政总厨，2006年进入上海谷泰饭店学艺，师从著名创意融合菜大师钱以斌先生，主攻融合菜肴",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "钱以斌",
-          "rawText": "师从著名创意融合菜大师钱以斌先生"
-        }
-      ],
-      "masterIds": [
-        "mp-115"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-354",
@@ -29050,7 +29158,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -29074,10 +29182,7 @@
       "bio": "李红军，男，汉族，1977年8月出生，湖南桃源县人。1995年起从事烹饪工作，师从著名中国烹饪大师、中国饭店协会名厨委副主席、弘博餐饮联盟主席王伟(王占彪)大师，国家中式烹调师技师，中国烹饪大师，湖南省最具创新实力名厨，全国饭店业职业经理人，上海总厨联盟会员。现任上海谷田稻香市场中心研发产品经理、中央厨房对接人",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-358",
@@ -29087,7 +29192,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-116",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -29111,16 +29216,7 @@
       "bio": "廖义军，男，汉族，1976年4月出生，湖北京山县人。中国烹饪名师，师从中国特二级厨师王四荣先生，现任上海有滋有味本帮菜厨师长。1994年起从事餐饮行业至今，擅长本帮菜、淮扬菜、川湘菜及江鲜农家风味菜肴的制作",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "王四荣",
-          "rawText": "师从中国特二级",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-116"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-359",
@@ -29130,7 +29226,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-117",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -29155,16 +29251,7 @@
       "bio": "王志军，男，汉族，1966年12月出生，四川广元人。中国烹饪大师，全国餐饮业国家级评委，现任广元市朝天区天强大酒店总厨，师承中华食雕第一龙、著名中国烹饪大师赵惠源先生。从事烹饪工作近30年，他功底深厚，技术全面，擅长川菜风味的烹制",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "赵慧源",
-          "rawText": "师承中华食雕第",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-117"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-363",
@@ -29207,7 +29294,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-096",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -29231,10 +29318,7 @@
       "bio": "宁金良，男，汉族，1982年8月出生，山东省泰安人。中国烹饪大师，师承山东省烹饪协会副会长、青岛名厨委主席邴吉和大师，现任青岛老渔岛餐饮管理有限公司行政总厨。\r\n从事烹饪工作20年，他功底深厚，技术全面，擅长鲁菜、胶东海鲜菜、青岛本邦菜及川菜、粤菜、新加坡风味菜的制作",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-096"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-369",
@@ -29311,7 +29395,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-119",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -29336,10 +29420,7 @@
       "bio": "张敬飞，男，汉族，1983年8月出生，河南平顶山鲁山县人。高级烹饪技师，中国烹饪大师，中国名厨，高级养殖（控毒河豚）烹调师。师承国宝级大师、北京饭店总厨郑秀生先生",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-119"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-393",
@@ -29774,7 +29855,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-120",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -29799,10 +29880,7 @@
       "bio": "陈伟德，男，汉族，1976年4月出生，广东河源人。国家名厨，粤港澳名厨，师承中国饭店协会名厨委主席、著名中国烹饪大师石万荣先生，他擅长粤菜、川菜及海鲜的制作技艺",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-120"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-444",
@@ -29845,7 +29923,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-121",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -29869,16 +29947,7 @@
       "bio": "钟小龙，四川广安人。国家高级烹调师，中国烹饪大师，中国川军团名厨俱乐部福州分会长，现任福建福州市台江区属鱼餐厅出品总监，他技术全面，以烹饪川菜见长，在融合菜、意境菜方面也有较深造诣。师承资深中国烹饪大师、世界川菜名师杨俊大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "杨俊",
-          "rawText": "师承资深中国烹",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-121"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-448",
@@ -30338,7 +30407,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-122",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -30363,15 +30432,7 @@
       "bio": "李海涛，男，汉族，1975年4月出生，河北保定人，现定居北京。大专学历，国家中式烹调技师，国家名厨，中国烹饪大师，高级营养配餐员，中国餐饮业中级职业经理人，全国星级酒店行政总厨，国家名厨编委会高级名厨委员，师承中国著名烹饪大师郑秀生先生，现任北京市中机农汽服务中心餐饮助理",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "郑秀生",
-          "rawText": "师承中国著名烹饪大师郑秀生先生"
-        }
-      ],
-      "masterIds": [
-        "mp-122"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-544",
@@ -30604,7 +30665,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -30628,10 +30689,7 @@
       "bio": "王长伟，男，汉族，1979年9月出生，河南夏邑人。中共党员，国家中式烹调高级技师，中国烹饪大师，现任杭州钱江渔村餐饮有限公司厨师长。擅长烹制江、浙、沪以及融合菜系列风味菜肴，师从著名中国烹饪大师、弘博餐饮联盟主席王伟(王占彪)大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-591",
@@ -30736,7 +30794,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-123",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -30760,10 +30818,7 @@
       "bio": "季超，男，汉族，河南确山人。国家高级烹调师，全国餐饮业劳动模范，北京烹饪名师，师从故宫御膳房总厨、国家名厨薛伟大师，擅长京鲁菜、宫廷菜的烹制技艺，善于博采众长",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-123"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-604",
@@ -31194,7 +31249,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-124",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -31218,16 +31273,7 @@
       "bio": "潘天瑛，男，汉族，1979年7月出生，浙江温州人。中国烹饪大师，现任浙江温州市华侨饭店行政总厨,师承中国瓯菜宗师、元老叶国光大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "叶国光",
-          "rawText": "师承中国瓯菜宗",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-124"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-628",
@@ -31569,7 +31615,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-125",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -31594,16 +31640,7 @@
       "bio": "王龙贵，1982年6月出生，四川宜宾人。国家高级烹调师，中国烹饪大师，中国川菜大师，中国川军团名厨俱乐部福州分会副会长，师承世界川菜名师、资深中国烹饪大师、川军团创始人主席杨俊大师。现任福建省川册锅儿将餐饮管理有限公司董事长",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "杨俊",
-          "rawText": "师承世界川菜名",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-125"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-659",
@@ -31646,7 +31683,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-126",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -31670,15 +31707,7 @@
       "bio": "赵翔，男，汉族，1983年11月出生，浙江宁波人。国家中式烹调高级技师，中国烹饪大师，擅长杭帮菜、宁波菜的制作技艺，师承中国烹饪大师周朝晖大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "周朝晖",
-          "rawText": "师承中国烹饪大师周朝晖大师"
-        }
-      ],
-      "masterIds": [
-        "mp-126"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-663",
@@ -31983,7 +32012,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-108",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -32007,10 +32036,7 @@
       "bio": "戎稳柱，男，汉族，1982年12月出生，安徽阜阳人。国家高级烹调师，中国烹饪大师，师承著名中国烹饪大师、中国饭店协会名厨委副主席、弘博餐饮联盟主席王伟(王占彪)大师。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-108"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-677",
@@ -32250,7 +32276,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-127",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -32274,16 +32300,7 @@
       "bio": "黎国文，男，汉族，1972年9月出生，广东人。国家高级烹饪技师，广东特级烹饪技师，师承香港名厨周五根门下。从事餐饮三十余年，擅长粤菜，管理经验丰富，专注于对菜品的研发和创新，严格要求自己，力求做到精益求精。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "周五根",
-          "rawText": "师承香港名厨周",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-127"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-687",
@@ -32587,7 +32604,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-128",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -32609,16 +32626,7 @@
       "bio": "张宇，男，汉族，1985年12月出生，四川眉山人。国家高级中式烹调师，中国名厨，2012年6月起从事烹饪工作至今，师承新派川菜领军人物李佳豪大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "李佳豪",
-          "rawText": "师承新派川菜领",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-128"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-699",
@@ -33090,7 +33098,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-120",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -33112,10 +33120,7 @@
       "bio": "闫勇强，男，汉族，四川达州人，从厨18年。中国青年名厨，中国烹饪文化传承大师，华敕餐饮联盟创始人，王师门淮扬梅府家宴第四代传承人，上海弘博餐饮联盟杨浦区域会长，上海食文化研究会星厨俱乐部副秘书长，师承中国饭店协会名厨委常务副主席、世博厨王，弘博餐饮联盟主席、王师门淮扬梅家菜第三代传人——王伟大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-120"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-723",
@@ -33511,7 +33516,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-129",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -33535,15 +33540,7 @@
       "bio": "顾永红，重庆市合川人，中国烹饪大师，他技术全面，精通川菜，在传统川菜的基础上进行改进，无论从菜品的味型、口感、色泽等方面，精烹细饪，立志打造出新一代的重庆菜品。16岁便投身烹饪工作，师承中国烹饪大师郭辉全门下，从厨至今已有30余年工龄",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "郭辉全",
-          "rawText": "师承中国烹饪大师郭辉全门下"
-        }
-      ],
-      "masterIds": [
-        "mp-129"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-737",
@@ -34166,7 +34163,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-130",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -34190,15 +34187,7 @@
       "bio": "文小康，男，苗族，贵州凯里人。烹饪工艺与营养专业毕业，大专学历，中国名厨，苗侗烹饪名师，师从中国烹饪大师潘仕琪先生、中国烹饪名厨种法伦先生，擅长京鲁菜制作技艺。",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [
-        {
-          "name": "潘仕琪",
-          "rawText": "师从中国烹饪大师潘仕琪先生"
-        }
-      ],
-      "masterIds": [
-        "mp-130"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-757",
@@ -35073,7 +35062,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-120",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -35095,10 +35084,7 @@
       "bio": "宋景武，男，汉族，1990年2月出生，湖南娄底人。国家高级烹调师，中国青年名厨，技术能手，中华职业学校技能赛特邀监理，上海总厨联盟冷菜委员会创始成员，师承中国饭店协会名厨委常务副主席、弘博餐饮联盟主席、王师门梅家菜第三代传人——王伟大师",
       "referencedBy": null,
       "_origin": "cyxh-crawled3.json",
-      "masters": [],
-      "masterIds": [
-        "mp-120"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-1112",
@@ -35426,7 +35412,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-131",
+      "master": "mp-088",
       "era": null,
       "birth": null,
       "death": null,
@@ -35461,7 +35447,7 @@
         }
       ],
       "masterIds": [
-        "mp-131"
+        "mp-088"
       ]
     },
     {
@@ -35541,7 +35527,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-132",
+      "master": "mp-089",
       "era": null,
       "birth": 1974,
       "death": null,
@@ -35575,7 +35561,7 @@
         }
       ],
       "masterIds": [
-        "mp-132"
+        "mp-089"
       ]
     },
     {
@@ -35652,7 +35638,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-133",
+      "master": "mp-090",
       "era": null,
       "birth": 1982,
       "death": null,
@@ -35681,12 +35667,12 @@
       "_origin": "cyxh-list-crawled.json",
       "masters": [
         {
-          "name": "郭成全",
+          "name": "郭成全先",
           "rawText": "师从国宴大师郭成全先"
         }
       ],
       "masterIds": [
-        "mp-133"
+        "mp-090"
       ]
     },
     {
@@ -36078,7 +36064,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-134",
+      "master": null,
       "era": null,
       "birth": 1968,
       "death": null,
@@ -36102,10 +36088,7 @@
       "bio": " 刘国平，男，汉族，1968年9月生，江苏淮安人，中式面点技师，国家名厨，中国点心大师。师承江苏淮安名厨毛玉平大师，从事餐饮工作38年，他精通中式面点技艺，擅长淮扬菜的制作，在制作各种包点和",
       "referencedBy": null,
       "_origin": "cyxh-list-crawled.json",
-      "masters": [],
-      "masterIds": [
-        "mp-134"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-1071",
@@ -36218,7 +36201,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-135",
+      "master": "mp-091",
       "era": null,
       "birth": null,
       "death": null,
@@ -36245,12 +36228,12 @@
       "_origin": "cyxh-list-crawled.json",
       "masters": [
         {
-          "name": "刘书军",
+          "name": "刘书军大",
           "rawText": "师从刘书军大"
         }
       ],
       "masterIds": [
-        "mp-135"
+        "mp-091"
       ]
     },
     {
@@ -36435,7 +36418,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-132",
+      "master": "mp-089",
       "era": null,
       "birth": 1983,
       "death": null,
@@ -36469,7 +36452,7 @@
         }
       ],
       "masterIds": [
-        "mp-132"
+        "mp-089"
       ]
     },
     {
@@ -37306,7 +37289,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-121",
+      "master": null,
       "era": null,
       "birth": 1991,
       "death": null,
@@ -37330,16 +37313,7 @@
       "bio": "张灿（Kan Zhang）出生于1991年，安徽人，中国青年名厨，烹饪文化传承名师传承人，优秀青年厨师。他师从资深中国烹饪大师、中国饭店协会名厨委常务副主席、世博厨王、王伟门下弟子成员，从事餐饮行业十余年，精益求精，擅长创新菜品",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [
-        {
-          "name": "杨俊",
-          "rawText": "师从资深中国烹",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-121"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-833",
@@ -37382,7 +37356,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-136",
+      "master": "mp-092",
       "era": null,
       "birth": null,
       "death": null,
@@ -37414,7 +37388,7 @@
         }
       ],
       "masterIds": [
-        "mp-136"
+        "mp-092"
       ]
     },
     {
@@ -37622,7 +37596,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-137",
+      "master": "mp-093",
       "era": null,
       "birth": null,
       "death": null,
@@ -37654,41 +37628,8 @@
         }
       ],
       "masterIds": [
-        "mp-137"
+        "mp-093"
       ]
-    },
-    {
-      "id": "cyxh-dangdai-875",
-      "name": "中国厨师名",
-      "isPlaceholder": false,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": "男",
-      "ethnicity": "汉族",
-      "birthplace": "浙江舟山",
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": "天港酒店集团研发中心总经理、酒店事业部出品部总经理",
-      "restaurant": "天港酒店集团研发中心总经理、酒店事业部出品部总经理",
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": [],
-      "portrait": "http://www.cyxh.org/d/file/mingchu/dangdai/2023-12-08/db262bfbc274fe6dfc99fca6d6610204.jpg",
-      "source": "http://www.cyxh.org/mingchu/dangdai/875.html",
-      "bio": "胡治国，男，汉族，1977年4月出生，浙江舟山人。国家高级烹饪师，中国烹饪大师，从事餐饮工作30年，现任天港酒店集团研发中心总经理、酒店事业部出品部总经理",
-      "referencedBy": null,
-      "_origin": "cyxh-crawled4.json"
     },
     {
       "id": "cyxh-dangdai-877",
@@ -37698,7 +37639,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-120",
+      "master": null,
       "era": null,
       "birth": 1995,
       "death": null,
@@ -37722,10 +37663,7 @@
       "bio": " 高儒云出生于1995年，云南昭通人。中国饭店协会青年名厨委常务副主席。师承中国饭店协会名厨委副主席、弘博餐饮联盟主席、中国烹饪大师、 王师门梅家菜第三代传人王伟大师。中成伟业周礼记研究院特聘厨艺冷菜培训讲师，周礼记研究院特聘专家研发师，醇味研发室主理，江苏省烹饪协会委员会理事\r\n",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [],
-      "masterIds": [
-        "mp-120"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-876",
@@ -38161,7 +38099,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-138",
+      "master": null,
       "era": null,
       "birth": 1977,
       "death": null,
@@ -38185,15 +38123,7 @@
       "bio": " 刘君，男，汉族，1977年9月生，云南昭通人，本科学历，中式烹调二级技师，注册中国烹饪大师，云南省烹饪名师，师承中国烹饪大师李坤键先生。从厨20余年，不仅在厨政管理方面有着丰富的经验，更在",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [
-        {
-          "name": "李坤键先生",
-          "rawText": "师承中国烹饪大师李坤键先生"
-        }
-      ],
-      "masterIds": [
-        "mp-138"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-1023",
@@ -38270,7 +38200,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-139",
+      "master": "mp-094",
       "era": null,
       "birth": 1975,
       "death": null,
@@ -38301,7 +38231,7 @@
         }
       ],
       "masterIds": [
-        "mp-139"
+        "mp-094"
       ]
     },
     {
@@ -38312,7 +38242,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-140",
+      "master": null,
       "era": null,
       "birth": 1975,
       "death": null,
@@ -38336,15 +38266,7 @@
       "bio": " 陈正恒，男，汉族，1975年10月生，云南昭通巧家县人，中式烹调二级技师，注册中国烹饪大师，师承高美琼大师，深受其烹饪哲学和技艺的熏陶，现任昭通市画苑宾馆厨务总监。自1996年起一直就职",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [
-        {
-          "name": "高美琼大师",
-          "rawText": "师承高美琼大师"
-        }
-      ],
-      "masterIds": [
-        "mp-140"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-1027",
@@ -38354,7 +38276,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-140",
+      "master": null,
       "era": null,
       "birth": 1978,
       "death": null,
@@ -38378,15 +38300,7 @@
       "bio": " 黄明友，男，汉族，1978年9月生，四川宜宾人，中式烹调二级技师，注册中国烹饪大师，云南烹饪大师，师承高美琼大师，中金厨政餐饮协会云南分会长，社会技能培训学校教师。1995年进入餐饮行业，至今已",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [
-        {
-          "name": "高美琼大师",
-          "rawText": "师承高美琼大师"
-        }
-      ],
-      "masterIds": [
-        "mp-140"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-1026",
@@ -38396,7 +38310,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-141",
+      "master": "mp-095",
       "era": null,
       "birth": null,
       "death": null,
@@ -38427,7 +38341,7 @@
         }
       ],
       "masterIds": [
-        "mp-141"
+        "mp-095"
       ]
     },
     {
@@ -38504,7 +38418,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-142",
+      "master": "mp-096",
       "era": null,
       "birth": 1981,
       "death": null,
@@ -38535,7 +38449,7 @@
         }
       ],
       "masterIds": [
-        "mp-142"
+        "mp-096"
       ]
     },
     {
@@ -38841,39 +38755,6 @@
       "_origin": "cyxh-crawled4.json"
     },
     {
-      "id": "cyxh-dangdai-1176",
-      "name": "中国名厨人",
-      "isPlaceholder": false,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": [],
-      "portrait": "http://www.cyxh.org/d/file/mingchu/dangdai/2025-05-14/d87cdb95965ba5cc78d8edbcf9298f44.jpg",
-      "source": "http://www.cyxh.org/mingchu/dangdai/1176.html",
-      "bio": "&nbsp;&nbsp;在风起云涌的餐饮江湖，郑富康以稳健的步伐走出了一条独特的烹饪进阶之路。生于烹饪世家的他，自幼受父亲中国烹饪大师郑峰的熏陶，灶台间的烟火与精妙的调味艺术",
-      "referencedBy": null,
-      "_origin": "cyxh-crawled4.json"
-    },
-    {
       "id": "cyxh-dangdai-1180",
       "name": "周蛟",
       "isPlaceholder": false,
@@ -38980,7 +38861,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-121",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -39004,16 +38885,7 @@
       "bio": " 王士奎，男，汉族，1988年2月出生，安徽亳州蒙城县人，高级烹调师，中国名厨，他师承资深中国烹饪大师、国际评委、中国饭店协会名厨委常务副主席、弘博餐饮联盟创始人、王师门梅府佳宴第",
       "referencedBy": null,
       "_origin": "cyxh-crawled4.json",
-      "masters": [
-        {
-          "name": "杨俊",
-          "rawText": "师承资深中国烹",
-          "note": "已从截断恢复"
-        }
-      ],
-      "masterIds": [
-        "mp-121"
-      ]
+      "masterIds": []
     },
     {
       "id": "cyxh-dangdai-1198",
@@ -39416,7 +39288,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-143",
+      "master": "mp-097",
       "era": "当代",
       "birth": 1993,
       "death": null,
@@ -39452,7 +39324,7 @@
         }
       ],
       "masterIds": [
-        "mp-143"
+        "mp-097"
       ]
     },
     {
@@ -40667,7 +40539,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-144",
+      "master": "mp-098",
       "era": "当代",
       "birth": 1981,
       "death": null,
@@ -40704,7 +40576,7 @@
         }
       ],
       "masterIds": [
-        "mp-144"
+        "mp-098"
       ]
     },
     {
@@ -40816,7 +40688,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-145",
+      "master": "mp-099",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -40847,7 +40719,7 @@
         }
       ],
       "masterIds": [
-        "mp-145"
+        "mp-099"
       ]
     },
     {
@@ -40932,7 +40804,7 @@
       "masterIds": [
         "cyxh-mianhuai-288",
         "cyxh-mianhuai-249",
-        "mp-146"
+        "mp-100"
       ]
     },
     {
@@ -40965,38 +40837,6 @@
       "portrait": null,
       "source": "https://zgcsw.cn/mc/5164.html",
       "bio": "中共党员，湖北襄阳人。1992年入伍，带出百余位高徒成功创业。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-a.json"
-    },
-    {
-      "name": "艾海提·吾木热",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": null,
-      "death": null,
-      "gender": "男",
-      "ethnicity": null,
-      "birthplace": "新疆",
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://zgcsw.cn/mc/5157.html",
-      "bio": "新疆籍烹饪大师，2025年入编《新时代中国烹饪人物》名人录。多次参加国内外烹饪大赛并屡获殊荣。",
       "referencedBy": null,
       "_origin": "cswzg-fills-a.json"
     },
@@ -41205,7 +41045,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-147",
+      "master": "mp-101",
       "era": "当代",
       "birth": 1985,
       "death": null,
@@ -41240,7 +41080,7 @@
         }
       ],
       "masterIds": [
-        "mp-147"
+        "mp-101"
       ]
     },
     {
@@ -41275,46 +41115,6 @@
       "bio": "中国厨师网认证的中国烹饪大师。",
       "referencedBy": null,
       "_origin": "cswzg-chefs.json"
-    },
-    {
-      "name": "艾克热木·努尔麦麦提",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "mp-148",
-      "era": "当代",
-      "birth": 2006,
-      "death": null,
-      "gender": "男",
-      "ethnicity": null,
-      "birthplace": "新疆库车",
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://www.sohu.com/a/945121091_99996596",
-      "bio": "2006年生，新疆库车人。2019年开始学厨，目前在克拉玛依市客来斯餐厅担任主厨。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-a.json",
-      "masters": [
-        {
-          "name": "艾山江"
-        }
-      ],
-      "masterIds": [
-        "mp-148"
-      ]
     },
     {
       "id": "cswzg-061",
@@ -41416,38 +41216,6 @@
       "_origin": "cswzg-fills-a.json"
     },
     {
-      "name": "阿卜杜萨拉木·艾麦提",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": 2004,
-      "death": null,
-      "gender": "男",
-      "ethnicity": null,
-      "birthplace": "新疆阿克陶",
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://www.zgcsw.cn/mc/5148.html",
-      "bio": "2004年生，新疆阿克陶人。2021年阿克陶县职业高中烹饪专业毕业。2025年在双鸾美食任厨师长。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-a.json"
-    },
-    {
       "id": "cswzg-065",
       "name": "孙宝密",
       "isPlaceholder": false,
@@ -41487,7 +41255,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-149",
+      "master": "mp-102",
       "era": "当代",
       "birth": 1983,
       "death": null,
@@ -41518,7 +41286,7 @@
         }
       ],
       "masterIds": [
-        "mp-149"
+        "mp-102"
       ]
     },
     {
@@ -41594,7 +41362,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-150",
+      "master": "mp-103",
       "era": "当代",
       "birth": 1986,
       "death": null,
@@ -41626,7 +41394,7 @@
         }
       ],
       "masterIds": [
-        "mp-150"
+        "mp-103"
       ]
     },
     {
@@ -41994,46 +41762,13 @@
       "_origin": "cswzg-chefs.json"
     },
     {
-      "id": "cswzg-081",
-      "name": "海尼沙·吐热克",
-      "isPlaceholder": false,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
-      "bio": "中国厨师网认证的中国烹饪大师。",
-      "referencedBy": null,
-      "_origin": "cswzg-chefs.json"
-    },
-    {
       "name": "贺振鑫",
       "isPlaceholder": false,
       "primaryCuisine": "陕",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-151",
+      "master": "mp-104",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -42063,7 +41798,7 @@
         }
       ],
       "masterIds": [
-        "mp-151"
+        "mp-104"
       ]
     },
     {
@@ -42139,7 +41874,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-152",
+      "master": null,
       "era": "当代",
       "birth": 1980,
       "death": null,
@@ -42168,10 +41903,7 @@
       "bio": "1980年生，重庆人。师承重庆吴氏第三代传人。先后在陶然居、万豪酒店、恒大酒店等任川菜厨师长。横跨20余年职业生涯。",
       "referencedBy": null,
       "_origin": "cswzg-fills-a.json",
-      "masters": [],
-      "masterIds": [
-        "mp-152"
-      ]
+      "masterIds": []
     },
     {
       "name": "赵见",
@@ -42180,7 +41912,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-153",
+      "master": "mp-105",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -42212,7 +41944,7 @@
         }
       ],
       "masterIds": [
-        "mp-153"
+        "mp-105"
       ]
     },
     {
@@ -42584,7 +42316,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-154",
+      "master": "mp-106",
       "era": "当代",
       "birth": 1979,
       "death": null,
@@ -42614,7 +42346,7 @@
         }
       ],
       "masterIds": [
-        "mp-154"
+        "mp-106"
       ]
     },
     {
@@ -42656,7 +42388,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-155",
+      "master": "mp-107",
       "era": "当代",
       "birth": 1978,
       "death": null,
@@ -42688,7 +42420,7 @@
         }
       ],
       "masterIds": [
-        "mp-155"
+        "mp-107"
       ]
     },
     {
@@ -42698,7 +42430,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-156",
+      "master": "mp-108",
       "era": "当代",
       "birth": 1967,
       "death": null,
@@ -42733,8 +42465,8 @@
         }
       ],
       "masterIds": [
-        "mp-156",
-        "mp-157"
+        "mp-108",
+        "mp-109"
       ]
     },
     {
@@ -42815,7 +42547,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-157",
+      "master": "mp-109",
       "era": "当代",
       "birth": 1989,
       "death": null,
@@ -42847,7 +42579,7 @@
         }
       ],
       "masterIds": [
-        "mp-157"
+        "mp-109"
       ]
     },
     {
@@ -42994,7 +42726,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-158",
+      "master": "mp-110",
       "era": "当代",
       "birth": 1997,
       "death": null,
@@ -43027,8 +42759,8 @@
         }
       ],
       "masterIds": [
-        "mp-158",
-        "mp-159"
+        "mp-110",
+        "mp-111"
       ]
     },
     {
@@ -43141,7 +42873,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-160",
+      "master": "mp-112",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -43176,7 +42908,7 @@
         }
       ],
       "masterIds": [
-        "mp-160"
+        "mp-112"
       ]
     },
     {
@@ -43452,72 +43184,6 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
-      "id": "cswzg-122",
-      "name": "亚森·热米图力",
-      "isPlaceholder": false,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
-      "bio": "中国厨师网认证的中国烹饪大师。",
-      "referencedBy": null,
-      "_origin": "cswzg-chefs.json"
-    },
-    {
-      "id": "cswzg-123",
-      "name": "阿依吐拉·阿不都热尹木",
-      "isPlaceholder": false,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://cswzg.com/news/top/5364.html",
-      "bio": "中国厨师网认证的中国烹饪大师。",
-      "referencedBy": null,
-      "_origin": "cswzg-chefs.json"
-    },
-    {
       "name": "翁金伟",
       "isPlaceholder": false,
       "primaryCuisine": "浙",
@@ -43723,7 +43389,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-161",
+      "master": "mp-113",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -43754,7 +43420,7 @@
         }
       ],
       "masterIds": [
-        "mp-161"
+        "mp-113"
       ]
     },
     {
@@ -44129,7 +43795,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-162",
+      "master": "mp-114",
       "era": "当代",
       "birth": 1995,
       "death": null,
@@ -44159,7 +43825,7 @@
         }
       ],
       "masterIds": [
-        "mp-162"
+        "mp-114"
       ]
     },
     {
@@ -44169,7 +43835,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-163",
+      "master": "mp-115",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -44203,75 +43869,9 @@
         }
       ],
       "masterIds": [
-        "mp-163",
-        "mp-164"
+        "mp-115",
+        "mp-116"
       ]
-    },
-    {
-      "name": "阿布力米提·阿卜杜拉",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": 2004,
-      "death": null,
-      "gender": "男",
-      "ethnicity": null,
-      "birthplace": "新疆和田皮山县",
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [
-        "椒麻脆皮大明虾"
-      ],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://cswzg.com/mc/5035.html",
-      "bio": "新疆和田皮山县维吾尔族名厨。擅长融合川式椒麻风味与新疆食材的创新菜品。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-b.json"
-    },
-    {
-      "name": "艾尼瓦尔·麦合木提",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": null,
-      "death": null,
-      "gender": "男",
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://cswzg.com/mc/5034.html",
-      "bio": "新疆维吾尔族名厨，中华厨师协会2024年12月认证。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-b.json"
     },
     {
       "name": "徐兴勇",
@@ -44349,7 +43949,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-165",
+      "master": "mp-117",
       "era": "当代",
       "birth": 1981,
       "death": null,
@@ -44381,7 +43981,7 @@
         }
       ],
       "masterIds": [
-        "mp-165"
+        "mp-117"
       ]
     },
     {
@@ -44416,40 +44016,6 @@
       "portrait": null,
       "source": "https://cswzg.com/mc/5025.html",
       "bio": "1984年生，安徽亳州人，在苏州发展。中西兼修，同时具备四项高级技师资质。苏州市技术能手、江苏省技术能手。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-b.json"
-    },
-    {
-      "name": "麦麦提艾力·吐拉甫",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": null,
-      "death": null,
-      "gender": "男",
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [
-        "盐焗鸡"
-      ],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://m.sohu.com/a/832868846_99996596",
-      "bio": "新疆维吾尔族名厨，擅长传统盐焗鸡等多种做法。",
       "referencedBy": null,
       "_origin": "cswzg-fills-b.json"
     },
@@ -44970,70 +44536,6 @@
       "_origin": "cswzg-fills-b.json"
     },
     {
-      "name": "热孜宛古丽·伊德日斯",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": 1985,
-      "death": null,
-      "gender": "女",
-      "ethnicity": null,
-      "birthplace": "新疆喀什",
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://cswzg.com/mc/5254.html",
-      "bio": "1985年生，新疆喀什地区维吾尔族女性名厨。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-b.json"
-    },
-    {
-      "name": "阿妮姑丽·亚森",
-      "isPlaceholder": false,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": "当代",
-      "birth": null,
-      "death": null,
-      "gender": "女",
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": [
-        "中国烹饪大师"
-      ],
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "https://cswzg.com/mc/5255.html",
-      "bio": "新疆维吾尔族女性名厨。",
-      "referencedBy": null,
-      "_origin": "cswzg-fills-b.json"
-    },
-    {
       "id": "cswzg-168",
       "name": "桑芊",
       "isPlaceholder": false,
@@ -45244,7 +44746,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-166",
+      "master": "mp-118",
       "era": "当代",
       "birth": null,
       "death": null,
@@ -45277,7 +44779,7 @@
         }
       ],
       "masterIds": [
-        "mp-166"
+        "mp-118"
       ]
     },
     {
@@ -45320,7 +44822,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-167",
+      "master": "mp-119",
       "era": "当代",
       "birth": 1985,
       "death": null,
@@ -45355,7 +44857,7 @@
         }
       ],
       "masterIds": [
-        "mp-167"
+        "mp-119"
       ]
     },
     {
@@ -45539,7 +45041,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-167",
+      "master": "mp-119",
       "era": "当代",
       "birth": 1977,
       "death": null,
@@ -45570,7 +45072,7 @@
         }
       ],
       "masterIds": [
-        "mp-167"
+        "mp-119"
       ]
     },
     {
@@ -46353,7 +45855,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-168",
+      "master": "mp-120",
       "era": "当代",
       "birth": 2000,
       "death": null,
@@ -46386,7 +45888,7 @@
         }
       ],
       "masterIds": [
-        "mp-168"
+        "mp-120"
       ]
     },
     {
@@ -46600,7 +46102,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-169",
+      "master": "mp-121",
       "era": "当代",
       "birth": 1980,
       "death": null,
@@ -46644,10 +46146,10 @@
         }
       ],
       "masterIds": [
-        "mp-169",
-        "mp-170",
-        "mp-171",
-        "mp-172"
+        "mp-121",
+        "mp-122",
+        "mp-123",
+        "mp-124"
       ]
     },
     {
@@ -47208,7 +46710,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-173",
+      "master": "mp-125",
       "era": null,
       "birth": 1898,
       "death": 1969,
@@ -47243,7 +46745,7 @@
         }
       ],
       "masterIds": [
-        "mp-173"
+        "mp-125"
       ]
     },
     {
@@ -47351,7 +46853,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-174",
+      "master": "mp-126",
       "era": null,
       "birth": 1908,
       "death": 1997,
@@ -47387,7 +46889,7 @@
         }
       ],
       "masterIds": [
-        "mp-174"
+        "mp-126"
       ]
     },
     {
@@ -47430,7 +46932,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-175",
+      "master": "mp-127",
       "era": null,
       "birth": 1955,
       "death": null,
@@ -47471,9 +46973,9 @@
         }
       ],
       "masterIds": [
-        "mp-175",
+        "mp-127",
         "cyxh-mianhuai-84",
-        "mp-176"
+        "mp-128"
       ]
     },
     {
@@ -47635,7 +47137,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-177",
+      "master": "mp-129",
       "era": null,
       "birth": 1913,
       "death": null,
@@ -47672,7 +47174,7 @@
         }
       ],
       "masterIds": [
-        "mp-177"
+        "mp-129"
       ]
     },
     {
@@ -48102,7 +47604,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-178",
+      "master": "mp-130",
       "era": null,
       "birth": 1930,
       "death": null,
@@ -48140,7 +47642,7 @@
         }
       ],
       "masterIds": [
-        "mp-178"
+        "mp-130"
       ]
     },
     {
@@ -48150,7 +47652,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-179",
+      "master": "mp-131",
       "era": null,
       "birth": 1952,
       "death": null,
@@ -48189,8 +47691,8 @@
         }
       ],
       "masterIds": [
-        "mp-179",
-        "mp-180"
+        "mp-131",
+        "mp-132"
       ]
     },
     {
@@ -48200,7 +47702,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-181",
+      "master": "mp-133",
       "era": null,
       "birth": 1923,
       "death": null,
@@ -48237,7 +47739,7 @@
         }
       ],
       "masterIds": [
-        "mp-181"
+        "mp-133"
       ]
     },
     {
@@ -48380,7 +47882,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-182",
+      "master": "mp-134",
       "era": null,
       "birth": 1948,
       "death": null,
@@ -48412,7 +47914,7 @@
         }
       ],
       "masterIds": [
-        "mp-182"
+        "mp-134"
       ]
     },
     {
@@ -48422,7 +47924,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-183",
+      "master": "mp-135",
       "era": null,
       "birth": 1946,
       "death": null,
@@ -48463,8 +47965,8 @@
         }
       ],
       "masterIds": [
-        "mp-183",
-        "mp-184"
+        "mp-135",
+        "mp-136"
       ]
     },
     {
@@ -48474,7 +47976,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-185",
+      "master": "mp-137",
       "era": null,
       "birth": null,
       "death": null,
@@ -48514,8 +48016,8 @@
         }
       ],
       "masterIds": [
-        "mp-185",
-        "mp-186"
+        "mp-137",
+        "mp-138"
       ]
     },
     {
@@ -48639,7 +48141,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-187",
+      "master": "mp-139",
       "era": null,
       "birth": null,
       "death": null,
@@ -48683,7 +48185,7 @@
         }
       ],
       "masterIds": [
-        "mp-187",
+        "mp-139",
         "academy-hbue-luyongliang",
         "academy-hbue-sunchangbi"
       ]
@@ -48767,7 +48269,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-188",
+      "master": "mp-140",
       "era": null,
       "birth": null,
       "death": null,
@@ -48809,9 +48311,9 @@
         }
       ],
       "masterIds": [
-        "mp-188",
-        "mp-189",
-        "mp-190"
+        "mp-140",
+        "mp-141",
+        "mp-142"
       ]
     },
     {
@@ -48821,7 +48323,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-191",
+      "master": "mp-143",
       "era": null,
       "birth": null,
       "death": null,
@@ -48851,7 +48353,7 @@
         }
       ],
       "masterIds": [
-        "mp-191"
+        "mp-143"
       ]
     },
     {
@@ -48861,7 +48363,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-192",
+      "master": "mp-144",
       "era": null,
       "birth": 1944,
       "death": null,
@@ -48899,7 +48401,7 @@
         }
       ],
       "masterIds": [
-        "mp-192"
+        "mp-144"
       ]
     },
     {
@@ -48909,7 +48411,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-193",
+      "master": "mp-145",
       "era": null,
       "birth": 1949,
       "death": null,
@@ -48949,9 +48451,9 @@
         }
       ],
       "masterIds": [
-        "mp-193",
-        "mp-194",
-        "mp-195"
+        "mp-145",
+        "mp-146",
+        "mp-147"
       ]
     },
     {
@@ -48961,7 +48463,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-196",
+      "master": "mp-148",
       "era": null,
       "birth": 1939,
       "death": null,
@@ -48996,7 +48498,7 @@
         }
       ],
       "masterIds": [
-        "mp-196"
+        "mp-148"
       ]
     },
     {
@@ -49087,7 +48589,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-197",
+      "master": "mp-149",
       "era": null,
       "birth": null,
       "death": null,
@@ -49120,7 +48622,7 @@
         }
       ],
       "masterIds": [
-        "mp-197"
+        "mp-149"
       ]
     },
     {
@@ -49403,7 +48905,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-198",
+      "master": "mp-150",
       "era": null,
       "birth": 1935,
       "death": null,
@@ -49448,8 +48950,8 @@
         }
       ],
       "masterIds": [
-        "mp-198",
-        "mp-199"
+        "mp-150",
+        "mp-151"
       ]
     },
     {
@@ -49459,7 +48961,7 @@
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "mp-200",
+      "master": "mp-152",
       "era": null,
       "birth": 1924,
       "death": 1992,
@@ -49497,7 +48999,7 @@
         }
       ],
       "masterIds": [
-        "mp-200"
+        "mp-152"
       ]
     },
     {
@@ -49734,74 +49236,6 @@
     },
     {
       "id": "mp-006",
-      "name": "祖父",
-      "isPlaceholder": true,
-      "primaryCuisine": "淮扬",
-      "primaryCuisineRaw": "苏",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": "鹿苑叫花鸡家族传承第四代",
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "鹿苑叫花鸡家族传承第四代。被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "徐永清"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-007",
-      "name": "齐门（满汉全席）",
-      "isPlaceholder": true,
-      "primaryCuisine": "东北",
-      "primaryCuisineRaw": "吉",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": "齐门满汉全席传承体系",
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "齐门满汉全席传承体系。被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "赵洪雨"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-008",
       "name": "李芝仁",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -49834,40 +49268,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-009",
-      "name": "叔叔",
-      "isPlaceholder": true,
-      "primaryCuisine": "鲁",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": "家族厨艺启蒙",
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "家族厨艺启蒙。被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "陈凡东"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-010",
+      "id": "mp-007",
       "name": "周宪明",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -49901,7 +49302,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-011",
+      "id": "mp-008",
       "name": "李峰",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -49935,7 +49336,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-012",
+      "id": "mp-009",
       "name": "徐龙",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -49969,7 +49370,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-013",
+      "id": "mp-010",
       "name": "谭荣",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -50003,7 +49404,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-014",
+      "id": "mp-011",
       "name": "邵金海",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -50036,7 +49437,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-015",
+      "id": "mp-012",
       "name": "段子章",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50069,7 +49470,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-016",
+      "id": "mp-013",
       "name": "张焕富",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50102,7 +49503,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-017",
+      "id": "mp-014",
       "name": "李嗣亮",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50135,7 +49536,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-019",
+      "id": "mp-015",
       "name": "胡士斌",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -50168,7 +49569,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-020",
+      "id": "mp-016",
       "name": "计绍华",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -50201,7 +49602,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-021",
+      "id": "mp-017",
       "name": "陈训民",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -50234,7 +49635,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-022",
+      "id": "mp-018",
       "name": "龙华",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50267,7 +49668,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-023",
+      "id": "mp-019",
       "name": "温新",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50300,7 +49701,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-024",
+      "id": "mp-020",
       "name": "罗二",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50333,7 +49734,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-025",
+      "id": "mp-021",
       "name": "朱兆",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50366,7 +49767,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-026",
+      "id": "mp-022",
       "name": "蔡锦槐",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50399,7 +49800,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-027",
+      "id": "mp-023",
       "name": "鄢炳如",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50432,7 +49833,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-028",
+      "id": "mp-024",
       "name": "朱子明",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50465,7 +49866,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-029",
+      "id": "mp-025",
       "name": "李生荣",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50498,7 +49899,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-030",
+      "id": "mp-026",
       "name": "李致忠",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50531,7 +49932,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-031",
+      "id": "mp-027",
       "name": "肖良福",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -50564,7 +49965,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-032",
+      "id": "mp-028",
       "name": "张志厚",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -50597,7 +49998,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-033",
+      "id": "mp-029",
       "name": "张德祥",
       "isPlaceholder": true,
       "primaryCuisine": "黔",
@@ -50630,7 +50031,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-034",
+      "id": "mp-030",
       "name": "华兴昌",
       "isPlaceholder": true,
       "primaryCuisine": "黔",
@@ -50663,7 +50064,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-035",
+      "id": "mp-031",
       "name": "赵常斌",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -50696,7 +50097,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-036",
+      "id": "mp-032",
       "name": "彭长海",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -50729,7 +50130,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-037",
+      "id": "mp-033",
       "name": "田永清",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50762,7 +50163,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-038",
+      "id": "mp-034",
       "name": "甄树林",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50795,7 +50196,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-039",
+      "id": "mp-035",
       "name": "李父",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50828,7 +50229,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-040",
+      "id": "mp-036",
       "name": "白原珍",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50861,7 +50262,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-041",
+      "id": "mp-037",
       "name": "罗炎高",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50894,7 +50295,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-042",
+      "id": "mp-038",
       "name": "刘天福",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -50927,7 +50328,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-043",
+      "id": "mp-039",
       "name": "毛父",
       "isPlaceholder": true,
       "primaryCuisine": "清真",
@@ -50960,7 +50361,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-044",
+      "id": "mp-040",
       "name": "王兴南",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -50993,7 +50394,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-045",
+      "id": "mp-041",
       "name": "程学祥",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -51026,7 +50427,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-046",
+      "id": "mp-042",
       "name": "孔宪元",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -51059,7 +50460,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-047",
+      "id": "mp-043",
       "name": "严大嵩",
       "isPlaceholder": true,
       "primaryCuisine": "津",
@@ -51092,7 +50493,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-048",
+      "id": "mp-044",
       "name": "潘毓藻",
       "isPlaceholder": true,
       "primaryCuisine": "津",
@@ -51125,10 +50526,10 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-050",
+      "id": "mp-045",
       "name": "王懿臣",
       "isPlaceholder": true,
-      "primaryCuisine": "京",
+      "primaryCuisine": "京帮",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -51158,10 +50559,10 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-051",
+      "id": "mp-046",
       "name": "王宜新",
       "isPlaceholder": true,
-      "primaryCuisine": "京",
+      "primaryCuisine": "京帮",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -51191,7 +50592,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-052",
+      "id": "mp-047",
       "name": "杨珠福",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51224,7 +50625,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-053",
+      "id": "mp-048",
       "name": "许培",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51257,7 +50658,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-054",
+      "id": "mp-049",
       "name": "萧克明",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51290,7 +50691,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-055",
+      "id": "mp-050",
       "name": "贾启杰",
       "isPlaceholder": true,
       "primaryCuisine": "琼",
@@ -51323,7 +50724,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-056",
+      "id": "mp-051",
       "name": "王进坤",
       "isPlaceholder": true,
       "primaryCuisine": "琼",
@@ -51356,7 +50757,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-057",
+      "id": "mp-052",
       "name": "王景宾",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -51389,7 +50790,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-058",
+      "id": "mp-053",
       "name": "郭大鎏",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51422,7 +50823,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-059",
+      "id": "mp-054",
       "name": "萧良初",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51455,7 +50856,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-060",
+      "id": "mp-055",
       "name": "贾吉祥",
       "isPlaceholder": true,
       "primaryCuisine": "西北",
@@ -51488,7 +50889,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-061",
+      "id": "mp-056",
       "name": "陈松林",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51521,7 +50922,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-062",
+      "id": "mp-057",
       "name": "石万荣",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -51554,7 +50955,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-063",
+      "id": "mp-058",
       "name": "程明生",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -51587,7 +50988,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-064",
+      "id": "mp-059",
       "name": "钱以斌",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -51620,40 +51021,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-065",
-      "name": "顺德十大名厨",
-      "isPlaceholder": true,
-      "primaryCuisine": "粤",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": "粤菜大师",
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "粤菜大师。被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "胡定坚"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-066",
+      "id": "mp-060",
       "name": "朱云龙",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51686,7 +51054,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-067",
+      "id": "mp-061",
       "name": "袁伟",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -51719,7 +51087,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-068",
+      "id": "mp-062",
       "name": "刘钢",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -51752,7 +51120,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-069",
+      "id": "mp-063",
       "name": "黄自强",
       "isPlaceholder": true,
       "primaryCuisine": "湘",
@@ -51785,40 +51153,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-070",
-      "name": "李玉伟",
-      "isPlaceholder": true,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "刘锋"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-071",
+      "id": "mp-064",
       "name": "陈进长",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -51851,7 +51186,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-072",
+      "id": "mp-065",
       "name": "李坤键",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -51884,7 +51219,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-073",
+      "id": "mp-066",
       "name": "刘东来家族",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -51917,7 +51252,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-074",
+      "id": "mp-067",
       "name": "刘长龙",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51950,7 +51285,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-075",
+      "id": "mp-068",
       "name": "田素明",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -51983,7 +51318,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-076",
+      "id": "mp-069",
       "name": "常桂生",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -52016,7 +51351,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-077",
+      "id": "mp-070",
       "name": "徒照福",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -52049,7 +51384,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-078",
+      "id": "mp-071",
       "name": "唐寿松",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -52082,7 +51417,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-079",
+      "id": "mp-072",
       "name": "李文清",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -52115,7 +51450,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-080",
+      "id": "mp-073",
       "name": "沈远华",
       "isPlaceholder": true,
       "primaryCuisine": "黔",
@@ -52148,7 +51483,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-081",
+      "id": "mp-074",
       "name": "苏永秀",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -52181,7 +51516,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-082",
+      "id": "mp-075",
       "name": "赵延良",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -52214,7 +51549,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-083",
+      "id": "mp-076",
       "name": "柳树勤",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52247,7 +51582,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-084",
+      "id": "mp-077",
       "name": "吕仪",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52280,7 +51615,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-085",
+      "id": "mp-078",
       "name": "郭光瑾",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52313,7 +51648,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-086",
+      "id": "mp-079",
       "name": "张传本",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52346,7 +51681,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-087",
+      "id": "mp-080",
       "name": "郑德福",
       "isPlaceholder": true,
       "primaryCuisine": "晋",
@@ -52379,7 +51714,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-088",
+      "id": "mp-081",
       "name": "卢成瑞",
       "isPlaceholder": true,
       "primaryCuisine": "晋",
@@ -52412,7 +51747,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-089",
+      "id": "mp-082",
       "name": "邵华钿",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -52445,7 +51780,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-090",
+      "id": "mp-083",
       "name": "颜庆鸿",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52478,7 +51813,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-091",
+      "id": "mp-084",
       "name": "郭振生",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -52511,10 +51846,10 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-092",
+      "id": "mp-085",
       "name": "曹啟炎",
       "isPlaceholder": true,
-      "primaryCuisine": "鄂",
+      "primaryCuisine": "楚",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
@@ -52544,7 +51879,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-093",
+      "id": "mp-086",
       "name": "王文昌",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -52577,40 +51912,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-094",
-      "name": "李燕生",
-      "isPlaceholder": true,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "刘仲淇"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-097",
+      "id": "mp-087",
       "name": "王素明",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -52643,339 +51945,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-098",
-      "name": "王墨泉",
-      "isPlaceholder": true,
-      "primaryCuisine": "湘",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "曾鹏飞"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-100",
-      "name": "郑峰",
-      "isPlaceholder": true,
-      "primaryCuisine": "淮扬",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 3 位徒弟援引为师承。",
-      "referencedBy": [
-        "邢万里",
-        "赵晨光",
-        "郑冰城"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-101",
-      "name": "居长龙",
-      "isPlaceholder": true,
-      "primaryCuisine": "淮扬",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "周骄阳"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-102",
-      "name": "王荫曾",
-      "isPlaceholder": true,
-      "primaryCuisine": "粤",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "季军"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-107",
-      "name": "唐文斌",
-      "isPlaceholder": true,
-      "primaryCuisine": "川",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "陈棋"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-110",
-      "name": "房泽利",
-      "isPlaceholder": true,
-      "primaryCuisine": "鲁",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "巩道伟"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-112",
-      "name": "潘晓林",
-      "isPlaceholder": true,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "陈建州"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-126",
-      "name": "周朝晖",
-      "isPlaceholder": true,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "赵翔"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-129",
-      "name": "郭辉全",
-      "isPlaceholder": true,
-      "primaryCuisine": "川",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "顾永红"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-130",
-      "name": "潘仕琪",
-      "isPlaceholder": true,
-      "primaryCuisine": "鲁",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "文小康"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-131",
+      "id": "mp-088",
       "name": "贺延贵",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -53008,8 +51978,8 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-132",
-      "name": "郑秀生",
+      "id": "mp-089",
+      "name": "郑秀生先",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
       "secondaryCuisines": [],
@@ -53042,8 +52012,8 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-133",
-      "name": "郭成全",
+      "id": "mp-090",
+      "name": "郭成全先",
       "isPlaceholder": true,
       "primaryCuisine": "国宴",
       "secondaryCuisines": [],
@@ -53075,8 +52045,8 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-135",
-      "name": "刘书军",
+      "id": "mp-091",
+      "name": "刘书军大",
       "isPlaceholder": true,
       "primaryCuisine": "川",
       "secondaryCuisines": [],
@@ -53108,7 +52078,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-136",
+      "id": "mp-092",
       "name": "杭州五星酒",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -53141,7 +52111,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-137",
+      "id": "mp-093",
       "name": "国家特级点",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53174,40 +52144,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-138",
-      "name": "李坤键先生",
-      "isPlaceholder": true,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "刘君"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-139",
+      "id": "mp-094",
       "name": "邓雄升",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -53240,41 +52177,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-140",
-      "name": "高美琼大师",
-      "isPlaceholder": true,
-      "primaryCuisine": null,
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 2 位徒弟援引为师承。",
-      "referencedBy": [
-        "陈正恒",
-        "黄明友"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-141",
+      "id": "mp-095",
       "name": "邓雄升与韩",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -53307,7 +52210,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-142",
+      "id": "mp-096",
       "name": "高美琼女士",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -53340,7 +52243,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-143",
+      "id": "mp-097",
       "name": "胡忠英",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -53373,7 +52276,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-144",
+      "id": "mp-098",
       "name": "苏喜斌",
       "isPlaceholder": true,
       "primaryCuisine": "东北",
@@ -53406,7 +52309,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-145",
+      "id": "mp-099",
       "name": "侯永",
       "isPlaceholder": true,
       "primaryCuisine": "冀",
@@ -53439,7 +52342,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-146",
+      "id": "mp-100",
       "name": "董书山",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -53472,7 +52375,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-147",
+      "id": "mp-101",
       "name": "黄良涛",
       "isPlaceholder": true,
       "primaryCuisine": "浙",
@@ -53505,40 +52408,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-148",
-      "name": "艾山江",
-      "isPlaceholder": true,
-      "primaryCuisine": "清真",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "艾克热木·努尔麦麦提"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-149",
+      "id": "mp-102",
       "name": "王万友",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -53571,7 +52441,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-150",
+      "id": "mp-103",
       "name": "侯胜才",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -53604,7 +52474,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-151",
+      "id": "mp-104",
       "name": "李胜",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -53637,40 +52507,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-152",
-      "name": "重庆吴氏第三代传人",
-      "isPlaceholder": true,
-      "primaryCuisine": "川",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": null,
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
-      "referencedBy": [
-        "张元全"
-      ],
-      "_origin": "placeholder-from-masters[]"
-    },
-    {
-      "id": "mp-153",
+      "id": "mp-105",
       "name": "李振华",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -53703,7 +52540,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-154",
+      "id": "mp-106",
       "name": "潘玉清",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53736,7 +52573,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-155",
+      "id": "mp-107",
       "name": "孔祥道",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -53769,7 +52606,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-156",
+      "id": "mp-108",
       "name": "蔡玉福",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -53802,7 +52639,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-157",
+      "id": "mp-109",
       "name": "王乐清",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -53836,7 +52673,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-158",
+      "id": "mp-110",
       "name": "熊贵海",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53869,7 +52706,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-159",
+      "id": "mp-111",
       "name": "何凡",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -53902,7 +52739,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-160",
+      "id": "mp-112",
       "name": "韩晓辉",
       "isPlaceholder": true,
       "primaryCuisine": "陕",
@@ -53935,7 +52772,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-161",
+      "id": "mp-113",
       "name": "孙万宋",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -53968,7 +52805,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-162",
+      "id": "mp-114",
       "name": "周志刚",
       "isPlaceholder": true,
       "primaryCuisine": "冀",
@@ -54001,7 +52838,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-163",
+      "id": "mp-115",
       "name": "朱伏亭",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54034,7 +52871,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-164",
+      "id": "mp-116",
       "name": "周国良",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54067,7 +52904,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-165",
+      "id": "mp-117",
       "name": "龚治平",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54100,7 +52937,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-166",
+      "id": "mp-118",
       "name": "周金端",
       "isPlaceholder": true,
       "primaryCuisine": "粤",
@@ -54133,7 +52970,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-167",
+      "id": "mp-119",
       "name": "高炳义",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -54167,7 +53004,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-168",
+      "id": "mp-120",
       "name": "丁玉勇",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54200,7 +53037,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-169",
+      "id": "mp-121",
       "name": "吕长海",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -54233,7 +53070,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-170",
+      "id": "mp-122",
       "name": "樊胜武",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -54266,7 +53103,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-171",
+      "id": "mp-123",
       "name": "姜胜利",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -54299,7 +53136,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-172",
+      "id": "mp-124",
       "name": "张仁平",
       "isPlaceholder": true,
       "primaryCuisine": "豫",
@@ -54332,7 +53169,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-173",
+      "id": "mp-125",
       "name": "许明禄",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54365,7 +53202,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-174",
+      "id": "mp-126",
       "name": "傅吉廷",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54398,7 +53235,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-175",
+      "id": "mp-127",
       "name": "马德明",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -54431,7 +53268,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-176",
+      "id": "mp-128",
       "name": "严双才",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -54464,7 +53301,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-177",
+      "id": "mp-129",
       "name": "宋玉清",
       "isPlaceholder": true,
       "primaryCuisine": "滇",
@@ -54497,7 +53334,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-178",
+      "id": "mp-130",
       "name": "校古芳",
       "isPlaceholder": true,
       "primaryCuisine": "素菜",
@@ -54530,7 +53367,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-179",
+      "id": "mp-131",
       "name": "王德福",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -54563,7 +53400,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-180",
+      "id": "mp-132",
       "name": "杨星儒",
       "isPlaceholder": true,
       "primaryCuisine": "京",
@@ -54596,7 +53433,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-181",
+      "id": "mp-133",
       "name": "马玉林",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54629,7 +53466,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-182",
+      "id": "mp-134",
       "name": "吴道铭",
       "isPlaceholder": true,
       "primaryCuisine": "浙",
@@ -54662,7 +53499,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-183",
+      "id": "mp-135",
       "name": "胡西庄",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -54695,7 +53532,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-184",
+      "id": "mp-136",
       "name": "陈如琢",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -54728,7 +53565,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-185",
+      "id": "mp-137",
       "name": "韩征",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54761,7 +53598,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-186",
+      "id": "mp-138",
       "name": "顾根源",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54794,7 +53631,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-187",
+      "id": "mp-139",
       "name": "汪健国",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -54827,7 +53664,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-188",
+      "id": "mp-140",
       "name": "钟定华",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54860,7 +53697,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-189",
+      "id": "mp-141",
       "name": "王长富",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54893,7 +53730,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-190",
+      "id": "mp-142",
       "name": "朱立康",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -54926,7 +53763,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-191",
+      "id": "mp-143",
       "name": "齐新",
       "isPlaceholder": true,
       "primaryCuisine": null,
@@ -54959,7 +53796,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-192",
+      "id": "mp-144",
       "name": "朱万宝",
       "isPlaceholder": true,
       "primaryCuisine": "淮扬",
@@ -54992,7 +53829,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-193",
+      "id": "mp-145",
       "name": "强祖淦",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -55025,7 +53862,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-194",
+      "id": "mp-146",
       "name": "郭则贤",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -55058,7 +53895,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-195",
+      "id": "mp-147",
       "name": "郑玉春",
       "isPlaceholder": true,
       "primaryCuisine": "闽",
@@ -55091,7 +53928,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-196",
+      "id": "mp-148",
       "name": "张锡财",
       "isPlaceholder": true,
       "primaryCuisine": "辽",
@@ -55124,7 +53961,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-197",
+      "id": "mp-149",
       "name": "胡承藩",
       "isPlaceholder": true,
       "primaryCuisine": "鄂",
@@ -55157,7 +53994,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-198",
+      "id": "mp-150",
       "name": "康文明",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -55190,7 +54027,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-199",
+      "id": "mp-151",
       "name": "王元吉",
       "isPlaceholder": true,
       "primaryCuisine": "鲁",
@@ -55223,7 +54060,7 @@
       "_origin": "placeholder-from-masters[]"
     },
     {
-      "id": "mp-200",
+      "id": "mp-152",
       "name": "刘长号",
       "isPlaceholder": true,
       "primaryCuisine": "川",
@@ -55257,36 +54094,37 @@
     }
   ],
   "stats": {
-    "totalChefs": 1414,
-    "realChefs": 1242,
-    "placeholders": 172,
-    "withMaster": 261,
-    "withMasterId": 223,
+    "totalChefs": 1387,
+    "realChefs": 1235,
+    "placeholders": 152,
+    "withMaster": 201,
+    "withMasterId": 160,
     "withSchool": 59,
-    "withSignature": 382,
-    "withBirth": 537,
-    "withPortrait": 869,
+    "withSignature": 380,
+    "withBirth": 533,
+    "withPortrait": 862,
     "byCuisine": {
-      "?": 389,
-      "川": 189,
-      "淮扬": 179,
-      "粤": 147,
-      "鲁": 87,
+      "?": 375,
+      "川": 186,
+      "淮扬": 178,
+      "粤": 145,
+      "鲁": 84,
       "湘": 64,
-      "鄂": 40,
       "豫": 32,
       "滇": 30,
-      "京": 28,
       "陕": 28,
-      "清真": 24,
+      "京": 25,
+      "鄂": 23,
       "浙": 22,
       "辽": 21,
       "晋": 17,
+      "楚": 17,
       "闽": 16,
+      "清真": 15,
       "沪": 12,
-      "东北": 9,
-      "国宴": 8,
+      "国宴": 9,
       "点心": 8,
+      "东北": 8,
       "徽": 7,
       "黔": 7,
       "素菜": 5,
@@ -55299,36 +54137,43 @@
       "融合菜": 3,
       "热菜": 3,
       "津": 3,
+      "京帮": 3,
+      "未知": 3,
       "蒙": 3,
       "西北": 2,
       "桂": 2,
       "工艺": 1,
+      "其他": 1,
       "新疆": 1,
+      "京苏": 1,
       "藏": 1
     },
     "byEra": {
       "清末": 2,
       "近代": 74,
-      "当代": 497,
+      "当代": 486,
       "清末民初": 2,
       "近代-当代": 3,
       "民国": 1,
       "近代/当代": 3,
-      "?": 871
+      "?": 816
     },
     "topMastersByApprenticeCount": {
-      "郑秀生": 6,
+      "郑秀生": 8,
+      "王墨泉": 5,
       "王伟": 5,
       "周晓燕": 5,
-      "杨俊": 4,
+      "杨贯一": 5,
+      "王甫亭": 4,
+      "赵慧源": 4,
+      "高炳义": 4,
+      "黄绍清": 3,
+      "蓝光鉴": 3,
+      "罗国荣": 3,
+      "孔道生": 3,
       "王致福": 3,
-      "丁万谷": 3,
-      "唐克明": 3,
-      "赵慧源": 3,
-      "杨贯一": 3,
-      "郑峰": 3
-    },
-    "withCuisine": 1025,
-    "withoutCuisine": 389
+      "黄子云": 3,
+      "丁万谷": 3
+    }
   }
 }
