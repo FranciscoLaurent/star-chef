@@ -27,6 +27,9 @@ const files = [
   { path: 'cyxh-crawled4.json',        type: 'cyxh', optional: true },
   { path: 'cmccx-chefs.json',          type: 'cyxh', optional: true },
   { path: 'cswzg-chefs.json',          type: 'cyxh', optional: true },
+  { path: 'cswzg-fills-a.json',        type: 'fill', optional: true },
+  { path: 'cswzg-fills-b.json',        type: 'fill', optional: true },
+  { path: 'placeholder-fills3.json',   type: 'fill', optional: true },
   { path: 'baike-chefs.json',          type: 'cyxh', optional: true },
   { path: 'wiki-chefs.json',           type: 'cyxh', optional: true },
   { path: 'provincial-chefs.json',     type: 'cyxh', optional: true },
@@ -75,8 +78,11 @@ for (const c of allChefs) {
   const existing = byName.get(c.name);
   if (!existing) { byName.set(c.name, c); continue; }
   let primary, secondary;
-  if (c._type === 'cyxh' && existing._type === 'cuisine') { primary = c; secondary = existing; }
-  else if (existing._type === 'cyxh' && c._type === 'cuisine') { primary = existing; secondary = c; }
+  // 优先级: fill (subagent验证) > cuisine (手工策展) > cyxh (爬虫)
+  const TYPE_PRIORITY = { fill: 4, cuisine: 3, cyxh: 2, placeholder: 1 };
+  const cP = TYPE_PRIORITY[c._type] || 0;
+  const eP = TYPE_PRIORITY[existing._type] || 0;
+  if (cP > eP || (cP === eP && (c.bio?.length||0) > (existing.bio?.length||0))) { primary = c; secondary = existing; }
   else { primary = existing; secondary = c; }
   const merged = {
     ...primary,
