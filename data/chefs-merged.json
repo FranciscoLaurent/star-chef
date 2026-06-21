@@ -4148,6 +4148,22 @@
           "name": "罗国荣",
           "title": "川菜大师",
           "rawText": "投一代宗师王世珍、郭有忠、王景春、罗国荣大师名下"
+        },
+        {
+          "name": "郭友忠",
+          "source": "行业新闻验证: thepaper.cn"
+        },
+        {
+          "name": "孙懋峰",
+          "source": "行业新闻验证: thepaper.cn"
+        },
+        {
+          "name": "王明礼",
+          "source": "行业新闻验证: thepaper.cn"
+        },
+        {
+          "name": "邹积晨",
+          "source": "行业新闻验证: thepaper.cn"
         }
       ],
       "masterIds": [
@@ -6795,7 +6811,13 @@
       "source": "http://www.cyxh.org/mingchu/dangdai/1437.html",
       "bio": "1986年进入武汉云鹤酒楼开始学厨，他技艺精湛、功底深厚，精通楚菜、潮汕菜、淮扬菜、川菜制作技艺。1992年至1993年任职深圳远东大酒店红荔餐厅厨师；1993年至1998年担任武汉泰皇宫鱼翅燕窝酒楼厨师长、行政总厨；1998年至2002年担任武汉江城大酒店行政总厨；2003年至2011年任职于北京宏景酒店管理有限公司；2011年至2013年担任宜昌兴发集团神农架旅游总公司（九家店）行政总厨；20…",
       "referencedBy": null,
-      "_origin": "cyxh-dangdai-batch3.json"
+      "_origin": "cyxh-dangdai-batch3.json",
+      "masters": [
+        {
+          "name": "卢永良",
+          "source": "行业新闻验证: baike.baidu.com"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-1436",
@@ -19572,7 +19594,13 @@
       "source": "湖北经济学院楚菜研究院 + 百度百科",
       "bio": "鄂菜中青年代表、武昌鱼省级非遗传承人。从餐馆学徒成长为大学教授，现任湖北楚菜研究院院长，国家技能大师工作室领办人。",
       "referencedBy": null,
-      "_origin": "academy-chefs.json"
+      "_origin": "academy-chefs.json",
+      "masters": [
+        {
+          "name": "卢永良",
+          "source": "行业新闻验证: baike.baidu.com"
+        }
+      ]
     },
     {
       "id": "academy-hbue-sunchangbi",
@@ -21244,7 +21272,13 @@
       "source": "http://www.cyxh.org/mingchu/zishen/12.html",
       "bio": "郑绍武，1951年10月出生，北京人，国家高级烹饪技师，北京特级烹饪大师，中国烹饪大师，餐饮业国家级评委，中国烹饪协会名厨专业委员会资深委员，担任全聚德集团技术顾问、全聚德四川饭店行政总厨，2012年3月被国家名厨编委会选入由国家商业部中国商业出版社出版的《国家名厨》大典第一卷。",
       "referencedBy": null,
-      "_origin": "cyxh-crawled2.json"
+      "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "王义均",
+          "source": "行业新闻验证: thepaper.cn"
+        }
+      ]
     },
     {
       "id": "cyxh-zishen-41",
@@ -22135,7 +22169,13 @@
       "source": "http://www.mingchu.org/mingchu/zishen/260.html",
       "bio": "刘冲，男，汉族，1973年2月出生，四川省中江县南华镇西山村人。国家中式烹调高级技师，国家名厨，四川省特级厨师，川菜烹饪大师，餐饮职业经理人，国家名厨编纂委员会高级专家委员，国内早期中餐创意菜肴烹饪技术开拓代表人物之一，在烹饪业界享誉“厨师作家”、“文学儒厨”的美称，现任唐山蓝猫饮品集团有限公司行政总监",
       "referencedBy": null,
-      "_origin": "cyxh-crawled2.json"
+      "_origin": "cyxh-crawled2.json",
+      "masters": [
+        {
+          "name": "史正良",
+          "source": "行业新闻验证: baike.baidu.com"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-151",
