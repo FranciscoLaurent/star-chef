@@ -414,7 +414,13 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/6.html",
       "bio": "蓝光鉴系蓉派传人，特级川菜大师，长于传统筵席与小炒。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "蓝光鉴",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "h008",
@@ -448,7 +454,13 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/6.html",
       "bio": "蓝光鉴系蓉派传人，与张松云同为荣乐园柱石，技法精严。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "蓝光鉴",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "h009",
@@ -481,7 +493,13 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/6.html",
       "bio": "蓉派特级名厨，蓝光鉴弟子序列代表人物之一。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "蓝光鉴",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "h010",
@@ -515,7 +533,13 @@
       "source": "https://baike.baidu.com/item/%E9%BB%84%E5%AD%90%E4%BA%91",
       "bio": "罗国荣高徒，'国宝级烹饪大师'，承袭师门精致路线，是罗派进入当代的重要桥梁。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "罗国荣",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "h011",
@@ -752,7 +776,13 @@
       "source": "http://www.cyxh.org/",
       "bio": "川渝厨师界泰斗，'川菜泰斗'称号获得者，江湖菜系统理论的重要参与者。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "罗国荣",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "h030",
@@ -853,7 +883,25 @@
       "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF",
       "bio": "四川梓潼人，国宝级川菜泰斗，'史派川菜'代表人物，14 岁起师从川西北名厨魏兴国、刘永见学艺；收徒 62 人，含兰明路、童建华等。2015 年于罗江车祸辞世。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "魏兴国",
+          "source": "WebSearch验证"
+        },
+        {
+          "name": "刘永见",
+          "source": "WebSearch验证"
+        },
+        {
+          "name": "蒋伯春",
+          "source": "WebSearch验证"
+        },
+        {
+          "name": "唐克明",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "h041",
@@ -889,7 +937,13 @@
       "source": "https://u-cra.com/profile/%E5%85%B0%E6%98%8E%E8%B7%AF/",
       "bio": "四川绵阳人，祖籍射洪。1998 年拜史正良为师，系统扎根川菜；经师父亲笔书信推荐，再师从著名粤菜大师黄振华两年得真传。现为四川旅游学院教授、国家级技能大师工作室领办人、兰庭十三厨创始人，享受国务院特殊津贴专家。",
       "referencedBy": null,
-      "_origin": "cuisine-chuan.json"
+      "_origin": "cuisine-chuan.json",
+      "masters": [
+        {
+          "name": "史正良",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "y001",
@@ -1844,7 +1898,13 @@
       "source": "https://baike.baidu.com/item/%E7%8E%8B%E5%A2%A8%E6%B3%89/7429974",
       "bio": "湖南平江人，17 岁入行，从玉楼东到曲园酒家，1980 年破格升特一级厨师。中国元老级烹饪大师、湘菜大师，自创与改良湘菜超 400 道，弟子六代逾万人，2015 年收第 71 位关门弟子后宣布闭门。",
       "referencedBy": null,
-      "_origin": "cuisine-xiang.json"
+      "_origin": "cuisine-xiang.json",
+      "masters": [
+        {
+          "name": "舒贵卿",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "x013",
@@ -2118,7 +2178,13 @@
       "source": "https://www.sohu.com/a/435012265_175852",
       "bio": "玉楼东特级厨师，许菊云嫡传弟子序列代表之一，许菊云之子许璨即师从其门下，是玉楼东系当代向第五代传承的关键节点。",
       "referencedBy": null,
-      "_origin": "cuisine-xiang.json"
+      "_origin": "cuisine-xiang.json",
+      "masters": [
+        {
+          "name": "王墨泉",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "x021",
@@ -2152,7 +2218,13 @@
       "source": "https://wdhn.rednet.cn/content/646754/67/13191658.html",
       "bio": "王墨泉之子，墨泉峰味餐厅董事长兼厨师长，与父亲共同打造长沙真正意义上专做传统湘菜的'墨泉峰味'，是王墨泉系家族传承的直系节点。",
       "referencedBy": null,
-      "_origin": "cuisine-xiang.json"
+      "_origin": "cuisine-xiang.json",
+      "masters": [
+        {
+          "name": "王墨泉",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "x030",
@@ -3541,6 +3613,14 @@
           "name": "陈玉亮",
           "title": "谭家菜大师",
           "rawText": "拜谭家菜大师陈玉亮为师"
+        },
+        {
+          "name": "王杜昆",
+          "source": "WebSearch验证"
+        },
+        {
+          "name": "孙中英",
+          "source": "WebSearch验证"
         }
       ],
       "masterIds": [
@@ -4704,13 +4784,7 @@
       "bio": "张家港『叫花鸡』非遗第五代传承人，融合北魏胡汉烧烤技法；2024 年入选《国家名厨》第六卷。",
       "referencedBy": null,
       "_origin": "cyxh-zishen-batch2.json",
-      "masters": [
-        {
-          "name": "祖父",
-          "title": "鹿苑叫花鸡家族传承第四代",
-          "rawText": "自幼受祖上饮食文化影响，十几岁就跟随其祖父学习叫花鸡制作"
-        }
-      ],
+      "masters": [],
       "masterIds": [
         "mp-006"
       ]
@@ -5017,13 +5091,7 @@
       "bio": "吉菜烹饪大师，齐门满汉全席第四代亲传弟子；2026 年入选《国家名厨》第八卷。",
       "referencedBy": null,
       "_origin": "cyxh-zishen-batch2.json",
-      "masters": [
-        {
-          "name": "齐门（满汉全席）",
-          "title": "齐门满汉全席传承体系",
-          "rawText": "2023 年 12 月成为齐门满汉全席第四代亲传弟子"
-        }
-      ],
+      "masters": [],
       "masterIds": [
         "mp-007"
       ]
@@ -5335,13 +5403,7 @@
       "bio": "山东南郊国宾馆鲁菜与孔府菜大师，非遗面塑传承人；2025 年入选《国家名厨》第七卷。",
       "referencedBy": null,
       "_origin": "cyxh-zishen-batch2.json",
-      "masters": [
-        {
-          "name": "叔叔",
-          "title": "家族厨艺启蒙",
-          "rawText": "16 岁便跟随叔叔学习厨艺"
-        }
-      ],
+      "masters": [],
       "masterIds": [
         "mp-009"
       ]
@@ -8169,7 +8231,13 @@
       "source": "http://www.cyxh.org/mingchu/dangdai/1406.html",
       "bio": "2008年投身烹饪事业，精通川菜、粤菜、湘菜制作，擅长工艺菜、水鲜风味、鲶鱼风味菜肴研发与烹制。师承资深中国烹饪大师邓正波，深耕内江水鲜菜、大千风味菜传承与创新。曾进修于清华大学食物研究设计班，具备扎实的厨艺功底与丰富的厨政管理、理论研究经验。主编《资中鲶鱼风味》，并参与多部烹饪专业典籍编写工作；兼任中国烹饪协会中式菜肴研发中心研发员、川菜圣手罗国荣罗派川菜研究中心研究员、内江白乌鱼菜品风味研究员…",
       "referencedBy": null,
-      "_origin": "cyxh-dangdai-batch3.json"
+      "_origin": "cyxh-dangdai-batch3.json",
+      "masters": [
+        {
+          "name": "邓正波",
+          "rawText": "从bio文本提取"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-1405",
@@ -12161,7 +12229,13 @@
       "source": "http://www.cyxh.org/mingchu/zishen/925.html",
       "bio": "陕西蓝田鲁菜大师，获国家名厨、中国烹饪大师等荣誉。",
       "referencedBy": null,
-      "_origin": "cyxh-zishen-batch3.json"
+      "_origin": "cyxh-zishen-batch3.json",
+      "masters": [
+        {
+          "name": "高炳义",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "cyxh-zishen-910",
@@ -12886,16 +12960,6 @@
         },
         {
           "name": "温新",
-          "title": "顺德名厨",
-          "rawText": "顺德首批名厨"
-        },
-        {
-          "name": "罗二",
-          "title": "顺德名厨",
-          "rawText": "顺德首批名厨"
-        },
-        {
-          "name": "朱兆",
           "title": "顺德名厨",
           "rawText": "顺德首批名厨"
         },
@@ -13807,7 +13871,13 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/437.html",
       "bio": "上海淮扬菜泰斗，梅府佳宴创始人。淮扬王师门梅家菜一脉宗师，王伟、何彬等沪上名厨之师，2019 年辞世。",
       "referencedBy": null,
-      "_origin": "placeholder-fills.json"
+      "_origin": "placeholder-fills.json",
+      "masters": [
+        {
+          "name": "徐春和深",
+          "rawText": "从bio文本提取"
+        }
+      ]
     },
     {
       "id": "cyxh-mianhuai-362",
@@ -20550,7 +20620,13 @@
       "source": "http://www.cyxh.org/mingchu/mianhuai/61.html",
       "bio": "高国禄，享年71岁。南菜泰斗，京城淮扬菜大师，中国首批烹饪技师，南菜组评委组长，北京烹饪界德高望重的名师，先后亲传弟子18人，有张万增、杨崙、李玉芬、邵红卫等人。",
       "referencedBy": null,
-      "_origin": "cyxh-crawled.json"
+      "_origin": "cyxh-crawled.json",
+      "masters": [
+        {
+          "name": "王兰",
+          "source": "WebSearch验证"
+        }
+      ]
     },
     {
       "id": "cyxh-mianhuai-62",
@@ -35966,7 +36042,13 @@
       "source": "http://www.mingchu.org/mingchu/dangdai/1102.html",
       "bio": " 于文磊，男，汉族，1980年5月生，山东烟台人，中国烹饪大师，中国名厨，青年烹饪艺术家，师从国务院国宴烹饪大师侯仲华先生，深得其真传，技艺精湛。他在餐饮行业深耕20余年，积累了丰富的烹饪实",
       "referencedBy": null,
-      "_origin": "cyxh-list-crawled.json"
+      "_origin": "cyxh-list-crawled.json",
+      "masters": [
+        {
+          "name": "侯仲华先",
+          "rawText": "从bio文本提取"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-1099",
@@ -36444,7 +36526,13 @@
       "source": "http://www.mingchu.org/mingchu/dangdai/1083.html",
       "bio": " 高桂富，男，汉族，1979年9月生，江苏阜宁县人，盐城烹饪名师，高级雕刻师，师从著名资深级淮扬菜大师沈家定。自高中毕业后，他便投身于酒店专业学习深造，得到了众多烹饪大师的悉心指导。至",
       "referencedBy": null,
-      "_origin": "cyxh-list-crawled.json"
+      "_origin": "cyxh-list-crawled.json",
+      "masters": [
+        {
+          "name": "沈家定",
+          "rawText": "从bio文本提取"
+        }
+      ]
     },
     {
       "id": "cyxh-dangdai-1079",
@@ -47486,7 +47574,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "江苏烹饪名誉大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：杜跃进。",
       "referencedBy": [
         "杜跃进"
       ],
@@ -47519,7 +47607,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "素菜泰斗。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：罗来耀。",
       "referencedBy": [
         "罗来耀"
       ],
@@ -47552,7 +47640,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "芜湖名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙应武。",
       "referencedBy": [
         "孙应武"
       ],
@@ -47585,7 +47673,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "京城名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王义均。",
       "referencedBy": [
         "王义均"
       ],
@@ -47652,7 +47740,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "大理名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：仇亚雄。",
       "referencedBy": [
         "仇亚雄"
       ],
@@ -47686,7 +47774,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "辽菜宗师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李春祥。",
       "referencedBy": [
         "李春祥"
       ],
@@ -47720,7 +47808,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：赵建伟。",
       "referencedBy": [
         "赵建伟"
       ],
@@ -47805,7 +47893,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "香港名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：胡平果。",
       "referencedBy": [
         "胡平果"
       ],
@@ -47838,7 +47926,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：邓晨。",
       "referencedBy": [
         "邓晨"
       ],
@@ -47871,7 +47959,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：吴长清。",
       "referencedBy": [
         "吴长清"
       ],
@@ -47904,7 +47992,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：黎云波。",
       "referencedBy": [
         "黎云波"
       ],
@@ -47937,7 +48025,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：贾鸿祥。",
       "referencedBy": [
         "贾鸿祥"
       ],
@@ -47970,7 +48058,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：宋远华。",
       "referencedBy": [
         "宋远华"
       ],
@@ -48003,7 +48091,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "浙宁帮、鲁菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：汪建国。",
       "referencedBy": [
         "汪建国"
       ],
@@ -48036,7 +48124,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "京、苏帮名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：汪建国。",
       "referencedBy": [
         "汪建国"
       ],
@@ -48069,7 +48157,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "顺德名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李灿华。",
       "referencedBy": [
         "李灿华"
       ],
@@ -48102,7 +48190,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "顺德名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李灿华。",
       "referencedBy": [
         "李灿华"
       ],
@@ -48135,7 +48223,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "顺德名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李灿华。",
       "referencedBy": [
         "李灿华"
       ],
@@ -48168,7 +48256,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "顺德名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李灿华。",
       "referencedBy": [
         "李灿华"
       ],
@@ -48201,7 +48289,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "顺德名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李灿华。",
       "referencedBy": [
         "李灿华"
       ],
@@ -48234,7 +48322,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "特级厨师（启蒙）。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李万民。",
       "referencedBy": [
         "李万民"
       ],
@@ -48267,7 +48355,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "陕菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘峻岭。",
       "referencedBy": [
         "刘峻岭"
       ],
@@ -48300,7 +48388,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "陕菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘峻岭。",
       "referencedBy": [
         "刘峻岭"
       ],
@@ -48333,7 +48421,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "陕菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘峻岭。",
       "referencedBy": [
         "刘峻岭"
       ],
@@ -48366,7 +48454,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "粤菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：康辉。",
       "referencedBy": [
         "康辉"
       ],
@@ -48399,7 +48487,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "榆林聚贤楼掌柜。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李国栋。",
       "referencedBy": [
         "李国栋"
       ],
@@ -48432,7 +48520,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "川菜名家。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王世杰。",
       "referencedBy": [
         "王世杰"
       ],
@@ -48512,7 +48600,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "宫廷御膳大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙林东。",
       "referencedBy": [
         "孙林东"
       ],
@@ -48589,7 +48677,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "成都天顺源饭馆川菜名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：伍钰盛。",
       "referencedBy": [
         "伍钰盛"
       ],
@@ -48622,7 +48710,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "成都川菜名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：伍钰盛。",
       "referencedBy": [
         "伍钰盛"
       ],
@@ -48655,7 +48743,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李兴广。",
       "referencedBy": [
         "李兴广"
       ],
@@ -48688,7 +48776,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "叙永烹饪名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李兴广。",
       "referencedBy": [
         "李兴广"
       ],
@@ -48721,7 +48809,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "叙永烹饪名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李兴广。",
       "referencedBy": [
         "李兴广"
       ],
@@ -48754,7 +48842,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "泸菜泰斗。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李兴广。",
       "referencedBy": [
         "李兴广"
       ],
@@ -48787,7 +48875,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "老毛手抓羊肉第三代传人。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：毛强。",
       "referencedBy": [
         "毛强"
       ],
@@ -48820,7 +48908,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "聚丰德饭店师傅。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王兴兰。",
       "referencedBy": [
         "王兴兰"
       ],
@@ -48853,7 +48941,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "聚丰德饭店师傅。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王兴兰。",
       "referencedBy": [
         "王兴兰"
       ],
@@ -48886,7 +48974,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "聚丰德饭店师傅。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王兴兰。",
       "referencedBy": [
         "王兴兰"
       ],
@@ -48919,7 +49007,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "天津名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：白庆华。",
       "referencedBy": [
         "白庆华"
       ],
@@ -48952,7 +49040,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "天津名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：白庆华。",
       "referencedBy": [
         "白庆华"
       ],
@@ -48985,7 +49073,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "莫家菜传人。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李耀云。",
       "referencedBy": [
         "李耀云"
       ],
@@ -49018,7 +49106,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "京帮大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：胡丽妹。",
       "referencedBy": [
         "胡丽妹"
       ],
@@ -49051,7 +49139,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "京帮大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：胡丽妹。",
       "referencedBy": [
         "胡丽妹"
       ],
@@ -49084,7 +49172,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "粤菜名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：姜介福。",
       "referencedBy": [
         "姜介福"
       ],
@@ -49117,7 +49205,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "新雅名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：姜介福。",
       "referencedBy": [
         "姜介福"
       ],
@@ -49150,7 +49238,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "新雅名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：姜介福。",
       "referencedBy": [
         "姜介福"
       ],
@@ -49183,7 +49271,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "海南名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：覃文章。",
       "referencedBy": [
         "覃文章"
       ],
@@ -49216,7 +49304,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "海南名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：覃文章。",
       "referencedBy": [
         "覃文章"
       ],
@@ -49249,7 +49337,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "特级名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：周继祥。",
       "referencedBy": [
         "周继祥"
       ],
@@ -49282,7 +49370,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "广帮菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：东林发。",
       "referencedBy": [
         "东林发"
       ],
@@ -49315,7 +49403,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "广帮菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：东林发。",
       "referencedBy": [
         "东林发"
       ],
@@ -49381,7 +49469,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "钓鱼台国宾馆原厨师长。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：黄俊杰。",
       "referencedBy": [
         "黄俊杰"
       ],
@@ -49447,7 +49535,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "便宜坊第五代传人、京华名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：薛伟。",
       "referencedBy": [
         "薛伟"
       ],
@@ -49480,7 +49568,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "世界名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：蔡小龙。",
       "referencedBy": [
         "蔡小龙"
       ],
@@ -49513,7 +49601,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "粤菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：胡定坚。",
       "referencedBy": [
         "胡定坚"
       ],
@@ -49546,7 +49634,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "烹饪大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：徐桂宝。",
       "referencedBy": [
         "徐桂宝"
       ],
@@ -49612,7 +49700,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "中国注册烹饪大师、陕菜名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：任俊。",
       "referencedBy": [
         "任俊"
       ],
@@ -49645,7 +49733,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "老一辈湘菜大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：马龙标。",
       "referencedBy": [
         "马龙标"
       ],
@@ -49678,7 +49766,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘锋。",
       "referencedBy": [
         "刘锋"
       ],
@@ -49744,7 +49832,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "资深级中国烹饪大师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李文星。",
       "referencedBy": [
         "李文星"
       ],
@@ -49777,7 +49865,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "宫廷御厨世家。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘宝阳。",
       "referencedBy": [
         "刘宝阳"
       ],
@@ -49810,7 +49898,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "淮安烹饪界前辈。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙长永。",
       "referencedBy": [
         "孙长永"
       ],
@@ -49843,7 +49931,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "淮安烹饪界前辈。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙长永。",
       "referencedBy": [
         "孙长永"
       ],
@@ -49876,7 +49964,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "淮安烹饪界前辈。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙长永。",
       "referencedBy": [
         "孙长永"
       ],
@@ -49909,7 +49997,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "淮安烹饪界前辈。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙长永。",
       "referencedBy": [
         "孙长永"
       ],
@@ -49942,7 +50030,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "淮安烹饪界前辈。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙长永。",
       "referencedBy": [
         "孙长永"
       ],
@@ -49975,7 +50063,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "李巨圣酒楼老板（汉流大哥）。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：周祥兴。",
       "referencedBy": [
         "周祥兴"
       ],
@@ -50008,7 +50096,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "国家特一级厨师（其兄）。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：沈远明。",
       "referencedBy": [
         "沈远明"
       ],
@@ -50041,7 +50129,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "豫菜名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：侯瑞轩。",
       "referencedBy": [
         "侯瑞轩"
       ],
@@ -50074,7 +50162,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "豫菜名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：侯瑞轩。",
       "referencedBy": [
         "侯瑞轩"
       ],
@@ -50107,7 +50195,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "大连饭店名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：牟传仁。",
       "referencedBy": [
         "牟传仁"
       ],
@@ -50140,7 +50228,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "大连饭店名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：牟传仁。",
       "referencedBy": [
         "牟传仁"
       ],
@@ -50173,7 +50261,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "大连饭店名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：牟传仁。",
       "referencedBy": [
         "牟传仁"
       ],
@@ -50206,7 +50294,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "大连饭店名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：牟传仁。",
       "referencedBy": [
         "牟传仁"
       ],
@@ -50239,7 +50327,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "京城名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：金永泉。",
       "referencedBy": [
         "金永泉"
       ],
@@ -50272,7 +50360,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "京城名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：金永泉。",
       "referencedBy": [
         "金永泉"
       ],
@@ -50305,7 +50393,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "郑州上海菜馆名厨。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：赵继宗。",
       "referencedBy": [
         "赵继宗"
       ],
@@ -50338,7 +50426,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "沈阳天一坊饭庄名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘国栋。",
       "referencedBy": [
         "刘国栋"
       ],
@@ -50371,7 +50459,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "沈阳天一坊饭庄名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘国栋。",
       "referencedBy": [
         "刘国栋"
       ],
@@ -50404,7 +50492,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "烹饪名师。被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：孙昌弼。",
       "referencedBy": [
         "孙昌弼"
       ],
@@ -50437,7 +50525,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：大董。",
       "referencedBy": [
         "大董"
       ],
@@ -50470,7 +50558,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘仲淇。",
       "referencedBy": [
         "刘仲淇"
       ],
@@ -50503,7 +50591,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王根章。",
       "referencedBy": [
         "王根章"
       ],
@@ -50536,7 +50624,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 2 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：宫春卫、宁金良。",
       "referencedBy": [
         "宫春卫",
         "宁金良"
@@ -50570,7 +50658,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：俞世清。",
       "referencedBy": [
         "俞世清"
       ],
@@ -50603,7 +50691,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：曾鹏飞。",
       "referencedBy": [
         "曾鹏飞"
       ],
@@ -50636,7 +50724,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：石明昇。",
       "referencedBy": [
         "石明昇"
       ],
@@ -50669,7 +50757,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 3 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：邢万里、赵晨光、郑冰城。",
       "referencedBy": [
         "邢万里",
         "赵晨光",
@@ -50704,7 +50792,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：周骄阳。",
       "referencedBy": [
         "周骄阳"
       ],
@@ -50737,7 +50825,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：季军。",
       "referencedBy": [
         "季军"
       ],
@@ -50770,7 +50858,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：冯帅。",
       "referencedBy": [
         "冯帅"
       ],
@@ -50803,7 +50891,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张广兵。",
       "referencedBy": [
         "张广兵"
       ],
@@ -50836,7 +50924,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：连龙。",
       "referencedBy": [
         "连龙"
       ],
@@ -50869,7 +50957,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李宁。",
       "referencedBy": [
         "李宁"
       ],
@@ -50902,7 +50990,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：陈棋。",
       "referencedBy": [
         "陈棋"
       ],
@@ -50935,7 +51023,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 8 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：彭涛、谢玉龙、宋金波、曹明悬、戴双波、李红军、王长伟、戎稳柱。",
       "referencedBy": [
         "彭涛",
         "谢玉龙",
@@ -50975,7 +51063,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张晨冰。",
       "referencedBy": [
         "张晨冰"
       ],
@@ -51008,7 +51096,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：巩道伟。",
       "referencedBy": [
         "巩道伟"
       ],
@@ -51041,7 +51129,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张龙奇。",
       "referencedBy": [
         "张龙奇"
       ],
@@ -51074,7 +51162,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：陈建州。",
       "referencedBy": [
         "陈建州"
       ],
@@ -51107,7 +51195,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：陈林。",
       "referencedBy": [
         "陈林"
       ],
@@ -51140,7 +51228,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：陈林。",
       "referencedBy": [
         "陈林"
       ],
@@ -51173,7 +51261,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：马达。",
       "referencedBy": [
         "马达"
       ],
@@ -51206,7 +51294,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：廖义军。",
       "referencedBy": [
         "廖义军"
       ],
@@ -51239,7 +51327,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王志军。",
       "referencedBy": [
         "王志军"
       ],
@@ -51272,7 +51360,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：百强技能大。",
       "referencedBy": [
         "百强技能大"
       ],
@@ -51305,7 +51393,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张敬飞。",
       "referencedBy": [
         "张敬飞"
       ],
@@ -51338,7 +51426,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 3 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：陈伟德、闫勇强、宋景武。",
       "referencedBy": [
         "陈伟德",
         "闫勇强",
@@ -51373,7 +51461,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：钟小龙。",
       "referencedBy": [
         "钟小龙"
       ],
@@ -51406,7 +51494,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李海涛。",
       "referencedBy": [
         "李海涛"
       ],
@@ -51439,7 +51527,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：季超。",
       "referencedBy": [
         "季超"
       ],
@@ -51472,7 +51560,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：潘天瑛。",
       "referencedBy": [
         "潘天瑛"
       ],
@@ -51505,7 +51593,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王龙贵。",
       "referencedBy": [
         "王龙贵"
       ],
@@ -51538,7 +51626,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：赵翔。",
       "referencedBy": [
         "赵翔"
       ],
@@ -51571,7 +51659,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：黎国文。",
       "referencedBy": [
         "黎国文"
       ],
@@ -51604,7 +51692,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张宇。",
       "referencedBy": [
         "张宇"
       ],
@@ -51637,7 +51725,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：顾永红。",
       "referencedBy": [
         "顾永红"
       ],
@@ -51670,7 +51758,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：文小康。",
       "referencedBy": [
         "文小康"
       ],
@@ -51703,7 +51791,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李伟铭。",
       "referencedBy": [
         "李伟铭"
       ],
@@ -51736,7 +51824,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 2 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：杜付远、郑勇杰。",
       "referencedBy": [
         "杜付远",
         "郑勇杰"
@@ -51770,7 +51858,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：宋岩峰。",
       "referencedBy": [
         "宋岩峰"
       ],
@@ -51803,7 +51891,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘国平。",
       "referencedBy": [
         "刘国平"
       ],
@@ -51836,7 +51924,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张江江。",
       "referencedBy": [
         "张江江"
       ],
@@ -51869,7 +51957,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：熊乐。",
       "referencedBy": [
         "熊乐"
       ],
@@ -51902,7 +51990,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：高亮。",
       "referencedBy": [
         "高亮"
       ],
@@ -51935,7 +52023,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张文阳。",
       "referencedBy": [
         "张文阳"
       ],
@@ -51968,7 +52056,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王正富。",
       "referencedBy": [
         "王正富"
       ],
@@ -52001,7 +52089,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：汤颖志。",
       "referencedBy": [
         "汤颖志"
       ],
@@ -52034,7 +52122,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：艾克热木·努尔麦麦提。",
       "referencedBy": [
         "艾克热木·努尔麦麦提"
       ],
@@ -52067,7 +52155,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：白运周。",
       "referencedBy": [
         "白运周"
       ],
@@ -52100,7 +52188,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：薛明。",
       "referencedBy": [
         "薛明"
       ],
@@ -52133,7 +52221,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：贺振鑫。",
       "referencedBy": [
         "贺振鑫"
       ],
@@ -52166,7 +52254,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张元全。",
       "referencedBy": [
         "张元全"
       ],
@@ -52199,7 +52287,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：赵见。",
       "referencedBy": [
         "赵见"
       ],
@@ -52232,7 +52320,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘景松。",
       "referencedBy": [
         "刘景松"
       ],
@@ -52265,7 +52353,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李雪峰。",
       "referencedBy": [
         "李雪峰"
       ],
@@ -52298,7 +52386,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：冯东海。",
       "referencedBy": [
         "冯东海"
       ],
@@ -52331,7 +52419,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 2 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：冯东海、杨俊峰。",
       "referencedBy": [
         "冯东海",
         "杨俊峰"
@@ -52365,7 +52453,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：陈亮。",
       "referencedBy": [
         "陈亮"
       ],
@@ -52398,7 +52486,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：陈亮。",
       "referencedBy": [
         "陈亮"
       ],
@@ -52431,7 +52519,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张新雨。",
       "referencedBy": [
         "张新雨"
       ],
@@ -52464,7 +52552,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：马鹏翔。",
       "referencedBy": [
         "马鹏翔"
       ],
@@ -52497,7 +52585,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：李少华。",
       "referencedBy": [
         "李少华"
       ],
@@ -52530,7 +52618,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：郭龙龙。",
       "referencedBy": [
         "郭龙龙"
       ],
@@ -52563,7 +52651,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：郭龙龙。",
       "referencedBy": [
         "郭龙龙"
       ],
@@ -52596,7 +52684,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：赵军。",
       "referencedBy": [
         "赵军"
       ],
@@ -52629,7 +52717,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：谭振杰。",
       "referencedBy": [
         "谭振杰"
       ],
@@ -52712,7 +52800,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：臧梓翔。",
       "referencedBy": [
         "臧梓翔"
       ],
@@ -52840,7 +52928,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张道永。",
       "referencedBy": [
         "张道永"
       ],
@@ -52873,7 +52961,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张道永。",
       "referencedBy": [
         "张道永"
       ],
@@ -52906,7 +52994,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：丁万谷。",
       "referencedBy": [
         "丁万谷"
       ],
@@ -52939,7 +53027,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：蒋伯春。",
       "referencedBy": [
         "蒋伯春"
       ],
@@ -52972,7 +53060,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张志广。",
       "referencedBy": [
         "张志广"
       ],
@@ -53005,7 +53093,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张志广。",
       "referencedBy": [
         "张志广"
       ],
@@ -53038,7 +53126,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：解德坤。",
       "referencedBy": [
         "解德坤"
       ],
@@ -53071,7 +53159,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：林月生。",
       "referencedBy": [
         "林月生"
       ],
@@ -53104,7 +53192,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张铁元。",
       "referencedBy": [
         "张铁元"
       ],
@@ -53137,7 +53225,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：张铁元。",
       "referencedBy": [
         "张铁元"
       ],
@@ -53212,7 +53300,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：甘端华。",
       "referencedBy": [
         "甘端华"
       ],
@@ -53245,7 +53333,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：童辉星。",
       "referencedBy": [
         "童辉星"
       ],
@@ -53278,7 +53366,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：童辉星。",
       "referencedBy": [
         "童辉星"
       ],
@@ -53311,7 +53399,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：曹祥贵。",
       "referencedBy": [
         "曹祥贵"
       ],
@@ -53344,7 +53432,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：曹祥贵。",
       "referencedBy": [
         "曹祥贵"
       ],
@@ -53377,7 +53465,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：王海东。",
       "referencedBy": [
         "王海东"
       ],
@@ -53410,7 +53498,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：吴奇安。",
       "referencedBy": [
         "吴奇安"
       ],
@@ -53443,7 +53531,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：吴奇安。",
       "referencedBy": [
         "吴奇安"
       ],
@@ -53476,7 +53564,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：吴奇安。",
       "referencedBy": [
         "吴奇安"
       ],
@@ -53509,7 +53597,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：刘汉威。",
       "referencedBy": [
         "刘汉威"
       ],
@@ -53542,7 +53630,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：徐永珍。",
       "referencedBy": [
         "徐永珍"
       ],
@@ -53575,7 +53663,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：罗世伟。",
       "referencedBy": [
         "罗世伟"
       ],
@@ -53608,7 +53696,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：罗世伟。",
       "referencedBy": [
         "罗世伟"
       ],
@@ -53641,7 +53729,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：罗世伟。",
       "referencedBy": [
         "罗世伟"
       ],
@@ -53674,7 +53762,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：董延龄。",
       "referencedBy": [
         "董延龄"
       ],
@@ -53707,7 +53795,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：宗良松。",
       "referencedBy": [
         "宗良松"
       ],
@@ -53740,7 +53828,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：时广南。",
       "referencedBy": [
         "时广南"
       ],
@@ -53773,7 +53861,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：时广南。",
       "referencedBy": [
         "时广南"
       ],
@@ -53806,7 +53894,7 @@
       "experiences": null,
       "portrait": null,
       "source": null,
-      "bio": "被 1 位徒弟援引为师承。",
+      "bio": "师承关系中的大师。已知门徒：徐德章。",
       "referencedBy": [
         "徐德章"
       ],

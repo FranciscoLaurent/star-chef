@@ -1,0 +1,23 @@
+{
+  "source": "master-backfill · re-parse detail pages for master relationships",
+  "scope": "师承增强提取",
+  "fetchDate": "2026-06-21",
+  "results": [
+    {
+      "name": "李名祥",
+      "id": "cyxh-dangdai-1459",
+      "masters": [
+        {
+          "name": "王荫曾",
+          "rawText": "师从元老级注册中国烹饪大师王荫曾 "
+        }
+      ],
+      "source": "http://www.cyxh.org/mingchu/dangdai/1459.html"
+    }
+  ],
+  "stats": {
+    "total": 611,
+    "found": 1,
+    "failed": 1178
+  }
+}
