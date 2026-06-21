@@ -1,0 +1,11 @@
+{
+  "source": "cyxh.org + mingchu.org dual-fetcher",
+  "scope": "crawler-batch2",
+  "partial": true,
+  "chefs": [],
+  "stats": {
+    "total": 0,
+    "processed": 800,
+    "notfound": 800
+  }
+}

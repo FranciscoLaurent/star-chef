@@ -34,11 +34,19 @@ const REGION_CUISINE = [
 ];
 
 function inferCuisine(chef) {
-  const searchText = [chef.birthplace, chef.city, chef.bio, chef.currentRole, (chef.titles||[]).join(' '), chef.name]
-    .filter(Boolean).join(' ');
+  // 优先级：籍贯 > bio前半段（通常描述出身）> 工作地 > bio全文
+  const texts = [
+    { text: chef.birthplace || '', weight: 1 },           // 籍贯最优先
+    { text: (chef.bio || '').slice(0, 100), weight: 2 },  // bio 开头通常说籍贯
+    { text: chef.bio || '', weight: 3 },                   // bio 全文
+    { text: chef.city || '', weight: 4 },                  // 工作地最后
+  ];
 
-  for (const { re, cui } of REGION_CUISINE) {
-    if (re.test(searchText)) return cui;
+  for (const { text, weight } of texts) {
+    if (!text) continue;
+    for (const { re, cui } of REGION_CUISINE) {
+      if (re.test(text)) return cui;
+    }
   }
   return null;
 }

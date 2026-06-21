@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
-const OUT_FILE = path.join(DATA_DIR, 'cyxh-crawled2.json');
+const OUT_FILE = path.join(DATA_DIR, 'cyxh-crawled4.json');
 
 const UA_POOL = [
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -186,11 +186,12 @@ async function main() {
     yuanlao: bl.yuanlao.size, mianhuai: bl.mianhuai.size,
   }));
 
-  // 任务：只跑高价值历史栏目，缩小范围避免太长
+  // 任务：继续扩量，目标 1000 实人
   const ranges = {
-    mianhuai: [1, 200],
-    yuanlao:  [1, 250],
-    zishen:   [1, 250],
+    mianhuai: [401, 800],
+    yuanlao:  [501, 1000],
+    zishen:   [501, 1000],
+    dangdai:  [801, 2500],
   };
 
   const tasks = [];
