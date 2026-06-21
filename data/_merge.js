@@ -21,6 +21,7 @@ const files = [
   { path: 'cyxh-final-batch.json',     type: 'cyxh', optional: true },
   { path: 'academy-chefs.json',        type: 'cyxh', optional: true },
   { path: 'cyxh-crawled.json',         type: 'cyxh', optional: true },
+  { path: 'cyxh-crawled2.json',        type: 'cyxh', optional: true },
   { path: 'baike-chefs.json',          type: 'cyxh', optional: true },
   { path: 'wiki-chefs.json',           type: 'cyxh', optional: true },
   { path: 'provincial-chefs.json',     type: 'cyxh', optional: true },
