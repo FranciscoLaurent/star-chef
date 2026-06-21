@@ -18,6 +18,13 @@ const files = [
   // 后续批次:
   { path: 'cyxh-dangdai-batch4.json',  type: 'cyxh', optional: true },
   { path: 'cyxh-zishen-yuanlao-batch5.json', type: 'cyxh', optional: true },
+  { path: 'cyxh-final-batch.json',     type: 'cyxh', optional: true },
+  { path: 'academy-chefs.json',        type: 'cyxh', optional: true },
+  { path: 'cyxh-crawled.json',         type: 'cyxh', optional: true },
+  { path: 'baike-chefs.json',          type: 'cyxh', optional: true },
+  { path: 'wiki-chefs.json',           type: 'cyxh', optional: true },
+  { path: 'provincial-chefs.json',     type: 'cyxh', optional: true },
+  { path: 'mingchu-org-extras.json',   type: 'cyxh', optional: true },
 ];
 
 // 菜系归一化（合并同义词 / 去掉"菜"后缀 / 别名）
