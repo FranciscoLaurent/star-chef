@@ -34,6 +34,7 @@ const files = [
   { path: 'baike-chefs.json',          type: 'cyxh', optional: true },
   { path: 'wiki-chefs.json',           type: 'cyxh', optional: true },
   { path: 'provincial-chefs.json',     type: 'cyxh', optional: true },
+  { path: 'bfs-chefs.json',    type: 'bfs', optional: true },
   { path: 'mingchu-org-extras.json',   type: 'cyxh', optional: true },
 ];
 
@@ -104,7 +105,7 @@ for (const c of allChefs) {
   if (!existing) { byName.set(c.name, c); continue; }
   let primary, secondary;
   // 优先级: fill (subagent验证) > cuisine (手工策展) > cyxh (爬虫)
-  const TYPE_PRIORITY = { manual: 5, fill: 4, cuisine: 3, cyxh: 2, placeholder: 1 };
+  const TYPE_PRIORITY = { manual: 5, bfs: 4, fill: 4, cuisine: 3, cyxh: 2, placeholder: 1 };
   const cP = TYPE_PRIORITY[c._type] || 0;
   const eP = TYPE_PRIORITY[existing._type] || 0;
   if (cP > eP || (cP === eP && (c.bio?.length||0) > (existing.bio?.length||0))) { primary = c; secondary = existing; }
@@ -318,6 +319,7 @@ const result = {
     { file: 'news-masters.json',     tag: 'news',   priority: 1 },
     { file: 'websearch-masters.json',tag: 'websearch', priority: 3 },
     { file: 'agent-masters-2.json', tag: 'agent2', priority: 2 },
+    { file: 'bfs-masters.json',    tag: 'bfs',    priority: 3 },
   ];
   const byName = new Map();
   const byId = new Map();

@@ -1,0 +1,179 @@
+{
+  "chefs": [
+    {
+      "name": "童建华",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "赵小林",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "罗俊",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "聂磊",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "管晓宁",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "陈波",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "雷建国",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "胡友国",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "刘云刚",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "舒正权",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "黄爱民",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "郑承佼",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "罗仕富",
+      "primaryCuisine": "川菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "任凤辉",
+      "primaryCuisine": "湘菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "马中仪",
+      "primaryCuisine": "湘菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "张波",
+      "primaryCuisine": "湘菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "刘金龙",
+      "primaryCuisine": "湘菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "萧智蘭",
+      "primaryCuisine": "湘菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    },
+    {
+      "name": "朱浪",
+      "primaryCuisine": "湘菜",
+      "bio": null,
+      "signature": [],
+      "isPlaceholder": false,
+      "source": "bfs-discover",
+      "_bfs": true
+    }
+  ],
+  "stats": {
+    "totalChefs": 19,
+    "totalMasters": 110
+  }
+}
