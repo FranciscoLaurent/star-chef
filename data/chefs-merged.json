@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T06:37:00.831Z",
+  "generatedAt": "2026-06-22T07:10:25.950Z",
   "source": "聚合自 cuisine-{chuan,yue,xiang}.json + cyxh-{chefs,zishen-batch2}.json + 师承源",
   "cuisineNormalized": {
     "川菜": "川",
@@ -49598,15 +49598,14 @@
       "_origin": "placeholder-fills3.json"
     },
     {
-      "id": "auto-童建华-川",
-      "name": "童建华",
+      "id": "auto-徐和新-客家菜",
+      "name": "徐和新",
       "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
+      "primaryCuisine": "客家菜",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "h040",
+      "master": null,
       "era": null,
       "birth": null,
       "death": null,
@@ -49624,27 +49623,20 @@
       "signatureDetails": null,
       "experiences": null,
       "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
+      "source": "https://www.sohu.com/a/918276671_100116740",
+      "bio": "徐和新，惠州东江客家菜制作技艺代表性传承人，粤菜东江菜十大厨神之一，惠州市烹饪协会副会长，旺园农家饭店创始人。长期深耕东江客家菜领域，是该菜系非遗技艺的代表人物。2025年7月收林烈武为徒，传授东江客家菜制作技艺，致力于东江菜文化的传承与发扬。师承关系与生平详细资料受限于网络检索不可用，暂缺。",
       "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派川菜代表性传承人／川菜界中坚力量"
-        }
-      ]
+      "_origin": "bfs-chefs.json"
     },
     {
-      "id": "auto-赵小林-川",
-      "name": "赵小林",
+      "id": "auto-林烈武-客家菜",
+      "name": "林烈武",
       "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
+      "primaryCuisine": "客家菜",
       "secondaryCuisines": [],
       "school": null,
       "gen": null,
-      "master": "h040",
+      "master": "auto-徐和新-客家菜",
       "era": null,
       "birth": null,
       "death": null,
@@ -49668,654 +49660,8 @@
       "_origin": "bfs-chefs.json",
       "masters": [
         {
-          "name": "史正良",
-          "title": "绵阳米粉传习馆创办人"
-        }
-      ]
-    },
-    {
-      "id": "auto-罗俊-川",
-      "name": "罗俊",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派川菜嫡传弟子"
-        }
-      ]
-    },
-    {
-      "id": "auto-聂磊-川",
-      "name": "聂磊",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史门弟子会会长／陕西省餐饮业商会会长／中国烹饪协会副会长／陕西龙鑫企业投资集团董事长"
-        }
-      ]
-    },
-    {
-      "id": "auto-管晓宁-川",
-      "name": "管晓宁",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "高级烹调技师／中国烹饪名师／全国技术能手"
-        }
-      ]
-    },
-    {
-      "id": "auto-陈波-川",
-      "name": "陈波",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "益海嘉里集团市场部总监／益海嘉里食品营销有限公司董事长"
-        }
-      ]
-    },
-    {
-      "id": "auto-雷建国-川",
-      "name": "雷建国",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派弟子代表"
-        }
-      ]
-    },
-    {
-      "id": "auto-胡友国-川",
-      "name": "胡友国",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "百杏厨房创始人／中国烹饪大师／世界中华厨王（2006）"
-        }
-      ]
-    },
-    {
-      "id": "auto-刘云刚-川",
-      "name": "刘云刚",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派弟子代表"
-        }
-      ]
-    },
-    {
-      "id": "auto-舒正权-川",
-      "name": "舒正权",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派弟子代表"
-        }
-      ]
-    },
-    {
-      "id": "auto-黄爱民-川",
-      "name": "黄爱民",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派弟子代表"
-        }
-      ]
-    },
-    {
-      "id": "auto-郑承佼-川",
-      "name": "郑承佼",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派弟子代表"
-        }
-      ]
-    },
-    {
-      "id": "auto-罗仕富-川",
-      "name": "罗仕富",
-      "isPlaceholder": false,
-      "primaryCuisine": "川",
-      "primaryCuisineRaw": "川菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "h040",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "史正良",
-          "title": "史派川菜第五代传承人／中国烹饪大师／绵阳市烹饪协会会长／四川省技能大师工作室领办人"
-        }
-      ]
-    },
-    {
-      "id": "auto-任凤辉-湘",
-      "name": "任凤辉",
-      "isPlaceholder": false,
-      "primaryCuisine": "湘",
-      "primaryCuisineRaw": "湘菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "mp-student-颜卫胜-许菊云",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "颜卫胜",
-          "title": "颜掌勺门店厨师长"
-        }
-      ]
-    },
-    {
-      "id": "auto-马中仪-湘",
-      "name": "马中仪",
-      "isPlaceholder": false,
-      "primaryCuisine": "湘",
-      "primaryCuisineRaw": "湘菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "mp-student-颜卫胜-许菊云",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "颜卫胜",
-          "title": "颜掌勺厨师"
-        }
-      ]
-    },
-    {
-      "id": "auto-张波-湘",
-      "name": "张波",
-      "isPlaceholder": false,
-      "primaryCuisine": "湘",
-      "primaryCuisineRaw": "湘菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "mp-student-颜卫胜-许菊云",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "颜卫胜",
-          "title": "颜掌勺厨师"
-        }
-      ]
-    },
-    {
-      "id": "auto-刘金龙-湘",
-      "name": "刘金龙",
-      "isPlaceholder": false,
-      "primaryCuisine": "湘",
-      "primaryCuisineRaw": "湘菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "mp-student-颜卫胜-许菊云",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "颜卫胜",
-          "title": "颜掌勺厨师"
-        }
-      ]
-    },
-    {
-      "id": "auto-萧智蘭-湘",
-      "name": "萧智蘭",
-      "isPlaceholder": false,
-      "primaryCuisine": "湘",
-      "primaryCuisineRaw": "湘菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "mp-student-颜卫胜-许菊云",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "颜卫胜",
-          "title": "颜掌勺厨师"
-        }
-      ]
-    },
-    {
-      "id": "auto-朱浪-湘",
-      "name": "朱浪",
-      "isPlaceholder": false,
-      "primaryCuisine": "湘",
-      "primaryCuisineRaw": "湘菜",
-      "secondaryCuisines": [],
-      "school": null,
-      "gen": null,
-      "master": "mp-student-颜卫胜-许菊云",
-      "era": null,
-      "birth": null,
-      "death": null,
-      "gender": null,
-      "ethnicity": null,
-      "birthplace": null,
-      "education": null,
-      "titles": null,
-      "title": null,
-      "currentRole": null,
-      "restaurant": null,
-      "position": null,
-      "city": null,
-      "signature": [],
-      "signatureDetails": null,
-      "experiences": null,
-      "portrait": null,
-      "source": "bfs-discover",
-      "bio": null,
-      "referencedBy": null,
-      "_origin": "bfs-chefs.json",
-      "masters": [
-        {
-          "name": "颜卫胜",
-          "title": "颜掌勺厨师"
+          "name": "徐和新",
+          "title": "东江菜厨师 / 2025年7月拜徐和新为师"
         }
       ]
     },
@@ -56582,6 +55928,214 @@
       ]
     },
     {
+      "id": "mp-student-童建华-史正良",
+      "name": "童建华",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派川菜代表性传承人／川菜界中坚力量",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派川菜代表性传承人／川菜界中坚力量"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-赵小林-史正良",
+      "name": "赵小林",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "绵阳米粉传习馆创办人",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "绵阳米粉传习馆创办人"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-罗俊-史正良",
+      "name": "罗俊",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派川菜嫡传弟子",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派川菜嫡传弟子"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-聂磊-史正良",
+      "name": "聂磊",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史门弟子会会长／陕西省餐饮业商会会长／中国烹饪协会副会长／陕西龙鑫企业投资集团董事长",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史门弟子会会长／陕西省餐饮业商会会长／中国烹饪协会副会长／陕西龙鑫企业投资集团董事长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-管晓宁-史正良",
+      "name": "管晓宁",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "高级烹调技师／中国烹饪名师／全国技术能手",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "高级烹调技师／中国烹饪名师／全国技术能手"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-陈波-史正良",
+      "name": "陈波",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "益海嘉里集团市场部总监／益海嘉里食品营销有限公司董事长",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "益海嘉里集团市场部总监／益海嘉里食品营销有限公司董事长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-雷建国-史正良",
+      "name": "雷建国",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派弟子代表",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派弟子代表"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-胡友国-史正良",
+      "name": "胡友国",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "百杏厨房创始人／中国烹饪大师／世界中华厨王（2006）",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "百杏厨房创始人／中国烹饪大师／世界中华厨王（2006）"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-刘云刚-史正良",
+      "name": "刘云刚",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派弟子代表",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派弟子代表"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-舒正权-史正良",
+      "name": "舒正权",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派弟子代表",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派弟子代表"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-黄爱民-史正良",
+      "name": "黄爱民",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派弟子代表",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派弟子代表"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-郑承佼-史正良",
+      "name": "郑承佼",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派弟子代表",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派弟子代表"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-罗仕富-史正良",
+      "name": "罗仕富",
+      "isPlaceholder": true,
+      "primaryCuisine": "川",
+      "title": "史派川菜第五代传承人／中国烹饪大师／绵阳市烹饪协会会长／四川省技能大师工作室领办人",
+      "source": "https://baike.baidu.com/item/%E5%8F%B2%E6%AD%A3%E8%89%AF/1895035",
+      "bio": null,
+      "master": "h040",
+      "masters": [
+        {
+          "name": "史正良",
+          "title": "史派川菜第五代传承人／中国烹饪大师／绵阳市烹饪协会会长／四川省技能大师工作室领办人"
+        }
+      ]
+    },
+    {
       "id": "mp-student-韩国孝-屈浩",
       "name": "韩国孝",
       "isPlaceholder": true,
@@ -56610,6 +56164,22 @@
         {
           "name": "王义均",
           "title": "鲁菜泰斗、国宝级烹饪大师"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-杨捷-许菊云",
+      "name": "杨捷",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "湘菜泰斗",
+      "source": "https://www.163.com/dy/article/EI17PRUM0522858F.html",
+      "bio": null,
+      "master": "x013",
+      "masters": [
+        {
+          "name": "许菊云",
+          "title": "湘菜泰斗"
         }
       ]
     },
@@ -56662,6 +56232,22 @@
       ]
     },
     {
+      "id": "mp-student-简忠姚-许菊云",
+      "name": "简忠姚",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "湘菜泰斗 / 中国烹饪大师名人堂尊师 / 全国人大代表",
+      "source": "https://www.163.com/dy/article/EI17PRUM0522858F.html",
+      "bio": null,
+      "master": "x013",
+      "masters": [
+        {
+          "name": "许菊云",
+          "title": "湘菜泰斗 / 中国烹饪大师名人堂尊师 / 全国人大代表"
+        }
+      ]
+    },
+    {
       "id": "mp-student-许璨-许菊云",
       "name": "许璨",
       "isPlaceholder": true,
@@ -56678,22 +56264,6 @@
         {
           "name": "黄邦伟",
           "title": "玉楼东特级厨师 / 湘菜大师"
-        }
-      ]
-    },
-    {
-      "id": "mp-student-简忠姚-许菊云",
-      "name": "简忠姚",
-      "isPlaceholder": true,
-      "primaryCuisine": "湘",
-      "title": "许菊云得意弟子 / 湘菜大师 / 1993 年第三届全国烹饪比赛团体金牌",
-      "source": "https://www.163.com/dy/article/EI17PRUM0522858F.html",
-      "bio": null,
-      "master": "x013",
-      "masters": [
-        {
-          "name": "许菊云",
-          "title": "许菊云得意弟子 / 湘菜大师 / 1993 年第三届全国烹饪比赛团体金牌"
         }
       ]
     },
@@ -57050,22 +56620,6 @@
       ]
     },
     {
-      "id": "mp-student-杨捷-许菊云",
-      "name": "杨捷",
-      "isPlaceholder": true,
-      "primaryCuisine": "湘",
-      "title": "合肥湘鼎盛创始人 / 2024 年 3 月拜师 / 合肥“必吃榜”湘菜餐厅掌门人",
-      "source": "https://www.163.com/dy/article/EI17PRUM0522858F.html",
-      "bio": null,
-      "master": "x013",
-      "masters": [
-        {
-          "name": "许菊云",
-          "title": "合肥湘鼎盛创始人 / 2024 年 3 月拜师 / 合肥“必吃榜”湘菜餐厅掌门人"
-        }
-      ]
-    },
-    {
       "id": "mp-student-张汉-许菊云",
       "name": "张汉",
       "isPlaceholder": true,
@@ -57320,13 +56874,109 @@
           "title": "许家弟子 / 拿手菜：迷你粽烧牛腩"
         }
       ]
+    },
+    {
+      "id": "mp-student-任凤辉-颜卫胜",
+      "name": "任凤辉",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "颜掌勺门店厨师长",
+      "source": "https://www.hunantoday.cn/news/xhn/202012/14651150.html",
+      "bio": null,
+      "master": "mp-student-颜卫胜-许菊云",
+      "masters": [
+        {
+          "name": "颜卫胜",
+          "title": "颜掌勺门店厨师长"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-马中仪-颜卫胜",
+      "name": "马中仪",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "颜掌勺厨师",
+      "source": "https://www.hunantoday.cn/news/xhn/202012/14651150.html",
+      "bio": null,
+      "master": "mp-student-颜卫胜-许菊云",
+      "masters": [
+        {
+          "name": "颜卫胜",
+          "title": "颜掌勺厨师"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-张波-颜卫胜",
+      "name": "张波",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "颜掌勺厨师",
+      "source": "https://www.hunantoday.cn/news/xhn/202012/14651150.html",
+      "bio": null,
+      "master": "mp-student-颜卫胜-许菊云",
+      "masters": [
+        {
+          "name": "颜卫胜",
+          "title": "颜掌勺厨师"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-刘金龙-颜卫胜",
+      "name": "刘金龙",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "颜掌勺厨师",
+      "source": "https://www.hunantoday.cn/news/xhn/202012/14651150.html",
+      "bio": null,
+      "master": "mp-student-颜卫胜-许菊云",
+      "masters": [
+        {
+          "name": "颜卫胜",
+          "title": "颜掌勺厨师"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-萧智蘭-颜卫胜",
+      "name": "萧智蘭",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "颜掌勺厨师",
+      "source": "https://www.hunantoday.cn/news/xhn/202012/14651150.html",
+      "bio": null,
+      "master": "mp-student-颜卫胜-许菊云",
+      "masters": [
+        {
+          "name": "颜卫胜",
+          "title": "颜掌勺厨师"
+        }
+      ]
+    },
+    {
+      "id": "mp-student-朱浪-颜卫胜",
+      "name": "朱浪",
+      "isPlaceholder": true,
+      "primaryCuisine": "湘",
+      "title": "颜掌勺厨师",
+      "source": "https://www.hunantoday.cn/news/xhn/202012/14651150.html",
+      "bio": null,
+      "master": "mp-student-颜卫胜-许菊云",
+      "masters": [
+        {
+          "name": "颜卫胜",
+          "title": "颜掌勺厨师"
+        }
+      ]
     }
   ],
   "stats": {
-    "totalChefs": 1535,
-    "realChefs": 1255,
-    "placeholders": 280,
-    "withMaster": 376,
+    "totalChefs": 1537,
+    "realChefs": 1238,
+    "placeholders": 299,
+    "withMaster": 377,
     "withMasterId": 160,
     "withSchool": 59,
     "withSignature": 381,
@@ -57334,11 +56984,11 @@
     "withPortrait": 861,
     "byCuisine": {
       "?": 375,
-      "川": 200,
+      "川": 187,
       "淮扬": 178,
       "粤": 145,
       "鲁": 84,
-      "湘": 71,
+      "湘": 65,
       "豫": 32,
       "滇": 30,
       "陕": 28,
@@ -57371,6 +57021,7 @@
       "蒙": 3,
       "西北": 2,
       "桂": 2,
+      "客家菜": 2,
       "工艺": 1,
       "其他": 1,
       "新疆": 1,
@@ -57385,7 +57036,7 @@
       "近代-当代": 3,
       "民国": 1,
       "近代/当代": 3,
-      "?": 743
+      "?": 726
     },
     "topMastersByApprenticeCount": {
       "郑秀生": 8,

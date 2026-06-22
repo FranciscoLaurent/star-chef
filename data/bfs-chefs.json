@@ -1,170 +1,17 @@
 {
   "chefs": [
     {
-      "name": "童建华",
-      "primaryCuisine": "川菜",
-      "bio": null,
+      "name": "徐和新",
+      "primaryCuisine": "客家菜",
+      "bio": "徐和新，惠州东江客家菜制作技艺代表性传承人，粤菜东江菜十大厨神之一，惠州市烹饪协会副会长，旺园农家饭店创始人。长期深耕东江客家菜领域，是该菜系非遗技艺的代表人物。2025年7月收林烈武为徒，传授东江客家菜制作技艺，致力于东江菜文化的传承与发扬。师承关系与生平详细资料受限于网络检索不可用，暂缺。",
       "signature": [],
       "isPlaceholder": false,
-      "source": "bfs-discover",
+      "source": "https://www.sohu.com/a/918276671_100116740",
       "_bfs": true
     },
     {
-      "name": "赵小林",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "罗俊",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "聂磊",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "管晓宁",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "陈波",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "雷建国",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "胡友国",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "刘云刚",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "舒正权",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "黄爱民",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "郑承佼",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "罗仕富",
-      "primaryCuisine": "川菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "任凤辉",
-      "primaryCuisine": "湘菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "马中仪",
-      "primaryCuisine": "湘菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "张波",
-      "primaryCuisine": "湘菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "刘金龙",
-      "primaryCuisine": "湘菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "萧智蘭",
-      "primaryCuisine": "湘菜",
-      "bio": null,
-      "signature": [],
-      "isPlaceholder": false,
-      "source": "bfs-discover",
-      "_bfs": true
-    },
-    {
-      "name": "朱浪",
-      "primaryCuisine": "湘菜",
+      "name": "林烈武",
+      "primaryCuisine": "客家菜",
       "bio": null,
       "signature": [],
       "isPlaceholder": false,
@@ -173,7 +20,7 @@
     }
   ],
   "stats": {
-    "totalChefs": 19,
-    "totalMasters": 110
+    "totalChefs": 2,
+    "totalMasters": 112
   }
 }
