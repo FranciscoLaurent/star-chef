@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/lineage/lineage",
+    "pages/jobs/jobs",
+    "pages/assistant/assistant",
+    "pages/community/community"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#EDE8DB",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#8B8270",
+    "selectedColor": "#B8321A",
+    "backgroundColor": "#EDE8DB",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/lineage/lineage", "text": "师承谱" },
+      { "pagePath": "pages/jobs/jobs", "text": "招聘" },
+      { "pagePath": "pages/assistant/assistant", "text": "AI助手" },
+      { "pagePath": "pages/community/community", "text": "社区" }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

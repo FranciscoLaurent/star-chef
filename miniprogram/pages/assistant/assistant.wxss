@@ -1,0 +1,150 @@
+/* AI 助手页样式 */
+.page { position: relative; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+.head {
+  position: relative; z-index: 5;
+  padding: 20rpx 32rpx 28rpx;
+  border-bottom: 1rpx solid var(--rule);
+  background: rgba(237, 232, 219, .85);
+}
+.h1 { font-size: 52rpx; margin-top: 10rpx; }
+.em-v { color: var(--vermillion); }
+.head-sub { margin-top: 12rpx; font-size: 24rpx; line-height: 1.7; color: var(--ink-soft); }
+
+.body { flex: 1; position: relative; z-index: 2; padding: 28rpx 32rpx 0; }
+.body-safe { height: 60rpx; }
+
+/* ---------- 一键演示 ---------- */
+.qd {
+  display: flex; align-items: center;
+  border: 2rpx solid var(--vermillion);
+  background: rgba(184, 50, 26, .06);
+  padding: 26rpx 28rpx;
+}
+.qd.running { opacity: .7; }
+.qd-badge {
+  flex: none;
+  font-size: 16rpx; letter-spacing: .2em;
+  color: var(--paper); background: var(--vermillion);
+  padding: 6rpx 14rpx;
+}
+.qd-text { flex: 1; margin-left: 22rpx; }
+.qd-title { font-size: 30rpx; font-weight: 700; color: var(--vermillion); }
+.qd-sub { font-size: 21rpx; color: var(--ink-soft); margin-top: 4rpx; }
+.qd-go { flex: none; font-size: 40rpx; color: var(--vermillion); }
+
+/* ---------- 示例 ---------- */
+.ex-row { display: flex; align-items: center; flex-wrap: wrap; margin-top: 24rpx; }
+.ex-label { font-size: 23rpx; color: var(--dust); margin-right: 14rpx; }
+.ex-row .chip { margin: 0 14rpx 12rpx 0; }
+
+/* ---------- 输入区 ---------- */
+.input-card {
+  margin-top: 16rpx;
+  border: 1rpx solid var(--rule-strong);
+  background: rgba(255, 255, 255, .4);
+}
+.ta {
+  width: 100%;
+  min-height: 220rpx;
+  padding: 26rpx;
+  font-size: 28rpx; line-height: 1.8;
+}
+.ta-ph { color: var(--dust); }
+.ta-foot {
+  display: flex; align-items: center;
+  border-top: 1rpx dashed var(--rule);
+  padding: 14rpx 26rpx;
+}
+.ta-count { font-size: 18rpx; color: var(--dust); }
+.ta-hint { margin-left: auto; font-size: 19rpx; color: var(--dust); }
+
+.gen-btn { width: 100%; margin-top: 24rpx; }
+
+/* ---------- 流式输出 ---------- */
+.raw-out {
+  margin-top: 28rpx;
+  font-family: var(--mono);
+  font-size: 22rpx; line-height: 1.7;
+  color: var(--ink-soft);
+  white-space: pre-wrap;
+  background: rgba(255, 255, 255, .4);
+  border: 1rpx solid var(--rule);
+  padding: 24rpx;
+}
+
+.parse-err {
+  margin-top: 28rpx;
+  color: var(--vermillion);
+  font-size: 26rpx;
+  padding: 32rpx;
+  border: 1rpx solid var(--vermillion);
+}
+.retry { margin-top: 20rpx; }
+
+/* ---------- 档案卡 ---------- */
+.ao-card {
+  margin-top: 32rpx;
+  border: 1rpx solid var(--ink);
+  background: rgba(255, 255, 255, .5);
+  padding: 32rpx;
+}
+.ao-missing {
+  border: 1rpx solid var(--gold);
+  background: rgba(166, 124, 0, .07);
+  padding: 20rpx 24rpx;
+  margin-bottom: 28rpx;
+}
+.ao-missing-bar { height: 10rpx; background: var(--paper-3); overflow: hidden; }
+.ao-missing-fill { height: 100%; background: var(--gold); transition: width .8s cubic-bezier(.2, .8, .2, 1); }
+.ao-missing-head { font-size: 22rpx; color: var(--ink-soft); margin-top: 12rpx; line-height: 1.6; }
+.ao-missing-btn { font-size: 23rpx; color: var(--vermillion); margin-top: 10rpx; }
+
+.ao-name-row { display: flex; align-items: baseline; border-bottom: 2rpx solid var(--ink); padding-bottom: 16rpx; }
+.ao-name { flex: 1; font-size: 48rpx; min-width: 0; }
+.ao-age {
+  width: 110rpx;
+  font-size: 30rpx;
+  text-align: right;
+  border-bottom: 1rpx dashed var(--rule-strong);
+}
+.ao-ph { color: var(--dust); font-size: 24rpx; }
+.ao-age-suf { font-size: 26rpx; margin-left: 8rpx; }
+
+.ao-tags { display: flex; flex-wrap: wrap; margin-top: 18rpx; }
+.ao-tag {
+  font-size: 21rpx; color: var(--moss);
+  border: 1rpx solid var(--moss);
+  padding: 5rpx 18rpx; margin: 0 14rpx 12rpx 0;
+}
+.ao-tag.empty { color: var(--dust); border-color: var(--rule-strong); border-style: dashed; }
+
+.ao-sec { margin-top: 26rpx; }
+.ao-sec-t {
+  font-size: 20rpx; letter-spacing: .2em; color: var(--dust);
+  border-bottom: 1rpx solid var(--rule);
+  padding-bottom: 10rpx;
+}
+.ao-sig { display: flex; flex-wrap: wrap; margin-top: 16rpx; }
+.ao-sig-item {
+  font-size: 25rpx; color: var(--vermillion);
+  background: rgba(184, 50, 26, .08);
+  padding: 8rpx 22rpx; margin: 0 14rpx 14rpx 0;
+}
+.ao-empty { margin-top: 14rpx; font-size: 23rpx; color: var(--dust); border: 1rpx dashed var(--rule-strong); padding: 18rpx; }
+.ao-field {
+  width: 100%;
+  margin-top: 14rpx;
+  font-size: 26rpx; line-height: 1.8;
+  color: var(--ink-soft);
+}
+.ao-field.bio { min-height: 140rpx; }
+.ao-intent { display: flex; flex-wrap: wrap; margin-top: 14rpx; }
+.ao-intent-item {
+  font-size: 25rpx;
+  border: 1rpx solid var(--rule-strong);
+  padding: 8rpx 22rpx; margin: 0 14rpx 14rpx 0;
+}
+
+.ao-actions { display: flex; gap: 20rpx; margin-top: 36rpx; }
+.ao-actions .btn { flex: 1; }

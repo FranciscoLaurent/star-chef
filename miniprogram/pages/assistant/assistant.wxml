@@ -1,0 +1,129 @@
+<!-- AI 求职助手：口述经历 → AI 生成规范求职档案 -->
+<view class="page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="atmosphere"></view>
+
+  <!-- 页头 -->
+  <view class="head">
+    <view class="eyebrow">AI ASSISTANT · 求职助手</view>
+    <view class="h1 serif">说出口，<text class="em-v">即成档案</text></view>
+    <view class="head-sub">不用写简历。像跟老师傅聊天一样说说你的经历，AI 帮你整理成规范求职档案。</view>
+  </view>
+
+  <scroll-view scroll-y class="body">
+    <!-- 一键演示 -->
+    <view class="qd {{demoRunning ? 'running' : ''}}" bindtap="quickDemo">
+      <view class="qd-badge mono">DEMO</view>
+      <view class="qd-text">
+        <view class="qd-title">{{demoLabel}}</view>
+        <view class="qd-sub">自动填入口述示例并生成档案，全流程无人值守</view>
+      </view>
+      <view class="qd-go">→</view>
+    </view>
+
+    <!-- 示例 -->
+    <view class="ex-row">
+      <text class="ex-label">试试示例：</text>
+      <view class="chip" wx:for="{{examples}}" wx:key="key" data-key="{{item.key}}" bindtap="fillExample">{{item.label}}</view>
+    </view>
+
+    <!-- 输入区 -->
+    <view class="input-card">
+      <textarea
+        class="ta"
+        value="{{text}}"
+        bindinput="onTextInput"
+        placeholder="例如：我叫张德海，今年 42，川菜师傅，从 18 岁跟着成都锦江春的陈师傅学炒锅……"
+        placeholder-class="ta-ph"
+        maxlength="800"
+        auto-height
+        disabled="{{demoRunning}}"
+      ></textarea>
+      <view class="ta-foot">
+        <text class="ta-count mono">{{text.length}} / 800</text>
+        <text class="ta-hint">正式版支持语音输入，体验版请打字或点示例</text>
+      </view>
+    </view>
+
+    <button class="btn btn-vermillion gen-btn" bindtap="generate" disabled="{{generating || demoRunning}}">
+      {{generating ? 'AI 生成中…' : '生成求职档案 →'}}
+    </button>
+
+    <!-- 流式原始输出 -->
+    <view class="raw-out caret" wx:if="{{rawOut}}">{{rawOut}}</view>
+
+    <!-- 解析失败 -->
+    <view class="parse-err" wx:if="{{parseError}}">
+      <view>{{parseError}}</view>
+      <button class="btn btn-ghost retry" bindtap="generate">重试</button>
+    </view>
+
+    <!-- 档案卡 -->
+    <view class="ao-card" wx:if="{{card}}">
+      <!-- 完整度提示 -->
+      <view class="ao-missing" wx:if="{{card.missing.length > 0 || card.completeness < 100}}">
+        <view class="ao-missing-bar">
+          <view class="ao-missing-fill" style="width: {{card.completeness}}%;"></view>
+        </view>
+        <view class="ao-missing-head">档案完整度 {{card.completeness}}%<text wx:if="{{card.missing.length}}">，建议补充：{{card.missing.join('、')}}</text></view>
+        <view class="ao-missing-btn" bindtap="fillMissing">补充这些信息 →</view>
+      </view>
+
+      <!-- 姓名行 -->
+      <view class="ao-name-row">
+        <input class="ao-name serif" value="{{card.name || '未命名'}}" data-field="name" bindinput="onCardInput" />
+        <input class="ao-age" type="number" value="{{card.age}}" data-field="age" bindinput="onCardInput" placeholder="年龄" placeholder-class="ao-ph" />
+        <text class="ao-age-suf">岁</text>
+      </view>
+
+      <!-- 标签 -->
+      <view class="ao-tags">
+        <text class="ao-tag" wx:if="{{card.cuisine}}">{{card.cuisine}}菜</text>
+        <text class="ao-tag" wx:if="{{card.city}}">{{card.city}}</text>
+        <text class="ao-tag" wx:if="{{card.years != null}}">{{card.years}}年从业</text>
+        <text class="ao-tag" wx:if="{{card.master}}">师从 {{card.master}}</text>
+        <text class="ao-tag empty" wx:if="{{!card.cuisine && !card.city && !card.years && !card.master}}">基本信息待补充</text>
+      </view>
+
+      <!-- 拿手菜 -->
+      <view class="ao-sec">
+        <view class="ao-sec-t">拿手菜</view>
+        <view class="ao-sig" wx:if="{{card.signature.length}}">
+          <text class="ao-sig-item" wx:for="{{card.signature}}" wx:key="*this">{{item}}</text>
+        </view>
+        <view class="ao-empty" wx:else>未提供，可在上方口述中补充后重新生成</view>
+      </view>
+
+      <!-- 获奖与资质 -->
+      <view class="ao-sec">
+        <view class="ao-sec-t">获奖与资质</view>
+        <textarea class="ao-field" wx:if="{{card.awards.length}}" value="{{card.awards.join('、')}}" auto-height disabled></textarea>
+        <view class="ao-empty" wx:else>未提供，可在上方口述中补充后重新生成</view>
+      </view>
+
+      <!-- 求职意向 -->
+      <view class="ao-sec">
+        <view class="ao-sec-t">求职意向</view>
+        <view class="ao-intent" wx:if="{{card.intent.position || card.intent.city || card.intent.salary}}">
+          <text class="ao-intent-item" wx:if="{{card.intent.position}}">{{card.intent.position}}</text>
+          <text class="ao-intent-item" wx:if="{{card.intent.city}}">{{card.intent.city}}</text>
+          <text class="ao-intent-item" wx:if="{{card.intent.salary}}">{{card.intent.salary}}</text>
+        </view>
+        <view class="ao-empty" wx:else>未提供，可在上方口述中补充后重新生成</view>
+      </view>
+
+      <!-- 自荐信 -->
+      <view class="ao-sec">
+        <view class="ao-sec-t">自荐信</view>
+        <textarea class="ao-field bio" value="{{card.bio}}" data-field="bio" bindinput="onCardInput" auto-height></textarea>
+      </view>
+
+      <!-- 操作 -->
+      <view class="ao-actions">
+        <button class="btn btn-primary" bindtap="publish">发布到招聘广场</button>
+        <button class="btn btn-ghost" bindtap="saveCard">保存为档案</button>
+      </view>
+    </view>
+
+    <view class="body-safe"></view>
+  </scroll-view>
+</view>

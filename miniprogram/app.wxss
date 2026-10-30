@@ -1,0 +1,148 @@
+/* ============================================================
+   星厨传承 小程序 — 全局设计 tokens 与共享样式
+   平移自 星厨传承.html :root 变量（11–49 行）
+   单位全面改用 rpx；不支持的选择器（::before 复杂用法保留、grid 改 flex）
+   ============================================================ */
+page {
+  /* 色板 */
+  --paper: #EDE8DB;
+  --paper-2: #E5DEC8;
+  --paper-3: #DCD3BA;
+  --ink: #12100E;
+  --ink-soft: #3A3530;
+  --vermillion: #B8321A;
+  --moss: #4A5A3F;
+  --dust: #8B8270;
+  --gold: #A67C00;
+  --rule: rgba(18, 16, 14, .16);
+  --rule-strong: rgba(18, 16, 14, .5);
+  /* 字体栈：Fraunces 加载失败时整链降级系统衬线 */
+  --serif: "Fraunces", "Songti SC", "STSong", ui-serif, Georgia, serif;
+  --sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 28rpx;
+  line-height: 1.6;
+  letter-spacing: .02em;
+}
+
+view, text, button, input, textarea, scroll-view { box-sizing: border-box; }
+button { padding: 0; margin: 0; background: none; border: 0; line-height: inherit; font: inherit; color: inherit; }
+button::after { border: 0; }
+
+/* 纸面氛围光（平移 body::before 三层 radial-gradient；噪点 feTurbulence 不支持，省略） */
+.atmosphere {
+  position: fixed; left: 0; top: 0; right: 0; bottom: 0;
+  pointer-events: none; z-index: 1;
+  background:
+    radial-gradient(1000rpx 500rpx at 10% -10%, rgba(184, 50, 26, .08), transparent 60%),
+    radial-gradient(900rpx 500rpx at 95% 5%, rgba(74, 90, 63, .09), transparent 65%),
+    radial-gradient(700rpx 700rpx at 50% 110%, rgba(18, 16, 14, .05), transparent 60%);
+}
+
+/* ---------- 排版工具类 ---------- */
+.serif { font-family: var(--serif); }
+.mono { font-family: var(--mono); }
+.italic { font-style: italic; }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 20rpx;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+}
+.eyebrow::before {
+  content: "";
+  width: 48rpx; height: 1rpx;
+  background: currentColor;
+  margin-right: 20rpx;
+}
+
+/* ---------- 印章（姓氏/派系占位，无头像时用） ---------- */
+.stamp {
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif);
+  color: var(--vermillion);
+  border: 2rpx solid currentColor;
+  background: rgba(184, 50, 26, .05);
+}
+
+/* ---------- 通用按钮 ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 22rpx 40rpx;
+  border: 2rpx solid var(--ink);
+  font-size: 26rpx; letter-spacing: .12em;
+  transition: transform .25s cubic-bezier(.2, .8, .2, 1), background .25s, color .25s;
+}
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-vermillion { background: var(--vermillion); border-color: var(--vermillion); color: var(--paper); }
+.btn-ghost { background: transparent; color: var(--ink); }
+.btn[disabled] { opacity: .45; }
+
+/* ---------- 筛选 chips ---------- */
+.chip {
+  flex: none;
+  padding: 12rpx 26rpx;
+  border: 1rpx solid var(--rule-strong);
+  border-radius: 999rpx;
+  font-size: 24rpx;
+  color: var(--ink-soft);
+  background: rgba(255, 255, 255, .25);
+}
+.chip.on {
+  background: var(--ink); color: var(--paper); border-color: var(--ink);
+}
+.chip.on-v { background: var(--vermillion); border-color: var(--vermillion); color: var(--paper); }
+
+/* ---------- reveal 滚动显现（配合 IntersectionObserver 加 .in） ---------- */
+.reveal { opacity: 0; transform: translateY(48rpx); transition: opacity .7s cubic-bezier(.2, .7, .2, 1), transform .7s cubic-bezier(.2, .7, .2, 1); }
+.reveal.in { opacity: 1; transform: none; }
+
+/* ---------- 顶部脉冲点 ---------- */
+.pulse-dot {
+  display: inline-block; width: 14rpx; height: 14rpx; border-radius: 50%;
+  background: var(--vermillion);
+  box-shadow: 0 0 0 6rpx rgba(184, 50, 26, .18);
+  animation: xc-pulse 2.4s ease-in-out infinite;
+}
+@keyframes xc-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.25); opacity: .7; }
+}
+
+/* ---------- 骨架屏闪烁 ---------- */
+.skeleton { background: var(--paper-3); animation: xc-skel 1.4s ease-in-out infinite; }
+@keyframes xc-skel { 0%, 100% { opacity: .55; } 50% { opacity: .9; } }
+
+/* ---------- 弹层通用 ---------- */
+.sheet-mask {
+  position: fixed; left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(18, 16, 14, .45);
+  z-index: 90;
+  opacity: 1;
+  transition: opacity .3s;
+}
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 91;
+  background: var(--paper);
+  border-top: 2rpx solid var(--ink);
+  border-radius: 24rpx 24rpx 0 0;
+  max-height: 86vh;
+  animation: xc-sheet-in .38s cubic-bezier(.2, .8, .2, 1);
+}
+@keyframes xc-sheet-in { from { transform: translateY(60rpx); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* ---------- 打字光标（流式输出时） ---------- */
+.caret::after {
+  content: "▍";
+  color: var(--vermillion);
+  animation: xc-caret .8s steps(2) infinite;
+}
+@keyframes xc-caret { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }

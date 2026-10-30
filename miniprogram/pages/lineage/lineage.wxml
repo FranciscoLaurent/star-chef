@@ -1,0 +1,220 @@
+<!-- 数字师承谱：V1 菜系网格 / V2 流派·时代 / V3 师承树 + 搜索 + 星图 + 详情弹层 -->
+<view class="page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="atmosphere"></view>
+
+  <!-- 页头 -->
+  <view class="head">
+    <view class="head-row">
+      <view class="back" wx:if="{{level > 1}}" bindtap="goBack">‹ 返回</view>
+      <view class="head-title">
+        <view class="eyebrow">LINEAGE · 师承谱</view>
+        <view class="h1 serif" wx:if="{{level === 1}}">数字师承谱</view>
+        <view class="h1 serif" wx:elif="{{level === 2}}">{{cuisine}}菜</view>
+        <view class="h2 serif" wx:else>{{treeTitle}}</view>
+      </view>
+      <view class="search-btn" bindtap="openSearch">
+        <text class="search-ico">⌕</text>
+      </view>
+    </view>
+    <view class="stats mono" wx:if="{{level === 1}}">
+      {{stats.total}} 位名厨 · {{stats.withMaster}} 段师承 · {{stats.cuisines}} 菜系
+    </view>
+  </view>
+
+  <!-- V1 菜系网格 -->
+  <scroll-view scroll-y class="body" wx:if="{{level === 1}}">
+    <view class="cu-grid">
+      <view
+        wx:for="{{cuisines}}" wx:key="name"
+        class="cu-card reveal in"
+        style="--cu: {{item.color}};"
+        data-cu="{{item.name}}" bindtap="enterCuisine"
+      >
+        <view class="cu-num mono">{{index + 1 < 10 ? '0' + (index + 1) : index + 1}}</view>
+        <view class="cu-stamp stamp" style="color: {{item.color}};">{{item.stamp}}</view>
+        <view class="cu-meta">
+          <text class="cu-name">{{item.name}}</text>
+          <text class="cu-count mono">{{item.count}} CHEFS</text>
+        </view>
+        <view class="cu-schools" wx:if="{{item.schoolCount}}">+ {{item.schoolCount}} 流派</view>
+      </view>
+    </view>
+    <view class="foot-note">数据来自公开可溯源资料 · 持续补全中</view>
+  </scroll-view>
+
+  <!-- V2 流派 / 时代 -->
+  <scroll-view scroll-y class="body" wx:if="{{level === 2}}">
+    <view class="v2-head">
+      <view class="v2-stamp stamp">{{cuisineStamp}}</view>
+      <view class="v2-info">
+        <view class="v2-title serif">{{cuisine}}菜</view>
+        <view class="v2-sub mono">{{schools.length}} SCHOOLS · {{cuisineCount}} CHEFS</view>
+      </view>
+      <view class="v2-tree-btn" bindtap="enterCuisineTree">全菜系师承 ›</view>
+    </view>
+
+    <!-- 流派卡 -->
+    <view class="school-card" wx:for="{{schools}}" wx:key="key" data-key="{{item.key}}" bindtap="enterSchool">
+      <view class="sc-count serif">{{item.memberCount}}</view>
+      <view class="sc-count-label mono">CHEFS</view>
+      <view class="sc-head">
+        <view class="sc-stamp stamp">{{item.stamp}}</view>
+        <view class="sc-names">
+          <view class="sc-name serif">{{item.name}}</view>
+          <view class="sc-sub mono">{{item.subName}} · {{item.en}}</view>
+          <view class="sc-region">{{item.region}}</view>
+        </view>
+      </view>
+      <view class="sc-desc">{{item.desc}}</view>
+      <view class="sc-tags">
+        <text class="sc-tag" wx:for="{{item.styles}}" wx:for-item="t" wx:key="*this">{{t}}</text>
+      </view>
+      <view class="sc-reps" wx:if="{{item.reps.length}}">
+        <text wx:for="{{item.reps}}" wx:for-item="r" wx:key="id" class="sc-rep">{{r.name}}</text>
+      </view>
+    </view>
+
+    <!-- 时代分组（未归入流派） -->
+    <block wx:if="{{eraGroups.length}}">
+      <view class="era-label eyebrow">{{schools.length ? '未归入流派 · 按时代' : '按时代分组'}}</view>
+      <view class="era-group" wx:for="{{eraGroups}}" wx:key="era">
+        <view class="era-head">
+          <text class="era-zh serif">{{item.era}}</text>
+          <text class="era-n mono">{{item.count}}</text>
+        </view>
+        <view class="era-chefs">
+          <view class="era-chef" wx:for="{{item.chefs}}" wx:for-item="c" wx:key="id" data-id="{{c.id}}" bindtap="openDetail">
+            <view class="ec-stamp stamp">{{c.stamp}}</view>
+            <view class="ec-info">
+              <view class="ec-name">{{c.name}}<text class="ec-ph" wx:if="{{c.isPlaceholder}}"> ·</text></view>
+              <view class="ec-sub">{{c.sub}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- V3 师承树 -->
+  <view class="v3" wx:if="{{level === 3}}">
+    <view class="v3-bar">
+      <view class="lm-btn on" bindtap="togglePanorama">{{panoramaOn ? '宗谱' : '星图'}}</view>
+      <view class="v3-count mono">{{treeRows.length}} 人</view>
+    </view>
+
+    <canvas type="2d" id="panorama" class="panorama" wx:if="{{panoramaOn}}"></canvas>
+
+    <scroll-view scroll-y class="tree-body" wx:if="{{!panoramaOn}}">
+      <view class="tree-empty" wx:if="{{treeEmpty}}">该分支暂未收录师承关系，试试搜索或换个菜系</view>
+      <view
+        wx:for="{{treeRows}}" wx:key="id"
+        class="tr-row {{item.focus ? 'focus' : ''}}"
+        style="padding-left: {{24 + item.depth * 44}}rpx;"
+        data-id="{{item.id}}" bindtap="openDetail"
+      >
+        <view class="tr-line" wx:if="{{item.depth > 0}}"></view>
+        <view class="tr-stamp stamp">{{item.stamp}}</view>
+        <view class="tr-info">
+          <view class="tr-name">{{item.name}}<text class="tr-era mono" wx:if="{{item.era}}">{{item.era}}</text></view>
+          <view class="tr-sub" wx:if="{{item.sub}}">{{item.sub}}</view>
+        </view>
+        <view class="tr-arrow">›</view>
+      </view>
+      <view class="foot-note">点击人物查看师承脉络与 AI 推断</view>
+    </scroll-view>
+  </view>
+
+  <!-- 搜索弹层 -->
+  <view class="sheet-mask" wx:if="{{searchOpen}}" bindtap="closeSearch"></view>
+  <view class="search-panel" wx:if="{{searchOpen}}">
+    <view class="sp-bar">
+      <input
+        class="sp-input" focus placeholder="姓名 / 拼音（如 liudehua、ldh）"
+        placeholder-class="sp-ph"
+        value="{{searchQuery}}" bindinput="onSearchInput"
+      />
+      <view class="sp-close" bindtap="closeSearch">取消</view>
+    </view>
+    <scroll-view scroll-y class="sp-list">
+      <view class="sp-hint" wx:if="{{searchHint}}">支持全拼 / 首字母 / 中文姓名，共 {{stats.total}} 位名厨</view>
+      <view class="sp-none" wx:if="{{!searchHint && searchResults.length === 0}}">未找到「{{searchQuery}}」，换个关键词试试</view>
+      <view class="sp-item" wx:for="{{searchResults}}" wx:key="id" data-id="{{item.id}}" bindtap="pickSearchResult">
+        <view class="sp-stamp stamp">{{item.stamp}}</view>
+        <view class="sp-info">
+          <view class="sp-name">{{item.name}}<text class="sp-py mono">{{item.py}}</text></view>
+          <view class="sp-sub">{{item.sub}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 人物详情弹层 -->
+  <view class="sheet-mask" wx:if="{{detail}}" bindtap="closeDetail"></view>
+  <view class="sheet detail-sheet" wx:if="{{detail}}">
+    <scroll-view scroll-y class="ds-scroll">
+      <view class="ds-head">
+        <image wx:if="{{detail.portrait}}" class="ds-portrait" src="{{detail.portrait}}" mode="aspectFill" lazy-load></image>
+        <view wx:else class="ds-portrait ds-stamp stamp">{{detail.stamp}}</view>
+        <view class="ds-title">
+          <view class="ds-name serif">{{detail.name}}</view>
+          <view class="ds-tags">
+            <text class="ds-tag" wx:if="{{detail.cuisine}}">{{detail.cuisine}}菜</text>
+            <text class="ds-tag" wx:if="{{detail.schoolName}}">{{detail.schoolName}}</text>
+            <text class="ds-tag" wx:if="{{detail.era}}">{{detail.era}}</text>
+            <text class="ds-tag gold" wx:for="{{detail.titles}}" wx:for-item="t" wx:key="*this">{{t}}</text>
+          </view>
+          <view class="ds-meta">{{detail.span}}{{detail.span && detail.birthplace ? ' · ' : ''}}{{detail.birthplace}}</view>
+        </view>
+        <view class="ds-close" bindtap="closeDetail">✕</view>
+      </view>
+
+      <!-- 师承脉络 -->
+      <view class="ds-sec" wx:if="{{detailChain.length > 1 || detail.masterName}}">
+        <view class="ds-sec-t eyebrow">师承脉络</view>
+        <view class="ds-chain">
+          <block wx:for="{{detailChain}}" wx:key="id">
+            <text class="ds-chain-node {{item.self ? 'self' : ''}}" data-id="{{item.id}}" bindtap="jumpChef">{{item.name}}</text>
+            <text class="ds-chain-sep" wx:if="{{index < detailChain.length - 1}}">→</text>
+          </block>
+        </view>
+      </view>
+
+      <!-- 门下徒弟 -->
+      <view class="ds-sec" wx:if="{{detailApprentices.length}}">
+        <view class="ds-sec-t eyebrow">门下徒弟 · {{detailApprentices.length}}</view>
+        <view class="ds-apps">
+          <view class="ds-app" wx:for="{{detailApprentices}}" wx:key="id" data-id="{{item.id}}" bindtap="jumpChef">
+            <view class="ds-app-stamp stamp">{{item.stamp}}</view>
+            <text class="ds-app-name">{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 任职与简介 -->
+      <view class="ds-sec" wx:if="{{detail.restaurant || detail.position}}">
+        <view class="ds-sec-t eyebrow">现任职</view>
+        <view class="ds-role">{{detail.restaurant}}<text wx:if="{{detail.restaurant && detail.position}}"> · </text>{{detail.position}}</view>
+      </view>
+      <view class="ds-sec" wx:if="{{detail.signature.length}}">
+        <view class="ds-sec-t eyebrow">拿手菜</view>
+        <view class="ds-sig">
+          <text class="ds-sig-item" wx:for="{{detail.signature}}" wx:key="*this">{{item}}</text>
+        </view>
+      </view>
+      <view class="ds-sec" wx:if="{{detail.bio}}">
+        <view class="ds-sec-t eyebrow">简介</view>
+        <view class="ds-bio">{{detail.bio}}</view>
+      </view>
+
+      <!-- AI 推断 -->
+      <view class="ds-ai">
+        <button class="btn btn-vermillion ds-ai-btn" bindtap="aiInfer" disabled="{{aiBusy}}">
+          {{aiBusy ? 'AI 推断中…' : (aiText ? '重新推断' : '✨ AI 推断师承关系')}}
+        </button>
+        <view class="ds-ai-out {{aiBusy ? 'caret' : ''}}" wx:if="{{aiText}}">{{aiText}}</view>
+        <view class="ds-ai-note" wx:if="{{aiText && !aiBusy}}">演示环境为本地 AI 模拟输出</view>
+      </view>
+      <view class="ds-safe"></view>
+    </scroll-view>
+  </view>
+</view>

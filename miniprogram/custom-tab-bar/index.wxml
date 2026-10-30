@@ -1,0 +1,15 @@
+<!-- 自定义 tabBar：编号 + 中文标签，激活项朱砂红（平移网页版 nav 的编号语言） -->
+<view class="tabbar">
+  <view
+    wx:for="{{list}}"
+    wx:key="path"
+    class="tab {{selected === index ? 'on' : ''}}"
+    data-index="{{index}}"
+    data-path="{{item.pagePath}}"
+    bindtap="switchTab"
+  >
+    <text class="num mono">{{item.num}}</text>
+    <text class="label">{{item.text}}</text>
+    <view class="bar" wx:if="{{selected === index}}"></view>
+  </view>
+</view>

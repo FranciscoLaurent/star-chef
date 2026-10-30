@@ -1,0 +1,17 @@
+{
+  "description": "星厨传承 — 以师承关系为信任底层的厨师职业平台（体验版演示）",
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "appid": "touristappid",
+  "projectname": "star-chef",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "coverView": true,
+    "ignoreUploadUnusedFiles": true
+  },
+  "condition": {}
+}

@@ -1,0 +1,148 @@
+<!-- 厨师社区：分类 tabs + 双列瀑布流 + 详情 + 发帖（AI 整理） -->
+<view class="page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="atmosphere"></view>
+
+  <!-- 页头 -->
+  <view class="head">
+    <view class="eyebrow">COMMUNITY · 厨师社区</view>
+    <view class="head-row">
+      <view class="h1 serif">灶台边的<text class="em-v">圈子</text></view>
+    </view>
+  </view>
+
+  <!-- 分类 tabs -->
+  <scroll-view scroll-x class="tabs" enhanced show-scrollbar="{{false}}">
+    <view class="ct-btn {{activeType === item.key ? 'on' : ''}}"
+      wx:for="{{tabs}}" wx:key="key" data-type="{{item.key}}" bindtap="switchType">{{item.label}}</view>
+  </scroll-view>
+
+  <!-- 双列瀑布流 -->
+  <scroll-view scroll-y class="grid">
+    <view class="grid-inner">
+      <view class="col" wx:for="{{columns}}" wx:for-item="col" wx:key="index">
+        <view class="card" wx:for="{{col}}" wx:for-item="p" wx:key="id" data-id="{{p.id}}" bindtap="openDetail">
+          <view class="card-head">
+            <view class="avatar stamp">{{p.authorStamp}}</view>
+            <view class="card-author">
+              <view class="ca-name">{{p.authorName}}</view>
+              <view class="ca-meta">{{p.cuisine}}菜 · {{p.time}}</view>
+            </view>
+            <view class="type-badge t-{{p.type}}">{{p.typeName}}</view>
+          </view>
+          <view class="card-title">{{p.title}}</view>
+          <view class="card-body">{{p.body}}</view>
+          <!-- 招徒/求职结构条 -->
+          <view class="struct" wx:if="{{p.isRecruitLike && (p.position || p.salary || p.city)}}">
+            <text class="struct-item" wx:if="{{p.position}}">{{p.position}}</text>
+            <text class="struct-item salary" wx:if="{{p.salary}}">{{p.salary}}</text>
+            <text class="struct-item" wx:if="{{p.city}}">{{p.city}}</text>
+          </view>
+          <view class="card-ops">
+            <view class="op {{p.liked ? 'liked' : ''}}" catchtap="toggleLike" data-id="{{p.id}}">♥ {{p.likeCount}}</view>
+            <view class="op">💬 {{p.commentCount}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="grid-empty" wx:if="{{columns[0].length === 0 && columns[1].length === 0}}">该分类还没有帖子，来发第一条吧</view>
+    <view class="grid-safe"></view>
+  </scroll-view>
+
+  <!-- 发帖 FAB -->
+  <view class="fab" bindtap="openModal">＋</view>
+
+  <!-- 帖子详情弹层 -->
+  <view class="sheet-mask" wx:if="{{detail}}" bindtap="closeDetail"></view>
+  <view class="sheet" wx:if="{{detail}}">
+    <scroll-view scroll-y class="dd-scroll">
+      <view class="dd-head">
+        <view class="avatar stamp">{{detail.authorStamp}}</view>
+        <view class="dd-author">
+          <view class="ca-name">{{detail.authorName}}</view>
+          <view class="ca-meta">{{detail.cuisine}}菜 · {{detail.time}}</view>
+        </view>
+        <view class="type-badge t-{{detail.type}}">{{detail.typeName}}</view>
+        <view class="dd-close" bindtap="closeDetail">✕</view>
+      </view>
+      <view class="dd-title serif">{{detail.title}}</view>
+      <view class="struct" wx:if="{{detail.isRecruitLike && (detail.position || detail.salary || detail.city)}}">
+        <text class="struct-item" wx:if="{{detail.position}}">{{detail.position}}</text>
+        <text class="struct-item salary" wx:if="{{detail.salary}}">{{detail.salary}}</text>
+        <text class="struct-item" wx:if="{{detail.city}}">{{detail.city}}</text>
+      </view>
+      <view class="dd-body">{{detail.body}}</view>
+      <view class="dd-ops">
+        <view class="op {{detail.liked ? 'liked' : ''}}" bindtap="toggleLike" data-id="{{detail.id}}">♥ {{detail.likeCount}}</view>
+        <view class="op">💬 {{detail.commentCount}}</view>
+      </view>
+
+      <!-- 评论 -->
+      <view class="cm-sec">
+        <view class="cm-title eyebrow">评论 · {{detailComments.length}}</view>
+        <view class="cm-empty" wx:if="{{detailComments.length === 0}}">还没有评论，说两句吧</view>
+        <view class="cm-item" wx:for="{{detailComments}}" wx:key="index">
+          <text class="cm-author">{{item.author}}</text>
+          <text class="cm-text">{{item.text}}</text>
+        </view>
+      </view>
+      <view class="dd-safe"></view>
+    </scroll-view>
+    <!-- 评论输入 -->
+    <view class="cm-bar">
+      <input class="cm-input" placeholder="写下你的评论…" placeholder-class="cm-ph"
+        value="{{commentText}}" bindinput="onCommentInput" confirm-type="send" bindconfirm="addComment" />
+      <view class="cm-send" bindtap="addComment">发送</view>
+    </view>
+  </view>
+
+  <!-- 发帖弹层 -->
+  <view class="sheet-mask" wx:if="{{modalOpen}}" bindtap="closeModal"></view>
+  <view class="sheet" wx:if="{{modalOpen}}">
+    <scroll-view scroll-y class="fm-scroll">
+      <view class="fm-head">
+        <view class="fm-title serif">发一条帖子</view>
+        <view class="fm-close" bindtap="closeModal">✕</view>
+      </view>
+
+      <!-- 类型 -->
+      <view class="fm-label">类型</view>
+      <view class="fm-types">
+        <view class="chip {{form.type === item.key ? 'on' : ''}}"
+          wx:for="{{tabs}}" wx:key="key" wx:if="{{item.key !== 'all'}}"
+          data-type="{{item.key}}" bindtap="pickType">{{item.label}}</view>
+      </view>
+
+      <!-- 菜系 -->
+      <view class="fm-label">菜系</view>
+      <picker class="fm-picker" range="{{cuisines}}" value="{{cuisineIndex}}" bindchange="pickCuisine">
+        <view class="fm-picker-val">{{form.cuisine}}菜 ▾</view>
+      </picker>
+
+      <!-- 标题 -->
+      <view class="fm-label">标题</view>
+      <input class="fm-input" placeholder="一句话说清楚" placeholder-class="fm-ph"
+        value="{{form.title}}" data-field="title" bindinput="onFormInput" maxlength="40" />
+
+      <!-- 正文 + AI 整理 -->
+      <view class="fm-label row">
+        <text>正文</text>
+        <view class="fm-ai" bindtap="aiOrganize">{{aiBusy ? 'AI 整理中…' : '✨ AI 整理'}}</view>
+      </view>
+      <textarea class="fm-textarea" placeholder="随便写，口语也行——写完点「AI 整理」自动变成规范帖子"
+        placeholder-class="fm-ph" value="{{form.body}}" data-field="body" bindinput="onFormInput" maxlength="500"></textarea>
+
+      <!-- 招徒/求职结构字段 -->
+      <block wx:if="{{form.type === 'recruit' || form.type === 'jobseek'}}">
+        <view class="fm-label">补充信息（选填）</view>
+        <view class="fm-struct">
+          <input class="fm-input half" placeholder="职位" placeholder-class="fm-ph" value="{{form.position}}" data-field="position" bindinput="onFormInput" />
+          <input class="fm-input half" placeholder="薪资（如 12K-18K）" placeholder-class="fm-ph" value="{{form.salary}}" data-field="salary" bindinput="onFormInput" />
+          <input class="fm-input half" placeholder="城市" placeholder-class="fm-ph" value="{{form.city}}" data-field="city" bindinput="onFormInput" />
+        </view>
+      </block>
+
+      <button class="btn btn-vermillion fm-publish" bindtap="publish">发布</button>
+      <view class="fm-safe"></view>
+    </scroll-view>
+  </view>
+</view>

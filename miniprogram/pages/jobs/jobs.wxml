@@ -1,0 +1,157 @@
+<!-- 智能招聘匹配：角色切换 + 筛选 + 匹配列表 + 详情弹层（四维拆解 + AI 解释） -->
+<view class="page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="atmosphere"></view>
+
+  <!-- 页头 -->
+  <view class="head">
+    <view class="eyebrow">MATCHING · 智能匹配</view>
+    <view class="head-row">
+      <view class="h1 serif">招聘广场</view>
+      <!-- 角色切换 -->
+      <view class="role-switch">
+        <view class="jt-btn {{role === 'chef' ? 'on' : ''}}" data-role="chef" bindtap="switchRole">厨师找岗</view>
+        <view class="jt-btn {{role === 'employer' ? 'on' : ''}}" data-role="employer" bindtap="switchRole">餐厅找人</view>
+      </view>
+    </view>
+    <!-- 基准身份 / 目标岗位 -->
+    <view class="basis" data-type="{{role === 'chef' ? 'me' : 'job'}}" bindtap="openPicker">
+      <text class="basis-label">{{role === 'chef' ? '当前身份' : '目标岗位'}}</text>
+      <text class="basis-value" wx:if="{{role === 'chef'}}">{{me.name}} · {{me.position}} · {{me.city}}</text>
+      <text class="basis-value" wx:else>{{targetJob.employer}} · {{targetJob.position}} · {{targetJob.city}}</text>
+      <text class="basis-arrow">切换 ›</text>
+    </view>
+  </view>
+
+  <!-- 筛选 -->
+  <view class="filters">
+    <scroll-view scroll-x class="chip-row" enhanced show-scrollbar="{{false}}">
+      <view class="chip {{activeCuisines.indexOf(item) > -1 ? 'on' : ''}}"
+        wx:for="{{cuisines}}" wx:key="*this" data-cu="{{item}}" bindtap="toggleCuisine">{{item}}菜</view>
+    </scroll-view>
+    <scroll-view scroll-x class="chip-row" enhanced show-scrollbar="{{false}}">
+      <view class="chip {{activeCity === item ? 'on-v' : ''}}"
+        wx:for="{{cities}}" wx:key="*this" data-city="{{item}}" bindtap="toggleCity">{{item}}</view>
+    </scroll-view>
+  </view>
+
+  <view class="list-note mono">{{listNote}} · 共 {{list.length}} 条</view>
+
+  <!-- 匹配列表 -->
+  <scroll-view scroll-y class="list">
+    <view class="empty" wx:if="{{list.length === 0}}">当前筛选无结果，放宽条件试试</view>
+    <view class="card" wx:for="{{list}}" wx:key="key" data-kind="{{item.kind}}" data-id="{{item.id}}" bindtap="openDetail">
+      <view class="card-stamp stamp" wx:if="{{item.kind === 'chef'}}">{{item.stamp}}</view>
+      <view class="card-stamp stamp job-stamp" wx:else>{{item.sub.charAt(0)}}</view>
+      <view class="card-body">
+        <view class="card-title">{{item.title}}</view>
+        <view class="card-sub">{{item.sub}}</view>
+        <view class="card-tags">
+          <text class="card-salary">{{item.salary}}</text>
+          <text class="card-pref" wx:if="{{item.pref}}">{{item.pref}}</text>
+        </view>
+      </view>
+      <view class="card-score">
+        <view class="cs-n serif {{item.score >= 70 ? 'hot' : ''}}">{{item.score}}</view>
+        <view class="cs-label">{{item.verdict}}</view>
+      </view>
+    </view>
+    <view class="list-safe"></view>
+  </scroll-view>
+
+  <!-- 详情弹层 -->
+  <view class="sheet-mask" wx:if="{{detail}}" bindtap="closeDetail"></view>
+  <view class="sheet" wx:if="{{detail}}">
+    <scroll-view scroll-y class="dt-scroll">
+      <!-- 双方信息 -->
+      <view class="dt-pair">
+        <view class="dt-side">
+          <view class="dt-stamp stamp">{{detail.chefStamp}}</view>
+          <view class="dt-name serif">{{detail.chef.name}}</view>
+          <view class="dt-sub">{{detail.chef.position}} · {{detail.chef.city}}</view>
+          <view class="dt-sub">{{detail.chef.cuisine}}菜 · {{detail.chefFamily}} · {{detail.chef.salaryRange}}</view>
+        </view>
+        <view class="dt-vs mono">VS</view>
+        <view class="dt-side">
+          <view class="dt-stamp stamp job-stamp">{{detail.job.cuisine}}</view>
+          <view class="dt-name serif">{{detail.job.position}}</view>
+          <view class="dt-sub">{{detail.job.employer}} · {{detail.job.city}}</view>
+          <view class="dt-sub">{{detail.jobType}} · {{detail.job.salary}}{{detail.jobPref ? ' · 偏好' + detail.jobPref : ''}}</view>
+        </view>
+      </view>
+
+      <!-- 匹配度 -->
+      <view class="dt-score-row">
+        <view class="dt-score serif">{{detailScore}}</view>
+        <view class="dt-verdict">{{detailVerdict}}</view>
+      </view>
+
+      <!-- 四维拆解 -->
+      <view class="dt-sec-t eyebrow">匹配度拆解 · AI 可解释</view>
+      <view class="dim" wx:for="{{detailDims}}" wx:key="key">
+        <view class="dim-head">
+          <text class="dim-key">{{item.key}}<text class="dim-en mono">{{item.en}}</text></text>
+          <text class="dim-score mono">{{item.score}} / {{item.max}}</text>
+        </view>
+        <view class="dim-bar">
+          <view class="dim-fill" style="width: {{item.shown || 0}}%;"></view>
+        </view>
+        <view class="dim-reason">{{item.reason}}</view>
+      </view>
+
+      <!-- 岗位要求 / 厨师简介 -->
+      <view class="dt-sec-t eyebrow" wx:if="{{detail.kind === 'job'}}">岗位要求</view>
+      <view class="dt-req" wx:if="{{detail.kind === 'job'}}">
+        <view class="dt-req-item" wx:for="{{detail.job.requirements}}" wx:key="*this">· {{item}}</view>
+        <view class="dt-desc">{{detail.job.desc}}</view>
+      </view>
+      <view class="dt-sec-t eyebrow" wx:else>厨师档案</view>
+      <view class="dt-req" wx:if="{{detail.kind === 'chef'}}">
+        <view class="dt-desc">{{detail.chef.bio}}</view>
+        <view class="dt-req-item" wx:for="{{detail.chef.signature}}" wx:key="*this">· {{item}}</view>
+      </view>
+
+      <!-- 对侧 Top3 推荐 -->
+      <view class="dt-sec-t eyebrow">{{detail.kind === 'job' ? '该岗位推荐人选 · TOP 3' : '适合此人的岗位 · TOP 3'}}</view>
+      <view class="rec" wx:for="{{recs}}" wx:key="id">
+        <view class="rec-info">
+          <view class="rec-name">{{item.name}}</view>
+          <view class="rec-sub">{{item.sub}}</view>
+        </view>
+        <view class="rec-score mono">{{item.score}}</view>
+      </view>
+
+      <!-- AI 解释 -->
+      <view class="dt-ai">
+        <button class="btn btn-vermillion dt-ai-btn" bindtap="aiExplain" disabled="{{aiBusy}}">
+          {{aiBusy ? 'AI 分析中…' : (aiText ? '重新分析' : '✨ AI 解释为什么推荐')}}
+        </button>
+        <view class="dt-ai-out {{aiBusy ? 'caret' : ''}}" wx:if="{{aiText}}">{{aiText}}</view>
+      </view>
+
+      <button class="btn btn-primary dt-apply" bindtap="applyNow">
+        {{role === 'chef' ? '投递简历' : '联系这位厨师'}}
+      </button>
+      <view class="dt-close" bindtap="closeDetail">✕ 关闭</view>
+      <view class="dt-safe"></view>
+    </scroll-view>
+  </view>
+
+  <!-- 身份 / 岗位选择器 -->
+  <view class="sheet-mask" wx:if="{{pickerOpen}}" bindtap="closePicker"></view>
+  <view class="sheet picker" wx:if="{{pickerOpen}}">
+    <view class="pk-head">
+      <view class="pk-title serif">{{pickerType === 'me' ? '选择你的身份' : '选择目标岗位'}}</view>
+      <view class="pk-close" bindtap="closePicker">✕</view>
+    </view>
+    <view class="pk-search">
+      <input class="pk-input" placeholder="搜索姓名 / 职位 / 餐厅" placeholder-class="pk-ph"
+        value="{{pickerQuery}}" bindinput="onPickerInput" />
+    </view>
+    <scroll-view scroll-y class="pk-list">
+      <view class="pk-item" wx:for="{{pickerList}}" wx:key="id" data-id="{{item.id}}" bindtap="pickItem">
+        <view class="pk-item-title">{{item.title}}</view>
+        <view class="pk-item-sub">{{item.sub}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

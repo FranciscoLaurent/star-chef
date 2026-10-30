@@ -1,0 +1,243 @@
+<!-- 首页：品牌叙事长页（文案与网页版一致） -->
+<view class="page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="atmosphere"></view>
+
+  <!-- 顶栏 -->
+  <view class="topbar">
+    <view class="wm-stamp stamp">厨</view>
+    <view class="wm-text">
+      <view class="wm-name serif">星厨传承</view>
+      <view class="wm-sub mono">STAR CHEF LINEAGE</view>
+    </view>
+    <view class="top-right mono"><text class="pulse-dot"></text> 社会服务赛道</view>
+  </view>
+
+  <scroll-view scroll-y class="home-scroll" enhanced show-scrollbar="{{false}}">
+    <!-- Hero -->
+    <view class="hero">
+      <view class="hero-meta">
+        <view class="hm-item">社会服务赛道<text class="hm-sub">TRAE AI 创造力大赛 · 2026</text></view>
+        <view class="hm-item">核心能力<text class="hm-sub">师承网络 · 智能匹配 · 就业机会</text></view>
+        <view class="hm-item">平台定位<text class="hm-sub">厨师专属职业平台</text></view>
+        <view class="hm-item">项目状态<text class="hm-sub">概念设计阶段</text></view>
+      </view>
+
+      <view class="hero-main">
+        <view class="hero-h1">
+          <view class="line serif {{heroIn ? 'in' : ''}}" style="transition-delay:.0s">记录一门手艺</view>
+          <view class="line serif {{heroIn ? 'in' : ''}}" style="transition-delay:.18s">连接一份工作</view>
+          <view class="line serif em {{heroIn ? 'in' : ''}}" style="transition-delay:.36s">以师承为信。</view>
+        </view>
+        <!-- 旋转钢印（SVG textPath 不支持，CSS 环形章替代） -->
+        <view class="seal-tag">
+          <view class="seal-ring"></view>
+          <view class="seal-inner">
+            <view class="seal-y serif">师承</view>
+            <view class="seal-y serif">为信</view>
+            <view class="seal-t mono">EST · 2026</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="hero-lead">
+        星厨传承为两千万中国厨师建立一个<text class="b">以师承关系为信任网络</text>的职业平台。<text class="em-v">数字师承谱</text>记录手艺出处，<text class="em-v">智能招聘匹配</text>创造真实就业机会。
+      </view>
+      <view class="hero-side">
+        在餐饮行业，"你是谁带的"往往比"你在哪里干过"更重要。我们将这套流传百年的行业信任规则数字化，让每一份手艺都被看见，让每一位厨师都有出路。
+      </view>
+      <view class="hero-sign serif">手艺的尊严，<text class="sign-sub">从被记录开始</text></view>
+
+      <view class="hero-cta">
+        <button class="btn btn-primary" data-tab="/pages/lineage/lineage" bindtap="navTo">了解方案 →</button>
+        <button class="btn btn-ghost" data-tab="/pages/assistant/assistant" bindtap="navTo">进入产品体验 →</button>
+      </view>
+    </view>
+
+    <!-- 走马灯 -->
+    <view class="marquee">
+      <view class="marquee-track">
+        <text class="mq-text serif">{{marquee}}{{marquee}}</text>
+      </view>
+    </view>
+
+    <!-- §01 问题宣言 -->
+    <view class="sec">
+      <view class="sec-head">
+        <view class="sec-num mono">§ 01</view>
+        <view class="sec-h2 serif">一个被忽视的<text class="em-v">两千万人</text>群体。</view>
+        <view class="sec-right">数据来源：中国烹饪协会 · 餐饮行业报告</view>
+      </view>
+      <view class="prob-label rv-0 reveal {{in.rv0 ? 'in' : ''}}">
+        <view class="prob-big serif">问题不在手艺，在连接。</view>
+        <view class="prob-note">现有招聘工具懂白领，但不懂厨师。</view>
+      </view>
+      <view class="prob-text rv-1 reveal {{in.rv1 ? 'in' : ''}}">
+        <view class="p">中国厨师从业者超过两千万，但绝大多数人找工作仍靠<text class="em-v">熟人介绍</text>。一份标准简历写不出火候、刀工、菜系渊源；一次半小时面试也试不出一个人背后的师承与修行。</view>
+        <view class="p">对雇主而言，这意味着<text class="em-v">高试错成本</text>。对厨师而言，这意味着机会被地域、人脉、表达能力牢牢限制。很多手艺扎实的人，因为不在某个圈子里，就被挡在好岗位之外。</view>
+        <view class="p">星厨传承从这套行业最底层的人际关系出发，把<text class="mark">师承网络</text>变成可验证、可搜索、可匹配的职业基础设施。</view>
+        <view class="pull serif">最好的厨师，不该因为没有介绍人而被埋没。</view>
+        <view class="p">我们相信，当手艺的出处被记录、被看见、被信任，厨师这个群体就能获得更公平、更广阔的职业通路。</view>
+      </view>
+    </view>
+
+    <!-- §01.5 田野故事 -->
+    <view class="sec">
+      <view class="sec-head">
+        <view class="sec-num mono">§ 01.5</view>
+        <view class="sec-h2 serif">一个具体的人，叫<text class="em-v">陈守德</text>。</view>
+        <view class="sec-right">田野故事 / Field Story · 记录于 2025 年 11 月 · 福建漳州</view>
+      </view>
+      <view class="story-card rv-2 reveal {{in.rv2 ? 'in' : ''}}">
+        <view class="story-meta mono">闽菜 · 56 岁 · 从厨 38 年 · 师承漳州福满楼林师傅</view>
+        <view class="story-h3 serif">"我会做<text class="em-gold">三十六道</text>古早菜，但简历只能写<text class="em-gold">八个字</text>。"</view>
+        <view class="story-quote">他们问我会什么菜系，我说闽南古早。他们就说，这个我们系统没有。</view>
+        <view class="story-p">陈师傅 18 岁拜入福满楼林师傅门下，学的是漳州沿海做法，鸡卷、五香、土笋冻，每一道都讲究火候和发酵时间。</view>
+        <view class="story-p">2024 年酒楼歇业，他想换城市继续做。可是<text class="em-gold">主流招聘平台只让选"中餐"或"地方菜"</text>，连"漳州古早"这个标签都没有。投了 47 份简历，回复 3 份。最后一份还是同门师弟在群里转的。</view>
+        <view class="story-p">"我这一辈子就这一门手艺，但没有人替我说话，这门手艺就只值八千块一个月。"</view>
+        <view class="story-tags">
+          <text class="story-tag">厨龄 38 年</text>
+          <text class="story-tag">师承 4 代可追溯</text>
+          <text class="story-tag">投递回复率 6%</text>
+        </view>
+      </view>
+      <view class="story-stats">
+        <view class="ss-item rv-3 reveal {{in.rv3 ? 'in' : ''}}" wx:for="{{storyStats}}" wx:key="label">
+          <view class="ss-n serif">{{item.n}}</view>
+          <view class="ss-label">{{item.label}}</view>
+          <view class="ss-desc">{{item.desc}}</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- §02 能力索引 -->
+    <view class="sec">
+      <view class="sec-head">
+        <view class="sec-num mono">§ 02</view>
+        <view class="sec-h2 serif">平台能力<text class="em-v">索引</text>。</view>
+        <view class="sec-right">六大模块 · 两条主线 · 传承与招聘相互增强</view>
+      </view>
+      <view class="ix-list">
+        <view
+          class="ix-item rv-4 reveal {{in.rv4 ? 'in' : ''}}"
+          wx:for="{{features}}" wx:key="ix"
+          data-tab="{{item.tab}}" bindtap="navTo"
+        >
+          <view class="ix-num mono">{{item.ix}}</view>
+          <view class="ix-body">
+            <view class="ix-name serif">{{item.name}}<text class="ix-tag" wx:if="{{item.tag}}">{{item.tag}}</text></view>
+            <view class="ix-desc">{{item.desc}}</view>
+          </view>
+          <view class="ix-meta mono">{{item.meta}}</view>
+          <view class="ix-go">→</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- §03 双支柱 -->
+    <view class="sec">
+      <view class="sec-head">
+        <view class="sec-num mono">§ 03</view>
+        <view class="sec-h2 serif">两大核心，相互<text class="em-v">增强</text>。</view>
+        <view class="sec-right">传承为招聘提供信任 · 招聘为传承创造经济价值</view>
+      </view>
+      <view class="pillar rv-5 reveal {{in.rv5 ? 'in' : ''}}">
+        <view class="pl-num mono">01 / 传承主线</view>
+        <view class="pl-h3 serif">数字<text class="em-v">师承谱</text></view>
+        <view class="pl-p">把厨师行业最核心的信任资产——师承关系——数字化。每位厨师都可以建立自己的师承档案，师傅可以认证徒弟，平台通过多节点交叉验证确保真实性。</view>
+        <view class="pl-li">可视化师承树，追溯派系源流</view>
+        <view class="pl-li">师傅认证 + 同行背书机制</view>
+        <view class="pl-li">按菜系、地域、代际筛选</view>
+        <view class="pl-li">师门动态：收徒、出师、任职</view>
+        <button class="btn btn-ghost pl-btn" data-tab="/pages/lineage/lineage" bindtap="navTo">进入师承谱 →</button>
+      </view>
+      <view class="pillar rv-6 reveal {{in.rv6 ? 'in' : ''}}">
+        <view class="pl-num mono">02 / 招聘主线</view>
+        <view class="pl-h3 serif">智能<text class="em-v">就业匹配</text></view>
+        <view class="pl-p">不只是信息发布。基于师承网络、菜系专长、工作经历、地域期望，为厨师和雇主双向推荐最优匹配。AI 把求职门槛降到最低，把匹配效率提到最高。</view>
+        <view class="pl-li">口语描述，AI 生成规范求职档案</view>
+        <view class="pl-li">按师门派系精准筛选人才</view>
+        <view class="pl-li">雇主反向匹配与主动推送</view>
+        <view class="pl-li">匹配度四维拆解，结果可解释</view>
+        <button class="btn btn-ghost pl-btn" data-tab="/pages/jobs/jobs" bindtap="navTo">进入招聘 →</button>
+      </view>
+    </view>
+
+    <!-- §04 流程 -->
+    <view class="sec">
+      <view class="sec-head">
+        <view class="sec-num mono">§ 04</view>
+        <view class="sec-h2 serif">从注册到<text class="em-v">上岗</text>。</view>
+        <view class="sec-right">四步闭环 · 厨师与雇主双向获益</view>
+      </view>
+      <view class="steps">
+        <view class="step rv-7 reveal {{in.rv7 ? 'in' : ''}}" wx:for="{{steps}}" wx:key="n">
+          <view class="st-n serif">{{item.n}}</view>
+          <view class="st-t serif">{{item.t}}</view>
+          <view class="st-d">{{item.d}}</view>
+          <view class="st-dur mono">{{item.dur}}</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- §05 社会价值 -->
+    <view class="sec dark">
+      <view class="sec-head">
+        <view class="sec-num mono">§ 05</view>
+        <view class="sec-h2 serif">社会服务<text class="em-v">价值</text>。</view>
+        <view class="sec-right">数据目标 · 三年内可达成</view>
+      </view>
+      <view class="stats-grid">
+        <view class="sg-item rv-8 reveal {{in.rv8 ? 'in' : ''}}" wx:for="{{stats}}" wx:key="label">
+          <view class="sg-n serif">{{item.n}}<text class="sg-u">{{item.u}}</text></view>
+          <view class="sg-label">{{item.label}}</view>
+          <view class="sg-note">{{item.note}}</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- §05.5 商业飞轮 -->
+    <view class="sec">
+      <view class="sec-head">
+        <view class="sec-num mono">§ 05.5</view>
+        <view class="sec-h2 serif">它如何<text class="em-v">持续转动</text>。</view>
+        <view class="sec-right">商业飞轮 / Flywheel · 四节点自增强 · 可落地</view>
+      </view>
+      <view class="fw-wrap rv-9 reveal {{in.rv9 ? 'in' : ''}}">
+        <canvas type="2d" id="flywheel" class="fw-canvas"></canvas>
+      </view>
+      <view class="fw-list">
+        <view class="fw-row rv-10 reveal {{in.rv10 ? 'in' : ''}}" wx:for="{{flywheelRows}}" wx:key="n">
+          <view class="fw-num serif">{{item.n}}</view>
+          <view class="fw-body">
+            <view class="fw-t serif">{{item.t}}</view>
+            <view class="fw-d">{{item.d}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="rev-row">
+        <view class="rev rv-11 reveal {{in.rv11 ? 'in' : ''}}" wx:for="{{revenues}}" wx:key="tag">
+          <view class="rev-tag mono">{{item.tag}}</view>
+          <view class="rev-t serif">{{item.t}}</view>
+          <view class="rev-d">{{item.d}}</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- §06 CTA -->
+    <view class="cta-sec">
+      <view class="cta-small mono">§ 06 — 加入星厨传承</view>
+      <view class="cta-big serif">让手艺被看见，让厨师有<text class="em-v">出路</text>。</view>
+      <view class="cta-actions">
+        <button class="btn btn-vermillion" data-tab="/pages/lineage/lineage" bindtap="navTo">体验师承谱 →</button>
+        <button class="btn btn-ghost" data-tab="/pages/assistant/assistant" bindtap="navTo">体验 AI 求职</button>
+      </view>
+    </view>
+
+    <!-- 页脚 -->
+    <view class="footer">
+      <view class="ft-brand serif">星厨传承</view>
+      <view class="ft-note">以师承为信任底层的厨师职业平台 · TRAE AI 创造力大赛 2026 · 体验版演示</view>
+      <view class="ft-safe"></view>
+    </view>
+  </scroll-view>
+</view>

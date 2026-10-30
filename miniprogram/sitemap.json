@@ -1,0 +1,4 @@
+{
+  "desc": "星厨传承体验版，不参与搜索索引",
+  "rules": [{ "action": "disallow", "page": "*" }]
+}
