@@ -14,3 +14,9 @@ Thumbs.db
 *.swp
 *.tmp
 ~$*
+
+# DSH 会话临时产物（沙箱诊断报告 / 预览截图等，不属于作品）
+_acl-report/
+_preview/
+_chrome-profile/
+_*.png
