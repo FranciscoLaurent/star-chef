@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-11-04T14:30:04.643Z",
+  "total": 861,
+  "ok": 853,
+  "existed": 0,
+  "failed": 8,
+  "byReason": {
+    "network": 2,
+    "timeout": 6
+  },
+  "failures": [
+    {
+      "id": "academy-sctu-xuxiaohong",
+      "name": "徐孝洪",
+      "url": "https://www.sctu.edu.cn/__local/4/FB/B3/46B9BC5AD4ADDDF172274F91BC5_8435311A_127B5.jpg",
+      "reason": "network"
+    },
+    {
+      "id": "academy-sctu-qiaoxing",
+      "name": "乔兴",
+      "url": "https://www.sctu.edu.cn/__local/6/2E/B0/55A127889E2A94F7713837C1DE3_FC0EF3D7_28858.png",
+      "reason": "network"
+    },
+    {
+      "id": "mingchu-zishen-897",
+      "name": "万明达",
+      "url": "http://www.mingchu.org/d/file/mingchu/zishen/2024-03-29/b5461ccd430ddbad0af554d6efa85543.jpg",
+      "reason": "timeout"
+    },
+    {
+      "id": "mingchu-zishen-638",
+      "name": "毛德民",
+      "url": "http://www.mingchu.org/d/file/mingchu/zishen/2020-09-05/b2459abf6540b6c053b67f757761cbfe.jpg",
+      "reason": "timeout"
+    },
+    {
+      "id": "cyxh-dangdai-571",
+      "name": "杨登科",
+      "url": "http://www.mingchu.org/d/file/mingchu/dangdai/2020-07-08/279c747d0e3f305603355fbfa3fbc479.jpg",
+      "reason": "timeout"
+    },
+    {
+      "id": "cyxh-dangdai-1111",
+      "name": "周勇强",
+      "url": "http://www.mingchu.org/d/file/mingchu/dangdai/2025-02-24/20c4ec1b49dbb105d04415d70021dc2d.jpg",
+      "reason": "timeout"
+    },
+    {
+      "id": "cyxh-dangdai-1109",
+      "name": "胡金磊",
+      "url": "http://www.mingchu.org/d/file/mingchu/dangdai/2025-01-07/6640f7f86ad3d75f649685f71e42f2bf.jpg",
+      "reason": "timeout"
+    },
+    {
+      "id": "cyxh-dangdai-1072",
+      "name": "刘国平",
+      "url": "http://www.mingchu.org/d/file/mingchu/dangdai/2024-09-25/db2e9a8731fa397d10eb549cd40897aa.jpg",
+      "reason": "timeout"
+    }
+  ]
+}
