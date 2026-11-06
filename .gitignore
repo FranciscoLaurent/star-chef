@@ -33,4 +33,4 @@ _*.png
 *.bak.xlsx
 
 # 视频渲染中间产物（仅保留成片与文档）
-_vbuild/
+_vbuild*/
