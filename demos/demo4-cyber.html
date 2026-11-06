@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星厨传承 · 赛博美食</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=JetBrains+Mono:wght@300;400;500;700&family=Syncopate:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --void:#050208;
+    --void-soft:#0a0612;
+    --panel:#120a1f;
+    --panel-light:#1a1030;
+    --cyan:#00f0ff;
+    --cyan-soft:#7df9ff;
+    --magenta:#ff2d95;
+    --magenta-soft:#ff7ec0;
+    --neon-green:#39ff14;
+    --amber:#ffae00;
+    --grid:rgba(0,240,255,0.08);
+    --text:#e0f7ff;
+    --text-dim:#8aa5b8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'JetBrains Mono','Noto Sans SC',monospace;
+    background:var(--void);
+    color:var(--text);
+    overflow-x:hidden;
+    line-height:1.6;
+  }
+  /* 网格背景 */
+  body::before{
+    content:'';position:fixed;inset:0;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:50px 50px;
+    pointer-events:none;z-index:1;
+    mask-image:radial-gradient(ellipse at center, black 30%, transparent 80%);
+  }
+  /* 扫描线 */
+  body::after{
+    content:'';position:fixed;inset:0;
+    background:repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 2px,
+      rgba(0,240,255,0.015) 3px,
+      transparent 4px
+    );
+    pointer-events:none;z-index:2;
+    animation:scanline 8s linear infinite;
+  }
+  @keyframes scanline{
+    0%{background-position:0 0}
+    100%{background-position:0 100px}
+  }
+
+  /* 导航 */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:1.2rem 3rem;
+    display:flex;justify-content:space-between;align-items:center;
+    background:rgba(5,2,8,0.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,240,255,0.2);
+  }
+  .logo{
+    font-family:'Orbitron',sans-serif;
+    font-size:1.1rem;
+    font-weight:900;
+    letter-spacing:0.2rem;
+    color:var(--cyan);
+    display:flex;align-items:center;gap:0.8rem;
+    text-shadow:0 0 10px rgba(0,240,255,0.5);
+  }
+  .logo-bracket{color:var(--magenta)}
+  .logo-cursor{
+    display:inline-block;
+    width:8px;height:1.1rem;
+    background:var(--cyan);
+    animation:blink 1s steps(2) infinite;
+  }
+  @keyframes blink{50%{opacity:0}}
+  .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+  .nav-links a{
+    color:var(--text-dim);
+    text-decoration:none;
+    font-size:0.8rem;
+    letter-spacing:0.15rem;
+    text-transform:uppercase;
+    transition:all 0.3s;
+    font-family:'JetBrains Mono',monospace;
+    position:relative;
+    padding:0.3rem 0;
+  }
+  .nav-links a::before{content:'> ';color:var(--magenta);opacity:0}
+  .nav-links a:hover{color:var(--cyan);text-shadow:0 0 8px rgba(0,240,255,0.6)}
+  .nav-links a:hover::before{opacity:1}
+  .nav-status{
+    display:flex;align-items:center;gap:0.5rem;
+    font-size:0.75rem;
+    color:var(--neon-green);
+    font-family:'JetBrains Mono',monospace;
+  }
+  .status-dot{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--neon-green);
+    box-shadow:0 0 10px var(--neon-green);
+    animation:pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:1;transform:scale(1)}
+    50%{opacity:0.5;transform:scale(0.8)}
+  }
+
+  /* Hero */
+  .hero{
+    min-height:100vh;
+    padding:8rem 3rem 4rem;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:4rem;
+    align-items:center;
+    position:relative;z-index:3;
+  }
+  .hero-text{position:relative}
+  .hero-tag{
+    display:inline-flex;align-items:center;gap:0.5rem;
+    border:1px solid var(--magenta);
+    color:var(--magenta);
+    padding:0.4rem 1rem;
+    font-size:0.75rem;
+    letter-spacing:0.2rem;
+    text-transform:uppercase;
+    margin-bottom:2rem;
+    background:rgba(255,45,149,0.1);
+    font-family:'JetBrains Mono',monospace;
+  }
+  .hero-tag::before{
+    content:'';width:6px;height:6px;
+    background:var(--magenta);
+    border-radius:50%;
+    box-shadow:0 0 8px var(--magenta);
+  }
+  .hero h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:6rem;
+    line-height:0.95;
+    font-weight:900;
+    margin-bottom:1.5rem;
+    letter-spacing:-0.02rem;
+    background:linear-gradient(135deg, var(--cyan) 0%, var(--magenta) 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    position:relative;
+  }
+  .hero h1 .glitch{
+    position:relative;
+    display:inline-block;
+  }
+  .hero h1 .glitch::before,
+  .hero h1 .glitch::after{
+    content:attr(data-text);
+    position:absolute;top:0;left:0;
+    width:100%;
+    -webkit-text-fill-color:initial;
+  }
+  .hero h1 .glitch::before{
+    color:var(--cyan);
+    animation:glitch1 3s infinite;
+    clip-path:polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  .hero h1 .glitch::after{
+    color:var(--magenta);
+    animation:glitch2 3s infinite;
+    clip-path:polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  @keyframes glitch1{
+    0%,90%,100%{transform:translate(0)}
+    92%{transform:translate(-2px,1px)}
+    94%{transform:translate(2px,-1px)}
+  }
+  @keyframes glitch2{
+    0%,90%,100%{transform:translate(0)}
+    93%{transform:translate(2px,1px)}
+    95%{transform:translate(-2px,-1px)}
+  }
+  .hero-sub{
+    font-family:'Syncopate',sans-serif;
+    font-size:1.1rem;
+    color:var(--cyan-soft);
+    letter-spacing:0.3rem;
+    margin-bottom:2rem;
+    text-transform:uppercase;
+  }
+  .hero-desc{
+    font-size:1rem;
+    color:var(--text-dim);
+    max-width:480px;
+    margin-bottom:2.5rem;
+    line-height:1.8;
+    border-left:2px solid var(--cyan);
+    padding-left:1.5rem;
+  }
+  .hero-cta{
+    display:flex;gap:1.5rem;align-items:center;
+  }
+  .btn-neon{
+    background:transparent;
+    color:var(--cyan);
+    padding:1rem 2.5rem;
+    border:1px solid var(--cyan);
+    font-family:'Orbitron',sans-serif;
+    font-size:0.85rem;
+    letter-spacing:0.2rem;
+    text-transform:uppercase;
+    cursor:pointer;
+    position:relative;
+    transition:all 0.3s;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,240,255,0.2), inset 0 0 20px rgba(0,240,255,0.05);
+  }
+  .btn-neon::before{
+    content:'';position:absolute;top:0;left:-100%;
+    width:100%;height:100%;
+    background:linear-gradient(90deg, transparent, rgba(0,240,255,0.3), transparent);
+    transition:left 0.5s ease;
+  }
+  .btn-neon:hover{
+    background:var(--cyan);
+    color:var(--void);
+    box-shadow:0 0 30px var(--cyan), inset 0 0 20px rgba(0,240,255,0.3);
+  }
+  .btn-neon:hover::before{left:100%}
+  .btn-magenta{
+    border-color:var(--magenta);
+    color:var(--magenta);
+    box-shadow:0 0 20px rgba(255,45,149,0.2);
+  }
+  .btn-magenta:hover{
+    background:var(--magenta);
+    color:var(--void);
+    box-shadow:0 0 30px var(--magenta);
+  }
+
+  /* Hero 视觉 - 全息菜盘 */
+  .hero-visual{
+    position:relative;
+    height:600px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .holo-ring{
+    position:absolute;
+    border:1px solid var(--cyan);
+    border-radius:50%;
+    opacity:0.4;
+  }
+  .ring-1{width:500px;height:500px;animation:spin 20s linear infinite}
+  .ring-2{width:400px;height:400px;border-color:var(--magenta);animation:spin 15s linear infinite reverse}
+  .ring-3{width:300px;height:300px;border-color:var(--neon-green);opacity:0.3;animation:spin 10s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .ring-1::before,.ring-1::after{
+    content:'';position:absolute;
+    width:8px;height:8px;border-radius:50%;
+    background:var(--cyan);
+    box-shadow:0 0 15px var(--cyan);
+  }
+  .ring-1::before{top:-4px;left:50%;transform:translateX(-50%)}
+  .ring-1::after{bottom:-4px;left:50%;transform:translateX(-50%)}
+  .ring-2::before{
+    content:'';position:absolute;
+    top:50%;right:-4px;transform:translateY(-50%);
+    width:8px;height:8px;border-radius:50%;
+    background:var(--magenta);
+    box-shadow:0 0 15px var(--magenta);
+  }
+
+  .holo-dish{
+    position:relative;
+    z-index:5;
+    width:280px;height:280px;
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 35% 30%,
+        rgba(0,240,255,0.4) 0%,
+        rgba(255,45,149,0.3) 40%,
+        rgba(5,2,8,0.8) 80%);
+    box-shadow:
+      0 0 60px rgba(0,240,255,0.4),
+      0 0 100px rgba(255,45,149,0.3),
+      inset 0 0 40px rgba(0,240,255,0.2);
+    display:flex;align-items:center;justify-content:center;
+    animation:holoFloat 4s ease-in-out infinite;
+  }
+  @keyframes holoFloat{
+    0%,100%{transform:translateY(0) scale(1)}
+    50%{transform:translateY(-10px) scale(1.02)}
+  }
+  .holo-dish::before{
+    content:'';
+    position:absolute;
+    width:200px;height:200px;
+    border-radius:50%;
+    border:1px dashed rgba(0,240,255,0.5);
+    animation:spin 8s linear infinite;
+  }
+  .holo-dish-text{
+    font-family:'Orbitron',sans-serif;
+    font-size:2rem;
+    font-weight:900;
+    color:var(--cyan);
+    text-shadow:0 0 20px var(--cyan);
+    letter-spacing:0.2rem;
+    text-align:center;
+    line-height:1;
+  }
+  .holo-dish-text small{
+    display:block;
+    font-size:0.7rem;
+    font-weight:400;
+    color:var(--magenta);
+    margin-top:0.5rem;
+    letter-spacing:0.3rem;
+  }
+
+  /* 浮动数据点 */
+  .data-point{
+    position:absolute;
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.7rem;
+    color:var(--cyan-soft);
+    background:rgba(0,240,255,0.05);
+    border:1px solid rgba(0,240,255,0.3);
+    padding:0.4rem 0.8rem;
+    backdrop-filter:blur(4px);
+    z-index:6;
+  }
+  .data-point::before{
+    content:'';position:absolute;
+    width:30px;height:1px;background:var(--cyan);
+  }
+  .dp-1{top:15%;left:5%}
+  .dp-1::before{right:-30px;top:50%}
+  .dp-2{top:25%;right:0%}
+  .dp-2::before{left:-30px;top:50%}
+  .dp-3{bottom:20%;left:0%}
+  .dp-3::before{right:-30px;top:50%}
+  .dp-4{bottom:30%;right:5%}
+  .dp-4::before{left:-30px;top:50%}
+
+  /* 章节 */
+  .section{
+    padding:6rem 3rem;
+    position:relative;z-index:3;
+  }
+  .section-header{
+    margin-bottom:4rem;
+    border-left:3px solid var(--magenta);
+    padding-left:2rem;
+  }
+  .section-eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    color:var(--magenta);
+    font-size:0.8rem;
+    letter-spacing:0.3rem;
+    text-transform:uppercase;
+    margin-bottom:0.8rem;
+    display:block;
+  }
+  .section-header h2{
+    font-family:'Orbitron',sans-serif;
+    font-size:3.5rem;
+    font-weight:900;
+    color:var(--text);
+    letter-spacing:-0.02rem;
+    line-height:1;
+  }
+  .section-header h2 .accent{
+    color:var(--cyan);
+    text-shadow:0 0 20px rgba(0,240,255,0.5);
+  }
+
+  /* 模块卡片 */
+  .modules-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1.5rem;
+    max-width:1300px;margin:0 auto;
+  }
+  .module{
+    background:linear-gradient(135deg, var(--panel) 0%, var(--void-soft) 100%);
+    border:1px solid rgba(0,240,255,0.2);
+    padding:2.5rem 2rem;
+    position:relative;
+    transition:all 0.4s;
+    overflow:hidden;
+    clip-path:polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  }
+  .module::before{
+    content:'';position:absolute;top:0;left:0;
+    width:100%;height:2px;
+    background:linear-gradient(90deg, var(--cyan), var(--magenta));
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform 0.5s ease;
+  }
+  .module:hover{
+    border-color:var(--cyan);
+    transform:translateY(-5px);
+    box-shadow:0 20px 40px rgba(0,240,255,0.15);
+  }
+  .module:hover::before{transform:scaleX(1)}
+  .module-id{
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.75rem;
+    color:var(--magenta);
+    letter-spacing:0.2rem;
+    margin-bottom:1rem;
+  }
+  .module-icon{
+    font-family:'Orbitron',sans-serif;
+    font-size:2.5rem;
+    font-weight:900;
+    color:var(--cyan);
+    margin-bottom:1.5rem;
+    text-shadow:0 0 15px rgba(0,240,255,0.5);
+    line-height:1;
+  }
+  .module h3{
+    font-family:'Orbitron',sans-serif;
+    font-size:1.3rem;
+    color:var(--text);
+    margin-bottom:1rem;
+    letter-spacing:0.05rem;
+  }
+  .module p{
+    color:var(--text-dim);
+    font-size:0.9rem;
+    line-height:1.7;
+    margin-bottom:1.5rem;
+  }
+  .module-stats{
+    display:flex;gap:1.5rem;
+    padding-top:1rem;
+    border-top:1px solid rgba(0,240,255,0.15);
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.75rem;
+  }
+  .module-stats span{color:var(--text-dim)}
+  .module-stats strong{color:var(--cyan);font-weight:500}
+
+  /* 终端引言 */
+  .terminal{
+    background:var(--void-soft);
+    border:1px solid rgba(0,240,255,0.3);
+    margin:4rem auto;
+    max-width:900px;
+    box-shadow:0 0 40px rgba(0,240,255,0.1);
+  }
+  .terminal-header{
+    background:var(--panel);
+    padding:0.8rem 1.5rem;
+    display:flex;align-items:center;gap:0.8rem;
+    border-bottom:1px solid rgba(0,240,255,0.2);
+  }
+  .terminal-dot{
+    width:12px;height:12px;border-radius:50%;
+  }
+  .td-1{background:#ff5f56}
+  .td-2{background:#ffbd2e}
+  .td-3{background:#27c93f}
+  .terminal-title{
+    margin-left:1rem;
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.8rem;
+    color:var(--text-dim);
+  }
+  .terminal-body{
+    padding:2rem;
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.95rem;
+    line-height:1.8;
+  }
+  .term-line{margin-bottom:0.5rem}
+  .term-prompt{color:var(--neon-green)}
+  .term-cmd{color:var(--text)}
+  .term-out{color:var(--cyan-soft)}
+  .term-comment{color:var(--text-dim);opacity:0.7}
+  .term-highlight{color:var(--magenta)}
+  .term-cursor{
+    display:inline-block;
+    width:10px;height:1.1rem;
+    background:var(--cyan);
+    vertical-align:text-bottom;
+    animation:blink 1s steps(2) infinite;
+  }
+
+  /* 页脚 */
+  footer{
+    background:var(--void-soft);
+    padding:3rem;
+    text-align:center;
+    border-top:1px solid rgba(0,240,255,0.2);
+    position:relative;z-index:3;
+  }
+  .footer-logo{
+    font-family:'Orbitron',sans-serif;
+    color:var(--cyan);
+    letter-spacing:0.3rem;
+    font-size:1rem;
+    font-weight:900;
+    margin-bottom:0.8rem;
+    text-shadow:0 0 10px rgba(0,240,255,0.5);
+  }
+  footer p{
+    color:var(--text-dim);
+    font-size:0.8rem;
+    font-family:'JetBrains Mono',monospace;
+  }
+
+  @media(max-width:900px){
+    nav{padding:1rem 1.5rem}
+    .nav-links{display:none}
+    .nav-status{display:none}
+    .hero{grid-template-columns:1fr;padding:6rem 1.5rem 2rem}
+    .hero h1{font-size:3.5rem}
+    .hero-visual{height:400px}
+    .holo-dish{width:200px;height:200px}
+    .ring-1{width:340px;height:340px}
+    .ring-2{width:260px;height:260px}
+    .ring-3{width:180px;height:180px}
+    .data-point{display:none}
+    .modules-grid{grid-template-columns:1fr}
+    .section{padding:4rem 1.5rem}
+    .section-header h2{font-size:2.2rem}
+    .terminal-body{padding:1.2rem;font-size:0.8rem}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <span class="logo-bracket">[</span>
+    STAR_CHEF
+    <span class="logo-bracket">]</span>
+    <span class="logo-cursor"></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#modules">MODULES</a></li>
+    <li><a href="#chefs">CHEFS</a></li>
+    <li><a href="#recipes">RECIPES</a></li>
+    <li><a href="#api">API</a></li>
+    <li><a href="#docs">DOCS</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    <span>SYS_ONLINE</span>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-tag">v2.0.26 · NEURAL CUISINE ENGINE</span>
+    <h1>
+      <span class="glitch" data-text="星厨">星厨</span><br>
+      <span class="glitch" data-text="传承">传承</span>
+    </h1>
+    <p class="hero-sub">// Neural Heritage Protocol</p>
+    <p class="hero-desc">
+      用神经网络解码千年厨艺。从火候曲线到味觉向量，
+      从刀工轨迹到摆盘拓扑——让大师的每一帧智慧，
+      被永久编码进 AI 的味觉记忆。
+    </p>
+    <div class="hero-cta">
+      <button class="btn-neon">▶ INITIATE</button>
+      <button class="btn-neon btn-magenta">◆ DEMO</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="data-point dp-1">FIRE: 218°C</div>
+    <div class="data-point dp-2">CUT: 0.3mm</div>
+    <div class="data-point dp-3">TIME: 4'12"</div>
+    <div class="data-point dp-4">FLAVOR: 0.87</div>
+    <div class="holo-ring ring-1"></div>
+    <div class="holo-ring ring-2"></div>
+    <div class="holo-ring ring-3"></div>
+    <div class="holo-dish">
+      <div class="holo-dish-text">
+        食
+        <small>NEURAL DISH</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="modules">
+  <div class="section-header">
+    <span class="section-eyebrow">// SYSTEM MODULES</span>
+    <h2>核心<span class="accent">模块</span></h2>
+  </div>
+  <div class="modules-grid">
+    <div class="module">
+      <div class="module-id">MODULE_01</div>
+      <div class="module-icon">◉</div>
+      <h3>VISION_CAPTURE</h3>
+      <p>计算机视觉实时捕捉大师操作。240fps 高帧率记录刀工、火候、翻锅，逐帧解析动作语义。</p>
+      <div class="module-stats">
+        <span><strong>240</strong> fps</span>
+        <span><strong>108</strong> 动作类</span>
+      </div>
+    </div>
+    <div class="module">
+      <div class="module-id">MODULE_02</div>
+      <div class="module-icon">◈</div>
+      <h3>FLAVOR_GRAPH</h3>
+      <p>构建中华味觉知识图谱。量化"少许""适量"的模糊语义，让秘方从口传变为可计算。</p>
+      <div class="module-stats">
+        <span><strong>3.4k</strong> 节点</span>
+        <span><strong>12k</strong> 边</span>
+      </div>
+    </div>
+    <div class="module">
+      <div class="module-id">MODULE_03</div>
+      <div class="module-icon">◇</div>
+      <h3>MASTER_LLM</h3>
+      <p>对话式 AI 还原名厨心法。基于大师访谈训练的专属模型，传承的不仅是菜，更是思维。</p>
+      <div class="module-stats">
+        <span><strong>128</strong> 位名厨</span>
+        <span><strong>7B</strong> 参数</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="terminal">
+  <div class="terminal-header">
+    <span class="terminal-dot td-1"></span>
+    <span class="terminal-dot td-2"></span>
+    <span class="terminal-dot td-3"></span>
+    <span class="terminal-title">star_chef@heritage:~$</span>
+  </div>
+  <div class="terminal-body">
+    <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">star_chef --query "如何复刻林师傅的虾饺"</span></div>
+    <div class="term-line"><span class="term-comment"># 正在检索 NEURAL_HERITAGE 数据库...</span></div>
+    <div class="term-line"><span class="term-out">→ 匹配大师: <span class="term-highlight">林玉轩</span> (粤菜 · 40年)</span></div>
+    <div class="term-line"><span class="term-out">→ 虾饺褶数: <span class="term-highlight">108</span> 道 (经典标准)</span></div>
+    <div class="term-line"><span class="term-out">→ 皮厚度: <span class="term-highlight">0.8mm</span> (透明可见馅)</span></div>
+    <div class="term-line"><span class="term-out">→ 蒸制温度: <span class="term-highlight">100°C</span> · 时长 <span class="term-highlight">6'30"</span></span></div>
+    <div class="term-line"><span class="term-out">→ 大师心法: "褶不在多，在匀。匀不在手，在心。"</span></div>
+    <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">star_chef --render --interactive</span><span class="term-cursor"></span></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">[ STAR_CHEF HERITAGE ]</div>
+  <p>CONCEPT DESIGN · 2026 · BUILD v2.0.26</p>
+  <p style="margin-top:0.5rem;opacity:0.5">// encoding culinary wisdom, one frame at a time</p>
+</footer>
+
+</body>
+</html>

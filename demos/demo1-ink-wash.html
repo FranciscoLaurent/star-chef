@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星厨传承 · 东方水墨</title>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@300;400;600;900&family=Long+Cang&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1612;
+    --ink-soft:#3d342a;
+    --paper:#f4ecd8;
+    --paper-warm:#ebe0c4;
+    --cinnabar:#a8321e;
+    --cinnabar-deep:#7a1f10;
+    --jade:#5a7a5e;
+    --gold-leaf:#b89968;
+    --rice:#faf6ec;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Noto Serif SC',serif;
+    background:var(--paper);
+    color:var(--ink);
+    overflow-x:hidden;
+    line-height:1.7;
+  }
+  /* 宣纸纹理 */
+  body::before{
+    content:'';
+    position:fixed;inset:0;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(168,50,30,0.03) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(90,122,94,0.04) 0%, transparent 40%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events:none;
+    z-index:1;
+    opacity:0.6;
+  }
+
+  /* 导航 */
+  nav{
+    position:fixed;top:0;left:0;right:0;
+    z-index:100;
+    padding:1.5rem 4rem;
+    display:flex;justify-content:space-between;align-items:center;
+    background:linear-gradient(180deg, rgba(244,236,216,0.95) 0%, rgba(244,236,216,0.7) 80%, transparent 100%);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(26,22,18,0.08);
+  }
+  .logo{
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:1.8rem;
+    color:var(--ink);
+    display:flex;align-items:center;gap:0.8rem;
+  }
+  .logo-seal{
+    display:inline-block;
+    width:38px;height:38px;
+    background:var(--cinnabar);
+    color:var(--rice);
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:1.2rem;
+    display:flex;align-items:center;justify-content:center;
+    transform:rotate(-3deg);
+    box-shadow:0 2px 8px rgba(168,50,30,0.3);
+    border-radius:2px;
+  }
+  .nav-links{display:flex;gap:2.5rem;list-style:none}
+  .nav-links a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    font-size:0.95rem;
+    font-weight:400;
+    position:relative;
+    transition:color 0.3s;
+  }
+  .nav-links a::after{
+    content:'';position:absolute;bottom:-6px;left:0;
+    width:0;height:1px;background:var(--cinnabar);
+    transition:width 0.4s ease;
+  }
+  .nav-links a:hover{color:var(--cinnabar)}
+  .nav-links a:hover::after{width:100%}
+
+  /* Hero */
+  .hero{
+    min-height:100vh;
+    padding:8rem 4rem 4rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    align-items:center;
+    position:relative;
+    z-index:2;
+  }
+  .hero-text{position:relative}
+  .hero-vertical{
+    position:absolute;
+    top:0;right:-2rem;
+    writing-mode:vertical-rl;
+    font-family:'Long Cang',cursive;
+    font-size:1.3rem;
+    color:var(--ink-soft);
+    opacity:0.5;
+    letter-spacing:0.5rem;
+  }
+  .hero-tag{
+    display:inline-block;
+    font-family:'ZCOOL XiaoWei',serif;
+    color:var(--cinnabar);
+    font-size:1rem;
+    letter-spacing:0.3rem;
+    margin-bottom:1.5rem;
+    padding:0.4rem 1rem;
+    border:1px solid var(--cinnabar);
+    border-radius:2px;
+  }
+  .hero h1{
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:7rem;
+    line-height:1;
+    color:var(--ink);
+    margin-bottom:1.5rem;
+    letter-spacing:0.05rem;
+    position:relative;
+  }
+  .hero h1 .char{
+    display:inline-block;
+    opacity:0;
+    transform:translateY(40px);
+    animation:inkDrop 1s cubic-bezier(0.2,0.8,0.2,1) forwards;
+  }
+  .hero h1 .char:nth-child(1){animation-delay:0.2s}
+  .hero h1 .char:nth-child(2){animation-delay:0.4s}
+  .hero h1 .char:nth-child(3){animation-delay:0.6s}
+  .hero h1 .char:nth-child(4){animation-delay:0.8s}
+  @keyframes inkDrop{
+    to{opacity:1;transform:translateY(0)}
+  }
+  .hero-sub{
+    font-family:'ZCOOL XiaoWei',serif;
+    font-size:1.6rem;
+    color:var(--ink-soft);
+    margin-bottom:2rem;
+    letter-spacing:0.1rem;
+  }
+  .hero-desc{
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    max-width:480px;
+    margin-bottom:2.5rem;
+    line-height:1.9;
+  }
+  .hero-cta{
+    display:flex;gap:1.5rem;align-items:center;
+  }
+  .btn-ink{
+    background:var(--ink);
+    color:var(--rice);
+    padding:1rem 2.5rem;
+    border:none;
+    font-family:'ZCOOL XiaoWei',serif;
+    font-size:1.05rem;
+    letter-spacing:0.2rem;
+    cursor:pointer;
+    position:relative;
+    transition:all 0.4s;
+    overflow:hidden;
+  }
+  .btn-ink::before{
+    content:'';position:absolute;inset:0;
+    background:var(--cinnabar);
+    transform:translateY(100%);
+    transition:transform 0.4s ease;
+  }
+  .btn-ink span{position:relative;z-index:1}
+  .btn-ink:hover::before{transform:translateY(0)}
+  .btn-ghost{
+    color:var(--ink);
+    padding:1rem 1.5rem;
+    background:transparent;
+    border:none;
+    font-family:'ZCOOL XiaoWei',serif;
+    font-size:1.05rem;
+    cursor:pointer;
+    border-bottom:1px solid var(--ink);
+    letter-spacing:0.2rem;
+  }
+
+  /* Hero 视觉 - 水墨圆 + 印章 */
+  .hero-visual{
+    position:relative;
+    height:600px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .ink-circle{
+    position:absolute;
+    width:480px;height:480px;
+    border-radius:50%;
+    background:radial-gradient(circle at 40% 40%,
+      rgba(26,22,18,0.85) 0%,
+      rgba(26,22,18,0.6) 30%,
+      rgba(61,52,42,0.3) 60%,
+      transparent 80%);
+    filter:blur(2px);
+    animation:inkBreathe 6s ease-in-out infinite;
+  }
+  @keyframes inkBreathe{
+    0%,100%{transform:scale(1);opacity:0.9}
+    50%{transform:scale(1.03);opacity:1}
+  }
+  .ink-splash{
+    position:absolute;
+    width:520px;height:520px;
+    border-radius:50%;
+    background:radial-gradient(circle at 60% 60%,
+      transparent 40%,
+      rgba(168,50,30,0.15) 50%,
+      transparent 70%);
+    animation:rotate 30s linear infinite;
+  }
+  @keyframes rotate{to{transform:rotate(360deg)}}
+  .hero-dish{
+    position:relative;
+    z-index:2;
+    width:380px;height:380px;
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 35% 30%, #f0e4c8 0%, #d4b88c 40%, #8a6a3e 100%);
+    box-shadow:
+      inset -20px -20px 60px rgba(0,0,0,0.3),
+      inset 20px 20px 40px rgba(255,240,200,0.3),
+      0 30px 80px rgba(26,22,18,0.4);
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+  }
+  .hero-dish::before{
+    content:'';
+    position:absolute;
+    width:280px;height:280px;
+    border-radius:50%;
+    background:radial-gradient(circle at 40% 35%,
+      #c8321e 0%, #8a1f10 60%, #5a1208 100%);
+    box-shadow:inset -10px -10px 30px rgba(0,0,0,0.4);
+  }
+  .hero-dish::after{
+    content:'食';
+    position:relative;z-index:2;
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:8rem;
+    color:var(--rice);
+    text-shadow:0 4px 20px rgba(0,0,0,0.5);
+  }
+  .seal-stamp{
+    position:absolute;
+    bottom:40px;right:40px;
+    width:90px;height:90px;
+    background:var(--cinnabar);
+    color:var(--rice);
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:1.6rem;
+    display:flex;align-items:center;justify-content:center;
+    flex-direction:column;
+    transform:rotate(8deg);
+    box-shadow:0 4px 20px rgba(168,50,30,0.4);
+    border:3px solid var(--cinnabar-deep);
+    z-index:5;
+    line-height:1;
+    gap:4px;
+  }
+  .seal-stamp::before{
+    content:'';position:absolute;inset:4px;
+    border:1px solid rgba(250,246,236,0.4);
+  }
+
+  /* 章节标题 */
+  .section{
+    padding:6rem 4rem;
+    position:relative;
+    z-index:2;
+  }
+  .section-header{
+    text-align:center;
+    margin-bottom:4rem;
+    position:relative;
+  }
+  .section-header .vertical-label{
+    font-family:'Long Cang',cursive;
+    color:var(--cinnabar);
+    font-size:1.2rem;
+    letter-spacing:0.5rem;
+    margin-bottom:0.8rem;
+    display:block;
+  }
+  .section-header h2{
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:3.5rem;
+    color:var(--ink);
+    margin-bottom:0.5rem;
+  }
+  .section-header .sub{
+    font-family:'ZCOOL XiaoWei',serif;
+    color:var(--ink-soft);
+    font-size:1.1rem;
+    letter-spacing:0.3rem;
+  }
+  .divider-ink{
+    width:80px;height:2px;
+    background:var(--cinnabar);
+    margin:1.5rem auto;
+    position:relative;
+  }
+  .divider-ink::before,.divider-ink::after{
+    content:'';position:absolute;top:50%;
+    width:6px;height:6px;border-radius:50%;
+    background:var(--cinnabar);
+    transform:translateY(-50%);
+  }
+  .divider-ink::before{left:-15px}
+  .divider-ink::after{right:-15px}
+
+  /* 传承卡片 */
+  .heritage-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2.5rem;
+    max-width:1200px;
+    margin:0 auto;
+  }
+  .heritage-card{
+    background:var(--rice);
+    padding:3rem 2.5rem;
+    position:relative;
+    border:1px solid rgba(26,22,18,0.1);
+    transition:all 0.5s cubic-bezier(0.2,0.8,0.2,1);
+    overflow:hidden;
+  }
+  .heritage-card::before{
+    content:'';position:absolute;top:0;left:0;
+    width:100%;height:4px;
+    background:linear-gradient(90deg,var(--cinnabar),var(--gold-leaf));
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform 0.5s ease;
+  }
+  .heritage-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(26,22,18,0.15);
+  }
+  .heritage-card:hover::before{transform:scaleX(1)}
+  .card-num{
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:3rem;
+    color:var(--cinnabar);
+    opacity:0.3;
+    line-height:1;
+    margin-bottom:1rem;
+  }
+  .card-icon{
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:2.5rem;
+    color:var(--ink);
+    margin-bottom:1.5rem;
+  }
+  .heritage-card h3{
+    font-family:'ZCOOL XiaoWei',serif;
+    font-size:1.6rem;
+    color:var(--ink);
+    margin-bottom:1rem;
+    letter-spacing:0.1rem;
+  }
+  .heritage-card p{
+    color:var(--ink-soft);
+    font-size:0.98rem;
+    line-height:1.8;
+  }
+
+  /* 大师语录 */
+  .quote-section{
+    background:var(--ink);
+    color:var(--rice);
+    padding:8rem 4rem;
+    position:relative;
+    overflow:hidden;
+  }
+  .quote-section::before{
+    content:'';position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 20% 50%, rgba(168,50,30,0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 50%, rgba(184,153,104,0.1) 0%, transparent 50%);
+  }
+  .quote-content{
+    max-width:900px;margin:0 auto;
+    text-align:center;
+    position:relative;z-index:2;
+  }
+  .quote-mark{
+    font-family:'Ma Shan Zheng',cursive;
+    font-size:8rem;
+    color:var(--cinnabar);
+    line-height:0.5;
+    opacity:0.6;
+  }
+  .quote-text{
+    font-family:'ZCOOL XiaoWei',serif;
+    font-size:2.2rem;
+    line-height:1.8;
+    margin:2rem 0;
+    letter-spacing:0.15rem;
+  }
+  .quote-author{
+    font-family:'Long Cang',cursive;
+    font-size:1.4rem;
+    color:var(--gold-leaf);
+    letter-spacing:0.3rem;
+  }
+
+  /* 页脚 */
+  footer{
+    background:var(--paper-warm);
+    padding:3rem 4rem;
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:0.9rem;
+    border-top:1px solid rgba(26,22,18,0.1);
+    position:relative;z-index:2;
+  }
+  footer .footer-seal{
+    display:inline-block;
+    width:50px;height:50px;
+    background:var(--cinnabar);
+    color:var(--rice);
+    font-family:'Ma Shan Zheng',cursive;
+    line-height:50px;
+    margin-bottom:1rem;
+    transform:rotate(-5deg);
+  }
+
+  /* 装饰元素 */
+  .deco-brush{
+    position:absolute;
+    pointer-events:none;
+    opacity:0.15;
+  }
+  .deco-1{top:10%;left:-100px;width:300px;transform:rotate(-15deg)}
+
+  @media(max-width:900px){
+    nav{padding:1rem 1.5rem}
+    .nav-links{display:none}
+    .hero{grid-template-columns:1fr;padding:6rem 1.5rem 2rem}
+    .hero h1{font-size:4.5rem}
+    .hero-visual{height:400px}
+    .ink-circle,.ink-splash{width:320px;height:320px}
+    .hero-dish{width:260px;height:260px}
+    .heritage-grid{grid-template-columns:1fr}
+    .section{padding:4rem 1.5rem}
+    .quote-section{padding:5rem 1.5rem}
+    .quote-text{font-size:1.5rem}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <span class="logo-seal">星</span>
+    <span>星厨传承</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#heritage">传承</a></li>
+    <li><a href="#master">名厨</a></li>
+    <li><a href="#recipe">菜谱</a></li>
+    <li><a href="#ai">智厨</a></li>
+    <li><a href="#about">关于</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-vertical">民以食为天 · 食以厨为精</span>
+    <span class="hero-tag">东方味觉 · 数字传承</span>
+    <h1>
+      <span class="char">星</span><span class="char">厨</span><span class="char">传</span><span class="char">承</span>
+    </h1>
+    <p class="hero-sub">一菜一世界 · 一味一传承</p>
+    <p class="hero-desc">
+      以 AI 之力，记录大师手艺的温度与分寸。<br>
+      从火候到刀工，从调味到摆盘，<br>
+      让千年厨艺在数字时代生生不息。
+    </p>
+    <div class="hero-cta">
+      <button class="btn-ink"><span>开启传承之旅</span></button>
+      <button class="btn-ghost">观看演示 →</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="ink-splash"></div>
+    <div class="ink-circle"></div>
+    <div class="hero-dish"></div>
+    <div class="seal-stamp">
+      <span>传</span>
+      <span>承</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="heritage">
+  <div class="section-header">
+    <span class="vertical-label">三 味 真 传</span>
+    <h2>传承之道</h2>
+    <div class="divider-ink"></div>
+    <p class="sub">技 · 味 · 心</p>
+  </div>
+  <div class="heritage-grid">
+    <div class="heritage-card">
+      <div class="card-num">壹</div>
+      <div class="card-icon">技</div>
+      <h3>手艺传承</h3>
+      <p>AI 视觉识别记录大师刀工火候，逐帧解析翻锅、颠勺、切丝之精妙，让技艺可学可练。</p>
+    </div>
+    <div class="heritage-card">
+      <div class="card-num">贰</div>
+      <div class="card-icon">味</div>
+      <h3>味觉图谱</h3>
+      <p>构建中华味觉知识图谱，量化"少许""适量"的千年智慧，让秘方有据可循。</p>
+    </div>
+    <div class="heritage-card">
+      <div class="card-num">叁</div>
+      <div class="card-icon">心</div>
+      <h3>匠人心法</h3>
+      <p>对话式 AI 还原名厨心路历程，传承的不仅是菜，更是对食材与食客的敬意。</p>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section">
+  <div class="quote-content">
+    <div class="quote-mark">"</div>
+    <p class="quote-text">
+      治大国若烹小鲜，<br>
+      传承之道，在于火候分寸之间。
+    </p>
+    <p class="quote-author">—— 致敬每一位守艺的星厨</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-seal">承</div>
+  <p>星厨传承 · 概念设计作品</p>
+  <p style="margin-top:0.5rem;opacity:0.6">让中华厨艺，在 AI 时代焕发新生</p>
+</footer>
+
+</body>
+</html>

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 项目定位
 
-「星厨传承」—— TRAE AI 创造力大赛（社会服务赛道）参赛作品：以师承关系为信任底层的厨师职业平台。**交付形态是单个 HTML 文件**（`星厨传承.html`，~3900 行），内嵌全部 CSS / HTML / JS / 数据，无任何构建工具、无测试框架、无包管理。
+「星厨传承」—— 以师承关系为信任底层的厨师职业平台。**交付形态是单个 HTML 文件**（`星厨传承.html`，~3900 行），内嵌全部 CSS / HTML / JS / 数据，无任何构建工具、无测试框架、无包管理。
 
 ## 硬约束（参赛形态决定，不可违反）
 

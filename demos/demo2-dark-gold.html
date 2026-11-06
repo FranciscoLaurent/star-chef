@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星厨传承 · 米其林暗金</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Noto+Serif+SC:wght@300;400;600;900&family=Italiana&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noir:#0d0b08;
+    --noir-soft:#1a1612;
+    --charcoal:#2a241e;
+    --gold:#c9a961;
+    --gold-bright:#e8c878;
+    --gold-deep:#8a6f3a;
+    --cream:#f5ecd9;
+    --cream-soft:#d4c9b0;
+    --burgundy:#6b1f1a;
+    --ivory:#ebe0c4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Cormorant Garamond','Noto Serif SC',serif;
+    background:var(--noir);
+    color:var(--cream);
+    overflow-x:hidden;
+    line-height:1.6;
+  }
+  /* 暗金纹理 */
+  body::before{
+    content:'';position:fixed;inset:0;
+    background:
+      radial-gradient(ellipse at top, rgba(201,169,97,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom, rgba(107,31,26,0.1) 0%, transparent 50%);
+    pointer-events:none;z-index:1;
+  }
+  body::after{
+    content:'';position:fixed;inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0.9 0 0 0 0 0.78 0 0 0 0 0.45 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events:none;z-index:2;opacity:0.5;
+  }
+
+  /* 导航 */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:1.8rem 4rem;
+    display:flex;justify-content:space-between;align-items:center;
+    background:linear-gradient(180deg, rgba(13,11,8,0.95) 0%, rgba(13,11,8,0.6) 80%, transparent 100%);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(201,169,97,0.15);
+  }
+  .logo{
+    font-family:'Italiana',serif;
+    font-size:1.6rem;
+    letter-spacing:0.4rem;
+    color:var(--gold-bright);
+    display:flex;align-items:center;gap:1rem;
+    text-transform:uppercase;
+  }
+  .logo-mark{
+    width:42px;height:42px;
+    border:1.5px solid var(--gold);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Playfair Display',serif;
+    font-size:1.4rem;
+    color:var(--gold-bright);
+    position:relative;
+  }
+  .logo-mark::before{
+    content:'';position:absolute;inset:3px;
+    border:1px solid rgba(201,169,97,0.4);
+    border-radius:50%;
+  }
+  .nav-links{display:flex;gap:2.8rem;list-style:none}
+  .nav-links a{
+    color:var(--cream-soft);
+    text-decoration:none;
+    font-size:0.95rem;
+    letter-spacing:0.25rem;
+    text-transform:uppercase;
+    font-weight:400;
+    transition:color 0.4s;
+    position:relative;
+  }
+  .nav-links a::after{
+    content:'';position:absolute;bottom:-8px;left:50%;
+    width:0;height:1px;background:var(--gold-bright);
+    transition:all 0.4s ease;transform:translateX(-50%);
+  }
+  .nav-links a:hover{color:var(--gold-bright)}
+  .nav-links a:hover::after{width:100%}
+
+  /* Hero */
+  .hero{
+    min-height:100vh;
+    padding:9rem 4rem 4rem;
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:5rem;
+    align-items:center;
+    position:relative;z-index:3;
+  }
+  .hero-text{position:relative}
+  .hero-eyebrow{
+    display:flex;align-items:center;gap:1rem;
+    margin-bottom:2rem;
+    opacity:0;
+    animation:fadeUp 1s ease 0.2s forwards;
+  }
+  .hero-eyebrow .line{
+    width:60px;height:1px;background:var(--gold);
+  }
+  .hero-eyebrow span{
+    font-family:'Italiana',serif;
+    color:var(--gold-bright);
+    letter-spacing:0.5rem;
+    font-size:0.9rem;
+    text-transform:uppercase;
+  }
+  .hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:6.5rem;
+    line-height:0.95;
+    font-weight:400;
+    color:var(--cream);
+    margin-bottom:1rem;
+    letter-spacing:-0.02rem;
+    opacity:0;
+    animation:fadeUp 1.2s ease 0.4s forwards;
+  }
+  .hero h1 .italic{
+    font-style:italic;
+    color:var(--gold-bright);
+    font-weight:300;
+  }
+  .hero h1 .cn{
+    font-family:'Noto Serif SC',serif;
+    font-weight:300;
+    display:block;
+    font-size:3rem;
+    letter-spacing:0.3rem;
+    margin-top:0.5rem;
+    color:var(--cream-soft);
+  }
+  .hero-desc{
+    font-size:1.2rem;
+    color:var(--cream-soft);
+    max-width:480px;
+    margin:2rem 0 3rem;
+    line-height:1.8;
+    font-weight:300;
+    opacity:0;
+    animation:fadeUp 1.2s ease 0.6s forwards;
+  }
+  .hero-cta{
+    display:flex;gap:2rem;align-items:center;
+    opacity:0;
+    animation:fadeUp 1.2s ease 0.8s forwards;
+  }
+  .btn-gold{
+    background:linear-gradient(135deg, var(--gold-bright), var(--gold), var(--gold-deep));
+    color:var(--noir);
+    padding:1.2rem 3rem;
+    border:none;
+    font-family:'Italiana',serif;
+    font-size:1rem;
+    letter-spacing:0.3rem;
+    text-transform:uppercase;
+    cursor:pointer;
+    position:relative;
+    transition:all 0.4s;
+    box-shadow:0 8px 30px rgba(201,169,97,0.3);
+  }
+  .btn-gold:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 40px rgba(201,169,97,0.5);
+  }
+  .btn-line{
+    color:var(--cream);
+    background:transparent;
+    border:none;
+    font-family:'Italiana',serif;
+    font-size:1rem;
+    letter-spacing:0.3rem;
+    text-transform:uppercase;
+    cursor:pointer;
+    padding:1rem 0;
+    border-bottom:1px solid var(--gold);
+    transition:all 0.4s;
+  }
+  .btn-line:hover{color:var(--gold-bright);padding-right:1rem}
+
+  @keyframes fadeUp{
+    to{opacity:1;transform:translateY(0)}
+    from{opacity:0;transform:translateY(30px)}
+  }
+
+  /* Hero 视觉 */
+  .hero-visual{
+    position:relative;
+    height:620px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .gold-frame{
+    position:absolute;
+    width:440px;height:560px;
+    border:1px solid rgba(201,169,97,0.3);
+    transform:rotate(-3deg);
+  }
+  .gold-frame::before{
+    content:'';position:absolute;inset:15px;
+    border:1px solid rgba(201,169,97,0.2);
+  }
+  .gold-frame-2{
+    position:absolute;
+    width:440px;height:560px;
+    border:1px solid rgba(201,169,97,0.15);
+    transform:rotate(2deg);
+  }
+  .dish-display{
+    position:relative;
+    z-index:5;
+    width:380px;height:380px;
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 30% 25%,
+        #f5ecd9 0%, #c9a961 25%, #8a6f3a 60%, #3a2a14 100%);
+    box-shadow:
+      inset -30px -30px 80px rgba(0,0,0,0.6),
+      inset 20px 20px 50px rgba(245,236,217,0.2),
+      0 40px 100px rgba(0,0,0,0.6),
+      0 0 80px rgba(201,169,97,0.2);
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+    animation:floatDish 6s ease-in-out infinite;
+  }
+  @keyframes floatDish{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-15px)}
+  }
+  .dish-display::before{
+    content:'';
+    position:absolute;
+    width:280px;height:280px;
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 40% 35%,
+        #6b1f1a 0%, #3a0f0c 70%, #1a0604 100%);
+    box-shadow:inset -15px -15px 40px rgba(0,0,0,0.7);
+  }
+  .dish-display::after{
+    content:'★';
+    position:relative;z-index:2;
+    font-size:7rem;
+    color:var(--gold-bright);
+    text-shadow:0 0 30px rgba(232,200,120,0.6);
+  }
+  .star-deco{
+    position:absolute;
+    color:var(--gold);
+    font-size:1.5rem;
+    opacity:0.6;
+    animation:twinkle 3s ease-in-out infinite;
+  }
+  .star-1{top:10%;left:15%;animation-delay:0s}
+  .star-2{top:20%;right:10%;animation-delay:0.5s}
+  .star-3{bottom:15%;left:8%;animation-delay:1s}
+  .star-4{bottom:25%;right:12%;animation-delay:1.5s}
+  @keyframes twinkle{
+    0%,100%{opacity:0.3;transform:scale(1)}
+    50%{opacity:0.8;transform:scale(1.2)}
+  }
+
+  /* 章节通用 */
+  .section{
+    padding:7rem 4rem;
+    position:relative;z-index:3;
+  }
+  .section-header{
+    text-align:center;
+    margin-bottom:5rem;
+  }
+  .section-eyebrow{
+    font-family:'Italiana',serif;
+    color:var(--gold-bright);
+    letter-spacing:0.5rem;
+    font-size:0.95rem;
+    text-transform:uppercase;
+    margin-bottom:1rem;
+    display:block;
+  }
+  .section-header h2{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    font-weight:400;
+    color:var(--cream);
+    font-style:italic;
+  }
+  .section-header h2 .cn{
+    font-family:'Noto Serif SC',serif;
+    font-style:normal;
+    font-weight:300;
+    display:block;
+    font-size:1.5rem;
+    letter-spacing:0.4rem;
+    color:var(--gold);
+    margin-top:0.8rem;
+  }
+  .gold-divider{
+    width:100px;height:1px;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin:2rem auto;
+    position:relative;
+  }
+  .gold-divider::before{
+    content:'◆';
+    position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    color:var(--gold);
+    background:var(--noir);
+    padding:0 1rem;
+    font-size:0.8rem;
+  }
+
+  /* 大师卡片 */
+  .masters-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+    max-width:1300px;margin:0 auto;
+  }
+  .master-card{
+    background:linear-gradient(180deg, var(--noir-soft) 0%, var(--charcoal) 100%);
+    border:1px solid rgba(201,169,97,0.2);
+    padding:3rem 2.5rem;
+    position:relative;
+    transition:all 0.5s cubic-bezier(0.2,0.8,0.2,1);
+    overflow:hidden;
+  }
+  .master-card::before{
+    content:'';position:absolute;top:0;left:0;right:0;
+    height:2px;
+    background:linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+    transform:scaleX(0);
+    transition:transform 0.6s ease;
+  }
+  .master-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--gold);
+    box-shadow:0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(201,169,97,0.1);
+  }
+  .master-card:hover::before{transform:scaleX(1)}
+  .master-stars{
+    color:var(--gold-bright);
+    letter-spacing:0.3rem;
+    margin-bottom:1.5rem;
+    font-size:1rem;
+  }
+  .master-num{
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:3.5rem;
+    color:var(--gold);
+    line-height:1;
+    margin-bottom:1rem;
+    opacity:0.5;
+  }
+  .master-card h3{
+    font-family:'Playfair Display',serif;
+    font-size:1.8rem;
+    color:var(--cream);
+    margin-bottom:0.3rem;
+    font-weight:400;
+  }
+  .master-title{
+    font-family:'Italiana',serif;
+    color:var(--gold-bright);
+    letter-spacing:0.3rem;
+    font-size:0.85rem;
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+  }
+  .master-card p{
+    color:var(--cream-soft);
+    font-size:1.05rem;
+    line-height:1.8;
+    font-weight:300;
+  }
+  .master-card .signature{
+    margin-top:2rem;
+    padding-top:1.5rem;
+    border-top:1px solid rgba(201,169,97,0.15);
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    color:var(--gold);
+    font-size:1rem;
+  }
+
+  /* 引言区 */
+  .quote-section{
+    padding:9rem 4rem;
+    text-align:center;
+    position:relative;z-index:3;
+    background:
+      radial-gradient(ellipse at center, rgba(201,169,97,0.08) 0%, transparent 70%);
+  }
+  .quote-content{
+    max-width:900px;margin:0 auto;
+  }
+  .quote-mark{
+    font-family:'Playfair Display',serif;
+    font-size:10rem;
+    color:var(--gold);
+    line-height:0.3;
+    opacity:0.4;
+    font-style:italic;
+  }
+  .quote-text{
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:2.5rem;
+    line-height:1.5;
+    color:var(--cream);
+    margin:2rem 0;
+    font-weight:300;
+  }
+  .quote-text .cn{
+    display:block;
+    font-family:'Noto Serif SC',serif;
+    font-style:normal;
+    font-size:1.4rem;
+    color:var(--gold-bright);
+    margin-top:1.5rem;
+    letter-spacing:0.2rem;
+    font-weight:300;
+  }
+  .quote-author{
+    font-family:'Italiana',serif;
+    color:var(--gold);
+    letter-spacing:0.4rem;
+    font-size:0.95rem;
+    text-transform:uppercase;
+    margin-top:2rem;
+  }
+
+  /* 页脚 */
+  footer{
+    background:var(--noir-soft);
+    padding:3rem 4rem;
+    text-align:center;
+    border-top:1px solid rgba(201,169,97,0.15);
+    position:relative;z-index:3;
+  }
+  .footer-logo{
+    font-family:'Italiana',serif;
+    color:var(--gold-bright);
+    letter-spacing:0.5rem;
+    font-size:1.2rem;
+    margin-bottom:0.8rem;
+  }
+  footer p{
+    color:var(--cream-soft);
+    font-size:0.9rem;
+    opacity:0.7;
+  }
+
+  @media(max-width:900px){
+    nav{padding:1rem 1.5rem}
+    .nav-links{display:none}
+    .hero{grid-template-columns:1fr;padding:7rem 1.5rem 2rem}
+    .hero h1{font-size:4rem}
+    .hero-visual{height:400px}
+    .dish-display{width:260px;height:260px}
+    .gold-frame,.gold-frame-2{width:300px;height:400px}
+    .masters-grid{grid-template-columns:1fr}
+    .section{padding:4rem 1.5rem}
+    .quote-section{padding:5rem 1.5rem}
+    .quote-text{font-size:1.6rem}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-mark">★</div>
+    <span>Star Chef Heritage</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#masters">Masters</a></li>
+    <li><a href="#cuisine">Cuisine</a></li>
+    <li><a href="#ai">AI Sommelier</a></li>
+    <li><a href="#heritage">Heritage</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow">
+      <span class="line"></span>
+      <span>Est. 2026 · A Digital Heritage</span>
+    </div>
+    <h1>
+      The Art of<br>
+      <span class="italic">Culinary</span> Stars
+      <span class="cn">星 厨 传 承</span>
+    </h1>
+    <p class="hero-desc">
+      Where Michelin precision meets ancestral wisdom.
+      An AI-curated journey preserving the soul of master chefs —
+      every flame, every knife stroke, every whispered secret.
+    </p>
+    <div class="hero-cta">
+      <button class="btn-gold">Begin the Tasting</button>
+      <button class="btn-line">Watch Film →</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="gold-frame-2"></div>
+    <div class="gold-frame"></div>
+    <span class="star-deco star-1">✦</span>
+    <span class="star-deco star-2">✧</span>
+    <span class="star-deco star-3">✦</span>
+    <span class="star-deco star-4">✧</span>
+    <div class="dish-display"></div>
+  </div>
+</section>
+
+<section class="section" id="masters">
+  <div class="section-header">
+    <span class="section-eyebrow">— The Pantheon —</span>
+    <h2>
+      Masters of the Flame
+      <span class="cn">星 厨 名 录</span>
+    </h2>
+    <div class="gold-divider"></div>
+  </div>
+  <div class="masters-grid">
+    <div class="master-card">
+      <div class="master-stars">★★★</div>
+      <div class="master-num">I</div>
+      <h3>Lin Yuxuan</h3>
+      <div class="master-title">Cantonese · 40 Years</div>
+      <p>The last guardian of classical dim sum. AI captures the 108 folds of his har gow — each crease a meditation on patience.</p>
+      <div class="signature">— 粤味正宗</div>
+    </div>
+    <div class="master-card">
+      <div class="master-stars">★★</div>
+      <div class="master-num">II</div>
+      <h3>Chen Moyun</h3>
+      <div class="master-title">Sichuan · 35 Years</div>
+      <p>Mistress of the seven flavors of numbing. Her mapo tofu holds the precise 0.3mm cut — measured, archived, eternal.</p>
+      <div class="signature">— 蜀味七变</div>
+    </div>
+    <div class="master-card">
+      <div class="master-stars">★★★</div>
+      <div class="master-num">III</div>
+      <h3>Zhou Hanqing</h3>
+      <div class="master-title">Imperial · 50 Years</div>
+      <p>Keeper of the Forbidden City kitchen. 312 imperial recipes, once lost, now reborn through AI reconstruction.</p>
+      <div class="signature">— 御膳重生</div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section">
+  <div class="quote-content">
+    <div class="quote-mark">"</div>
+    <p class="quote-text">
+      Cooking is the art of memory.<br>
+      We do not invent flavors — we remember them.
+      <span class="cn">厨艺乃记忆之艺，吾辈非创味者，乃守味人也。</span>
+    </p>
+    <p class="quote-author">— Zhou Hanqing, Imperial Chef</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">★ STAR CHEF HERITAGE ★</div>
+  <p>Concept Design · 2026</p>
+  <p style="margin-top:0.5rem;opacity:0.5">A Digital Pantheon for Culinary Masters</p>
+</footer>
+
+</body>
+</html>

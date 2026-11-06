@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星厨传承 · 现代杂志</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,600&family=DM+Sans:wght@300;400;500;700&family=Noto+Serif+SC:wght@300;400;600;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf5ec;
+    --cream-warm:#f3ead8;
+    --terracotta:#c8552a;
+    --terracotta-deep:#9a3d1c;
+    --olive:#5c6b3f;
+    --olive-deep:#3d4a28;
+    --charcoal:#2a2520;
+    --ink:#1a1612;
+    --tomato:#d94f3a;
+    --mustard:#d4a017;
+    --paper:#fffdf7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'DM Sans',sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    overflow-x:hidden;
+    line-height:1.5;
+  }
+
+  /* 导航 */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:1.5rem 3rem;
+    display:flex;justify-content:space-between;align-items:center;
+    background:rgba(250,245,236,0.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(26,22,18,0.08);
+  }
+  .logo{
+    font-family:'Fraunces',serif;
+    font-size:1.6rem;
+    font-weight:800;
+    font-style:italic;
+    color:var(--ink);
+    display:flex;align-items:center;gap:0.6rem;
+  }
+  .logo-dot{
+    width:12px;height:12px;
+    background:var(--terracotta);
+    border-radius:50%;
+    display:inline-block;
+  }
+  .nav-links{display:flex;gap:2.2rem;list-style:none;align-items:center}
+  .nav-links a{
+    color:var(--charcoal);
+    text-decoration:none;
+    font-size:0.9rem;
+    font-weight:500;
+    transition:color 0.3s;
+  }
+  .nav-links a:hover{color:var(--terracotta)}
+  .nav-cta{
+    background:var(--ink);
+    color:var(--cream);
+    padding:0.7rem 1.5rem;
+    border-radius:50px;
+    font-size:0.85rem;
+    font-weight:500;
+    transition:all 0.3s;
+  }
+  .nav-cta:hover{background:var(--terracotta);color:var(--cream)!important}
+
+  /* Hero - 杂志大刊风格 */
+  .hero{
+    padding:7rem 3rem 4rem;
+    position:relative;
+  }
+  .hero-meta{
+    display:flex;justify-content:space-between;align-items:flex-end;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:1rem;
+    margin-bottom:2rem;
+  }
+  .issue{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:0.95rem;
+    color:var(--charcoal);
+  }
+  .issue strong{
+    font-style:normal;
+    font-weight:800;
+    color:var(--terracotta);
+  }
+  .date{
+    font-size:0.85rem;
+    color:var(--charcoal);
+    letter-spacing:0.1rem;
+    text-transform:uppercase;
+  }
+
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:3rem;
+    align-items:end;
+  }
+  .hero-title{
+    font-family:'Fraunces',serif;
+    font-size:9rem;
+    line-height:0.88;
+    font-weight:900;
+    color:var(--ink);
+    letter-spacing:-0.04rem;
+  }
+  .hero-title .italic{
+    font-style:italic;
+    font-weight:400;
+    color:var(--terracotta);
+  }
+  .hero-title .small{
+    display:block;
+    font-size:2.5rem;
+    font-weight:400;
+    font-style:italic;
+    color:var(--olive);
+    margin-top:0.5rem;
+    letter-spacing:0;
+  }
+  .hero-side{
+    padding-bottom:1rem;
+  }
+  .hero-tag{
+    display:inline-block;
+    background:var(--terracotta);
+    color:var(--cream);
+    padding:0.4rem 1rem;
+    font-size:0.8rem;
+    font-weight:700;
+    letter-spacing:0.1rem;
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+    border-radius:3px;
+  }
+  .hero-desc{
+    font-family:'Fraunces',serif;
+    font-size:1.3rem;
+    line-height:1.5;
+    color:var(--charcoal);
+    margin-bottom:2rem;
+    font-weight:400;
+  }
+  .hero-desc::first-letter{
+    font-size:3.5rem;
+    font-weight:900;
+    float:left;
+    line-height:0.9;
+    padding-right:0.5rem;
+    padding-top:0.3rem;
+    color:var(--terracotta);
+  }
+  .hero-byline{
+    font-size:0.85rem;
+    color:var(--charcoal);
+    border-top:1px solid var(--ink);
+    padding-top:0.8rem;
+    margin-top:1.5rem;
+  }
+  .hero-byline strong{color:var(--terracotta)}
+
+  /* 视觉条 - 食材拼贴 */
+  .ingredient-strip{
+    margin:4rem 3rem 0;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:1rem;
+    height:200px;
+  }
+  .ing{
+    border-radius:8px;
+    display:flex;align-items:flex-end;
+    padding:1rem;
+    color:var(--cream);
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.1rem;
+    font-weight:600;
+    position:relative;
+    overflow:hidden;
+    transition:transform 0.4s ease;
+  }
+  .ing:hover{transform:scale(1.03) translateY(-5px)}
+  .ing::before{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.5) 100%);
+  }
+  .ing span{position:relative;z-index:1}
+  .ing-1{background:linear-gradient(135deg, #c8552a, #9a3d1c)}
+  .ing-2{background:linear-gradient(135deg, #5c6b3f, #3d4a28)}
+  .ing-3{background:linear-gradient(135deg, #d4a017, #a07b10)}
+  .ing-4{background:linear-gradient(135deg, #d94f3a, #a83a28)}
+  .ing-5{background:linear-gradient(135deg, #6b4423, #3d2814)}
+
+  /* 章节 */
+  .section{
+    padding:6rem 3rem;
+  }
+  .section-label{
+    display:flex;align-items:center;gap:1rem;
+    margin-bottom:2rem;
+  }
+  .section-label .num{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.2rem;
+    color:var(--terracotta);
+    font-weight:600;
+  }
+  .section-label .line{
+    flex:1;height:1px;background:var(--ink);opacity:0.2;
+  }
+  .section-label .name{
+    font-size:0.85rem;
+    letter-spacing:0.2rem;
+    text-transform:uppercase;
+    color:var(--charcoal);
+    font-weight:500;
+  }
+
+  .section-title{
+    font-family:'Fraunces',serif;
+    font-size:4.5rem;
+    line-height:1;
+    font-weight:900;
+    margin-bottom:1rem;
+    letter-spacing:-0.03rem;
+  }
+  .section-title .italic{
+    font-style:italic;
+    font-weight:400;
+    color:var(--olive);
+  }
+  .section-lead{
+    font-family:'Fraunces',serif;
+    font-size:1.4rem;
+    color:var(--charcoal);
+    max-width:680px;
+    margin-bottom:3rem;
+    line-height:1.5;
+    font-style:italic;
+  }
+
+  /* 故事网格 - 不对称杂志排版 */
+  .stories{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:2rem;
+    margin-top:3rem;
+  }
+  .story{
+    background:var(--paper);
+    border-radius:12px;
+    overflow:hidden;
+    transition:transform 0.4s ease, box-shadow 0.4s ease;
+    cursor:pointer;
+  }
+  .story:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 50px rgba(26,22,18,0.12);
+  }
+  .story-img{
+    height:240px;
+    position:relative;
+    overflow:hidden;
+  }
+  .story-img-1{background:linear-gradient(135deg, #c8552a 0%, #9a3d1c 100%)}
+  .story-img-2{background:linear-gradient(135deg, #5c6b3f 0%, #3d4a28 100%)}
+  .story-img-3{background:linear-gradient(135deg, #d4a017 0%, #a07b10 100%)}
+  .story-img::after{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 60%);
+  }
+  .story-tag{
+    position:absolute;top:1rem;left:1rem;
+    background:var(--cream);
+    color:var(--ink);
+    padding:0.3rem 0.8rem;
+    font-size:0.75rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.1rem;
+    border-radius:3px;
+    z-index:2;
+  }
+  .story-body{padding:1.8rem}
+  .story-meta{
+    font-size:0.8rem;
+    color:var(--terracotta);
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.1rem;
+    margin-bottom:0.8rem;
+  }
+  .story h3{
+    font-family:'Fraunces',serif;
+    font-size:1.7rem;
+    line-height:1.2;
+    font-weight:700;
+    margin-bottom:0.8rem;
+    color:var(--ink);
+  }
+  .story p{
+    color:var(--charcoal);
+    font-size:0.95rem;
+    line-height:1.6;
+  }
+  .story-1{grid-column:span 7}
+  .story-2{grid-column:span 5}
+  .story-3{grid-column:span 5}
+  .story-4{grid-column:span 7}
+
+  /* 大引用 */
+  .pullquote{
+    background:var(--ink);
+    color:var(--cream);
+    padding:6rem 3rem;
+    margin:4rem 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .pullquote::before{
+    content:'"';
+    position:absolute;
+    top:-3rem;left:2rem;
+    font-family:'Fraunces',serif;
+    font-size:20rem;
+    color:var(--terracotta);
+    line-height:1;
+    opacity:0.3;
+  }
+  .pullquote-content{
+    max-width:900px;margin:0 auto;
+    position:relative;z-index:2;
+    text-align:center;
+  }
+  .pullquote-text{
+    font-family:'Fraunces',serif;
+    font-size:2.8rem;
+    line-height:1.3;
+    font-weight:400;
+    font-style:italic;
+    margin-bottom:1.5rem;
+  }
+  .pullquote-text strong{
+    font-style:normal;
+    font-weight:900;
+    color:var(--terracotta);
+  }
+  .pullquote-author{
+    font-size:0.9rem;
+    letter-spacing:0.3rem;
+    text-transform:uppercase;
+    color:var(--cream-warm);
+    opacity:0.8;
+  }
+
+  /* 数字展示 */
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+    margin-top:4rem;
+    padding:3rem 0;
+    border-top:2px solid var(--ink);
+    border-bottom:2px solid var(--ink);
+  }
+  .stat-num{
+    font-family:'Fraunces',serif;
+    font-size:4.5rem;
+    font-weight:900;
+    line-height:1;
+    color:var(--terracotta);
+    margin-bottom:0.5rem;
+  }
+  .stat-num .italic{font-style:italic;color:var(--olive);font-weight:400}
+  .stat-label{
+    font-size:0.85rem;
+    color:var(--charcoal);
+    text-transform:uppercase;
+    letter-spacing:0.15rem;
+    font-weight:500;
+  }
+
+  /* 页脚 */
+  footer{
+    background:var(--ink);
+    color:var(--cream);
+    padding:3rem;
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:2rem;
+  }
+  .footer-brand{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.8rem;
+    font-weight:800;
+  }
+  .footer-brand .dot{color:var(--terracotta)}
+  .footer-info{
+    text-align:right;
+    font-size:0.85rem;
+    opacity:0.7;
+  }
+
+  @media(max-width:900px){
+    nav{padding:1rem 1.5rem}
+    .nav-links{display:none}
+    .hero{padding:6rem 1.5rem 2rem}
+    .hero-title{font-size:4.5rem}
+    .hero-title .small{font-size:1.5rem}
+    .hero-grid{grid-template-columns:1fr;gap:2rem}
+    .ingredient-strip{grid-template-columns:repeat(2,1fr);height:auto;margin:2rem 1.5rem 0}
+    .ing{height:120px}
+    .section{padding:4rem 1.5rem}
+    .section-title{font-size:2.8rem}
+    .stories{grid-template-columns:1fr}
+    .story-1,.story-2,.story-3,.story-4{grid-column:span 1}
+    .pullquote{padding:4rem 1.5rem}
+    .pullquote-text{font-size:1.6rem}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat-num{font-size:3rem}
+    footer{grid-template-columns:1fr;text-align:center}
+    .footer-info{text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <span class="logo-dot"></span>
+    <span>星厨传承</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#stories">故事</a></li>
+    <li><a href="#masters">名厨</a></li>
+    <li><a href="#recipes">菜谱</a></li>
+    <li><a href="#ai">智厨</a></li>
+    <li><a href="#about">关于</a></li>
+    <li><a href="#join" class="nav-cta">加入传承</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-meta">
+    <div class="issue">第 <strong>001</strong> 期 · 创刊号</div>
+    <div class="date">2026 · Spring Issue</div>
+  </div>
+  <div class="hero-grid">
+    <h1 class="hero-title">
+      星<span class="italic">厨</span><br>
+      传<span class="italic">承</span>
+      <span class="small">— 一灶烟火，千年味觉</span>
+    </h1>
+    <div class="hero-side">
+      <span class="hero-tag">Cover Story</span>
+      <p class="hero-desc">
+        当 AI 走进厨房，它学会的第一件事不是切菜，而是倾听——倾听一位老师傅四十年的火候直觉，倾听一锅老汤里藏着的三代人记忆。这是关于味道如何被记住、被理解、被传承的故事。
+      </p>
+      <div class="hero-byline">
+        <strong>主笔</strong> · 星厨编辑部 &nbsp;|&nbsp; <strong>摄影</strong> · AI 视觉实验室
+      </div>
+    </div>
+  </div>
+
+  <div class="ingredient-strip">
+    <div class="ing ing-1"><span>八角 · Star Anise</span></div>
+    <div class="ing ing-2"><span>香葱 · Scallion</span></div>
+    <div class="ing ing-3"><span>姜黄 · Turmeric</span></div>
+    <div class="ing ing-4"><span>辣椒 · Chili</span></div>
+    <div class="ing ing-5"><span>桂皮 · Cassia</span></div>
+  </div>
+</section>
+
+<section class="section" id="stories">
+  <div class="section-label">
+    <span class="num">N°01</span>
+    <span class="line"></span>
+    <span class="name">Feature Stories</span>
+  </div>
+  <h2 class="section-title">
+    味道的<span class="italic">记忆</span>
+  </h2>
+  <p class="section-lead">
+    每一道菜都是一段被烹饪出来的故事。我们用 AI 记录这些故事，让它们不再随时间消散。
+  </p>
+
+  <div class="stories">
+    <article class="story story-1">
+      <div class="story-img story-img-1">
+        <span class="story-tag">封面故事</span>
+      </div>
+      <div class="story-body">
+        <div class="story-meta">粤菜 · 40 年 · 广州</div>
+        <h3>最后一笼虾饺：108 道褶里的光阴</h3>
+        <p>林师傅的手已经抖了，但 108 道褶一道不少。AI 用 240 帧记录下他最后一次主理早茶的全过程——这是一份无法复制的遗产。</p>
+      </div>
+    </article>
+    <article class="story story-2">
+      <div class="story-img story-img-2">
+        <span class="story-tag">人物</span>
+      </div>
+      <div class="story-body">
+        <div class="story-meta">川菜 · 成都</div>
+        <h3>陈婆婆的七味麻辣图谱</h3>
+        <p>"麻"有七种，"辣"有九变。她用一辈子摸清的味觉坐标，如今被 AI 量化成可学习的图谱。</p>
+      </div>
+    </article>
+    <article class="story story-3">
+      <div class="story-img story-img-3">
+        <span class="story-tag">发现</span>
+      </div>
+      <div class="story-body">
+        <div class="story-meta">宫廷菜 · 北京</div>
+        <h3>312 道失传御膳的重生</h3>
+        <p>故宫档案里的菜谱只剩文字。AI 联合当代名厨，让消失百年的味道重新端上餐桌。</p>
+      </div>
+    </article>
+    <article class="story story-4">
+      <div class="story-img story-img-1">
+        <span class="story-tag">技术</span>
+      </div>
+      <div class="story-body">
+        <div class="story-meta">AI · 实验室</div>
+        <h3>当算法学会"少许"和"适量"</h3>
+        <p>中餐最难翻译的不是语言，是"少许盐"。我们训练 AI 理解这种模糊美学，让秘方有据可循。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="pullquote">
+  <div class="pullquote-content">
+    <p class="pullquote-text">
+      厨房里没有<strong>秘密</strong>，<br>
+      只有还没被<strong>记住</strong>的细节。
+    </p>
+    <p class="pullquote-author">— 林师傅 · 粤菜名厨 · 从业 40 年</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-label">
+    <span class="num">N°02</span>
+    <span class="line"></span>
+    <span class="name">By the Numbers</span>
+  </div>
+  <h2 class="section-title">
+    传承的<span class="italic">数字</span>
+  </h2>
+  <div class="stats">
+    <div>
+      <div class="stat-num">128<span class="italic">位</span></div>
+      <div class="stat-label">收录名厨</div>
+    </div>
+    <div>
+      <div class="stat-num">3,400<span class="italic">+</span></div>
+      <div class="stat-label">数字化菜谱</div>
+    </div>
+    <div>
+      <div class="stat-num">8<span class="italic">大</span></div>
+      <div class="stat-label">菜系全覆盖</div>
+    </div>
+    <div>
+      <div class="stat-num">∞</div>
+      <div class="stat-label">味觉可能性</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">
+    星厨传承<span class="dot">.</span>
+  </div>
+  <div class="footer-info">
+    概念设计作品 · 2026<br>
+    让每一道菜，都有人记得
+  </div>
+</footer>
+
+</body>
+</html>

@@ -22,7 +22,7 @@ export default function HomePage() {
     <>
       <section className="hero" aria-label="Introduction">
         <div className="hero-meta">
-          <div>社会服务赛道 <span>TRAE AI 创造力大赛 · 2026</span></div>
+          <div>平台愿景 <span>让手艺被看见</span></div>
           <div>核心能力 <span>师承网络 · 智能匹配 · 就业机会</span></div>
           <div>平台定位 <span>厨师专属职业平台</span></div>
           <div>数据底座 <span>{meta ? `${meta.total.toLocaleString()} 位厨师 · ${meta.cuisines} 菜系` : '加载中…'}</span></div>

@@ -9,14 +9,14 @@
       <view class="wm-name serif">星厨传承</view>
       <view class="wm-sub mono">STAR CHEF LINEAGE</view>
     </view>
-    <view class="top-right mono"><text class="pulse-dot"></text> 社会服务赛道</view>
+    <view class="top-right mono"><text class="pulse-dot"></text> 概念演示</view>
   </view>
 
   <scroll-view scroll-y class="home-scroll" enhanced show-scrollbar="{{false}}">
     <!-- Hero -->
     <view class="hero">
       <view class="hero-meta">
-        <view class="hm-item">社会服务赛道<text class="hm-sub">TRAE AI 创造力大赛 · 2026</text></view>
+        <view class="hm-item">平台愿景<text class="hm-sub">让手艺被看见</text></view>
         <view class="hm-item">核心能力<text class="hm-sub">师承网络 · 智能匹配 · 就业机会</text></view>
         <view class="hm-item">平台定位<text class="hm-sub">厨师专属职业平台</text></view>
         <view class="hm-item">项目状态<text class="hm-sub">概念设计阶段</text></view>
@@ -236,7 +236,7 @@
     <!-- 页脚 -->
     <view class="footer">
       <view class="ft-brand serif">星厨传承</view>
-      <view class="ft-note">以师承为信任底层的厨师职业平台 · TRAE AI 创造力大赛 2026 · 体验版演示</view>
+      <view class="ft-note">以师承为信任底层的厨师职业平台 · 体验版演示</view>
       <view class="ft-safe"></view>
     </view>
   </scroll-view>

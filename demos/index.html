@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星厨传承 · 设计风格选择</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'DM Sans',sans-serif;
+    background:#0d0b08;
+    color:#f5ecd9;
+    min-height:100vh;
+    padding:3rem 2rem;
+  }
+  .container{max-width:1300px;margin:0 auto}
+  header{text-align:center;margin-bottom:3rem}
+  header h1{
+    font-family:'Fraunces',serif;
+    font-size:3rem;
+    font-weight:900;
+    margin-bottom:0.5rem;
+    background:linear-gradient(135deg,#c9a961,#a8321e,#00f0ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  header p{color:#8aa5b8;font-size:1rem}
+  .hint{
+    display:inline-block;
+    margin-top:1rem;
+    padding:0.5rem 1.2rem;
+    background:rgba(201,169,97,0.1);
+    border:1px solid rgba(201,169,97,0.3);
+    border-radius:50px;
+    font-size:0.85rem;
+    color:#c9a961;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.5rem;
+    margin-top:2rem;
+  }
+  .card{
+    border-radius:12px;
+    overflow:hidden;
+    text-decoration:none;
+    transition:all 0.4s cubic-bezier(0.2,0.8,0.2,1);
+    border:1px solid rgba(255,255,255,0.1);
+    position:relative;
+    display:block;
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(201,169,97,0.5);
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+  }
+  .preview{
+    height:240px;
+    position:relative;
+    overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;
+    font-size:4rem;
+    font-weight:900;
+  }
+  .p1{background:linear-gradient(135deg,#f4ecd8,#ebe0c4);color:#1a1612}
+  .p1::after{content:'墨';font-family:'Ma Shan Zheng',cursive;color:#a8321e;position:absolute;font-size:8rem;opacity:0.15;right:1rem;top:50%;transform:translateY(-50%)}
+  .p2{background:linear-gradient(135deg,#0d0b08,#2a241e);color:#c9a961}
+  .p2::after{content:'★';position:absolute;font-size:8rem;opacity:0.15;right:1rem;top:50%;transform:translateY(-50%);color:#c9a961}
+  .p3{background:linear-gradient(135deg,#faf5ec,#f3ead8);color:#2a2520}
+  .p3::after{content:'味';font-family:'Fraunces',serif;font-style:italic;color:#c8552a;position:absolute;font-size:8rem;opacity:0.15;right:1rem;top:50%;transform:translateY(-50%)}
+  .p4{background:linear-gradient(135deg,#050208,#1a1030);color:#00f0ff}
+  .p4::after{content:'AI';font-family:'Orbitron',sans-serif;position:absolute;font-size:6rem;opacity:0.15;right:1rem;top:50%;transform:translateY(-50%);color:#ff2d95}
+
+  .info{padding:1.5rem;background:#1a1612}
+  .info .num{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    color:#c9a961;
+    font-size:0.9rem;
+    margin-bottom:0.3rem;
+  }
+  .info h3{
+    font-family:'Fraunces',serif;
+    font-size:1.5rem;
+    margin-bottom:0.5rem;
+    color:#f5ecd9;
+  }
+  .info .tags{
+    display:flex;gap:0.5rem;flex-wrap:wrap;margin:0.8rem 0;
+  }
+  .tag{
+    font-size:0.75rem;
+    padding:0.2rem 0.7rem;
+    border-radius:50px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    color:#8aa5b8;
+  }
+  .info p{
+    color:#8aa5b8;
+    font-size:0.9rem;
+    line-height:1.6;
+  }
+  .open-btn{
+    display:inline-block;
+    margin-top:1rem;
+    color:#c9a961;
+    font-size:0.85rem;
+    font-weight:500;
+    letter-spacing:0.1rem;
+    text-transform:uppercase;
+  }
+  footer{
+    text-align:center;
+    margin-top:3rem;
+    color:#5a5048;
+    font-size:0.85rem;
+  }
+  @media(max-width:768px){
+    .grid{grid-template-columns:1fr}
+    header h1{font-size:2rem}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>星厨传承 · 设计风格选择</h1>
+    <p>四种截然不同的视觉语言，点击预览完整效果</p>
+    <span class="hint">↑ 每个 demo 都是完整可交互的页面</span>
+  </header>
+
+  <div class="grid">
+    <a href="demo1-ink-wash.html" class="card" target="_blank">
+      <div class="preview p1">东方水墨</div>
+      <div class="info">
+        <div class="num">— Demo 01 —</div>
+        <h3>东方水墨风</h3>
+        <div class="tags">
+          <span class="tag">传统中式</span>
+          <span class="tag">朱砂印章</span>
+          <span class="tag">毛笔字</span>
+          <span class="tag">宣纸纹理</span>
+        </div>
+        <p>以中国水墨画为灵感，朱砂红 + 宣纸黄 + 墨黑。毛笔字体配竖排文案，传递"传承"的文化厚度。适合强调中华厨艺的文化底蕴。</p>
+        <span class="open-btn">查看效果 →</span>
+      </div>
+    </a>
+
+    <a href="demo2-dark-gold.html" class="card" target="_blank">
+      <div class="preview p2">米其林暗金</div>
+      <div class="info">
+        <div class="num">— Demo 02 —</div>
+        <h3>米其林暗金风</h3>
+        <div class="tags">
+          <span class="tag">奢华暗色</span>
+          <span class="tag">香槟金</span>
+          <span class="tag">衬线优雅</span>
+          <span class="tag">星级感</span>
+        </div>
+        <p>深黑底配香槟金，Cormorant + Italiana 衬线字体。突出"星厨"的米其林级精致感，适合定位高端、专业的产品调性。</p>
+        <span class="open-btn">查看效果 →</span>
+      </div>
+    </a>
+
+    <a href="demo3-magazine.html" class="card" target="_blank">
+      <div class="preview p3">现代杂志</div>
+      <div class="info">
+        <div class="num">— Demo 03 —</div>
+        <h3>现代杂志风</h3>
+        <div class="tags">
+          <span class="tag">编辑排版</span>
+          <span class="tag">暖色烟火</span>
+          <span class="tag">不对称网格</span>
+          <span class="tag">故事感</span>
+        </div>
+        <p>美食杂志排版语言，赤陶 + 橄榄绿 + 暖米色。Fraunces 字体配首字下沉，强调"烟火气"和人物故事，亲切易读。</p>
+        <span class="open-btn">查看效果 →</span>
+      </div>
+    </a>
+
+    <a href="demo4-cyber.html" class="card" target="_blank">
+      <div class="preview p4">赛博美食</div>
+      <div class="info">
+        <div class="num">— Demo 04 —</div>
+        <h3>赛博美食风</h3>
+        <div class="tags">
+          <span class="tag">AI 科技感</span>
+          <span class="tag">霓虹青粉</span>
+          <span class="tag">终端界面</span>
+          <span class="tag">故障艺术</span>
+        </div>
+        <p>深空黑 + 电光青 + 霓虹粉，Orbitron 字体 + 终端交互。突出 AI 技术属性，适合强调"用 AI 传承"的科技叙事。</p>
+        <span class="open-btn">查看效果 →</span>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    概念设计作品 · 星厨传承 · 2026
+  </footer>
+</div>
+</body>
+</html>

@@ -27,7 +27,7 @@ export default function App() {
         <div className="foot-grid">
           <div className="brand">
             星厨 <em>传承</em>
-            <p>以师承关系为信任底层的厨师专属职业平台。记录手艺出处，连接就业机会。参赛：TRAE AI 创造力大赛 · 社会服务赛道。</p>
+            <p>以师承关系为信任底层的厨师专属职业平台。记录手艺出处，连接就业机会。</p>
           </div>
           <div>
             <h6>核心功能</h6>
