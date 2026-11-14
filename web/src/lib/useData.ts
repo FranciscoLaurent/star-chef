@@ -11,9 +11,19 @@ async function load(): Promise<void> {
   if (_loading) return;
   _loading = true;
   try {
-    const res = await fetch('/data/chefs.json');
+    // BASE_URL：部署在 /star-chef/ 子路径时为 '/star-chef/'，本地为 '/'
+    const res = await fetch(`${import.meta.env.BASE_URL}data/chefs.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    _cache = await res.json();
+    const json: WebData = await res.json();
+    // chefs.json 里的头像是根绝对路径（/portraits/xxx.jpg），
+    // 子路径部署时需要加上 BASE_URL 前缀，否则会 404
+    const base = import.meta.env.BASE_URL;
+    for (const c of json.chefs) {
+      if (c.portrait && c.portrait.startsWith('/')) {
+        c.portrait = base + c.portrait.slice(1);
+      }
+    }
+    _cache = json;
     _listeners.forEach(fn => fn(_cache, null));
   } catch (e) {
     const err = e instanceof Error ? e : new Error(String(e));

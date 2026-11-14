@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // GitHub Pages 部署在 https://franciscolaurent.github.io/star-chef/ 子路径下
+  base: '/star-chef/',
   server: {
     proxy: {
       // 浏览器直连 api.deepseek.com 会被 CORS 拦截，走 dev server 代理
